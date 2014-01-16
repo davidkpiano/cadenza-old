@@ -1,0 +1,110 @@
+// Compass imports
+// @import "compass/reset";
+@import "compass/utilities/general/clearfix";
+@import "compass/css3/box-sizing";
+@import "compass/css3/shared";
+
+// Units
+$x: 16px !default;
+$x-rem: 1rem !default;
+
+// Grid settings
+$grid-columns: 12 !default;
+$grid-rows: 12 !default;
+$grid-padding: $x !default;
+
+// Color Palette
+$color-primary: blue !default;
+$color-secondary: gray !default;
+$color-dark: #222 !default;
+$color-light: #EFEFEF !default;
+$color-anchor: $color-primary !default;
+$color-anchor-hover: lighten($color-primary, 15%) !default;
+
+// Typography settings
+$type-unit: rem !default;
+$type-ratio: 1/1.1614 !default;
+$type-base-font-size: 16px !default; // = 1em
+$type-base-line-height: 1.65em !default;
+$type-base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$type-base-font-style: normal !default;
+$type-base-color: #222 !default;
+
+$type-header-font-family: $type-custom-font-family !default;
+$type-header-font-weight: 400 !default;
+$type-header-font-style: normal !default;
+$type-header-color: $type-base-color !default;
+$type-header-margin-top: 0 !default;
+$type-header-margin-bottom: $x-rem !default;
+$type-header-small-style: uppercase !default;
+
+$type-subheader-color: lighten($type-header-color, 15%) !default;
+$type-subheader-font-weight: 300 !default;
+$type-subheader-margin-top: 0 !default;
+$type-subheader-margin-bottom: $x-rem !default;
+
+$type-pre-color: $type-base-color !default;
+$type-pre-scale: 0 !default;
+$type-pre-font-family: monospace;
+$type-code-color: $type-pre-color !default;
+$type-code-scale: 0 !default;
+$type-code-font-family: $type-pre-font-family;
+
+$type-custom-import: "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" !default;
+$type-custom-font-family: "Open Sans" !default;
+
+$type-anchor-decoration: none !default;
+$type-anchor-hover-decoration: $type-anchor-decoration !default;
+
+$type-list-position: outside !default;
+$type-list-margin-bottom: 1rem !default;
+$type-list-ul-margin: 1rem !default;
+$type-list-ol-margin: 1.4rem !default;
+$type-list-dl-header-weight: bold !default;
+$type-list-dl-header-margin-bottom: $x-rem / 2 !default;
+$type-list-dl-margin-bottom: $x-rem / 2 !default;
+
+$type-blockquote-color: lighten($type-base-color, 15%) !default;
+$type-blockquote-padding: 1rem !default;
+$type-blockquote-border: 1px solid $type-blockquote-color !default;
+$type-blockquote-cite-scale: -1 !default;
+$type-blockquote-cite-color: $type-blockquote-color !default;
+$type-blockquote-margin-bottom: $x-rem !default;
+
+// Media Query settings
+$aspect-ratio: 16/9 !default;
+$static-width: 960px !default;
+$static-height: $static-width/$aspect-ratio !default;
+$mq-unit: em !default;
+
+// Horizontal Media Breakpoints
+$breakpoint-small: 767px !default;
+$breakpoint-medium: 768px !default;
+$breakpoint-large: 1280px !default;
+
+// Vertical Media Breakpoints
+$breakpoint-short: 700px !default;
+$breakpoint-tall: 900px !default;
+
+// Horizontal Media Queries
+$mq-small: "only screen and (max-width: #{$breakpoint-small / $type-base-font-size} em)" !default;
+$mq-medium: "only screen and (min-width: #{$breakpoint-medium / $type-base-font-size} em)" !default;
+$mq-large: "only screen and (min-width: #{$breakpoint-large / $type-base-font-size} em)" !default;
+
+// Vertical Media Queries
+$mq-short: "only screen and (max-height: #{$breakpoint-short / $type-base-font-size} em)" !default;
+$mq-tall: "only screen and (min-width: #{$breakpoint-tall / $type-base-font-size} em)" !default;
+
+// Non-dimensional Media Queries
+$mq-print: "print" !default;
+
+// Miscellaneous Media Queries
+$mq-screen: "only screen" !default;
+
+// Prefixes
+$prefixes: moz, webkit, o !default;
+
+// Buttons
+$button-padding-vertical: $x-rem/2;
+$button-padding-horizontal: $x;
+$button-border-width: 2px;

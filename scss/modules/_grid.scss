@@ -1,0 +1,116 @@
+//
+// Horizontal Grid System
+// ======================
+
+@mixin columns($columns) {
+    width: ($columns / $grid-columns) * 100% !important;
+
+    + .col-flex {
+        width: (1 - ($columns / $grid-columns)) * 100%;
+    }
+}
+
+@mixin columnsOffset($columns) {
+    margin-left: ($columns / $grid-columns * 100%);
+}
+
+@mixin horizontalGridSystem($suffix: "") {
+    @for $i from 0 through $grid-columns {
+        .col-#{$i}#{$suffix} {
+            @include columns($i);
+        }
+
+        .col-offset-#{$i}#{$suffix} {
+            @include columnsOffset($i);
+        }
+    }
+
+    [class*="col-"].centered#{$suffix} {
+        margin-left: auto;
+        margin-right: auto;
+        float: none !important;
+    }
+}
+
+@mixin column {
+    @include box-sizing(border-box);
+    @include clearfix;
+
+    position: relative;
+    float: left;
+    height: 100%;
+
+    &.content {
+        padding: $grid-padding;
+    }
+}
+
+.col, [class*="col-"] {
+    @include column;
+}
+
+//
+// Vertical Grid System
+// ====================
+
+@mixin rows($rows) {
+    height: ($rows / $grid-rows) * 100%;
+
+    + .row-flex {
+        height: (1 - ($rows / $grid-rows)) * 100%;
+    }
+}
+
+@mixin rowsOffset($rows) {
+    // TODO: use calc? try to use margin
+    top: ($rows / $grid-rows) * 100%;
+}
+
+@mixin verticalGridSystem($suffix: "") {
+    @for $i from 0 through $grid-rows {
+        .row-#{$i}#{$suffix} {
+            @include rows($i);
+        }
+
+        .row-offset-#{$i}#{$suffix} {
+            @include rowsOffset($i);
+        }
+    }
+
+    [class*="row-"].centered#{$suffix} {
+        // TODO
+    }
+}
+
+@mixin row {
+    @include box-sizing(border-box);
+    @include clearfix;
+
+    position: relative;
+    width: 100%;
+    // max-width: 100%;
+
+    &.content {
+        padding: $grid-padding;
+    }
+}
+
+.row, [class*="row-"] {
+    @include row;
+}
+
+//
+// Full Grid System
+// ================
+
+@mixin gridSystem($suffix: "") {
+    @include horizontalGridSystem($suffix);
+    @include verticalGridSystem($suffix);
+}
+
+@media #{$mq-screen} { @include gridSystem; }
+@media #{$mq-small} { @include gridSystem(-small); }
+@media #{$mq-medium} { @include gridSystem(-medium); }
+@media #{$mq-large} { @include gridSystem(-large); }
+@media #{$mq-short} { @include gridSystem(-short); }
+@media #{$mq-tall} { @include gridSystem(-tall); }

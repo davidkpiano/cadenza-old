@@ -1,0 +1,215 @@
+// Include Open Sans
+@import url($type-custom-import);
+
+
+// Type Scale mixin
+@mixin typeScale($exponent: 1, $base: $type-base-font-size, $unit: $type-unit, $ratio: $type-ratio) {
+    $font-size: $base * pow(1 / $ratio, $exponent);
+
+    font-size: $font-size;
+    font-size: ($font-size / $base)#{$unit};
+}
+
+@mixin headings {
+    h1, h2, h3, h4, h5, h6 {
+        line-height: 1;
+        font-weight: $type-header-font-weight;
+        font-style: $type-header-font-style;
+        font-family: join($type-header-font-family, $type-base-font-family);
+        color: $type-header-color;
+        margin-top: $type-header-margin-top;
+        margin-bottom: $type-header-margin-bottom;
+
+        &.subheader {
+            color: $type-subheader-color;
+            font-weight: $type-subheader-font-weight;
+            margin-top: $type-subheader-margin-top;
+            margin-bottom: $type-subheader-margin-bottom;
+        }
+    }
+
+    @for $i from 1 through 6 {
+        h#{$i} {
+            @include typeScale(6 - $i);
+
+            @if $i == 6 {
+                text-transform: $type-header-small-style;
+            }
+        }
+    }
+}
+
+html {
+    font-size: $type-base-font-size;
+}
+
+body {
+    font-style: normal;
+    font-family: join($type-custom-font-family, $type-base-font-family);
+    color: $type-base-color;
+    text-rendering: optimizeLegibility;
+    word-wrap: break-word;
+
+    @include experimental(hyphens, auto);
+    @include headings;
+}
+
+a {
+    text-decoration: $type-anchor-decoration;
+    color: $color-anchor;
+
+    &:hover {
+        color: $color-anchor-hover;
+        text-decoration: $type-anchor-decoration;
+    }
+}
+
+// Lists
+
+@mixin listStyle($type: inherit) {
+    @if $type == none {
+        list-style: none;
+        margin: 0;
+        margin-left: 0;
+
+        ul, ol {
+            list-style: none;
+            margin: 0;
+            margin-left: 0;
+        }
+    } @else {
+        list-style-type: $type;
+
+        ul, ol {
+            list-style: inherit;
+        }
+    }
+
+}
+
+ul, ol, dl {
+    list-style-position: $type-list-position;
+    margin-bottom: $type-list-margin-bottom;
+    padding: 0;
+
+    &.clean { @include listStyle(none); }
+
+    // Nested lists
+    & ul, ol, dl {
+        margin-bottom: 0;
+    }
+}
+
+ul {
+    margin-left: $type-list-ul-margin;
+
+    &.square { @include listStyle(square); }
+    &.circle { @include listStyle(circle); }
+    &.disc { @include listStyle(disc); }
+}
+
+ol {
+    margin-left: $type-list-ol-margin;
+}
+
+li {
+    list-style-position: $type-list-position;
+}
+
+dl {
+    dt {
+        font-weight: $type-list-dl-header-weight;
+        margin-bottom: $type-list-dl-header-margin-bottom;
+    }
+    dd {
+        margin-bottom: $type-list-dl-margin-bottom;
+
+        // TODO: Find this in a reset
+        margin-left: 0;
+    }
+}
+
+small {
+    @include typeScale(-1);
+}
+
+// Text style classes
+.strong {
+    font-weight: bold;
+}
+
+// Horizontal Alignment Classes
+.align-left { text-align: left; }
+.align-right { text-align: right; }
+.align-center { text-align: center; }
+
+// Vertical Alignment Classes
+@mixin verticalAlign($alignment) {
+    // http://css-tricks.com/centering-in-the-unknown/
+
+    &:before {
+        content: "";
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+
+    > * {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.valign-center {
+    @include verticalAlign(center);
+}
+
+// Stacking
+.stacked {
+    margin-bottom: 0;
+}
+
+// Hyphens
+abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var, xmp {
+    @include experimental(hyphens, none);
+}
+
+// Preformatted Text and Code Blocks
+pre {
+    white-space: pre;
+    color: $type-pre-color;
+    @include typeScale($type-pre-scale);
+    font-family: $type-pre-font-family;
+
+    code {
+        word-wrap: normal;
+        white-space: -moz-pre-wrap;
+        white-space: pre-wrap;
+    }
+}
+
+code {
+    white-space: pre;
+    color: $type-code-color;
+    @include typeScale($type-code-scale);
+    font-family: $type-code-font-family;
+}
+
+// Blockquotes
+blockquote {
+    color: $type-blockquote-color;
+    padding: $type-blockquote-padding;
+    border-left: $type-blockquote-border;
+    margin: 0; // TODO: reset!
+    margin-bottom: $type-blockquote-margin-bottom;
+
+    cite {
+        display: block;
+        @include typeScale($type-blockquote-cite-scale);
+        color: $type-blockquote-cite-color;
+    }
+
+    p {
+        color: $type-blockquote-color;
+    }
+}

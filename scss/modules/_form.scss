@@ -1,0 +1,13 @@
+
+
+input {
+    @include box-sizing(border-box);
+    outline: none;
+    padding: 0;
+
+    &.full {
+        height: 100%;
+        width: 100%;
+        border: none;
+    }
+}

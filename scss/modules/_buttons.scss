@@ -1,0 +1,80 @@
+
+
+@mixin buttonStyle($color: $color-primary) {
+    $colorText: $color-light !default;
+
+    @if lightness($color) <= 50% {
+        $colorText: $color-light;
+    } @else {
+        $colorText: $color-dark;
+    }
+
+    $colorBackground: $color;
+    $colorBorder: darken($colorBackground, 7%);
+    $colorBackgroundHover: darken($colorBackground, 5%);
+    $colorBorderHover: darken($colorBackgroundHover, 7%);
+    $colorBackgroundActive: darken($colorBackgroundHover, 5%);
+    $colorBorderActive: darken($colorBorderHover, 10%);
+
+    color: $colorText !important;
+
+    // Primary style
+    background-color: $colorBackground;
+    border-color: $colorBorder;
+    border-width: $button-border-width;
+    border-style: solid;
+
+    // Hover style
+    &:hover {
+        background-color: $colorBackgroundHover;
+        border-color: $colorBorderHover;
+    }
+
+    // Active style
+    &:active {
+        background-color: $colorBackgroundActive;
+        border-color: $colorBorderActive;
+    }
+
+    // Transparent style
+    &.transparent {
+        background-color: transparent !important;
+        color: $color-dark !important;
+    }
+}
+
+@mixin button($fontScale: -1) {
+    display: inline-block;
+    padding: $button-padding-vertical $button-padding-horizontal;
+    cursor: pointer;
+
+    // Text style
+    @include typeScale($fontScale);
+    text-decoration: none;
+    text-align: center;
+    color: $color-dark;
+}
+
+button, .button, [class*="button-"] {
+    @include button;
+
+
+    &.light { @include buttonStyle($color-light); }
+    &.dark { @include buttonStyle($color-dark); }
+    &.primary { @include buttonStyle($color-primary); }
+    &.secondary { @include buttonStyle($color-secondary); }
+}
+
+.button-full {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: block;
+
+    @include verticalAlign(center);
+}
+
+.button-block {
+    @include row;
+}
+

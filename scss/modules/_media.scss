@@ -1,0 +1,28 @@
+
+
+@mixin mq($size: all) {
+    @if $size == screen {
+        @media #{$mq-screen} { @content; }
+    } @else if $size == small {
+        @media #{$mq-small} { @content; }
+    } @else if $size == medium {
+        @media #{$mq-medium} { @content; }
+    } @else if $size == large {
+        @media #{$mq-large} { @content; }
+    } @else if $size == short {
+        @media #{$mq-short} { @content; }
+    } @else if $size == tall {
+        @media #{$mq-tall} { @content; }
+    } 
+
+    // Non-dimensional media queries
+    @else if $size == print {
+        @media #{$mq-print} { @content; }
+    } @else {
+        @content;
+    }
+}
+
+// TODO:
+// landscape, portrait, retina
+// multiple arguments for sizes

@@ -1,0 +1,48 @@
+
+html {
+    height: 100%;
+}
+
+*, *:before, *:after {
+    position: relative;
+    @include box-sizing(border-box);
+}
+
+// layout mixin must follow this structure:
+// <body>
+//   <header></header>
+//   <section></section>
+//   <footer></footer>
+// </body>
+@mixin layout($header: 0, $footer: 0) {
+    position: absolute;
+    max-height: 100%;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    overflow-y: auto;
+
+    margin-top: $header;
+    margin-bottom: $footer;
+
+    > header, > footer {
+        position: fixed;
+        width: 100%;
+        z-index: 1;
+    }
+
+    > header {
+        height: $header;
+        top: 0;
+    }
+
+    > footer {
+        height: $footer; 
+        bottom: 0;
+    }
+
+    > section {
+        @include row;
+        min-height: 100%;
+    }
+}

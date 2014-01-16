@@ -1,0 +1,21 @@
+
+
+@mixin layer {
+    @include row;
+
+    position: absolute;
+    height: 100%;
+    max-height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    @include clearfix;
+
+    &.scroll {
+        overflow: auto;
+    }
+}
+
+.layer, .page {
+    @include layer;
+}
