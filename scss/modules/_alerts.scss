@@ -10,16 +10,16 @@
 
 
 @mixin alert($color: $color-primary, $text-color: $alert-color-light) {
-    $lightness-threshold: 65%; // TODO: play around with this value
     $border-color: darken($color, 15%);
 
-    @if lightness($color) > $lightness-threshold and $text-color == $alert-color-light {
-        $text-color: darken($color, 35%);
+    @if $text-color == $alert-color-light {
+        color: foregroundColor($color);
+    } @else {
+        color: $text-color;
     }
 
     background-color: $color;
     border-color: $border-color;
-
     color: $text-color;
 }
 
@@ -28,6 +28,8 @@
     width: 100%;
     padding: $alert-padding;
     border: $alert-border;
+    margin-bottom: $alert-margin-bottom;
+    
     @include typeScale(-1);
 
     @include alert();

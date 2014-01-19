@@ -1,55 +1,54 @@
 
 
-@mixin buttonStyle($color: $color-primary) {
-    $colorText: $color-light !default;
+@mixin buttonStyle($color: $color-primary, $text-color: $color, $transparent: false) {
+    $color-background: $color;
+    $color-border: darken($color-background, 7%);
+    $color-background-hover: darken($color-background, 5%);
+    $color-border-hover: darken($color-background-hover, 7%);
+    $color-background-active: darken($color-background-hover, 5%);
+    $color-borderActive: darken($color-border-hover, 10%);
 
-    @if lightness($color) <= 50% {
-        $colorText: $color-light;
+    @if $transparent {
+        background-color: transparent;
+        border-color: $color;
+        color: $text-color;
+
+        &:hover {
+            color: foregroundColor($text-color);
+        }
     } @else {
-        $colorText: $color-dark;
+        background-color: $color-background;
+        border-color: $color-border;
+
+        @if $text-color == $color {
+            color: foregroundColor($color);
+        } @else {
+            color: $text-color;
+        }
     }
-
-    $colorBackground: $color;
-    $colorBorder: darken($colorBackground, 7%);
-    $colorBackgroundHover: darken($colorBackground, 5%);
-    $colorBorderHover: darken($colorBackgroundHover, 7%);
-    $colorBackgroundActive: darken($colorBackgroundHover, 5%);
-    $colorBorderActive: darken($colorBorderHover, 10%);
-
-    color: $colorText !important;
-
-    // Primary style
-    background-color: $colorBackground;
-    border-color: $colorBorder;
-    border-width: $button-border-width;
-    border-style: solid;
 
     // Hover style
     &:hover {
-        background-color: $colorBackgroundHover;
-        border-color: $colorBorderHover;
+        background-color: $color-background-hover;
+        border-color: $color-border-hover;
     }
 
     // Active style
     &:active {
-        background-color: $colorBackgroundActive;
-        border-color: $colorBorderActive;
-    }
-
-    // Transparent style
-    &.transparent {
-        background-color: transparent !important;
-        color: $color-dark !important;
+        background-color: $color-background-active;
+        border-color: $color-borderActive;
     }
 }
 
-@mixin button($fontScale: -1) {
+@mixin button($font-scale: -1) {
     display: inline-block;
     padding: $button-padding-vertical $button-padding-horizontal;
     cursor: pointer;
+    border-width: $button-border-width;
+    border-style: solid;
 
     // Text style
-    @include typeScale($fontScale);
+    @include typeScale($font-scale);
     text-decoration: none;
     text-align: center;
     color: $color-dark;
@@ -58,11 +57,12 @@
 button, .button, [class*="button-"] {
     @include button;
 
-
     &.light { @include buttonStyle($color-light); }
     &.dark { @include buttonStyle($color-dark); }
     &.primary { @include buttonStyle($color-primary); }
     &.secondary { @include buttonStyle($color-secondary); }
+
+    &.transparent { @include buttonStyle($color-primary, $transparent: true); }
 }
 
 .button-full {

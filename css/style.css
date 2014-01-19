@@ -2435,15 +2435,25 @@ ul.clean ul, ul.clean ol, ol.clean ul, ol.clean ol, dl.clean ul, dl.clean ol {
   margin-left: 0;
 }
 /* line 112, ../scss/modules/_type.scss */
+ul.inline, ol.inline, dl.inline {
+  margin-left: 0;
+}
+/* line 115, ../scss/modules/_type.scss */
+ul.inline > li, ol.inline > li, dl.inline > li {
+  display: inline-block;
+  margin-right: 1rem;
+  white-space: nowrap;
+}
+/* line 123, ../scss/modules/_type.scss */
 ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, dl ul, dl ol, dl dl {
   margin-bottom: 0;
 }
 
-/* line 117, ../scss/modules/_type.scss */
+/* line 128, ../scss/modules/_type.scss */
 ul {
   margin-left: 1rem;
 }
-/* line 120, ../scss/modules/_type.scss */
+/* line 131, ../scss/modules/_type.scss */
 ul.square {
   list-style-type: square;
 }
@@ -2451,7 +2461,7 @@ ul.square {
 ul.square ul, ul.square ol {
   list-style: inherit;
 }
-/* line 121, ../scss/modules/_type.scss */
+/* line 132, ../scss/modules/_type.scss */
 ul.circle {
   list-style-type: circle;
 }
@@ -2459,7 +2469,7 @@ ul.circle {
 ul.circle ul, ul.circle ol {
   list-style: inherit;
 }
-/* line 122, ../scss/modules/_type.scss */
+/* line 133, ../scss/modules/_type.scss */
 ul.disc {
   list-style-type: disc;
 }
@@ -2468,71 +2478,71 @@ ul.disc ul, ul.disc ol {
   list-style: inherit;
 }
 
-/* line 125, ../scss/modules/_type.scss */
+/* line 136, ../scss/modules/_type.scss */
 ol {
   margin-left: 1.4rem;
 }
 
-/* line 129, ../scss/modules/_type.scss */
+/* line 140, ../scss/modules/_type.scss */
 li {
   list-style-position: outside;
 }
 
-/* line 134, ../scss/modules/_type.scss */
+/* line 145, ../scss/modules/_type.scss */
 dl dt {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-/* line 138, ../scss/modules/_type.scss */
+/* line 149, ../scss/modules/_type.scss */
 dl dd {
   margin-bottom: 0.5rem;
 }
 
-/* line 143, ../scss/modules/_type.scss */
+/* line 154, ../scss/modules/_type.scss */
 small {
   font-size: 15.49854px;
   font-size: 0.86103rem;
 }
 
-/* line 148, ../scss/modules/_type.scss */
+/* line 159, ../scss/modules/_type.scss */
 .strong {
   font-weight: bold;
 }
 
-/* line 153, ../scss/modules/_type.scss */
+/* line 164, ../scss/modules/_type.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 154, ../scss/modules/_type.scss */
+/* line 165, ../scss/modules/_type.scss */
 .align-right {
   text-align: right;
 }
 
-/* line 155, ../scss/modules/_type.scss */
+/* line 166, ../scss/modules/_type.scss */
 .align-center {
   text-align: center;
 }
 
-/* line 161, ../scss/modules/_type.scss */
+/* line 172, ../scss/modules/_type.scss */
 .valign-center:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 168, ../scss/modules/_type.scss */
+/* line 179, ../scss/modules/_type.scss */
 .valign-center > * {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 179, ../scss/modules/_type.scss */
+/* line 190, ../scss/modules/_type.scss */
 .stacked {
   margin-bottom: 0;
 }
 
-/* line 184, ../scss/modules/_type.scss */
+/* line 195, ../scss/modules/_type.scss */
 abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var, xmp {
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -2541,7 +2551,7 @@ abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var,
   hyphens: none;
 }
 
-/* line 189, ../scss/modules/_type.scss */
+/* line 200, ../scss/modules/_type.scss */
 pre {
   white-space: pre;
   color: #222222;
@@ -2549,14 +2559,14 @@ pre {
   font-size: 1rem;
   font-family: monospace;
 }
-/* line 195, ../scss/modules/_type.scss */
+/* line 206, ../scss/modules/_type.scss */
 pre code {
   word-wrap: normal;
   white-space: -moz-pre-wrap;
   white-space: pre-wrap;
 }
 
-/* line 202, ../scss/modules/_type.scss */
+/* line 213, ../scss/modules/_type.scss */
 code {
   white-space: pre;
   color: #222222;
@@ -2565,26 +2575,26 @@ code {
   font-family: monospace;
 }
 
-/* line 210, ../scss/modules/_type.scss */
+/* line 221, ../scss/modules/_type.scss */
 blockquote {
   color: #484848;
   padding: 1rem;
   border-left: 1px solid #484848;
   margin-bottom: 1rem;
 }
-/* line 216, ../scss/modules/_type.scss */
+/* line 227, ../scss/modules/_type.scss */
 blockquote cite {
   display: block;
   font-size: 15.49854px;
   font-size: 0.86103rem;
   color: #484848;
 }
-/* line 222, ../scss/modules/_type.scss */
+/* line 233, ../scss/modules/_type.scss */
 blockquote p {
   color: #484848;
 }
 
-/* line 228, ../scss/modules/_type.scss */
+/* line 239, ../scss/modules/_type.scss */
 hr {
   clear: both;
   height: 0;
@@ -2594,7 +2604,7 @@ hr {
   border-width: 1px 0 0;
 }
 
-/* line 238, ../scss/modules/_type.scss */
+/* line 249, ../scss/modules/_type.scss */
 abbr, acronym {
   font-size: 86.10298%;
   text-transform: uppercase;
@@ -2602,108 +2612,102 @@ abbr, acronym {
   cursor: help;
 }
 
-/* line 58, ../scss/modules/_buttons.scss */
+/* line 57, ../scss/modules/_buttons.scss */
 button, .button, [class*="button-"] {
   display: inline-block;
   padding: 0.5rem 16px;
   cursor: pointer;
+  border-width: 2px;
+  border-style: solid;
   font-size: 15.49854px;
   font-size: 0.86103rem;
   text-decoration: none;
   text-align: center;
   color: #222222;
 }
-/* line 62, ../scss/modules/_buttons.scss */
+/* line 60, ../scss/modules/_buttons.scss */
 button.light, .button.light, [class*="button-"].light {
-  color: #222222 !important;
   background-color: #efefef;
   border-color: #dddddd;
-  border-width: 2px;
-  border-style: solid;
+  color: #969696;
 }
-/* line 28, ../scss/modules/_buttons.scss */
+/* line 31, ../scss/modules/_buttons.scss */
 button.light:hover, .button.light:hover, [class*="button-"].light:hover {
   background-color: #e2e2e2;
   border-color: #d0d0d0;
 }
-/* line 34, ../scss/modules/_buttons.scss */
+/* line 37, ../scss/modules/_buttons.scss */
 button.light:active, .button.light:active, [class*="button-"].light:active {
   background-color: #d5d5d5;
   border-color: #b7b7b7;
 }
-/* line 40, ../scss/modules/_buttons.scss */
-button.light.transparent, .button.light.transparent, [class*="button-"].light.transparent {
-  background-color: transparent !important;
-  color: #222222 !important;
-}
-/* line 63, ../scss/modules/_buttons.scss */
+/* line 61, ../scss/modules/_buttons.scss */
 button.dark, .button.dark, [class*="button-"].dark {
-  color: #efefef !important;
   background-color: #222222;
   border-color: #101010;
-  border-width: 2px;
-  border-style: solid;
+  color: white;
 }
-/* line 28, ../scss/modules/_buttons.scss */
+/* line 31, ../scss/modules/_buttons.scss */
 button.dark:hover, .button.dark:hover, [class*="button-"].dark:hover {
   background-color: #151515;
   border-color: #030303;
 }
-/* line 34, ../scss/modules/_buttons.scss */
+/* line 37, ../scss/modules/_buttons.scss */
 button.dark:active, .button.dark:active, [class*="button-"].dark:active {
   background-color: #090909;
   border-color: black;
 }
-/* line 40, ../scss/modules/_buttons.scss */
-button.dark.transparent, .button.dark.transparent, [class*="button-"].dark.transparent {
-  background-color: transparent !important;
-  color: #222222 !important;
-}
-/* line 64, ../scss/modules/_buttons.scss */
+/* line 62, ../scss/modules/_buttons.scss */
 button.primary, .button.primary, [class*="button-"].primary {
-  color: #efefef !important;
   background-color: #d42d26;
   border-color: #b62721;
-  border-width: 2px;
-  border-style: solid;
+  color: white;
 }
-/* line 28, ../scss/modules/_buttons.scss */
+/* line 31, ../scss/modules/_buttons.scss */
 button.primary:hover, .button.primary:hover, [class*="button-"].primary:hover {
   background-color: #be2822;
   border-color: #a0221d;
 }
-/* line 34, ../scss/modules/_buttons.scss */
+/* line 37, ../scss/modules/_buttons.scss */
 button.primary:active, .button.primary:active, [class*="button-"].primary:active {
   background-color: #a9241e;
   border-color: #751915;
 }
-/* line 40, ../scss/modules/_buttons.scss */
-button.primary.transparent, .button.primary.transparent, [class*="button-"].primary.transparent {
-  background-color: transparent !important;
-  color: #222222 !important;
-}
-/* line 65, ../scss/modules/_buttons.scss */
+/* line 63, ../scss/modules/_buttons.scss */
 button.secondary, .button.secondary, [class*="button-"].secondary {
-  color: #222222 !important;
   background-color: gray;
   border-color: #6e6e6e;
-  border-width: 2px;
-  border-style: solid;
+  color: white;
 }
-/* line 28, ../scss/modules/_buttons.scss */
+/* line 31, ../scss/modules/_buttons.scss */
 button.secondary:hover, .button.secondary:hover, [class*="button-"].secondary:hover {
   background-color: #737373;
   border-color: #616161;
 }
-/* line 34, ../scss/modules/_buttons.scss */
+/* line 37, ../scss/modules/_buttons.scss */
 button.secondary:active, .button.secondary:active, [class*="button-"].secondary:active {
   background-color: #676767;
   border-color: #484848;
 }
-/* line 40, ../scss/modules/_buttons.scss */
-button.secondary.transparent, .button.secondary.transparent, [class*="button-"].secondary.transparent {
-  background-color: transparent !important;
-  color: #222222 !important;
+/* line 65, ../scss/modules/_buttons.scss */
+button.transparent, .button.transparent, [class*="button-"].transparent {
+  background-color: transparent;
+  border-color: #d42d26;
+  color: #d42d26;
+}
+/* line 16, ../scss/modules/_buttons.scss */
+button.transparent:hover, .button.transparent:hover, [class*="button-"].transparent:hover {
+  color: white;
+}
+/* line 31, ../scss/modules/_buttons.scss */
+button.transparent:hover, .button.transparent:hover, [class*="button-"].transparent:hover {
+  background-color: #be2822;
+  border-color: #a0221d;
+}
+/* line 37, ../scss/modules/_buttons.scss */
+button.transparent:active, .button.transparent:active, [class*="button-"].transparent:active {
+  background-color: #a9241e;
+  border-color: #751915;
 }
 
 /* line 68, ../scss/modules/_buttons.scss */
@@ -2713,14 +2717,14 @@ button.secondary.transparent, .button.secondary.transparent, [class*="button-"].
   padding: 0;
   display: block;
 }
-/* line 161, ../scss/modules/_type.scss */
+/* line 172, ../scss/modules/_type.scss */
 .button-full:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 168, ../scss/modules/_type.scss */
+/* line 179, ../scss/modules/_type.scss */
 .button-full > * {
   display: inline-block;
   vertical-align: middle;
@@ -2782,26 +2786,31 @@ input.full {
   width: 100%;
   padding: 16px;
   border: 1px solid;
+  margin-bottom: 16px;
   font-size: 15.49854px;
   font-size: 0.86103rem;
+  color: white;
   background-color: #d42d26;
   border-color: #931f1a;
   color: white;
 }
-/* line 35, ../scss/modules/_alerts.scss */
+/* line 37, ../scss/modules/_alerts.scss */
 .alert.success {
+  color: white;
   background-color: #96cc69;
   border-color: #6fae3b;
   color: white;
 }
-/* line 36, ../scss/modules/_alerts.scss */
+/* line 38, ../scss/modules/_alerts.scss */
 .alert.warning {
+  color: #a97400;
   background-color: #ffcc5c;
   border-color: #ffb410;
-  color: #a97400;
+  color: white;
 }
-/* line 37, ../scss/modules/_alerts.scss */
+/* line 39, ../scss/modules/_alerts.scss */
 .alert.failure {
+  color: white;
   background-color: #c44741;
   border-color: #8d302c;
   color: white;

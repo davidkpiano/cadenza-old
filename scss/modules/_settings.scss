@@ -69,6 +69,7 @@ $type-list-ol-margin: 1.4rem !default;
 $type-list-dl-header-weight: bold !default;
 $type-list-dl-header-margin-bottom: $x-rem / 2 !default;
 $type-list-dl-margin-bottom: $x-rem / 2 !default;
+$type-list-inline-margin: $x-rem !default;
 
 $type-blockquote-color: lighten($type-base-color, 15%) !default;
 $type-blockquote-padding: 1rem !default;
@@ -91,6 +92,7 @@ $hr-margin: $x-rem/2;
 $alert-padding: $x !default;
 $alert-border: 1px solid !default;
 $alert-color-light: white !default;
+$alert-margin-bottom: $x !default;
 
 // Media Query Settings
 $aspect-ratio: 16/9 !default;
@@ -126,6 +128,7 @@ $mq-screen: "only screen" !default;
 $prefixes: moz, webkit, o !default;
 
 // Buttons
-$button-padding-vertical: $x-rem/2;
-$button-padding-horizontal: $x;
-$button-border-width: 2px;
+$button-padding-vertical: $x-rem/2 !default;
+$button-padding-horizontal: $x !default;
+$button-border-width: 2px !default;
+$button-color-light: white !default;

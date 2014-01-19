@@ -108,6 +108,17 @@ ul, ol, dl {
 
     &.clean { @include listStyle(none); }
 
+    // Inline lists
+    &.inline {
+        margin-left: 0;
+        
+        > li {
+            display: inline-block;
+            margin-right: $type-list-inline-margin;
+            white-space: nowrap;
+        }
+    }
+
     // Nested lists
     & ul, ol, dl {
         margin-bottom: 0;
@@ -239,7 +250,7 @@ abbr, acronym {
     @if $type-abbr-transform == uppercase {
         @include typeScaleRelative(1);
     }
-    
+
     text-transform: $type-abbr-transform;
     border-bottom: $type-abbr-border;
     cursor: $type-abbr-cursor;
