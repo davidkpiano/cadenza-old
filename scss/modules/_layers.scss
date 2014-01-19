@@ -11,11 +11,13 @@
     overflow: hidden;
     @include clearfix;
 
-    &.scroll {
-        overflow: auto;
-    }
+    @extend .scroll;
 }
 
 .layer, .page {
     @include layer;
+}
+
+.scroll {
+    overflow: auto;
 }

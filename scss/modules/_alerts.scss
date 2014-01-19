@@ -1,0 +1,38 @@
+// ALERT USAGE:
+// .my-general-alert {
+//   @extend .alert;
+// }
+// 
+// .my-specific-alert {
+//   @extend .alert;
+//   @include alert($color, $text-color);
+// }
+
+
+@mixin alert($color: $color-primary, $text-color: $alert-color-light) {
+    $lightness-threshold: 65%; // TODO: play around with this value
+    $border-color: darken($color, 15%);
+
+    @if lightness($color) > $lightness-threshold and $text-color == $alert-color-light {
+        $text-color: darken($color, 35%);
+    }
+
+    background-color: $color;
+    border-color: $border-color;
+
+    color: $text-color;
+}
+
+.alert {
+    display: block;
+    width: 100%;
+    padding: $alert-padding;
+    border: $alert-border;
+    @include typeScale(-1);
+
+    @include alert();
+
+    &.success { @include alert($color-success); }
+    &.warning { @include alert($color-warning); }
+    &.failure { @include alert($color-failure); }
+}

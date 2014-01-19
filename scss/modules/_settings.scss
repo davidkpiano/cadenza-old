@@ -8,7 +8,7 @@
 $x: 16px !default;
 $x-rem: 1rem !default;
 
-// Grid settings
+// Grid Settings
 $grid-columns: 12 !default;
 $grid-rows: 12 !default;
 $grid-padding: $x !default;
@@ -21,7 +21,11 @@ $color-light: #EFEFEF !default;
 $color-anchor: $color-primary !default;
 $color-anchor-hover: lighten($color-primary, 15%) !default;
 
-// Typography settings
+$color-success: #96CC69 !default;
+$color-warning: #FFCC5C !default;
+$color-failure: #C44741 !default;
+
+// Typography Settings
 $type-unit: rem !default;
 $type-ratio: 1/1.1614 !default;
 $type-base-font-size: 16px !default; // = 1em
@@ -37,6 +41,8 @@ $type-header-color: $type-base-color !default;
 $type-header-margin-top: 0 !default;
 $type-header-margin-bottom: $x-rem !default;
 $type-header-small-style: uppercase !default;
+
+$type-p-margin-bottom: $x-rem !default;
 
 $type-subheader-color: lighten($type-header-color, 15%) !default;
 $type-subheader-font-weight: 300 !default;
@@ -71,7 +77,22 @@ $type-blockquote-cite-scale: -1 !default;
 $type-blockquote-cite-color: $type-blockquote-color !default;
 $type-blockquote-margin-bottom: $x-rem !default;
 
-// Media Query settings
+$type-abbr-border: 1px dotted $color-secondary !default;
+$type-abbr-cursor: help !default;
+$type-abbr-transform: uppercase !default;
+
+// Horizontal Rule Settings
+$hr-border-style: solid !default;
+$hr-border-width: 1px !default;
+$hr-border-color: lighten($color-dark, 45%) !default;
+$hr-margin: $x-rem/2;
+
+// Alerts Settings
+$alert-padding: $x !default;
+$alert-border: 1px solid !default;
+$alert-color-light: white !default;
+
+// Media Query Settings
 $aspect-ratio: 16/9 !default;
 $static-width: 960px !default;
 $static-height: $static-width/$aspect-ratio !default;

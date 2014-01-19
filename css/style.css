@@ -1,5 +1,28 @@
 @charset "UTF-8";
 @import url("//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic");
+/* Typography Resets */
+/* line 8, ../scss/modules/_reset.scss */
+div, dl, dt, dd,
+ul, ol, li,
+h1, h2, h3, h4, h5, h6,
+pre, form, p,
+blockquote, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 13, ../scss/modules/_reset.scss */
+em, i {
+  font-style: italic;
+  line-height: inherit;
+}
+
+/* line 18, ../scss/modules/_reset.scss */
+strong, b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
 /* line 48, ../scss/modules/_grid.scss */
 .col, [class*="col-"] {
   -webkit-box-sizing: border-box;
@@ -2276,7 +2299,7 @@ html {
   box-sizing: border-box;
 }
 
-/* line 19, ../scss/modules/_layers.scss */
+/* line 17, ../scss/modules/_layers.scss */
 .layer, .page {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2298,17 +2321,18 @@ html {
 .layer.content, .page.content {
   padding: 16px;
 }
-/* line 14, ../scss/modules/_layers.scss */
-.layer.scroll, .page.scroll {
+
+/* line 21, ../scss/modules/_layers.scss */
+.scroll, .layer, .page {
   overflow: auto;
 }
 
-/* line 42, ../scss/modules/_type.scss */
+/* line 50, ../scss/modules/_type.scss */
 html {
   font-size: 18px;
 }
 
-/* line 46, ../scss/modules/_type.scss */
+/* line 54, ../scss/modules/_type.scss */
 body {
   font-style: normal;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2321,7 +2345,7 @@ body {
   -o-hyphens: auto;
   hyphens: auto;
 }
-/* line 14, ../scss/modules/_type.scss */
+/* line 18, ../scss/modules/_type.scss */
 body h1, body h2, body h3, body h4, body h5, body h6 {
   line-height: 1;
   font-weight: 400;
@@ -2331,174 +2355,184 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-/* line 23, ../scss/modules/_type.scss */
+/* line 27, ../scss/modules/_type.scss */
 body h1.subheader, body h2.subheader, body h3.subheader, body h4.subheader, body h5.subheader, body h6.subheader {
   color: #484848;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 1rem;
 }
-/* line 32, ../scss/modules/_type.scss */
+/* line 34, ../scss/modules/_type.scss */
+body h1 small, body h2 small, body h3 small, body h4 small, body h5 small, body h6 small {
+  font-size: 74.13723%;
+}
+/* line 40, ../scss/modules/_type.scss */
 body h1 {
   font-size: 38.03484px;
   font-size: 2.11305rem;
 }
-/* line 32, ../scss/modules/_type.scss */
+/* line 40, ../scss/modules/_type.scss */
 body h2 {
   font-size: 32.74913px;
   font-size: 1.8194rem;
 }
-/* line 32, ../scss/modules/_type.scss */
+/* line 40, ../scss/modules/_type.scss */
 body h3 {
   font-size: 28.19798px;
   font-size: 1.56655rem;
 }
-/* line 32, ../scss/modules/_type.scss */
+/* line 40, ../scss/modules/_type.scss */
 body h4 {
   font-size: 24.2793px;
   font-size: 1.34885rem;
 }
-/* line 32, ../scss/modules/_type.scss */
+/* line 40, ../scss/modules/_type.scss */
 body h5 {
   font-size: 20.9052px;
   font-size: 1.1614rem;
 }
-/* line 32, ../scss/modules/_type.scss */
+/* line 40, ../scss/modules/_type.scss */
 body h6 {
   font-size: 18px;
   font-size: 1rem;
   text-transform: uppercase;
 }
 
-/* line 57, ../scss/modules/_type.scss */
+/* line 65, ../scss/modules/_type.scss */
 a {
   text-decoration: none;
   color: #d42d26;
 }
-/* line 61, ../scss/modules/_type.scss */
+/* line 69, ../scss/modules/_type.scss */
 a:hover {
   color: #e36963;
   text-decoration: none;
 }
+/* line 74, ../scss/modules/_type.scss */
+a img {
+  border: none;
+}
 
-/* line 90, ../scss/modules/_type.scss */
+/* line 79, ../scss/modules/_type.scss */
+p {
+  margin-bottom: 1rem;
+}
+
+/* line 104, ../scss/modules/_type.scss */
 ul, ol, dl {
   list-style-position: outside;
   margin-bottom: 1rem;
   padding: 0;
 }
-/* line 95, ../scss/modules/_type.scss */
+/* line 109, ../scss/modules/_type.scss */
 ul.clean, ol.clean, dl.clean {
   list-style: none;
-  margin: 0;
   margin-left: 0;
 }
-/* line 75, ../scss/modules/_type.scss */
+/* line 90, ../scss/modules/_type.scss */
 ul.clean ul, ul.clean ol, ol.clean ul, ol.clean ol, dl.clean ul, dl.clean ol {
   list-style: none;
-  margin: 0;
   margin-left: 0;
 }
-/* line 98, ../scss/modules/_type.scss */
+/* line 112, ../scss/modules/_type.scss */
 ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, dl ul, dl ol, dl dl {
   margin-bottom: 0;
 }
 
-/* line 103, ../scss/modules/_type.scss */
+/* line 117, ../scss/modules/_type.scss */
 ul {
   margin-left: 1rem;
 }
-/* line 106, ../scss/modules/_type.scss */
+/* line 120, ../scss/modules/_type.scss */
 ul.square {
   list-style-type: square;
 }
-/* line 83, ../scss/modules/_type.scss */
+/* line 97, ../scss/modules/_type.scss */
 ul.square ul, ul.square ol {
   list-style: inherit;
 }
-/* line 107, ../scss/modules/_type.scss */
+/* line 121, ../scss/modules/_type.scss */
 ul.circle {
   list-style-type: circle;
 }
-/* line 83, ../scss/modules/_type.scss */
+/* line 97, ../scss/modules/_type.scss */
 ul.circle ul, ul.circle ol {
   list-style: inherit;
 }
-/* line 108, ../scss/modules/_type.scss */
+/* line 122, ../scss/modules/_type.scss */
 ul.disc {
   list-style-type: disc;
 }
-/* line 83, ../scss/modules/_type.scss */
+/* line 97, ../scss/modules/_type.scss */
 ul.disc ul, ul.disc ol {
   list-style: inherit;
 }
 
-/* line 111, ../scss/modules/_type.scss */
+/* line 125, ../scss/modules/_type.scss */
 ol {
   margin-left: 1.4rem;
 }
 
-/* line 115, ../scss/modules/_type.scss */
+/* line 129, ../scss/modules/_type.scss */
 li {
   list-style-position: outside;
 }
 
-/* line 120, ../scss/modules/_type.scss */
+/* line 134, ../scss/modules/_type.scss */
 dl dt {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-/* line 124, ../scss/modules/_type.scss */
+/* line 138, ../scss/modules/_type.scss */
 dl dd {
   margin-bottom: 0.5rem;
-  margin-left: 0;
 }
 
-/* line 132, ../scss/modules/_type.scss */
+/* line 143, ../scss/modules/_type.scss */
 small {
   font-size: 15.49854px;
   font-size: 0.86103rem;
 }
 
-/* line 137, ../scss/modules/_type.scss */
+/* line 148, ../scss/modules/_type.scss */
 .strong {
   font-weight: bold;
 }
 
-/* line 142, ../scss/modules/_type.scss */
+/* line 153, ../scss/modules/_type.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 143, ../scss/modules/_type.scss */
+/* line 154, ../scss/modules/_type.scss */
 .align-right {
   text-align: right;
 }
 
-/* line 144, ../scss/modules/_type.scss */
+/* line 155, ../scss/modules/_type.scss */
 .align-center {
   text-align: center;
 }
 
-/* line 150, ../scss/modules/_type.scss */
+/* line 161, ../scss/modules/_type.scss */
 .valign-center:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 157, ../scss/modules/_type.scss */
+/* line 168, ../scss/modules/_type.scss */
 .valign-center > * {
   display: inline-block;
   vertical-align: middle;
 }
 
-/* line 168, ../scss/modules/_type.scss */
+/* line 179, ../scss/modules/_type.scss */
 .stacked {
   margin-bottom: 0;
 }
 
-/* line 173, ../scss/modules/_type.scss */
+/* line 184, ../scss/modules/_type.scss */
 abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var, xmp {
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -2507,7 +2541,7 @@ abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var,
   hyphens: none;
 }
 
-/* line 178, ../scss/modules/_type.scss */
+/* line 189, ../scss/modules/_type.scss */
 pre {
   white-space: pre;
   color: #222222;
@@ -2515,14 +2549,14 @@ pre {
   font-size: 1rem;
   font-family: monospace;
 }
-/* line 184, ../scss/modules/_type.scss */
+/* line 195, ../scss/modules/_type.scss */
 pre code {
   word-wrap: normal;
   white-space: -moz-pre-wrap;
   white-space: pre-wrap;
 }
 
-/* line 191, ../scss/modules/_type.scss */
+/* line 202, ../scss/modules/_type.scss */
 code {
   white-space: pre;
   color: #222222;
@@ -2531,24 +2565,41 @@ code {
   font-family: monospace;
 }
 
-/* line 199, ../scss/modules/_type.scss */
+/* line 210, ../scss/modules/_type.scss */
 blockquote {
   color: #484848;
   padding: 1rem;
   border-left: 1px solid #484848;
-  margin: 0;
   margin-bottom: 1rem;
 }
-/* line 206, ../scss/modules/_type.scss */
+/* line 216, ../scss/modules/_type.scss */
 blockquote cite {
   display: block;
   font-size: 15.49854px;
   font-size: 0.86103rem;
   color: #484848;
 }
-/* line 212, ../scss/modules/_type.scss */
+/* line 222, ../scss/modules/_type.scss */
 blockquote p {
   color: #484848;
+}
+
+/* line 228, ../scss/modules/_type.scss */
+hr {
+  clear: both;
+  height: 0;
+  margin: 0.5rem 0;
+  border-style: solid;
+  border-color: #959595;
+  border-width: 1px 0 0;
+}
+
+/* line 238, ../scss/modules/_type.scss */
+abbr, acronym {
+  font-size: 86.10298%;
+  text-transform: uppercase;
+  border-bottom: 1px dotted gray;
+  cursor: help;
 }
 
 /* line 58, ../scss/modules/_buttons.scss */
@@ -2662,14 +2713,14 @@ button.secondary.transparent, .button.secondary.transparent, [class*="button-"].
   padding: 0;
   display: block;
 }
-/* line 150, ../scss/modules/_type.scss */
+/* line 161, ../scss/modules/_type.scss */
 .button-full:before {
   content: "";
   display: inline-block;
   height: 100%;
   vertical-align: middle;
 }
-/* line 157, ../scss/modules/_type.scss */
+/* line 168, ../scss/modules/_type.scss */
 .button-full > * {
   display: inline-block;
   vertical-align: middle;
@@ -2723,6 +2774,37 @@ input.full {
   .print-hide {
     display: none !important;
   }
+}
+
+/* line 26, ../scss/modules/_alerts.scss */
+.alert {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid;
+  font-size: 15.49854px;
+  font-size: 0.86103rem;
+  background-color: #d42d26;
+  border-color: #931f1a;
+  color: white;
+}
+/* line 35, ../scss/modules/_alerts.scss */
+.alert.success {
+  background-color: #96cc69;
+  border-color: #6fae3b;
+  color: white;
+}
+/* line 36, ../scss/modules/_alerts.scss */
+.alert.warning {
+  background-color: #ffcc5c;
+  border-color: #ffb410;
+  color: #a97400;
+}
+/* line 37, ../scss/modules/_alerts.scss */
+.alert.failure {
+  background-color: #c44741;
+  border-color: #8d302c;
+  color: white;
 }
 
 /* line 19, ../scss/style.scss */

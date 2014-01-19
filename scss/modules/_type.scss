@@ -10,6 +10,10 @@
     font-size: ($font-size / $base)#{$unit};
 }
 
+@mixin typeScaleRelative($exponent: 1, $ratio: $type-ratio) {
+    font-size: percentage(pow($ratio, $exponent));
+}
+
 @mixin headings {
     h1, h2, h3, h4, h5, h6 {
         line-height: 1;
@@ -25,6 +29,10 @@
             font-weight: $type-subheader-font-weight;
             margin-top: $type-subheader-margin-top;
             margin-bottom: $type-subheader-margin-bottom;
+        }
+
+        small {
+            font-size: percentage(pow($type-ratio, 2));
         }
     }
 
@@ -60,8 +68,16 @@ a {
 
     &:hover {
         color: $color-anchor-hover;
-        text-decoration: $type-anchor-decoration;
+        text-decoration: $type-anchor-hover-decoration;
     }
+
+    img {
+        border: none;
+    }
+}
+
+p {
+    margin-bottom: $type-p-margin-bottom;
 }
 
 // Lists
@@ -69,12 +85,10 @@ a {
 @mixin listStyle($type: inherit) {
     @if $type == none {
         list-style: none;
-        margin: 0;
         margin-left: 0;
 
         ul, ol {
             list-style: none;
-            margin: 0;
             margin-left: 0;
         }
     } @else {
@@ -123,9 +137,6 @@ dl {
     }
     dd {
         margin-bottom: $type-list-dl-margin-bottom;
-
-        // TODO: Find this in a reset
-        margin-left: 0;
     }
 }
 
@@ -200,7 +211,6 @@ blockquote {
     color: $type-blockquote-color;
     padding: $type-blockquote-padding;
     border-left: $type-blockquote-border;
-    margin: 0; // TODO: reset!
     margin-bottom: $type-blockquote-margin-bottom;
 
     cite {
@@ -212,4 +222,25 @@ blockquote {
     p {
         color: $type-blockquote-color;
     }
+}
+
+// Horizontal Rules
+hr {
+    clear: both;
+    height: 0;
+    margin: $hr-margin 0;
+    border-style: $hr-border-style;
+    border-color: $hr-border-color;
+    border-width: $hr-border-width 0 0;
+}
+
+// Abbreviations
+abbr, acronym {
+    @if $type-abbr-transform == uppercase {
+        @include typeScaleRelative(1);
+    }
+    
+    text-transform: $type-abbr-transform;
+    border-bottom: $type-abbr-border;
+    cursor: $type-abbr-cursor;
 }
