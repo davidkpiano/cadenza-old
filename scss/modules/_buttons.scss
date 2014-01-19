@@ -1,42 +1,61 @@
 
 
-@mixin buttonStyle($color: $color-primary, $text-color: $color, $transparent: false) {
+@mixin buttonStyle($color: $color-primary, $text-color: $color) {
     $color-background: $color;
     $color-border: darken($color-background, 7%);
     $color-background-hover: darken($color-background, 5%);
     $color-border-hover: darken($color-background-hover, 7%);
     $color-background-active: darken($color-background-hover, 5%);
-    $color-borderActive: darken($color-border-hover, 10%);
+    $color-border-active: darken($color-border-hover, 10%);
 
-    @if $transparent {
-        background-color: transparent;
-        border-color: $color;
-        color: $text-color;
+    background-color: $color-background;
+    border-color: $color-border;
+    border-width: $button-border-width;
 
-        &:hover {
-            color: foregroundColor($text-color);
-        }
+    @if $text-color == $color {
+        color: foregroundColor($color);
     } @else {
-        background-color: $color-background;
-        border-color: $color-border;
-
-        @if $text-color == $color {
-            color: foregroundColor($color);
-        } @else {
-            color: $text-color;
-        }
+        color: $text-color;
     }
 
-    // Hover style
-    &:hover {
-        background-color: $color-background-hover;
+    &:hover, &:focus {
         border-color: $color-border-hover;
+        background-color: $color-background-hover;
     }
 
-    // Active style
     &:active {
         background-color: $color-background-active;
-        border-color: $color-borderActive;
+        border-color: $color-border-active;
+    }
+
+    &.transparent {
+        @include buttonTransparentStyle($color, $text-color);
+    }
+}
+
+@mixin buttonTransparentStyle($color: $color-primary, $text-color: $color) {
+    $color-background: $color;
+    $color-border: darken($color-background, 7%);
+    $color-background-hover: darken($color-background, 5%);
+    $color-border-hover: darken($color-background-hover, 7%);
+    $color-background-active: darken($color-background-hover, 5%);
+    $color-border-active: darken($color-border-hover, 10%);
+
+    background-color: transparent;
+    border-color: $color;
+    border-width: $button-transparent-border-width;
+    color: $text-color;
+
+    &:hover, &:focus {
+        color: foregroundColor($color);
+        background-color: $color;
+        border-color: $color;
+    }
+
+    &:active {
+        color: foregroundColor($color);
+        background-color: $color-background-hover;
+        border-color: $color-background-hover;
     }
 }
 
@@ -44,7 +63,6 @@
     display: inline-block;
     padding: $button-padding-vertical $button-padding-horizontal;
     cursor: pointer;
-    border-width: $button-border-width;
     border-style: solid;
 
     // Text style
@@ -54,7 +72,7 @@
     color: $color-dark;
 }
 
-button, .button, [class*="button-"] {
+button, .button, input[type=button], input[type=submit], [class*="button-"] {
     @include button;
 
     &.light { @include buttonStyle($color-light); }
@@ -62,7 +80,9 @@ button, .button, [class*="button-"] {
     &.primary { @include buttonStyle($color-primary); }
     &.secondary { @include buttonStyle($color-secondary); }
 
-    &.transparent { @include buttonStyle($color-primary, $transparent: true); }
+    &.small {
+        padding: $button-small-padding-vertical $button-small-padding-horizontal;
+    }
 }
 
 .button-full {

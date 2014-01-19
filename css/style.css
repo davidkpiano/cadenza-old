@@ -2612,12 +2612,11 @@ abbr, acronym {
   cursor: help;
 }
 
-/* line 57, ../scss/modules/_buttons.scss */
-button, .button, [class*="button-"] {
+/* line 75, ../scss/modules/_buttons.scss */
+button, .button, input[type=button], input[type=submit], [class*="button-"] {
   display: inline-block;
   padding: 0.5rem 16px;
   cursor: pointer;
-  border-width: 2px;
   border-style: solid;
   font-size: 15.49854px;
   font-size: 0.86103rem;
@@ -2625,92 +2624,156 @@ button, .button, [class*="button-"] {
   text-align: center;
   color: #222222;
 }
-/* line 60, ../scss/modules/_buttons.scss */
-button.light, .button.light, [class*="button-"].light {
+/* line 78, ../scss/modules/_buttons.scss */
+button.light, .button.light, input[type=button].light, input[type=submit].light, [class*="button-"].light {
   background-color: #efefef;
   border-color: #dddddd;
+  border-width: 1px;
   color: #969696;
 }
-/* line 31, ../scss/modules/_buttons.scss */
-button.light:hover, .button.light:hover, [class*="button-"].light:hover {
-  background-color: #e2e2e2;
+/* line 21, ../scss/modules/_buttons.scss */
+button.light:hover, button.light:focus, .button.light:hover, .button.light:focus, input[type=button].light:hover, input[type=button].light:focus, input[type=submit].light:hover, input[type=submit].light:focus, [class*="button-"].light:hover, [class*="button-"].light:focus {
   border-color: #d0d0d0;
+  background-color: #e2e2e2;
 }
-/* line 37, ../scss/modules/_buttons.scss */
-button.light:active, .button.light:active, [class*="button-"].light:active {
+/* line 26, ../scss/modules/_buttons.scss */
+button.light:active, .button.light:active, input[type=button].light:active, input[type=submit].light:active, [class*="button-"].light:active {
   background-color: #d5d5d5;
   border-color: #b7b7b7;
 }
-/* line 61, ../scss/modules/_buttons.scss */
-button.dark, .button.dark, [class*="button-"].dark {
+/* line 31, ../scss/modules/_buttons.scss */
+button.light.transparent, .button.light.transparent, input[type=button].light.transparent, input[type=submit].light.transparent, [class*="button-"].light.transparent {
+  background-color: transparent;
+  border-color: #efefef;
+  border-width: 2px;
+  color: #efefef;
+}
+/* line 49, ../scss/modules/_buttons.scss */
+button.light.transparent:hover, button.light.transparent:focus, .button.light.transparent:hover, .button.light.transparent:focus, input[type=button].light.transparent:hover, input[type=button].light.transparent:focus, input[type=submit].light.transparent:hover, input[type=submit].light.transparent:focus, [class*="button-"].light.transparent:hover, [class*="button-"].light.transparent:focus {
+  color: #969696;
+  background-color: #efefef;
+  border-color: #efefef;
+}
+/* line 55, ../scss/modules/_buttons.scss */
+button.light.transparent:active, .button.light.transparent:active, input[type=button].light.transparent:active, input[type=submit].light.transparent:active, [class*="button-"].light.transparent:active {
+  color: #969696;
+  background-color: #e2e2e2;
+  border-color: #e2e2e2;
+}
+/* line 79, ../scss/modules/_buttons.scss */
+button.dark, .button.dark, input[type=button].dark, input[type=submit].dark, [class*="button-"].dark {
   background-color: #222222;
   border-color: #101010;
+  border-width: 1px;
   color: white;
 }
-/* line 31, ../scss/modules/_buttons.scss */
-button.dark:hover, .button.dark:hover, [class*="button-"].dark:hover {
-  background-color: #151515;
+/* line 21, ../scss/modules/_buttons.scss */
+button.dark:hover, button.dark:focus, .button.dark:hover, .button.dark:focus, input[type=button].dark:hover, input[type=button].dark:focus, input[type=submit].dark:hover, input[type=submit].dark:focus, [class*="button-"].dark:hover, [class*="button-"].dark:focus {
   border-color: #030303;
+  background-color: #151515;
 }
-/* line 37, ../scss/modules/_buttons.scss */
-button.dark:active, .button.dark:active, [class*="button-"].dark:active {
+/* line 26, ../scss/modules/_buttons.scss */
+button.dark:active, .button.dark:active, input[type=button].dark:active, input[type=submit].dark:active, [class*="button-"].dark:active {
   background-color: #090909;
   border-color: black;
 }
-/* line 62, ../scss/modules/_buttons.scss */
-button.primary, .button.primary, [class*="button-"].primary {
+/* line 31, ../scss/modules/_buttons.scss */
+button.dark.transparent, .button.dark.transparent, input[type=button].dark.transparent, input[type=submit].dark.transparent, [class*="button-"].dark.transparent {
+  background-color: transparent;
+  border-color: #222222;
+  border-width: 2px;
+  color: #222222;
+}
+/* line 49, ../scss/modules/_buttons.scss */
+button.dark.transparent:hover, button.dark.transparent:focus, .button.dark.transparent:hover, .button.dark.transparent:focus, input[type=button].dark.transparent:hover, input[type=button].dark.transparent:focus, input[type=submit].dark.transparent:hover, input[type=submit].dark.transparent:focus, [class*="button-"].dark.transparent:hover, [class*="button-"].dark.transparent:focus {
+  color: white;
+  background-color: #222222;
+  border-color: #222222;
+}
+/* line 55, ../scss/modules/_buttons.scss */
+button.dark.transparent:active, .button.dark.transparent:active, input[type=button].dark.transparent:active, input[type=submit].dark.transparent:active, [class*="button-"].dark.transparent:active {
+  color: white;
+  background-color: #151515;
+  border-color: #151515;
+}
+/* line 80, ../scss/modules/_buttons.scss */
+button.primary, .button.primary, input[type=button].primary, input[type=submit].primary, [class*="button-"].primary {
   background-color: #d42d26;
   border-color: #b62721;
+  border-width: 1px;
   color: white;
 }
-/* line 31, ../scss/modules/_buttons.scss */
-button.primary:hover, .button.primary:hover, [class*="button-"].primary:hover {
-  background-color: #be2822;
+/* line 21, ../scss/modules/_buttons.scss */
+button.primary:hover, button.primary:focus, .button.primary:hover, .button.primary:focus, input[type=button].primary:hover, input[type=button].primary:focus, input[type=submit].primary:hover, input[type=submit].primary:focus, [class*="button-"].primary:hover, [class*="button-"].primary:focus {
   border-color: #a0221d;
+  background-color: #be2822;
 }
-/* line 37, ../scss/modules/_buttons.scss */
-button.primary:active, .button.primary:active, [class*="button-"].primary:active {
+/* line 26, ../scss/modules/_buttons.scss */
+button.primary:active, .button.primary:active, input[type=button].primary:active, input[type=submit].primary:active, [class*="button-"].primary:active {
   background-color: #a9241e;
   border-color: #751915;
 }
-/* line 63, ../scss/modules/_buttons.scss */
-button.secondary, .button.secondary, [class*="button-"].secondary {
+/* line 31, ../scss/modules/_buttons.scss */
+button.primary.transparent, .button.primary.transparent, input[type=button].primary.transparent, input[type=submit].primary.transparent, [class*="button-"].primary.transparent {
+  background-color: transparent;
+  border-color: #d42d26;
+  border-width: 2px;
+  color: #d42d26;
+}
+/* line 49, ../scss/modules/_buttons.scss */
+button.primary.transparent:hover, button.primary.transparent:focus, .button.primary.transparent:hover, .button.primary.transparent:focus, input[type=button].primary.transparent:hover, input[type=button].primary.transparent:focus, input[type=submit].primary.transparent:hover, input[type=submit].primary.transparent:focus, [class*="button-"].primary.transparent:hover, [class*="button-"].primary.transparent:focus {
+  color: white;
+  background-color: #d42d26;
+  border-color: #d42d26;
+}
+/* line 55, ../scss/modules/_buttons.scss */
+button.primary.transparent:active, .button.primary.transparent:active, input[type=button].primary.transparent:active, input[type=submit].primary.transparent:active, [class*="button-"].primary.transparent:active {
+  color: white;
+  background-color: #be2822;
+  border-color: #be2822;
+}
+/* line 81, ../scss/modules/_buttons.scss */
+button.secondary, .button.secondary, input[type=button].secondary, input[type=submit].secondary, [class*="button-"].secondary {
   background-color: gray;
   border-color: #6e6e6e;
+  border-width: 1px;
   color: white;
 }
-/* line 31, ../scss/modules/_buttons.scss */
-button.secondary:hover, .button.secondary:hover, [class*="button-"].secondary:hover {
-  background-color: #737373;
+/* line 21, ../scss/modules/_buttons.scss */
+button.secondary:hover, button.secondary:focus, .button.secondary:hover, .button.secondary:focus, input[type=button].secondary:hover, input[type=button].secondary:focus, input[type=submit].secondary:hover, input[type=submit].secondary:focus, [class*="button-"].secondary:hover, [class*="button-"].secondary:focus {
   border-color: #616161;
+  background-color: #737373;
 }
-/* line 37, ../scss/modules/_buttons.scss */
-button.secondary:active, .button.secondary:active, [class*="button-"].secondary:active {
+/* line 26, ../scss/modules/_buttons.scss */
+button.secondary:active, .button.secondary:active, input[type=button].secondary:active, input[type=submit].secondary:active, [class*="button-"].secondary:active {
   background-color: #676767;
   border-color: #484848;
 }
-/* line 65, ../scss/modules/_buttons.scss */
-button.transparent, .button.transparent, [class*="button-"].transparent {
-  background-color: transparent;
-  border-color: #d42d26;
-  color: #d42d26;
-}
-/* line 16, ../scss/modules/_buttons.scss */
-button.transparent:hover, .button.transparent:hover, [class*="button-"].transparent:hover {
-  color: white;
-}
 /* line 31, ../scss/modules/_buttons.scss */
-button.transparent:hover, .button.transparent:hover, [class*="button-"].transparent:hover {
-  background-color: #be2822;
-  border-color: #a0221d;
+button.secondary.transparent, .button.secondary.transparent, input[type=button].secondary.transparent, input[type=submit].secondary.transparent, [class*="button-"].secondary.transparent {
+  background-color: transparent;
+  border-color: gray;
+  border-width: 2px;
+  color: gray;
 }
-/* line 37, ../scss/modules/_buttons.scss */
-button.transparent:active, .button.transparent:active, [class*="button-"].transparent:active {
-  background-color: #a9241e;
-  border-color: #751915;
+/* line 49, ../scss/modules/_buttons.scss */
+button.secondary.transparent:hover, button.secondary.transparent:focus, .button.secondary.transparent:hover, .button.secondary.transparent:focus, input[type=button].secondary.transparent:hover, input[type=button].secondary.transparent:focus, input[type=submit].secondary.transparent:hover, input[type=submit].secondary.transparent:focus, [class*="button-"].secondary.transparent:hover, [class*="button-"].secondary.transparent:focus {
+  color: white;
+  background-color: gray;
+  border-color: gray;
+}
+/* line 55, ../scss/modules/_buttons.scss */
+button.secondary.transparent:active, .button.secondary.transparent:active, input[type=button].secondary.transparent:active, input[type=submit].secondary.transparent:active, [class*="button-"].secondary.transparent:active {
+  color: white;
+  background-color: #737373;
+  border-color: #737373;
+}
+/* line 83, ../scss/modules/_buttons.scss */
+button.small, .button.small, input[type=button].small, input[type=submit].small, [class*="button-"].small {
+  padding: 0.25rem 8px;
 }
 
-/* line 68, ../scss/modules/_buttons.scss */
+/* line 88, ../scss/modules/_buttons.scss */
 .button-full {
   width: 100%;
   height: 100%;
@@ -2730,7 +2793,7 @@ button.transparent:active, .button.transparent:active, [class*="button-"].transp
   vertical-align: middle;
 }
 
-/* line 77, ../scss/modules/_buttons.scss */
+/* line 97, ../scss/modules/_buttons.scss */
 .button-block {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2750,10 +2813,9 @@ input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  outline: none;
   padding: 0;
 }
-/* line 8, ../scss/modules/_form.scss */
+/* line 7, ../scss/modules/_form.scss */
 input.full {
   height: 100%;
   width: 100%;

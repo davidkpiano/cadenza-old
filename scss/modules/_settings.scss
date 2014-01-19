@@ -130,5 +130,12 @@ $prefixes: moz, webkit, o !default;
 // Buttons
 $button-padding-vertical: $x-rem/2 !default;
 $button-padding-horizontal: $x !default;
-$button-border-width: 2px !default;
+$button-border-width: 1px !default;
 $button-color-light: white !default;
+
+// Transparent Buttons
+$button-transparent-border-width: 2px !default;
+
+// Small Buttons 
+$button-small-padding-vertical: $button-padding-vertical / 2 !default;
+$button-small-padding-horizontal: $button-padding-horizontal / 2 !default;
