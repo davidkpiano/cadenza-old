@@ -10,3 +10,87 @@ input {
         border: none;
     }
 }
+
+input[type=text] {
+    margin-right: $text-margin-right;
+    padding: $text-padding-vertical $text-padding-horizontal;
+    border: $text-border-width solid;
+    border-color: $text-border-color;
+    outline: none;
+
+    @include typeScale($text-type-scale);
+
+    &:focus { border-color: $text-border-focus-color; }
+
+    &.success { border-color: $text-border-success-color; }
+    &.warning { border-color: $text-border-warning-color; }
+    &.failure { border-color: $text-border-failure-color; }
+}
+
+// Labels
+label {
+    &.affix, &.prefix, &.postfix {    
+        @include typeScale($label-affix-type-scale);
+        padding: $label-affix-padding-vertical $label-affix-padding-horizontal;
+        background: $label-affix-bgcolor;
+        border: $label-affix-border-width solid;
+        border-color: $label-affix-border-color;
+    }
+}
+.affix {
+    margin-left: 0;
+    margin-right: 0;
+    float: left;
+
+    &:hover, &:focus {
+        z-index: 2;
+    }
+}
+
+
+span.affix, span.prefix, span.postfix {
+}
+
+.prefix {
+    @extend .affix;
+    margin-left: inherit;
+    border-right-width: 0;
+}
+
+.postfix {
+    @extend .affix;
+    margin-right: inherit;
+    border-left-width: 0;
+}
+
+// Groups
+.affix-all {
+    @include clearfix;
+
+    #{$form-affixable-selectors} {
+        @extend .prefix;
+    }
+}
+
+.button-group {
+    @include clearfix;
+    margin-bottom: $button-group-margin-bottom;
+
+    > #{$button-selectors} {
+        @extend .affix;
+        margin-left: -$button-border-width;
+
+        &:first-child { margin-left: inherit; }
+        &:hover, &:focus { z-index: 2; }
+    }
+
+    &.inline {
+        display: inline-block;
+        margin-right: $button-group-margin-right;
+    }
+}
+
+
+
+
+

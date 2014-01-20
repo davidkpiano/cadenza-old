@@ -35,11 +35,11 @@
 
 @mixin buttonTransparentStyle($color: $color-primary, $text-color: $color) {
     $color-background: $color;
-    $color-border: darken($color-background, 7%);
+    $color-border: $color-background;
     $color-background-hover: darken($color-background, 5%);
-    $color-border-hover: darken($color-background-hover, 7%);
+    $color-border-hover: $color-background-hover;
     $color-background-active: darken($color-background-hover, 5%);
-    $color-border-active: darken($color-border-hover, 10%);
+    $color-border-active: $color-background-active;
 
     background-color: transparent;
     border-color: $color;
@@ -59,21 +59,23 @@
     }
 }
 
-@mixin button($font-scale: -1) {
+@mixin button($type-scale: $button-type-scale) {
     display: inline-block;
     padding: $button-padding-vertical $button-padding-horizontal;
     cursor: pointer;
     border-style: solid;
+    margin-right: $button-margin-right;
 
     // Text style
-    @include typeScale($font-scale);
+    @include typeScale($type-scale);
     text-decoration: none;
     text-align: center;
     color: $color-dark;
 }
 
-button, .button, input[type=button], input[type=submit], [class*="button-"] {
+button, .button, input[type=submit] {
     @include button;
+    @include buttonStyle();
 
     &.light { @include buttonStyle($color-light); }
     &.dark { @include buttonStyle($color-dark); }
@@ -97,4 +99,3 @@ button, .button, input[type=button], input[type=submit], [class*="button-"] {
 .button-block {
     @include row;
 }
-

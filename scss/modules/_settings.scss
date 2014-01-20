@@ -18,6 +18,7 @@ $color-primary: blue !default;
 $color-secondary: gray !default;
 $color-dark: #222 !default;
 $color-light: #EFEFEF !default;
+$color-gray: #DDD !default;
 $color-anchor: $color-primary !default;
 $color-anchor-hover: lighten($color-primary, 15%) !default;
 
@@ -127,15 +128,51 @@ $mq-screen: "only screen" !default;
 // Prefixes
 $prefixes: moz, webkit, o !default;
 
+// Form Elements
+$form-affixable-selectors: "button, .button, input[type=submit], input[type=text], label";
+$form-type-scale: -1 !default;
+$form-border-width: 1px !default;
+$form-margin-right: $x/2 !default;
+$form-padding-vertical: $x-rem/2 !default;
+$form-padding-horizontal: $x-rem/2 !default;
+
 // Buttons
-$button-padding-vertical: $x-rem/2 !default;
-$button-padding-horizontal: $x !default;
-$button-border-width: 1px !default;
+$button-selectors: "button, .button, input[type=button], input[type=submit]" !default;
+$button-margin-right: $form-margin-right !default;
+$button-padding-vertical: $form-padding-vertical !default;
+$button-padding-horizontal: $form-padding-horizontal * 2 !default;
+$button-border-width: $form-border-width !default;
 $button-color-light: white !default;
+$button-type-scale: $form-type-scale !default;
 
 // Transparent Buttons
-$button-transparent-border-width: 2px !default;
+$button-transparent-border-width: $form-border-width !default;
 
 // Small Buttons 
 $button-small-padding-vertical: $button-padding-vertical / 2 !default;
 $button-small-padding-horizontal: $button-padding-horizontal / 2 !default;
+
+// Button Group
+$button-group-margin-bottom: $x-rem !default;
+$button-group-margin-right: $button-margin-right !default;
+
+// Text Box Settings
+$text-margin-right: $form-margin-right !default;
+$text-padding-vertical: $form-padding-vertical !default;
+$text-padding-horizontal: $form-padding-horizontal !default;
+$text-border-width: $form-border-width !default;
+$text-border-color: $color-gray !default;
+$text-border-focus-color: $color-primary !default;
+$text-border-success-color: $color-success !default;
+$text-border-warning-color: $color-warning !default;
+$text-border-failure-color: $color-failure !default;
+$text-type-scale: $form-type-scale !default;
+
+// Label Settings
+$label-affix-type-scale: $form-type-scale !default;
+$label-affix-padding-vertical: $form-padding-vertical !default;
+$label-affix-padding-horizontal: $form-padding-horizontal !default;
+$label-affix-bgcolor: $color-gray !default;
+$label-affix-border-color: darken($color-gray, 15%) !default;
+$label-affix-border-width: $form-border-width !default;
+
