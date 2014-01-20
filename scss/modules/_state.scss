@@ -22,6 +22,10 @@
     }
 }
 
+.hide, .hidden {
+    @include state(hide);
+}
+
 
 // Print styles
 .print-only {

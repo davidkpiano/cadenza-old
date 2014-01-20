@@ -65,6 +65,7 @@
     cursor: pointer;
     border-style: solid;
     margin-right: $button-margin-right;
+    margin-bottom: $button-margin-bottom;
 
     // Text style
     @include typeScale($type-scale);
@@ -86,9 +87,16 @@ button, .button, input[type=submit] {
         padding: $button-small-padding-vertical $button-small-padding-horizontal;
     }
 
+    &.large {
+        @include typeScale(1);
+    }
+
     &.radius {
         @include border-radius($form-radius);
     }
+
+    &.left { float: left; }
+    &.right { float: right; margin-right: 0; }
 }
 
 .button-full {

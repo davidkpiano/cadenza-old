@@ -78,6 +78,24 @@ a {
 
 p {
     margin-bottom: $type-p-margin-bottom;
+    line-height: $type-p-line-height;
+    font-weight: $type-p-font-weight;
+}
+
+// Text style classes
+.strong {
+    font-weight: bold;
+}
+.small {
+    @include typeScale(-1);
+}
+.large {
+    @include typeScale(1);
+}
+
+
+small {
+    @extend .small;
 }
 
 // Lists
@@ -111,7 +129,7 @@ ul, ol, dl {
     // Inline lists
     &.inline {
         margin-left: 0;
-        
+
         > li {
             display: inline-block;
             margin-right: $type-list-inline-margin;
@@ -151,14 +169,8 @@ dl {
     }
 }
 
-small {
-    @include typeScale(-1);
-}
 
-// Text style classes
-.strong {
-    font-weight: bold;
-}
+
 
 // Horizontal Alignment Classes
 .align-left { text-align: left; }

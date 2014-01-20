@@ -34,10 +34,11 @@ $type-base-font-size: 16px !default; // = 1em
 $type-base-line-height: 1.65em !default;
 $type-base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $type-base-font-style: normal !default;
+$type-base-font-weight: 300 !default;
 $type-base-color: #222 !default;
 
 $type-header-font-family: $type-custom-font-family !default;
-$type-header-font-weight: 400 !default;
+$type-header-font-weight: $type-base-font-weight !default;
 $type-header-font-style: normal !default;
 $type-header-color: $type-base-color !default;
 $type-header-margin-top: 0 !default;
@@ -45,6 +46,8 @@ $type-header-margin-bottom: $x-rem !default;
 $type-header-small-style: uppercase !default;
 
 $type-p-margin-bottom: $x-rem !default;
+$type-p-line-height: 1.5 !default;
+$type-p-font-weight: $type-base-font-weight !default;
 
 $type-subheader-color: lighten($type-header-color, 15%) !default;
 $type-subheader-font-weight: 300 !default;
@@ -142,6 +145,7 @@ $form-use-radius: true !default;
 // Buttons
 $button-selectors: "button, .button, input[type=button], input[type=submit]" !default;
 $button-margin-right: $form-margin-right !default;
+$button-margin-bottom: $button-margin-right !default;
 $button-padding-vertical: $form-padding-vertical !default;
 $button-padding-horizontal: $form-padding-horizontal * 2 !default;
 $button-border-width: $form-border-width !default;

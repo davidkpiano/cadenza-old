@@ -1,0 +1,40 @@
+// SYNTAX:
+// (button).progress[value] > div.progress-value[width] + span.progress-content
+// TODO: support for native <progress> element
+
+#{$button-selectors} {
+    &.progress {
+        > .progress-meter {
+            max-width: 100%;
+            border-color: green;
+            border: 1px solid green;
+        }
+
+        > .progress-content {
+            &:before, &:after {
+                position: absolute;
+                right: 20px;
+                opacity: 0;
+                transition: opacity 0.3s 0.3s;
+            }
+        }
+
+        // Progress Bar Styles
+        &.fill-horizontal {
+            .progress-meter {
+                position: absolute;
+                top: 0;
+                left: 0; 
+                height: 100%;
+                background: red;
+            }
+        }
+
+        &.fill-vertical {
+            .progress-meter {
+                position: absolute;
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
