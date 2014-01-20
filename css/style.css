@@ -2806,8 +2806,16 @@ button.secondary.transparent:active, .button.secondary.transparent:active, input
 button.small, .button.small, input[type=submit].small {
   padding: 0.25rem 0.5rem;
 }
+/* line 89, ../scss/modules/_buttons.scss */
+button.radius, .button.radius, input[type=submit].radius {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
 
-/* line 90, ../scss/modules/_buttons.scss */
+/* line 94, ../scss/modules/_buttons.scss */
 .button-full {
   width: 100%;
   height: 100%;
@@ -2827,7 +2835,7 @@ button.small, .button.small, input[type=submit].small {
   vertical-align: middle;
 }
 
-/* line 99, ../scss/modules/_buttons.scss */
+/* line 103, ../scss/modules/_buttons.scss */
 .button-block {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -2884,7 +2892,7 @@ input[type=text].failure {
 }
 
 /* line 32, ../scss/modules/_form.scss */
-label.affix, label.prefix, .affix-all label.button, .affix-all label, label.postfix, .button-group label.button, label.prefix, .affix-all label.button, .affix-all label, label.postfix {
+label.affix, .button-group label.button, label.prefix, label.postfix {
   font-size: 15.49854px;
   font-size: 0.86103rem;
   padding: 0.5rem 0.5rem;
@@ -2892,55 +2900,106 @@ label.affix, label.prefix, .affix-all label.button, .affix-all label, label.post
   border: 1px solid;
   border-color: #b7b7b7;
 }
-
-/* line 40, ../scss/modules/_form.scss */
-.affix, .prefix, .affix-all button, .affix-all .button, .affix-all input[type=submit], .affix-all input[type=text], .affix-all label, .postfix, .button-group > button, .button-group .button, .button-group input[type=button], .button-group input[type=submit] {
-  margin-left: 0;
-  margin-right: 0;
-  float: left;
+/* line 41, ../scss/modules/_form.scss */
+label.prefix {
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
 }
 /* line 45, ../scss/modules/_form.scss */
-.affix:hover, .prefix:hover, .affix-all button:hover, .affix-all .button:hover, .affix-all input[type=submit]:hover, .affix-all input[type=text]:hover, .affix-all label:hover, .postfix:hover, .button-group > button:hover, .button-group .button:hover, .button-group input[type=button]:hover, .button-group input[type=submit]:hover, .affix:focus, .prefix:focus, .affix-all button:focus, .affix-all .button:focus, .affix-all input[type=submit]:focus, .affix-all input[type=text]:focus, .affix-all label:focus, .postfix:focus, .button-group > button:focus, .button-group .button:focus, .button-group input[type=button]:focus, .button-group input[type=submit]:focus {
+label.postfix {
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+/* line 57, ../scss/modules/_form.scss */
+.affix, .button-group > button, .button-group .button, .button-group input[type=button], .button-group input[type=submit], input[type=text].affix, .button-group input[type=text].button, .button-group input[type=text][type=button], .button-group input[type=text][type=submit] {
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 54, ../scss/modules/_form.scss */
+.affix:focus, .button-group > button:focus, .button-group .button:focus, .button-group input[type=button]:focus, .button-group input[type=submit]:focus, input[type=text].affix:focus, .button-group input[type=text].button:focus, .button-group input[type=text][type=button]:focus, .button-group input[type=text][type=submit]:focus {
   z-index: 2;
 }
 
+/* line 64, ../scss/modules/_form.scss */
+.prefix {
+  float: left;
+  margin-right: -1px;
+  z-index: 2;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
 /* line 54, ../scss/modules/_form.scss */
-.prefix, .affix-all button, .affix-all .button, .affix-all input[type=submit], .affix-all input[type=text], .affix-all label {
-  margin-left: inherit;
-  border-right-width: 0;
-}
-
-/* line 60, ../scss/modules/_form.scss */
-.postfix {
-  margin-right: inherit;
-  border-left-width: 0;
-}
-
-/* line 67, ../scss/modules/_form.scss */
-.affix-all {
-  overflow: hidden;
-  *zoom: 1;
+.prefix:focus {
+  z-index: 2;
 }
 
 /* line 75, ../scss/modules/_form.scss */
+.postfix {
+  float: left;
+  margin-left: -1px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+/* line 54, ../scss/modules/_form.scss */
+.postfix:focus {
+  z-index: 2;
+}
+
+/* line 85, ../scss/modules/_form.scss */
 .button-group {
   overflow: hidden;
   *zoom: 1;
   margin-bottom: 1rem;
 }
-/* line 79, ../scss/modules/_form.scss */
+/* line 89, ../scss/modules/_form.scss */
 .button-group > button, .button-group .button, .button-group input[type=button], .button-group input[type=submit] {
   margin-left: -1px;
 }
-/* line 83, ../scss/modules/_form.scss */
+/* line 93, ../scss/modules/_form.scss */
 .button-group > button:first-child, .button-group .button:first-child, .button-group input[type=button]:first-child, .button-group input[type=submit]:first-child {
   margin-left: inherit;
 }
-/* line 84, ../scss/modules/_form.scss */
+/* line 94, ../scss/modules/_form.scss */
 .button-group > button:hover, .button-group > button:focus, .button-group .button:hover, .button-group .button:focus, .button-group input[type=button]:hover, .button-group input[type=button]:focus, .button-group input[type=submit]:hover, .button-group input[type=submit]:focus {
   z-index: 2;
 }
-/* line 87, ../scss/modules/_form.scss */
+/* line 97, ../scss/modules/_form.scss */
+.button-group > button:first-child, .button-group .button:first-child, .button-group input[type=button]:first-child, .button-group input[type=submit]:first-child {
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+/* line 101, ../scss/modules/_form.scss */
+.button-group > button:last-child, .button-group .button:last-child, .button-group input[type=button]:last-child, .button-group input[type=submit]:last-child {
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+/* line 108, ../scss/modules/_form.scss */
 .button-group.inline {
   display: inline-block;
   margin-right: 8px;

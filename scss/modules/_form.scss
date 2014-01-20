@@ -36,39 +36,49 @@ label {
         border: $label-affix-border-width solid;
         border-color: $label-affix-border-color;
     }
-}
-.affix {
-    margin-left: 0;
-    margin-right: 0;
-    float: left;
 
-    &:hover, &:focus {
-        z-index: 2;
+    @if $form-use-radius {    
+        &.prefix {
+            @include border-top-left-radius($form-radius);
+            @include border-bottom-left-radius($form-radius);
+        }
+        &.postfix {
+            @include border-top-right-radius($form-radius);
+            @include border-bottom-right-radius($form-radius);
+        }
     }
 }
 
+@mixin affixed {
+    float: left;
+    &:focus { z-index: 2; }
+}
 
-span.affix, span.prefix, span.postfix {
+.affix, input[type=text].affix {
+    @include affixed;
+
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .prefix {
-    @extend .affix;
-    margin-left: inherit;
-    border-right-width: 0;
+    @include affixed;
+    margin-right: -$form-border-width;
+    z-index: 2;
+
+    @if $form-use-radius {    
+        @include border-top-left-radius($form-radius);
+        @include border-bottom-left-radius($form-radius);
+    }
 }
 
 .postfix {
-    @extend .affix;
-    margin-right: inherit;
-    border-left-width: 0;
-}
+    @include affixed;
+    margin-left: -$form-border-width;
 
-// Groups
-.affix-all {
-    @include clearfix;
-
-    #{$form-affixable-selectors} {
-        @extend .prefix;
+    @if $form-use-radius {    
+        @include border-top-right-radius($form-radius);
+        @include border-bottom-right-radius($form-radius);
     }
 }
 
@@ -82,6 +92,17 @@ span.affix, span.prefix, span.postfix {
 
         &:first-child { margin-left: inherit; }
         &:hover, &:focus { z-index: 2; }
+
+        @if $form-use-radius {    
+            &:first-child {
+                @include border-top-left-radius($form-radius);
+                @include border-bottom-left-radius($form-radius);
+            }
+            &:last-child {
+                @include border-top-right-radius($form-radius);
+                @include border-bottom-right-radius($form-radius);
+            }
+        }
     }
 
     &.inline {

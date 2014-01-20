@@ -85,6 +85,10 @@ button, .button, input[type=submit] {
     &.small {
         padding: $button-small-padding-vertical $button-small-padding-horizontal;
     }
+
+    &.radius {
+        @include border-radius($form-radius);
+    }
 }
 
 .button-full {

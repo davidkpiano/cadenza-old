@@ -3,6 +3,7 @@
 @import "compass/utilities/general/clearfix";
 @import "compass/css3/box-sizing";
 @import "compass/css3/shared";
+@import "compass/css3/border-radius";
 
 // Units
 $x: 16px !default;
@@ -135,6 +136,8 @@ $form-border-width: 1px !default;
 $form-margin-right: $x/2 !default;
 $form-padding-vertical: $x-rem/2 !default;
 $form-padding-horizontal: $x-rem/2 !default;
+$form-radius: 3px !default;
+$form-use-radius: true !default;
 
 // Buttons
 $button-selectors: "button, .button, input[type=button], input[type=submit]" !default;
@@ -144,6 +147,7 @@ $button-padding-horizontal: $form-padding-horizontal * 2 !default;
 $button-border-width: $form-border-width !default;
 $button-color-light: white !default;
 $button-type-scale: $form-type-scale !default;
+$button-radius: $form-radius !default;
 
 // Transparent Buttons
 $button-transparent-border-width: $form-border-width !default;
@@ -167,6 +171,7 @@ $text-border-success-color: $color-success !default;
 $text-border-warning-color: $color-warning !default;
 $text-border-failure-color: $color-failure !default;
 $text-type-scale: $form-type-scale !default;
+$text-radius: $form-radius !default;
 
 // Label Settings
 $label-affix-type-scale: $form-type-scale !default;
