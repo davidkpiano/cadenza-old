@@ -42,7 +42,12 @@ html {
     }
 
     > section {
-        @include row;
+        @extend %row;
         min-height: 100%;
     }
+}
+
+.inline {
+    display: inline-block;
+    margin-bottom: 0;
 }

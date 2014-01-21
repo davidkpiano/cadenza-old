@@ -3,11 +3,13 @@
 input {
     @include box-sizing(border-box);
     padding: 0;
+    margin-bottom: $text-margin-bottom;
 
     &.full {
         height: 100%;
         width: 100%;
         border: none;
+        margin-bottom: $text-full-margin-bottom;
     }
 }
 
@@ -25,6 +27,10 @@ input[type=text] {
     &.success { border-color: $text-border-success-color; }
     &.warning { border-color: $text-border-warning-color; }
     &.failure { border-color: $text-border-failure-color; }
+}
+
+input[type=password] {
+    @extend input[type=text];
 }
 
 // Labels

@@ -97,6 +97,14 @@ button, .button, input[type=submit] {
 
     &.left { float: left; }
     &.right { float: right; margin-right: 0; }
+
+    &.inline { margin-bottom: 0; }
+
+    &.link {
+        @include buttonStyle($color-light);
+        background: transparent !important;
+        border: none !important;
+    }
 }
 
 .button-full {
@@ -109,5 +117,5 @@ button, .button, input[type=submit] {
 }
 
 .button-block {
-    @include row;
+    @extend %row;
 }

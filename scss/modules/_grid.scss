@@ -1,4 +1,26 @@
 //
+// Global Grid Styles
+// ==================
+%content {
+    padding: $x;
+}
+%grid {
+    @extend %content;
+    @include box-sizing(border-box);
+    @include clearfix;
+    position: relative;
+}
+%column {
+    @extend %grid;
+    float: left;
+    height: 100%;
+}
+%row {
+    @extend %grid;
+    width: 100%;
+}
+
+//
 // Horizontal Grid System
 // ======================
 
@@ -14,39 +36,42 @@
     margin-left: ($columns / $grid-columns * 100%);
 }
 
-@mixin horizontalGridSystem($suffix: "") {
-    @for $i from 0 through $grid-columns {
-        .col-#{$i}#{$suffix} {
-            @include columns($i);
-        }
-
-        .col-offset-#{$i}#{$suffix} {
-            @include columnsOffset($i);
-        }
-    }
-
-    [class*="col-"].centered#{$suffix} {
+@mixin columnPosition($position) {
+    @if $position == left {
+        clear: right;
+    } @else if $position == right {
+        float: right;
+        clear: left;
+    } @else if $position == center {
         margin-left: auto;
         margin-right: auto;
-        float: none !important;
+        float: none;
     }
 }
 
-@mixin column {
-    @include box-sizing(border-box);
-    @include clearfix;
+@mixin horizontalGridSystem($suffix: "") {
+    $suffix-str: -#{$suffix} !default;
+    @if $suffix == "" { $suffix-str: ""; }
 
-    position: relative;
-    float: left;
-    height: 100%;
+    @for $i from 0 through $grid-columns {
+        .col-#{$i}#{$suffix-str} {
+            @include columns($i);
+        }
 
-    &.content {
-        padding: $grid-padding;
+        .col-offset-#{$i}#{$suffix-str} {
+            @include columnsOffset($i);
+        }    
+    }
+
+    @each $position in left, right, center {    
+        .col-#{$position}#{$suffix-str} {
+            @include columnPosition($position);
+        }
     }
 }
 
 .col, [class*="col-"] {
-    @include column;
+    @extend %column;
 }
 
 //
@@ -67,36 +92,24 @@
 }
 
 @mixin verticalGridSystem($suffix: "") {
+    $suffix-str: -#{$suffix} !default;
+    @if $suffix == "" { $suffix-str: ""; }
+
     @for $i from 0 through $grid-rows {
-        .row-#{$i}#{$suffix} {
+        .row-#{$i}#{$suffix-str} {
             @include rows($i);
         }
 
-        .row-offset-#{$i}#{$suffix} {
+        .row-offset-#{$i}#{$suffix-str} {
             @include rowsOffset($i);
         }
     }
 
-    [class*="row-"].centered#{$suffix} {
-        // TODO
-    }
-}
-
-@mixin row {
-    @include box-sizing(border-box);
-    @include clearfix;
-
-    position: relative;
-    width: 100%;
-    // max-width: 100%;
-
-    &.content {
-        padding: $grid-padding;
-    }
+    // TODO: left, right, center
 }
 
 .row, [class*="row-"] {
-    @include row;
+    @extend %row;
 }
 
 //
@@ -109,8 +122,8 @@
 }
 
 @media #{$mq-screen} { @include gridSystem; }
-@media #{$mq-small} { @include gridSystem(-small); }
-@media #{$mq-medium} { @include gridSystem(-medium); }
-@media #{$mq-large} { @include gridSystem(-large); }
-@media #{$mq-short} { @include gridSystem(-short); }
-@media #{$mq-tall} { @include gridSystem(-tall); }
+@media #{$mq-small} { @include gridSystem(small); }
+@media #{$mq-medium} { @include gridSystem(medium); }
+@media #{$mq-large} { @include gridSystem(large); }
+@media #{$mq-short} { @include gridSystem(short); }
+@media #{$mq-tall} { @include gridSystem(tall); }

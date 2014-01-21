@@ -1,7 +1,7 @@
 
 
 @mixin layer {
-    @include row;
+    @extend %row;
 
     position: absolute;
     height: 100%;
