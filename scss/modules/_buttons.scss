@@ -1,65 +1,7 @@
+// Button Style
+// ============
 
-
-@mixin buttonStyle($color: $color-primary, $text-color: $color) {
-    $color-background: $color;
-    $color-border: darken($color-background, 7%);
-    $color-background-hover: darken($color-background, 5%);
-    $color-border-hover: darken($color-background-hover, 7%);
-    $color-background-active: darken($color-background-hover, 5%);
-    $color-border-active: darken($color-border-hover, 10%);
-
-    background-color: $color-background;
-    border-color: $color-border;
-    border-width: $button-border-width;
-
-    @if $text-color == $color {
-        color: foregroundColor($color);
-    } @else {
-        color: $text-color;
-    }
-
-    &:hover, &:focus {
-        border-color: $color-border-hover;
-        background-color: $color-background-hover;
-    }
-
-    &:active {
-        background-color: $color-background-active;
-        border-color: $color-border-active;
-    }
-
-    &.transparent {
-        @include buttonTransparentStyle($color, $text-color);
-    }
-}
-
-@mixin buttonTransparentStyle($color: $color-primary, $text-color: $color) {
-    $color-background: $color;
-    $color-border: $color-background;
-    $color-background-hover: darken($color-background, 5%);
-    $color-border-hover: $color-background-hover;
-    $color-background-active: darken($color-background-hover, 5%);
-    $color-border-active: $color-background-active;
-
-    background-color: transparent;
-    border-color: $color;
-    border-width: $button-transparent-border-width;
-    color: $text-color;
-
-    &:hover, &:focus {
-        color: foregroundColor($color);
-        background-color: $color;
-        border-color: $color;
-    }
-
-    &:active {
-        color: foregroundColor($color);
-        background-color: $color-background-hover;
-        border-color: $color-background-hover;
-    }
-}
-
-@mixin button($type-scale: $button-type-scale) {
+%button-layout {   
     display: inline-block;
     padding: $button-padding-vertical $button-padding-horizontal;
     cursor: pointer;
@@ -68,43 +10,51 @@
     margin-bottom: $button-margin-bottom;
 
     // Text style
-    @include typeScale($type-scale);
+    @include typeScale($button-type-scale);
     text-decoration: none;
     text-align: center;
-    color: $color-dark;
-}
-
-button, .button, input[type=submit] {
-    @include button;
-    @include buttonStyle();
-
-    &.light { @include buttonStyle($color-light); }
-    &.dark { @include buttonStyle($color-dark); }
-    &.primary { @include buttonStyle($color-primary); }
-    &.secondary { @include buttonStyle($color-secondary); }
+    text-transform: $button-text-transform;
 
     &.small {
         padding: $button-small-padding-vertical $button-small-padding-horizontal;
+        @include typeScale($button-type-scale - 1);
     }
 
     &.large {
-        @include typeScale(1);
-    }
-
-    &.radius {
-        @include border-radius($form-radius);
+        @include typeScale($button-type-scale + 1);
     }
 
     &.left { float: left; }
+
     &.right { float: right; margin-right: 0; }
 
     &.inline { margin-bottom: 0; }
 
     &.link {
-        @include buttonStyle($color-light);
         background: transparent !important;
         border: none !important;
     }
+}
+
+%ext-button-normal {
+    @extend %button-layout;
+
+    // Colors
+    @include extButtonColors();
+
+    // TODO: refactor in Sass 3.3 with MAPS feature
+    &.primary { @include extButtonColors($color: $color-primary); }
+    &.secondary { @include extButtonColors($color: $color-secondary); }
+    &.light { @include extButtonColors($color: $color-light, $color-text: auto); }
+    &.dark { @include extButtonColors($color: $color-dark); }
+}
+
+@mixin button($style: $button-style) {
+    @extend %ext-button-#{$style};
+}
+
+button, .button, input[type=submit] {
+    @include button;
 }
 
 .button-full {

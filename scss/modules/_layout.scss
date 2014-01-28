@@ -28,7 +28,7 @@ html {
     > header, > footer {
         position: fixed;
         width: 100%;
-        z-index: 1;
+        z-index: 2;
     }
 
     > header {
@@ -44,6 +44,24 @@ html {
     > section {
         @extend %row;
         min-height: 100%;
+    }
+}
+
+@mixin background($color, $threshold: 65%, $color-dark: $color-dark, $color-light: $color-light) {
+    background-color: $color;
+
+    @if lightness($color) > $threshold {
+        color: $color-dark;
+
+        p {
+            color: $color-dark;
+        }
+    } @else {
+        color: $color-light;
+
+        p {
+            color: $color-light;
+        }
     }
 }
 

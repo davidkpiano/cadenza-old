@@ -4,6 +4,7 @@
 @import "compass/css3/box-sizing";
 @import "compass/css3/shared";
 @import "compass/css3/border-radius";
+@import "compass/css3/transition";
 
 // Units
 $x: 16px !default;
@@ -142,9 +143,11 @@ $form-margin-right: $x/2 !default;
 $form-padding-vertical: $x-rem/2 !default;
 $form-padding-horizontal: $x-rem/2 !default;
 $form-radius: 3px !default;
-$form-use-radius: true !default;
+$form-use-radius: false !default;
+$form-outline-color: lightblue !default;
 
 // Buttons
+$button-style: transparent;
 $button-selectors: "button, .button, input[type=button], input[type=submit]" !default;
 $button-margin-right: $form-margin-right !default;
 $button-margin-bottom: $button-margin-right !default;
@@ -152,8 +155,10 @@ $button-padding-vertical: $form-padding-vertical !default;
 $button-padding-horizontal: $form-padding-horizontal * 2 !default;
 $button-border-width: $form-border-width !default;
 $button-color-light: white !default;
-$button-type-scale: $form-type-scale !default;
+$button-type-scale: $form-type-scale - 1 !default;
+$button-text-transform: uppercase !default;
 $button-radius: $form-radius !default;
+$button-transition-duration: 0.3s !default;
 
 // Transparent Buttons
 $button-transparent-border-width: $form-border-width !default;

@@ -1,4 +1,6 @@
-
+:focus {
+    outline-color: $form-outline-color;
+}
 
 input {
     @include box-sizing(border-box);
@@ -18,7 +20,6 @@ input[type=text] {
     padding: $text-padding-vertical $text-padding-horizontal;
     border: $text-border-width solid;
     border-color: $text-border-color;
-    outline: none;
 
     @include typeScale($text-type-scale);
 

@@ -1,0 +1,56 @@
+@mixin typeScale($exponent: 1, $important: false, $base: $type-base-font-size, $unit: $type-unit, $ratio: $type-ratio) {
+    $_font-size: $base * pow(1 / $ratio, $exponent);
+    $_important: "";
+
+    @if $important {
+        $_important: !important;
+    }
+
+    font-size: $_font-size #{$_important};
+    font-size: ($_font-size / $base)#{$unit} #{$_important};
+}
+
+// Button Extension
+// ================
+
+@mixin extButtonColors(
+    $color: $color-primary,
+    $color-text: $button-color-light,
+    $color-text-hover: $color-text,
+    $color-text-active: $color-text-hover,
+    $color-text-disabled: $color-text-hover,
+    $color-background: $color,
+    $color-background-hover: darken($color-background, 7%),
+    $color-background-active: darken($color-background-hover, 7%),
+    $color-background-disabled: lighten($color-background, 7%),
+    $color-border: darken($color, 7%),
+    $color-border-hover: darken($color-border, 7%),
+    $color-border-active: darken($color-border-hover, 7%),
+    $color-border-disabled: lighten($color-border, 7%),
+    $color-icon: $color-text,
+    $color-icon-hover: $color-icon,
+    $color-icon-active: $color-icon-hover,
+    $color-icon-disabled: $color-icon,
+    $color-outline: blue
+) {
+    background-color: $color-background;
+    border-color: $color-border;
+
+    @if $color-text == auto {
+        color: foregroundColor($color);
+    } @else {
+        color: $color-text;
+    }
+
+    &:hover, &:focus {
+        color: $color-text-hover;
+        border-color: $color-border-hover;
+        background-color: $color-background-hover;
+    }
+
+    &:active {
+        color: $color-text-active;
+        background-color: $color-background-active;
+        border-color: $color-border-active;
+    }
+}

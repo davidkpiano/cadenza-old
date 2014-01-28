@@ -4,134 +4,59 @@
     <meta charset="UTF-8">
     <title>Cadenza</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/train.css">
 </head>
 <body>
     <header>
-        <div class="layer" id="header1">
-            <div class="col-8">
-                <div class="col-1">globe</div>
-                <div class="col-11">search</div>
-            </div>
-            <div class="col-4 strong">
-                <div class="col-4"><a class="header-buttons button-full transparent">a globe</a></div>
-                <div class="col-4"><a class="header-buttons button-full transparent">Login</a></div>
-                <div class="col-4"><a class="header-buttons button-full transparent">Help/Support</a></div>
-            </div>
+        <div class="col-4 content" id="logo">
+            <h2>TRAIN-X</h2>
+        </div>
+        <div class="col-8 content" id="nav">
+            <ul class="inline valign-center">
+                <li>About</li>
+                <li>Pricing</li>
+                <li>FAQs</li>
+                <li>Training</li>
+                <li>Contact</li>
+            </ul>
         </div>
     </header>
-    <section>
-        <div id="view1" class="layer hidden">
-            <div id="v1slider" class="col-8 content  scroll">
-                <h2 class="stacked">This is a <small>Primary</small> Heading</h2>
-                <h4 class="subheader">Subheader!</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, eius, iusto, autem magni blanditiis commodi nemo saepe eveniet nobis minima laudantium tempore aperiam rerum suscipit eum. Quo, iste accusamus soluta.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <abbr title="No idea what this means.">Repellendus</abbr>, modi, nesciunt, soluta, delectus quasi blanditiis beatae <code>laudantium</code> enim iste corporis autem assumenda repellat dolor reiciendis consequuntur ad fugiat quam maxime.</p>
-                <hr>
-                <div class="alert">This is an alert!!!</div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quaerat, fugiat iure quam nulla beatae architecto sunt fugit quos dolores doloribus enim eligendi voluptatibus. Facilis, deleniti quis magnam assumenda impedit!</p>
-                <div class="button-group inline">
-                    <button class="primary">Button 1</button>
-                    <button class="primary">Button 2</button>
-                    <button class="primary">Button 3</button>
+    <section id="hero" class="row-8">
+        <div class="col-4 content" id="left">
+            <div class="col-12 col-8-large col-right-large" id="left_content">
+                <header class="row content"><h2 class="inline">Log In</h2> <button class="small inline right light">Sign Up</button></header>
+                <div class="row content">
+                    <input type="text" class="full" id="" placeholder="Username">
+                    <input type="password" class="full" id="" placeholder="Password">
+                    <button class="transparent right light">Log In</button>
+                    <button class="dark">dark</button>
+                    <button class="primary">primary</button>
+                    <button class="secondary">secondary</button>
+                    <smalL><a id="forgot_password">Forgot Password?</a></small>
                 </div>
-                <div class="button-group inline">
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                </div>
-                <div class="affix-all">
-                    <label class="prefix">Hey there</label><input type="text" name="" id="" class="affix">
-                     <button class="primary transparent postfix">I'm a primary button</button>
-                     <button class="secondary">I'm a dark button</button>
-                </div> <ul>
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5 here we go<ul>
-                        <li>1 yes</li>
-                        <li>2 yes</li>
-                        <li>3 yes</li>
-                        <li>4 yes</li>
-                        <li>5 yes</li>
-                    </ul></li>
-                </ul>
 
-                <ul class="inline">
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                    <li><a href="#">Item 4</a></li>
-                    <li><a href="#">Item 5</a></li>
-                    <li><a href="#">Item 1</a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                    <li><a href="#">Item 4 is a real doozy!</a></li>
-                    <li><a href="#">Item 5</a></li>
-                </ul>
-                <blockquote>Those people who think they know everything are a great annoyance to those of us who do.<cite>Isaac Asimov</cite></blockquote>
-            </div>
-            <div id="v1sidebar" class="col-4">
-                <section class="row-10">
-                    <hgroup class="row content">
-                        <h3 class="stacked">Welcome to</h3>
-                        <h1 class="stacked">Innovation<br>Airlines</h1>
-                    </hgroup>
-                    <div class="row content" id="booking_fields">
-                        <h3 class="">Book a flight</h3>
-                        <div id="book_from_field" class="field row">
-                            <div class="popup"></div>
-                            <div class="field-label col-4">
-                                <label for="book_from">From</label>
-                            </div>
-                            <div class="field-content col-8">
-                                <input type="text" name="book_from" id="book_from" class="full" placeholder="Enter City or Airport">
-                            </div>
-                        </div>
-                        <div id="book_to_field" class="field row">
-                            <div class="popup blue"></div>
-                            <div class="field-label col-4">
-                                <label for="book_to">To</label>
-                            </div>
-                            <div class="field-content col-8">
-                                <input type="text" name="book_to" id="book_to" class="full" placeholder="Enter City or Airport">
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <footer class="row-2 content">
-                    <h3 class="stacked">We offer amazing deals<br>around the world.</h3>
-                    <h4>Scroll down to find out more.</h4>
-                </footer>
             </div>
         </div>
-
-        <div id="view2" class="layer">
-            <div class="row-4 content align-center">
-                <h1>Perspective Page View Navigation</h1>
-                <h3>Transforms the page in 3D to reveal a menu</h3>
-            </div>
-            <div class="row-8 content">
-                <div class="col-6 align-right content">
-                    <button class="right large">SHOW MENU</button>
-                    <hr>
-                    <p class="large">Click on this button to see the <br>content being pushed away in 3D to <br>reveal a navigation or other items.</p>
-                    <hr>
-                    <button class="progress fill-horizontal">
-                        <div class="progress-meter"></div>
-                        <span class="progress-content">SUBMIT</span>
-                    </button>
-                </div>
-                <div class="col-6 content">
-                    <button>AIRBNB EFFECT</button>
-                    <button>MOVE LEFT</button>
-                    <button>ROTATE LEFT</button>
-                    <button>MOVE DOWN</button>
-                    <button>ROTATE TOP</button>
-                    <button>LAY DOWN</button>
-                </div>
-            </div>
+        <div class="col-8 content" id="right">
+            <h1><br>Get professional training schedules<br>from <strong>anywhere, anytime.</strong></h1>
+            <h3>It's like hiring a professional trainer for a fraction of the price. Someone else should write the catchy marketing slogans.</h3>
+            <button class="large secondary">Start Training!</button>
+        </div>
+    </section>
+    <section id="info" class="row-8">
+        <div class="col-6 col-12-small row-6-small content" id="foo">
+            <button class="primary">primary</button>
+            <button class="secondary">secondary</button>
+            <button class="light">light</button>
+            <button class="dark">dark</button>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, architecto, perspiciatis optio eveniet unde quas modi dolores ducimus nisi consequatur at esse quod distinctio voluptate similique nesciunt error earum officia!</p>
+        </div>
+        <div class="col-6 col-12-small row-6-small content" id="bar">
+            <button class="primary">primary</button>
+            <button class="secondary">secondary</button>
+            <button class="light">light</button>
+            <button class="dark">dark</button>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, magni, non dolore molestiae quos cupiditate modi error labore iusto quisquam harum fugiat eaque aliquid nam possimus quaerat optio odio sunt!</p>
         </div>
     </section>
     <footer></footer>

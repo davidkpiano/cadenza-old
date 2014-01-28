@@ -1,0 +1,35 @@
+@mixin ext-button-transparent-style($color) {
+    @include extButtonColors(
+        $color-text: $color,
+        $color-text-hover: foregroundColor($color),
+        $color-border: $color,
+        $color-border-hover: $color,
+        $color-border-active: $color,
+        $color-background: transparent,
+        $color-background-hover: $color,
+        $color-background-active: $color,
+        $color-background-disabled: $color
+    );
+}
+
+%ext-button-transparent {
+    @extend %button-layout;
+    @include transition-property(background-color, color);
+    @include transition-duration(0.5s);
+
+    @include ext-button-transparent-style($color-primary);
+
+    &.primary { @include ext-button-transparent-style($color-primary); }
+    &.secondary { @include ext-button-transparent-style($color-secondary); }
+    &.light { @include ext-button-transparent-style($color-light); }
+    &.dark { @include ext-button-transparent-style($color-dark); }
+
+    &.small {
+        @include typeScale(-3, true);
+    }
+
+    background-color: transparent;
+    text-transform: uppercase;
+    @include typeScale(-2);
+    font-weight: bold;
+}

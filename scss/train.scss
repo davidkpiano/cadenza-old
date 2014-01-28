@@ -1,0 +1,70 @@
+
+$color-primary: #364656;
+$color-secondary: #C44741;
+$color-blue: #5d6B74;
+$color-blue-light: #94A4A5;
+$color-anchor: $color-blue-light;
+
+$type-list-inline-margin: 32px;
+$type-header-color: #EFEFEF;
+$type-header-font-weight: 200;
+$form-border-width: 2px;
+
+@import 'cadenza.scss';
+
+body {
+    @include layout(60px);
+}
+
+header {
+    @include background($color-primary);
+
+    #logo > h2 {
+        font-weight: bold;
+    }
+}
+
+section#hero {
+    background: url(http://farm7.staticflickr.com/6222/6366626995_a406677069_b.jpg) no-repeat;
+    background-size: cover;
+
+    &:after {
+        content: "";
+        display: block;
+        top: 0; left: 0;
+        height: 100%;
+        width: 100%;
+        background: $color-primary;
+        opacity: 0.6;
+    }
+
+    #left {
+        z-index:9;
+
+        > #left_content {
+            @include background($color-blue);
+            border: 1px solid $color-blue-light;
+            > header { 
+                @include background($color-secondary);
+            }
+        }
+
+        #forgot_password {
+            padding: $x/2 0;
+            top: $x/2;
+        }
+    }
+
+    #right {
+        z-index: 9;
+
+    }
+}
+
+#foo {
+    @include background($color-blue);
+}
+
+#bar {
+    @include background(#efefef);
+}

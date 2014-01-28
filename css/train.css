@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic");
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 /* Import Settings */
 /* Import Extensions */
 /* line 15, ../scss/extensions/_ext_button_transparent.scss */
@@ -13,61 +13,61 @@ button, .button, input[type=submit] {
   -o-transition-duration: 0.5s;
   transition-duration: 0.5s;
   background-color: transparent;
-  border-color: #d42d26;
-  color: #d42d26;
+  border-color: #364656;
+  color: #364656;
   background-color: transparent;
   text-transform: uppercase;
-  font-size: 13.3447px ;
+  font-size: 11.86196px ;
   font-size: 0.74137rem ;
   font-weight: bold;
 }
 /* line 45, ../scss/settings/_ext_mixins.scss */
 button:hover, .button:hover, input[type=submit]:hover, button:focus, .button:focus, input[type=submit]:focus {
   color: #efefef;
-  border-color: #d42d26;
-  background-color: #d42d26;
+  border-color: #364656;
+  background-color: #364656;
 }
 /* line 51, ../scss/settings/_ext_mixins.scss */
 button:active, .button:active, input[type=submit]:active {
   color: #efefef;
-  background-color: #d42d26;
-  border-color: #d42d26;
+  background-color: #364656;
+  border-color: #364656;
 }
 /* line 22, ../scss/extensions/_ext_button_transparent.scss */
 button.primary, .primary.button, input.primary[type=submit] {
   background-color: transparent;
-  border-color: #d42d26;
-  color: #d42d26;
+  border-color: #364656;
+  color: #364656;
 }
 /* line 45, ../scss/settings/_ext_mixins.scss */
 button.primary:hover, .primary.button:hover, input.primary[type=submit]:hover, button.primary:focus, .primary.button:focus, input.primary[type=submit]:focus {
   color: #efefef;
-  border-color: #d42d26;
-  background-color: #d42d26;
+  border-color: #364656;
+  background-color: #364656;
 }
 /* line 51, ../scss/settings/_ext_mixins.scss */
 button.primary:active, .primary.button:active, input.primary[type=submit]:active {
   color: #efefef;
-  background-color: #d42d26;
-  border-color: #d42d26;
+  background-color: #364656;
+  border-color: #364656;
 }
 /* line 23, ../scss/extensions/_ext_button_transparent.scss */
 button.secondary, .secondary.button, input.secondary[type=submit] {
   background-color: transparent;
-  border-color: gray;
-  color: gray;
+  border-color: #c44741;
+  color: #c44741;
 }
 /* line 45, ../scss/settings/_ext_mixins.scss */
 button.secondary:hover, .secondary.button:hover, input.secondary[type=submit]:hover, button.secondary:focus, .secondary.button:focus, input.secondary[type=submit]:focus {
   color: #efefef;
-  border-color: gray;
-  background-color: gray;
+  border-color: #c44741;
+  background-color: #c44741;
 }
 /* line 51, ../scss/settings/_ext_mixins.scss */
 button.secondary:active, .secondary.button:active, input.secondary[type=submit]:active {
   color: #efefef;
-  background-color: gray;
-  border-color: gray;
+  background-color: #c44741;
+  border-color: #c44741;
 }
 /* line 24, ../scss/extensions/_ext_button_transparent.scss */
 button.light, .light.button, input.light[type=submit] {
@@ -107,7 +107,7 @@ button.dark:active, .dark.button:active, input.dark[type=submit]:active {
 }
 /* line 27, ../scss/extensions/_ext_button_transparent.scss */
 small.button, button.small, .small.button, input.small[type=submit] {
-  font-size: 11.49019px !important;
+  font-size: 10.2135px !important;
   font-size: 0.63834rem !important;
 }
 
@@ -544,7 +544,7 @@ strong, b {
     top: 100%;
   }
 }
-@media only screen and (max-width: 42.61111em) {
+@media only screen and (max-width: 47.9375em) {
   /* line 57, ../scss/modules/_grid.scss */
   .col-0-small {
     width: 0% !important;
@@ -927,7 +927,7 @@ strong, b {
     top: 100%;
   }
 }
-@media only screen and (min-width: 42.66667em) {
+@media only screen and (min-width: 48em) {
   /* line 57, ../scss/modules/_grid.scss */
   .col-0-medium {
     width: 0% !important;
@@ -1310,7 +1310,7 @@ strong, b {
     top: 100%;
   }
 }
-@media only screen and (min-width: 71.11111em) {
+@media only screen and (min-width: 80em) {
   /* line 57, ../scss/modules/_grid.scss */
   .col-0-large {
     width: 0% !important;
@@ -1693,7 +1693,7 @@ strong, b {
     top: 100%;
   }
 }
-@media only screen and (max-height: 38.88889em) {
+@media only screen and (max-height: 43.75em) {
   /* line 57, ../scss/modules/_grid.scss */
   .col-0-short {
     width: 0% !important;
@@ -2076,7 +2076,7 @@ strong, b {
     top: 100%;
   }
 }
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 56.25em) {
   /* line 57, ../scss/modules/_grid.scss */
   .col-0-tall {
     width: 0% !important;
@@ -2497,13 +2497,13 @@ html {
 
 /* line 50, ../scss/modules/_type.scss */
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* line 54, ../scss/modules/_type.scss */
 body {
   font-style: normal;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222222;
   text-rendering: optimizeLegibility;
   word-wrap: break-word;
@@ -2516,16 +2516,16 @@ body {
 /* line 18, ../scss/modules/_type.scss */
 body h1, body h2, body h3, body h4, body h5, body h6 {
   line-height: 1.2;
-  font-weight: 300;
+  font-weight: 200;
   font-style: normal;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #222222;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #efefef;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 /* line 27, ../scss/modules/_type.scss */
 body h1.subheader, body h2.subheader, body h3.subheader, body h4.subheader, body h5.subheader, body h6.subheader {
-  color: #484848;
+  color: white;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -2536,32 +2536,32 @@ body h1 small, body h2 small, body h3 small, body h4 small, body h5 small, body 
 }
 /* line 40, ../scss/modules/_type.scss */
 body h1 {
-  font-size: 38.03484px;
+  font-size: 33.80875px;
   font-size: 2.11305rem;
 }
 /* line 40, ../scss/modules/_type.scss */
 body h2 {
-  font-size: 32.74913px;
+  font-size: 29.11034px;
   font-size: 1.8194rem;
 }
 /* line 40, ../scss/modules/_type.scss */
 body h3 {
-  font-size: 28.19798px;
+  font-size: 25.06487px;
   font-size: 1.56655rem;
 }
 /* line 40, ../scss/modules/_type.scss */
 body h4 {
-  font-size: 24.2793px;
+  font-size: 21.5816px;
   font-size: 1.34885rem;
 }
 /* line 40, ../scss/modules/_type.scss */
 body h5 {
-  font-size: 20.9052px;
+  font-size: 18.5824px;
   font-size: 1.1614rem;
 }
 /* line 40, ../scss/modules/_type.scss */
 body h6 {
-  font-size: 18px;
+  font-size: 16px;
   font-size: 1rem;
   text-transform: uppercase;
 }
@@ -2569,11 +2569,11 @@ body h6 {
 /* line 65, ../scss/modules/_type.scss */
 a {
   text-decoration: none;
-  color: #d42d26;
+  color: #94a4a5;
 }
 /* line 69, ../scss/modules/_type.scss */
 a:hover {
-  color: #e36963;
+  color: #546c85;
   text-decoration: none;
 }
 /* line 74, ../scss/modules/_type.scss */
@@ -2595,13 +2595,13 @@ p {
 
 /* line 89, ../scss/modules/_type.scss */
 .small, small {
-  font-size: 15.49854px;
+  font-size: 13.77648px;
   font-size: 0.86103rem;
 }
 
 /* line 92, ../scss/modules/_type.scss */
 .large {
-  font-size: 20.9052px;
+  font-size: 18.5824px;
   font-size: 1.1614rem;
 }
 
@@ -2628,7 +2628,7 @@ ul.inline, ol.inline, dl.inline {
 /* line 133, ../scss/modules/_type.scss */
 ul.inline > li, ol.inline > li, dl.inline > li {
   display: inline-block;
-  margin-right: 1rem;
+  margin-right: 32px;
   white-space: nowrap;
 }
 /* line 141, ../scss/modules/_type.scss */
@@ -2731,7 +2731,7 @@ abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var,
 pre {
   white-space: pre;
   color: #222222;
-  font-size: 18px;
+  font-size: 16px;
   font-size: 1rem;
   font-family: monospace;
 }
@@ -2746,7 +2746,7 @@ pre code {
 code {
   white-space: pre;
   color: #222222;
-  font-size: 18px;
+  font-size: 16px;
   font-size: 1rem;
   font-family: monospace;
 }
@@ -2761,7 +2761,7 @@ blockquote {
 /* line 239, ../scss/modules/_type.scss */
 blockquote cite {
   display: block;
-  font-size: 15.49854px;
+  font-size: 13.77648px;
   font-size: 0.86103rem;
   color: #484848;
 }
@@ -2784,7 +2784,7 @@ hr {
 abbr, acronym {
   font-size: 86.10298%;
   text-transform: uppercase;
-  border-bottom: 1px dotted gray;
+  border-bottom: 1px dotted #c44741;
   cursor: help;
 }
 
@@ -2796,7 +2796,7 @@ button, .button, input[type=submit] {
   border-style: solid;
   margin-right: 8px;
   margin-bottom: 8px;
-  font-size: 13.3447px;
+  font-size: 11.86196px;
   font-size: 0.74137rem;
   text-decoration: none;
   text-align: center;
@@ -2805,12 +2805,12 @@ button, .button, input[type=submit] {
 /* line 18, ../scss/modules/_buttons.scss */
 small.button, button.small, .small.button, input.small[type=submit] {
   padding: 0.25rem 0.5rem;
-  font-size: 11.49019px;
+  font-size: 10.2135px;
   font-size: 0.63834rem;
 }
 /* line 23, ../scss/modules/_buttons.scss */
 button.large, .large.button, input.large[type=submit] {
-  font-size: 15.49854px;
+  font-size: 13.77648px;
   font-size: 0.86103rem;
 }
 /* line 27, ../scss/modules/_buttons.scss */
@@ -2877,14 +2877,14 @@ input.full {
 input[type=text], input[type=password] {
   margin-right: 8px;
   padding: 0.5rem 0.5rem;
-  border: 1px solid;
+  border: 2px solid;
   border-color: #dddddd;
-  font-size: 15.49854px;
+  font-size: 13.77648px;
   font-size: 0.86103rem;
 }
 /* line 26, ../scss/modules/_form.scss */
 input[type=text]:focus, input[type=password]:focus {
-  border-color: #d42d26;
+  border-color: #364656;
 }
 /* line 28, ../scss/modules/_form.scss */
 input[type=text].success, input.success[type=password] {
@@ -2901,11 +2901,11 @@ input[type=text].failure, input.failure[type=password] {
 
 /* line 39, ../scss/modules/_form.scss */
 label.affix, .button-group label.button, label.prefix, label.postfix {
-  font-size: 15.49854px;
+  font-size: 13.77648px;
   font-size: 0.86103rem;
   padding: 0.5rem 0.5rem;
   background: #dddddd;
-  border: 1px solid;
+  border: 2px solid;
   border-color: #b7b7b7;
 }
 
@@ -2923,7 +2923,7 @@ label.affix, .button-group label.button, label.prefix, label.postfix {
 /* line 71, ../scss/modules/_form.scss */
 .prefix {
   float: left;
-  margin-right: -1px;
+  margin-right: -2px;
   z-index: 2;
 }
 /* line 61, ../scss/modules/_form.scss */
@@ -2934,7 +2934,7 @@ label.affix, .button-group label.button, label.prefix, label.postfix {
 /* line 82, ../scss/modules/_form.scss */
 .postfix {
   float: left;
-  margin-left: -1px;
+  margin-left: -2px;
 }
 /* line 61, ../scss/modules/_form.scss */
 .postfix:focus {
@@ -2949,7 +2949,7 @@ label.affix, .button-group label.button, label.prefix, label.postfix {
 }
 /* line 96, ../scss/modules/_form.scss */
 .button-group > button, .button-group .button, .button-group input[type=button], .button-group input[type=submit] {
-  margin-left: -1px;
+  margin-left: -2px;
 }
 /* line 100, ../scss/modules/_form.scss */
 .button-group > button:first-child, .button-group .button:first-child, .button-group input[type=button]:first-child, .button-group input[type=submit]:first-child {
@@ -2997,11 +2997,11 @@ label.affix, .button-group label.button, label.prefix, label.postfix {
   padding: 16px;
   border: 1px solid;
   margin-bottom: 16px;
-  font-size: 15.49854px;
+  font-size: 13.77648px;
   font-size: 0.86103rem;
   color: #efefef;
-  background-color: #d42d26;
-  border-color: #931f1a;
+  background-color: #364656;
+  border-color: #182027;
   color: white;
 }
 /* line 37, ../scss/modules/_alerts.scss */
@@ -3026,7 +3026,7 @@ label.affix, .button-group label.button, label.prefix, label.postfix {
   color: white;
 }
 
-/* line 19, ../scss/style.scss */
+/* line 15, ../scss/train.scss */
 body {
   position: absolute;
   max-height: 100%;
@@ -3034,8 +3034,8 @@ body {
   top: 0;
   bottom: 0;
   overflow-y: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 0;
 }
 /* line 28, ../scss/modules/_layout.scss */
 body > header, body > footer {
@@ -3045,12 +3045,12 @@ body > header, body > footer {
 }
 /* line 34, ../scss/modules/_layout.scss */
 body > header {
-  height: 50px;
+  height: 60px;
   top: 0;
 }
 /* line 39, ../scss/modules/_layout.scss */
 body > footer {
-  height: 50px;
+  height: 0;
   bottom: 0;
 }
 /* line 44, ../scss/modules/_layout.scss */
@@ -3058,71 +3058,85 @@ body > section {
   min-height: 100%;
 }
 
-/* line 26, ../scss/style.scss */
+/* line 19, ../scss/train.scss */
 header {
-  background: white;
+  background-color: #364656;
+  color: #efefef;
+}
+/* line 62, ../scss/modules/_layout.scss */
+header p {
+  color: #efefef;
+}
+/* line 22, ../scss/train.scss */
+header #logo > h2 {
+  font-weight: bold;
 }
 
-/* line 30, ../scss/style.scss */
-.header-buttons {
-  border-left: 2px solid #cccccc;
+/* line 27, ../scss/train.scss */
+section#hero {
+  background: url(http://farm7.staticflickr.com/6222/6366626995_a406677069_b.jpg) no-repeat;
+  background-size: cover;
 }
-
-/* line 34, ../scss/style.scss */
-#v1sidebar {
-  background: #cccccc;
-}
-/* line 38, ../scss/style.scss */
-#v1sidebar section hgroup {
-  background: #737271;
-}
-/* line 40, ../scss/style.scss */
-#v1sidebar section hgroup h2 {
-  color: #313233;
-}
-/* line 41, ../scss/style.scss */
-#v1sidebar section hgroup h1 {
-  color: white;
-}
-
-/* line 46, ../scss/style.scss */
-#booking_fields .field {
-  padding: 8px 0;
-  margin-bottom: 8px;
-  background: white;
-}
-/* line 51, ../scss/style.scss */
-#booking_fields .field .field-label {
-  padding-left: 32px;
-}
-
-/* line 56, ../scss/style.scss */
-.popup {
-  position: absolute;
-  height: 16px;
-  width: 16px;
-  left: 8px;
-  background: #d42d26;
-}
-/* line 63, ../scss/style.scss */
-.popup:before {
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 100%;
+/* line 31, ../scss/train.scss */
+section#hero:after {
   content: "";
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 5px 8px 0 0;
-  border-color: transparent;
-  border-top-color: #a9241e;
+  display: block;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #364656;
+  opacity: 0.6;
 }
-/* line 77, ../scss/style.scss */
-.popup.blue {
-  background: #508fa0;
+/* line 41, ../scss/train.scss */
+section#hero #left {
+  z-index: 9;
 }
-/* line 80, ../scss/style.scss */
-.popup.blue:before {
-  border-top-color: #3f717e;
+/* line 44, ../scss/train.scss */
+section#hero #left > #left_content {
+  background-color: #5d6b74;
+  color: #efefef;
+  border: 1px solid #94a4a5;
+}
+/* line 62, ../scss/modules/_layout.scss */
+section#hero #left > #left_content p {
+  color: #efefef;
+}
+/* line 47, ../scss/train.scss */
+section#hero #left > #left_content > header {
+  background-color: #c44741;
+  color: #efefef;
+}
+/* line 62, ../scss/modules/_layout.scss */
+section#hero #left > #left_content > header p {
+  color: #efefef;
+}
+/* line 52, ../scss/train.scss */
+section#hero #left #forgot_password {
+  padding: 8px 0;
+  top: 8px;
+}
+/* line 58, ../scss/train.scss */
+section#hero #right {
+  z-index: 9;
+}
+
+/* line 64, ../scss/train.scss */
+#foo {
+  background-color: #5d6b74;
+  color: #efefef;
+}
+/* line 62, ../scss/modules/_layout.scss */
+#foo p {
+  color: #efefef;
+}
+
+/* line 68, ../scss/train.scss */
+#bar {
+  background-color: #efefef;
+  color: #222222;
+}
+/* line 56, ../scss/modules/_layout.scss */
+#bar p {
+  color: #222222;
 }

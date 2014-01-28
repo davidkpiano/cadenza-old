@@ -5,7 +5,7 @@
     padding: $x;
 }
 %grid {
-    @extend %content;
+    &.content { @extend %content; }
     @include box-sizing(border-box);
     @include clearfix;
     position: relative;
