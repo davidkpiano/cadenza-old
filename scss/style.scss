@@ -1,14 +1,10 @@
 // Color Palette
-$ia-red: #d42d26;
-$ia-white: #FFF;
-$ia-lighter-gray: #CCC;
-$ia-light-gray: #454545;
-$ia-gray: #737271;
-$ia-dark-gray: #4e4c4c;
-$ia-darker-gray: #313233;
-$ia-blue: #508fa0;
+$color-primary: #364656;
+$color-secondary: #C44741;
+$color-blue: #5d6B74;
+$color-blue-light: #94A4A5;
+$color-anchor: $color-blue-light;
 
-$color-primary: $ia-red;
 // Cadenza custom settings
 $type-custom-import: "//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic";
 $type-custom-font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -16,69 +12,5 @@ $type-base-font-size: 18px;
 
 @import 'cadenza.scss';
 
-body {
-    @include layout(
-        $header: 50px,
-        $footer: 50px
-    );
-}
-
-header {
-    background: white;
-}
-
-.header-buttons {
-    border-left: 2px solid $ia-lighter-gray;
-}
-
-#v1sidebar {
-    background: $ia-lighter-gray; 
-
-    section { 
-        hgroup {
-            background: $ia-gray;
-            h2 { color: $ia-darker-gray; }
-            h1 { color: $ia-white; }
-        }
-    }
-}
-
-#booking_fields .field {
-    padding: $x/2 0;
-    margin-bottom: $x/2;
-    background: white;
-
-    .field-label {
-        padding-left: 2*$x;
-    }
-}
-
-.popup {
-    position: absolute;
-    height: $x;
-    width: $x;
-    left: $x/2;
-    background: $ia-red;
-
-    &:before {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 100%;
-        content: "";
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: ($x/2 - 3) $x/2 0 0;
-        border-color: transparent;
-        border-top-color: darken($ia-red, 10%);
-    }
-
-    &.blue {
-        background: $ia-blue;
-
-        &:before {
-            border-top-color: darken($ia-blue, 10%);
-        }
-    }
-}
+.foo { @include background($color-primary); }
+.bar { @include background(#efefef, $color-dark: $color-primary); }

@@ -1,0 +1,64 @@
+
+
+%ext-table-normal {
+    margin-bottom: $table-margin-bottom;
+    text-align: $table-text-align;
+    width: 100%;
+
+    caption {
+
+    }
+
+    thead {
+        background-color: $table-thead-bgcolor;
+        color: $table-thead-color; 
+
+        tr {
+            th, td {
+                @include typeScale($table-thead-type-scale);
+                text-transform: $table-thead-text-transform;
+                padding: $table-thead-padding;
+            }
+        }
+    }
+
+    tfoot {
+        tr {
+            td {
+                padding: $table-tfoot-padding;
+                border-width: $table-tr-border-width;
+                border-color: $table-tr-border-color;
+                border-style: solid;
+            }
+
+            @if $table-zebra {
+                &:nth-child(even) {
+                    background-color: $table-tr-bgcolor-even;
+                }
+
+                &:nth-child(odd) {
+                    background-color: $table-tr-bgcolor-odd;
+                }
+            }
+        }
+    }
+
+    tbody {
+        tr {
+            td {
+                padding: $table-tr-padding;
+                border-width: $table-tr-border-width;
+                border-color: $table-tr-border-color;
+                border-style: solid;
+            }
+        }
+    }
+}
+
+@mixin table($style: $table-style) {
+    @extend %ext-table-#{$style};
+}
+
+table {
+    @include table();
+}

@@ -1,0 +1,20 @@
+
+
+%ext-fieldset-normal {
+    padding: $fieldset-padding-vertical $fieldset-padding-horizontal;
+    border: $fieldset-border-width;
+    margin: 0; // TODO: reset
+
+    .field {
+        height: auto;
+        padding: $field-padding-vertical $field-padding-horizontal;
+    }
+}
+
+@mixin fieldset($style: $fieldset-style) {
+    @extend %ext-fieldset-#{$style};
+}
+
+fieldset {
+    @include fieldset();
+}

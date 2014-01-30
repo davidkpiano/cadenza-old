@@ -4,61 +4,108 @@
     <meta charset="UTF-8">
     <title>Cadenza</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/train.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
-<body>
-    <header>
-        <div class="col-4 content" id="logo">
-            <h2>TRAIN-X</h2>
-        </div>
-        <div class="col-8 content" id="nav">
-            <ul class="inline valign-center">
-                <li>About</li>
-                <li>Pricing</li>
-                <li>FAQs</li>
-                <li>Training</li>
-                <li>Contact</li>
-            </ul>
-        </div>
-    </header>
-    <section id="hero" class="row-8">
-        <div class="col-4 content" id="left">
-            <div class="col-12 col-8-large col-right-large" id="left_content">
-                <header class="row content"><h2 class="inline">Log In</h2> <button class="small inline right light">Sign Up</button></header>
-                <div class="row content">
-                    <input type="text" class="full" id="" placeholder="Username">
-                    <input type="password" class="full" id="" placeholder="Password">
-                    <button class="transparent right light">Log In</button>
-                    <button class="dark">dark</button>
-                    <button class="primary">primary</button>
-                    <button class="secondary">secondary</button>
-                    <smalL><a id="forgot_password">Forgot Password?</a></small>
-                </div>
-
-            </div>
-        </div>
-        <div class="col-8 content" id="right">
-            <h1><br>Get professional training schedules<br>from <strong>anywhere, anytime.</strong></h1>
-            <h3>It's like hiring a professional trainer for a fraction of the price. Someone else should write the catchy marketing slogans.</h3>
-            <button class="large secondary">Start Training!</button>
-        </div>
+<body class="page">
+    <section class="row-12">
+        <article class="col-6 foo">
+            <header class="content">
+                <h1>Form Demo</h1>
+            </header>
+            <form>
+                <fieldset>
+                    <div class="field">
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username" class="affix"><span class="label postfix">please enter a good one</span>
+                    </div>
+                    <div class="field col-4">
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username" class="full">
+                    </div>
+                    <div class="field col-4">
+                        <label for="username">Username:</label>
+                        <input type="text" name="username" id="username" class="full">
+                    </div>
+                    <div class="field col-4">
+                        <label for="username">Username:</label>
+                        <div class="select">
+                            <select name="" id="">
+                                <option value="">option 1</option>
+                                <option value="">option 2</option>
+                                <option value="">option 3</option>
+                                <option value="">option 4</option>
+                                <option value="">option 5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr>
+                </fieldset>
+            </form>
+            <footer class="content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, recusandae culpa aspernatur repudiandae nesciunt assumenda nihil velit iusto impedit fuga ab nisi error incidunt alias temporibus voluptates reiciendis itaque. Pariatur!</p>
+            </footer>
+            <form>
+                <fieldset>
+                    <div class="field col-12"><input type="text" placeholder="Credit Card #" name="ccn" id="ccn"></div>
+                    <div class="field col-6"><input type="text" placeholder="Expiration" name="exp" id="exp"></div>
+                    <div class="field col-6"><input type="text" placeholder="CSN" name="csn" id="csn"></div>
+                    <div class="field col-12"><textarea id="" placeholder="Write your message here..."></textarea></div>
+                    <div class="field col-12"><button class="full secondary">Submit</button></div>
+                </fieldset>
+            </form>
+        </article>
+        <article class="col-6 content">
+            <header>
+                <h1>Misc Demo</h1>
+            </header>
+            
+            <table>
+                <caption>My Table!</caption>
+                <thead>
+                    <tr>
+                        <th>header 1</th>
+                        <th>header 2</th>
+                        <th>header 3</th>
+                        <th>header 4</th>
+                    </tr>
+                </thead>
+                <tfoot>
+                    <tr>
+                        <td>footer 1</td>
+                        <td>footer 2</td>
+                        <td>footer 3</td>
+                        <td>footer 4</td>
+                    </tr>
+                    <tr>
+                        <td>footer 1</td>
+                        <td>footer 2</td>
+                        <td>footer 3</td>
+                        <td>footer 4</td>
+                    </tr>
+                    <tr>
+                        <td>footer 1</td>
+                        <td>footer 2</td>
+                        <td>footer 3</td>
+                        <td>footer 4</td>
+                    </tr>
+                    <tr>
+                        <td>footer 1</td>
+                        <td>footer 2</td>
+                        <td>footer 3</td>
+                        <td>footer 4</td>
+                    </tr>
+                </tfoot>
+                <tbody>
+                    <tr>
+                        <td>body 1</td>
+                        <td>body 2</td>
+                        <td>body 3</td>
+                        <td>body 4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
     </section>
-    <section id="info" class="row-8">
-        <div class="col-6 col-12-small row-6-small content" id="foo">
-            <button class="primary">primary</button>
-            <button class="secondary">secondary</button>
-            <button class="light">light</button>
-            <button class="dark">dark</button>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, architecto, perspiciatis optio eveniet unde quas modi dolores ducimus nisi consequatur at esse quod distinctio voluptate similique nesciunt error earum officia!</p>
-        </div>
-        <div class="col-6 col-12-small row-6-small content" id="bar">
-            <button class="primary">primary</button>
-            <button class="secondary">secondary</button>
-            <button class="light">light</button>
-            <button class="dark">dark</button>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo, magni, non dolore molestiae quos cupiditate modi error labore iusto quisquam harum fugiat eaque aliquid nam possimus quaerat optio odio sunt!</p>
-        </div>
-    </section>
-    <footer></footer>
 </body>
 </html>

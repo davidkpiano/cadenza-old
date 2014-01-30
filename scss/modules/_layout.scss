@@ -1,11 +1,15 @@
 
+%border-box {
+    @include box-sizing(border-box);
+}
+
 html {
     height: 100%;
 }
 
 *, *:before, *:after {
     position: relative;
-    @include box-sizing(border-box);
+    @extend %border-box;
 }
 
 // layout mixin must follow this structure:
@@ -47,22 +51,8 @@ html {
     }
 }
 
-@mixin background($color, $threshold: 65%, $color-dark: $color-dark, $color-light: $color-light) {
-    background-color: $color;
-
-    @if lightness($color) > $threshold {
-        color: $color-dark;
-
-        p {
-            color: $color-dark;
-        }
-    } @else {
-        color: $color-light;
-
-        p {
-            color: $color-light;
-        }
-    }
+header, footer, section {
+    @extend %grid;
 }
 
 .inline {

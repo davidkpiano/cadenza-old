@@ -6,7 +6,7 @@
 }
 %grid {
     &.content { @extend %content; }
-    @include box-sizing(border-box);
+    @extend %border-box;
     @include clearfix;
     position: relative;
 }
@@ -70,7 +70,7 @@
     }
 }
 
-.col, [class*="col-"] {
+#{$grid-column-selector} {
     @extend %column;
 }
 
@@ -108,7 +108,7 @@
     // TODO: left, right, center
 }
 
-.row, [class*="row-"] {
+#{$grid-row-selector} {
     @extend %row;
 }
 

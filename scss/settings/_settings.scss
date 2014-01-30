@@ -11,6 +11,8 @@ $x: 16px !default;
 $x-rem: 1rem !default;
 
 // Grid Settings
+$grid-column-selector: ".col, [class*=\"col-\"]" !default;
+$grid-row-selector: ".row, [class*=\"row-\"]" !default;
 $grid-columns: 12 !default;
 $grid-rows: 12 !default;
 $grid-padding: $x !default;
@@ -53,6 +55,7 @@ $type-header-small-style: uppercase !default;
 $type-p-margin-bottom: $x-rem !default;
 $type-p-line-height: 1.5 !default;
 $type-p-font-weight: $type-base-font-weight !default;
+$type-p-lead-type-scale: 1 !default;
 
 $type-subheader-color: lighten($type-header-color, 15%) !default;
 $type-subheader-font-weight: 300 !default;
@@ -136,6 +139,7 @@ $mq-screen: "only screen" !default;
 $prefixes: moz, webkit, o !default;
 
 // Form Elements
+$form-style: stacked !default;
 $form-affixable-selectors: "button, .button, input[type=submit], input[type=text], label";
 $form-type-scale: -1 !default;
 $form-border-width: 1px !default;
@@ -143,7 +147,7 @@ $form-margin-right: $x/2 !default;
 $form-padding-vertical: $x-rem/2 !default;
 $form-padding-horizontal: $x-rem/2 !default;
 $form-radius: 3px !default;
-$form-use-radius: false !default;
+$form-use-radius: true !default;
 $form-outline-color: lightblue !default;
 
 // Buttons
@@ -186,11 +190,54 @@ $text-border-failure-color: $color-failure !default;
 $text-type-scale: $form-type-scale !default;
 $text-radius: $form-radius !default;
 
+// Textarea Settings
+$textarea-height: 5 * $x-rem !default;
+$textarea-resize: vertical !default;
+
 // Label Settings
-$label-affix-type-scale: $form-type-scale !default;
+$label-display: block !default;
+$label-margin-bottom: $x/2 !default;
+$label-type-scale: $form-type-scale !default;
+$label-affix-type-scale: $label-type-scale !default;
 $label-affix-padding-vertical: $form-padding-vertical !default;
 $label-affix-padding-horizontal: $form-padding-horizontal !default;
 $label-affix-bgcolor: $color-gray !default;
 $label-affix-border-color: darken($color-gray, 15%) !default;
 $label-affix-border-width: $form-border-width !default;
 
+// Fieldset Settings
+$fieldset-style: stacked !default;
+$fieldset-border-width: 0 !default;
+$fieldset-border-color: $color-primary !default;
+$fieldset-padding-horizontal: $form-padding-horizontal !default;
+$fieldset-padding-vertical: $form-padding-vertical !default;
+
+// Field Settings
+$field-padding-horizontal: $form-padding-horizontal !default;
+$field-padding-vertical: $form-padding-vertical !default;
+
+// Table Settings
+$table-style: normal !default;
+$table-margin-bottom: $x-rem !default;
+$table-border-width: 1px !default;
+$table-border-color: $color-gray !default;
+$table-text-align: left !default;
+$table-bgcolor: $color-light !default;
+$table-zebra: true !default;
+
+$table-thead-padding: $x-rem / 2 !default;
+$table-thead-type-scale: -1 !default;
+$table-thead-text-transform: uppercase !default;
+$table-thead-bgcolor: $color-primary !default;
+$table-thead-color: $color-light !default;
+
+$table-tfoot-padding: $x-rem / 2 !default;
+$table-tfoot-type-scale: 0 !default;
+$table-tfoot-text-transform: uppercase !default;
+
+$table-tr-padding: $table-thead-padding !default;
+$table-tr-border-width: 1px !default;
+$table-tr-border-color: $table-border-color !default;
+$table-tr-bgcolor: transparent !default;
+$table-tr-bgcolor-odd: mix($table-bgcolor, $color-light, 10%) !default;
+$table-tr-bgcolor-even: $table-tr-bgcolor !default;

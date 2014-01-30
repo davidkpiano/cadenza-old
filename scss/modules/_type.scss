@@ -2,14 +2,6 @@
 @import url($type-custom-import);
 
 
-// Type Scale mixin
-@mixin typeScale($exponent: 1, $base: $type-base-font-size, $unit: $type-unit, $ratio: $type-ratio) {
-    $font-size: $base * pow(1 / $ratio, $exponent);
-
-    font-size: $font-size;
-    font-size: ($font-size / $base)#{$unit};
-}
-
 @mixin typeScaleRelative($exponent: 1, $ratio: $type-ratio) {
     font-size: percentage(pow($ratio, $exponent));
 }
@@ -33,6 +25,10 @@
 
         small {
             font-size: percentage(pow($type-ratio, 2));
+        }
+
+        &:only-child {
+            margin-bottom: 0;
         }
     }
 
@@ -80,6 +76,10 @@ p {
     margin-bottom: $type-p-margin-bottom;
     line-height: $type-p-line-height;
     font-weight: $type-p-font-weight;
+
+    &.lead {
+        @include typeScale($type-p-lead-type-scale);
+    }
 }
 
 // Text style classes

@@ -1,0 +1,25 @@
+
+
+
+@mixin background($color, $threshold: 65%, $color-dark: $color-dark, $color-light: $color-light) {
+    background-color: $color;
+
+    $_color-foreground: $color-dark;
+    $_color-shaded: darken($color, 10%);
+
+    @if lightness($color) < $threshold {
+        $_color-foreground: $color-light;
+        $_color-shaded: lighten($color, 10%);
+    }
+
+    p, h1, h2, h3, h4, h5, h6, label, div {
+        color: $_color-foreground;
+    }
+
+    label, .label {
+        &.prefix, &.postfix, &.affix {
+            color: $_color-foreground;
+            background-color: $_color-shaded;
+        }
+    }
+}

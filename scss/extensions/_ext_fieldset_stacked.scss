@@ -1,0 +1,12 @@
+
+
+%ext-fieldset-stacked {
+    padding: $x-rem;
+    border: $fieldset-border-width;
+    margin: 0;
+
+    .field {
+        height: auto;
+        padding: 0;
+    }
+}
