@@ -131,9 +131,9 @@ ul, ol, dl {
         margin-left: 0;
 
         > li {
+            @extend %nowrap;
             display: inline-block;
             margin-right: $type-list-inline-margin;
-            white-space: nowrap;
         }
     }
 

@@ -1,0 +1,97 @@
+
+
+%ext-label-normal {
+    @extend %label-colors;
+    @extend %label-layout;
+    @include typeScale($label-type-scale);
+    font-weight: $label-font-weight;
+    padding: $label-padding;
+    text-transform: $label-text-transform;
+
+    @if $label-use-radius {
+        @include border-radius($form-radius);
+    }
+}
+
+%ext-badge-normal {
+    @extend %label-colors;
+    @extend %label-layout;
+    @include typeScale($badge-type-scale);
+    font-weight: $badge-font-weight;
+    padding: $badge-padding;
+    text-transform: $badge-text-transform;
+
+    @if $badge-use-radius {
+        @include border-radius($x-rem);
+    }
+
+    @if $badge-collapse {
+        &:empty {
+            display: none;
+        }
+    }
+}
+
+@mixin label-colors(
+    $bgcolor: $color-primary, 
+    $color: foregroundColor($bgcolor), 
+    $border-color: $color-secondary,
+    $hover-bgcolor: lighten($color-primary, 10%),
+    $hover-color: foregroundColor($hover-bgcolor)
+) {
+    background-color: $bgcolor;
+    color: $color;
+    border-color: $border-color;
+
+    &[href] {
+        &:hover {
+            background-color: $hover-bgcolor;
+            color: $hover-color;
+        }
+    }
+}
+
+%label-colors {
+    @include label-colors();
+
+    &.primary { @include label-colors($color-primary); }
+    &.secondary { @include label-colors($color-secondary); }
+    &.light { @include label-colors($color-light); }
+    &.dark { @include label-colors($color-dark); }
+}
+
+%label-layout {
+    @extend %nowrap;
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+
+    &[class*=infix-] {
+        position: absolute;
+        margin: $label-margin;
+
+        &.infix-left, &.infix-right {
+            @extend %valign-center;
+            z-index: 2;
+        }
+
+        &.infix-left { left: 0; }
+        &.infix-right { right: 0; }
+    }
+}
+
+@mixin label($style: $label-style) {
+    @extend %ext-label-#{$style};
+}
+
+@mixin badge($style: $badge-style) {
+    @extend %ext-badge-#{$style};
+}
+
+.label {
+    @include label();
+}
+
+.badge {
+    @include badge();
+}

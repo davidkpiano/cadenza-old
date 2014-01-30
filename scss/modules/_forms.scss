@@ -22,9 +22,9 @@
     }
 
     label {
-        display: $label-display;
-        margin-bottom: $label-margin-bottom;
-        @include typeScale($label-type-scale);
+        display: $field-label-display;
+        margin-bottom: $field-label-margin-bottom;
+        @include typeScale($field-label-type-scale);
     }
 
     // Custom select styling

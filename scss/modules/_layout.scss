@@ -5,7 +5,7 @@
 
 %valign-center {
     top: 50%;
-    @include experimental(translateY, -50%);
+    @include experimental(transform, translateY(-50%));
 }
 
 %clearfix {
@@ -67,4 +67,8 @@ header, footer, section {
 .inline {
     display: inline-block;
     margin-bottom: 0;
+}
+
+.valign-center {
+    @extend %valign-center;
 }

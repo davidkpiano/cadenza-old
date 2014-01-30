@@ -33,13 +33,13 @@ strong, b {
 }
 
 /* line 6, ../scss/modules/_layout.scss */
-nav.horizontal.full > ul > li a, .button-full {
+.valign-center, nav.horizontal.full > ul > li a, .button-full, [class*=infix-].infix-left.label, [class*=infix-].infix-left.badge, [class*=infix-].infix-right.label, [class*=infix-].infix-right.badge {
   top: 50%;
-  -webkit-translateY: -50%;
-  -moz-translateY: -50%;
-  -ms-translateY: -50%;
-  -o-translateY: -50%;
-  translateY: -50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* line 11, ../scss/modules/_layout.scss */
@@ -2545,7 +2545,6 @@ ul.inline, ol.inline, dl.inline {
 ul.inline > li, ol.inline > li, dl.inline > li {
   display: inline-block;
   margin-right: 1rem;
-  white-space: nowrap;
 }
 /* line 141, ../scss/modules/_type.scss */
 ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, dl ul, dl ol, dl dl {
@@ -2602,7 +2601,7 @@ dl dd {
 }
 
 /* line 174, ../scss/modules/_type.scss */
-nav.horizontal > ul > li {
+ul.inline > li, ol.inline > li, dl.inline > li, nav.horizontal > ul > li, .label, .badge {
   white-space: nowrap;
   overflow: hidden;
 }
@@ -2862,6 +2861,118 @@ form .select > select {
   width: 100%;
 }
 
+/* line 3, ../scss/modules/_labels.scss */
+.label {
+  font-size: 13.3447px ;
+  font-size: 0.74137rem ;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  text-transform: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+
+/* line 16, ../scss/modules/_labels.scss */
+.badge {
+  font-size: 13.3447px ;
+  font-size: 0.74137rem ;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+  text-transform: none;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
+}
+/* line 29, ../scss/modules/_labels.scss */
+.badge:empty {
+  display: none;
+}
+
+/* line 54, ../scss/modules/_labels.scss */
+.label, .badge {
+  background-color: #364656;
+  color: #efefef;
+  border-color: #c44741;
+}
+/* line 47, ../scss/modules/_labels.scss */
+[href].label:hover, [href].badge:hover {
+  background-color: #4a5f75;
+  color: #efefef;
+}
+/* line 57, ../scss/modules/_labels.scss */
+.primary.label, .primary.badge {
+  background-color: #364656;
+  color: #efefef;
+  border-color: #c44741;
+}
+/* line 47, ../scss/modules/_labels.scss */
+.primary[href].label:hover, .primary[href].badge:hover {
+  background-color: #4a5f75;
+  color: #efefef;
+}
+/* line 58, ../scss/modules/_labels.scss */
+.secondary.label, .secondary.badge {
+  background-color: #c44741;
+  color: #efefef;
+  border-color: #c44741;
+}
+/* line 47, ../scss/modules/_labels.scss */
+.secondary[href].label:hover, .secondary[href].badge:hover {
+  background-color: #4a5f75;
+  color: #efefef;
+}
+/* line 59, ../scss/modules/_labels.scss */
+.light.label, .light.badge {
+  background-color: #efefef;
+  color: #222222;
+  border-color: #c44741;
+}
+/* line 47, ../scss/modules/_labels.scss */
+.light[href].label:hover, .light[href].badge:hover {
+  background-color: #4a5f75;
+  color: #efefef;
+}
+/* line 60, ../scss/modules/_labels.scss */
+.dark.label, .dark.badge {
+  background-color: #222222;
+  color: #efefef;
+  border-color: #c44741;
+}
+/* line 47, ../scss/modules/_labels.scss */
+.dark[href].label:hover, .dark[href].badge:hover {
+  background-color: #4a5f75;
+  color: #efefef;
+}
+
+/* line 63, ../scss/modules/_labels.scss */
+.label, .badge {
+  display: inline-block;
+  line-height: 1;
+  text-decoration: none;
+}
+/* line 69, ../scss/modules/_labels.scss */
+[class*=infix-].label, [class*=infix-].badge {
+  position: absolute;
+  margin: 0 8px;
+}
+/* line 73, ../scss/modules/_labels.scss */
+[class*=infix-].infix-left.label, [class*=infix-].infix-left.badge, [class*=infix-].infix-right.label, [class*=infix-].infix-right.badge {
+  z-index: 2;
+}
+/* line 78, ../scss/modules/_labels.scss */
+[class*=infix-].infix-left.label, [class*=infix-].infix-left.badge {
+  left: 0;
+}
+/* line 79, ../scss/modules/_labels.scss */
+[class*=infix-].infix-right.label, [class*=infix-].infix-right.badge {
+  right: 0;
+}
+
 /* line 3, ../scss/modules/_tables.scss */
 table {
   margin-bottom: 1rem;
@@ -2951,7 +3062,7 @@ table tbody tr td {
 }
 /* line 38, ../scss/modules/_alerts.scss */
 .alert.warning {
-  color: #a97400;
+  color: #222222;
   background-color: #ffcc5c;
   border-color: #ffb410;
   color: white;
@@ -3040,13 +3151,13 @@ button.light, .light.button, input.light[type=submit] {
 }
 /* line 45, ../scss/settings/_helpers.scss */
 button.light:hover, .light.button:hover, input.light[type=submit]:hover, button.light:focus, .light.button:focus, input.light[type=submit]:focus {
-  color: #969696;
+  color: #222222;
   border-color: #efefef;
   background-color: #efefef;
 }
 /* line 51, ../scss/settings/_helpers.scss */
 button.light:active, .light.button:active, input.light[type=submit]:active {
-  color: #969696;
+  color: #222222;
   background-color: #efefef;
   border-color: #efefef;
 }
@@ -3081,7 +3192,7 @@ form input[type] {
 
 /* line 3, ../scss/extensions/_ext_fieldset_stacked.scss */
 fieldset {
-  padding: 1rem;
+  padding: 0.5rem 1rem;
   border: 0;
   margin: 0;
 }
@@ -3089,6 +3200,22 @@ fieldset {
 fieldset .field {
   height: auto;
   padding: 0;
+}
+/* line 13, ../scss/extensions/_ext_fieldset_stacked.scss */
+fieldset .field.topfix {
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+/* line 16, ../scss/extensions/_ext_fieldset_stacked.scss */
+fieldset .field.bottomfix {
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -ms-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
 }
 
 /* line 15, ../scss/style.scss */
