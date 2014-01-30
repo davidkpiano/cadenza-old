@@ -3,6 +3,15 @@
     @include box-sizing(border-box);
 }
 
+%valign-center {
+    top: 50%;
+    @include experimental(translateY, -50%);
+}
+
+%clearfix {
+    @include clearfix;
+}
+
 html {
     height: 100%;
 }

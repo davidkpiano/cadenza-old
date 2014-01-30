@@ -170,33 +170,16 @@ dl {
 }
 
 
-
+// No Wrap
+%nowrap {
+    white-space: nowrap;
+    overflow: hidden;
+}
 
 // Horizontal Alignment Classes
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 .align-center { text-align: center; }
-
-// Vertical Alignment Classes
-@mixin verticalAlign($alignment) {
-    // http://css-tricks.com/centering-in-the-unknown/
-
-    &:before {
-        content: "";
-        display: inline-block;
-        height: 100%;
-        vertical-align: middle;
-    }
-
-    > * {
-        display: inline-block;
-        vertical-align: middle;
-    }
-}
-
-.valign-center {
-    @include verticalAlign(center);
-}
 
 // Stacking
 .stacked {

@@ -1,0 +1,71 @@
+
+
+%ext-nav-normal {
+    ul {
+        @extend ul.clean;
+        width: 100%;
+        padding: $nav-ul-padding;
+        background-color: $nav-menu-bgcolor;
+
+        li {
+            padding: $nav-li-padding;
+
+            a {
+                display: block;
+                padding: $nav-a-padding;
+            }
+
+            &.inactive {
+                display: none;
+            }
+
+            &.active > ul {
+                display: block;
+            }
+        }
+
+        ul {
+            display: none;
+            background-color: $nav-submenu-bgcolor;
+        }
+    }
+
+    &.horizontal {
+        > ul {
+            @extend %clearfix;
+
+            > li {
+                float: left;
+                @extend %nowrap;
+            }
+        }
+
+        &.full {
+            height: 100%;
+
+            > ul {
+                height: 100%;
+
+                > li {
+                    height: 100%;
+
+                    a {
+                        height: 100%;
+                        width: 100%;
+                        padding-top: 0;
+                        padding-bottom: 0;
+                        @extend %valign-center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin nav($style: $nav-style) {
+    @extend %ext-nav-#{$style};
+}
+
+nav {
+    @include nav();
+}

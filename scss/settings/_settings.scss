@@ -241,3 +241,16 @@ $table-tr-border-color: $table-border-color !default;
 $table-tr-bgcolor: transparent !default;
 $table-tr-bgcolor-odd: mix($table-bgcolor, $color-light, 10%) !default;
 $table-tr-bgcolor-even: $table-tr-bgcolor !default;
+
+// Navigation Settings
+$nav-style: normal !default;
+$nav-ul-padding: 0 !default;
+$nav-li-padding: 0 !default;
+$nav-a-padding: $x-rem / 2 !default;
+$nav-menu-bgcolor: transparent !default;
+$nav-submenu-bgcolor: $color-primary !default;
+
+
+
+
+
