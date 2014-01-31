@@ -5,10 +5,12 @@
     padding: $x;
 }
 %grid {
-    &.content { @extend %content; }
     @extend %border-box;
     @include clearfix;
+    display: block;
     position: relative;
+
+    &.content { @extend %content; }
 }
 %column {
     @extend %grid;
@@ -36,7 +38,7 @@
     margin-left: ($columns / $grid-columns * 100%);
 }
 
-@mixin columnPosition($position) {
+@mixin columnsPosition($position) {
     @if $position == left {
         clear: right;
     } @else if $position == right {
@@ -65,7 +67,7 @@
 
     @each $position in left, right, center {    
         .col-#{$position}#{$suffix-str} {
-            @include columnPosition($position);
+            @include columnsPosition($position);
         }
     }
 }
@@ -91,6 +93,18 @@
     top: ($rows / $grid-rows) * 100%;
 }
 
+@mixin rowsPosition($position) {
+    @if $position == top {
+        // todo... (see if necessary)
+    } @else if $position == center {
+        // todo...
+    } @else if $position == bottom {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
 @mixin verticalGridSystem($suffix: "") {
     $suffix-str: -#{$suffix} !default;
     @if $suffix == "" { $suffix-str: ""; }
@@ -105,7 +119,11 @@
         }
     }
 
-    // TODO: left, right, center
+    @each $position in top, bottom, center {    
+        .row-#{$position}#{$suffix-str} {
+            @include rowsPosition($position);
+        }
+    }
 }
 
 #{$grid-row-selector} {

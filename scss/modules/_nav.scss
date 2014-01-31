@@ -48,13 +48,18 @@
 
                 > li {
                     height: 100%;
+                    display: table;
+                    table-layout: fixed;
 
                     a {
+                        display: table-cell;
+                        vertical-align: middle;
+                        text-align: center;
                         height: 100%;
                         width: 100%;
                         padding-top: 0;
                         padding-bottom: 0;
-                        @extend %valign-center;
+                        margin: 0;
                     }
                 }
             }
@@ -62,8 +67,9 @@
     }
 }
 
-@mixin nav($style: $nav-style) {
+@mixin nav($style: $nav-style, $theme: $nav-theme) {
     @extend %ext-nav-#{$style};
+    @extend %theme-nav-#{$theme};
 }
 
 nav {

@@ -6,6 +6,7 @@
     padding: $button-padding-vertical $button-padding-horizontal;
     cursor: pointer;
     border-style: solid;
+    border-width: $button-border-width;
     margin-right: $button-margin-right;
     margin-bottom: $button-margin-bottom;
 
@@ -31,8 +32,9 @@
     &.inline { margin-bottom: 0; }
 
     &.link {
-        background: transparent !important;
-        border: none !important;
+        background: transparent;
+        color: $color-anchor;
+        border: none;
     }
 }
 
@@ -47,6 +49,13 @@
     &.secondary { @include extButtonColors($color: $color-secondary); }
     &.light { @include extButtonColors($color: $color-light, $color-text: auto); }
     &.dark { @include extButtonColors($color: $color-dark); }
+    &.transparent {
+        @include extButtonColors(
+            $color-background: transparent,
+            $color-background-hover: $color-primary,
+            $color-background-disabled: transparent
+        )
+    }
 }
 
 @mixin button($style: $button-style) {

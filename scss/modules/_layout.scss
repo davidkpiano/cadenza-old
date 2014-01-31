@@ -27,16 +27,13 @@ html {
 //   <section></section>
 //   <footer></footer>
 // </body>
-@mixin layout($header: 0, $footer: 0) {
+@mixin layout($header-height: 0, $footer-height: 0) {
     position: absolute;
+    height: 100%;
     max-height: 100%;
     width: 100%;
     top: 0;
     bottom: 0;
-    overflow-y: auto;
-
-    margin-top: $header;
-    margin-bottom: $footer;
 
     > header, > footer {
         position: fixed;
@@ -45,18 +42,21 @@ html {
     }
 
     > header {
-        height: $header;
+        height: $header-height;
         top: 0;
     }
 
     > footer {
-        height: $footer; 
+        height: $footer-height; 
         bottom: 0;
     }
 
     > section {
         @extend %row;
-        min-height: 100%;
+        margin-top: $header-height;
+        margin-bottom: $footer-height;
+        height: calc(100% - #{$header-height} - #{$footer-height});
+        overflow: auto;
     }
 }
 
@@ -71,4 +71,9 @@ header, footer, section {
 
 .valign-center {
     @extend %valign-center;
+}
+
+.full {
+    @extend %row;
+    height: 100%;
 }

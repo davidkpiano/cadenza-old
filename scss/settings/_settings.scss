@@ -151,7 +151,7 @@ $form-use-radius: true !default;
 $form-outline-color: lightblue !default;
 
 // Buttons
-$button-style: transparent;
+$button-style: normal;
 $button-selectors: "button, .button, input[type=button], input[type=submit]" !default;
 $button-margin-right: $form-margin-right !default;
 $button-margin-bottom: $button-margin-right !default;
@@ -244,6 +244,7 @@ $table-tr-bgcolor-even: $table-tr-bgcolor !default;
 
 // Navigation Settings
 $nav-style: normal !default;
+$nav-theme: transparent !default;
 $nav-ul-padding: 0 !default;
 $nav-li-padding: 0 !default;
 $nav-a-padding: $x-rem / 2 !default;

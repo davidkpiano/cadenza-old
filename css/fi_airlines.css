@@ -26,7 +26,7 @@ strong, b {
 }
 
 /* line 2, ../scss/modules/_layout.scss */
-*, *:before, *:after, header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .layer, .page, .button-block, form, form input[type], form textarea {
+*, *:before, *:after, header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .layer, .page, .button-block, form, body > section, form input[type], form textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -70,12 +70,12 @@ html {
 }
 
 /* line 4, ../scss/modules/_grid.scss */
-header.content, footer.content, section.content, .content.col, .content[class*="col-"], .content.full, .content.row, .content[class*="row-"], .content.layer, .content.page, .content.button-block, form.content {
+header.content, footer.content, section.content, .content.col, .content[class*="col-"], .content.full, .content.row, .content[class*="row-"], .content.layer, .content.page, .content.button-block, form.content, body > section.content {
   padding: 16px;
 }
 
 /* line 7, ../scss/modules/_grid.scss */
-header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .layer, .page, .button-block, form {
+header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .layer, .page, .button-block, form, body > section {
   overflow: hidden;
   *zoom: 1;
   display: block;
@@ -89,7 +89,7 @@ header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .l
 }
 
 /* line 20, ../scss/modules/_grid.scss */
-.full, .row, [class*="row-"], .layer, .page, .button-block, form {
+.full, .row, [class*="row-"], .layer, .page, .button-block, form, body > section {
   width: 100%;
 }
 
@@ -483,7 +483,7 @@ header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .l
     left: 0;
   }
 }
-@media only screen and (max-width: 42.61111em) {
+@media only screen and (max-width: 47.9375em) {
   /* line 59, ../scss/modules/_grid.scss */
   .col-0-small {
     width: 0% !important;
@@ -873,7 +873,7 @@ header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .l
     left: 0;
   }
 }
-@media only screen and (min-width: 42.66667em) {
+@media only screen and (min-width: 48em) {
   /* line 59, ../scss/modules/_grid.scss */
   .col-0-medium {
     width: 0% !important;
@@ -1263,7 +1263,7 @@ header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .l
     left: 0;
   }
 }
-@media only screen and (min-width: 71.11111em) {
+@media only screen and (min-width: 80em) {
   /* line 59, ../scss/modules/_grid.scss */
   .col-0-large {
     width: 0% !important;
@@ -1653,7 +1653,7 @@ header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .l
     left: 0;
   }
 }
-@media only screen and (max-height: 38.88889em) {
+@media only screen and (max-height: 43.75em) {
   /* line 59, ../scss/modules/_grid.scss */
   .col-0-short {
     width: 0% !important;
@@ -2043,7 +2043,7 @@ header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .l
     left: 0;
   }
 }
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 56.25em) {
   /* line 59, ../scss/modules/_grid.scss */
   .col-0-tall {
     width: 0% !important;
@@ -2450,7 +2450,7 @@ header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .l
 
 /* line 46, ../scss/modules/_type.scss */
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* line 50, ../scss/modules/_type.scss */
@@ -2493,32 +2493,32 @@ body h1:only-child, body h2:only-child, body h3:only-child, body h4:only-child, 
 }
 /* line 36, ../scss/modules/_type.scss */
 body h1 {
-  font-size: 38.03484px ;
+  font-size: 33.80875px ;
   font-size: 2.11305rem ;
 }
 /* line 36, ../scss/modules/_type.scss */
 body h2 {
-  font-size: 32.74913px ;
+  font-size: 29.11034px ;
   font-size: 1.8194rem ;
 }
 /* line 36, ../scss/modules/_type.scss */
 body h3 {
-  font-size: 28.19798px ;
+  font-size: 25.06487px ;
   font-size: 1.56655rem ;
 }
 /* line 36, ../scss/modules/_type.scss */
 body h4 {
-  font-size: 24.2793px ;
+  font-size: 21.5816px ;
   font-size: 1.34885rem ;
 }
 /* line 36, ../scss/modules/_type.scss */
 body h5 {
-  font-size: 20.9052px ;
+  font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
 /* line 36, ../scss/modules/_type.scss */
 body h6 {
-  font-size: 18px ;
+  font-size: 16px ;
   font-size: 1rem ;
   text-transform: uppercase;
 }
@@ -2546,7 +2546,7 @@ p {
 }
 /* line 80, ../scss/modules/_type.scss */
 p.lead {
-  font-size: 20.9052px ;
+  font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
 
@@ -2557,13 +2557,13 @@ p.lead {
 
 /* line 89, ../scss/modules/_type.scss */
 .small, small, form input[type].small, form textarea.small {
-  font-size: 15.49854px ;
+  font-size: 13.77648px ;
   font-size: 0.86103rem ;
 }
 
 /* line 92, ../scss/modules/_type.scss */
 .large, form input[type].large, form textarea.large {
-  font-size: 20.9052px ;
+  font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
 
@@ -2685,7 +2685,7 @@ abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var,
 pre {
   white-space: pre;
   color: #222222;
-  font-size: 18px ;
+  font-size: 16px ;
   font-size: 1rem ;
   font-family: monospace;
 }
@@ -2700,7 +2700,7 @@ pre code {
 code {
   white-space: pre;
   color: #222222;
-  font-size: 18px ;
+  font-size: 16px ;
   font-size: 1rem ;
   font-family: monospace;
 }
@@ -2715,7 +2715,7 @@ blockquote {
 /* line 222, ../scss/modules/_type.scss */
 blockquote cite {
   display: block;
-  font-size: 15.49854px ;
+  font-size: 13.77648px ;
   font-size: 0.86103rem ;
   color: #484848;
 }
@@ -2806,10 +2806,10 @@ button, .button, input[type=submit] {
   padding: 0.5rem 1rem;
   cursor: pointer;
   border-style: solid;
-  border-width: 1px;
+  border-width: 0;
   margin-right: 8px;
   margin-bottom: 8px;
-  font-size: 13.3447px ;
+  font-size: 11.86196px ;
   font-size: 0.74137rem ;
   text-decoration: none;
   text-align: center;
@@ -2818,12 +2818,12 @@ button, .button, input[type=submit] {
 /* line 19, ../scss/modules/_buttons.scss */
 small.button, button.small, .small.button, form input.button[type].small, form textarea.button.small, input.small[type=submit], form input[type=submit][type].small {
   padding: 0.25rem 0.5rem;
-  font-size: 11.49019px ;
+  font-size: 10.2135px ;
   font-size: 0.63834rem ;
 }
 /* line 24, ../scss/modules/_buttons.scss */
 button.large, .large.button, form input.button[type].large, form textarea.button.large, input.large[type=submit], form input[type=submit][type].large {
-  font-size: 15.49854px ;
+  font-size: 13.77648px ;
   font-size: 0.86103rem ;
 }
 /* line 28, ../scss/modules/_buttons.scss */
@@ -2965,7 +2965,7 @@ button.transparent:active, .transparent.button:active, input.transparent[type=su
 
 /* line 2, ../scss/modules/_forms.scss */
 form input[type], form textarea {
-  font-size: 15.49854px ;
+  font-size: 13.77648px ;
   font-size: 0.86103rem ;
   padding: 0.5rem 0.5rem;
   margin-bottom: 0;
@@ -2989,12 +2989,12 @@ form textarea {
 form label {
   display: block;
   margin-bottom: 8px;
-  font-size: 15.49854px ;
+  font-size: 13.77648px ;
   font-size: 0.86103rem ;
 }
 /* line 40, ../scss/modules/_forms.scss */
 form .select {
-  font-size: 15.49854px ;
+  font-size: 13.77648px ;
   font-size: 0.86103rem ;
   background: #c44741;
   border: 1px solid #a03732;
@@ -3026,7 +3026,7 @@ form .select > select {
 
 /* line 3, ../scss/modules/_labels.scss */
 .label {
-  font-size: 13.3447px ;
+  font-size: 11.86196px ;
   font-size: 0.74137rem ;
   font-weight: bold;
   padding: 0.25rem 0.5rem;
@@ -3040,7 +3040,7 @@ form .select > select {
 
 /* line 16, ../scss/modules/_labels.scss */
 .badge {
-  font-size: 13.3447px ;
+  font-size: 11.86196px ;
   font-size: 0.74137rem ;
   font-weight: bold;
   padding: 0.25rem 0.5rem;
@@ -3149,7 +3149,7 @@ table thead {
 }
 /* line 17, ../scss/modules/_tables.scss */
 table thead tr th, table thead tr td {
-  font-size: 15.49854px ;
+  font-size: 13.77648px ;
   font-size: 0.86103rem ;
   text-transform: uppercase;
   padding: 0.5rem;
@@ -3209,7 +3209,7 @@ table tbody tr td {
   padding: 16px;
   border: 1px solid;
   margin-bottom: 16px;
-  font-size: 15.49854px ;
+  font-size: 13.77648px ;
   font-size: 0.86103rem ;
   color: #efefef;
   background-color: #364656;
@@ -3236,6 +3236,20 @@ table tbody tr td {
   background-color: #c44741;
   border-color: #8d302c;
   color: white;
+}
+
+/* line 27, ../scss/modules/_themes.scss */
+#slider {
+  background-color: #364656;
+}
+/* line 15, ../scss/modules/_themes.scss */
+#slider p, #slider h1, #slider h2, #slider h3, #slider h4, #slider h5, #slider h6, #slider label, #slider div {
+  color: #efefef;
+}
+/* line 20, ../scss/modules/_themes.scss */
+#slider label.prefix, #slider label.postfix, #slider label.affix, #slider .label.prefix, #slider .label.postfix, #slider .label.affix {
+  color: #efefef;
+  background-color: #4a5f75;
 }
 
 /* Import Extensions */
@@ -3335,30 +3349,46 @@ nav.dark > ul > li > a:hover {
   color: #efefef;
 }
 
-/* line 15, ../scss/style.scss */
-.foo {
-  background-color: #364656;
+/* line 19, ../scss/fi_airlines.scss */
+body {
+  position: absolute;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  top: 0;
+  bottom: 0;
 }
-/* line 15, ../scss/modules/_themes.scss */
-.foo p, .foo h1, .foo h2, .foo h3, .foo h4, .foo h5, .foo h6, .foo label, .foo div {
-  color: #efefef;
+/* line 38, ../scss/modules/_layout.scss */
+body > header, body > footer {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
-/* line 20, ../scss/modules/_themes.scss */
-.foo label.prefix, .foo label.postfix, .foo label.affix, .foo .label.prefix, .foo .label.postfix, .foo .label.affix {
-  color: #efefef;
-  background-color: #4a5f75;
+/* line 44, ../scss/modules/_layout.scss */
+body > header {
+  height: 60px;
+  top: 0;
+}
+/* line 49, ../scss/modules/_layout.scss */
+body > footer {
+  height: 60px;
+  bottom: 0;
+}
+/* line 54, ../scss/modules/_layout.scss */
+body > section {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  height: calc(100% - 60px - 60px);
+  overflow: auto;
+}
+/* line 22, ../scss/fi_airlines.scss */
+body > header, body > footer {
+  background: #efefef;
 }
 
-/* line 16, ../scss/style.scss */
-.bar {
-  background-color: #efefef;
-}
-/* line 15, ../scss/modules/_themes.scss */
-.bar p, .bar h1, .bar h2, .bar h3, .bar h4, .bar h5, .bar h6, .bar label, .bar div {
-  color: #364656;
-}
-/* line 20, ../scss/modules/_themes.scss */
-.bar label.prefix, .bar label.postfix, .bar label.affix, .bar .label.prefix, .bar .label.postfix, .bar .label.affix {
-  color: #364656;
-  background-color: #d5d5d5;
+/* line 27, ../scss/fi_airlines.scss */
+#slider {
+  background-image: url(http://farm3.staticflickr.com/2881/9205020460_c6fb6da100_b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }

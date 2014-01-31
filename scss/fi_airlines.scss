@@ -1,0 +1,32 @@
+// Color Palette
+$color-primary: #364656;
+$color-secondary: #C44741;
+$color-blue: #5d6B74;
+$color-blue-light: #94A4A5;
+$color-anchor: $color-blue-light;
+
+$button-border-width: 0;
+
+// Cadenza custom settings
+$type-custom-import: "//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic";
+$type-custom-font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Custom Variables
+$fi-header-height: 60px;
+
+@import 'cadenza';
+
+body {
+    @include layout($fi-header-height, $fi-header-height);
+
+    > header, > footer {
+        background: $color-light;
+    }
+}
+
+#slider {
+    @extend %theme-primary;
+    background-image: url(http://farm3.staticflickr.com/2881/9205020460_c6fb6da100_b.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

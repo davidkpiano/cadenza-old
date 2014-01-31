@@ -25,10 +25,15 @@
     'modules/_media',
     'modules/_state',
     'modules/_alerts',
-    'modules/_colors';
+    'modules/_themes';
 
 /* Import Extensions */
 @import
     'extensions/_ext_button_transparent',
     'extensions/_ext_form_stacked',
     'extensions/_ext_fieldset_stacked';
+
+
+/* Import Themes */
+@import
+    'themes/_theme_nav_transparent';

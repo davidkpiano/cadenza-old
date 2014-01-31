@@ -14,6 +14,14 @@
             height: 100%;
             width: 100%;
         }
+
+        &.large {
+            @extend .large;
+        }
+
+        &.small {
+            @extend .small;
+        }
     }
 
     textarea {
@@ -65,5 +73,6 @@
 }
 
 form {
+    @extend %row;
     @include form();
 }

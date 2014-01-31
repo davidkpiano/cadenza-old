@@ -1,7 +1,13 @@
 
 
-@mixin layer {
+%scroll {
+    overflow: auto;
+}
+
+%layer {
     @extend %row;
+    @extend %scroll;
+    @extend %clearfix;
 
     position: absolute;
     height: 100%;
@@ -9,15 +15,12 @@
     top: 0;
     left: 0;
     overflow: hidden;
-    @include clearfix;
-
-    @extend .scroll;
 }
 
 .layer, .page {
-    @include layer;
+    @extend %layer;
 }
 
 .scroll {
-    overflow: auto;
+    @extend %scroll;
 }
