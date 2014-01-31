@@ -11,21 +11,36 @@
 <body>
     <header>
         <div class="page" id="header-1">
-            <div class="col-9">
+            <div class="col-8 col-9-large">
                 <form class="full"><input type="text" text="" class="full large" placeholder="Search Flights, Promotions, and Travel tips"></form>
             </div>
-            <nav class="col-3 horizontal full">
+            <nav class="col-4 col-3-large horizontal full">
                 <ul>
                     <li class="col-2"><a href="#">GL</a></li>
                     <li class="col-5"><a href="#">Login</a></li>
-                    <li class="col-5"><a styhref="#">Help/Support</a></li>
+                    <li class="col-5"><a href="#">Help/Support</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <section>
         <article class="page">
-            <div id="slider" class="col-9 content">
+            <div id="slider" class="col-8 col-9-large content">
+                <div class="popup">
+                        <div class="popup-thumbnail">
+                            <small>From USD</small>
+                            <strong>305</strong>
+                        </div>
+                        <div class="popup-content">
+                            <nav>
+                                <ul>
+                                    <li><a href="#">See the full Trip</a></li>
+                                    <li><a href="#">Share this Trip</a></li>
+                                    <li><a href="#">Book directly</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
                 <div class="row-4 row-bottom">
                     <div class="col-9 content">
                         <h2>We fly to more than 70 <br>destinations in Northern Europe</h2>
@@ -36,16 +51,51 @@
                     </div>
                 </div>
             </div>
+            <div id="sidebar" class="col-4 col-3-large">
+                <article class="page" id="sb-1">
+                    <header class="row-3 content">
+                        <h3 class="stacked">Welcome to</h3>
+                        <h1>Innovation<br>Airlines</h1>
+                    </header>
+                    <section class="row-7 content">
+                        <form>
+                            <fieldset>
+                                <legend><h3>Book a flight</h3></legend>
+                                <div class="field fi-text">
+                                    <div class="popup"></div>
+                                    <label for="book-from">From</label><input type="text" name="book.from" id="book-from">
+                                </div>
+                                <div class="field fi-text">
+                                    <div class="popup blue"></div>
+                                    <label for="book-to">To</label><input type="text" name="book.to" id="book-to">
+                                </div>
+                            </fieldset>
+                        </form>
+                        
+                    </section>
+                    <footer class="row-2 content">
+                        <h3 class="stacked">We offer amazing deals<br>around the world.</h3>
+                        <h6>Scroll down to find out more.</h6>
+                    </footer>
+                </article>
+            </div>
         </article>
     </section>
     <footer>
         <div class="page" id="footer-1">
-            <nav class="col-8 horizontal full secondary">
+            <nav class="col-8 col-9-large horizontal full secondary">
                 <ul>
                     <li class="col-2"><a href="#" class="large">Fly</a></li>
                     <li class="col-2"><a href="#" class="large">Cruise</a></li>
                     <li class="col-2"><a href="#" class="large">Drive</a></li>
                     <li class="col-2"><a href="#" class="large">Sleep</a></li>
+                </ul>
+            </nav>
+            <nav class="col-flex horizontal full secondary">
+                <ul>
+                    <li class="col-4"><a href="#">Check-in</a></li>
+                    <li class="col-4"><a href="#">Find Booking</a></li>
+                    <li class="col-4"><a href="#">Flight Status</a></li>
                 </ul>
             </nav>
         </div>

@@ -27,6 +27,7 @@ html {
 //   <section></section>
 //   <footer></footer>
 // </body>
+// THIS IS IE 9+ AND MODERN BROWSERS ONLY
 @mixin layout($header-height: 0, $footer-height: 0) {
     position: absolute;
     height: 100%;

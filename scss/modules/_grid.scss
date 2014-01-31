@@ -26,11 +26,13 @@
 // Horizontal Grid System
 // ======================
 
-@mixin columns($columns) {
+@mixin columns($columns, $flex: true) {
     width: ($columns / $grid-columns) * 100% !important;
 
-    + .col-flex {
-        width: (1 - ($columns / $grid-columns)) * 100%;
+    @if $flex {    
+        + .col-flex {
+            width: (1 - ($columns / $grid-columns)) * 100%;
+        }
     }
 }
 

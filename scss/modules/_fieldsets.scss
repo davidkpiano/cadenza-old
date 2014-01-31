@@ -4,10 +4,16 @@
     padding: $fieldset-padding-vertical $fieldset-padding-horizontal;
     border: $fieldset-border-width;
     margin: 0; // TODO: reset
+    margin-bottom: $fieldset-margin-bottom;
+
+    legend {
+        margin-bottom: $legend-margin-bottom;
+    }
 
     .field {
         height: auto;
         padding: $field-padding-vertical $field-padding-horizontal;
+        margin-bottom: $field-margin-bottom;
     }
 }
 

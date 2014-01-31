@@ -9,6 +9,7 @@
 
         li {
             padding: $nav-li-padding;
+            @extend %nowrap;
 
             a {
                 display: block;
@@ -36,7 +37,6 @@
 
             > li {
                 float: left;
-                @extend %nowrap;
             }
         }
 

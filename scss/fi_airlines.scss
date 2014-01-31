@@ -1,11 +1,22 @@
 // Color Palette
-$color-primary: #364656;
-$color-secondary: #C44741;
+$fi-gray: #717171;
+$fi-gray-dark: #313131;
+$fi-gray-light: #B7B7B7;
+$fi-red: #C44741;
+// $fi-blue: #364656;
+$fi-blue: #508F9F;
+$color-primary: $fi-blue;
+$color-secondary: $fi-red;
+$color-dark: $fi-gray-dark;
 $color-blue: #5d6B74;
 $color-blue-light: #94A4A5;
 $color-anchor: $color-blue-light;
 
 $button-border-width: 0;
+
+$type-header-font-weight: bold;
+
+$legend-margin-bottom: 1rem;
 
 // Cadenza custom settings
 $type-custom-import: "//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic";
@@ -30,3 +41,139 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+#sidebar {
+    @extend %theme-fi-lightgray;
+
+    #sb-1 {
+        > header { @extend %theme-fi-gray; }
+    }
+
+    fieldset {
+        padding: 0 0;
+    }
+
+    .field.fi-text {
+        @extend %clearfix;
+        background: white;
+        padding: 0;
+        height: 2*$x-rem;
+        font-weight: bold;
+        
+        > label, > input {
+            display: block;
+            float: left;
+            margin: 0;
+            @include typeScale(0);
+        }
+        > label {
+            @extend %valign-center;
+            @include columns(3, false);
+            padding: 0 0 0 $x*2;
+        }
+
+        > input {
+            height: 100%;
+            background-color: transparent;
+            border: none;
+            @include columns(9, false);
+        }
+    }
+}
+
+%theme-fi-gray {
+    @include background($fi-gray);
+
+    h2, h3, h4, h5 {
+        color: $fi-gray-dark;
+    }
+}
+
+%theme-fi-lightgray {
+    @include background($fi-gray-light);
+
+    h6 {
+        color: $color-light;
+    }
+}
+
+// POPUP STRUCTURE: 
+// div.popup(.blue) > div.popup-thumbnail + div.popup-content
+.popup {
+    $fi-popup-thumbnail-width: $x * 2.5;
+    $fi-popup-thumbnail-height: $x * 4;
+
+    position: absolute;
+    min-height: $x;
+    min-width: $x;
+    left: $x/2 + 200px;
+    top: $x/2 + 200px;
+    background: $fi-red;
+    overflow: visible;
+    @include typeScale(-1);
+
+    &:before {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        content: "";
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: ($x - 3) ($fi-popup-thumbnail-width / 2) 0 0;
+        border-color: transparent;
+        border-top-color: darken($fi-red, 10%);
+    }
+
+    &.icon:before {
+        border-width: ($x/2 - 3) $x/2 0 0;
+    }
+
+    &.blue {
+        background: $fi-blue;
+
+        &:before {
+            border-top-color: darken($fi-blue, 10%);
+        }
+    }
+
+    > .popup-thumbnail {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding: $x/3;
+        background: $fi-red;
+        width: 0;
+        width: $fi-popup-thumbnail-width;
+        height: $fi-popup-thumbnail-height;
+
+        small {
+            @include typeScale(-2);
+        }
+    }
+
+    > .popup-content {
+        // display: none;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background: $fi-red;
+        visibility: hidden;
+        @include transition-property(scale);
+        @include transition-duration(0s);
+        @include experimental(transform, scale(0.7));
+        @include experimental(transform-origin, bottom right);
+
+        nav, ul { margin: 0; }
+    }
+
+    &:hover > .popup-content {
+        // display: block;
+        visibility: visible;
+        @include experimental(transform, scale(1));
+        @include transition-duration(0.5s);
+    }
+}
+
+

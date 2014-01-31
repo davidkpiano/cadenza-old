@@ -139,7 +139,7 @@ $mq-screen: "only screen" !default;
 $prefixes: moz, webkit, o !default;
 
 // Form Elements
-$form-style: stacked !default;
+$form-style: normal !default;
 $form-affixable-selectors: "button, .button, input[type=submit], input[type=text], label";
 $form-type-scale: -1 !default;
 $form-border-width: 1px !default;
@@ -206,15 +206,19 @@ $field-label-affix-border-color: darken($color-gray, 15%) !default;
 $field-label-affix-border-width: $form-border-width !default;
 
 // Fieldset Settings
-$fieldset-style: stacked !default;
+$fieldset-style: normal !default;
 $fieldset-border-width: 0 !default;
 $fieldset-border-color: $color-primary !default;
 $fieldset-padding-horizontal: $form-padding-horizontal !default;
 $fieldset-padding-vertical: $form-padding-vertical !default;
+$fieldset-margin-bottom: $x-rem / 2 !default;
+
+$legend-margin-bottom: $fieldset-margin-bottom !default;
 
 // Field Settings
 $field-padding-horizontal: $form-padding-horizontal !default;
 $field-padding-vertical: $form-padding-vertical !default;
+$field-margin-bottom: $fieldset-margin-bottom !default;
 
 // Table Settings
 $table-style: normal !default;
