@@ -7,6 +7,7 @@
 %grid {
     @extend %border-box;
     @include clearfix;
+    margin: 0;
     display: block;
     position: relative;
 
@@ -16,6 +17,8 @@
     @extend %grid;
     float: left;
     height: 100%;
+
+    &.col-inline { height: auto; }
 }
 %row {
     @extend %grid;

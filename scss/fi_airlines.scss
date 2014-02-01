@@ -12,7 +12,7 @@ $color-blue: #5d6B74;
 $color-blue-light: #94A4A5;
 $color-anchor: $color-blue-light;
 
-$button-border-width: 0;
+$button-border-width: 1px;
 
 $type-header-font-weight: bold;
 
@@ -57,7 +57,7 @@ body {
         @extend %clearfix;
         background: white;
         padding: 0;
-        height: 2*$x-rem;
+        height: 2.5*$x-rem;
         font-weight: bold;
         
         > label, > input {
@@ -77,6 +77,11 @@ body {
             background-color: transparent;
             border: none;
             @include columns(9, false);
+        }
+
+        .popup {
+            left: $x/2;
+            @extend %valign-center;
         }
     }
 }
@@ -106,8 +111,6 @@ body {
     position: absolute;
     min-height: $x;
     min-width: $x;
-    left: $x/2 + 200px;
-    top: $x/2 + 200px;
     background: $fi-red;
     overflow: visible;
     @include typeScale(-1);

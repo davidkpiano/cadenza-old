@@ -5,10 +5,14 @@
     display: inline-block;
     padding: $button-padding-vertical $button-padding-horizontal;
     cursor: pointer;
-    border-style: solid;
-    border-width: $button-border-width;
     margin-right: $button-margin-right;
     margin-bottom: $button-margin-bottom;
+    border-style: solid;
+    border-width: $button-border-width;
+
+    @if $button-use-radius {
+        @include border-radius($button-radius);
+    }
 
     // Text style
     @include typeScale($button-type-scale);
@@ -31,10 +35,87 @@
 
     &.inline { margin-bottom: 0; }
 
+    &.block { @extend %row; margin: 0; }
+
+    &.full {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        display: block;
+
+        @extend %valign-center;
+    }
+
     &.link {
         background: transparent;
         color: $color-anchor;
         border: none;
+    }
+}
+
+%button-group-layout {
+    @extend %clearfix;
+    margin-bottom: $button-group-margin-bottom;
+
+    > #{$button-selectors}, > label {
+        @include border-radius(0);
+        margin: 0;
+        margin-left: -$button-border-width;
+        float: left;
+
+        &:first-of-type { margin-left: inherit; }
+        &:hover, &:focus { z-index: 2; }
+
+        @if $button-use-radius {    
+            &:first-of-type {
+                @include border-top-left-radius($button-radius);
+                @include border-bottom-left-radius($button-radius);
+            }
+            &:last-of-type {
+                @include border-top-right-radius($button-radius);
+                @include border-bottom-right-radius($button-radius);
+            }
+        }
+    }
+
+    &.inline {
+        display: inline-block;
+        margin-right: $button-group-margin-right;
+    }
+
+    &.vertical {
+        display: inline-block;
+
+        > #{$button-selectors}, > label {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            margin-left: 0;
+            margin-top: -$button-border-width;
+            float: none; 
+
+            &:first-of-type { margin-left: 0; margin-top: inherit; }
+            
+            @if $button-use-radius {
+                &:first-of-type {
+                    @include border-bottom-left-radius(0);
+                    @include border-top-left-radius($button-radius);
+                    @include border-top-right-radius($button-radius);
+                }
+                &:last-of-type {
+                    @include border-top-right-radius(0);
+                    @include border-bottom-left-radius($button-radius);
+                    @include border-bottom-right-radius($button-radius);
+                }
+            }
+        }
+    }
+
+    // Radio and Checkbox buttons
+    // .button-group > (input[type=radio|checkbox] + label)
+    > input[type=radio], > input[type=checkbox] {
+        display: none;
     }
 }
 
@@ -45,11 +126,11 @@
     @include extButtonColors();
 
     // TODO: refactor in Sass 3.3 with MAPS feature
-    &.primary { @include extButtonColors($color: $color-primary); }
-    &.secondary { @include extButtonColors($color: $color-secondary); }
-    &.light { @include extButtonColors($color: $color-light, $color-text: auto); }
-    &.dark { @include extButtonColors($color: $color-dark); }
-    &.transparent {
+    &.primary, .button-group.primary & { @include extButtonColors($color: $color-primary); }
+    &.secondary, .button-group.secondary & { @include extButtonColors($color: $color-secondary); }
+    &.light, .button-group.light & { @include extButtonColors($color: $color-light, $color-text: auto); }
+    &.dark, .button-group.dark & { @include extButtonColors($color: $color-dark); }
+    &.transparent, .button-group.transparent & {
         @include extButtonColors(
             $color-background: transparent,
             $color-background-hover: $color-primary,
@@ -62,19 +143,18 @@
     @extend %ext-button-#{$style};
 }
 
-button, .button, input[type=submit] {
+#{$button-selectors} {
     @include button;
 }
 
-.button-full {
-    width: 100%;
-    height: 100%;
-    padding: 0;
-    display: block;
 
-    @extend %valign-center;
-}
+.button-group {
+    @extend %button-group-layout;
 
-.button-block {
-    @extend %row;
+    > label { @include button; }
+
+    input:checked + label {
+        @extend button:active;
+        z-index: 2;
+    }
 }

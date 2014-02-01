@@ -25,33 +25,80 @@
     </header>
     <section>
         <article class="page">
-            <div id="slider" class="col-8 col-9-large content">
-                <div class="popup">
-                        <div class="popup-thumbnail">
-                            <small>From USD</small>
-                            <strong>305</strong>
-                        </div>
-                        <div class="popup-content">
-                            <nav>
-                                <ul>
-                                    <li><a href="#">See the full Trip</a></li>
-                                    <li><a href="#">Share this Trip</a></li>
-                                    <li><a href="#">Book directly</a></li>
-                                </ul>
-                            </nav>
-                        </div>
+            <section class="col-8 col-9-large">
+                <article id="slider" class="page content hidden">
+                     <div class="popup">
+                             <div class="popup-thumbnail">
+                                 <small>From USD</small>
+                                 <strong>305</strong>
+                             </div>
+                             <div class="popup-content">
+                                 <nav>
+                                     <ul>
+                                         <li><a href="#">See the full Trip</a></li>
+                                         <li><a href="#">Share this Trip</a></li>
+                                         <li><a href="#">Book directly</a></li>
+                                     </ul>
+                                 </nav>
+                             </div>
+                         </div>
+                     <div class="row-4 row-bottom">
+                         <div class="col-9 content">
+                             <h2>We fly to more than 70 <br>destinations in Northern Europe</h2>
+                         </div>
+                         <div class="col-3 content">
+                             <h3 class="stacked">From USD</h3>
+                             <h1>$640</h1>
+                         </div>
+                     </div>
+                </article>
+                <article id="map" class="page content">
+                    <div class="col-1">
+                        <button class="primary block">All<br>▾</button>
                     </div>
-                <div class="row-4 row-bottom">
-                    <div class="col-9 content">
-                        <h2>We fly to more than 70 <br>destinations in Northern Europe</h2>
+                    <div class="col-flex">
+                        <form>
+                            <fieldset>
+                                <legend>Hello</legend>
+                                <div class="button-group vertical">
+                                    <button>button 1</button>
+                                    <button>button 2 longer</button>
+                                    <button>button 3</button>
+                                </div>
+                                <div class="field">
+                                    <div class="button-group vertical light">
+                                        <input type="checkbox" name="rg" id="r1">
+                                        <label class="button" for="r1">checkbox 1</label>
+                                        <input type="checkbox" name="rg" id="r2">
+                                        <label class="button" for="r2">checkbox 2</label>
+                                        <input type="checkbox" name="rg" id="r3">
+                                        <label class="button" for="r3">checkbox 3</label>
+                                        <input type="checkbox" name="rg" id="r4">
+                                        <label class="button" for="r4">checkbox 4</label>
+                                    </div>
+                                </div>
+                                <div class="field">
+                                    <div class="button-group secondary">
+                                        <button>≤</button>
+                                        <input type="radio" name="pg" id="p1">
+                                        <label for="p1">1</label>
+                                        <input type="radio" name="pg" id="p2">
+                                        <label for="p2">2</label>
+                                        <input type="radio" name="pg" id="p3">
+                                        <label for="p3">3</label>
+                                        <input type="radio" name="pg" id="p4">
+                                        <label for="p4">4</label>
+                                        <input type="radio" name="pg" id="p5">
+                                        <label for="p5">5</label>
+                                        <button>≥</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
                     </div>
-                    <div class="col-3 content">
-                        <h3 class="stacked">From USD</h3>
-                        <h1>$640</h1>
-                    </div>
-                </div>
-            </div>
-            <div id="sidebar" class="col-4 col-3-large">
+                </article>
+            </section> 
+            <section id="sidebar" class="col-4 col-3-large">
                 <article class="page" id="sb-1">
                     <header class="row-3 content">
                         <h3 class="stacked">Welcome to</h3>
@@ -62,15 +109,16 @@
                             <fieldset>
                                 <legend><h3>Book a flight</h3></legend>
                                 <div class="field fi-text">
-                                    <div class="popup"></div>
-                                    <label for="book-from">From</label><input type="text" name="book.from" id="book-from">
+                                    <div class="popup icon"></div>
+                                    <label for="book-from">From</label><input type="text" name="book.from" id="book-from" placeholder="Enter City or Airport">
                                 </div>
                                 <div class="field fi-text">
-                                    <div class="popup blue"></div>
-                                    <label for="book-to">To</label><input type="text" name="book.to" id="book-to">
+                                    <div class="popup icon blue"></div>
+                                    <label for="book-to">To</label><input type="text" name="book.to" id="book-to" placeholder="Enter City or Airport">
                                 </div>
                             </fieldset>
                         </form>
+                        <div class="col-3">hi</div>
                         
                     </section>
                     <footer class="row-2 content">
@@ -78,7 +126,7 @@
                         <h6>Scroll down to find out more.</h6>
                     </footer>
                 </article>
-            </div>
+            </section>
         </article>
     </section>
     <footer>
