@@ -181,11 +181,6 @@ dl {
 .align-right { text-align: right; }
 .align-center { text-align: center; }
 
-// Stacking
-.stacked {
-    margin-bottom: 0;
-}
-
 // Hyphens
 abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var, xmp {
     @include experimental(hyphens, none);

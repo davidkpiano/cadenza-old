@@ -26,7 +26,7 @@ strong, b {
 }
 
 /* line 2, ../scss/modules/_layout.scss */
-*, *:before, *:after, header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .layer, .page, button.block, .block.button, input.block[type=button], input.block[type=submit], .button-group > label.block, form, body > section, form input[type], form textarea {
+*, *:before, *:after, header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .layer, .page, form, body > section, form input[type], form textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -70,12 +70,12 @@ html {
 }
 
 /* line 4, ../scss/modules/_grid.scss */
-header.content, footer.content, section.content, .content.col, .content[class*="col-"], .content.full, .content.row, .content[class*="row-"], .content.layer, .content.page, button.content.block, .content.block.button, input.content.block[type=button], input.content.block[type=submit], .button-group > label.content.block, form.content, body > section.content {
+header.content, footer.content, section.content, .content.col, .content[class*="col-"], .content.full, .content.row, .content[class*="row-"], .content.layer, .content.page, form.content, body > section.content {
   padding: 16px;
 }
 
 /* line 7, ../scss/modules/_grid.scss */
-header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .layer, .page, button.block, .block.button, input.block[type=button], input.block[type=submit], .button-group > label.block, form, body > section {
+header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .layer, .page, form, body > section {
   overflow: hidden;
   *zoom: 1;
   margin: 0;
@@ -94,7 +94,7 @@ header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .l
 }
 
 /* line 23, ../scss/modules/_grid.scss */
-.full, .row, [class*="row-"], .layer, .page, button.block, .block.button, input.block[type=button], input.block[type=submit], .button-group > label.block, form, body > section {
+.full, .row, [class*="row-"], .layer, .page, form, body > section {
   width: 100%;
 }
 
@@ -2673,11 +2673,6 @@ ul.inline > li, ol.inline > li, dl.inline > li, nav ul li, .label, .badge {
 }
 
 /* line 185, ../scss/modules/_type.scss */
-.stacked {
-  margin-bottom: 0;
-}
-
-/* line 190, ../scss/modules/_type.scss */
 abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var, xmp {
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -2686,7 +2681,7 @@ abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var,
   hyphens: none;
 }
 
-/* line 195, ../scss/modules/_type.scss */
+/* line 190, ../scss/modules/_type.scss */
 pre {
   white-space: pre;
   color: #222222;
@@ -2694,14 +2689,14 @@ pre {
   font-size: 1rem ;
   font-family: monospace;
 }
-/* line 201, ../scss/modules/_type.scss */
+/* line 196, ../scss/modules/_type.scss */
 pre code {
   word-wrap: normal;
   white-space: -moz-pre-wrap;
   white-space: pre-wrap;
 }
 
-/* line 208, ../scss/modules/_type.scss */
+/* line 203, ../scss/modules/_type.scss */
 code {
   white-space: pre;
   color: #222222;
@@ -2710,26 +2705,26 @@ code {
   font-family: monospace;
 }
 
-/* line 216, ../scss/modules/_type.scss */
+/* line 211, ../scss/modules/_type.scss */
 blockquote {
   color: #484848;
   padding: 1rem;
   border-left: 1px solid #484848;
   margin-bottom: 1rem;
 }
-/* line 222, ../scss/modules/_type.scss */
+/* line 217, ../scss/modules/_type.scss */
 blockquote cite {
   display: block;
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
   color: #484848;
 }
-/* line 228, ../scss/modules/_type.scss */
+/* line 223, ../scss/modules/_type.scss */
 blockquote p {
   color: #484848;
 }
 
-/* line 234, ../scss/modules/_type.scss */
+/* line 229, ../scss/modules/_type.scss */
 hr {
   clear: both;
   height: 0;
@@ -2739,7 +2734,7 @@ hr {
   border-width: 1px 0 0;
 }
 
-/* line 244, ../scss/modules/_type.scss */
+/* line 239, ../scss/modules/_type.scss */
 abbr, acronym {
   font-size: 86.10298%;
   text-transform: uppercase;
@@ -2851,7 +2846,10 @@ button.inline, .inline.button, input.inline[type=button], input.inline[type=subm
 }
 /* line 38, ../scss/modules/_buttons.scss */
 button.block, .block.button, input.block[type=button], input.block[type=submit], .button-group > label.block {
-  margin: 0;
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 /* line 40, ../scss/modules/_buttons.scss */
 button.full, .full.button, input.full[type=button], input.full[type=submit], .button-group > label.full {
@@ -2913,11 +2911,11 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   display: inline-block;
   margin-right: 8px;
 }
-/* line 86, ../scss/modules/_buttons.scss */
+/* line 87, ../scss/modules/_buttons.scss */
 .vertical.button-group {
   display: inline-block;
 }
-/* line 89, ../scss/modules/_buttons.scss */
+/* line 90, ../scss/modules/_buttons.scss */
 .vertical.button-group > button, .vertical.button-group .button, .vertical.button-group input[type=button], .vertical.button-group input[type=submit], .vertical.button-group > label {
   display: block;
   width: 100%;
@@ -2927,12 +2925,12 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   margin-top: -1px;
   float: none;
 }
-/* line 98, ../scss/modules/_buttons.scss */
+/* line 99, ../scss/modules/_buttons.scss */
 .vertical.button-group > button:first-of-type, .vertical.button-group .button:first-of-type, .vertical.button-group input[type=button]:first-of-type, .vertical.button-group input[type=submit]:first-of-type, .vertical.button-group > label:first-of-type {
   margin-left: 0;
   margin-top: inherit;
 }
-/* line 101, ../scss/modules/_buttons.scss */
+/* line 102, ../scss/modules/_buttons.scss */
 .vertical.button-group > button:first-of-type, .vertical.button-group .button:first-of-type, .vertical.button-group input[type=button]:first-of-type, .vertical.button-group input[type=submit]:first-of-type, .vertical.button-group > label:first-of-type {
   -moz-border-radius-bottomleft: 0;
   -webkit-border-bottom-left-radius: 0;
@@ -2944,7 +2942,7 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 106, ../scss/modules/_buttons.scss */
+/* line 107, ../scss/modules/_buttons.scss */
 .vertical.button-group > button:last-of-type, .vertical.button-group .button:last-of-type, .vertical.button-group input[type=button]:last-of-type, .vertical.button-group input[type=submit]:last-of-type, .vertical.button-group > label:last-of-type {
   -moz-border-radius-topright: 0;
   -webkit-border-top-right-radius: 0;
@@ -2956,12 +2954,17 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 117, ../scss/modules/_buttons.scss */
+/* line 115, ../scss/modules/_buttons.scss */
+.vertical.block.button-group {
+  display: block;
+  margin-bottom: 1rem;
+}
+/* line 123, ../scss/modules/_buttons.scss */
 .button-group > input[type=radio], .button-group > input[type=checkbox] {
   display: none;
 }
 
-/* line 122, ../scss/modules/_buttons.scss */
+/* line 128, ../scss/modules/_buttons.scss */
 button, .button, input[type=button], input[type=submit], .button-group > label {
   background-color: #508f9f;
   border-color: #447a87;
@@ -2979,7 +2982,7 @@ button:active, .button-group input:checked + label, .button:active, input[type=b
   background-color: #38646f;
   border-color: #2c4f58;
 }
-/* line 129, ../scss/modules/_buttons.scss */
+/* line 135, ../scss/modules/_buttons.scss */
 button.primary, .primary.button, input.primary[type=button], input.primary[type=submit], .button-group > label.primary, .button-group.primary button, .button-group.primary .button, .button-group.primary input[type=button], .button-group.primary input[type=submit], .button-group.primary .button-group > label {
   background-color: #508f9f;
   border-color: #447a87;
@@ -2997,7 +3000,7 @@ button.primary:active, .button-group input:checked + label.primary, .primary.but
   background-color: #38646f;
   border-color: #2c4f58;
 }
-/* line 130, ../scss/modules/_buttons.scss */
+/* line 136, ../scss/modules/_buttons.scss */
 button.secondary, .secondary.button, input.secondary[type=button], input.secondary[type=submit], .button-group > label.secondary, .button-group.secondary button, .button-group.secondary .button, .button-group.secondary input[type=button], .button-group.secondary input[type=submit], .button-group.secondary .button-group > label {
   background-color: #c44741;
   border-color: #ac3b35;
@@ -3015,7 +3018,7 @@ button.secondary:active, .button-group input:checked + label.secondary, .seconda
   background-color: #91312d;
   border-color: #752824;
 }
-/* line 131, ../scss/modules/_buttons.scss */
+/* line 137, ../scss/modules/_buttons.scss */
 button.light, .light.button, input.light[type=button], input.light[type=submit], .button-group > label.light, .button-group.light button, .button-group.light .button, .button-group.light input[type=button], .button-group.light input[type=submit], .button-group.light .button-group > label {
   background-color: #efefef;
   border-color: #dddddd;
@@ -3033,7 +3036,7 @@ button.light:active, .button-group input:checked + label.light, .light.button:ac
   background-color: #cbcbcb;
   border-color: #b9b9b9;
 }
-/* line 132, ../scss/modules/_buttons.scss */
+/* line 138, ../scss/modules/_buttons.scss */
 button.dark, .dark.button, input.dark[type=button], input.dark[type=submit], .button-group > label.dark, .button-group.dark button, .button-group.dark .button, .button-group.dark input[type=button], .button-group.dark input[type=submit], .button-group.dark .button-group > label {
   background-color: #313131;
   border-color: #1f1f1f;
@@ -3051,7 +3054,7 @@ button.dark:active, .button-group input:checked + label.dark, .dark.button:activ
   background-color: #0d0d0d;
   border-color: black;
 }
-/* line 133, ../scss/modules/_buttons.scss */
+/* line 139, ../scss/modules/_buttons.scss */
 button.transparent, .transparent.button, input.transparent[type=button], input.transparent[type=submit], .button-group > label.transparent, .button-group.transparent button, .button-group.transparent .button, .button-group.transparent input[type=button], .button-group.transparent input[type=submit], .button-group.transparent .button-group > label {
   background-color: transparent;
   border-color: #447a87;
@@ -3070,7 +3073,7 @@ button.transparent:active, .button-group input:checked + label.transparent, .tra
   border-color: #2c4f58;
 }
 
-/* line 156, ../scss/modules/_buttons.scss */
+/* line 162, ../scss/modules/_buttons.scss */
 .button-group input:checked + label {
   z-index: 2;
 }
@@ -3446,7 +3449,7 @@ nav.dark > ul > li > a:hover {
   color: #efefef;
 }
 
-/* line 30, ../scss/fi_airlines.scss */
+/* line 33, ../scss/fi_airlines.scss */
 body {
   position: absolute;
   height: 100%;
@@ -3478,30 +3481,30 @@ body > section {
   height: calc(100% - 60px - 60px);
   overflow: auto;
 }
-/* line 33, ../scss/fi_airlines.scss */
+/* line 36, ../scss/fi_airlines.scss */
 body > header, body > footer {
   background: #efefef;
 }
 
-/* line 38, ../scss/fi_airlines.scss */
+/* line 41, ../scss/fi_airlines.scss */
 #slider {
   background-image: url(http://farm3.staticflickr.com/2881/9205020460_c6fb6da100_b.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-/* line 52, ../scss/fi_airlines.scss */
+/* line 55, ../scss/fi_airlines.scss */
 #sidebar fieldset {
   padding: 0 0;
 }
-/* line 56, ../scss/fi_airlines.scss */
+/* line 59, ../scss/fi_airlines.scss */
 #sidebar .field.fi-text {
   background: white;
   padding: 0;
   height: 2.5rem;
   font-weight: bold;
 }
-/* line 63, ../scss/fi_airlines.scss */
+/* line 66, ../scss/fi_airlines.scss */
 #sidebar .field.fi-text > label, #sidebar .field.fi-text > input {
   display: block;
   float: left;
@@ -3509,24 +3512,29 @@ body > header, body > footer {
   font-size: 16px ;
   font-size: 1rem ;
 }
-/* line 69, ../scss/fi_airlines.scss */
+/* line 72, ../scss/fi_airlines.scss */
 #sidebar .field.fi-text > label {
   width: 25% !important;
   padding: 0 0 0 32px;
 }
-/* line 75, ../scss/fi_airlines.scss */
+/* line 78, ../scss/fi_airlines.scss */
 #sidebar .field.fi-text > input {
   height: 100%;
   background-color: transparent;
   border: none;
   width: 75% !important;
 }
-/* line 82, ../scss/fi_airlines.scss */
+/* line 85, ../scss/fi_airlines.scss */
 #sidebar .field.fi-text .popup {
   left: 8px;
 }
 
-/* line 89, ../scss/fi_airlines.scss */
+/* line 99, ../scss/fi_airlines.scss */
+#location-sidebar nav a {
+  padding: 16px;
+}
+
+/* line 102, ../scss/fi_airlines.scss */
 #sidebar #sb-1 > header {
   background-color: #717171;
 }
@@ -3539,12 +3547,12 @@ body > header, body > footer {
   color: #efefef;
   background-color: #8b8b8b;
 }
-/* line 92, ../scss/fi_airlines.scss */
+/* line 105, ../scss/fi_airlines.scss */
 #sidebar #sb-1 > header h2, #sidebar #sb-1 > header h3, #sidebar #sb-1 > header h4, #sidebar #sb-1 > header h5 {
   color: #313131;
 }
 
-/* line 97, ../scss/fi_airlines.scss */
+/* line 110, ../scss/fi_airlines.scss */
 #sidebar {
   background-color: #b7b7b7;
 }
@@ -3557,12 +3565,44 @@ body > header, body > footer {
   color: #313131;
   background-color: #9e9e9e;
 }
-/* line 100, ../scss/fi_airlines.scss */
+/* line 113, ../scss/fi_airlines.scss */
 #sidebar h6 {
   color: #efefef;
 }
 
-/* line 107, ../scss/fi_airlines.scss */
+/* line 118, ../scss/fi_airlines.scss */
+#location-sidebar {
+  background-color: #bf9b64;
+}
+/* line 15, ../scss/modules/_themes.scss */
+#location-sidebar p, #location-sidebar h1, #location-sidebar h2, #location-sidebar h3, #location-sidebar h4, #location-sidebar h5, #location-sidebar h6, #location-sidebar label, #location-sidebar div {
+  color: #5f492a;
+}
+/* line 20, ../scss/modules/_themes.scss */
+#location-sidebar label.prefix, #location-sidebar label.postfix, #location-sidebar label.affix, #location-sidebar .label.prefix, #location-sidebar .label.postfix, #location-sidebar .label.affix {
+  color: #5f492a;
+  background-color: #ceb288;
+}
+
+/* line 122, ../scss/fi_airlines.scss */
+#location-sidebar header {
+  background-color: #947241;
+}
+/* line 15, ../scss/modules/_themes.scss */
+#location-sidebar header p, #location-sidebar header h1, #location-sidebar header h2, #location-sidebar header h3, #location-sidebar header h4, #location-sidebar header h5, #location-sidebar header h6, #location-sidebar header label, #location-sidebar header div {
+  color: #313131;
+}
+/* line 20, ../scss/modules/_themes.scss */
+#location-sidebar header label.prefix, #location-sidebar header label.postfix, #location-sidebar header label.affix, #location-sidebar header .label.prefix, #location-sidebar header .label.postfix, #location-sidebar header .label.affix {
+  color: #313131;
+  background-color: #b48d54;
+}
+/* line 125, ../scss/fi_airlines.scss */
+#location-sidebar header h1 {
+  color: #efefef;
+}
+
+/* line 130, ../scss/fi_airlines.scss */
 .popup {
   position: absolute;
   min-height: 16px;
@@ -3572,7 +3612,7 @@ body > header, body > footer {
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
 }
-/* line 118, ../scss/fi_airlines.scss */
+/* line 141, ../scss/fi_airlines.scss */
 .popup:before {
   display: block;
   position: absolute;
@@ -3586,19 +3626,19 @@ body > header, body > footer {
   border-color: transparent;
   border-top-color: #a03732;
 }
-/* line 132, ../scss/fi_airlines.scss */
+/* line 155, ../scss/fi_airlines.scss */
 .popup.icon:before {
   border-width: 5px 8px 0 0;
 }
-/* line 136, ../scss/fi_airlines.scss */
+/* line 159, ../scss/fi_airlines.scss */
 .popup.blue {
   background: #508f9f;
 }
-/* line 139, ../scss/fi_airlines.scss */
+/* line 162, ../scss/fi_airlines.scss */
 .popup.blue:before {
   border-top-color: #3f707d;
 }
-/* line 144, ../scss/fi_airlines.scss */
+/* line 167, ../scss/fi_airlines.scss */
 .popup > .popup-thumbnail {
   position: absolute;
   bottom: 0;
@@ -3609,12 +3649,12 @@ body > header, body > footer {
   width: 40px;
   height: 64px;
 }
-/* line 154, ../scss/fi_airlines.scss */
+/* line 177, ../scss/fi_airlines.scss */
 .popup > .popup-thumbnail small {
   font-size: 11.86196px ;
   font-size: 0.74137rem ;
 }
-/* line 159, ../scss/fi_airlines.scss */
+/* line 182, ../scss/fi_airlines.scss */
 .popup > .popup-content {
   position: absolute;
   bottom: 0;
@@ -3640,11 +3680,11 @@ body > header, body > footer {
   -o-transform-origin: bottom right;
   transform-origin: bottom right;
 }
-/* line 171, ../scss/fi_airlines.scss */
+/* line 194, ../scss/fi_airlines.scss */
 .popup > .popup-content nav, .popup > .popup-content ul {
   margin: 0;
 }
-/* line 174, ../scss/fi_airlines.scss */
+/* line 197, ../scss/fi_airlines.scss */
 .popup:hover > .popup-content {
   visibility: visible;
   -webkit-transform: scale(1);

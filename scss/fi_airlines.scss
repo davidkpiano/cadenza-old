@@ -5,6 +5,9 @@ $fi-gray-light: #B7B7B7;
 $fi-red: #C44741;
 // $fi-blue: #364656;
 $fi-blue: #508F9F;
+$fi-brown: #bf9b64;
+$fi-brown-dark: #947241;
+
 $color-primary: $fi-blue;
 $color-secondary: $fi-red;
 $color-dark: $fi-gray-dark;
@@ -86,6 +89,16 @@ body {
     }
 }
 
+#location-sidebar {
+    @extend %theme-fi-brown;
+
+    header {
+        @extend %theme-fi-darkbrown;
+    }
+
+    nav a { padding: $x; }
+}
+
 %theme-fi-gray {
     @include background($fi-gray);
 
@@ -100,6 +113,16 @@ body {
     h6 {
         color: $color-light;
     }
+}
+
+%theme-fi-brown {
+    @include background($fi-brown, $color-light: darken($fi-brown-dark, 15%));
+}
+
+%theme-fi-darkbrown {
+    @include background($fi-brown-dark, $color-light: $color-dark);
+
+    h1 { color: $color-light; }
 }
 
 // POPUP STRUCTURE: 

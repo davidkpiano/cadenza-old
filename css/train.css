@@ -26,7 +26,7 @@ strong, b {
 }
 
 /* line 2, ../scss/modules/_layout.scss */
-*, *:before, *:after, header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .layer, .page, button.block, .block.button, input.block[type=button], input.block[type=submit], .button-group > label.block, form, body > section, form input[type], form textarea {
+*, *:before, *:after, header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .layer, .page, form, body > section, form input[type], form textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -70,12 +70,12 @@ html {
 }
 
 /* line 4, ../scss/modules/_grid.scss */
-header.content, footer.content, section.content, .content.col, .content[class*="col-"], .content.full, .content.row, .content[class*="row-"], .content.layer, .content.page, button.content.block, .content.block.button, input.content.block[type=button], input.content.block[type=submit], .button-group > label.content.block, form.content, body > section.content {
+header.content, footer.content, section.content, .content.col, .content[class*="col-"], .content.full, .content.row, .content[class*="row-"], .content.layer, .content.page, form.content, body > section.content {
   padding: 16px;
 }
 
 /* line 7, ../scss/modules/_grid.scss */
-header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .layer, .page, button.block, .block.button, input.block[type=button], input.block[type=submit], .button-group > label.block, form, body > section {
+header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .layer, .page, form, body > section {
   overflow: hidden;
   *zoom: 1;
   margin: 0;
@@ -94,7 +94,7 @@ header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .l
 }
 
 /* line 23, ../scss/modules/_grid.scss */
-.full, .row, [class*="row-"], .layer, .page, button.block, .block.button, input.block[type=button], input.block[type=submit], .button-group > label.block, form, body > section {
+.full, .row, [class*="row-"], .layer, .page, form, body > section {
   width: 100%;
 }
 
@@ -2673,11 +2673,6 @@ ul.inline > li, ol.inline > li, dl.inline > li, nav ul li, .label, .badge {
 }
 
 /* line 185, ../scss/modules/_type.scss */
-.stacked {
-  margin-bottom: 0;
-}
-
-/* line 190, ../scss/modules/_type.scss */
 abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var, xmp {
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -2686,7 +2681,7 @@ abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var,
   hyphens: none;
 }
 
-/* line 195, ../scss/modules/_type.scss */
+/* line 190, ../scss/modules/_type.scss */
 pre {
   white-space: pre;
   color: #222222;
@@ -2694,14 +2689,14 @@ pre {
   font-size: 1rem ;
   font-family: monospace;
 }
-/* line 201, ../scss/modules/_type.scss */
+/* line 196, ../scss/modules/_type.scss */
 pre code {
   word-wrap: normal;
   white-space: -moz-pre-wrap;
   white-space: pre-wrap;
 }
 
-/* line 208, ../scss/modules/_type.scss */
+/* line 203, ../scss/modules/_type.scss */
 code {
   white-space: pre;
   color: #222222;
@@ -2710,26 +2705,26 @@ code {
   font-family: monospace;
 }
 
-/* line 216, ../scss/modules/_type.scss */
+/* line 211, ../scss/modules/_type.scss */
 blockquote {
   color: #484848;
   padding: 1rem;
   border-left: 1px solid #484848;
   margin-bottom: 1rem;
 }
-/* line 222, ../scss/modules/_type.scss */
+/* line 217, ../scss/modules/_type.scss */
 blockquote cite {
   display: block;
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
   color: #484848;
 }
-/* line 228, ../scss/modules/_type.scss */
+/* line 223, ../scss/modules/_type.scss */
 blockquote p {
   color: #484848;
 }
 
-/* line 234, ../scss/modules/_type.scss */
+/* line 229, ../scss/modules/_type.scss */
 hr {
   clear: both;
   height: 0;
@@ -2739,7 +2734,7 @@ hr {
   border-width: 1px 0 0;
 }
 
-/* line 244, ../scss/modules/_type.scss */
+/* line 239, ../scss/modules/_type.scss */
 abbr, acronym {
   font-size: 86.10298%;
   text-transform: uppercase;
@@ -2851,7 +2846,10 @@ button.inline, .inline.button, input.inline[type=button], input.inline[type=subm
 }
 /* line 38, ../scss/modules/_buttons.scss */
 button.block, .block.button, input.block[type=button], input.block[type=submit], .button-group > label.block {
-  margin: 0;
+  display: block;
+  width: 100%;
+  margin-left: 0;
+  margin-right: 0;
 }
 /* line 40, ../scss/modules/_buttons.scss */
 button.full, .full.button, input.full[type=button], input.full[type=submit], .button-group > label.full {
@@ -2913,11 +2911,11 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   display: inline-block;
   margin-right: 8px;
 }
-/* line 86, ../scss/modules/_buttons.scss */
+/* line 87, ../scss/modules/_buttons.scss */
 .vertical.button-group {
   display: inline-block;
 }
-/* line 89, ../scss/modules/_buttons.scss */
+/* line 90, ../scss/modules/_buttons.scss */
 .vertical.button-group > button, .vertical.button-group .button, .vertical.button-group input[type=button], .vertical.button-group input[type=submit], .vertical.button-group > label {
   display: block;
   width: 100%;
@@ -2927,12 +2925,12 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   margin-top: -2px;
   float: none;
 }
-/* line 98, ../scss/modules/_buttons.scss */
+/* line 99, ../scss/modules/_buttons.scss */
 .vertical.button-group > button:first-of-type, .vertical.button-group .button:first-of-type, .vertical.button-group input[type=button]:first-of-type, .vertical.button-group input[type=submit]:first-of-type, .vertical.button-group > label:first-of-type {
   margin-left: 0;
   margin-top: inherit;
 }
-/* line 101, ../scss/modules/_buttons.scss */
+/* line 102, ../scss/modules/_buttons.scss */
 .vertical.button-group > button:first-of-type, .vertical.button-group .button:first-of-type, .vertical.button-group input[type=button]:first-of-type, .vertical.button-group input[type=submit]:first-of-type, .vertical.button-group > label:first-of-type {
   -moz-border-radius-bottomleft: 0;
   -webkit-border-bottom-left-radius: 0;
@@ -2944,7 +2942,7 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 106, ../scss/modules/_buttons.scss */
+/* line 107, ../scss/modules/_buttons.scss */
 .vertical.button-group > button:last-of-type, .vertical.button-group .button:last-of-type, .vertical.button-group input[type=button]:last-of-type, .vertical.button-group input[type=submit]:last-of-type, .vertical.button-group > label:last-of-type {
   -moz-border-radius-topright: 0;
   -webkit-border-top-right-radius: 0;
@@ -2956,12 +2954,17 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 117, ../scss/modules/_buttons.scss */
+/* line 115, ../scss/modules/_buttons.scss */
+.vertical.block.button-group {
+  display: block;
+  margin-bottom: 1rem;
+}
+/* line 123, ../scss/modules/_buttons.scss */
 .button-group > input[type=radio], .button-group > input[type=checkbox] {
   display: none;
 }
 
-/* line 122, ../scss/modules/_buttons.scss */
+/* line 128, ../scss/modules/_buttons.scss */
 button, .button, input[type=button], input[type=submit], .button-group > label {
   background-color: #364656;
   border-color: #283440;
@@ -2979,7 +2982,7 @@ button:active, .button-group input:checked + label, .button:active, input[type=b
   background-color: #1a222a;
   border-color: #0d1014;
 }
-/* line 129, ../scss/modules/_buttons.scss */
+/* line 135, ../scss/modules/_buttons.scss */
 button.primary, .primary.button, input.primary[type=button], input.primary[type=submit], .button-group > label.primary, .button-group.primary button, .button-group.primary .button, .button-group.primary input[type=button], .button-group.primary input[type=submit], .button-group.primary .button-group > label {
   background-color: #364656;
   border-color: #283440;
@@ -2997,7 +3000,7 @@ button.primary:active, .button-group input:checked + label.primary, .primary.but
   background-color: #1a222a;
   border-color: #0d1014;
 }
-/* line 130, ../scss/modules/_buttons.scss */
+/* line 136, ../scss/modules/_buttons.scss */
 button.secondary, .secondary.button, input.secondary[type=button], input.secondary[type=submit], .button-group > label.secondary, .button-group.secondary button, .button-group.secondary .button, .button-group.secondary input[type=button], .button-group.secondary input[type=submit], .button-group.secondary .button-group > label {
   background-color: #c44741;
   border-color: #ac3b35;
@@ -3015,7 +3018,7 @@ button.secondary:active, .button-group input:checked + label.secondary, .seconda
   background-color: #91312d;
   border-color: #752824;
 }
-/* line 131, ../scss/modules/_buttons.scss */
+/* line 137, ../scss/modules/_buttons.scss */
 button.light, .light.button, input.light[type=button], input.light[type=submit], .button-group > label.light, .button-group.light button, .button-group.light .button, .button-group.light input[type=button], .button-group.light input[type=submit], .button-group.light .button-group > label {
   background-color: #efefef;
   border-color: #dddddd;
@@ -3033,7 +3036,7 @@ button.light:active, .button-group input:checked + label.light, .light.button:ac
   background-color: #cbcbcb;
   border-color: #b9b9b9;
 }
-/* line 132, ../scss/modules/_buttons.scss */
+/* line 138, ../scss/modules/_buttons.scss */
 button.dark, .dark.button, input.dark[type=button], input.dark[type=submit], .button-group > label.dark, .button-group.dark button, .button-group.dark .button, .button-group.dark input[type=button], .button-group.dark input[type=submit], .button-group.dark .button-group > label {
   background-color: #222222;
   border-color: #101010;
@@ -3051,7 +3054,7 @@ button.dark:active, .button-group input:checked + label.dark, .dark.button:activ
   background-color: black;
   border-color: black;
 }
-/* line 133, ../scss/modules/_buttons.scss */
+/* line 139, ../scss/modules/_buttons.scss */
 button.transparent, .transparent.button, input.transparent[type=button], input.transparent[type=submit], .button-group > label.transparent, .button-group.transparent button, .button-group.transparent .button, .button-group.transparent input[type=button], .button-group.transparent input[type=submit], .button-group.transparent .button-group > label {
   background-color: transparent;
   border-color: #283440;
@@ -3070,7 +3073,7 @@ button.transparent:active, .button-group input:checked + label.transparent, .tra
   border-color: #0d1014;
 }
 
-/* line 156, ../scss/modules/_buttons.scss */
+/* line 162, ../scss/modules/_buttons.scss */
 .button-group input:checked + label {
   z-index: 2;
 }
