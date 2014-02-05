@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("//fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic");
+@import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 /* Import Settings */
 /* Import Modules */
 /* Typography Resets */
@@ -2459,7 +2459,7 @@ html {
 /* line 58, ../scss/modules/_type.scss */
 body {
   font-style: normal;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222222;
   text-rendering: optimizeLegibility;
   word-wrap: break-word;
@@ -2474,7 +2474,7 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   line-height: 1.2;
   font-weight: 300;
   font-style: normal;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222222;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -2487,7 +2487,7 @@ body h1.subheader, body h2.subheader, body h3.subheader, body h4.subheader, body
   margin-bottom: 1rem;
 }
 /* line 26, ../scss/modules/_type.scss */
-body h1 small, body h2 small, body h3 small, body h4 small, body h5 small, body h6 small {
+body h1 small, body h1 footer nav, footer body h1 nav, body h2 small, body h2 footer nav, footer body h2 nav, body h3 small, body h3 footer nav, footer body h3 nav, body h4 small, body h4 footer nav, footer body h4 nav, body h5 small, body h5 footer nav, footer body h5 nav, body h6 small, body h6 footer nav, footer body h6 nav {
   font-size: 74.13723%;
 }
 /* line 30, ../scss/modules/_type.scss */
@@ -2537,11 +2537,11 @@ body hgroup > h1, body hgroup > h2, body hgroup > h3, body hgroup > h4, body hgr
 /* line 69, ../scss/modules/_type.scss */
 a {
   text-decoration: none;
-  color: #94a4a5;
+  color: #042f4f;
 }
 /* line 73, ../scss/modules/_type.scss */
 a:hover {
-  color: #546c85;
+  color: #085a98;
   text-decoration: none;
 }
 /* line 78, ../scss/modules/_type.scss */
@@ -2567,7 +2567,7 @@ p.lead {
 }
 
 /* line 97, ../scss/modules/_type.scss */
-.small, small, form input[type].small, form textarea.small {
+.small, small, footer nav, form input[type].small, form textarea.small {
   font-size: 15.49854px ;
   font-size: 0.86103rem ;
 }
@@ -2731,7 +2731,7 @@ hr {
   height: 0;
   margin: 0.5rem 0;
   border-style: solid;
-  border-color: #959595;
+  border-color: #43a9f5;
   border-width: 1px 0 0;
 }
 
@@ -2739,7 +2739,7 @@ hr {
 abbr, acronym {
   font-size: 86.10298%;
   text-transform: uppercase;
-  border-bottom: 1px dotted #c44741;
+  border-bottom: 1px dotted #73bf44;
   cursor: help;
 }
 
@@ -2769,7 +2769,7 @@ nav ul li.active > ul {
 /* line 28, ../scss/modules/_nav.scss */
 nav ul ul {
   display: none;
-  background-color: #364656;
+  background-color: #042f4f;
 }
 /* line 38, ../scss/modules/_nav.scss */
 nav.horizontal > ul > li {
@@ -2822,7 +2822,7 @@ button, .button, input[type=button], input[type=submit], .button-group > label {
   text-transform: uppercase;
 }
 /* line 23, ../scss/modules/_buttons.scss */
-small.button, button.small, .small.button, form input.button[type].small, form textarea.button.small, input.small[type=button], form input[type=button][type].small, input.small[type=submit], form input[type=submit][type].small, .button-group > label.small {
+small.button, footer nav.button, button.small, .small.button, form input.button[type].small, form textarea.button.small, input.small[type=button], form input[type=button][type].small, input.small[type=submit], form input[type=submit][type].small, .button-group > label.small {
   padding: 0.25rem 0.5rem;
   font-size: 11.49019px ;
   font-size: 0.63834rem ;
@@ -2867,7 +2867,7 @@ button.full, .full.button, input.full[type=button], input.full[type=submit], .bu
 /* line 53, ../scss/modules/_buttons.scss */
 button.link, .link.button, input.link[type=button], input.link[type=submit], .button-group > label.link {
   background: transparent;
-  color: #94a4a5;
+  color: #042f4f;
   border: none;
 }
 
@@ -2972,63 +2972,63 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
 
 /* line 132, ../scss/modules/_buttons.scss */
 button, .button, input[type=button], input[type=submit], .button-group > label {
-  background-color: #364656;
-  border-color: #283440;
+  background-color: #042f4f;
+  border-color: #021b2d;
   color: white;
 }
 /* line 45, ../scss/settings/_helpers.scss */
 button:hover, .button:hover, input[type=button]:hover, input[type=submit]:hover, .button-group > label:hover, button:focus, .button:focus, input[type=button]:focus, input[type=submit]:focus, .button-group > label:focus {
   color: white;
-  border-color: #1a222a;
-  background-color: #283440;
+  border-color: #01070b;
+  background-color: #021b2d;
 }
 /* line 51, ../scss/settings/_helpers.scss */
 button:active, .button-group input:checked + label, .button:active, input[type=button]:active, input[type=submit]:active, .button-group > label:active {
   color: white;
-  background-color: #1a222a;
-  border-color: #0d1014;
+  background-color: #01070b;
+  border-color: black;
 }
 /* line 139, ../scss/modules/_buttons.scss */
 button.primary, .primary.button, input.primary[type=button], input.primary[type=submit], .button-group > label.primary, .button-group.primary button, .button-group.primary .button, .button-group.primary input[type=button], .button-group.primary input[type=submit], .button-group.primary .button-group > label {
-  background-color: #364656;
-  border-color: #283440;
+  background-color: #042f4f;
+  border-color: #021b2d;
   color: white;
 }
 /* line 45, ../scss/settings/_helpers.scss */
 button.primary:hover, .primary.button:hover, input.primary[type=button]:hover, input.primary[type=submit]:hover, .button-group > label.primary:hover, button.primary:focus, .primary.button:focus, input.primary[type=button]:focus, input.primary[type=submit]:focus, .button-group > label.primary:focus, .button-group.primary button:hover, .button-group.primary .button:hover, .button-group.primary input[type=button]:hover, .button-group.primary input[type=submit]:hover, .button-group.primary .button-group > label:hover, .button-group.primary button:focus, .button-group.primary .button:focus, .button-group.primary input[type=button]:focus, .button-group.primary input[type=submit]:focus, .button-group.primary .button-group > label:focus {
   color: white;
-  border-color: #1a222a;
-  background-color: #283440;
+  border-color: #01070b;
+  background-color: #021b2d;
 }
 /* line 51, ../scss/settings/_helpers.scss */
 button.primary:active, .button-group input:checked + label.primary, .primary.button:active, input.primary[type=button]:active, input.primary[type=submit]:active, .button-group > label.primary:active, .button-group.primary button:active, .button-group.primary input:checked + label, .button-group.primary .button:active, .button-group.primary input[type=button]:active, .button-group.primary input[type=submit]:active, .button-group.primary .button-group > label:active {
   color: white;
-  background-color: #1a222a;
-  border-color: #0d1014;
+  background-color: #01070b;
+  border-color: black;
 }
 /* line 140, ../scss/modules/_buttons.scss */
 button.secondary, .secondary.button, input.secondary[type=button], input.secondary[type=submit], .button-group > label.secondary, .button-group.secondary button, .button-group.secondary .button, .button-group.secondary input[type=button], .button-group.secondary input[type=submit], .button-group.secondary .button-group > label {
-  background-color: #c44741;
-  border-color: #ac3b35;
+  background-color: #73bf44;
+  border-color: #63a639;
   color: white;
 }
 /* line 45, ../scss/settings/_helpers.scss */
 button.secondary:hover, .secondary.button:hover, input.secondary[type=button]:hover, input.secondary[type=submit]:hover, .button-group > label.secondary:hover, button.secondary:focus, .secondary.button:focus, input.secondary[type=button]:focus, input.secondary[type=submit]:focus, .button-group > label.secondary:focus, .button-group.secondary button:hover, .button-group.secondary .button:hover, .button-group.secondary input[type=button]:hover, .button-group.secondary input[type=submit]:hover, .button-group.secondary .button-group > label:hover, .button-group.secondary button:focus, .button-group.secondary .button:focus, .button-group.secondary input[type=button]:focus, .button-group.secondary input[type=submit]:focus, .button-group.secondary .button-group > label:focus {
   color: white;
-  border-color: #91312d;
-  background-color: #ac3b35;
+  border-color: #538c30;
+  background-color: #63a639;
 }
 /* line 51, ../scss/settings/_helpers.scss */
 button.secondary:active, .button-group input:checked + label.secondary, .secondary.button:active, input.secondary[type=button]:active, input.secondary[type=submit]:active, .button-group > label.secondary:active, .button-group.secondary button:active, .button-group.secondary input:checked + label, .button-group.secondary .button:active, .button-group.secondary input[type=button]:active, .button-group.secondary input[type=submit]:active, .button-group.secondary .button-group > label:active {
   color: white;
-  background-color: #91312d;
-  border-color: #752824;
+  background-color: #538c30;
+  border-color: #437127;
 }
 /* line 141, ../scss/modules/_buttons.scss */
 button.light, .light.button, input.light[type=button], input.light[type=submit], .button-group > label.light, .button-group.light button, .button-group.light .button, .button-group.light input[type=button], .button-group.light input[type=submit], .button-group.light .button-group > label {
   background-color: #efefef;
   border-color: #dddddd;
-  color: #222222;
+  color: #042f4f;
 }
 /* line 45, ../scss/settings/_helpers.scss */
 button.light:hover, .light.button:hover, input.light[type=button]:hover, input.light[type=submit]:hover, .button-group > label.light:hover, button.light:focus, .light.button:focus, input.light[type=button]:focus, input.light[type=submit]:focus, .button-group > label.light:focus, .button-group.light button:hover, .button-group.light .button:hover, .button-group.light input[type=button]:hover, .button-group.light input[type=submit]:hover, .button-group.light .button-group > label:hover, .button-group.light button:focus, .button-group.light .button:focus, .button-group.light input[type=button]:focus, .button-group.light input[type=submit]:focus, .button-group.light .button-group > label:focus {
@@ -3044,39 +3044,39 @@ button.light:active, .button-group input:checked + label.light, .light.button:ac
 }
 /* line 142, ../scss/modules/_buttons.scss */
 button.dark, .dark.button, input.dark[type=button], input.dark[type=submit], .button-group > label.dark, .button-group.dark button, .button-group.dark .button, .button-group.dark input[type=button], .button-group.dark input[type=submit], .button-group.dark .button-group > label {
-  background-color: #222222;
-  border-color: #101010;
+  background-color: #042f4f;
+  border-color: #021b2d;
   color: white;
 }
 /* line 45, ../scss/settings/_helpers.scss */
 button.dark:hover, .dark.button:hover, input.dark[type=button]:hover, input.dark[type=submit]:hover, .button-group > label.dark:hover, button.dark:focus, .dark.button:focus, input.dark[type=button]:focus, input.dark[type=submit]:focus, .button-group > label.dark:focus, .button-group.dark button:hover, .button-group.dark .button:hover, .button-group.dark input[type=button]:hover, .button-group.dark input[type=submit]:hover, .button-group.dark .button-group > label:hover, .button-group.dark button:focus, .button-group.dark .button:focus, .button-group.dark input[type=button]:focus, .button-group.dark input[type=submit]:focus, .button-group.dark .button-group > label:focus {
   color: white;
-  border-color: black;
-  background-color: #101010;
+  border-color: #01070b;
+  background-color: #021b2d;
 }
 /* line 51, ../scss/settings/_helpers.scss */
 button.dark:active, .button-group input:checked + label.dark, .dark.button:active, input.dark[type=button]:active, input.dark[type=submit]:active, .button-group > label.dark:active, .button-group.dark button:active, .button-group.dark input:checked + label, .button-group.dark .button:active, .button-group.dark input[type=button]:active, .button-group.dark input[type=submit]:active, .button-group.dark .button-group > label:active {
   color: white;
-  background-color: black;
+  background-color: #01070b;
   border-color: black;
 }
 /* line 143, ../scss/modules/_buttons.scss */
 button.transparent, .transparent.button, input.transparent[type=button], input.transparent[type=submit], .button-group > label.transparent, .button-group.transparent button, .button-group.transparent .button, .button-group.transparent input[type=button], .button-group.transparent input[type=submit], .button-group.transparent .button-group > label {
   background-color: transparent;
-  border-color: #283440;
+  border-color: #021b2d;
   color: white;
 }
 /* line 45, ../scss/settings/_helpers.scss */
 button.transparent:hover, .transparent.button:hover, input.transparent[type=button]:hover, input.transparent[type=submit]:hover, .button-group > label.transparent:hover, button.transparent:focus, .transparent.button:focus, input.transparent[type=button]:focus, input.transparent[type=submit]:focus, .button-group > label.transparent:focus, .button-group.transparent button:hover, .button-group.transparent .button:hover, .button-group.transparent input[type=button]:hover, .button-group.transparent input[type=submit]:hover, .button-group.transparent .button-group > label:hover, .button-group.transparent button:focus, .button-group.transparent .button:focus, .button-group.transparent input[type=button]:focus, .button-group.transparent input[type=submit]:focus, .button-group.transparent .button-group > label:focus {
   color: white;
-  border-color: #1a222a;
-  background-color: #364656;
+  border-color: #01070b;
+  background-color: #042f4f;
 }
 /* line 51, ../scss/settings/_helpers.scss */
 button.transparent:active, .button-group input:checked + label.transparent, .transparent.button:active, input.transparent[type=button]:active, input.transparent[type=submit]:active, .button-group > label.transparent:active, .button-group.transparent button:active, .button-group.transparent input:checked + label, .button-group.transparent .button:active, .button-group.transparent input[type=button]:active, .button-group.transparent input[type=submit]:active, .button-group.transparent .button-group > label:active {
   color: white;
-  background-color: #283440;
-  border-color: #0d1014;
+  background-color: #021b2d;
+  border-color: black;
 }
 
 /* line 166, ../scss/modules/_buttons.scss */
@@ -3117,8 +3117,8 @@ form label {
 form .select {
   font-size: 15.49854px ;
   font-size: 0.86103rem ;
-  background: #c44741;
-  border: 1px solid #a03732;
+  background: #73bf44;
+  border: 1px solid #5c9b35;
 }
 /* line 45, ../scss/modules/_forms.scss */
 form .select:after {
@@ -3132,7 +3132,7 @@ form .select:after {
   width: 2rem;
   text-align: center;
   padding: 0.5rem;
-  background-color: #a03732;
+  background-color: #5c9b35;
 }
 /* line 59, ../scss/modules/_forms.scss */
 form .select > select {
@@ -3179,57 +3179,57 @@ form .select > select {
 
 /* line 54, ../scss/modules/_labels.scss */
 .label, .badge {
-  background-color: #364656;
+  background-color: #042f4f;
   color: #efefef;
-  border-color: #c44741;
+  border-color: #73bf44;
 }
 /* line 47, ../scss/modules/_labels.scss */
 [href].label:hover, [href].badge:hover {
-  background-color: #4a5f75;
+  background-color: #064c80;
   color: #efefef;
 }
 /* line 57, ../scss/modules/_labels.scss */
 .primary.label, .primary.badge {
-  background-color: #364656;
+  background-color: #042f4f;
   color: #efefef;
-  border-color: #c44741;
+  border-color: #73bf44;
 }
 /* line 47, ../scss/modules/_labels.scss */
 .primary[href].label:hover, .primary[href].badge:hover {
-  background-color: #4a5f75;
+  background-color: #064c80;
   color: #efefef;
 }
 /* line 58, ../scss/modules/_labels.scss */
 .secondary.label, .secondary.badge {
-  background-color: #c44741;
+  background-color: #73bf44;
   color: #efefef;
-  border-color: #c44741;
+  border-color: #73bf44;
 }
 /* line 47, ../scss/modules/_labels.scss */
 .secondary[href].label:hover, .secondary[href].badge:hover {
-  background-color: #4a5f75;
+  background-color: #064c80;
   color: #efefef;
 }
 /* line 59, ../scss/modules/_labels.scss */
 .light.label, .light.badge {
   background-color: #efefef;
-  color: #222222;
-  border-color: #c44741;
+  color: #042f4f;
+  border-color: #73bf44;
 }
 /* line 47, ../scss/modules/_labels.scss */
 .light[href].label:hover, .light[href].badge:hover {
-  background-color: #4a5f75;
+  background-color: #064c80;
   color: #efefef;
 }
 /* line 60, ../scss/modules/_labels.scss */
 .dark.label, .dark.badge {
-  background-color: #222222;
+  background-color: #042f4f;
   color: #efefef;
-  border-color: #c44741;
+  border-color: #73bf44;
 }
 /* line 47, ../scss/modules/_labels.scss */
 .dark[href].label:hover, .dark[href].badge:hover {
-  background-color: #4a5f75;
+  background-color: #064c80;
   color: #efefef;
 }
 
@@ -3257,24 +3257,6 @@ form .select > select {
   right: 0;
 }
 
-/* line 3, ../scss/modules/_fieldsets.scss */
-fieldset {
-  padding: 0.5rem 0.5rem;
-  border: 0;
-  margin: 0;
-  margin-bottom: 0.5rem;
-}
-/* line 9, ../scss/modules/_fieldsets.scss */
-fieldset legend {
-  margin-bottom: 0.5rem;
-}
-/* line 13, ../scss/modules/_fieldsets.scss */
-fieldset .field {
-  height: auto;
-  padding: 0.5rem 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
 /* line 3, ../scss/modules/_tables.scss */
 table {
   margin-bottom: 1rem;
@@ -3283,7 +3265,7 @@ table {
 }
 /* line 12, ../scss/modules/_tables.scss */
 table thead {
-  background-color: #364656;
+  background-color: #042f4f;
   color: #efefef;
 }
 /* line 17, ../scss/modules/_tables.scss */
@@ -3351,8 +3333,8 @@ table tbody tr td {
   font-size: 15.49854px ;
   font-size: 0.86103rem ;
   color: #efefef;
-  background-color: #364656;
-  border-color: #182027;
+  background-color: #042f4f;
+  border-color: #000406;
   color: white;
 }
 /* line 37, ../scss/modules/_alerts.scss */
@@ -3364,7 +3346,7 @@ table tbody tr td {
 }
 /* line 38, ../scss/modules/_alerts.scss */
 .alert.warning {
-  color: #222222;
+  color: #042f4f;
   background-color: #ffcc5c;
   border-color: #ffb410;
   color: white;
@@ -3378,6 +3360,39 @@ table tbody tr td {
 }
 
 /* Import Extensions */
+/* line 6, ../scss/extensions/_ext_form_stacked.scss */
+form input[type] {
+  width: 100%;
+}
+
+/* line 3, ../scss/extensions/_ext_fieldset_stacked.scss */
+fieldset {
+  padding: 0.5rem 1rem;
+  border: 0;
+  margin: 0;
+}
+/* line 8, ../scss/extensions/_ext_fieldset_stacked.scss */
+fieldset .field {
+  height: auto;
+  padding: 0;
+}
+/* line 13, ../scss/extensions/_ext_fieldset_stacked.scss */
+fieldset .field.topfix {
+  -webkit-border-radius: 3px 3px 0 0;
+  -moz-border-radius: 3px 3px 0 0;
+  -ms-border-radius: 3px 3px 0 0;
+  -o-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+/* line 16, ../scss/extensions/_ext_fieldset_stacked.scss */
+fieldset .field.bottomfix {
+  -webkit-border-radius: 0 0 3px 3px;
+  -moz-border-radius: 0 0 3px 3px;
+  -ms-border-radius: 0 0 3px 3px;
+  -o-border-radius: 0 0 3px 3px;
+  border-radius: 0 0 3px 3px;
+}
+
 /* Import Themes */
 /* line 15, ../scss/themes/_theme_nav_transparent.scss */
 nav {
@@ -3397,7 +3412,7 @@ nav > ul > li > a {
 }
 /* line 8, ../scss/themes/_theme_nav_transparent.scss */
 nav > ul > li > a:hover {
-  background-color: #364656;
+  background-color: #042f4f;
   color: #efefef;
 }
 /* line 4, ../scss/themes/_theme_nav_transparent.scss */
@@ -3407,7 +3422,7 @@ nav.primary > ul > li > a {
 }
 /* line 8, ../scss/themes/_theme_nav_transparent.scss */
 nav.primary > ul > li > a:hover {
-  background-color: #364656;
+  background-color: #042f4f;
   color: #efefef;
 }
 /* line 4, ../scss/themes/_theme_nav_transparent.scss */
@@ -3417,7 +3432,7 @@ nav.secondary > ul > li > a {
 }
 /* line 8, ../scss/themes/_theme_nav_transparent.scss */
 nav.secondary > ul > li > a:hover {
-  background-color: #c44741;
+  background-color: #73bf44;
   color: #efefef;
 }
 /* line 4, ../scss/themes/_theme_nav_transparent.scss */
@@ -3428,7 +3443,7 @@ nav.light > ul > li > a {
 /* line 8, ../scss/themes/_theme_nav_transparent.scss */
 nav.light > ul > li > a:hover {
   background-color: #efefef;
-  color: #222222;
+  color: #042f4f;
 }
 /* line 4, ../scss/themes/_theme_nav_transparent.scss */
 nav.dark > ul > li > a {
@@ -3437,44 +3452,229 @@ nav.dark > ul > li > a {
 }
 /* line 8, ../scss/themes/_theme_nav_transparent.scss */
 nav.dark > ul > li > a:hover {
-  background-color: #222222;
+  background-color: #042f4f;
   color: #efefef;
 }
 
-/* line 15, ../scss/style.scss */
-.foo {
-  background-color: #364656;
+/* line 18, ../scss/iassist.scss */
+body > header {
+  height: 88px;
+  background-color: #efefef;
+  color: #042f4f;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+}
+/* line 23, ../scss/modules/_themes.scss */
+body > header p, body > header h1, body > header h2, body > header h3, body > header h4, body > header h5, body > header h6, body > header label, body > header div {
+  color: #042f4f;
+}
+/* line 28, ../scss/modules/_themes.scss */
+body > header label.prefix, body > header label.postfix, body > header label.affix, body > header .label.prefix, body > header .label.postfix, body > header .label.affix {
+  color: #042f4f;
+  background-color: #d5d5d5;
+}
+/* line 26, ../scss/iassist.scss */
+body > header #header_logo {
+  background-image: url(https://www.iassist.com/images/logo-sm.png);
+  background-position: left top;
+  background-repeat: no-repeat;
+}
+/* line 33, ../scss/iassist.scss */
+body > header #header_nav ul > li > a {
+  padding: 1rem;
+}
+/* line 39, ../scss/iassist.scss */
+body h1, body h2 {
+  font-weight: 400;
+}
+/* line 40, ../scss/iassist.scss */
+body h1, body h2, body h3, body h4, body h5 {
+  margin-bottom: 2rem;
+}
+
+/* line 43, ../scss/iassist.scss */
+#view1 {
+  background-color: #042f4f;
   color: #efefef;
 }
 /* line 14, ../scss/modules/_themes.scss */
-.foo a {
-  color: #929aa2;
+#view1 a {
+  color: #798f9f;
 }
 /* line 17, ../scss/modules/_themes.scss */
-.foo a:hover {
+#view1 a:hover {
   color: #efefef;
 }
 /* line 23, ../scss/modules/_themes.scss */
-.foo p, .foo h1, .foo h2, .foo h3, .foo h4, .foo h5, .foo h6, .foo label, .foo div {
+#view1 p, #view1 h1, #view1 h2, #view1 h3, #view1 h4, #view1 h5, #view1 h6, #view1 label, #view1 div {
   color: #efefef;
 }
 /* line 28, ../scss/modules/_themes.scss */
-.foo label.prefix, .foo label.postfix, .foo label.affix, .foo .label.prefix, .foo .label.postfix, .foo .label.affix {
+#view1 label.prefix, #view1 label.postfix, #view1 label.affix, #view1 .label.prefix, #view1 .label.postfix, #view1 .label.affix {
   color: #efefef;
-  background-color: #4a5f75;
+  background-color: #064c80;
+}
+/* line 45, ../scss/iassist.scss */
+#view1 h1 {
+  font-weight: 400;
+}
+/* line 46, ../scss/iassist.scss */
+#view1 h2, #view1 h4 {
+  color: #91a2af;
+}
+/* line 48, ../scss/iassist.scss */
+#view1 figure {
+  background: url(../img/desktop.png) left top no-repeat;
+  background-size: contain;
+}
+/* line 53, ../scss/iassist.scss */
+#view1 a.circular {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: 2px solid white;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border-radius: 40px;
+}
+/* line 59, ../scss/iassist.scss */
+#view1 a.circular:before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  left: 13px;
+  top: 12px;
+  border-right-width: 2px;
+  border-bottom-width: 2px;
+  border-left-width: 0;
+  border-top-width: 0;
+  border-style: solid;
+  border-color: white;
+  -webkit-transform: rotate(45deg);
 }
 
-/* line 16, ../scss/style.scss */
-.bar {
+/* line 75, ../scss/iassist.scss */
+#view2 {
   background-color: #efefef;
-  color: #364656;
+  color: #042f4f;
 }
 /* line 23, ../scss/modules/_themes.scss */
-.bar p, .bar h1, .bar h2, .bar h3, .bar h4, .bar h5, .bar h6, .bar label, .bar div {
-  color: #364656;
+#view2 p, #view2 h1, #view2 h2, #view2 h3, #view2 h4, #view2 h5, #view2 h6, #view2 label, #view2 div {
+  color: #042f4f;
 }
 /* line 28, ../scss/modules/_themes.scss */
-.bar label.prefix, .bar label.postfix, .bar label.affix, .bar .label.prefix, .bar .label.postfix, .bar .label.affix {
-  color: #364656;
+#view2 label.prefix, #view2 label.postfix, #view2 label.affix, #view2 .label.prefix, #view2 .label.postfix, #view2 .label.affix {
+  color: #042f4f;
   background-color: #d5d5d5;
+}
+/* line 78, ../scss/iassist.scss */
+#view2 h1 {
+  font-size: 44.17367px ;
+  font-size: 2.45409rem ;
+  display: inline-block;
+  margin: 0.5em auto 0.9em auto;
+  padding-bottom: 0.5rem;
+  border-bottom: 4px solid #73bf44;
+}
+
+/* line 87, ../scss/iassist.scss */
+footer {
+  background-color: #042f4f;
+  color: #efefef;
+  font-size: 15.49854px ;
+  font-size: 0.86103rem ;
+}
+/* line 14, ../scss/modules/_themes.scss */
+footer a {
+  color: #798f9f;
+}
+/* line 17, ../scss/modules/_themes.scss */
+footer a:hover {
+  color: #efefef;
+}
+/* line 23, ../scss/modules/_themes.scss */
+footer p, footer h1, footer h2, footer h3, footer h4, footer h5, footer h6, footer label, footer div {
+  color: #efefef;
+}
+/* line 28, ../scss/modules/_themes.scss */
+footer label.prefix, footer label.postfix, footer label.affix, footer .label.prefix, footer .label.postfix, footer .label.affix {
+  color: #efefef;
+  background-color: #064c80;
+}
+/* line 90, ../scss/iassist.scss */
+footer ul > li {
+  color: #ccc;
+}
+/* line 94, ../scss/iassist.scss */
+footer h6 {
+  display: inline-block;
+  font-weight: 400;
+  color: #0e75ba;
+}
+/* line 100, ../scss/iassist.scss */
+footer div.row.content {
+  background-color: #032137;
+  color: #efefef;
+  color: #8197a7;
+  position: absolute;
+  bottom: 0;
+}
+/* line 14, ../scss/modules/_themes.scss */
+footer div.row.content a {
+  color: #798893;
+}
+/* line 17, ../scss/modules/_themes.scss */
+footer div.row.content a:hover {
+  color: #efefef;
+}
+/* line 23, ../scss/modules/_themes.scss */
+footer div.row.content p, footer div.row.content h1, footer div.row.content h2, footer div.row.content h3, footer div.row.content h4, footer div.row.content h5, footer div.row.content h6, footer div.row.content label, footer div.row.content div {
+  color: #efefef;
+}
+/* line 28, ../scss/modules/_themes.scss */
+footer div.row.content label.prefix, footer div.row.content label.postfix, footer div.row.content label.affix, footer div.row.content .label.prefix, footer div.row.content .label.postfix, footer div.row.content .label.affix {
+  color: #efefef;
+  background-color: #053d67;
+}
+
+/* line 108, ../scss/iassist.scss */
+#login {
+  background: rgba(0, 0, 0, 0.7);
+}
+/* line 111, ../scss/iassist.scss */
+#login > div {
+  top: 25%;
+}
+/* line 115, ../scss/iassist.scss */
+#login form {
+  background-color: #042f4f;
+  color: #efefef;
+}
+/* line 116, ../scss/iassist.scss */
+#login form h2 {
+  margin-bottom: 0.8rem;
+  font-weight: 200;
+}
+/* line 14, ../scss/modules/_themes.scss */
+#login form a {
+  color: #798f9f;
+}
+/* line 17, ../scss/modules/_themes.scss */
+#login form a:hover {
+  color: #efefef;
+}
+/* line 23, ../scss/modules/_themes.scss */
+#login form p, #login form h1, #login form h2, #login form h3, #login form h4, #login form h5, #login form h6, #login form label, #login form div {
+  color: #efefef;
+}
+/* line 28, ../scss/modules/_themes.scss */
+#login form label.prefix, #login form label.postfix, #login form label.affix, #login form .label.prefix, #login form .label.postfix, #login form .label.affix {
+  color: #efefef;
+  background-color: #064c80;
 }

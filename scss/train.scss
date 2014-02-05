@@ -6,65 +6,80 @@ $color-blue-light: #94A4A5;
 $color-anchor: $color-blue-light;
 
 $type-list-inline-margin: 32px;
-$type-header-color: #EFEFEF;
 $type-header-font-weight: 200;
 $form-border-width: 2px;
 
 @import 'cadenza.scss';
 
 body {
-    @include layout(60px);
+    @include layout();
+    background: $color-blue-light;
 }
 
-header {
+aside {
     @include background($color-primary);
 
-    #logo > h2 {
-        font-weight: bold;
+    nav > ul > li > a {
+        @include typeScale(-1);
+        color: $color-blue-light;
+        border-bottom: 1px solid lighten($color-primary, 10%);
+
+        &:hover { color: white; }
     }
 }
 
-section#hero {
-    background: url(http://farm7.staticflickr.com/6222/6366626995_a406677069_b.jpg) no-repeat;
-    background-size: cover;
+#content {
+    @extend %rows;
+    @include rows(10, $x/2);
+}
 
-    &:after {
-        content: "";
-        display: block;
-        top: 0; left: 0;
-        height: 100%;
-        width: 100%;
-        background: $color-primary;
-        opacity: 0.6;
+#profile {
+    @include background($color-light);
+
+    figure {
+        height: 100px;
+        width: 100px;
+        background: #DDD;
+        margin: 0 auto;
+        @include border-radius(100px);
+    }
+}
+
+#workout {
+    @include columns(5, $x/2);
+}
+
+#calendar {
+    @include columns(7, $x/2);
+
+    table {
+        table-layout: fixed;
+    }
+    table td {
+        height: 50px;
+        width: 100% / 7;
+    }
+}
+
+#workout, #calendar {
+    background: #EFEFEF;
+    .label { float: right; }
+    overflow-y: auto;
+    h6 { margin-bottom: 0; color: $color-secondary; font-weight: bold;}
+    hgroup > h6 { color: $color-blue-light; }
+    hgroup {
+        color: $color-primary;
+        .alpha { color: $color-secondary; }
+        .omega { color: green; }
     }
 
-    #left {
-        z-index:9;
+    @extend %column;
 
-        > #left_content {
-            @include background($color-blue);
+    ul.clean {
+        > li {
             border: 1px solid $color-blue-light;
-            > header { 
-                @include background($color-secondary);
-            }
-        }
-
-        #forgot_password {
-            padding: $x/2 0;
-            top: $x/2;
+            + li { margin-top: -1px; }
+            padding: $x/2;
         }
     }
-
-    #right {
-        z-index: 9;
-
-    }
-}
-
-#foo {
-    @include background($color-blue);
-}
-
-#bar {
-    @include background(#efefef);
 }

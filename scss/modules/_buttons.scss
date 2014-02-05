@@ -29,6 +29,10 @@
         @include typeScale($button-type-scale + 1);
     }
 
+    &.huge {
+        @include typeScale($button-type-scale + 2);
+    }
+
     &.left { float: left; }
 
     &.right { float: right; margin-right: 0; }

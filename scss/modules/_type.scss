@@ -41,6 +41,14 @@
             }
         }
     }
+
+    hgroup {
+        > h1, > h2, > h3, > h4, > h5, > h6 {
+            margin-bottom: 0;
+        }
+
+        margin-bottom: $hgroup-margin-bottom;
+    }
 }
 
 html {
@@ -104,11 +112,6 @@ small {
     @if $type == none {
         list-style: none;
         margin-left: 0;
-
-        ul, ol {
-            list-style: none;
-            margin-left: 0;
-        }
     } @else {
         list-style-type: $type;
 

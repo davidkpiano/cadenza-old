@@ -43,7 +43,7 @@ strong, b {
 }
 
 /* line 11, ../scss/modules/_layout.scss */
-.layer, .page, nav.horizontal > ul, .button-group, #sidebar .field.fi-text {
+header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .layer, .page, form, body > section, nav.horizontal > ul, .button-group, #sidebar .field.fi-text {
   overflow: hidden;
   *zoom: 1;
 }
@@ -58,13 +58,13 @@ html {
   position: relative;
 }
 
-/* line 68, ../scss/modules/_layout.scss */
+/* line 73, ../scss/modules/_layout.scss */
 .inline {
   display: inline-block;
   margin-bottom: 0;
 }
 
-/* line 77, ../scss/modules/_layout.scss */
+/* line 82, ../scss/modules/_layout.scss */
 .full {
   height: 100%;
 }
@@ -76,412 +76,410 @@ header.content, footer.content, section.content, .content.col, .content[class*="
 
 /* line 7, ../scss/modules/_grid.scss */
 header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .layer, .page, form, body > section {
-  overflow: hidden;
-  *zoom: 1;
   margin: 0;
   display: block;
   position: relative;
 }
 
-/* line 16, ../scss/modules/_grid.scss */
+/* line 17, ../scss/modules/_grid.scss */
 .col, [class*="col-"] {
   float: left;
   height: 100%;
 }
-/* line 21, ../scss/modules/_grid.scss */
+/* line 22, ../scss/modules/_grid.scss */
 .col-inline.col, .col-inline[class*="col-"] {
   height: auto;
 }
 
-/* line 23, ../scss/modules/_grid.scss */
+/* line 24, ../scss/modules/_grid.scss */
 .full, .row, [class*="row-"], .layer, .page, form, body > section {
   width: 100%;
 }
 
 @media only screen {
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-0 {
-    width: 0% !important;
+    width: 0%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-0 + .col-flex {
     width: 100%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-0 {
     margin-left: 0%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-1 {
-    width: 8.33333% !important;
+    width: 8.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-1 + .col-flex {
     width: 91.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-1 {
     margin-left: 8.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-2 {
-    width: 16.66667% !important;
+    width: 16.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-2 + .col-flex {
     width: 83.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-2 {
     margin-left: 16.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-3 {
-    width: 25% !important;
+    width: 25%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-3 + .col-flex {
     width: 75%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-3 {
     margin-left: 25%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-4 {
-    width: 33.33333% !important;
+    width: 33.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-4 + .col-flex {
     width: 66.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-4 {
     margin-left: 33.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-5 {
-    width: 41.66667% !important;
+    width: 41.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-5 + .col-flex {
     width: 58.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-5 {
     margin-left: 41.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-6 {
-    width: 50% !important;
+    width: 50%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-6 + .col-flex {
     width: 50%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-6 {
     margin-left: 50%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-7 {
-    width: 58.33333% !important;
+    width: 58.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-7 + .col-flex {
     width: 41.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-7 {
     margin-left: 58.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-8 {
-    width: 66.66667% !important;
+    width: 66.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-8 + .col-flex {
     width: 33.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-8 {
     margin-left: 66.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-9 {
-    width: 75% !important;
+    width: 75%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-9 + .col-flex {
     width: 25%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-9 {
     margin-left: 75%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-10 {
-    width: 83.33333% !important;
+    width: 83.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-10 + .col-flex {
     width: 16.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-10 {
     margin-left: 83.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-11 {
-    width: 91.66667% !important;
+    width: 91.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-11 + .col-flex {
     width: 8.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-11 {
     margin-left: 91.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-12 {
-    width: 100% !important;
+    width: 100%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-12 + .col-flex {
     width: 0%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-12 {
     margin-left: 100%;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-left {
     clear: right;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-right {
     float: right;
     clear: left;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-center {
     margin-left: auto;
     margin-right: auto;
     float: none;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-0 {
     height: 0%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-0 + .row-flex {
     height: 100%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-0 {
     top: 0%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-1 {
     height: 8.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-1 + .row-flex {
     height: 91.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-1 {
     top: 8.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-2 {
     height: 16.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-2 + .row-flex {
     height: 83.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-2 {
     top: 16.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-3 {
     height: 25%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-3 + .row-flex {
     height: 75%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-3 {
     top: 25%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-4 {
     height: 33.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-4 + .row-flex {
     height: 66.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-4 {
     top: 33.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-5 {
     height: 41.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-5 + .row-flex {
     height: 58.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-5 {
     top: 41.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-6 {
     height: 50%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-6 + .row-flex {
     height: 50%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-6 {
     top: 50%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-7 {
     height: 58.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-7 + .row-flex {
     height: 41.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-7 {
     top: 58.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-8 {
     height: 66.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-8 + .row-flex {
     height: 33.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-8 {
     top: 66.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-9 {
     height: 75%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-9 + .row-flex {
     height: 25%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-9 {
     top: 75%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-10 {
     height: 83.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-10 + .row-flex {
     height: 16.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-10 {
     top: 83.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-11 {
     height: 91.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-11 + .row-flex {
     height: 8.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-11 {
     top: 91.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-12 {
     height: 100%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-12 + .row-flex {
     height: 0%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-12 {
     top: 100%;
   }
 
-  /* line 128, ../scss/modules/_grid.scss */
+  /* line 145, ../scss/modules/_grid.scss */
   .row-bottom {
     position: absolute;
     bottom: 0;
@@ -489,389 +487,389 @@ header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .l
   }
 }
 @media only screen and (max-width: 47.9375em) {
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-0-small {
-    width: 0% !important;
+    width: 0%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-0-small + .col-flex {
     width: 100%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-0-small {
     margin-left: 0%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-1-small {
-    width: 8.33333% !important;
+    width: 8.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-1-small + .col-flex {
     width: 91.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-1-small {
     margin-left: 8.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-2-small {
-    width: 16.66667% !important;
+    width: 16.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-2-small + .col-flex {
     width: 83.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-2-small {
     margin-left: 16.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-3-small {
-    width: 25% !important;
+    width: 25%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-3-small + .col-flex {
     width: 75%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-3-small {
     margin-left: 25%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-4-small {
-    width: 33.33333% !important;
+    width: 33.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-4-small + .col-flex {
     width: 66.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-4-small {
     margin-left: 33.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-5-small {
-    width: 41.66667% !important;
+    width: 41.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-5-small + .col-flex {
     width: 58.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-5-small {
     margin-left: 41.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-6-small {
-    width: 50% !important;
+    width: 50%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-6-small + .col-flex {
     width: 50%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-6-small {
     margin-left: 50%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-7-small {
-    width: 58.33333% !important;
+    width: 58.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-7-small + .col-flex {
     width: 41.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-7-small {
     margin-left: 58.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-8-small {
-    width: 66.66667% !important;
+    width: 66.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-8-small + .col-flex {
     width: 33.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-8-small {
     margin-left: 66.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-9-small {
-    width: 75% !important;
+    width: 75%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-9-small + .col-flex {
     width: 25%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-9-small {
     margin-left: 75%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-10-small {
-    width: 83.33333% !important;
+    width: 83.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-10-small + .col-flex {
     width: 16.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-10-small {
     margin-left: 83.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-11-small {
-    width: 91.66667% !important;
+    width: 91.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-11-small + .col-flex {
     width: 8.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-11-small {
     margin-left: 91.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-12-small {
-    width: 100% !important;
+    width: 100%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-12-small + .col-flex {
     width: 0%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-12-small {
     margin-left: 100%;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-left-small {
     clear: right;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-right-small {
     float: right;
     clear: left;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-center-small {
     margin-left: auto;
     margin-right: auto;
     float: none;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-0-small {
     height: 0%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-0-small + .row-flex {
     height: 100%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-0-small {
     top: 0%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-1-small {
     height: 8.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-1-small + .row-flex {
     height: 91.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-1-small {
     top: 8.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-2-small {
     height: 16.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-2-small + .row-flex {
     height: 83.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-2-small {
     top: 16.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-3-small {
     height: 25%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-3-small + .row-flex {
     height: 75%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-3-small {
     top: 25%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-4-small {
     height: 33.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-4-small + .row-flex {
     height: 66.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-4-small {
     top: 33.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-5-small {
     height: 41.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-5-small + .row-flex {
     height: 58.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-5-small {
     top: 41.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-6-small {
     height: 50%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-6-small + .row-flex {
     height: 50%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-6-small {
     top: 50%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-7-small {
     height: 58.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-7-small + .row-flex {
     height: 41.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-7-small {
     top: 58.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-8-small {
     height: 66.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-8-small + .row-flex {
     height: 33.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-8-small {
     top: 66.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-9-small {
     height: 75%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-9-small + .row-flex {
     height: 25%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-9-small {
     top: 75%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-10-small {
     height: 83.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-10-small + .row-flex {
     height: 16.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-10-small {
     top: 83.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-11-small {
     height: 91.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-11-small + .row-flex {
     height: 8.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-11-small {
     top: 91.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-12-small {
     height: 100%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-12-small + .row-flex {
     height: 0%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-12-small {
     top: 100%;
   }
 
-  /* line 128, ../scss/modules/_grid.scss */
+  /* line 145, ../scss/modules/_grid.scss */
   .row-bottom-small {
     position: absolute;
     bottom: 0;
@@ -879,389 +877,389 @@ header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .l
   }
 }
 @media only screen and (min-width: 48em) {
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-0-medium {
-    width: 0% !important;
+    width: 0%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-0-medium + .col-flex {
     width: 100%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-0-medium {
     margin-left: 0%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-1-medium {
-    width: 8.33333% !important;
+    width: 8.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-1-medium + .col-flex {
     width: 91.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-1-medium {
     margin-left: 8.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-2-medium {
-    width: 16.66667% !important;
+    width: 16.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-2-medium + .col-flex {
     width: 83.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-2-medium {
     margin-left: 16.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-3-medium {
-    width: 25% !important;
+    width: 25%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-3-medium + .col-flex {
     width: 75%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-3-medium {
     margin-left: 25%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-4-medium {
-    width: 33.33333% !important;
+    width: 33.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-4-medium + .col-flex {
     width: 66.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-4-medium {
     margin-left: 33.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-5-medium {
-    width: 41.66667% !important;
+    width: 41.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-5-medium + .col-flex {
     width: 58.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-5-medium {
     margin-left: 41.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-6-medium {
-    width: 50% !important;
+    width: 50%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-6-medium + .col-flex {
     width: 50%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-6-medium {
     margin-left: 50%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-7-medium {
-    width: 58.33333% !important;
+    width: 58.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-7-medium + .col-flex {
     width: 41.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-7-medium {
     margin-left: 58.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-8-medium {
-    width: 66.66667% !important;
+    width: 66.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-8-medium + .col-flex {
     width: 33.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-8-medium {
     margin-left: 66.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-9-medium {
-    width: 75% !important;
+    width: 75%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-9-medium + .col-flex {
     width: 25%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-9-medium {
     margin-left: 75%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-10-medium {
-    width: 83.33333% !important;
+    width: 83.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-10-medium + .col-flex {
     width: 16.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-10-medium {
     margin-left: 83.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-11-medium {
-    width: 91.66667% !important;
+    width: 91.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-11-medium + .col-flex {
     width: 8.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-11-medium {
     margin-left: 91.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-12-medium {
-    width: 100% !important;
+    width: 100%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-12-medium + .col-flex {
     width: 0%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-12-medium {
     margin-left: 100%;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-left-medium {
     clear: right;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-right-medium {
     float: right;
     clear: left;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-center-medium {
     margin-left: auto;
     margin-right: auto;
     float: none;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-0-medium {
     height: 0%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-0-medium + .row-flex {
     height: 100%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-0-medium {
     top: 0%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-1-medium {
     height: 8.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-1-medium + .row-flex {
     height: 91.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-1-medium {
     top: 8.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-2-medium {
     height: 16.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-2-medium + .row-flex {
     height: 83.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-2-medium {
     top: 16.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-3-medium {
     height: 25%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-3-medium + .row-flex {
     height: 75%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-3-medium {
     top: 25%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-4-medium {
     height: 33.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-4-medium + .row-flex {
     height: 66.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-4-medium {
     top: 33.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-5-medium {
     height: 41.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-5-medium + .row-flex {
     height: 58.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-5-medium {
     top: 41.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-6-medium {
     height: 50%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-6-medium + .row-flex {
     height: 50%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-6-medium {
     top: 50%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-7-medium {
     height: 58.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-7-medium + .row-flex {
     height: 41.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-7-medium {
     top: 58.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-8-medium {
     height: 66.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-8-medium + .row-flex {
     height: 33.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-8-medium {
     top: 66.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-9-medium {
     height: 75%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-9-medium + .row-flex {
     height: 25%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-9-medium {
     top: 75%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-10-medium {
     height: 83.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-10-medium + .row-flex {
     height: 16.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-10-medium {
     top: 83.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-11-medium {
     height: 91.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-11-medium + .row-flex {
     height: 8.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-11-medium {
     top: 91.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-12-medium {
     height: 100%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-12-medium + .row-flex {
     height: 0%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-12-medium {
     top: 100%;
   }
 
-  /* line 128, ../scss/modules/_grid.scss */
+  /* line 145, ../scss/modules/_grid.scss */
   .row-bottom-medium {
     position: absolute;
     bottom: 0;
@@ -1269,389 +1267,389 @@ header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .l
   }
 }
 @media only screen and (min-width: 80em) {
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-0-large {
-    width: 0% !important;
+    width: 0%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-0-large + .col-flex {
     width: 100%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-0-large {
     margin-left: 0%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-1-large {
-    width: 8.33333% !important;
+    width: 8.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-1-large + .col-flex {
     width: 91.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-1-large {
     margin-left: 8.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-2-large {
-    width: 16.66667% !important;
+    width: 16.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-2-large + .col-flex {
     width: 83.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-2-large {
     margin-left: 16.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-3-large {
-    width: 25% !important;
+    width: 25%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-3-large + .col-flex {
     width: 75%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-3-large {
     margin-left: 25%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-4-large {
-    width: 33.33333% !important;
+    width: 33.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-4-large + .col-flex {
     width: 66.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-4-large {
     margin-left: 33.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-5-large {
-    width: 41.66667% !important;
+    width: 41.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-5-large + .col-flex {
     width: 58.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-5-large {
     margin-left: 41.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-6-large {
-    width: 50% !important;
+    width: 50%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-6-large + .col-flex {
     width: 50%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-6-large {
     margin-left: 50%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-7-large {
-    width: 58.33333% !important;
+    width: 58.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-7-large + .col-flex {
     width: 41.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-7-large {
     margin-left: 58.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-8-large {
-    width: 66.66667% !important;
+    width: 66.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-8-large + .col-flex {
     width: 33.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-8-large {
     margin-left: 66.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-9-large {
-    width: 75% !important;
+    width: 75%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-9-large + .col-flex {
     width: 25%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-9-large {
     margin-left: 75%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-10-large {
-    width: 83.33333% !important;
+    width: 83.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-10-large + .col-flex {
     width: 16.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-10-large {
     margin-left: 83.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-11-large {
-    width: 91.66667% !important;
+    width: 91.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-11-large + .col-flex {
     width: 8.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-11-large {
     margin-left: 91.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-12-large {
-    width: 100% !important;
+    width: 100%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-12-large + .col-flex {
     width: 0%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-12-large {
     margin-left: 100%;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-left-large {
     clear: right;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-right-large {
     float: right;
     clear: left;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-center-large {
     margin-left: auto;
     margin-right: auto;
     float: none;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-0-large {
     height: 0%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-0-large + .row-flex {
     height: 100%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-0-large {
     top: 0%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-1-large {
     height: 8.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-1-large + .row-flex {
     height: 91.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-1-large {
     top: 8.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-2-large {
     height: 16.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-2-large + .row-flex {
     height: 83.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-2-large {
     top: 16.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-3-large {
     height: 25%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-3-large + .row-flex {
     height: 75%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-3-large {
     top: 25%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-4-large {
     height: 33.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-4-large + .row-flex {
     height: 66.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-4-large {
     top: 33.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-5-large {
     height: 41.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-5-large + .row-flex {
     height: 58.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-5-large {
     top: 41.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-6-large {
     height: 50%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-6-large + .row-flex {
     height: 50%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-6-large {
     top: 50%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-7-large {
     height: 58.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-7-large + .row-flex {
     height: 41.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-7-large {
     top: 58.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-8-large {
     height: 66.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-8-large + .row-flex {
     height: 33.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-8-large {
     top: 66.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-9-large {
     height: 75%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-9-large + .row-flex {
     height: 25%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-9-large {
     top: 75%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-10-large {
     height: 83.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-10-large + .row-flex {
     height: 16.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-10-large {
     top: 83.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-11-large {
     height: 91.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-11-large + .row-flex {
     height: 8.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-11-large {
     top: 91.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-12-large {
     height: 100%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-12-large + .row-flex {
     height: 0%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-12-large {
     top: 100%;
   }
 
-  /* line 128, ../scss/modules/_grid.scss */
+  /* line 145, ../scss/modules/_grid.scss */
   .row-bottom-large {
     position: absolute;
     bottom: 0;
@@ -1659,389 +1657,389 @@ header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .l
   }
 }
 @media only screen and (max-height: 43.75em) {
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-0-short {
-    width: 0% !important;
+    width: 0%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-0-short + .col-flex {
     width: 100%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-0-short {
     margin-left: 0%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-1-short {
-    width: 8.33333% !important;
+    width: 8.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-1-short + .col-flex {
     width: 91.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-1-short {
     margin-left: 8.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-2-short {
-    width: 16.66667% !important;
+    width: 16.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-2-short + .col-flex {
     width: 83.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-2-short {
     margin-left: 16.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-3-short {
-    width: 25% !important;
+    width: 25%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-3-short + .col-flex {
     width: 75%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-3-short {
     margin-left: 25%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-4-short {
-    width: 33.33333% !important;
+    width: 33.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-4-short + .col-flex {
     width: 66.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-4-short {
     margin-left: 33.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-5-short {
-    width: 41.66667% !important;
+    width: 41.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-5-short + .col-flex {
     width: 58.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-5-short {
     margin-left: 41.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-6-short {
-    width: 50% !important;
+    width: 50%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-6-short + .col-flex {
     width: 50%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-6-short {
     margin-left: 50%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-7-short {
-    width: 58.33333% !important;
+    width: 58.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-7-short + .col-flex {
     width: 41.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-7-short {
     margin-left: 58.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-8-short {
-    width: 66.66667% !important;
+    width: 66.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-8-short + .col-flex {
     width: 33.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-8-short {
     margin-left: 66.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-9-short {
-    width: 75% !important;
+    width: 75%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-9-short + .col-flex {
     width: 25%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-9-short {
     margin-left: 75%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-10-short {
-    width: 83.33333% !important;
+    width: 83.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-10-short + .col-flex {
     width: 16.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-10-short {
     margin-left: 83.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-11-short {
-    width: 91.66667% !important;
+    width: 91.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-11-short + .col-flex {
     width: 8.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-11-short {
     margin-left: 91.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-12-short {
-    width: 100% !important;
+    width: 100%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-12-short + .col-flex {
     width: 0%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-12-short {
     margin-left: 100%;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-left-short {
     clear: right;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-right-short {
     float: right;
     clear: left;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-center-short {
     margin-left: auto;
     margin-right: auto;
     float: none;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-0-short {
     height: 0%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-0-short + .row-flex {
     height: 100%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-0-short {
     top: 0%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-1-short {
     height: 8.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-1-short + .row-flex {
     height: 91.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-1-short {
     top: 8.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-2-short {
     height: 16.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-2-short + .row-flex {
     height: 83.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-2-short {
     top: 16.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-3-short {
     height: 25%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-3-short + .row-flex {
     height: 75%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-3-short {
     top: 25%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-4-short {
     height: 33.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-4-short + .row-flex {
     height: 66.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-4-short {
     top: 33.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-5-short {
     height: 41.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-5-short + .row-flex {
     height: 58.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-5-short {
     top: 41.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-6-short {
     height: 50%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-6-short + .row-flex {
     height: 50%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-6-short {
     top: 50%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-7-short {
     height: 58.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-7-short + .row-flex {
     height: 41.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-7-short {
     top: 58.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-8-short {
     height: 66.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-8-short + .row-flex {
     height: 33.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-8-short {
     top: 66.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-9-short {
     height: 75%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-9-short + .row-flex {
     height: 25%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-9-short {
     top: 75%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-10-short {
     height: 83.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-10-short + .row-flex {
     height: 16.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-10-short {
     top: 83.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-11-short {
     height: 91.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-11-short + .row-flex {
     height: 8.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-11-short {
     top: 91.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-12-short {
     height: 100%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-12-short + .row-flex {
     height: 0%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-12-short {
     top: 100%;
   }
 
-  /* line 128, ../scss/modules/_grid.scss */
+  /* line 145, ../scss/modules/_grid.scss */
   .row-bottom-short {
     position: absolute;
     bottom: 0;
@@ -2049,389 +2047,389 @@ header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .l
   }
 }
 @media only screen and (min-width: 56.25em) {
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-0-tall {
-    width: 0% !important;
+    width: 0%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-0-tall + .col-flex {
     width: 100%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-0-tall {
     margin-left: 0%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-1-tall {
-    width: 8.33333% !important;
+    width: 8.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-1-tall + .col-flex {
     width: 91.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-1-tall {
     margin-left: 8.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-2-tall {
-    width: 16.66667% !important;
+    width: 16.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-2-tall + .col-flex {
     width: 83.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-2-tall {
     margin-left: 16.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-3-tall {
-    width: 25% !important;
+    width: 25%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-3-tall + .col-flex {
     width: 75%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-3-tall {
     margin-left: 25%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-4-tall {
-    width: 33.33333% !important;
+    width: 33.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-4-tall + .col-flex {
     width: 66.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-4-tall {
     margin-left: 33.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-5-tall {
-    width: 41.66667% !important;
+    width: 41.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-5-tall + .col-flex {
     width: 58.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-5-tall {
     margin-left: 41.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-6-tall {
-    width: 50% !important;
+    width: 50%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-6-tall + .col-flex {
     width: 50%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-6-tall {
     margin-left: 50%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-7-tall {
-    width: 58.33333% !important;
+    width: 58.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-7-tall + .col-flex {
     width: 41.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-7-tall {
     margin-left: 58.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-8-tall {
-    width: 66.66667% !important;
+    width: 66.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-8-tall + .col-flex {
     width: 33.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-8-tall {
     margin-left: 66.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-9-tall {
-    width: 75% !important;
+    width: 75%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-9-tall + .col-flex {
     width: 25%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-9-tall {
     margin-left: 75%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-10-tall {
-    width: 83.33333% !important;
+    width: 83.33333%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-10-tall + .col-flex {
     width: 16.66667%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-10-tall {
     margin-left: 83.33333%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-11-tall {
-    width: 91.66667% !important;
+    width: 91.66667%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-11-tall + .col-flex {
     width: 8.33333%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-11-tall {
     margin-left: 91.66667%;
   }
 
-  /* line 64, ../scss/modules/_grid.scss */
+  /* line 73, ../scss/modules/_grid.scss */
   .col-12-tall {
-    width: 100% !important;
+    width: 100%;
   }
-  /* line 36, ../scss/modules/_grid.scss */
+  /* line 45, ../scss/modules/_grid.scss */
   .col-12-tall + .col-flex {
     width: 0%;
   }
 
-  /* line 68, ../scss/modules/_grid.scss */
+  /* line 77, ../scss/modules/_grid.scss */
   .col-offset-12-tall {
     margin-left: 100%;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-left-tall {
     clear: right;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-right-tall {
     float: right;
     clear: left;
   }
 
-  /* line 74, ../scss/modules/_grid.scss */
+  /* line 83, ../scss/modules/_grid.scss */
   .col-center-tall {
     margin-left: auto;
     margin-right: auto;
     float: none;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-0-tall {
     height: 0%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-0-tall + .row-flex {
     height: 100%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-0-tall {
     top: 0%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-1-tall {
     height: 8.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-1-tall + .row-flex {
     height: 91.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-1-tall {
     top: 8.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-2-tall {
     height: 16.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-2-tall + .row-flex {
     height: 83.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-2-tall {
     top: 16.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-3-tall {
     height: 25%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-3-tall + .row-flex {
     height: 75%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-3-tall {
     top: 25%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-4-tall {
     height: 33.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-4-tall + .row-flex {
     height: 66.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-4-tall {
     top: 33.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-5-tall {
     height: 41.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-5-tall + .row-flex {
     height: 58.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-5-tall {
     top: 41.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-6-tall {
     height: 50%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-6-tall + .row-flex {
     height: 50%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-6-tall {
     top: 50%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-7-tall {
     height: 58.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-7-tall + .row-flex {
     height: 41.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-7-tall {
     top: 58.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-8-tall {
     height: 66.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-8-tall + .row-flex {
     height: 33.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-8-tall {
     top: 66.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-9-tall {
     height: 75%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-9-tall + .row-flex {
     height: 25%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-9-tall {
     top: 75%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-10-tall {
     height: 83.33333%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-10-tall + .row-flex {
     height: 16.66667%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-10-tall {
     top: 83.33333%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-11-tall {
     height: 91.66667%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-11-tall + .row-flex {
     height: 8.33333%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-11-tall {
     top: 91.66667%;
   }
 
-  /* line 118, ../scss/modules/_grid.scss */
+  /* line 135, ../scss/modules/_grid.scss */
   .row-12-tall {
     height: 100%;
   }
-  /* line 91, ../scss/modules/_grid.scss */
+  /* line 108, ../scss/modules/_grid.scss */
   .row-12-tall + .row-flex {
     height: 0%;
   }
 
-  /* line 122, ../scss/modules/_grid.scss */
+  /* line 139, ../scss/modules/_grid.scss */
   .row-offset-12-tall {
     top: 100%;
   }
 
-  /* line 128, ../scss/modules/_grid.scss */
+  /* line 145, ../scss/modules/_grid.scss */
   .row-bottom-tall {
     position: absolute;
     bottom: 0;
@@ -2453,12 +2451,12 @@ header, footer, section, .col, [class*="col-"], .full, .row, [class*="row-"], .l
   overflow: hidden;
 }
 
-/* line 46, ../scss/modules/_type.scss */
+/* line 54, ../scss/modules/_type.scss */
 html {
   font-size: 16px;
 }
 
-/* line 50, ../scss/modules/_type.scss */
+/* line 58, ../scss/modules/_type.scss */
 body {
   font-style: normal;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -2527,152 +2525,155 @@ body h6 {
   font-size: 1rem ;
   text-transform: uppercase;
 }
+/* line 45, ../scss/modules/_type.scss */
+body hgroup {
+  margin-bottom: 1rem;
+}
+/* line 46, ../scss/modules/_type.scss */
+body hgroup > h1, body hgroup > h2, body hgroup > h3, body hgroup > h4, body hgroup > h5, body hgroup > h6 {
+  margin-bottom: 0;
+}
 
-/* line 61, ../scss/modules/_type.scss */
+/* line 69, ../scss/modules/_type.scss */
 a {
   text-decoration: none;
   color: #94a4a5;
 }
-/* line 65, ../scss/modules/_type.scss */
+/* line 73, ../scss/modules/_type.scss */
 a:hover {
   color: #7eb1be;
   text-decoration: none;
 }
-/* line 70, ../scss/modules/_type.scss */
+/* line 78, ../scss/modules/_type.scss */
 a img {
   border: none;
 }
 
-/* line 75, ../scss/modules/_type.scss */
+/* line 83, ../scss/modules/_type.scss */
 p {
   margin-bottom: 1rem;
   line-height: 1.5;
   font-weight: 300;
 }
-/* line 80, ../scss/modules/_type.scss */
+/* line 88, ../scss/modules/_type.scss */
 p.lead {
   font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
 
-/* line 86, ../scss/modules/_type.scss */
+/* line 94, ../scss/modules/_type.scss */
 .strong {
   font-weight: bold;
 }
 
-/* line 89, ../scss/modules/_type.scss */
+/* line 97, ../scss/modules/_type.scss */
 .small, small, form input[type].small, form textarea.small {
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
 }
 
-/* line 92, ../scss/modules/_type.scss */
+/* line 100, ../scss/modules/_type.scss */
 .large, form input[type].large, form textarea.large {
   font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
 
-/* line 122, ../scss/modules/_type.scss */
+/* line 125, ../scss/modules/_type.scss */
 ul, ol, dl {
   list-style-position: outside;
   margin-bottom: 1rem;
   padding: 0;
 }
-/* line 127, ../scss/modules/_type.scss */
+/* line 130, ../scss/modules/_type.scss */
 ul.clean, nav ul, ol.clean, dl.clean {
   list-style: none;
   margin-left: 0;
 }
-/* line 108, ../scss/modules/_type.scss */
-ul.clean ul, nav ul ul, ul.clean ol, nav ul ol, ol.clean ul, ol.clean ol, dl.clean ul, dl.clean ol {
-  list-style: none;
-  margin-left: 0;
-}
-/* line 130, ../scss/modules/_type.scss */
+/* line 133, ../scss/modules/_type.scss */
 ul.inline, ol.inline, dl.inline {
   margin-left: 0;
 }
-/* line 133, ../scss/modules/_type.scss */
+/* line 136, ../scss/modules/_type.scss */
 ul.inline > li, ol.inline > li, dl.inline > li {
   display: inline-block;
   margin-right: 1rem;
 }
-/* line 141, ../scss/modules/_type.scss */
+/* line 144, ../scss/modules/_type.scss */
 ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, dl ul, dl ol, dl dl {
   margin-bottom: 0;
 }
 
-/* line 146, ../scss/modules/_type.scss */
+/* line 149, ../scss/modules/_type.scss */
 ul {
   margin-left: 1rem;
 }
-/* line 149, ../scss/modules/_type.scss */
+/* line 152, ../scss/modules/_type.scss */
 ul.square {
   list-style-type: square;
 }
-/* line 115, ../scss/modules/_type.scss */
+/* line 118, ../scss/modules/_type.scss */
 ul.square ul, ul.square ol {
   list-style: inherit;
 }
-/* line 150, ../scss/modules/_type.scss */
+/* line 153, ../scss/modules/_type.scss */
 ul.circle {
   list-style-type: circle;
 }
-/* line 115, ../scss/modules/_type.scss */
+/* line 118, ../scss/modules/_type.scss */
 ul.circle ul, ul.circle ol {
   list-style: inherit;
 }
-/* line 151, ../scss/modules/_type.scss */
+/* line 154, ../scss/modules/_type.scss */
 ul.disc {
   list-style-type: disc;
 }
-/* line 115, ../scss/modules/_type.scss */
+/* line 118, ../scss/modules/_type.scss */
 ul.disc ul, ul.disc ol {
   list-style: inherit;
 }
 
-/* line 154, ../scss/modules/_type.scss */
+/* line 157, ../scss/modules/_type.scss */
 ol {
   margin-left: 1.4rem;
 }
 
-/* line 158, ../scss/modules/_type.scss */
+/* line 161, ../scss/modules/_type.scss */
 li {
   list-style-position: outside;
 }
 
-/* line 163, ../scss/modules/_type.scss */
+/* line 166, ../scss/modules/_type.scss */
 dl dt {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-/* line 167, ../scss/modules/_type.scss */
+/* line 170, ../scss/modules/_type.scss */
 dl dd {
   margin-bottom: 0.5rem;
 }
 
-/* line 174, ../scss/modules/_type.scss */
+/* line 177, ../scss/modules/_type.scss */
 ul.inline > li, ol.inline > li, dl.inline > li, nav ul li, .label, .badge {
   white-space: nowrap;
   overflow: hidden;
 }
 
-/* line 180, ../scss/modules/_type.scss */
+/* line 183, ../scss/modules/_type.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 181, ../scss/modules/_type.scss */
+/* line 184, ../scss/modules/_type.scss */
 .align-right {
   text-align: right;
 }
 
-/* line 182, ../scss/modules/_type.scss */
+/* line 185, ../scss/modules/_type.scss */
 .align-center {
   text-align: center;
 }
 
-/* line 185, ../scss/modules/_type.scss */
+/* line 188, ../scss/modules/_type.scss */
 abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var, xmp {
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -2681,7 +2682,7 @@ abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var,
   hyphens: none;
 }
 
-/* line 190, ../scss/modules/_type.scss */
+/* line 193, ../scss/modules/_type.scss */
 pre {
   white-space: pre;
   color: #222222;
@@ -2689,14 +2690,14 @@ pre {
   font-size: 1rem ;
   font-family: monospace;
 }
-/* line 196, ../scss/modules/_type.scss */
+/* line 199, ../scss/modules/_type.scss */
 pre code {
   word-wrap: normal;
   white-space: -moz-pre-wrap;
   white-space: pre-wrap;
 }
 
-/* line 203, ../scss/modules/_type.scss */
+/* line 206, ../scss/modules/_type.scss */
 code {
   white-space: pre;
   color: #222222;
@@ -2705,26 +2706,26 @@ code {
   font-family: monospace;
 }
 
-/* line 211, ../scss/modules/_type.scss */
+/* line 214, ../scss/modules/_type.scss */
 blockquote {
   color: #484848;
   padding: 1rem;
   border-left: 1px solid #484848;
   margin-bottom: 1rem;
 }
-/* line 217, ../scss/modules/_type.scss */
+/* line 220, ../scss/modules/_type.scss */
 blockquote cite {
   display: block;
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
   color: #484848;
 }
-/* line 223, ../scss/modules/_type.scss */
+/* line 226, ../scss/modules/_type.scss */
 blockquote p {
   color: #484848;
 }
 
-/* line 229, ../scss/modules/_type.scss */
+/* line 232, ../scss/modules/_type.scss */
 hr {
   clear: both;
   height: 0;
@@ -2734,7 +2735,7 @@ hr {
   border-width: 1px 0 0;
 }
 
-/* line 239, ../scss/modules/_type.scss */
+/* line 242, ../scss/modules/_type.scss */
 abbr, acronym {
   font-size: 86.10298%;
   text-transform: uppercase;
@@ -2832,44 +2833,49 @@ button.large, .large.button, form input.button[type].large, form textarea.button
   font-size: 0.86103rem ;
 }
 /* line 32, ../scss/modules/_buttons.scss */
+button.huge, .huge.button, input.huge[type=button], input.huge[type=submit], .button-group > label.huge {
+  font-size: 16px ;
+  font-size: 1rem ;
+}
+/* line 36, ../scss/modules/_buttons.scss */
 button.left, .left.button, input.left[type=button], input.left[type=submit], .button-group > label.left {
   float: left;
 }
-/* line 34, ../scss/modules/_buttons.scss */
+/* line 38, ../scss/modules/_buttons.scss */
 button.right, .right.button, input.right[type=button], input.right[type=submit], .button-group > label.right {
   float: right;
   margin-right: 0;
 }
-/* line 36, ../scss/modules/_buttons.scss */
+/* line 40, ../scss/modules/_buttons.scss */
 button.inline, .inline.button, input.inline[type=button], input.inline[type=submit], .button-group > label.inline {
   margin-bottom: 0;
 }
-/* line 38, ../scss/modules/_buttons.scss */
+/* line 42, ../scss/modules/_buttons.scss */
 button.block, .block.button, input.block[type=button], input.block[type=submit], .button-group > label.block {
   display: block;
   width: 100%;
   margin-left: 0;
   margin-right: 0;
 }
-/* line 40, ../scss/modules/_buttons.scss */
+/* line 44, ../scss/modules/_buttons.scss */
 button.full, .full.button, input.full[type=button], input.full[type=submit], .button-group > label.full {
   width: 100%;
   height: 100%;
   padding: 0;
   display: block;
 }
-/* line 49, ../scss/modules/_buttons.scss */
+/* line 53, ../scss/modules/_buttons.scss */
 button.link, .link.button, input.link[type=button], input.link[type=submit], .button-group > label.link {
   background: transparent;
   color: #94a4a5;
   border: none;
 }
 
-/* line 56, ../scss/modules/_buttons.scss */
+/* line 60, ../scss/modules/_buttons.scss */
 .button-group {
   margin-bottom: 1rem;
 }
-/* line 60, ../scss/modules/_buttons.scss */
+/* line 64, ../scss/modules/_buttons.scss */
 .button-group > button, .button-group .button, .button-group input[type=button], .button-group input[type=submit], .button-group > label {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -2880,15 +2886,15 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   margin-left: -1px;
   float: left;
 }
-/* line 66, ../scss/modules/_buttons.scss */
+/* line 70, ../scss/modules/_buttons.scss */
 .button-group > button:first-of-type, .button-group .button:first-of-type, .button-group input[type=button]:first-of-type, .button-group input[type=submit]:first-of-type, .button-group > label:first-of-type {
   margin-left: inherit;
 }
-/* line 67, ../scss/modules/_buttons.scss */
+/* line 71, ../scss/modules/_buttons.scss */
 .button-group > button:hover, .button-group > button:focus, .button-group .button:hover, .button-group .button:focus, .button-group input[type=button]:hover, .button-group input[type=button]:focus, .button-group input[type=submit]:hover, .button-group input[type=submit]:focus, .button-group > label:hover, .button-group > label:focus {
   z-index: 2;
 }
-/* line 70, ../scss/modules/_buttons.scss */
+/* line 74, ../scss/modules/_buttons.scss */
 .button-group > button:first-of-type, .button-group .button:first-of-type, .button-group input[type=button]:first-of-type, .button-group input[type=submit]:first-of-type, .button-group > label:first-of-type {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -2897,7 +2903,7 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   -webkit-border-bottom-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-/* line 74, ../scss/modules/_buttons.scss */
+/* line 78, ../scss/modules/_buttons.scss */
 .button-group > button:last-of-type, .button-group .button:last-of-type, .button-group input[type=button]:last-of-type, .button-group input[type=submit]:last-of-type, .button-group > label:last-of-type {
   -moz-border-radius-topright: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -2906,16 +2912,16 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 81, ../scss/modules/_buttons.scss */
+/* line 85, ../scss/modules/_buttons.scss */
 .inline.button-group {
   display: inline-block;
   margin-right: 8px;
 }
-/* line 87, ../scss/modules/_buttons.scss */
+/* line 91, ../scss/modules/_buttons.scss */
 .vertical.button-group {
   display: inline-block;
 }
-/* line 90, ../scss/modules/_buttons.scss */
+/* line 94, ../scss/modules/_buttons.scss */
 .vertical.button-group > button, .vertical.button-group .button, .vertical.button-group input[type=button], .vertical.button-group input[type=submit], .vertical.button-group > label {
   display: block;
   width: 100%;
@@ -2925,12 +2931,12 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   margin-top: -1px;
   float: none;
 }
-/* line 99, ../scss/modules/_buttons.scss */
+/* line 103, ../scss/modules/_buttons.scss */
 .vertical.button-group > button:first-of-type, .vertical.button-group .button:first-of-type, .vertical.button-group input[type=button]:first-of-type, .vertical.button-group input[type=submit]:first-of-type, .vertical.button-group > label:first-of-type {
   margin-left: 0;
   margin-top: inherit;
 }
-/* line 102, ../scss/modules/_buttons.scss */
+/* line 106, ../scss/modules/_buttons.scss */
 .vertical.button-group > button:first-of-type, .vertical.button-group .button:first-of-type, .vertical.button-group input[type=button]:first-of-type, .vertical.button-group input[type=submit]:first-of-type, .vertical.button-group > label:first-of-type {
   -moz-border-radius-bottomleft: 0;
   -webkit-border-bottom-left-radius: 0;
@@ -2942,7 +2948,7 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 107, ../scss/modules/_buttons.scss */
+/* line 111, ../scss/modules/_buttons.scss */
 .vertical.button-group > button:last-of-type, .vertical.button-group .button:last-of-type, .vertical.button-group input[type=button]:last-of-type, .vertical.button-group input[type=submit]:last-of-type, .vertical.button-group > label:last-of-type {
   -moz-border-radius-topright: 0;
   -webkit-border-top-right-radius: 0;
@@ -2954,17 +2960,17 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 115, ../scss/modules/_buttons.scss */
+/* line 119, ../scss/modules/_buttons.scss */
 .vertical.block.button-group {
   display: block;
   margin-bottom: 1rem;
 }
-/* line 123, ../scss/modules/_buttons.scss */
+/* line 127, ../scss/modules/_buttons.scss */
 .button-group > input[type=radio], .button-group > input[type=checkbox] {
   display: none;
 }
 
-/* line 128, ../scss/modules/_buttons.scss */
+/* line 132, ../scss/modules/_buttons.scss */
 button, .button, input[type=button], input[type=submit], .button-group > label {
   background-color: #508f9f;
   border-color: #447a87;
@@ -2982,7 +2988,7 @@ button:active, .button-group input:checked + label, .button:active, input[type=b
   background-color: #38646f;
   border-color: #2c4f58;
 }
-/* line 135, ../scss/modules/_buttons.scss */
+/* line 139, ../scss/modules/_buttons.scss */
 button.primary, .primary.button, input.primary[type=button], input.primary[type=submit], .button-group > label.primary, .button-group.primary button, .button-group.primary .button, .button-group.primary input[type=button], .button-group.primary input[type=submit], .button-group.primary .button-group > label {
   background-color: #508f9f;
   border-color: #447a87;
@@ -3000,7 +3006,7 @@ button.primary:active, .button-group input:checked + label.primary, .primary.but
   background-color: #38646f;
   border-color: #2c4f58;
 }
-/* line 136, ../scss/modules/_buttons.scss */
+/* line 140, ../scss/modules/_buttons.scss */
 button.secondary, .secondary.button, input.secondary[type=button], input.secondary[type=submit], .button-group > label.secondary, .button-group.secondary button, .button-group.secondary .button, .button-group.secondary input[type=button], .button-group.secondary input[type=submit], .button-group.secondary .button-group > label {
   background-color: #c44741;
   border-color: #ac3b35;
@@ -3018,7 +3024,7 @@ button.secondary:active, .button-group input:checked + label.secondary, .seconda
   background-color: #91312d;
   border-color: #752824;
 }
-/* line 137, ../scss/modules/_buttons.scss */
+/* line 141, ../scss/modules/_buttons.scss */
 button.light, .light.button, input.light[type=button], input.light[type=submit], .button-group > label.light, .button-group.light button, .button-group.light .button, .button-group.light input[type=button], .button-group.light input[type=submit], .button-group.light .button-group > label {
   background-color: #efefef;
   border-color: #dddddd;
@@ -3036,7 +3042,7 @@ button.light:active, .button-group input:checked + label.light, .light.button:ac
   background-color: #cbcbcb;
   border-color: #b9b9b9;
 }
-/* line 138, ../scss/modules/_buttons.scss */
+/* line 142, ../scss/modules/_buttons.scss */
 button.dark, .dark.button, input.dark[type=button], input.dark[type=submit], .button-group > label.dark, .button-group.dark button, .button-group.dark .button, .button-group.dark input[type=button], .button-group.dark input[type=submit], .button-group.dark .button-group > label {
   background-color: #313131;
   border-color: #1f1f1f;
@@ -3054,7 +3060,7 @@ button.dark:active, .button-group input:checked + label.dark, .dark.button:activ
   background-color: #0d0d0d;
   border-color: black;
 }
-/* line 139, ../scss/modules/_buttons.scss */
+/* line 143, ../scss/modules/_buttons.scss */
 button.transparent, .transparent.button, input.transparent[type=button], input.transparent[type=submit], .button-group > label.transparent, .button-group.transparent button, .button-group.transparent .button, .button-group.transparent input[type=button], .button-group.transparent input[type=submit], .button-group.transparent .button-group > label {
   background-color: transparent;
   border-color: #447a87;
@@ -3073,7 +3079,7 @@ button.transparent:active, .button-group input:checked + label.transparent, .tra
   border-color: #2c4f58;
 }
 
-/* line 162, ../scss/modules/_buttons.scss */
+/* line 166, ../scss/modules/_buttons.scss */
 .button-group input:checked + label {
   z-index: 2;
 }
@@ -3371,15 +3377,24 @@ table tbody tr td {
   color: white;
 }
 
-/* line 27, ../scss/modules/_themes.scss */
+/* line 35, ../scss/modules/_themes.scss */
 #slider {
   background-color: #508f9f;
+  color: #efefef;
 }
-/* line 15, ../scss/modules/_themes.scss */
+/* line 14, ../scss/modules/_themes.scss */
+#slider a {
+  color: #9fbfc7;
+}
+/* line 17, ../scss/modules/_themes.scss */
+#slider a:hover {
+  color: #efefef;
+}
+/* line 23, ../scss/modules/_themes.scss */
 #slider p, #slider h1, #slider h2, #slider h3, #slider h4, #slider h5, #slider h6, #slider label, #slider div {
   color: #efefef;
 }
-/* line 20, ../scss/modules/_themes.scss */
+/* line 28, ../scss/modules/_themes.scss */
 #slider label.prefix, #slider label.postfix, #slider label.affix, #slider .label.prefix, #slider .label.postfix, #slider .label.affix {
   color: #efefef;
   background-color: #6da7b5;
@@ -3458,23 +3473,23 @@ body {
   top: 0;
   bottom: 0;
 }
-/* line 39, ../scss/modules/_layout.scss */
+/* line 44, ../scss/modules/_layout.scss */
 body > header, body > footer {
   position: fixed;
   width: 100%;
   z-index: 2;
 }
-/* line 45, ../scss/modules/_layout.scss */
+/* line 50, ../scss/modules/_layout.scss */
 body > header {
   height: 60px;
   top: 0;
 }
-/* line 50, ../scss/modules/_layout.scss */
+/* line 55, ../scss/modules/_layout.scss */
 body > footer {
   height: 60px;
   bottom: 0;
 }
-/* line 55, ../scss/modules/_layout.scss */
+/* line 60, ../scss/modules/_layout.scss */
 body > section {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -3514,15 +3529,23 @@ body > header, body > footer {
 }
 /* line 72, ../scss/fi_airlines.scss */
 #sidebar .field.fi-text > label {
-  width: 25% !important;
+  width: 25%;
   padding: 0 0 0 32px;
+}
+/* line 45, ../scss/modules/_grid.scss */
+#sidebar .field.fi-text > label + .col-flex {
+  width: 75%;
 }
 /* line 78, ../scss/fi_airlines.scss */
 #sidebar .field.fi-text > input {
   height: 100%;
   background-color: transparent;
   border: none;
-  width: 75% !important;
+  width: 75%;
+}
+/* line 45, ../scss/modules/_grid.scss */
+#sidebar .field.fi-text > input + .col-flex {
+  width: 25%;
 }
 /* line 85, ../scss/fi_airlines.scss */
 #sidebar .field.fi-text .popup {
@@ -3537,12 +3560,21 @@ body > header, body > footer {
 /* line 102, ../scss/fi_airlines.scss */
 #sidebar #sb-1 > header {
   background-color: #717171;
+  color: #efefef;
 }
-/* line 15, ../scss/modules/_themes.scss */
+/* line 14, ../scss/modules/_themes.scss */
+#sidebar #sb-1 > header a {
+  color: #b0b0b0;
+}
+/* line 17, ../scss/modules/_themes.scss */
+#sidebar #sb-1 > header a:hover {
+  color: #efefef;
+}
+/* line 23, ../scss/modules/_themes.scss */
 #sidebar #sb-1 > header p, #sidebar #sb-1 > header h1, #sidebar #sb-1 > header h2, #sidebar #sb-1 > header h3, #sidebar #sb-1 > header h4, #sidebar #sb-1 > header h5, #sidebar #sb-1 > header h6, #sidebar #sb-1 > header label, #sidebar #sb-1 > header div {
   color: #efefef;
 }
-/* line 20, ../scss/modules/_themes.scss */
+/* line 28, ../scss/modules/_themes.scss */
 #sidebar #sb-1 > header label.prefix, #sidebar #sb-1 > header label.postfix, #sidebar #sb-1 > header label.affix, #sidebar #sb-1 > header .label.prefix, #sidebar #sb-1 > header .label.postfix, #sidebar #sb-1 > header .label.affix {
   color: #efefef;
   background-color: #8b8b8b;
@@ -3555,12 +3587,13 @@ body > header, body > footer {
 /* line 110, ../scss/fi_airlines.scss */
 #sidebar {
   background-color: #b7b7b7;
+  color: #313131;
 }
-/* line 15, ../scss/modules/_themes.scss */
+/* line 23, ../scss/modules/_themes.scss */
 #sidebar p, #sidebar h1, #sidebar h2, #sidebar h3, #sidebar h4, #sidebar h5, #sidebar h6, #sidebar label, #sidebar div {
   color: #313131;
 }
-/* line 20, ../scss/modules/_themes.scss */
+/* line 28, ../scss/modules/_themes.scss */
 #sidebar label.prefix, #sidebar label.postfix, #sidebar label.affix, #sidebar .label.prefix, #sidebar .label.postfix, #sidebar .label.affix {
   color: #313131;
   background-color: #9e9e9e;
@@ -3573,12 +3606,21 @@ body > header, body > footer {
 /* line 118, ../scss/fi_airlines.scss */
 #location-sidebar {
   background-color: #bf9b64;
+  color: #5f492a;
 }
-/* line 15, ../scss/modules/_themes.scss */
+/* line 14, ../scss/modules/_themes.scss */
+#location-sidebar a {
+  color: #8f7247;
+}
+/* line 17, ../scss/modules/_themes.scss */
+#location-sidebar a:hover {
+  color: #5f492a;
+}
+/* line 23, ../scss/modules/_themes.scss */
 #location-sidebar p, #location-sidebar h1, #location-sidebar h2, #location-sidebar h3, #location-sidebar h4, #location-sidebar h5, #location-sidebar h6, #location-sidebar label, #location-sidebar div {
   color: #5f492a;
 }
-/* line 20, ../scss/modules/_themes.scss */
+/* line 28, ../scss/modules/_themes.scss */
 #location-sidebar label.prefix, #location-sidebar label.postfix, #location-sidebar label.affix, #location-sidebar .label.prefix, #location-sidebar .label.postfix, #location-sidebar .label.affix {
   color: #5f492a;
   background-color: #ceb288;
@@ -3587,12 +3629,21 @@ body > header, body > footer {
 /* line 122, ../scss/fi_airlines.scss */
 #location-sidebar header {
   background-color: #947241;
+  color: #313131;
 }
-/* line 15, ../scss/modules/_themes.scss */
+/* line 14, ../scss/modules/_themes.scss */
+#location-sidebar header a {
+  color: #625139;
+}
+/* line 17, ../scss/modules/_themes.scss */
+#location-sidebar header a:hover {
+  color: #313131;
+}
+/* line 23, ../scss/modules/_themes.scss */
 #location-sidebar header p, #location-sidebar header h1, #location-sidebar header h2, #location-sidebar header h3, #location-sidebar header h4, #location-sidebar header h5, #location-sidebar header h6, #location-sidebar header label, #location-sidebar header div {
   color: #313131;
 }
-/* line 20, ../scss/modules/_themes.scss */
+/* line 28, ../scss/modules/_themes.scss */
 #location-sidebar header label.prefix, #location-sidebar header label.postfix, #location-sidebar header label.affix, #location-sidebar header .label.prefix, #location-sidebar header .label.postfix, #location-sidebar header .label.affix {
   color: #313131;
   background-color: #b48d54;

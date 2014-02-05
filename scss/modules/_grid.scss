@@ -6,7 +6,8 @@
 }
 %grid {
     @extend %border-box;
-    @include clearfix;
+    @extend %clearfix;
+
     margin: 0;
     display: block;
     position: relative;
@@ -29,8 +30,16 @@
 // Horizontal Grid System
 // ======================
 
-@mixin columns($columns, $flex: true) {
-    width: ($columns / $grid-columns) * 100% !important;
+@mixin columns($columns, $gutter: false, $flex: true) {
+    $_width: ($columns / $grid-columns) * 100%;
+
+    @if $gutter {
+        width: calc(#{$_width} - (#{$gutter} * 2));
+        margin-left: $gutter;
+        margin-right: $gutter;
+    } @else {
+        width: $_width;
+    }
 
     @if $flex {    
         + .col-flex {
@@ -85,8 +94,16 @@
 // Vertical Grid System
 // ====================
 
-@mixin rows($rows) {
-    height: ($rows / $grid-rows) * 100%;
+@mixin rows($rows, $gutter: false) {
+    $_height: ($rows / $grid-rows) * 100%;
+
+    @if $gutter {
+        height: calc(#{$_height} - (#{$gutter} * 2));
+        margin-top: $gutter;
+        margin-bottom: $gutter;
+    } @else {
+        height: $_height;
+    }
 
     + .row-flex {
         height: (1 - ($rows / $grid-rows)) * 100%;

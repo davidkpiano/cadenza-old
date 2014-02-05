@@ -1,0 +1,121 @@
+$arx-blue: #0e75ba;
+$arx-green: #73bf44;
+$arx-blue-dark: #042f4f;
+
+$color-primary: $arx-blue-dark;
+$color-secondary: $arx-green;
+$color-dark: $arx-blue-dark;
+$color-light: #EFEFEF;
+
+$type-base-font-size: 18px;
+
+$form-style: stacked;
+$fieldset-style: stacked;
+
+@import 'cadenza';
+
+body {
+    > header {
+        height: 88px;
+        @include background(#efefef);
+        position: fixed;
+        top: 0; left: 0;
+        width: 100%;
+        z-index: 9;
+
+        #header_logo {        
+            background-image: url(https://www.iassist.com/images/logo-sm.png);
+            background-position: left top;
+            background-repeat: no-repeat;
+        }
+
+        #header_nav {
+            ul > li > a {
+                padding: 1rem;
+            }
+        }
+    }
+
+    h1, h2 { font-weight: 400; }
+    h1, h2, h3, h4, h5 { margin-bottom: 2rem; }
+}
+
+#view1 {
+    @include background($color-primary);
+    h1 { font-weight: 400; }
+    h2, h4 { color: mix($color-primary, $color-light, 40%); }
+
+    figure {
+        background: url(../img/desktop.png) left top no-repeat;
+        background-size: contain;
+    }
+
+    a.circular {
+        width: 40px; height: 40px;
+        padding: 0;
+        border: 2px solid white;
+
+        @include border-radius(40px);
+        &:before {
+            content: "";
+            position: absolute;
+            height: 10px; width: 10px;
+            left: 13px; top: 12px;
+            border-right-width: 2px;
+            border-bottom-width: 2px;
+            border-left-width: 0;
+            border-top-width: 0;
+            border-style: solid;
+            border-color: white;
+            -webkit-transform: rotate(45deg);
+        }
+    }
+}
+
+#view2 {
+    @include background($color-light);
+
+    h1 {
+        @include typeScale(6);
+        display: inline-block;
+        margin: 0.5em auto 0.9em auto;
+        padding-bottom: 0.5rem;
+        border-bottom: 4px solid $arx-green;
+    }
+}
+
+footer {
+    @include background($color-primary);
+
+    ul > li { color: #ccc; }
+
+    @include typeScale(-1);
+
+    h6 { display: inline-block; font-weight: 400; color: $arx-blue; }
+
+    nav {
+        @extend small;
+    }
+
+    div.row.content {
+        @include background(darken($arx_blue_dark, 5%));
+        color: mix($arx-blue-dark, white, 50%);
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+#login {
+    background: rgba(0,0,0,0.7);
+
+    >div {
+        top: 25%;
+    }
+
+    form {
+        h2 { margin-bottom: 0.8rem; font-weight: 200; }
+        @include background($arx-blue-dark);
+    }
+}
+
+

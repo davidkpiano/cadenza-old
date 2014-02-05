@@ -10,7 +10,15 @@
     @if lightness($color) < $threshold {
         $_color-foreground: $color-light;
         $_color-shaded: lighten($color, 10%);
+
+        a {
+            color: mix($color, $_color-foreground, 50%);
+
+            &:hover { color: $_color-foreground; }
+        }
     }
+
+    color: $_color-foreground;
 
     p, h1, h2, h3, h4, h5, h6, label, div {
         color: $_color-foreground;
