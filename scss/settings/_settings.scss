@@ -16,6 +16,10 @@ $grid-row-selector: ".row, [class*=\"row-\"]" !default;
 $grid-columns: 12 !default;
 $grid-rows: 12 !default;
 $grid-padding: $x !default;
+$grid-max-width: 960px !default;
+
+// Layout Settings
+$layout-min-selector: ".min" !default;
 
 // Color Palette
 $color-primary: red !default;

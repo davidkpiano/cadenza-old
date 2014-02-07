@@ -8,6 +8,10 @@
     @include experimental(transform, translateY(-50%));
 }
 
+@mixin valign-center {
+    @extend %valign-center;
+}
+
 %clearfix {
     @include clearfix;
 }
@@ -29,10 +33,10 @@ html {
 // </body>
 // THIS IS IE 9+ AND MODERN BROWSERS ONLY
 @mixin layout(
-    $header-height: 0, 
-    $footer-height: 0,
-    $left-aside-width: 0,
-    $right-aside-width: 0
+    $header: 0px,
+    $footer: 0px,
+    $left-aside: 0px,
+    $right-aside: 0px
 ) {
     position: absolute;
     height: 100%;
@@ -48,22 +52,69 @@ html {
     }
 
     > header {
-        height: $header-height;
+        height: $header;
         top: 0;
     }
 
-    > footer {
-        height: $footer-height; 
-        bottom: 0;
+    @if $footer > 0 { 
+        > footer {
+            height: $footer; 
+            bottom: 0;
+        }
+
+        &:after {
+            content: "";
+            display: block;
+            height: 1px;
+            margin-top: -1px;
+        }
+    }
+
+    @if $left-aside > 0 or $right-aside > 0 {
+        > aside {
+            position: fixed;
+            min-height: calc(100% - #{$header} - #{$footer});
+            top: $header;
+            bottom: $footer;
+
+            @if $left-aside > 0 and $right-aside <= 0 {
+                left: 0;
+                width: $left-aside;
+            } @else if $right-aside > 0 and $left-aside <= 0 {
+                right: 0;
+                width: $right-aside;
+            } @else {         
+                &:first-of-type {
+                    left: 0;
+                    width: $left-aside;
+                }
+
+                &:nth-of-type(2) {
+                    right: 0;
+                    width: $right-aside;
+                }
+            }
+        }
     }
 
     > section {
         @extend %row;
-        margin-top: $header-height;
-        margin-bottom: $footer-height;
-        height: calc(100% - #{$header-height} - #{$footer-height});
+        width: auto;
+        min-height: calc(100% - #{$header} - #{$footer});
+        min-width: calc(100% - #{$left-aside} - #{$right-aside});
+        margin-left: $left-aside;
+        margin-right: $right-aside;
         overflow: auto;
+
+        &:first-of-type {
+            margin-top: $header;
+        }
+
+        &:last-of-type {
+            margin-bottom: $footer;
+        }
     }
+
 }
 
 header, footer, section {

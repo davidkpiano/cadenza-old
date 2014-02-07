@@ -1,6 +1,7 @@
 //
 // Global Grid Styles
 // ==================
+
 %content {
     padding: $x;
 }
@@ -70,17 +71,17 @@
     @if $suffix == "" { $suffix-str: ""; }
 
     @for $i from 0 through $grid-columns {
-        .col-#{$i}#{$suffix-str} {
+        %col-#{$i}#{$suffix-str}, .col-#{$i}#{$suffix-str} {
             @include columns($i);
         }
 
-        .col-offset-#{$i}#{$suffix-str} {
+        %col-offset-#{$i}#{$suffix-str}, .col-offset-#{$i}#{$suffix-str} {
             @include columnsOffset($i);
         }    
     }
 
     @each $position in left, right, center {    
-        .col-#{$position}#{$suffix-str} {
+        %col-#{$position}#{$suffix-str}, .col-#{$position}#{$suffix-str} {
             @include columnsPosition($position);
         }
     }
@@ -119,7 +120,8 @@
     @if $position == top {
         // todo... (see if necessary)
     } @else if $position == center {
-        // todo...
+        top: 50%;
+        @include experimental(transform, translateY(-50%));
     } @else if $position == bottom {
         position: absolute;
         bottom: 0;
@@ -132,17 +134,17 @@
     @if $suffix == "" { $suffix-str: ""; }
 
     @for $i from 0 through $grid-rows {
-        .row-#{$i}#{$suffix-str} {
+        %row-#{$i}#{$suffix-str}, .row-#{$i}#{$suffix-str} {
             @include rows($i);
         }
 
-        .row-offset-#{$i}#{$suffix-str} {
+        %row-offset-#{$i}#{$suffix-str}, .row-offset-#{$i}#{$suffix-str} {
             @include rowsOffset($i);
         }
     }
 
     @each $position in top, bottom, center {    
-        .row-#{$position}#{$suffix-str} {
+        %row-#{$position}#{$suffix-str}, .row-#{$position}#{$suffix-str} {
             @include rowsPosition($position);
         }
     }

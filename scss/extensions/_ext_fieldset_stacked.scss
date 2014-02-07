@@ -12,9 +12,11 @@
         @if $form-use-radius {
             &.topfix {
                 @include border-radius($form-radius $form-radius 0 0);
+                overflow: hidden;
             }
             &.bottomfix {
                 @include border-radius(0 0 $form-radius $form-radius);
+                overflow: hidden;
             }
         }
     }

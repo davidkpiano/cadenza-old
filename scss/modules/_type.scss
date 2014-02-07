@@ -119,7 +119,10 @@ small {
             list-style: inherit;
         }
     }
+}
 
+%list-clean {
+    @include listStyle(none);
 }
 
 ul, ol, dl {
@@ -127,7 +130,7 @@ ul, ol, dl {
     margin-bottom: $type-list-margin-bottom;
     padding: 0;
 
-    &.clean { @include listStyle(none); }
+    &.clean { @extend %list-clean; }
 
     // Inline lists
     &.inline {
