@@ -1,28 +1,29 @@
 
 
 
-@mixin background($color, $threshold: 65%, $color-dark: $color-dark, $color-light: $color-light) {
-    background-color: $color;
-
+@mixin background(
+    $color, 
+    $threshold: $theme-lightness-threshold, 
+    $color-dark: $color-dark, 
+    $color-light: $color-light
+) 
+{
     $_color-foreground: $color-dark;
-    $_color-shaded: darken($color, 10%);
+    $_color-shaded: darken($color, $theme-darken-percent);
 
     @if lightness($color) < $threshold {
         $_color-foreground: $color-light;
-        $_color-shaded: lighten($color, 10%);
+        $_color-shaded: lighten($color, $theme-lighten-percent);
 
         a {
-            color: mix($color, $_color-foreground, 50%);
+            color: mix($color, $_color-foreground, $theme-mix-percent);
 
             &:hover { color: $_color-foreground; }
         }
     }
 
+    background-color: $color;
     color: $_color-foreground;
-
-    p, h1, h2, h3, h4, h5, h6, label, div {
-        color: $_color-foreground;
-    }
 
     label, .label {
         &.prefix, &.postfix, &.affix {
@@ -32,6 +33,18 @@
     }
 }
 
-%theme-primary {
-    @include background($color-primary);
-}
+%theme-primary { @include background($color-primary); }
+%theme-secondary { @include background($color-secondary); }
+%theme-light { @include background($color-light); }
+%theme-dark { @include background($color-dark); }
+
+%color-primary { color: $color-primary; }
+%color-secondary { color: $color-secondary; }
+%color-light { color: $color-light; }
+%color-dark { color: $color-dark; }
+
+.color-primary { @extend %color-primary; }
+.color-secondary { @extend %color-secondary; }
+.color-light { @extend %color-light; }
+.color-dark { @extend %color-dark; }
+

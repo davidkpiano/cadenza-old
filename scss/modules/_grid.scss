@@ -22,7 +22,7 @@
 
     &.col-inline { height: auto; }
 }
-%column-gutter {
+%columns-gutter {
     &, > [class*="col-"] {
         padding-left: $grid-column-gutter / 2;
         padding-right: $grid-column-gutter / 2;  
@@ -32,7 +32,7 @@
     @extend %grid;
     width: 100%;
 }
-%row-gutter {
+%rows-gutter {
     &, > [class*="row-"] {
         padding-top: $grid-row-gutter / 2;
         padding-bottom: $grid-row-gutter / 2;  
@@ -94,8 +94,8 @@
 #{$grid-column-selector} {
     @extend %column;
 
-    &.row-gutter {
-        @extend %row-gutter;
+    &.rows-gutter {
+        @extend %rows-gutter;
     }
 }
 
@@ -161,8 +161,8 @@
 #{$grid-row-selector} {
     @extend %row;
 
-    &.col-gutter {
-        @extend %column-gutter;
+    &.columns-gutter {
+        @extend %columns-gutter;
     }
 }
 

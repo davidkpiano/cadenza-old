@@ -8,12 +8,16 @@
     @include experimental(transform, translateY(-50%));
 }
 
-@mixin valign-center {
-    @extend %valign-center;
-}
-
 %clearfix {
     @include clearfix;
+}
+
+%float-left {
+    float: left;
+}
+
+%float-right {
+    float: right;
 }
 
 html {
@@ -128,6 +132,14 @@ header, footer, section {
 
 .valign-center {
     @extend %valign-center;
+}
+
+.float-left {
+    @extend %float-left;
+}
+
+.float-right {
+    @extend %float-right;
 }
 
 .full {

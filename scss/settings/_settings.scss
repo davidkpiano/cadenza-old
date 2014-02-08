@@ -20,9 +20,6 @@ $grid-max-width: 960px !default;
 $grid-column-gutter: $x !default;
 $grid-row-gutter: $x !default;
 
-// Layout Settings
-$layout-min-selector: ".min" !default;
-
 // Color Palette
 $color-primary: red !default;
 $color-secondary: gray !default;
@@ -35,6 +32,12 @@ $color-anchor-hover: lighten($color-primary, 15%) !default;
 $color-success: #96CC69 !default;
 $color-warning: #FFCC5C !default;
 $color-failure: #C44741 !default;
+
+// Theme Settings
+$theme-lightness-threshold: 65% !default;
+$theme-lighten-percent: 10% !default;
+$theme-darken-percent: 10% !default;
+$theme-mix-percent: 50% !default;
 
 // Typography Settings
 $type-unit: rem !default;
@@ -108,10 +111,12 @@ $hr-border-color: lighten($color-dark, 45%) !default;
 $hr-margin: $x-rem/2;
 
 // Alerts Settings
+$alert-style: normal !default;
 $alert-padding: $x !default;
 $alert-border: 1px solid !default;
 $alert-color-light: white !default;
 $alert-margin-bottom: $x !default;
+$alert-type-scale: -1 !default;
 
 // Media Query Settings
 $aspect-ratio: 16/9 !default;

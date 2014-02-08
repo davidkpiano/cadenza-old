@@ -8,33 +8,30 @@
 //   @include alert($color, $text-color);
 // }
 
-
-@mixin alert($color: $color-primary, $text-color: $alert-color-light) {
-    $border-color: darken($color, 15%);
-
-    @if $text-color == $alert-color-light {
-        color: foregroundColor($color);
-    } @else {
-        color: $text-color;
-    }
-
-    background-color: $color;
-    border-color: $border-color;
-    color: $text-color;
-}
-
-.alert {
+%alert-layout {
     display: block;
     width: 100%;
     padding: $alert-padding;
     border: $alert-border;
     margin-bottom: $alert-margin-bottom;
     
-    @include typeScale(-1);
+    @include typeScale($alert-type-scale);
+}
 
+%ext-alert-normal {
+    @extend %alert-layout;
+
+    @include extAlertColors();
+
+    &.success { @include extAlertColors($color-success); }
+    &.warning { @include extAlertColors($color-warning); }
+    &.failure { @include extAlertColors($color-failure); }
+}
+
+@mixin alert($style: normal) {
+    @extend %ext-alert-#{$style};
+}
+
+.alert {
     @include alert();
-
-    &.success { @include alert($color-success); }
-    &.warning { @include alert($color-warning); }
-    &.failure { @include alert($color-failure); }
 }

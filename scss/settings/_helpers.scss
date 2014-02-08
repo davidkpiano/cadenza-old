@@ -54,3 +54,20 @@
         border-color: $color-border-active;
     }
 }
+
+@mixin extAlertColors(
+    $color: $color-primary,
+    $color-text: $color-light,
+    $color-link: mix($color, $color-light, 50%),
+    $color-link-hover: darken($color-link, 10%),
+    $color-border: darken($color, 10%)
+) {
+    background-color: $color;
+    color: $color-text;
+    border-color: $color-border;
+
+    a {
+        color: $color-link;
+        &:hover { color: $color-link-hover; }
+    }
+}

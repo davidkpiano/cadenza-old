@@ -35,6 +35,7 @@
         > ul {
             @extend %clearfix;
 
+
             > li {
                 float: left;
             }
@@ -42,6 +43,7 @@
 
         &.full {
             height: 100%;
+            margin-bottom: 0;
 
             > ul {
                 height: 100%;
