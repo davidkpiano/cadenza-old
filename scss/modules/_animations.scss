@@ -1,0 +1,76 @@
+%active {
+    z-index: $active-z-index;
+}
+
+%inactive {
+    z-index: $inactive-z-index;
+}
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@mixin animation(
+    $name,
+    $duration: $animation-duration,
+    $direction: normal,
+    $delay: false,
+    $iteration-count: false,
+    $play-state: false,
+    $timing-function: $animation-timing-function,
+    $fill-mode: forwards
+) {
+    @include experimental(animation-name, $name, $khtml: false, $moz: false, $ms: false, $o: false);
+    @include experimental(animation-duration, $duration, $khtml: false, $moz: false, $ms: false, $o: false);
+    @include experimental(animation-direction, $direction, $khtml: false, $moz: false, $ms: false, $o: false);
+    @include experimental(animation-delay, $delay, $khtml: false, $moz: false, $ms: false, $o: false);
+    @include experimental(animation-iteration-count, $iteration-count, $khtml: false, $moz: false, $ms: false, $o: false);
+    @include experimental(animation-play-state, $play-state, $khtml: false, $moz: false, $ms: false, $o: false);
+    @include experimental(animation-timing-function, $timing-function, $khtml: false, $moz: false, $ms: false, $o: false);
+    @include experimental(animation-fill-mode, $fill-mode, $khtml: false, $moz: false, $ms: false, $o: false);
+}
+
+@mixin activate($active-name, $inactive-name: $active-name) {
+    @extend %animation-#{$active-name}-inert;
+
+    &.active { @extend %animation-#{$active-name}-active; }
+    &.inactive { @extend %animation-#{$inactive-name}-inactive; }
+}
+
+@mixin activate-all($active-name, $inactive-name: $active-name, $selector: $page-selector, $active-selector: $active-selector, $inactive-selector: $inactive-selector) {
+    > #{$selector} {
+        @extend %animation-#{$active-name}-inert;
+
+        &#{$active-selector} { @extend %animation-#{$active-name}-active; }
+        &#{$inactive-selector} { @extend %animation-#{$inactive-name}-inactive; }
+    }
+}
+
+// Animations
+// ==========
+%animation-fade-active { @include animation(fade-active); }
+%animation-fade-inactive { @include animation(fade-inactive); }
+@include keyframes(fade-active) {
+    from { opacity: 0; @extend %active; }
+    to { opacity: 1; }
+}
+@include keyframes(fade-inactive) {
+    from { opacity: 1; }
+    to { opacity: 0; @extend %inactive; }
+}
+
+%animation-scaleUp-active { @include animation(scaleUp-active); }
+%animation-scaleUp-inactive { @include animation(scaleUp-inactive); }
+@include keyframes(scaleUp-active) {
+    from { opacity: 0; -webkit-transform: scale(0.8); }
+    to { opacity: 1; -webkit-transform: scale(1); }
+}
+@include keyframes(scaleUp-inactive) {
+    from { opacity: 1; -webkit-transform: scale(1); }
+    to { opacity: 0; -webkit-transform: scale(1.2); }
+}

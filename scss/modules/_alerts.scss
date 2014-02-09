@@ -14,8 +14,21 @@
     padding: $alert-padding;
     border: $alert-border;
     margin-bottom: $alert-margin-bottom;
+
+    @if $alert-use-radius {
+        @include border-radius($alert-radius);
+    }
     
     @include typeScale($alert-type-scale);
+
+    .alert-exit {
+        @include position-absolute(top, right);
+        padding: $alert-padding / 2;
+    }
+
+    > *:last-child {
+        margin-bottom: 0;
+    }
 }
 
 %ext-alert-normal {

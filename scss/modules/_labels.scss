@@ -58,6 +58,10 @@
     &.secondary { @include label-colors($color-secondary); }
     &.light { @include label-colors($color-light); }
     &.dark { @include label-colors($color-dark); }
+
+    &.success { @include label-colors($color-success); }
+    &.warning { @include label-colors($color-warning); }
+    &.failure { @include label-colors($color-failure); }
 }
 
 %label-layout {

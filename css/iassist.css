@@ -2,22 +2,90 @@
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 /* Import Settings */
 /* Import Modules */
-/* line 41, ../scss/modules/_themes.scss */
+/* line 4, ../scss/modules/_themes.scss */
+.theme-primary {
+  background-color: #042f4f;
+  color: #efefef;
+}
+/* line 27, ../scss/settings/_helpers.scss */
+.theme-primary a {
+  color: #798f9f;
+}
+/* line 30, ../scss/settings/_helpers.scss */
+.theme-primary a:hover {
+  color: #efefef;
+}
+/* line 38, ../scss/settings/_helpers.scss */
+.theme-primary label.prefix, .theme-primary label.postfix, .theme-primary label.affix, .theme-primary .label.prefix, .theme-primary .label.postfix, .theme-primary .label.affix {
+  color: #efefef;
+  background-color: #064c80;
+}
+
+/* line 5, ../scss/modules/_themes.scss */
+.theme-secondary {
+  background-color: #73bf44;
+  color: #efefef;
+}
+/* line 27, ../scss/settings/_helpers.scss */
+.theme-secondary a {
+  color: #b1d799;
+}
+/* line 30, ../scss/settings/_helpers.scss */
+.theme-secondary a:hover {
+  color: #efefef;
+}
+/* line 38, ../scss/settings/_helpers.scss */
+.theme-secondary label.prefix, .theme-secondary label.postfix, .theme-secondary label.affix, .theme-secondary .label.prefix, .theme-secondary .label.postfix, .theme-secondary .label.affix {
+  color: #efefef;
+  background-color: #8fcc6a;
+}
+
+/* line 6, ../scss/modules/_themes.scss */
+.theme-light {
+  background-color: #efefef;
+  color: #042f4f;
+}
+/* line 38, ../scss/settings/_helpers.scss */
+.theme-light label.prefix, .theme-light label.postfix, .theme-light label.affix, .theme-light .label.prefix, .theme-light .label.postfix, .theme-light .label.affix {
+  color: #042f4f;
+  background-color: #d5d5d5;
+}
+
+/* line 7, ../scss/modules/_themes.scss */
+.theme-dark {
+  background-color: #042f4f;
+  color: #efefef;
+}
+/* line 27, ../scss/settings/_helpers.scss */
+.theme-dark a {
+  color: #798f9f;
+}
+/* line 30, ../scss/settings/_helpers.scss */
+.theme-dark a:hover {
+  color: #efefef;
+}
+/* line 38, ../scss/settings/_helpers.scss */
+.theme-dark label.prefix, .theme-dark label.postfix, .theme-dark label.affix, .theme-dark .label.prefix, .theme-dark .label.postfix, .theme-dark .label.affix {
+  color: #efefef;
+  background-color: #064c80;
+}
+
+/* line 14, ../scss/modules/_themes.scss */
 .color-primary {
   color: #042f4f;
 }
 
-/* line 42, ../scss/modules/_themes.scss */
+/* line 15, ../scss/modules/_themes.scss */
 .color-secondary {
   color: #73bf44;
 }
 
-/* line 43, ../scss/modules/_themes.scss */
+/* line 16, ../scss/modules/_themes.scss */
 .color-light {
   color: #efefef;
 }
 
-/* line 44, ../scss/modules/_themes.scss */
+/* line 17, ../scss/modules/_themes.scss */
 .color-dark {
   color: #042f4f;
 }
@@ -94,13 +162,13 @@ html {
   position: relative;
 }
 
-/* line 128, ../scss/modules/_layout.scss */
+/* line 148, ../scss/modules/_layout.scss */
 .inline {
   display: inline-block;
   margin-bottom: 0;
 }
 
-/* line 145, ../scss/modules/_layout.scss */
+/* line 165, ../scss/modules/_layout.scss */
 .full {
   height: 100%;
 }
@@ -3086,13 +3154,13 @@ button, .button, input[type=button], input[type=submit], .button-group > label {
   border-color: #021b2d;
   color: white;
 }
-/* line 45, ../scss/settings/_helpers.scss */
+/* line 77, ../scss/settings/_helpers.scss */
 button:hover, .button:hover, input[type=button]:hover, input[type=submit]:hover, .button-group > label:hover, button:focus, .button:focus, input[type=button]:focus, input[type=submit]:focus, .button-group > label:focus {
   color: white;
   border-color: #01070b;
   background-color: #021b2d;
 }
-/* line 51, ../scss/settings/_helpers.scss */
+/* line 83, ../scss/settings/_helpers.scss */
 button:active, .button-group input:checked + label, .button:active, input[type=button]:active, input[type=submit]:active, .button-group > label:active {
   color: white;
   background-color: #01070b;
@@ -3104,13 +3172,13 @@ button.primary, .primary.button, input.primary[type=button], input.primary[type=
   border-color: #021b2d;
   color: white;
 }
-/* line 45, ../scss/settings/_helpers.scss */
+/* line 77, ../scss/settings/_helpers.scss */
 button.primary:hover, .primary.button:hover, input.primary[type=button]:hover, input.primary[type=submit]:hover, .button-group > label.primary:hover, button.primary:focus, .primary.button:focus, input.primary[type=button]:focus, input.primary[type=submit]:focus, .button-group > label.primary:focus, .button-group.primary button:hover, .button-group.primary .button:hover, .button-group.primary input[type=button]:hover, .button-group.primary input[type=submit]:hover, .button-group.primary .button-group > label:hover, .button-group.primary button:focus, .button-group.primary .button:focus, .button-group.primary input[type=button]:focus, .button-group.primary input[type=submit]:focus, .button-group.primary .button-group > label:focus {
   color: white;
   border-color: #01070b;
   background-color: #021b2d;
 }
-/* line 51, ../scss/settings/_helpers.scss */
+/* line 83, ../scss/settings/_helpers.scss */
 button.primary:active, .button-group input:checked + label.primary, .primary.button:active, input.primary[type=button]:active, input.primary[type=submit]:active, .button-group > label.primary:active, .button-group.primary button:active, .button-group.primary input:checked + label, .button-group.primary .button:active, .button-group.primary input[type=button]:active, .button-group.primary input[type=submit]:active, .button-group.primary .button-group > label:active {
   color: white;
   background-color: #01070b;
@@ -3122,13 +3190,13 @@ button.secondary, .secondary.button, input.secondary[type=button], input.seconda
   border-color: #63a639;
   color: white;
 }
-/* line 45, ../scss/settings/_helpers.scss */
+/* line 77, ../scss/settings/_helpers.scss */
 button.secondary:hover, .secondary.button:hover, input.secondary[type=button]:hover, input.secondary[type=submit]:hover, .button-group > label.secondary:hover, button.secondary:focus, .secondary.button:focus, input.secondary[type=button]:focus, input.secondary[type=submit]:focus, .button-group > label.secondary:focus, .button-group.secondary button:hover, .button-group.secondary .button:hover, .button-group.secondary input[type=button]:hover, .button-group.secondary input[type=submit]:hover, .button-group.secondary .button-group > label:hover, .button-group.secondary button:focus, .button-group.secondary .button:focus, .button-group.secondary input[type=button]:focus, .button-group.secondary input[type=submit]:focus, .button-group.secondary .button-group > label:focus {
   color: white;
   border-color: #538c30;
   background-color: #63a639;
 }
-/* line 51, ../scss/settings/_helpers.scss */
+/* line 83, ../scss/settings/_helpers.scss */
 button.secondary:active, .button-group input:checked + label.secondary, .secondary.button:active, input.secondary[type=button]:active, input.secondary[type=submit]:active, .button-group > label.secondary:active, .button-group.secondary button:active, .button-group.secondary input:checked + label, .button-group.secondary .button:active, .button-group.secondary input[type=button]:active, .button-group.secondary input[type=submit]:active, .button-group.secondary .button-group > label:active {
   color: white;
   background-color: #538c30;
@@ -3140,13 +3208,13 @@ button.light, .light.button, input.light[type=button], input.light[type=submit],
   border-color: #dddddd;
   color: #042f4f;
 }
-/* line 45, ../scss/settings/_helpers.scss */
+/* line 77, ../scss/settings/_helpers.scss */
 button.light:hover, .light.button:hover, input.light[type=button]:hover, input.light[type=submit]:hover, .button-group > label.light:hover, button.light:focus, .light.button:focus, input.light[type=button]:focus, input.light[type=submit]:focus, .button-group > label.light:focus, .button-group.light button:hover, .button-group.light .button:hover, .button-group.light input[type=button]:hover, .button-group.light input[type=submit]:hover, .button-group.light .button-group > label:hover, .button-group.light button:focus, .button-group.light .button:focus, .button-group.light input[type=button]:focus, .button-group.light input[type=submit]:focus, .button-group.light .button-group > label:focus {
   color: auto;
   border-color: #cbcbcb;
   background-color: #dddddd;
 }
-/* line 51, ../scss/settings/_helpers.scss */
+/* line 83, ../scss/settings/_helpers.scss */
 button.light:active, .button-group input:checked + label.light, .light.button:active, input.light[type=button]:active, input.light[type=submit]:active, .button-group > label.light:active, .button-group.light button:active, .button-group.light input:checked + label, .button-group.light .button:active, .button-group.light input[type=button]:active, .button-group.light input[type=submit]:active, .button-group.light .button-group > label:active {
   color: auto;
   background-color: #cbcbcb;
@@ -3158,13 +3226,13 @@ button.dark, .dark.button, input.dark[type=button], input.dark[type=submit], .bu
   border-color: #021b2d;
   color: white;
 }
-/* line 45, ../scss/settings/_helpers.scss */
+/* line 77, ../scss/settings/_helpers.scss */
 button.dark:hover, .dark.button:hover, input.dark[type=button]:hover, input.dark[type=submit]:hover, .button-group > label.dark:hover, button.dark:focus, .dark.button:focus, input.dark[type=button]:focus, input.dark[type=submit]:focus, .button-group > label.dark:focus, .button-group.dark button:hover, .button-group.dark .button:hover, .button-group.dark input[type=button]:hover, .button-group.dark input[type=submit]:hover, .button-group.dark .button-group > label:hover, .button-group.dark button:focus, .button-group.dark .button:focus, .button-group.dark input[type=button]:focus, .button-group.dark input[type=submit]:focus, .button-group.dark .button-group > label:focus {
   color: white;
   border-color: #01070b;
   background-color: #021b2d;
 }
-/* line 51, ../scss/settings/_helpers.scss */
+/* line 83, ../scss/settings/_helpers.scss */
 button.dark:active, .button-group input:checked + label.dark, .dark.button:active, input.dark[type=button]:active, input.dark[type=submit]:active, .button-group > label.dark:active, .button-group.dark button:active, .button-group.dark input:checked + label, .button-group.dark .button:active, .button-group.dark input[type=button]:active, .button-group.dark input[type=submit]:active, .button-group.dark .button-group > label:active {
   color: white;
   background-color: #01070b;
@@ -3176,13 +3244,13 @@ button.transparent, .transparent.button, input.transparent[type=button], input.t
   border-color: #021b2d;
   color: white;
 }
-/* line 45, ../scss/settings/_helpers.scss */
+/* line 77, ../scss/settings/_helpers.scss */
 button.transparent:hover, .transparent.button:hover, input.transparent[type=button]:hover, input.transparent[type=submit]:hover, .button-group > label.transparent:hover, button.transparent:focus, .transparent.button:focus, input.transparent[type=button]:focus, input.transparent[type=submit]:focus, .button-group > label.transparent:focus, .button-group.transparent button:hover, .button-group.transparent .button:hover, .button-group.transparent input[type=button]:hover, .button-group.transparent input[type=submit]:hover, .button-group.transparent .button-group > label:hover, .button-group.transparent button:focus, .button-group.transparent .button:focus, .button-group.transparent input[type=button]:focus, .button-group.transparent input[type=submit]:focus, .button-group.transparent .button-group > label:focus {
   color: white;
   border-color: #01070b;
   background-color: #042f4f;
 }
-/* line 51, ../scss/settings/_helpers.scss */
+/* line 83, ../scss/settings/_helpers.scss */
 button.transparent:active, .button-group input:checked + label.transparent, .transparent.button:active, input.transparent[type=button]:active, input.transparent[type=submit]:active, .button-group > label.transparent:active, .button-group.transparent button:active, .button-group.transparent input:checked + label, .button-group.transparent .button:active, .button-group.transparent input[type=button]:active, .button-group.transparent input[type=submit]:active, .button-group.transparent .button-group > label:active {
   color: white;
   background-color: #021b2d;
@@ -3342,27 +3410,60 @@ form .select > select {
   background-color: #064c80;
   color: #efefef;
 }
-
+/* line 62, ../scss/modules/_labels.scss */
+.success.label, .success.badge {
+  background-color: #96cc69;
+  color: #efefef;
+  border-color: #73bf44;
+}
+/* line 47, ../scss/modules/_labels.scss */
+.success[href].label:hover, .success[href].badge:hover {
+  background-color: #064c80;
+  color: #efefef;
+}
 /* line 63, ../scss/modules/_labels.scss */
+.warning.label, .warning.badge {
+  background-color: #ffcc5c;
+  color: #042f4f;
+  border-color: #73bf44;
+}
+/* line 47, ../scss/modules/_labels.scss */
+.warning[href].label:hover, .warning[href].badge:hover {
+  background-color: #064c80;
+  color: #efefef;
+}
+/* line 64, ../scss/modules/_labels.scss */
+.failure.label, .failure.badge {
+  background-color: #c44741;
+  color: #efefef;
+  border-color: #73bf44;
+}
+/* line 47, ../scss/modules/_labels.scss */
+.failure[href].label:hover, .failure[href].badge:hover {
+  background-color: #064c80;
+  color: #efefef;
+}
+
+/* line 67, ../scss/modules/_labels.scss */
 .label, .badge {
   display: inline-block;
   line-height: 1;
   text-decoration: none;
 }
-/* line 69, ../scss/modules/_labels.scss */
+/* line 73, ../scss/modules/_labels.scss */
 [class*=infix-].label, [class*=infix-].badge {
   position: absolute;
   margin: 0 8px;
 }
-/* line 73, ../scss/modules/_labels.scss */
+/* line 77, ../scss/modules/_labels.scss */
 [class*=infix-].infix-left.label, [class*=infix-].infix-left.badge, [class*=infix-].infix-right.label, [class*=infix-].infix-right.badge {
   z-index: 2;
 }
-/* line 78, ../scss/modules/_labels.scss */
+/* line 82, ../scss/modules/_labels.scss */
 [class*=infix-].infix-left.label, [class*=infix-].infix-left.badge {
   left: 0;
 }
-/* line 79, ../scss/modules/_labels.scss */
+/* line 83, ../scss/modules/_labels.scss */
 [class*=infix-].infix-right.label, [class*=infix-].infix-right.badge {
   right: 0;
 }
@@ -3440,65 +3541,185 @@ table tbody tr td {
   padding: 16px;
   border: 1px solid;
   margin-bottom: 16px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
   font-size: 15.49854px ;
   font-size: 0.86103rem ;
 }
+/* line 24, ../scss/modules/_alerts.scss */
+.alert .alert-exit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px;
+}
+/* line 29, ../scss/modules/_alerts.scss */
+.alert > *:last-child {
+  margin-bottom: 0;
+}
 
-/* line 21, ../scss/modules/_alerts.scss */
+/* line 34, ../scss/modules/_alerts.scss */
 .alert {
   background-color: #042f4f;
   color: #efefef;
   border-color: #02121e;
 }
-/* line 69, ../scss/settings/_helpers.scss */
+/* line 101, ../scss/settings/_helpers.scss */
 .alert a {
   color: #798f9f;
 }
-/* line 71, ../scss/settings/_helpers.scss */
+/* line 103, ../scss/settings/_helpers.scss */
 .alert a:hover {
   color: #607585;
 }
-/* line 26, ../scss/modules/_alerts.scss */
+/* line 39, ../scss/modules/_alerts.scss */
 .success.alert {
   background-color: #96cc69;
   color: #efefef;
   border-color: #7bbf43;
 }
-/* line 69, ../scss/settings/_helpers.scss */
+/* line 101, ../scss/settings/_helpers.scss */
 .success.alert a {
   color: #c2ddac;
 }
-/* line 71, ../scss/settings/_helpers.scss */
+/* line 103, ../scss/settings/_helpers.scss */
 .success.alert a:hover {
   color: #a7ce88;
 }
-/* line 27, ../scss/modules/_alerts.scss */
+/* line 40, ../scss/modules/_alerts.scss */
 .warning.alert {
   background-color: #ffcc5c;
   color: #efefef;
   border-color: #ffbc29;
 }
-/* line 69, ../scss/settings/_helpers.scss */
+/* line 101, ../scss/settings/_helpers.scss */
 .warning.alert a {
   color: #f7dda5;
 }
-/* line 71, ../scss/settings/_helpers.scss */
+/* line 103, ../scss/settings/_helpers.scss */
 .warning.alert a:hover {
   color: #f3cb76;
 }
-/* line 28, ../scss/modules/_alerts.scss */
+/* line 41, ../scss/modules/_alerts.scss */
 .failure.alert {
   background-color: #c44741;
   color: #efefef;
   border-color: #a03732;
 }
-/* line 69, ../scss/settings/_helpers.scss */
+/* line 101, ../scss/settings/_helpers.scss */
 .failure.alert a {
   color: #d99b98;
 }
-/* line 71, ../scss/settings/_helpers.scss */
+/* line 103, ../scss/settings/_helpers.scss */
 .failure.alert a:hover {
   color: #cb7773;
+}
+
+@-webkit-keyframes fade-active {
+  /* line 59, ../scss/modules/_animations.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 60, ../scss/modules/_animations.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-active {
+  /* line 59, ../scss/modules/_animations.scss */
+  from {
+    opacity: 0;
+  }
+
+  /* line 60, ../scss/modules/_animations.scss */
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-inactive {
+  /* line 63, ../scss/modules/_animations.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 64, ../scss/modules/_animations.scss */
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-inactive {
+  /* line 63, ../scss/modules/_animations.scss */
+  from {
+    opacity: 1;
+  }
+
+  /* line 64, ../scss/modules/_animations.scss */
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes scaleUp-active {
+  /* line 70, ../scss/modules/_animations.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+  }
+
+  /* line 71, ../scss/modules/_animations.scss */
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes scaleUp-active {
+  /* line 70, ../scss/modules/_animations.scss */
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+  }
+
+  /* line 71, ../scss/modules/_animations.scss */
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+}
+
+@-webkit-keyframes scaleUp-inactive {
+  /* line 74, ../scss/modules/_animations.scss */
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+
+  /* line 75, ../scss/modules/_animations.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+  }
+}
+
+@keyframes scaleUp-inactive {
+  /* line 74, ../scss/modules/_animations.scss */
+  from {
+    opacity: 1;
+    -webkit-transform: scale(1);
+  }
+
+  /* line 75, ../scss/modules/_animations.scss */
+  to {
+    opacity: 0;
+    -webkit-transform: scale(1.2);
+  }
 }
 
 /* Import Extensions */
@@ -3611,7 +3832,7 @@ body > header {
   width: 100%;
   z-index: 9;
 }
-/* line 29, ../scss/modules/_themes.scss */
+/* line 38, ../scss/settings/_helpers.scss */
 body > header label.prefix, body > header label.postfix, body > header label.affix, body > header .label.prefix, body > header .label.postfix, body > header .label.affix {
   color: #042f4f;
   background-color: #d5d5d5;
@@ -3651,15 +3872,15 @@ body h1, body h2, body h3, body h4, body h5 {
   background-color: #042f4f;
   color: #efefef;
 }
-/* line 18, ../scss/modules/_themes.scss */
+/* line 27, ../scss/settings/_helpers.scss */
 #view1 a {
   color: #798f9f;
 }
-/* line 21, ../scss/modules/_themes.scss */
+/* line 30, ../scss/settings/_helpers.scss */
 #view1 a:hover {
   color: #efefef;
 }
-/* line 29, ../scss/modules/_themes.scss */
+/* line 38, ../scss/settings/_helpers.scss */
 #view1 label.prefix, #view1 label.postfix, #view1 label.affix, #view1 .label.prefix, #view1 .label.postfix, #view1 .label.affix {
   color: #efefef;
   background-color: #064c80;
@@ -3711,7 +3932,7 @@ body h1, body h2, body h3, body h4, body h5 {
   background-color: #e2e2e2;
   color: #042f4f;
 }
-/* line 29, ../scss/modules/_themes.scss */
+/* line 38, ../scss/settings/_helpers.scss */
 #view2 label.prefix, #view2 label.postfix, #view2 label.affix, #view2 .label.prefix, #view2 .label.postfix, #view2 .label.affix {
   color: #042f4f;
   background-color: #c9c9c9;
@@ -3733,15 +3954,15 @@ footer {
   font-size: 15.49854px ;
   font-size: 0.86103rem ;
 }
-/* line 18, ../scss/modules/_themes.scss */
+/* line 27, ../scss/settings/_helpers.scss */
 footer a {
   color: #798f9f;
 }
-/* line 21, ../scss/modules/_themes.scss */
+/* line 30, ../scss/settings/_helpers.scss */
 footer a:hover {
   color: #efefef;
 }
-/* line 29, ../scss/modules/_themes.scss */
+/* line 38, ../scss/settings/_helpers.scss */
 footer label.prefix, footer label.postfix, footer label.affix, footer .label.prefix, footer .label.postfix, footer .label.affix {
   color: #efefef;
   background-color: #064c80;
@@ -3764,15 +3985,15 @@ footer div.row.content {
   position: absolute;
   bottom: 0;
 }
-/* line 18, ../scss/modules/_themes.scss */
+/* line 27, ../scss/settings/_helpers.scss */
 footer div.row.content a {
   color: #798893;
 }
-/* line 21, ../scss/modules/_themes.scss */
+/* line 30, ../scss/settings/_helpers.scss */
 footer div.row.content a:hover {
   color: #efefef;
 }
-/* line 29, ../scss/modules/_themes.scss */
+/* line 38, ../scss/settings/_helpers.scss */
 footer div.row.content label.prefix, footer div.row.content label.postfix, footer div.row.content label.affix, footer div.row.content .label.prefix, footer div.row.content .label.postfix, footer div.row.content .label.affix {
   color: #efefef;
   background-color: #053d67;
@@ -3796,7 +4017,7 @@ footer div.row.content label.prefix, footer div.row.content label.postfix, foote
   margin-bottom: 0.8rem;
   font-weight: 200;
 }
-/* line 29, ../scss/modules/_themes.scss */
+/* line 38, ../scss/settings/_helpers.scss */
 #login form label.prefix, #login form label.postfix, #login form label.affix, #login form .label.prefix, #login form .label.postfix, #login form .label.affix {
   color: #042f4f;
   background-color: #d5d5d5;

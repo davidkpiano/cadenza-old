@@ -110,14 +110,6 @@ $hr-border-width: 1px !default;
 $hr-border-color: lighten($color-dark, 45%) !default;
 $hr-margin: $x-rem/2;
 
-// Alerts Settings
-$alert-style: normal !default;
-$alert-padding: $x !default;
-$alert-border: 1px solid !default;
-$alert-color-light: white !default;
-$alert-margin-bottom: $x !default;
-$alert-type-scale: -1 !default;
-
 // Media Query Settings
 $aspect-ratio: 16/9 !default;
 $static-width: 960px !default;
@@ -290,3 +282,23 @@ $badge-color: $label-color !default;
 $badge-use-radius: $label-use-radius !default;
 $badge-collapse: true !default;
 
+// Alerts Settings
+$alert-style: normal !default;
+$alert-padding: $x !default;
+$alert-border: 1px solid !default;
+$alert-color-light: white !default;
+$alert-margin-bottom: $x !default;
+$alert-radius: $form-radius !default;
+$alert-use-radius: true !default;
+$alert-type-scale: -1 !default;
+
+// Animation Settings
+$animation-duration: 0.5s !default;
+$animation-timing-function: ease-in-out !default;
+
+// Activation Settings
+$page-selector: ".page" !default;
+$active-selector: ".active" !default;
+$inactive-selector: ".inactive" !default;
+$active-z-index: 2 !default;
+$inactive-z-index: 0 !default;

@@ -29,6 +29,26 @@ html {
     @extend %border-box;
 }
 
+@mixin position-absolute($vertical, $horizontal) {
+    position: absolute;
+
+    @if $vertical == top { top: 0; }
+    @else if $vertical == bottom { bottom: 0; }
+    @else if $vertical == center {
+        top: 50%;
+        @include experimental(transform, translateY(-50%));
+    }
+    @else { top: $vertical; }
+
+    @if $horizontal == left { left: 0; }
+    @else if $horizontal == right { right: 0; }
+    @else if $horizontal == center {
+        left: 50%;
+        @include experimental(transform, translateX(-50%));
+    }
+    @else { left: $horizontal; }
+}
+
 // layout mixin must follow this structure:
 // <body>
 //   <header></header>

@@ -1,42 +1,15 @@
 
 
 
-@mixin background(
-    $color, 
-    $threshold: $theme-lightness-threshold, 
-    $color-dark: $color-dark, 
-    $color-light: $color-light
-) 
-{
-    $_color-foreground: $color-dark;
-    $_color-shaded: darken($color, $theme-darken-percent);
-
-    @if lightness($color) < $threshold {
-        $_color-foreground: $color-light;
-        $_color-shaded: lighten($color, $theme-lighten-percent);
-
-        a {
-            color: mix($color, $_color-foreground, $theme-mix-percent);
-
-            &:hover { color: $_color-foreground; }
-        }
-    }
-
-    background-color: $color;
-    color: $_color-foreground;
-
-    label, .label {
-        &.prefix, &.postfix, &.affix {
-            color: $_color-foreground;
-            background-color: $_color-shaded;
-        }
-    }
-}
-
 %theme-primary { @include background($color-primary); }
 %theme-secondary { @include background($color-secondary); }
 %theme-light { @include background($color-light); }
 %theme-dark { @include background($color-dark); }
+
+.theme-primary { @extend %theme-primary; }
+.theme-secondary { @extend %theme-secondary; }
+.theme-light { @extend %theme-light; }
+.theme-dark { @extend %theme-dark; }
 
 %color-primary { color: $color-primary; }
 %color-secondary { color: $color-secondary; }

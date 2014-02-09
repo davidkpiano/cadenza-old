@@ -10,3 +10,8 @@ $type-header-font-weight: 200;
 $form-border-width: 2px;
 
 @import 'cadenza.scss';
+
+
+#foo {
+    @include activate-all(scaleUp, fade);
+}
