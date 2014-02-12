@@ -51,6 +51,10 @@ $type-base-color: #222 !default;
 
 $type-custom-import: "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" !default;
 $type-custom-font-family: "Open Sans" !default;
+$type-use-custom: true !default;
+
+$type-secondary-import: '' !default;
+$type-secondary-font-family: Georgia, Times, "Times New Roman", serif !default;
 
 $type-header-font-family: $type-custom-font-family !default;
 $type-header-font-weight: $type-base-font-weight !default;
@@ -169,6 +173,7 @@ $button-text-transform: uppercase !default;
 $button-radius: $form-radius !default;
 $button-use-radius: true !default;
 $button-transition-duration: 0.3s !default;
+$button-icon-margin: $x-rem / 2 !default;
 
 // Transparent Buttons
 $button-transparent-border-width: $form-border-width !default;

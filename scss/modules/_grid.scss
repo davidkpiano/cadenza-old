@@ -75,6 +75,7 @@
     @if $suffix == "" { $suffix-str: ""; }
 
     @for $i from 0 through $grid-columns {
+        %cols-#{$i}#{$suffix-str} > .col, .cols-#{$i}#{$suffix-str} > .col,
         %col-#{$i}#{$suffix-str}, .col-#{$i}#{$suffix-str} {
             @include columns($i);
         }
@@ -142,6 +143,7 @@
     @if $suffix == "" { $suffix-str: ""; }
 
     @for $i from 0 through $grid-rows {
+        %rows-#{$i}#{$suffix-str} > .row, .rows-#{$i}#{$suffix-str} > .row,
         %row-#{$i}#{$suffix-str}, .row-#{$i}#{$suffix-str} {
             @include rows($i);
         }

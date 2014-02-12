@@ -30,6 +30,23 @@
             display: none;
         }
     }
+
+    &.top-left {
+        @include position-absolute(top, left);
+        @include experimental(transform, translateX(-50%) translateY(-50%));
+    }
+    &.bottom-left {
+        @include position-absolute(bottom, left);
+        @include experimental(transform, translateX(-50%) translateY(50%));
+    }
+    &.top-right {
+        @include position-absolute(top, right);
+        @include experimental(transform, translateX(50%) translateY(-50%));
+    }
+    &.bottom-right {
+        @include position-absolute(bottom, right);
+        @include experimental(transform, translateX(50%) translateY(50%));
+    }
 }
 
 @mixin label-colors(
@@ -69,6 +86,7 @@
     display: inline-block;
     line-height: 1;
     text-decoration: none;
+    vertical-align: baseline;
 
     &[class*=infix-] {
         position: absolute;

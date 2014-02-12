@@ -55,6 +55,10 @@
         color: $color-anchor;
         border: none;
     }
+
+    %label-layout {
+        display: inline;
+    }
 }
 
 %button-group-layout {

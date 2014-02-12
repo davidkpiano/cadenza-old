@@ -24,8 +24,9 @@
         <div id="light" class="page theme-light">
             <p>Theme light!</p>
         </div>
-        <div id="dark" class="page theme-dark">
+        <div id="dark" class="page theme-dark content">
             <p>Theme dark!</p>
+            <button class="light block">Here's some text <span class="label success">Congrats!</span></button>
         </div>
     </section>
 </body>
@@ -36,6 +37,10 @@
 
         $pages.not('#'+id).removeClass('active').addClass('inactive');
         $target_page.removeClass('inactive').addClass('active');
+    }
+
+    window.deactivate = function(id) {
+        $('#'+id).removeClass('active').addClass('inactive');
     }
 </script>
 </html>
