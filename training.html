@@ -5,42 +5,33 @@
     <title>Cadenza</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/train.css">
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-
 </head>
-<body class="page">
-    <aside class="col-4 rows-gutter">
-        <div class="row-4"><div class="full">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia officiis dolorum fugit possimus eius deleniti nihil. Laborum, vero non blanditiis. Odio, dicta, minus nam temporibus laborum fugit totam eum veritatis.</div></div>
-        <div class="row-4"><div class="full">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint, magni, odit, pariatur quam ullam ex hic inventore reiciendis asperiores similique repellendus provident culpa assumenda labore aperiam at nisi recusandae qui!</div></div>
-        <div class="row-4"><div class="full">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta, id, cupiditate numquam molestiae reiciendis culpa quasi laboriosam perspiciatis nesciunt nobis vel at natus hic rerum nisi neque porro? Debitis, voluptatem.</div></div>
-    </aside>
-    <section id="foo" class="col-flex">
-        <div id="primary" class="page theme-primary">
-            <p>Theme Primary!</p>
-        </div>
-        <div id="secondary" class="page theme-secondary">
-            <p>Theme secondary!</p>
-        </div>
-        <div id="light" class="page theme-light">
-            <p>Theme light!</p>
-        </div>
-        <div id="dark" class="page theme-dark content">
-            <p>Theme dark!</p>
-            <button class="light block">Here's some text <span class="label success">Congrats!</span></button>
-        </div>
+<body>
+    <header class="content">
+        <hgroup class="col-5">
+            <h1>REDFIGURE TRAINING</h1>
+        </hgroup>
+        <nav class="col-7 horizontal">
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <aside class="content">
+            <form id="login" class="row theme-light content">
+                <fieldset>
+                    <legend>
+                        <h2>Login</h2>
+                    </legend>
+                </fieldset>
+            </form>
+        </aside>
+        <section class="content">right</section>
     </section>
+    <footer></footer>
 </body>
-<script>
-    window.activate = function(id) {
-        var $target_page = $('#'+id),
-            $pages = $target_page.parent().find('.page');
-
-        $pages.not('#'+id).removeClass('active').addClass('inactive');
-        $target_page.removeClass('inactive').addClass('active');
-    }
-
-    window.deactivate = function(id) {
-        $('#'+id).removeClass('active').addClass('inactive');
-    }
-</script>
 </html>

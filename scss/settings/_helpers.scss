@@ -33,13 +33,6 @@
 
     background-color: $color;
     color: $_color-foreground;
-
-    label, .label {
-        &.prefix, &.postfix, &.affix {
-            color: $_color-foreground;
-            background-color: $_color-shaded;
-        }
-    }
 }
 
 // Button Extension

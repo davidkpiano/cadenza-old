@@ -39,6 +39,10 @@
     }
 }
 
+.content {
+    @extend %content;
+}
+
 //
 // Horizontal Grid System
 // ======================

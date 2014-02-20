@@ -56,7 +56,7 @@ html {
 //   <footer></footer>
 // </body>
 // THIS IS IE 9+ AND MODERN BROWSERS ONLY
-@mixin layout(
+@mixin layout-fixed(
     $header: 0px,
     $footer: 0px,
     $left-aside: 0px,
@@ -136,6 +136,54 @@ html {
 
         &:last-of-type {
             margin-bottom: $footer;
+        }
+    }
+}
+
+@mixin layout(
+    $header: 0px,
+    $footer: 0px,
+    $left-sidebar: 0px,
+    $right-sidebar: 0px,
+    $selector: ''
+) {
+    @if $header > 0 or $footer > 0 {
+        > header {
+            height: $header;
+        }
+
+        > footer {
+            height: $footer;
+        }
+
+        > section {
+            height: calc(100% - #{$header} - #{$footer});
+        }
+    } @else {
+        > section {
+            height: 100%;
+        }
+    }
+
+    @if $left-sidebar > 0 or $right-sidebar > 0 {
+        > aside, > section {
+            float: left;
+        }
+
+        > aside:first-of-type {
+            width: $left-sidebar;
+        }
+
+        > aside:nth-of-type(2) {
+            width: $right-sidebar;
+        }
+
+        > section {
+            width: calc(100% - #{$left-sidebar} - #{$right-sidebar});
+        }
+    } @else {
+        section {
+            width: 100%;
         }
     }
 }

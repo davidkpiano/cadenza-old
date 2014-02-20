@@ -11,7 +11,20 @@ $form-border-width: 2px;
 
 @import 'cadenza.scss';
 
+body {
+    @include layout();
 
-#foo {
-    @include activate-all(scaleUp, fade);
+    background-image: url(http://farm8.staticflickr.com/7234/7284905318_9732c16aa2_h.jpg);
+    background-size: cover;
+
+    > header {
+        @extend %color-light;
+
+        h1 { color: white; }
+    }
+
+    > section {
+        @extend %color-light;
+        @include layout($left-sidebar: 400px);
+    }
 }
