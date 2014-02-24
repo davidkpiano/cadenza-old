@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <title>Sandbox</title>
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 </head>
 <body class="layer scroll">
     <header>
@@ -27,7 +30,7 @@
             <nav>
                 <h6>Browse</h6>
                 <ul>
-                    <li><a href="#">Heavy Rotation</a></li>
+                    <li><a href="#" onclick="activate('heavy_rotation'); return false;">Heavy Rotation</a></li>
                     <li class="current-item"><a href="#">Recent Activity</a></li>
                     <li><a href="#">Top Charts</a></li>
                     <li><a href="#">New Releases</a></li>
@@ -38,7 +41,7 @@
             <nav>
                 <h6>Your Music</h6>
                 <ul>                    
-                    <li><a href="#">Collection</a></li>
+                    <li><a href="#" onclick="activate('collection'); return false;">Collection</a></li>
                     <li><a href="#">History</a></li>
                 </ul>
             </nav>
@@ -51,11 +54,11 @@
             </nav>
         </aside>
         <section id="main_view">
-            <article id="heavy_rotation" class="page">
-                <section class="scroll">
+            <section class="layer">
+                <article id="heavy_rotation" class="page scroll active">
                     <header class="content">
-                        <h2 class="inline">Heavy Rotation</h2>
-                        <button class="float-right light">Start Station</button>
+                        <h2><span>Heavy Rotation</span><button class="float-right light">Start Station</button></h2>
+                        
                     </header>
                     <div class="row cols-6-small cols-4-medium cols-3-large columns-gutter">
                         <div class="col rotation-item">
@@ -215,11 +218,67 @@
                             </div>
                         </div>
                     </div>
-                </section>
-                <aside></aside>
-            </article>
+                </article>
+                <article id="collection" class="page scroll content inactive">
+                    <header>
+                        <h2>Collection</h2>
+                        <form class="row inline-block-all">
+                            <button class="light clc-1">&nbsp;-</button>
+                            <div class="button-group light inline">
+                                <input name="collection" type="radio" id="collection_grid">
+                                <label class="button clc-2" for="collection_grid">&nbsp;</label>
+                                <input name="collection" type="radio" id="collection_list">
+                                <label class="button clc-3" for="collection_list">&nbsp;</label>
+                            </div>
+                            <button class="light">Play Count</button>
+                            <input type="text" name="" id="" class="inline" placeholder="Filter Collection">
+                        </form>
+                    </header>
+                    <hr>
+
+                </article>
+            </section>
+            <aside class="content">
+                <button class="light full-width twitter">&nbsp;</button>
+                <button class="light full-width">Find People</button>
+                <nav>
+                    <ul class="small">
+                        <li><a href="#" class="secondary">Daniel Walker</a></li>
+                        <li><a href="#" class="secondary">NPR Music</a></li>
+                    </ul>
+                </nav>
+            </aside>
         </section>
     </section>
-    <footer>footer</footer>
+    <footer class="theme-dark">
+        <aside>
+            <div class="row row-center align-center valign-center">
+                <div class="button link rdio-reverse">&nbsp;</div>
+                <div class="button link rdio-play">&nbsp;</div>
+                <div class="button link rdio-forward">&nbsp;</div>
+            </div>
+        </aside>
+        <section>
+            <div class="row-6">
+                <span class="position-bottom-center nowrap">Dani California - Red Hot Chili Peppers</span>
+            </div>
+        </section>
+        <aside></aside>
+    </footer>
 </body>
+
+<script>
+    window.activate = function(id) {
+        var $target_page = $('#'+id),
+            $pages = $target_page.parent().find('.page');
+
+        $pages.not('#'+id).removeClass('active').addClass('inactive');
+        $target_page.removeClass('inactive').addClass('active');
+    }
+
+    window.deactivate = function(id) {
+        $('#'+id).removeClass('active').addClass('inactive');
+    }
+</script>
+
 </html>

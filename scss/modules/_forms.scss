@@ -7,7 +7,6 @@
         margin-right: $text-margin-right;
         border: $text-border-width solid;
         border-color: $text-border-color;
-        width: 100%;
 
         @if $form-use-radius {
             @include border-radius($text-radius);

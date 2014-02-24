@@ -82,6 +82,19 @@
             @include columns($i);
         }
 
+        @if $i > 0 and round($grid-columns / $i) == $grid-columns / $i {
+
+            %cols-#{$i}#{$suffix-str} > .col, .cols-#{$i}#{$suffix-str} > .col {
+                &:nth-child(n+1) {
+                    clear: none;
+                }
+
+                &:nth-child(#{$grid-columns / $i}n + 1) {
+                    clear: left;
+                }
+            }
+        }
+
         %col-offset-#{$i}#{$suffix-str}, .col-offset-#{$i}#{$suffix-str} {
             @include columnsOffset($i);
         }    
@@ -139,8 +152,7 @@
     @if $position == top {
         // todo... (see if necessary)
     } @else if $position == center {
-        background: blue;
-        @extend .valign-center;
+        // @extend %valign-center;
     } @else if $position == bottom {
         position: absolute;
         bottom: 0;
@@ -167,6 +179,11 @@
         %row-#{$position}#{$suffix-str}, .row-#{$position}#{$suffix-str} {
             @include rowsPosition($position);
         }
+    }
+
+    // TEMPORARY
+    .row-center#{$suffix-str} {
+        @extend %valign-center;
     }
 }
 

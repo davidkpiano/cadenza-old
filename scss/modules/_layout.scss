@@ -1,26 +1,42 @@
-@mixin position-absolute($vertical: 0, $horizontal: 0) {
+@mixin position-absolute($vertical: false, $horizontal: false) {
     position: absolute;
 
-    @if $vertical == top { top: 0; }
-    @else if $vertical == bottom { bottom: 0; }
-    @else if $vertical == center {
-        top: 50%;
-        @include experimental(transform, translateY(-50%));
+    @if $vertical {    
+        @if $vertical == top { top: 0; }
+        @else if $vertical == bottom { bottom: 0; }
+        @else if $vertical == center {
+            top: 50%;
+            @include experimental(transform, translateY(-50%));
+        }
+        @else { top: $vertical; }
     }
-    @else { top: $vertical; }
 
-    @if $horizontal == left { left: 0; }
-    @else if $horizontal == right { right: 0; }
-    @else if $horizontal == center {
-        left: 50%;
-        @include experimental(transform, translateX(-50%));
+    @if $horizontal {
+        @if $horizontal == left { left: 0; }
+        @else if $horizontal == right { right: 0; }
+        @else if $horizontal == center {
+            left: 50%;
+            @include experimental(transform, translateX(-50%));
+        }
+        @else { left: $horizontal; }
     }
-    @else { left: $horizontal; }
 }
 
 %block {
     @extend %clearfix;
     display: block;
+}
+
+%inline-block {
+    display: inline-block;
+    width: auto;
+}
+
+%inline-block-all {
+    > * {
+        @extend %inline-block;
+        vertical-align: top;
+    }
 }
 
 %border-box {
@@ -38,6 +54,10 @@
 
 %valign-bottom {
     @include position-absolute(bottom);
+}
+
+%position-bottom-center {
+    @include position-absolute(bottom, center);
 }
 
 %clearfix {
@@ -181,6 +201,14 @@ html {
     $right-sidebar: 0px,
     $selector: ''
 ) {
+    section, header, footer, aside {
+        position: relative;
+    }
+
+    aside {
+        height: 100%;
+    }
+
     @if $header > 0 or $footer > 0 {
         > header {
             height: $header;
@@ -226,9 +254,12 @@ header, footer, section {
     @extend %grid;
 }
 
-.inline {
-    display: inline-block;
-    margin-bottom: 0;
+.inline-block {
+    @extend %inline-block;
+}
+
+.inline-block-all {
+    @extend %inline-block-all;
 }
 
 .valign-center {
@@ -241,6 +272,10 @@ header, footer, section {
 
 .valign-bottom {
     @extend %valign-bottom;
+}
+
+.position-bottom-center {
+    @extend %position-bottom-center;
 }
 
 .float-left {

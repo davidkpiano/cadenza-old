@@ -38,16 +38,16 @@
 @mixin activate($active-name, $inactive-name: $active-name) {
     @extend %animation-#{$active-name}-inert;
 
-    &.active { @extend %animation-#{$active-name}-active; }
-    &.inactive { @extend %animation-#{$inactive-name}-inactive; }
+    &.active { @extend %animation-#{$active-name}-active; @extend %active; }
+    &.inactive { @extend %animation-#{$inactive-name}-inactive; @extend %inactive; }
 }
 
 @mixin activate-all($active-name, $inactive-name: $active-name, $selector: $page-selector, $active-selector: $active-selector, $inactive-selector: $inactive-selector) {
     > #{$selector} {
         @extend %animation-#{$active-name}-inert;
 
-        &#{$active-selector} { @extend %animation-#{$active-name}-active; }
-        &#{$inactive-selector} { @extend %animation-#{$inactive-name}-inactive; }
+        &#{$active-selector} { @extend %animation-#{$active-name}-active; @extend %active; }
+        &#{$inactive-selector} { @extend %animation-#{$inactive-name}-inactive; @extend %inactive; }
     }
 }
 

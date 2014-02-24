@@ -17,9 +17,12 @@
 
     // Text style
     @include typeScale($button-type-scale);
-    text-decoration: none;
     text-align: center;
     text-transform: $button-text-transform;
+
+    &, &:hover {
+        text-decoration: none;
+    }
 
     &.small {
         padding: $button-small-padding-vertical $button-small-padding-horizontal;

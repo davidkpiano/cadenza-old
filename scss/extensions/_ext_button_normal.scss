@@ -20,10 +20,13 @@
     @extend %button-layout;
     @include ext-button-normal-colors;
 
-    &.primary { @include ext-button-normal-colors($color-primary); }
-    &.secondary { @include ext-button-normal-colors($color-secondary); }
-    &.dark { @include ext-button-normal-colors($color-dark); }
-    &.light { @include ext-button-normal-colors($color-light); }
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    &.primary, .button-group.primary > & { @include ext-button-normal-colors($color-primary); }
+    &.secondary, .button-group.secondary > & { @include ext-button-normal-colors($color-secondary); }
+    &.dark, .button-group.dark > & { @include ext-button-normal-colors($color-dark); }
+    &.light, .button-group.light > & { @include ext-button-normal-colors($color-light); }
 
     &.link {
         @include button-colors(

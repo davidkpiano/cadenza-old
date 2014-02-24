@@ -184,6 +184,10 @@ dl {
     overflow: hidden;
 }
 
+.nowrap {
+    @extend %nowrap;
+}
+
 // Horizontal Alignment Classes
 .align-left { text-align: left; }
 .align-right { text-align: right; }
