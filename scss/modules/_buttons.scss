@@ -1,7 +1,7 @@
 // Button Style
 // ============
 
-%button-layout {   
+%button-layout {
     display: inline-block;
     padding: $button-padding-vertical $button-padding-horizontal;
     cursor: pointer;
@@ -9,6 +9,7 @@
     margin-bottom: $button-margin-bottom;
     border-style: solid;
     border-width: $button-border-width;
+    white-space: nowrap;
 
     @if $button-use-radius {
         @include border-radius($button-radius);
@@ -50,12 +51,6 @@
         @extend %valign-center;
     }
 
-    &.link {
-        background: transparent;
-        color: $color-anchor;
-        border: none;
-    }
-
     %label-layout {
         display: inline;
     }
@@ -91,7 +86,6 @@
         margin-right: $button-group-margin-right;
     }
 
-
     &.vertical {
         display: inline-block;
 
@@ -126,30 +120,29 @@
         }
     }
 
+    &.center {
+        > #{$button-selectors}, > label {
+            display: inline;
+            float: none;
+        }
+    }
+
+    &.full-height {
+        @extend %full-height;
+
+        > #{$button-selectors}, > label {
+            @extend %full-height;
+        }
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
     // Radio and Checkbox buttons
     // .button-group > (input[type=radio|checkbox] + label)
     > input[type=radio], > input[type=checkbox] {
         display: none;
-    }
-}
-
-%ext-button-normal {
-    @extend %button-layout;
-
-    // Colors
-    @include extButtonColors();
-
-    // TODO: refactor in Sass 3.3 with MAPS feature
-    &.primary, .button-group.primary & { @include extButtonColors($color: $color-primary); }
-    &.secondary, .button-group.secondary & { @include extButtonColors($color: $color-secondary); }
-    &.light, .button-group.light & { @include extButtonColors($color: $color-light, $color-text: auto); }
-    &.dark, .button-group.dark & { @include extButtonColors($color: $color-dark); }
-    &.transparent, .button-group.transparent & {
-        @include extButtonColors(
-            $color-background: transparent,
-            $color-background-hover: $color-primary,
-            $color-background-disabled: transparent
-        )
     }
 }
 
@@ -160,7 +153,6 @@
 #{$button-selectors} {
     @include button;
 }
-
 
 .button-group {
     @extend %button-group-layout;

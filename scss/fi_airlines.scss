@@ -31,7 +31,7 @@ $fi-header-height: 60px;
 @import 'cadenza';
 
 body {
-    @include layout($fi-header-height, $fi-header-height);
+    @include layout-fixed($fi-header-height, $fi-header-height);
 
     > header, > footer {
         background: $color-light;

@@ -1,0 +1,35 @@
+
+
+@mixin ext-button-normal-colors($color: $color-primary) {
+    $_color-normal: $color;
+    $_color-hover: darken($color, 7%);
+    $_color-active: darken($color, 10%);
+
+    @include button-colors($_color-normal, $color-border: darken($_color-normal, 5%));
+
+    &:hover, &:focus {
+        @include button-colors($_color-hover, $color-border: darken($_color-hover, 5%));
+    }
+
+    &:active {
+        @include button-colors($_color-active, $color-border: darken($_color-active, 5%));
+    }
+}
+
+%ext-button-normal {
+    @extend %button-layout;
+    @include ext-button-normal-colors;
+
+    &.primary { @include ext-button-normal-colors($color-primary); }
+    &.secondary { @include ext-button-normal-colors($color-secondary); }
+    &.dark { @include ext-button-normal-colors($color-dark); }
+    &.light { @include ext-button-normal-colors($color-light); }
+
+    &.link {
+        @include button-colors(
+            $color-text: inherit,
+            $color-background: transparent,
+            $color-border: transparent
+        );
+    }
+}

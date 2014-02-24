@@ -81,19 +81,6 @@ body {
 
 .type-secondary { @extend %type-secondary; }
 
-a {
-    text-decoration: $type-anchor-decoration;
-    color: $color-anchor;
-
-    &:hover {
-        color: $color-anchor-hover;
-        text-decoration: $type-anchor-hover-decoration;
-    }
-
-    img {
-        border: none;
-    }
-}
 
 p {
     margin-bottom: $type-p-margin-bottom;

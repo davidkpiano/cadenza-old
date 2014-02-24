@@ -1,5 +1,35 @@
 
+@mixin background(
+    $color, 
+    $threshold: $theme-lightness-threshold,
+    $color-dark: $color-dark,
+    $color-light: $color-light
+) 
+{
+    $_color-foreground: $color-dark;
+    $_color-header: $type-header-color;
+    $_color-anchor: $anchor-color;
+    $_color-anchor-hover: $anchor-color-hover;
 
+    @if lightness($color) < $threshold {
+        $_color-foreground: $color-light;
+        $_color-anchor: $anchor-color-light;
+        $_color-anchor-hover: $anchor-color-light-hover;
+        $_color-header: $type-header-color-light;
+    }
+
+    a {
+        color: $_color-anchor;
+        &:hover { color: $_color-anchor-hover; }
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        color: $_color-header;
+    }
+
+    background-color: $color;
+    color: $_color-foreground;
+}
 
 %theme-primary { @include background($color-primary); }
 %theme-secondary { @include background($color-secondary); }
@@ -21,3 +51,79 @@
 .color-light { @extend %color-light; }
 .color-dark { @extend %color-dark; }
 
+@mixin button-colors(
+    $color: $color-primary,
+    $color-text: auto,
+    $color-background: $color,
+    $color-border: $color,
+    $color-icon: $color-text,
+    $color-outline: blue
+) {
+    background-color: $color-background;
+    border-color: $color-border;
+
+    @if $color-text == auto {
+        color: foregroundColor($color-background);
+    } @else {
+        color: $color-text;
+    }
+}
+
+@mixin alert-colors(
+    $color: $color-primary,
+    $color-text: $color-light,
+    $color-link: mix($color, $color-light, 50%),
+    $color-link-hover: darken($color-link, 10%),
+    $color-border: darken($color, 10%)
+) {
+    background-color: $color;
+    color: $color-text;
+    border-color: $color-border;
+
+    a {
+        color: $color-link;
+        &:hover { color: $color-link-hover; }
+    }
+}
+
+@mixin nav-colors(
+    $color: $color-primary,
+    $color-text: auto,
+    $anchor-color: $color-text,
+    $anchor-color-hover: $anchor-color,
+    $color-menu: transparent,
+    $color-item: transparent,
+    $color-item-hover: $color,
+    $color-border: $color,
+    $color-icon: $color-text,
+    $color-header: $color-text
+) {
+    ul {
+        background-color: $color-menu;
+    }
+
+    li {
+        background-color: $color-item;
+        @if $color-text == auto {
+            color: foregroundColor($color-item);
+        } @else {
+            color: $color-text;
+        }
+
+        > a {
+            color: $anchor-color;
+
+            &:hover {
+                color: $anchor-color-hover;
+            }
+        }
+
+        &:hover {
+            background-color: $color-item-hover;
+        }
+    }
+
+    #{$type-header-selector} {
+        color: $color-header;
+    }
+}

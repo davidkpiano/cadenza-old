@@ -5,7 +5,7 @@
 /* Import Modules */
 /* line 34, ../scss/modules/_themes.scss */
 .theme-primary {
-  background-color: #042f4f;
+  background-color: navy;
   color: #efefef;
 }
 /* line 21, ../scss/modules/_themes.scss */
@@ -23,7 +23,7 @@
 
 /* line 35, ../scss/modules/_themes.scss */
 .theme-secondary {
-  background-color: #73bf44;
+  background-color: gray;
   color: #efefef;
 }
 /* line 21, ../scss/modules/_themes.scss */
@@ -42,24 +42,24 @@
 /* line 36, ../scss/modules/_themes.scss */
 .theme-light {
   background-color: #efefef;
-  color: #042f4f;
+  color: #222222;
 }
 /* line 21, ../scss/modules/_themes.scss */
 .theme-light a {
-  color: #042f4f;
+  color: navy;
 }
 /* line 23, ../scss/modules/_themes.scss */
 .theme-light a:hover {
-  color: #085a98;
+  color: #0000cc;
 }
 /* line 26, ../scss/modules/_themes.scss */
 .theme-light h1, .theme-light h2, .theme-light h3, .theme-light h4, .theme-light h5, .theme-light h6 {
-  color: #042f4f;
+  color: #222222;
 }
 
 /* line 37, ../scss/modules/_themes.scss */
 .theme-dark {
-  background-color: #042f4f;
+  background-color: #222222;
   color: #efefef;
 }
 /* line 21, ../scss/modules/_themes.scss */
@@ -77,12 +77,12 @@
 
 /* line 44, ../scss/modules/_themes.scss */
 .color-primary {
-  color: #042f4f;
+  color: navy;
 }
 
 /* line 45, ../scss/modules/_themes.scss */
 .color-secondary {
-  color: #73bf44;
+  color: gray;
 }
 
 /* line 46, ../scss/modules/_themes.scss */
@@ -92,7 +92,7 @@
 
 /* line 47, ../scss/modules/_themes.scss */
 .color-dark {
-  color: #042f4f;
+  color: #222222;
 }
 
 /* Typography Resets */
@@ -630,7 +630,7 @@ header, footer, section, .col, [class*="col-"], .row, [class*="row-"], .layer, .
     background: blue;
   }
 }
-@media only screen and (max-width: 42.61111em) {
+@media only screen and (max-width: 47.9375em) {
   /* line 83, ../scss/modules/_grid.scss */
   .cols-0-small > .col, .col-0-small {
     width: 0%;
@@ -1025,7 +1025,7 @@ header, footer, section, .col, [class*="col-"], .row, [class*="row-"], .layer, .
     background: blue;
   }
 }
-@media only screen and (min-width: 42.66667em) {
+@media only screen and (min-width: 48em) {
   /* line 83, ../scss/modules/_grid.scss */
   .cols-0-medium > .col, .col-0-medium {
     width: 0%;
@@ -1420,7 +1420,7 @@ header, footer, section, .col, [class*="col-"], .row, [class*="row-"], .layer, .
     background: blue;
   }
 }
-@media only screen and (min-width: 71.11111em) {
+@media only screen and (min-width: 80em) {
   /* line 83, ../scss/modules/_grid.scss */
   .cols-0-large > .col, .col-0-large {
     width: 0%;
@@ -1815,7 +1815,7 @@ header, footer, section, .col, [class*="col-"], .row, [class*="row-"], .layer, .
     background: blue;
   }
 }
-@media only screen and (max-height: 38.88889em) {
+@media only screen and (max-height: 43.75em) {
   /* line 83, ../scss/modules/_grid.scss */
   .cols-0-short > .col, .col-0-short {
     width: 0%;
@@ -2210,7 +2210,7 @@ header, footer, section, .col, [class*="col-"], .row, [class*="row-"], .layer, .
     background: blue;
   }
 }
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 56.25em) {
   /* line 83, ../scss/modules/_grid.scss */
   .cols-0-tall > .col, .col-0-tall {
     width: 0%;
@@ -2633,13 +2633,13 @@ body {
 
 /* line 66, ../scss/modules/_type.scss */
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 /* line 70, ../scss/modules/_type.scss */
 body {
   font-style: normal;
-  color: #042f4f;
+  color: #222222;
   text-rendering: optimizeLegibility;
   word-wrap: break-word;
   -webkit-hyphens: auto;
@@ -2654,19 +2654,19 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   font-weight: 300;
   font-style: normal;
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #042f4f;
+  color: #222222;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 /* line 31, ../scss/modules/_type.scss */
 body h1.subheader, body h2.subheader, body h3.subheader, body h4.subheader, body h5.subheader, body h6.subheader {
-  color: #085a98;
+  color: #484848;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 /* line 38, ../scss/modules/_type.scss */
-body h1 small, body h1 footer nav, footer body h1 nav, body h2 small, body h2 footer nav, footer body h2 nav, body h3 small, body h3 footer nav, footer body h3 nav, body h4 small, body h4 footer nav, footer body h4 nav, body h5 small, body h5 footer nav, footer body h5 nav, body h6 small, body h6 footer nav, footer body h6 nav {
+body h1 small, body h2 small, body h3 small, body h4 small, body h5 small, body h6 small {
   font-size: 74.13723%;
 }
 /* line 42, ../scss/modules/_type.scss */
@@ -2675,32 +2675,32 @@ body h1:only-child, body h2:only-child, body h3:only-child, body h4:only-child, 
 }
 /* line 48, ../scss/modules/_type.scss */
 body h1 {
-  font-size: 38.03484px ;
+  font-size: 33.80875px ;
   font-size: 2.11305rem ;
 }
 /* line 48, ../scss/modules/_type.scss */
 body h2 {
-  font-size: 32.74913px ;
+  font-size: 29.11034px ;
   font-size: 1.8194rem ;
 }
 /* line 48, ../scss/modules/_type.scss */
 body h3 {
-  font-size: 28.19798px ;
+  font-size: 25.06487px ;
   font-size: 1.56655rem ;
 }
 /* line 48, ../scss/modules/_type.scss */
 body h4 {
-  font-size: 24.2793px ;
+  font-size: 21.5816px ;
   font-size: 1.34885rem ;
 }
 /* line 48, ../scss/modules/_type.scss */
 body h5 {
-  font-size: 20.9052px ;
+  font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
 /* line 48, ../scss/modules/_type.scss */
 body h6 {
-  font-size: 18px ;
+  font-size: 16px ;
   font-size: 1rem ;
   text-transform: uppercase;
 }
@@ -2716,11 +2716,11 @@ body hgroup > h1, body hgroup > h2, body hgroup > h3, body hgroup > h4, body hgr
 /* line 84, ../scss/modules/_type.scss */
 a {
   text-decoration: none;
-  color: #042f4f;
+  color: navy;
 }
 /* line 88, ../scss/modules/_type.scss */
 a:hover {
-  color: #085a98;
+  color: #0000cc;
   text-decoration: none;
 }
 /* line 93, ../scss/modules/_type.scss */
@@ -2736,7 +2736,7 @@ p {
 }
 /* line 103, ../scss/modules/_type.scss */
 p.lead {
-  font-size: 20.9052px ;
+  font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
 
@@ -2746,14 +2746,14 @@ p.lead {
 }
 
 /* line 112, ../scss/modules/_type.scss */
-.small, small, footer nav, form input[type].small, form textarea.small {
-  font-size: 15.49854px ;
+.small, small, form input[type].small, form textarea.small {
+  font-size: 13.77648px ;
   font-size: 0.86103rem ;
 }
 
 /* line 115, ../scss/modules/_type.scss */
 .large, form input[type].large, form textarea.large {
-  font-size: 20.9052px ;
+  font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
 
@@ -2865,8 +2865,8 @@ abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var,
 /* line 211, ../scss/modules/_type.scss */
 pre {
   white-space: pre;
-  color: #042f4f;
-  font-size: 18px ;
+  color: #222222;
+  font-size: 16px ;
   font-size: 1rem ;
   font-family: monospace;
 }
@@ -2880,29 +2880,29 @@ pre code {
 /* line 224, ../scss/modules/_type.scss */
 code {
   white-space: pre;
-  color: #042f4f;
-  font-size: 18px ;
+  color: #222222;
+  font-size: 16px ;
   font-size: 1rem ;
   font-family: monospace;
 }
 
 /* line 232, ../scss/modules/_type.scss */
 blockquote {
-  color: #085a98;
+  color: #484848;
   padding: 1rem;
-  border-left: 1px solid #085a98;
+  border-left: 1px solid #484848;
   margin-bottom: 1rem;
 }
 /* line 238, ../scss/modules/_type.scss */
 blockquote cite {
   display: block;
-  font-size: 15.49854px ;
+  font-size: 13.77648px ;
   font-size: 0.86103rem ;
-  color: #085a98;
+  color: #484848;
 }
 /* line 244, ../scss/modules/_type.scss */
 blockquote p {
-  color: #085a98;
+  color: #484848;
 }
 
 /* line 250, ../scss/modules/_type.scss */
@@ -2911,7 +2911,7 @@ hr {
   height: 0;
   margin: 0.5rem 0;
   border-style: solid;
-  border-color: #43a9f5;
+  border-color: #959595;
   border-width: 1px 0 0;
 }
 
@@ -2919,7 +2919,7 @@ hr {
 abbr, acronym {
   font-size: 86.10298%;
   text-transform: uppercase;
-  border-bottom: 1px dotted #73bf44;
+  border-bottom: 1px dotted gray;
   cursor: help;
 }
 
@@ -2949,7 +2949,7 @@ nav ul li.active > ul {
 /* line 28, ../scss/modules/_nav.scss */
 nav ul ul {
   display: none;
-  background-color: #042f4f;
+  background-color: navy;
 }
 /* line 39, ../scss/modules/_nav.scss */
 nav.horizontal > ul > li {
@@ -2996,26 +2996,26 @@ button, .button, input[type=button], input[type=submit], .button-group > label {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  font-size: 13.3447px ;
+  font-size: 11.86196px ;
   font-size: 0.74137rem ;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
 }
 /* line 23, ../scss/modules/_buttons.scss */
-small.button, footer nav.button, form input[type].small.button, form input[type].small[type=button], form input[type].small[type=submit], form textarea.small.button, button.small, .small.button, input.small[type=button], input.small[type=submit], .button-group > label.small {
+small.button, form input[type].small.button, form input[type].small[type=button], form input[type].small[type=submit], form textarea.small.button, button.small, .small.button, input.small[type=button], input.small[type=submit], .button-group > label.small {
   padding: 0.25rem 0.5rem;
-  font-size: 11.49019px ;
+  font-size: 10.2135px ;
   font-size: 0.63834rem ;
 }
 /* line 28, ../scss/modules/_buttons.scss */
 form input[type].large.button, form input[type].large[type=button], form input[type].large[type=submit], form textarea.large.button, button.large, .large.button, input.large[type=button], input.large[type=submit], .button-group > label.large {
-  font-size: 15.49854px ;
+  font-size: 13.77648px ;
   font-size: 0.86103rem ;
 }
 /* line 32, ../scss/modules/_buttons.scss */
 button.huge, .huge.button, input.huge[type=button], input.huge[type=submit], .button-group > label.huge {
-  font-size: 18px ;
+  font-size: 16px ;
   font-size: 1rem ;
 }
 /* line 36, ../scss/modules/_buttons.scss */
@@ -3048,7 +3048,7 @@ button.full.button-group, button.full, .full.button, input.full[type=button], in
 /* line 53, ../scss/modules/_buttons.scss */
 button.link, .link.button, input.link[type=button], input.link[type=submit], .button-group > label.link {
   background: transparent;
-  color: #042f4f;
+  color: navy;
   border: none;
 }
 /* line 59, ../scss/modules/_buttons.scss */
@@ -3171,7 +3171,7 @@ button .label, .button .label, input[type=button] .label, input[type=submit] .la
 
 /* line 2, ../scss/modules/_forms.scss */
 form input[type], form textarea {
-  font-size: 15.49854px ;
+  font-size: 13.77648px ;
   font-size: 0.86103rem ;
   padding: 0.5rem 0.5rem;
   margin-bottom: 0;
@@ -3195,15 +3195,15 @@ form textarea {
 form label {
   display: block;
   margin-bottom: 8px;
-  font-size: 15.49854px ;
+  font-size: 13.77648px ;
   font-size: 0.86103rem ;
 }
 /* line 40, ../scss/modules/_forms.scss */
 form .select {
-  font-size: 15.49854px ;
+  font-size: 13.77648px ;
   font-size: 0.86103rem ;
-  background: #73bf44;
-  border: 1px solid #5c9b35;
+  background: gray;
+  border: 1px solid #676767;
 }
 /* line 45, ../scss/modules/_forms.scss */
 form .select:after {
@@ -3217,7 +3217,7 @@ form .select:after {
   width: 2rem;
   text-align: center;
   padding: 0.5rem;
-  background-color: #5c9b35;
+  background-color: #676767;
 }
 /* line 59, ../scss/modules/_forms.scss */
 form .select > select {
@@ -3232,7 +3232,7 @@ form .select > select {
 
 /* line 3, ../scss/modules/_labels.scss */
 .label {
-  font-size: 13.3447px ;
+  font-size: 11.86196px ;
   font-size: 0.74137rem ;
   font-weight: bold;
   padding: 0.25rem 0.5rem;
@@ -3246,7 +3246,7 @@ form .select > select {
 
 /* line 16, ../scss/modules/_labels.scss */
 .badge {
-  font-size: 13.3447px ;
+  font-size: 11.86196px ;
   font-size: 0.74137rem ;
   font-weight: bold;
   padding: 0.25rem 0.5rem;
@@ -3308,90 +3308,90 @@ form .select > select {
 
 /* line 71, ../scss/modules/_labels.scss */
 .label, .badge {
-  background-color: #042f4f;
+  background-color: navy;
   color: #efefef;
-  border-color: #73bf44;
+  border-color: gray;
 }
 /* line 64, ../scss/modules/_labels.scss */
 [href].label:hover, [href].badge:hover {
-  background-color: #064c80;
+  background-color: #0000b3;
   color: #efefef;
 }
 /* line 74, ../scss/modules/_labels.scss */
 .primary.label, .primary.badge {
-  background-color: #042f4f;
+  background-color: navy;
   color: #efefef;
-  border-color: #73bf44;
+  border-color: gray;
 }
 /* line 64, ../scss/modules/_labels.scss */
 .primary[href].label:hover, .primary[href].badge:hover {
-  background-color: #064c80;
+  background-color: #0000b3;
   color: #efefef;
 }
 /* line 75, ../scss/modules/_labels.scss */
 .secondary.label, .secondary.badge {
-  background-color: #73bf44;
+  background-color: gray;
   color: #efefef;
-  border-color: #73bf44;
+  border-color: gray;
 }
 /* line 64, ../scss/modules/_labels.scss */
 .secondary[href].label:hover, .secondary[href].badge:hover {
-  background-color: #064c80;
+  background-color: #0000b3;
   color: #efefef;
 }
 /* line 76, ../scss/modules/_labels.scss */
 .light.label, .light.badge {
   background-color: #efefef;
-  color: #042f4f;
-  border-color: #73bf44;
+  color: #222222;
+  border-color: gray;
 }
 /* line 64, ../scss/modules/_labels.scss */
 .light[href].label:hover, .light[href].badge:hover {
-  background-color: #064c80;
+  background-color: #0000b3;
   color: #efefef;
 }
 /* line 77, ../scss/modules/_labels.scss */
 .dark.label, .dark.badge {
-  background-color: #042f4f;
+  background-color: #222222;
   color: #efefef;
-  border-color: #73bf44;
+  border-color: gray;
 }
 /* line 64, ../scss/modules/_labels.scss */
 .dark[href].label:hover, .dark[href].badge:hover {
-  background-color: #064c80;
+  background-color: #0000b3;
   color: #efefef;
 }
 /* line 79, ../scss/modules/_labels.scss */
 .success.label, .success.badge {
   background-color: #96cc69;
   color: #efefef;
-  border-color: #73bf44;
+  border-color: gray;
 }
 /* line 64, ../scss/modules/_labels.scss */
 .success[href].label:hover, .success[href].badge:hover {
-  background-color: #064c80;
+  background-color: #0000b3;
   color: #efefef;
 }
 /* line 80, ../scss/modules/_labels.scss */
 .warning.label, .warning.badge {
   background-color: #ffcc5c;
-  color: #042f4f;
-  border-color: #73bf44;
+  color: #222222;
+  border-color: gray;
 }
 /* line 64, ../scss/modules/_labels.scss */
 .warning[href].label:hover, .warning[href].badge:hover {
-  background-color: #064c80;
+  background-color: #0000b3;
   color: #efefef;
 }
 /* line 81, ../scss/modules/_labels.scss */
 .failure.label, .failure.badge {
   background-color: #c44741;
   color: #efefef;
-  border-color: #73bf44;
+  border-color: gray;
 }
 /* line 64, ../scss/modules/_labels.scss */
 .failure[href].label:hover, .failure[href].badge:hover {
-  background-color: #064c80;
+  background-color: #0000b3;
   color: #efefef;
 }
 
@@ -3420,6 +3420,24 @@ form .select > select {
   right: 0;
 }
 
+/* line 3, ../scss/modules/_fieldsets.scss */
+fieldset {
+  padding: 0.5rem 0.5rem;
+  border: 0;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+/* line 9, ../scss/modules/_fieldsets.scss */
+fieldset legend {
+  margin-bottom: 0.5rem;
+}
+/* line 13, ../scss/modules/_fieldsets.scss */
+fieldset .field {
+  height: auto;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 /* line 3, ../scss/modules/_tables.scss */
 table {
   margin-bottom: 1rem;
@@ -3428,12 +3446,12 @@ table {
 }
 /* line 12, ../scss/modules/_tables.scss */
 table thead {
-  background-color: #042f4f;
+  background-color: navy;
   color: #efefef;
 }
 /* line 17, ../scss/modules/_tables.scss */
 table thead tr th, table thead tr td {
-  font-size: 15.49854px ;
+  font-size: 13.77648px ;
   font-size: 0.86103rem ;
   text-transform: uppercase;
   padding: 0.5rem;
@@ -3498,7 +3516,7 @@ table tbody tr td {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  font-size: 15.49854px ;
+  font-size: 13.77648px ;
   font-size: 0.86103rem ;
 }
 /* line 24, ../scss/modules/_alerts.scss */
@@ -3515,17 +3533,17 @@ table tbody tr td {
 
 /* line 34, ../scss/modules/_alerts.scss */
 .alert {
-  background-color: #042f4f;
+  background-color: navy;
   color: #efefef;
-  border-color: #02121e;
+  border-color: #00004d;
 }
 /* line 83, ../scss/modules/_themes.scss */
 .alert a {
-  color: #798f9f;
+  color: #7777b7;
 }
 /* line 85, ../scss/modules/_themes.scss */
 .alert a:hover {
-  color: #607585;
+  color: #5757a4;
 }
 /* line 39, ../scss/modules/_alerts.scss */
 .success.alert {
@@ -3722,73 +3740,73 @@ table tbody tr td {
 /* line 27, ../scss/extensions/_ext_button_transparent.scss */
 button, .button, input[type=button], input[type=submit], .button-group > label {
   background-color: transparent;
-  border-color: #042f4f;
-  color: #042f4f;
+  border-color: navy;
+  color: navy;
 }
 /* line 10, ../scss/extensions/_ext_button_transparent.scss */
 button:hover, .button:hover, input[type=button]:hover, input[type=submit]:hover, .button-group > label:hover, button:focus, .button:focus, input[type=button]:focus, input[type=submit]:focus, .button-group > label:focus {
-  background-color: #042f4f;
-  border-color: #042f4f;
+  background-color: navy;
+  border-color: navy;
   color: #efefef;
 }
 /* line 18, ../scss/extensions/_ext_button_transparent.scss */
 button:active, .button-group input:checked + label, .button:active, input[type=button]:active, input[type=submit]:active, .button-group > label:active {
-  background-color: #021b2d;
-  border-color: #021b2d;
+  background-color: #00005c;
+  border-color: #00005c;
   color: #efefef;
 }
 /* line 31, ../scss/extensions/_ext_button_transparent.scss */
 button.primary, .primary.button, input.primary[type=button], input.primary[type=submit], .button-group > label.primary {
   background-color: transparent;
-  border-color: #042f4f;
-  color: #042f4f;
+  border-color: navy;
+  color: navy;
 }
 /* line 10, ../scss/extensions/_ext_button_transparent.scss */
 button.primary:hover, .primary.button:hover, input.primary[type=button]:hover, input.primary[type=submit]:hover, .button-group > label.primary:hover, button.primary:focus, .primary.button:focus, input.primary[type=button]:focus, input.primary[type=submit]:focus, .button-group > label.primary:focus {
-  background-color: #042f4f;
-  border-color: #042f4f;
+  background-color: navy;
+  border-color: navy;
   color: #efefef;
 }
 /* line 18, ../scss/extensions/_ext_button_transparent.scss */
 button.primary:active, .button-group input:checked + label.primary, .primary.button:active, input.primary[type=button]:active, input.primary[type=submit]:active, .button-group > label.primary:active {
-  background-color: #021b2d;
-  border-color: #021b2d;
+  background-color: #00005c;
+  border-color: #00005c;
   color: #efefef;
 }
 /* line 32, ../scss/extensions/_ext_button_transparent.scss */
 button.secondary, .secondary.button, input.secondary[type=button], input.secondary[type=submit], .button-group > label.secondary {
   background-color: transparent;
-  border-color: #73bf44;
-  color: #73bf44;
+  border-color: gray;
+  color: gray;
 }
 /* line 10, ../scss/extensions/_ext_button_transparent.scss */
 button.secondary:hover, .secondary.button:hover, input.secondary[type=button]:hover, input.secondary[type=submit]:hover, .button-group > label.secondary:hover, button.secondary:focus, .secondary.button:focus, input.secondary[type=button]:focus, input.secondary[type=submit]:focus, .button-group > label.secondary:focus {
-  background-color: #73bf44;
-  border-color: #73bf44;
+  background-color: gray;
+  border-color: gray;
   color: #efefef;
 }
 /* line 18, ../scss/extensions/_ext_button_transparent.scss */
 button.secondary:active, .button-group input:checked + label.secondary, .secondary.button:active, input.secondary[type=button]:active, input.secondary[type=submit]:active, .button-group > label.secondary:active {
-  background-color: #63a639;
-  border-color: #63a639;
+  background-color: #6e6e6e;
+  border-color: #6e6e6e;
   color: #efefef;
 }
 /* line 33, ../scss/extensions/_ext_button_transparent.scss */
 button.dark, .dark.button, input.dark[type=button], input.dark[type=submit], .button-group > label.dark {
   background-color: transparent;
-  border-color: #042f4f;
-  color: #042f4f;
+  border-color: #222222;
+  color: #222222;
 }
 /* line 10, ../scss/extensions/_ext_button_transparent.scss */
 button.dark:hover, .dark.button:hover, input.dark[type=button]:hover, input.dark[type=submit]:hover, .button-group > label.dark:hover, button.dark:focus, .dark.button:focus, input.dark[type=button]:focus, input.dark[type=submit]:focus, .button-group > label.dark:focus {
-  background-color: #042f4f;
-  border-color: #042f4f;
+  background-color: #222222;
+  border-color: #222222;
   color: #efefef;
 }
 /* line 18, ../scss/extensions/_ext_button_transparent.scss */
 button.dark:active, .button-group input:checked + label.dark, .dark.button:active, input.dark[type=button]:active, input.dark[type=submit]:active, .button-group > label.dark:active {
-  background-color: #021b2d;
-  border-color: #021b2d;
+  background-color: #101010;
+  border-color: #101010;
   color: #efefef;
 }
 /* line 34, ../scss/extensions/_ext_button_transparent.scss */
@@ -3801,48 +3819,13 @@ button.light, .light.button, input.light[type=button], input.light[type=submit],
 button.light:hover, .light.button:hover, input.light[type=button]:hover, input.light[type=submit]:hover, .button-group > label.light:hover, button.light:focus, .light.button:focus, input.light[type=button]:focus, input.light[type=submit]:focus, .button-group > label.light:focus {
   background-color: #efefef;
   border-color: #efefef;
-  color: #042f4f;
+  color: #222222;
 }
 /* line 18, ../scss/extensions/_ext_button_transparent.scss */
 button.light:active, .button-group input:checked + label.light, .light.button:active, input.light[type=button]:active, input.light[type=submit]:active, .button-group > label.light:active {
   background-color: #dddddd;
   border-color: #dddddd;
-  color: #042f4f;
-}
-
-/* line 6, ../scss/extensions/_ext_form_stacked.scss */
-form input[type] {
-  width: 100%;
-}
-
-/* line 3, ../scss/extensions/_ext_fieldset_stacked.scss */
-fieldset {
-  padding: 0.5rem 1rem;
-  border: 0;
-  margin: 0;
-}
-/* line 8, ../scss/extensions/_ext_fieldset_stacked.scss */
-fieldset .field {
-  height: auto;
-  padding: 0;
-}
-/* line 13, ../scss/extensions/_ext_fieldset_stacked.scss */
-fieldset .field.topfix {
-  -webkit-border-radius: 3px 3px 0 0;
-  -moz-border-radius: 3px 3px 0 0;
-  -ms-border-radius: 3px 3px 0 0;
-  -o-border-radius: 3px 3px 0 0;
-  border-radius: 3px 3px 0 0;
-  overflow: hidden;
-}
-/* line 17, ../scss/extensions/_ext_fieldset_stacked.scss */
-fieldset .field.bottomfix {
-  -webkit-border-radius: 0 0 3px 3px;
-  -moz-border-radius: 0 0 3px 3px;
-  -ms-border-radius: 0 0 3px 3px;
-  -o-border-radius: 0 0 3px 3px;
-  border-radius: 0 0 3px 3px;
-  overflow: hidden;
+  color: #222222;
 }
 
 /* Import Themes */
@@ -3864,7 +3847,7 @@ nav > ul > li > a {
 }
 /* line 8, ../scss/themes/_theme_nav_transparent.scss */
 nav > ul > li > a:hover {
-  background-color: #042f4f;
+  background-color: navy;
   color: #efefef;
 }
 /* line 4, ../scss/themes/_theme_nav_transparent.scss */
@@ -3874,7 +3857,7 @@ nav.primary > ul > li > a {
 }
 /* line 8, ../scss/themes/_theme_nav_transparent.scss */
 nav.primary > ul > li > a:hover {
-  background-color: #042f4f;
+  background-color: navy;
   color: #efefef;
 }
 /* line 4, ../scss/themes/_theme_nav_transparent.scss */
@@ -3884,7 +3867,7 @@ nav.secondary > ul > li > a {
 }
 /* line 8, ../scss/themes/_theme_nav_transparent.scss */
 nav.secondary > ul > li > a:hover {
-  background-color: #73bf44;
+  background-color: gray;
   color: #efefef;
 }
 /* line 4, ../scss/themes/_theme_nav_transparent.scss */
@@ -3895,7 +3878,7 @@ nav.light > ul > li > a {
 /* line 8, ../scss/themes/_theme_nav_transparent.scss */
 nav.light > ul > li > a:hover {
   background-color: #efefef;
-  color: #042f4f;
+  color: #222222;
 }
 /* line 4, ../scss/themes/_theme_nav_transparent.scss */
 nav.dark > ul > li > a {
@@ -3904,242 +3887,6 @@ nav.dark > ul > li > a {
 }
 /* line 8, ../scss/themes/_theme_nav_transparent.scss */
 nav.dark > ul > li > a:hover {
-  background-color: #042f4f;
+  background-color: #222222;
   color: #efefef;
-}
-
-/* line 20, ../scss/iassist.scss */
-body > header {
-  height: 88px;
-  background-color: #efefef;
-  color: #042f4f;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 9;
-}
-/* line 21, ../scss/modules/_themes.scss */
-body > header a {
-  color: #042f4f;
-}
-/* line 23, ../scss/modules/_themes.scss */
-body > header a:hover {
-  color: #085a98;
-}
-/* line 26, ../scss/modules/_themes.scss */
-body > header h1, body > header h2, body > header h3, body > header h4, body > header h5, body > header h6 {
-  color: #042f4f;
-}
-/* line 28, ../scss/iassist.scss */
-body > header #header_logo {
-  background-image: url(https://www.iassist.com/images/logo-sm.png);
-  background-position: left top;
-  background-repeat: no-repeat;
-}
-/* line 35, ../scss/iassist.scss */
-body > header #header_nav ul > li > a {
-  padding: 1rem;
-}
-/* line 40, ../scss/iassist.scss */
-body > header:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  height: 10px;
-  background: green;
-}
-/* line 52, ../scss/iassist.scss */
-body h1, body .iassist {
-  font-weight: 400;
-}
-/* line 54, ../scss/iassist.scss */
-body h1, body h2, body h3, body h4, body h5 {
-  margin-bottom: 1.8rem;
-}
-
-/* line 57, ../scss/iassist.scss */
-#view1 {
-  background-color: #042f4f;
-  color: #efefef;
-}
-/* line 21, ../scss/modules/_themes.scss */
-#view1 a {
-  color: #efefef;
-}
-/* line 23, ../scss/modules/_themes.scss */
-#view1 a:hover {
-  color: #c9c9c9;
-}
-/* line 26, ../scss/modules/_themes.scss */
-#view1 h1, #view1 h2, #view1 h3, #view1 h4, #view1 h5, #view1 h6 {
-  color: #efefef;
-}
-/* line 59, ../scss/iassist.scss */
-#view1 h1 {
-  font-weight: 400;
-}
-/* line 60, ../scss/iassist.scss */
-#view1 h2, #view1 h4 {
-  color: #91a2af;
-}
-/* line 62, ../scss/iassist.scss */
-#view1 figure {
-  background: url(../img/desktop.png) left top no-repeat;
-  background-size: contain;
-}
-/* line 67, ../scss/iassist.scss */
-#view1 a.circular {
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  border: 2px solid white;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
-  border-radius: 40px;
-}
-/* line 73, ../scss/iassist.scss */
-#view1 a.circular:before {
-  content: "";
-  position: absolute;
-  height: 10px;
-  width: 10px;
-  left: 13px;
-  top: 12px;
-  border-right-width: 2px;
-  border-bottom-width: 2px;
-  border-left-width: 0;
-  border-top-width: 0;
-  border-style: solid;
-  border-color: white;
-  -webkit-transform: rotate(45deg);
-}
-
-/* line 89, ../scss/iassist.scss */
-#view2 {
-  background-color: #e2e2e2;
-  color: #042f4f;
-}
-/* line 21, ../scss/modules/_themes.scss */
-#view2 a {
-  color: #042f4f;
-}
-/* line 23, ../scss/modules/_themes.scss */
-#view2 a:hover {
-  color: #085a98;
-}
-/* line 26, ../scss/modules/_themes.scss */
-#view2 h1, #view2 h2, #view2 h3, #view2 h4, #view2 h5, #view2 h6 {
-  color: #042f4f;
-}
-/* line 92, ../scss/iassist.scss */
-#view2 h1 {
-  font-size: 44.17367px ;
-  font-size: 2.45409rem ;
-  display: inline-block;
-  margin: 0.5em auto 0.9em auto;
-  padding-bottom: 0.5rem;
-  border-bottom: 4px solid #73bf44;
-}
-
-/* line 101, ../scss/iassist.scss */
-footer {
-  background-color: #042f4f;
-  color: #efefef;
-  font-size: 15.49854px ;
-  font-size: 0.86103rem ;
-}
-/* line 21, ../scss/modules/_themes.scss */
-footer a {
-  color: #efefef;
-}
-/* line 23, ../scss/modules/_themes.scss */
-footer a:hover {
-  color: #c9c9c9;
-}
-/* line 26, ../scss/modules/_themes.scss */
-footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
-  color: #efefef;
-}
-/* line 104, ../scss/iassist.scss */
-footer ul > li {
-  color: #ccc;
-}
-/* line 108, ../scss/iassist.scss */
-footer h6 {
-  display: inline-block;
-  font-weight: 400;
-  color: #0e75ba;
-}
-/* line 114, ../scss/iassist.scss */
-footer div.row.content {
-  background-color: #032137;
-  color: #efefef;
-  color: #8197a7;
-  position: absolute;
-  bottom: 0;
-}
-/* line 21, ../scss/modules/_themes.scss */
-footer div.row.content a {
-  color: #efefef;
-}
-/* line 23, ../scss/modules/_themes.scss */
-footer div.row.content a:hover {
-  color: #c9c9c9;
-}
-/* line 26, ../scss/modules/_themes.scss */
-footer div.row.content h1, footer div.row.content h2, footer div.row.content h3, footer div.row.content h4, footer div.row.content h5, footer div.row.content h6 {
-  color: #efefef;
-}
-
-/* line 122, ../scss/iassist.scss */
-#login {
-  background: rgba(0, 0, 0, 0.7);
-}
-/* line 125, ../scss/iassist.scss */
-#login > div {
-  top: 25%;
-}
-/* line 129, ../scss/iassist.scss */
-#login form {
-  background-color: #efefef;
-  color: #042f4f;
-}
-/* line 130, ../scss/iassist.scss */
-#login form h2 {
-  margin-bottom: 0.8rem;
-  font-weight: 200;
-}
-/* line 21, ../scss/modules/_themes.scss */
-#login form a {
-  color: #042f4f;
-}
-/* line 23, ../scss/modules/_themes.scss */
-#login form a:hover {
-  color: #085a98;
-}
-/* line 26, ../scss/modules/_themes.scss */
-#login form h1, #login form h2, #login form h3, #login form h4, #login form h5, #login form h6 {
-  color: #042f4f;
-}
-/* line 133, ../scss/iassist.scss */
-#login form input[type=text], #login form input[type=password] {
-  border-color: #8197a7;
-}
-/* line 134, ../scss/iassist.scss */
-#login form .field + .field {
-  margin-top: -1px;
-}
-/* line 138, ../scss/iassist.scss */
-#login form button, #login form .button {
-  float: right;
-}
-/* line 139, ../scss/iassist.scss */
-#login form button {
-  margin-right: 0;
 }

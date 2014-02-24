@@ -33,16 +33,19 @@
 
 %ext-alert-normal {
     @extend %alert-layout;
-
-    @include extAlertColors();
-
-    &.success { @include extAlertColors($color-success); }
-    &.warning { @include extAlertColors($color-warning); }
-    &.failure { @include extAlertColors($color-failure); }
 }
 
-@mixin alert($style: normal) {
+%theme-alert-normal {
+    @include alert-colors();
+
+    &.success { @include alert-colors($color-success); }
+    &.warning { @include alert-colors($color-warning); }
+    &.failure { @include alert-colors($color-failure); }
+}
+
+@mixin alert($style: normal, $theme: normal) {
     @extend %ext-alert-#{$style};
+    @extend %theme-alert-#{$theme};
 }
 
 .alert {

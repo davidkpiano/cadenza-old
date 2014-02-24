@@ -19,11 +19,9 @@
     @extend %grid;
     float: left;
     height: 100%;
-
-    &.col-inline { height: auto; }
 }
 %columns-gutter {
-    &, > [class*="col-"] {
+    &, > [class*="col-"], > .col {
         padding-left: $grid-column-gutter / 2;
         padding-right: $grid-column-gutter / 2;  
     }
@@ -33,7 +31,7 @@
     width: 100%;
 }
 %rows-gutter {
-    &, > [class*="row-"] {
+    &, > [class*="row-"], > .row {
         padding-top: $grid-row-gutter / 2;
         padding-bottom: $grid-row-gutter / 2;  
     }
@@ -94,6 +92,14 @@
             @include columnsPosition($position);
         }
     }
+
+    .col {
+        width: auto;
+    }
+
+    .col-inline {
+        height: auto;
+    }
 }
 
 #{$grid-column-selector} {
@@ -133,8 +139,8 @@
     @if $position == top {
         // todo... (see if necessary)
     } @else if $position == center {
-        top: 50%;
-        @include experimental(transform, translateY(-50%));
+        background: blue;
+        @extend .valign-center;
     } @else if $position == bottom {
         position: absolute;
         bottom: 0;

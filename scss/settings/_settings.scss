@@ -21,13 +21,11 @@ $grid-column-gutter: $x !default;
 $grid-row-gutter: $x !default;
 
 // Color Palette
-$color-primary: red !default;
+$color-primary: navy !default;
 $color-secondary: gray !default;
 $color-dark: #222 !default;
 $color-light: #EFEFEF !default;
 $color-gray: #DDD !default;
-$color-anchor: $color-primary !default;
-$color-anchor-hover: lighten($color-primary, 15%) !default;
 
 $color-success: #96CC69 !default;
 $color-warning: #FFCC5C !default;
@@ -47,7 +45,8 @@ $type-base-line-height: 1.65em !default;
 $type-base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $type-base-font-style: normal !default;
 $type-base-font-weight: 300 !default;
-$type-base-color: #222 !default;
+$type-base-color: $color-dark !default;
+$type-base-color-light: $color-light !default;
 
 $type-custom-import: "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" !default;
 $type-custom-font-family: "Open Sans" !default;
@@ -56,11 +55,13 @@ $type-use-custom: true !default;
 $type-secondary-import: '' !default;
 $type-secondary-font-family: Georgia, Times, "Times New Roman", serif !default;
 
+$type-header-selector: "h1, h2, h3, h4, h5, h6" !default;
 $type-header-font-family: $type-custom-font-family !default;
 $type-header-font-weight: $type-base-font-weight !default;
 $type-header-font-style: normal !default;
 $type-header-line-height: 1.2 !default;
 $type-header-color: $type-base-color !default;
+$type-header-color-light: $type-base-color-light !default;
 $type-header-margin-top: 0 !default;
 $type-header-margin-bottom: $x-rem !default;
 $type-header-small-style: uppercase !default;
@@ -84,10 +85,6 @@ $type-code-color: $type-pre-color !default;
 $type-code-scale: 0 !default;
 $type-code-font-family: $type-pre-font-family;
 
-
-$type-anchor-decoration: none !default;
-$type-anchor-hover-decoration: $type-anchor-decoration !default;
-
 $type-list-position: outside !default;
 $type-list-margin-bottom: 1rem !default;
 $type-list-ul-margin: 1rem !default;
@@ -107,6 +104,14 @@ $type-blockquote-margin-bottom: $x-rem !default;
 $type-abbr-border: 1px dotted $color-secondary !default;
 $type-abbr-cursor: help !default;
 $type-abbr-transform: uppercase !default;
+
+// Anchor Settings
+$anchor-decoration: none !default;
+$anchor-decoration-hover: $anchor-decoration !default;
+$anchor-color: $color-primary !default;
+$anchor-color-hover: lighten($anchor-color, 7%) !default;
+$anchor-color-light: $color-light !default;
+$anchor-color-light-hover: lighten($anchor-color-light, 7%) !default;
 
 // Horizontal Rule Settings
 $hr-border-style: solid !default;
@@ -156,11 +161,11 @@ $form-margin-right: $x/2 !default;
 $form-padding-vertical: $x-rem/2 !default;
 $form-padding-horizontal: $x-rem/2 !default;
 $form-radius: 3px !default;
-$form-use-radius: true !default;
+$form-use-radius: false !default;
 $form-outline-color: lightblue !default;
 
 // Buttons
-$button-style: normal;
+$button-style: normal !default;
 $button-selectors: "button, .button, input[type=button], input[type=submit]" !default;
 $button-margin-right: $form-margin-right !default;
 $button-margin-bottom: $button-margin-right !default;
@@ -171,7 +176,7 @@ $button-color-light: white !default;
 $button-type-scale: $form-type-scale - 1 !default;
 $button-text-transform: uppercase !default;
 $button-radius: $form-radius !default;
-$button-use-radius: true !default;
+$button-use-radius: $form-use-radius !default;
 $button-transition-duration: 0.3s !default;
 $button-icon-margin: $x-rem / 2 !default;
 
@@ -263,6 +268,7 @@ $nav-theme: transparent !default;
 $nav-ul-padding: 0 !default;
 $nav-li-padding: 0 !default;
 $nav-a-padding: $x-rem / 2 !default;
+$nav-header-padding: $nav-a-padding !default;
 $nav-menu-bgcolor: transparent !default;
 $nav-submenu-bgcolor: $color-primary !default;
 

@@ -1,6 +1,11 @@
 
 
 %ext-nav-normal {
+    > #{$type-header-selector} {
+        padding: $nav-header-padding;
+        margin: 0;
+    }
+
     ul {
         @extend ul.clean;
         width: 100%;
@@ -14,6 +19,10 @@
             a {
                 display: block;
                 padding: $nav-a-padding;
+                
+                &, &:hover {
+                    text-decoration: none;
+                }
             }
 
             &.inactive {

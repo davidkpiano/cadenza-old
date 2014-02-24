@@ -1,35 +1,4 @@
-
-%border-box {
-    @include box-sizing(border-box);
-}
-
-%valign-center {
-    top: 50%;
-    @include experimental(transform, translateY(-50%));
-}
-
-%clearfix {
-    @include clearfix;
-}
-
-%float-left {
-    float: left;
-}
-
-%float-right {
-    float: right;
-}
-
-html {
-    height: 100%;
-}
-
-*, *:before, *:after {
-    position: relative;
-    @extend %border-box;
-}
-
-@mixin position-absolute($vertical, $horizontal) {
+@mixin position-absolute($vertical: 0, $horizontal: 0) {
     position: absolute;
 
     @if $vertical == top { top: 0; }
@@ -48,6 +17,71 @@ html {
     }
     @else { left: $horizontal; }
 }
+
+%block {
+    @extend %clearfix;
+    display: block;
+}
+
+%border-box {
+    @include box-sizing(border-box);
+}
+
+%valign-center {
+    top: 50%;
+    @include experimental(transform, translateY(-50%));
+}
+
+%valign-center-all {
+    > * { @extend %valign-center; }
+}
+
+%valign-bottom {
+    @include position-absolute(bottom);
+}
+
+%clearfix {
+    @include clearfix;
+}
+
+%float-left {
+    float: left;
+}
+
+%float-right {
+    float: right;
+}
+
+%full-height {
+    @extend %block;
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 100%;
+}
+
+%full-width {
+    @extend %block;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+}
+
+%full {
+    display: block;
+    @include position-absolute;
+    @extend %full-height;
+    @extend %full-width;
+}
+
+html {
+    height: 100%;
+}
+
+*, *:before, *:after {
+    position: relative;
+    @extend %border-box;
+}
+
 
 // layout mixin must follow this structure:
 // <body>
@@ -170,11 +204,11 @@ html {
             float: left;
         }
 
-        > aside:first-of-type {
+        > aside {
             width: $left-sidebar;
         }
 
-        > aside:nth-of-type(2) {
+        > section + aside {
             width: $right-sidebar;
         }
 
@@ -201,6 +235,14 @@ header, footer, section {
     @extend %valign-center;
 }
 
+.valign-center-all {
+    @extend %valign-center-all;
+}
+
+.valign-bottom {
+    @extend %valign-bottom;
+}
+
 .float-left {
     @extend %float-left;
 }
@@ -209,7 +251,18 @@ header, footer, section {
     @extend %float-right;
 }
 
+.full-height {
+    @extend %full-height;
+}
+
+.full-width {
+    @extend %full-width;
+}
+
 .full {
-    @extend %row;
-    height: 100%;
+    @extend %full;
+}
+
+.clearfix {
+    @extend %clearfix;
 }
