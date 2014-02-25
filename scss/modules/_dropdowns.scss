@@ -1,0 +1,77 @@
+// Dropdown Style
+// ==============
+
+%dropdown-container-layout {
+    display: inline-block;
+}
+
+%dropdown-layout {
+    @extend %list-clean;
+
+    @include typeScale($dropdown-type-scale);
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: $dropdown-z-index;
+    display: block; // initial display state; display: block when active
+    border-style: solid;
+    border-color: $dropdown-border-color;
+    border-width: $dropdown-border-width;
+    padding: $dropdown-ul-padding;
+    background-color: $dropdown-menu-bgcolor;
+    max-width: $dropdown-max-width;
+
+    @if $dropdown-use-radius {
+        @include border-radius($form-radius);
+    }
+
+    > li {
+        @extend %nowrap;
+        padding: $dropdown-li-padding;
+
+        > a {
+            display: block;
+            padding: $dropdown-a-padding;
+
+            &, &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &.separator, &.hr {
+            border-color: $dropdown-separator-color;
+            border-style: solid;
+            border-width: 0;
+            border-bottom-width: $dropdown-separator-width;
+            margin: $dropdown-separator-margin;
+        }
+    }
+
+    &.content {
+        padding: $dropdown-content-padding;
+    }
+
+    &.left {
+        left: 0;
+        right: inherit;
+    }
+
+    &.right {
+        right: 0;
+        left: inherit;
+    }
+}
+
+@mixin dropdown($style: normal, $theme: normal) {
+    @extend %ext-dropdown-#{$style};
+    @extend %theme-dropdown-#{$theme};
+}
+
+.dropdown-container {
+    @extend %dropdown-container-layout;
+}
+
+.dropdown {
+    @include dropdown();
+}

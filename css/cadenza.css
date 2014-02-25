@@ -178,8 +178,13 @@ input, button, textarea, select {
 
 /* line 63, ../scss/modules/_layout.scss */
 .full, .full-height, .full-height.button-group, .full-height.button-group > button, .full-height.button-group .button, .full-height.button-group input[type=button], .full-height.button-group input[type=submit], .full-height.button-group > label, .full-width, .clearfix, header, footer, section, .col, [class*="col-"], .row, [class*="row-"], .layer, .page, form, nav.horizontal > ul, .button-group {
-  overflow: hidden;
   *zoom: 1;
+}
+/* line 38, ../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.full:after, .full-height:after, .full-height.button-group:after, .full-height.button-group > button:after, .full-height.button-group .button:after, .full-height.button-group input[type=button]:after, .full-height.button-group input[type=submit]:after, .full-height.button-group > label:after, .full-width:after, .clearfix:after, header:after, footer:after, section:after, .col:after, [class*="col-"]:after, .row:after, [class*="row-"]:after, .layer:after, .page:after, form:after, nav.horizontal > ul:after, .button-group:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* line 67, ../scss/modules/_layout.scss */
@@ -3119,7 +3124,7 @@ p.lead {
 }
 
 /* line 126, ../scss/modules/_type.scss */
-ul.clean, nav ul, ol.clean, dl.clean {
+ul.clean, nav ul, ol.clean, dl.clean, .dropdown {
   list-style: none;
   margin-left: 0;
 }
@@ -3194,7 +3199,7 @@ dl dd {
 }
 
 /* line 182, ../scss/modules/_type.scss */
-ul.inline > li, ol.inline > li, dl.inline > li, .nowrap, nav ul li, .label, .badge {
+ul.inline > li, ol.inline > li, dl.inline > li, .nowrap, nav ul li, .dropdown > li, .label, .badge {
   white-space: nowrap;
   overflow: hidden;
 }
@@ -3404,6 +3409,63 @@ nav.horizontal.full > ul > li a {
   padding-top: 0;
   padding-bottom: 0;
   margin: 0;
+}
+
+/* line 4, ../scss/modules/_dropdowns.scss */
+.dropdown-container {
+  display: inline-block;
+}
+
+/* line 8, ../scss/modules/_dropdowns.scss */
+.dropdown {
+  font-size: 13.77648px ;
+  font-size: 0.86103rem ;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  display: block;
+  border-style: solid;
+  border-color: #dddddd;
+  border-width: 1px;
+  padding: 0;
+  background-color: #efefef;
+  max-width: 200px;
+}
+/* line 29, ../scss/modules/_dropdowns.scss */
+.dropdown > li {
+  padding: 0;
+}
+/* line 33, ../scss/modules/_dropdowns.scss */
+.dropdown > li > a {
+  display: block;
+  padding: 0.5rem;
+}
+/* line 37, ../scss/modules/_dropdowns.scss */
+.dropdown > li > a, .dropdown > li > a:hover {
+  text-decoration: none;
+}
+/* line 42, ../scss/modules/_dropdowns.scss */
+.dropdown > li.separator, .dropdown > li.hr {
+  border-color: #dddddd;
+  border-style: solid;
+  border-width: 0;
+  border-bottom-width: 1px;
+  margin: 4px 0;
+}
+/* line 51, ../scss/modules/_dropdowns.scss */
+.content.dropdown {
+  padding: 0.5rem;
+}
+/* line 55, ../scss/modules/_dropdowns.scss */
+.left.dropdown {
+  left: 0;
+  right: inherit;
+}
+/* line 60, ../scss/modules/_dropdowns.scss */
+.right.dropdown {
+  right: 0;
+  left: inherit;
 }
 
 /* line 4, ../scss/modules/_buttons.scss */
@@ -4198,6 +4260,33 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   background-color: transparent;
   border-color: transparent;
   color: inherit;
+}
+
+/* line 9, ../scss/extensions/_ext_dropdown_normal.scss */
+.dropdown {
+  background-color: white;
+  border-color: #dddddd;
+}
+/* line 146, ../scss/modules/_themes.scss */
+.dropdown > li {
+  background-color: transparent;
+  color: #222222;
+}
+/* line 158, ../scss/modules/_themes.scss */
+.dropdown > li > a {
+  color: #222222;
+}
+/* line 161, ../scss/modules/_themes.scss */
+.dropdown > li > a:hover {
+  color: #efefef;
+}
+/* line 166, ../scss/modules/_themes.scss */
+.dropdown > li:hover {
+  background-color: navy;
+}
+/* line 171, ../scss/modules/_themes.scss */
+.dropdown h1, .dropdown h2, .dropdown h3, .dropdown h4, .dropdown h5, .dropdown h6 {
+  color: #222222;
 }
 
 /* Import Themes */

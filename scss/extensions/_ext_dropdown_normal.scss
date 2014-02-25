@@ -1,0 +1,15 @@
+
+
+
+
+%ext-dropdown-normal {
+    @extend %dropdown-layout;
+}
+
+%theme-dropdown-normal {
+    @include dropdown-colors(
+        white, 
+        $color-item-hover: $color-primary,
+        $color-anchor-hover: $color-light
+    );
+}

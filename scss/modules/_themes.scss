@@ -72,8 +72,8 @@
 @mixin alert-colors(
     $color: $color-primary,
     $color-text: $color-light,
-    $color-link: mix($color, $color-light, 50%),
-    $color-link-hover: darken($color-link, 10%),
+    $color-anchor: mix($color, $color-light, 50%),
+    $color-anchor-hover: darken($color-anchor, 10%),
     $color-border: darken($color, 10%)
 ) {
     background-color: $color;
@@ -81,16 +81,16 @@
     border-color: $color-border;
 
     a {
-        color: $color-link;
-        &:hover { color: $color-link-hover; }
+        color: $color-anchor;
+        &:hover { color: $color-anchor-hover; }
     }
 }
 
 @mixin nav-colors(
     $color: $color-primary,
     $color-text: auto,
-    $anchor-color: $color-text,
-    $anchor-color-hover: $anchor-color,
+    $color-anchor: $color-text,
+    $color-anchor-hover: $color-anchor,
     $color-menu: transparent,
     $color-item: transparent,
     $color-item-hover: $color,
@@ -111,10 +111,55 @@
         }
 
         > a {
-            color: $anchor-color;
+            color: $color-anchor;
 
             &:hover {
-                color: $anchor-color-hover;
+                color: $color-anchor-hover;
+            }
+        }
+
+        &:hover {
+            background-color: $color-item-hover;
+        }
+    }
+
+    #{$type-header-selector} {
+        color: $color-header;
+    }
+}
+
+@mixin dropdown-colors(
+    $color: $color-light,
+    $color-text: $color-dark,
+    $color-anchor: $color-text,
+    $color-anchor-hover: $color-text,
+    $color-menu: $color,
+    $color-item: transparent,
+    $color-item-hover: $color-gray,
+    $color-border: $color-gray,
+    $color-icon: $color-text,
+    $color-header: $color-text
+) {
+    background-color: $color-menu;
+    border-color: $color-border;
+
+    > li {
+        background-color: $color-item;
+        @if $color-text == auto {
+            $color-text: foregroundColor($color);
+
+            @if $color-anchor == auto {
+                $color-anchor: $color-text;
+            }
+        }
+
+        color: $color-text;
+
+        > a {
+            color: $color-anchor;
+
+            &:hover {
+                color: $color-anchor-hover;
             }
         }
 

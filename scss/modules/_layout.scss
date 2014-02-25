@@ -61,7 +61,7 @@
 }
 
 %clearfix {
-    @include clearfix;
+    @include pie-clearfix;
 }
 
 %float-left {
@@ -203,6 +203,10 @@ html {
 ) {
     section, header, footer, aside {
         position: relative;
+    }
+
+    header, footer {
+        z-index: 3; // Active pages are z-index 2
     }
 
     aside {
