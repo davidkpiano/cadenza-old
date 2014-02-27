@@ -42,6 +42,13 @@
         &:only-child {
             margin-bottom: 0;
         }
+
+        > * {
+            @extend %inline-block;
+            vertical-align: middle;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
     }
 
     @for $i from 1 through 6 {

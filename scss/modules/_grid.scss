@@ -18,6 +18,7 @@
 %column {
     @extend %grid;
     float: left;
+    clear: none;
     height: 100%;
 }
 %columns-gutter {
@@ -29,6 +30,7 @@
 %row {
     @extend %grid;
     width: 100%;
+    clear: both;
 }
 %rows-gutter {
     &, > [class*="row-"], > .row {
