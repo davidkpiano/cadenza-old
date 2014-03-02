@@ -25,12 +25,20 @@
                 }
             }
 
-            &.inactive {
+            &.inactive > ul {
                 display: none;
             }
 
             &.active > ul {
                 display: block;
+            }
+
+            &.separator, &.hr {
+                border-color: $nav-separator-color;
+                border-style: solid;
+                border-width: 0;
+                border-bottom-width: $nav-separator-width;
+                margin: $nav-separator-margin;
             }
         }
 
@@ -74,6 +82,12 @@
                     }
                 }
             }
+        }
+    }
+
+    &.dropdown {
+        ul {
+            margin-bottom: 0;
         }
     }
 }

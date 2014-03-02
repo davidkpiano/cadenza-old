@@ -35,15 +35,20 @@
             margin-bottom: $type-subheader-margin-bottom;
         }
 
-        small {
+        &.inline {
+            @extend %inline-block;
+        }
+
+        small, .small {
             font-size: percentage(pow($type-ratio, 2));
+            color: $type-header-secondary-color;
         }
 
         &:only-child {
             margin-bottom: 0;
         }
 
-        > * {
+        &.valign-center-all > * {
             @extend %inline-block;
             vertical-align: middle;
             margin-top: 0;
@@ -199,6 +204,11 @@ dl {
 .align-left { text-align: left; }
 .align-right { text-align: right; }
 .align-center { text-align: center; }
+.align-justify { text-align: justify; }
+
+// Text Transform Classes
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
 
 // Hyphens
 abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var, xmp {

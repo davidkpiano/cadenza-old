@@ -1,19 +1,16 @@
 
 
-%ext-table-normal {
+%table-layout {
     margin-bottom: $table-margin-bottom;
     text-align: $table-text-align;
     width: 100%;
     border-collapse: collapse;
 
     caption {
-
+        // ...
     }
 
     thead {
-        background-color: $table-thead-bgcolor;
-        color: $table-thead-color; 
-
         tr {
             th, td {
                 @include typeScale($table-thead-type-scale);
@@ -27,19 +24,8 @@
         tr {
             td {
                 padding: $table-tfoot-padding;
-                border-width: $table-tr-border-width;
-                border-color: $table-tr-border-color;
+                border-width: $table-cell-border-width;
                 border-style: solid;
-            }
-
-            @if $table-zebra {
-                &:nth-child(even) {
-                    background-color: $table-tr-bgcolor-even;
-                }
-
-                &:nth-child(odd) {
-                    background-color: $table-tr-bgcolor-odd;
-                }
             }
         }
     }
@@ -47,17 +33,47 @@
     tbody {
         tr {
             td {
-                padding: $table-tr-padding;
-                border-width: $table-tr-border-width;
-                border-color: $table-tr-border-color;
+                padding: $table-cell-padding;
+                border-width: $table-cell-border-width;
                 border-style: solid;
             }
         }
     }
+
+    tr, th, td {
+        border-width: $table-cell-border-width;
+        border-style: solid;
+    }
 }
 
-@mixin table($style: $table-style) {
+%ext-table-normal {
+    @extend %table-layout;
+
+    thead {        
+        border-bottom-width: 2 * $table-cell-border-width; 
+        border-bottom-style: solid; 
+    }
+
+    &.horizontal {
+        tr, th, td { border-left-width: 0; border-right-width: 0; }
+    }
+
+    &.vertical {
+        tr, th, td { border-top-width: 0; border-bottom-width: 0; }
+    }
+}
+
+%theme-table-normal {
+    @include table-colors();
+
+    &.transparent {
+        @include table-colors($color-thead: transparent);
+    }
+}
+
+@mixin table($style: $table-style, $theme: $table-theme) {
     @extend %ext-table-#{$style};
+    @extend %theme-table-#{$style};
 }
 
 table {

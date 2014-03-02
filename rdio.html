@@ -10,29 +10,33 @@
 </head>
 <body class="layer scroll">
     <header>
-        <div class="col-9 valign-center-all">
+        <div class="col-9">
             <div class="col"><a href="" id="logo" class="button link full-height"></a></div>
-            <form action="" class="col col-inline">
+            <form action="" class="col valign-center-all">
                 <input type="text" name="" id="">
             </form>
-            <a class="button float-right">Upgrade</a>
+            <div class="col-right valign-center-all">
+                <a class="button">Upgrade</a>
+            </div>
         </div>
         <div class="col-3">
             <div class="row valign-center">
                 <a href="" class="button link inline">David Khourshid</a>
                 <div class="dropdown-container">
                     <a href="" id="settings" class="button link inline rdio-icon">&nbsp;</a>
-                    <ul class="dropdown right">
-                        <li><a href="">Settings</a></li>
-                        <li><a href="">Take a Tour of Rdio</a></li>
-                        <li class="hr"></li>
-                        <li><a href="">Help...</a></li>
-                        <li><a href="">Apps...</a></li>
-                        <li><a href="">About Rdio...</a></li>
-                        <li><a href="">Legal Terms...</a></li>
-                        <li class="hr"></li>
-                        <li><a href="">Sign Out</a></li>
-                    </ul>
+                    <nav class="dropdown right">
+                        <ul class="">
+                            <li><a href="">Settings</a></li>
+                            <li><a href="">Take a Tour of Rdio</a></li>
+                            <li class="hr"></li>
+                            <li><a href="">Help...</a></li>
+                            <li><a href="">Apps...</a></li>
+                            <li><a href="">About Rdio...</a></li>
+                            <li><a href="">Legal Terms...</a></li>
+                            <li class="hr"></li>
+                            <li><a href="">Sign Out</a></li>
+                        </ul>
+                    </nav>
                     <div class="dropdown content hidden">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque, quo animi ex dicta deserunt facilis similique ut praesentium impedit odio. Labore ipsam at nesciunt dicta quo eveniet tempora omnis hic!</p>
                     </div>
@@ -72,7 +76,7 @@
         </aside>
         <section id="main_view">
             <section class="layer">
-                <article id="heavy_rotation" class="page scroll active">
+                <article id="heavy_rotation" class="page scroll inactive">
                     <header class="content">
                         <h2><span>Heavy Rotation</span><button class="float-right light">Start Station</button></h2>
                         
@@ -236,7 +240,7 @@
                         </div>
                     </div>
                 </article>
-                <article id="collection" class="page scroll content inactive">
+                <article id="collection" class="page scroll content active">
                     <header>
                         <h2>Collection</h2>
                         <form class="row inline-block-all">
@@ -252,7 +256,13 @@
                         </form>
                     </header>
                     <hr>
-
+                    <section>
+                        <div class="panel">
+                            <header>Alert header!</header>
+                            <section><strong>WARNING:</strong> I'm an alert!</section>
+                            <footer>Footer  </footer>
+                        </div>
+                    </section>
                 </article>
             </section>
             <aside class="content">

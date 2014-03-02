@@ -22,6 +22,30 @@
     }
 }
 
+@mixin position(
+    $type: relative, 
+    $vertical: false, 
+    $horizontal: false, 
+    $height: auto, 
+    $width: auto
+) {
+    position: $type;
+
+    @if $type == relative {
+
+    } @else if $type == absolute {
+        @if type-of($height) == number {
+            @if unit($height) == percent {
+                top: 50%;
+                @include experimental(transform, translateY(-50%));
+            } @else {
+                top: 50%;
+                margin-top: -($height / 2);
+            }
+        }
+    }
+}
+
 %block {
     @extend %clearfix;
     display: block;
@@ -49,11 +73,29 @@
 }
 
 %valign-center-all {
-    > * { @extend %valign-center; }
+    &:before {
+        content: '';
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    > * {
+        @extend %inline-block;
+        vertical-align: middle;
+    }
 }
 
 %valign-bottom {
     @include position-absolute(bottom);
+}
+
+%halign-center {
+    @extend %block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 %position-bottom-center {
@@ -276,6 +318,10 @@ header, footer, section {
 
 .valign-bottom {
     @extend %valign-bottom;
+}
+
+.halign-center {
+    @extend %halign-center;
 }
 
 .position-bottom-center {

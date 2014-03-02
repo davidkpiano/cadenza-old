@@ -62,6 +62,7 @@ $type-header-font-style: normal !default;
 $type-header-line-height: 1.2 !default;
 $type-header-color: $type-base-color !default;
 $type-header-color-light: $type-base-color-light !default;
+$type-header-secondary-color: $color-secondary !default;
 $type-header-margin-top: 0 !default;
 $type-header-margin-bottom: $x-rem !default;
 $type-header-small-style: uppercase !default;
@@ -238,29 +239,22 @@ $field-margin-bottom: $fieldset-margin-bottom !default;
 
 // Table Settings
 $table-style: normal !default;
+$table-theme: normal !default;
 $table-margin-bottom: $x-rem !default;
 $table-border-width: $form-border-width !default;
 $table-border-color: $color-gray !default;
 $table-text-align: left !default;
-$table-bgcolor: $color-light !default;
-$table-zebra: true !default;
 
 $table-thead-padding: $x-rem / 2 !default;
 $table-thead-type-scale: -1 !default;
 $table-thead-text-transform: uppercase !default;
-$table-thead-bgcolor: $color-primary !default;
-$table-thead-color: $color-light !default;
 
 $table-tfoot-padding: $x-rem / 2 !default;
 $table-tfoot-type-scale: 0 !default;
 $table-tfoot-text-transform: uppercase !default;
 
-$table-tr-padding: $table-thead-padding !default;
-$table-tr-border-width: $table-border-width !default;
-$table-tr-border-color: $table-border-color !default;
-$table-tr-bgcolor: transparent !default;
-$table-tr-bgcolor-odd: mix($table-bgcolor, $color-light, 10%) !default;
-$table-tr-bgcolor-even: $table-tr-bgcolor !default;
+$table-cell-padding: $table-thead-padding !default;
+$table-cell-border-width: $table-border-width !default;
 
 // Navigation Settings
 $nav-style: normal !default;
@@ -271,24 +265,17 @@ $nav-a-padding: $x-rem / 2 !default;
 $nav-header-padding: $nav-a-padding !default;
 $nav-menu-bgcolor: transparent !default;
 $nav-submenu-bgcolor: $color-primary !default;
+$nav-separator-color: $color-gray !default;
+$nav-separator-width: 1px !default;
+$nav-separator-margin: $x/4 0 !default;
 
 // Dropdown Settings
-$dropdown-style: normal !default;
-$dropdown-theme: normal !default;
 $dropdown-border-color: $color-gray !default;
 $dropdown-border-width: $form-border-width !default;
-$dropdown-separator-color: $dropdown-border-color !default;
-$dropdown-separator-width: $dropdown-border-width !default;
-$dropdown-ul-padding: 0 !default;
-$dropdown-li-padding: 0 !default;
-$dropdown-a-padding: $x-rem / 2 !default;
-$dropdown-header-padding: $dropdown-a-padding !default;
-$dropdown-menu-bgcolor: $color-light !default;
+$dropdown-bgcolor: white !default;
 $dropdown-type-scale: -1 !default;
 $dropdown-z-index: 999 !default;
-$dropdown-max-width: 200px !default;
-$dropdown-content-padding: $x-rem / 2 !default;
-$dropdown-separator-margin: $x/4 0 !default;
+$dropdown-align: left !default;
 $dropdown-use-radius: $form-use-radius !default;
 
 // Label (and Badge) Settings
@@ -321,6 +308,19 @@ $alert-margin-bottom: $x !default;
 $alert-radius: $form-radius !default;
 $alert-use-radius: true !default;
 $alert-type-scale: -1 !default;
+
+// Panel Settings
+$panel-style: normal !default;
+$panel-theme: normal !default;
+$panel-padding: $x-rem !default;
+$panel-header-padding: $panel-padding !default;
+$panel-section-padding: $panel-padding !default;
+$panel-footer-padding: $panel-padding !default;
+$panel-border-width: 1px !default;
+$panel-margin-bottom: $x !default;
+$panel-use-radius: $form-use-radius !default;
+$panel-radius: $form-radius !default;
+$panel-type-scale: 0 !default;
 
 // Animation Settings
 $animation-duration: 0.5s !default;
