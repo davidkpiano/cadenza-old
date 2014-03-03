@@ -63,7 +63,7 @@
     border-color: $color-border;
 
     @if $color-text == auto {
-        color: foregroundColor($color-background);
+        color: foregroundColor($color-background, $color-default: white);
     } @else {
         color: $color-text;
     }
@@ -263,5 +263,59 @@
         tr:only-child {
             background-color: transparent;
         }
+    }
+}
+
+@mixin tabs-colors(
+    $color: transparent,
+    $color-border: $tabs-border-color,
+    $color-border-inactive: transparent,
+    $color-border-hover: $color-border,
+    $color-border-active: $color-border,
+    $color-menu: $color-light,
+    $color-tab-inactive: transparent,
+    $color-tab-inactive-text: $anchor-color,
+    $color-tab-hover: $color-gray,
+    $color-tab-hover-text: $anchor-color-hover,
+    $color-tab-active: $tabs-active-bgcolor,
+    $color-tab-active-text: $type-base-color
+) {
+    background-color: $color-menu;
+
+    ul {
+        border-color: $color-border;
+
+        li {
+            border-color: $color-border-inactive;
+            background-color: $color-tab-inactive;
+
+            &, & > a {
+                color: $color-tab-inactive-text;
+            }
+
+            &:hover > a, a:hover {
+                color: $color-tab-hover-text;
+            }
+
+            &:hover {
+                border-color: $color-border-hover;
+                background-color: $color-tab-hover;
+            }
+
+            &.active {
+                border-color: $color-border-active;
+                border-bottom-color: transparent;
+                background-color: $color-tab-active;
+
+                &, & > a, & > a:hover {
+                    color: $color-tab-active-text;
+                }
+            }
+        }
+    }
+
+    + .tabs-content {
+        border-color: $color-border;
+        background-color: $color-tab-active;
     }
 }

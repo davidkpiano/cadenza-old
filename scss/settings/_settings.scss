@@ -269,6 +269,18 @@ $nav-separator-color: $color-gray !default;
 $nav-separator-width: 1px !default;
 $nav-separator-margin: $x/4 0 !default;
 
+// Tabs Settings
+$tabs-style: normal !default;
+$tabs-theme: underline !default;
+$tabs-active-bgcolor: white !default;
+$tabs-li-padding: $nav-li-padding !default;
+$tabs-li-margin: 0 $x-rem 0 0 !default;
+$tabs-a-padding: $nav-a-padding !default;
+$tabs-border-width: $form-border-width !default;
+$tabs-border-color: $color-gray !default;
+$tabs-radius: $form-radius !default;
+$tabs-use-radius: $form-use-radius !default;
+
 // Dropdown Settings
 $dropdown-border-color: $color-gray !default;
 $dropdown-border-width: $form-border-width !default;

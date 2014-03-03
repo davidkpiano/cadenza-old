@@ -13,7 +13,10 @@ $form-use-radius: true;
 $nav-theme: rdio;
 $nav-a-padding: 2px (1rem / 2);
 
-$anchor-color-hover: static;
+$tabs-a-padding: 0 0 1rem 0;
+
+$anchor-color: $color-primary;
+$anchor-color-hover: $anchor-color;
 $anchor-decoration-hover: underline;
 
 @import 'cadenza.scss';

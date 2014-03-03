@@ -1,0 +1,69 @@
+
+%tabs-layout {
+    z-index: 2;
+
+    > ul {
+        margin-bottom: -($tabs-border-width);
+        border-bottom-width: $tabs-border-width;
+        border-bottom-style: solid;
+
+        > li {
+            float: none;
+            display: inline-block;
+            vertical-align: bottom;
+            padding: $tabs-li-padding;
+            margin: $tabs-li-margin;
+            border-style: solid;
+            border-width: $tabs-border-width;
+            margin-bottom: -($tabs-border-width);
+
+            @if $tabs-use-radius {
+                @include border-top-left-radius($tabs-radius);
+                @include border-top-right-radius($tabs-radius);
+            }
+
+            > a {
+                padding: $tabs-a-padding;
+
+                > * { vertical-align: middle; }
+            }
+
+            &.active {
+                pointer-events: none;
+            }
+        }
+    }
+
+    &.vertical ul li {
+        margin: 0;
+    }
+
+    + .tabs-content {
+        z-index: 1;
+        border-width: $tabs-border-width;
+        border-style: solid;
+
+        margin-top: -($tabs-border-width);
+    }
+}
+
+%ext-tabs-normal {
+    @extend %tabs-layout;
+}
+
+%theme-tabs-normal {
+    @include tabs-colors;
+}
+
+@mixin tabs($style: $tabs-style, $theme: $tabs-theme) {
+    @extend %ext-tabs-#{$style};
+    @extend %theme-tabs-#{$theme};
+}
+
+%tabs {
+    @include tabs();
+}
+
+nav.tabs {
+    @extend %tabs;
+}

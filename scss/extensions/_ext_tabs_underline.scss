@@ -1,0 +1,24 @@
+
+@mixin ext-tabs-underline-colors($color: $color-primary) {
+    @include tabs-colors(
+        $color-border: transparent,
+        $color-menu: transparent,
+        $color-tab-inactive: transparent,
+        $color-tab-hover: transparent,
+        $color-tab-active: transparent
+    );
+
+    ul {
+        border-bottom-color: $tabs-border-color;
+
+        li {
+            &:hover, &.active {
+                border-bottom-color: $color;
+            }
+        }
+    }
+}
+
+%theme-tabs-underline {
+    @include ext-tabs-underline-colors();
+}

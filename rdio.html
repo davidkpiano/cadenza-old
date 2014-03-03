@@ -56,7 +56,7 @@
                     <li><a href="#">Top Charts</a></li>
                     <li><a href="#">New Releases</a></li>
                     <li><a href="#">Recommendations</a></li>
-                    <li><a href="#">Stations</a></li>
+                    <li><a href="#" onclick="activate('stations'); return false;">Stations</a></li>
                 </ul>
             </nav>
             <nav>
@@ -240,7 +240,23 @@
                         </div>
                     </div>
                 </article>
-                <article id="collection" class="page scroll content active">
+                <article id="stations" class="page scroll content active">
+                    <header>
+                        <h2>Stations</h2>
+                        <nav class="horizontal tabs small">
+                            <ul>
+                                <li><a href="#">Overview <span class="badge">42</span></a></li>
+                                <li class="active"><a href="#">People</a></li>
+                                <li><a href="#">Genres</a></li>
+                            </ul>
+                        </nav>
+                        <div class="content tabs-content">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, labore repudiandae quasi corporis non quia magni dolores quod enim esse. Velit, repudiandae, nemo in cumque sapiente magnam asperiores incidunt perferendis?</p>
+                            <a href="#">This is a test <span class="badge">42</span></a>
+                        </div>
+                    </header>
+                </article>
+                <article id="collection" class="page scroll content inactive">
                     <header>
                         <h2>Collection</h2>
                         <form class="row inline-block-all">

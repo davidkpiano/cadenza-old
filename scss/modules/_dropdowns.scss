@@ -41,6 +41,26 @@
         right: 0;
         left: inherit;
     }
+
+    &.top {
+        top: inherit;
+        bottom: 100%;
+    }
+
+    &.bottom {
+        bottom: inherit;
+        top: 100%;
+    }
+
+    &.over-top {
+        top: inherit;
+        bottom: 0;
+    }
+
+    &.over-bottom {
+        bottom: inherit;
+        top: 0;
+    }
 }
 
 @mixin dropdown($style: normal, $theme: normal) {
