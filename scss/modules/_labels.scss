@@ -90,6 +90,9 @@
     vertical-align: $label-valign;
     margin: $label-margin;
 
+    &:first-child { margin-left: 0; }
+    &:last-child { margin-right: 0; }
+
     &[class*=infix-] {
         position: absolute;
         // margin: $label-margin;

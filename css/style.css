@@ -3555,6 +3555,7 @@ nav.tabs + .tabs-content {
   border-color: #dddddd;
   border-width: 1px;
   background-color: white;
+  padding: 0.5rem 0;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
@@ -3563,36 +3564,36 @@ nav.tabs + .tabs-content {
   left: 0;
   right: inherit;
 }
-/* line 36, ../scss/modules/_dropdowns.scss */
+/* line 37, ../scss/modules/_dropdowns.scss */
 .dropdown > ul {
   margin-bottom: 0;
 }
-/* line 40, ../scss/modules/_dropdowns.scss */
+/* line 41, ../scss/modules/_dropdowns.scss */
 .left.dropdown {
   left: 0;
   right: inherit;
 }
-/* line 45, ../scss/modules/_dropdowns.scss */
+/* line 46, ../scss/modules/_dropdowns.scss */
 .right.dropdown {
   right: 0;
   left: inherit;
 }
-/* line 50, ../scss/modules/_dropdowns.scss */
+/* line 51, ../scss/modules/_dropdowns.scss */
 .top.dropdown {
   top: inherit;
   bottom: 100%;
 }
-/* line 55, ../scss/modules/_dropdowns.scss */
+/* line 56, ../scss/modules/_dropdowns.scss */
 .bottom.dropdown {
   bottom: inherit;
   top: 100%;
 }
-/* line 60, ../scss/modules/_dropdowns.scss */
+/* line 61, ../scss/modules/_dropdowns.scss */
 .over-top.dropdown {
   top: inherit;
   bottom: 0;
 }
-/* line 65, ../scss/modules/_dropdowns.scss */
+/* line 66, ../scss/modules/_dropdowns.scss */
 .over-bottom.dropdown {
   bottom: inherit;
   top: 0;
@@ -4024,18 +4025,26 @@ form .select > select {
   margin: 0 8px;
 }
 /* line 93, ../scss/modules/_labels.scss */
+.label:first-child, .badge:first-child {
+  margin-left: 0;
+}
+/* line 94, ../scss/modules/_labels.scss */
+.label:last-child, .badge:last-child {
+  margin-right: 0;
+}
+/* line 96, ../scss/modules/_labels.scss */
 [class*=infix-].label, [class*=infix-].badge {
   position: absolute;
 }
-/* line 97, ../scss/modules/_labels.scss */
+/* line 100, ../scss/modules/_labels.scss */
 [class*=infix-].infix-left.label, [class*=infix-].infix-left.badge, [class*=infix-].infix-right.label, [class*=infix-].infix-right.badge {
   z-index: 2;
 }
-/* line 102, ../scss/modules/_labels.scss */
+/* line 105, ../scss/modules/_labels.scss */
 [class*=infix-].infix-left.label, [class*=infix-].infix-left.badge {
   left: 0;
 }
-/* line 103, ../scss/modules/_labels.scss */
+/* line 106, ../scss/modules/_labels.scss */
 [class*=infix-].infix-right.label, [class*=infix-].infix-right.badge {
   right: 0;
 }

@@ -258,7 +258,7 @@ $table-cell-border-width: $table-border-width !default;
 
 // Navigation Settings
 $nav-style: normal !default;
-$nav-theme: normal !default;
+$nav-theme: underline !default;
 $nav-ul-padding: 0 !default;
 $nav-li-padding: 0 !default;
 $nav-a-padding: $x-rem / 2 !default;
@@ -282,6 +282,7 @@ $tabs-radius: $form-radius !default;
 $tabs-use-radius: $form-use-radius !default;
 
 // Dropdown Settings
+$dropdown-padding: ($x-rem / 2) 0 !default;
 $dropdown-border-color: $color-gray !default;
 $dropdown-border-width: $form-border-width !default;
 $dropdown-bgcolor: white !default;

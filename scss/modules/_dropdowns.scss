@@ -20,6 +20,7 @@
     border-color: $dropdown-border-color;
     border-width: $dropdown-border-width;
     background-color: $dropdown-bgcolor;
+    padding: $dropdown-padding;
 
     @if $dropdown-use-radius {
         @include border-radius($form-radius);

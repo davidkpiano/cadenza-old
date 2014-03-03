@@ -3444,39 +3444,6 @@ nav.horizontal > ul > li > a {
   height: 100%;
 }
 
-/* line 131, ../scss/modules/_themes.scss */
-nav ul {
-  background-color: transparent;
-}
-/* line 135, ../scss/modules/_themes.scss */
-nav li {
-  background-color: transparent;
-}
-/* line 138, ../scss/modules/_themes.scss */
-nav li, nav li > a {
-  color: inherit;
-}
-/* line 143, ../scss/modules/_themes.scss */
-nav li:hover {
-  background-color: navy;
-}
-/* line 147, ../scss/modules/_themes.scss */
-nav li:hover, nav li:hover > a {
-  color: #efefef;
-}
-/* line 153, ../scss/modules/_themes.scss */
-nav li.active {
-  background-color: transparent;
-}
-/* line 159, ../scss/modules/_themes.scss */
-nav li.active, nav li.active > a {
-  color: navy;
-}
-/* line 164, ../scss/modules/_themes.scss */
-nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
-  color: auto;
-}
-
 /* line 2, ../scss/modules/_tabs.scss */
 nav.tabs {
   z-index: 2;
@@ -3582,39 +3549,40 @@ nav.tabs + .tabs-content {
   border-color: #dddddd;
   border-width: 1px;
   background-color: white;
+  padding: 0.5rem 0;
   left: 0;
   right: inherit;
 }
-/* line 36, ../scss/modules/_dropdowns.scss */
+/* line 37, ../scss/modules/_dropdowns.scss */
 .dropdown > ul {
   margin-bottom: 0;
 }
-/* line 40, ../scss/modules/_dropdowns.scss */
+/* line 41, ../scss/modules/_dropdowns.scss */
 .left.dropdown {
   left: 0;
   right: inherit;
 }
-/* line 45, ../scss/modules/_dropdowns.scss */
+/* line 46, ../scss/modules/_dropdowns.scss */
 .right.dropdown {
   right: 0;
   left: inherit;
 }
-/* line 50, ../scss/modules/_dropdowns.scss */
+/* line 51, ../scss/modules/_dropdowns.scss */
 .top.dropdown {
   top: inherit;
   bottom: 100%;
 }
-/* line 55, ../scss/modules/_dropdowns.scss */
+/* line 56, ../scss/modules/_dropdowns.scss */
 .bottom.dropdown {
   bottom: inherit;
   top: 100%;
 }
-/* line 60, ../scss/modules/_dropdowns.scss */
+/* line 61, ../scss/modules/_dropdowns.scss */
 .over-top.dropdown {
   top: inherit;
   bottom: 0;
 }
-/* line 65, ../scss/modules/_dropdowns.scss */
+/* line 66, ../scss/modules/_dropdowns.scss */
 .over-bottom.dropdown {
   bottom: inherit;
   top: 0;
@@ -3984,18 +3952,26 @@ form .select > select {
   margin: 0 8px;
 }
 /* line 93, ../scss/modules/_labels.scss */
+.label:first-child, .badge:first-child {
+  margin-left: 0;
+}
+/* line 94, ../scss/modules/_labels.scss */
+.label:last-child, .badge:last-child {
+  margin-right: 0;
+}
+/* line 96, ../scss/modules/_labels.scss */
 [class*=infix-].label, [class*=infix-].badge {
   position: absolute;
 }
-/* line 97, ../scss/modules/_labels.scss */
+/* line 100, ../scss/modules/_labels.scss */
 [class*=infix-].infix-left.label, [class*=infix-].infix-left.badge, [class*=infix-].infix-right.label, [class*=infix-].infix-right.badge {
   z-index: 2;
 }
-/* line 102, ../scss/modules/_labels.scss */
+/* line 105, ../scss/modules/_labels.scss */
 [class*=infix-].infix-left.label, [class*=infix-].infix-left.badge {
   left: 0;
 }
-/* line 103, ../scss/modules/_labels.scss */
+/* line 106, ../scss/modules/_labels.scss */
 [class*=infix-].infix-right.label, [class*=infix-].infix-right.badge {
   right: 0;
 }
@@ -4618,6 +4594,77 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   background-color: transparent;
   border-color: transparent;
   color: inherit;
+}
+
+/* line 131, ../scss/modules/_themes.scss */
+nav ul {
+  background-color: transparent;
+}
+/* line 135, ../scss/modules/_themes.scss */
+nav li {
+  background-color: transparent;
+}
+/* line 138, ../scss/modules/_themes.scss */
+nav li, nav li > a {
+  color: inherit;
+}
+/* line 143, ../scss/modules/_themes.scss */
+nav li:hover {
+  background-color: transparent;
+}
+/* line 149, ../scss/modules/_themes.scss */
+nav li:hover, nav li:hover > a {
+  color: navy;
+}
+/* line 153, ../scss/modules/_themes.scss */
+nav li.active {
+  background-color: transparent;
+}
+/* line 159, ../scss/modules/_themes.scss */
+nav li.active, nav li.active > a {
+  color: navy;
+}
+/* line 164, ../scss/modules/_themes.scss */
+nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
+  color: auto;
+}
+/* line 15, ../scss/extensions/_ext_nav_underline.scss */
+nav > ul > li.active:before, nav.vertical > ul > li.active:before {
+  content: '';
+  display: block;
+  height: 100%;
+  width: 1px;
+  position: absolute;
+  background-color: navy;
+}
+/* line 24, ../scss/extensions/_ext_nav_underline.scss */
+nav.left > ul > li.active:before, nav.vertical.left > ul > li.active:before {
+  left: 0;
+}
+/* line 28, ../scss/extensions/_ext_nav_underline.scss */
+nav.right > ul > li.active:before, nav.vertical.right > ul > li.active:before {
+  right: 0;
+}
+/* line 34, ../scss/extensions/_ext_nav_underline.scss */
+nav.horizontal > ul {
+  border-bottom-width: 1px;
+  border-bottom-color: #dddddd;
+  border-bottom-style: solid;
+}
+/* line 39, ../scss/extensions/_ext_nav_underline.scss */
+nav.horizontal > ul > li {
+  top: 1px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: transparent;
+}
+/* line 49, ../scss/extensions/_ext_nav_underline.scss */
+nav.horizontal > ul > li.active {
+  border-bottom-color: navy;
+}
+/* line 53, ../scss/extensions/_ext_nav_underline.scss */
+nav.horizontal > ul > li:before, nav.horizontal > ul > li.active:before {
+  display: none;
 }
 
 /* Import Themes */
