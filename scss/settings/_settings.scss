@@ -258,7 +258,7 @@ $table-cell-border-width: $table-border-width !default;
 
 // Navigation Settings
 $nav-style: normal !default;
-$nav-theme: transparent !default;
+$nav-theme: normal !default;
 $nav-ul-padding: 0 !default;
 $nav-li-padding: 0 !default;
 $nav-a-padding: $x-rem / 2 !default;
@@ -271,11 +271,11 @@ $nav-separator-margin: $x/4 0 !default;
 
 // Tabs Settings
 $tabs-style: normal !default;
-$tabs-theme: underline !default;
+$tabs-theme: normal !default;
 $tabs-active-bgcolor: white !default;
 $tabs-li-padding: $nav-li-padding !default;
 $tabs-li-margin: 0 $x-rem 0 0 !default;
-$tabs-a-padding: $nav-a-padding !default;
+$tabs-a-padding: $x-rem !default;
 $tabs-border-width: $form-border-width !default;
 $tabs-border-color: $color-gray !default;
 $tabs-radius: $form-radius !default;
@@ -292,6 +292,7 @@ $dropdown-use-radius: $form-use-radius !default;
 
 // Label (and Badge) Settings
 $label-style: normal !default;
+$label-valign: middle !default;
 $label-type-scale: -2 !default;
 $label-font-weight: bold !default;
 $label-text-transform: none !default;
@@ -302,6 +303,7 @@ $label-use-radius: $form-use-radius !default;
 $label-margin: 0 $x/2 !default;
 
 $badge-style: normal !default;
+$badge-valign: $label-valign !default;
 $badge-type-scale: $label-type-scale !default;
 $badge-font-weight: $label-font-weight !default;
 $badge-text-transform: none !default;

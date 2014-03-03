@@ -20,6 +20,7 @@
     font-weight: $badge-font-weight;
     padding: $badge-padding;
     text-transform: $badge-text-transform;
+    vertical-align: $badge-valign;
 
     @if $badge-use-radius {
         @include border-radius($x-rem);
@@ -86,11 +87,12 @@
     display: inline-block;
     line-height: 1;
     text-decoration: none;
-    vertical-align: baseline;
+    vertical-align: $label-valign;
+    margin: $label-margin;
 
     &[class*=infix-] {
         position: absolute;
-        margin: $label-margin;
+        // margin: $label-margin;
 
         &.infix-left, &.infix-right {
             @extend %valign-center;

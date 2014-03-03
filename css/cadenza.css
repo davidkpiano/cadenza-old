@@ -131,7 +131,7 @@ input, button, textarea, select {
 }
 
 /* line 54, ../scss/modules/_layout.scss */
-.inline-block-all > *, .valign-center-all > *, .inline-block, body h1.inline, body h2.inline, body h3.inline, body h4.inline, body h5.inline, body h6.inline, body h1.valign-center-all > *, body h2.valign-center-all > *, body h3.valign-center-all > *, body h4.valign-center-all > *, body h5.valign-center-all > *, body h6.valign-center-all > * {
+.inline-block-all > *, .valign-center-all > *, nav.horizontal > ul > li > a > *, .inline-block, body h1.inline, body h2.inline, body h3.inline, body h4.inline, body h5.inline, body h6.inline, body h1.valign-center-all > *, body h2.valign-center-all > *, body h3.valign-center-all > *, body h4.valign-center-all > *, body h5.valign-center-all > *, body h6.valign-center-all > * {
   display: inline-block;
   width: auto;
 }
@@ -159,7 +159,7 @@ input, button, textarea, select {
 }
 
 /* line 76, ../scss/modules/_layout.scss */
-.valign-center-all:before {
+.valign-center-all:before, nav.horizontal > ul > li > a:before {
   content: '';
   height: 100%;
   display: inline-block;
@@ -168,7 +168,7 @@ input, button, textarea, select {
   margin-left: -1em;
 }
 /* line 85, ../scss/modules/_layout.scss */
-.valign-center-all > * {
+.valign-center-all > *, nav.horizontal > ul > li > a > * {
   vertical-align: middle;
 }
 
@@ -3147,7 +3147,7 @@ p.lead {
 }
 
 /* line 138, ../scss/modules/_type.scss */
-ul.clean, nav ul, ol.clean, dl.clean, .dropdown {
+ul.clean, nav ul, nav.vertical ul, .dropdown ul, ol.clean, dl.clean, .dropdown {
   list-style: none;
   margin-left: 0;
 }
@@ -3222,7 +3222,7 @@ dl dd {
 }
 
 /* line 194, ../scss/modules/_type.scss */
-ul.inline > li, ol.inline > li, dl.inline > li, .nowrap, nav ul li, .label, .badge {
+ul.inline > li, ol.inline > li, dl.inline > li, .nowrap, nav ul li, nav.vertical ul li, .dropdown ul li, .label, .badge {
   white-space: nowrap;
   overflow: hidden;
 }
@@ -3382,83 +3382,99 @@ a.dark:hover {
 }
 
 /* line 4, ../scss/modules/_nav.scss */
-nav > h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
+nav > h1, nav.vertical > h1, .dropdown > h1, nav h2, nav.vertical h2, .dropdown h2, nav h3, nav.vertical h3, .dropdown h3, nav h4, nav.vertical h4, .dropdown h4, nav h5, nav.vertical h5, .dropdown h5, nav h6, nav.vertical h6, .dropdown h6 {
   padding: 0.5rem;
   margin: 0;
 }
 /* line 9, ../scss/modules/_nav.scss */
-nav ul {
+nav ul, nav.vertical ul, .dropdown ul {
   width: 100%;
   padding: 0;
-  background-color: transparent;
 }
-/* line 15, ../scss/modules/_nav.scss */
-nav ul li {
+/* line 14, ../scss/modules/_nav.scss */
+nav ul li, nav.vertical ul li, .dropdown ul li {
+  display: block;
   padding: 0;
 }
 /* line 19, ../scss/modules/_nav.scss */
-nav ul li a {
+nav ul li > a, nav.vertical ul li > a, .dropdown ul li > a {
   display: block;
   padding: 0.5rem;
 }
 /* line 23, ../scss/modules/_nav.scss */
-nav ul li a, nav ul li a:hover {
+nav ul li > a, nav.vertical ul li > a, .dropdown ul li > a, nav ul li > a:hover, nav.vertical ul li > a:hover, .dropdown ul li > a:hover {
   text-decoration: none;
 }
-/* line 28, ../scss/modules/_nav.scss */
-nav ul li.inactive > ul {
-  display: none;
+/* line 27, ../scss/modules/_nav.scss */
+nav ul li > a > *, nav.vertical ul li > a > *, .dropdown ul li > a > *, nav ul li > a > .badge, nav.vertical ul li > a > .badge, .dropdown ul li > a > .badge, nav ul li > a > .label, nav.vertical ul li > a > .label, .dropdown ul li > a > .label {
+  vertical-align: middle;
 }
 /* line 32, ../scss/modules/_nav.scss */
-nav ul li.active > ul {
+nav ul li > a > .badge.right, .dropdown ul li > a > .badge.right, nav ul li > a > .label.right, .dropdown ul li > a > .label.right {
+  position: absolute;
+  right: 0;
+}
+/* line 39, ../scss/modules/_nav.scss */
+nav ul li ul, nav.vertical ul li ul, .dropdown ul li ul, nav ul li .submenu, nav.vertical ul li .submenu, .dropdown ul li .submenu {
+  display: none;
+}
+/* line 44, ../scss/modules/_nav.scss */
+nav ul li:hover > ul, nav.vertical ul li:hover > ul, .dropdown ul li:hover > ul, nav ul li:hover > .submenu, .dropdown ul li:hover > .submenu, nav ul li.active > ul, nav.vertical ul li.active > ul, .dropdown ul li.active > ul, nav ul li.active > .submenu, .dropdown ul li.active > .submenu {
   display: block;
 }
-/* line 36, ../scss/modules/_nav.scss */
-nav ul li.separator, nav ul li.hr {
-  border-color: #dddddd;
-  border-style: solid;
-  border-width: 0;
+/* line 49, ../scss/modules/_nav.scss */
+nav ul li.separator, nav.vertical ul li.separator, .dropdown ul li.separator, nav ul li.hr, nav.vertical ul li.hr, .dropdown ul li.hr {
   border-bottom-width: 1px;
+  border-bottom-style: solid;
   margin: 4px 0;
 }
-/* line 45, ../scss/modules/_nav.scss */
-nav ul ul {
-  display: none;
-  background-color: navy;
-}
-/* line 56, ../scss/modules/_nav.scss */
-nav.horizontal > ul > li {
-  float: left;
-}
-/* line 61, ../scss/modules/_nav.scss */
-nav.horizontal.full {
+
+/* line 59, ../scss/modules/_nav.scss */
+nav.horizontal > ul {
   height: 100%;
   margin-bottom: 0;
 }
-/* line 65, ../scss/modules/_nav.scss */
-nav.horizontal.full > ul {
+/* line 64, ../scss/modules/_nav.scss */
+nav.horizontal > ul > li {
+  float: left;
   height: 100%;
 }
 /* line 68, ../scss/modules/_nav.scss */
-nav.horizontal.full > ul > li {
+nav.horizontal > ul > li > a {
   height: 100%;
-  display: table;
-  table-layout: fixed;
 }
-/* line 73, ../scss/modules/_nav.scss */
-nav.horizontal.full > ul > li a {
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  height: 100%;
-  width: 100%;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin: 0;
+
+/* line 131, ../scss/modules/_themes.scss */
+nav ul {
+  background-color: transparent;
 }
-/* line 89, ../scss/modules/_nav.scss */
-nav.dropdown ul, nav.tabs ul {
-  margin-bottom: 0;
+/* line 135, ../scss/modules/_themes.scss */
+nav li {
+  background-color: transparent;
+}
+/* line 138, ../scss/modules/_themes.scss */
+nav li, nav li > a {
+  color: inherit;
+}
+/* line 143, ../scss/modules/_themes.scss */
+nav li:hover {
+  background-color: navy;
+}
+/* line 147, ../scss/modules/_themes.scss */
+nav li:hover, nav li:hover > a {
+  color: #efefef;
+}
+/* line 153, ../scss/modules/_themes.scss */
+nav li.active {
+  background-color: transparent;
+}
+/* line 159, ../scss/modules/_themes.scss */
+nav li.active, nav li.active > a {
+  color: navy;
+}
+/* line 164, ../scss/modules/_themes.scss */
+nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
+  color: auto;
 }
 
 /* line 2, ../scss/modules/_tabs.scss */
@@ -3484,7 +3500,7 @@ nav.tabs > ul > li {
 }
 /* line 25, ../scss/modules/_tabs.scss */
 nav.tabs > ul > li > a {
-  padding: 0.5rem;
+  padding: 1rem;
 }
 /* line 28, ../scss/modules/_tabs.scss */
 nav.tabs > ul > li > a > * {
@@ -3504,6 +3520,48 @@ nav.tabs + .tabs-content {
   border-width: 1px;
   border-style: solid;
   margin-top: -1px;
+}
+
+/* line 54, ../scss/modules/_tabs.scss */
+nav.tabs {
+  background-color: #efefef;
+}
+/* line 294, ../scss/modules/_themes.scss */
+nav.tabs ul {
+  border-color: #dddddd;
+}
+/* line 297, ../scss/modules/_themes.scss */
+nav.tabs ul li {
+  border-color: transparent;
+  background-color: transparent;
+}
+/* line 301, ../scss/modules/_themes.scss */
+nav.tabs ul li, nav.tabs ul li > a {
+  color: navy;
+}
+/* line 305, ../scss/modules/_themes.scss */
+nav.tabs ul li:hover > a, nav.tabs ul li a:hover {
+  color: #0000a4;
+}
+/* line 309, ../scss/modules/_themes.scss */
+nav.tabs ul li:hover {
+  border-color: #dddddd;
+  background-color: #dddddd;
+}
+/* line 314, ../scss/modules/_themes.scss */
+nav.tabs ul li.active {
+  border-color: #dddddd;
+  border-bottom-color: transparent;
+  background-color: white;
+}
+/* line 319, ../scss/modules/_themes.scss */
+nav.tabs ul li.active, nav.tabs ul li.active > a, nav.tabs ul li.active > a:hover {
+  color: #222222;
+}
+/* line 326, ../scss/modules/_themes.scss */
+nav.tabs + .tabs-content {
+  border-color: #dddddd;
+  background-color: white;
 }
 
 /* line 4, ../scss/modules/_dropdowns.scss */
@@ -3527,32 +3585,36 @@ nav.tabs + .tabs-content {
   left: 0;
   right: inherit;
 }
-/* line 35, ../scss/modules/_dropdowns.scss */
+/* line 36, ../scss/modules/_dropdowns.scss */
+.dropdown > ul {
+  margin-bottom: 0;
+}
+/* line 40, ../scss/modules/_dropdowns.scss */
 .left.dropdown {
   left: 0;
   right: inherit;
 }
-/* line 40, ../scss/modules/_dropdowns.scss */
+/* line 45, ../scss/modules/_dropdowns.scss */
 .right.dropdown {
   right: 0;
   left: inherit;
 }
-/* line 45, ../scss/modules/_dropdowns.scss */
+/* line 50, ../scss/modules/_dropdowns.scss */
 .top.dropdown {
   top: inherit;
   bottom: 100%;
 }
-/* line 50, ../scss/modules/_dropdowns.scss */
+/* line 55, ../scss/modules/_dropdowns.scss */
 .bottom.dropdown {
   bottom: inherit;
   top: 100%;
 }
-/* line 55, ../scss/modules/_dropdowns.scss */
+/* line 60, ../scss/modules/_dropdowns.scss */
 .over-top.dropdown {
   top: inherit;
   bottom: 0;
 }
-/* line 60, ../scss/modules/_dropdowns.scss */
+/* line 65, ../scss/modules/_dropdowns.scss */
 .over-bottom.dropdown {
   bottom: inherit;
   top: 0;
@@ -3773,12 +3835,13 @@ form .select > select {
   font-weight: bold;
   padding: 0.25rem 0.5rem;
   text-transform: none;
+  vertical-align: middle;
 }
-/* line 29, ../scss/modules/_labels.scss */
+/* line 30, ../scss/modules/_labels.scss */
 .badge:empty {
   display: none;
 }
-/* line 34, ../scss/modules/_labels.scss */
+/* line 35, ../scss/modules/_labels.scss */
 .top-left.badge {
   position: absolute;
   top: 0;
@@ -3789,7 +3852,7 @@ form .select > select {
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-/* line 38, ../scss/modules/_labels.scss */
+/* line 39, ../scss/modules/_labels.scss */
 .bottom-left.badge {
   position: absolute;
   bottom: 0;
@@ -3800,7 +3863,7 @@ form .select > select {
   -o-transform: translateX(-50%) translateY(50%);
   transform: translateX(-50%) translateY(50%);
 }
-/* line 42, ../scss/modules/_labels.scss */
+/* line 43, ../scss/modules/_labels.scss */
 .top-right.badge {
   position: absolute;
   top: 0;
@@ -3811,7 +3874,7 @@ form .select > select {
   -o-transform: translateX(50%) translateY(-50%);
   transform: translateX(50%) translateY(-50%);
 }
-/* line 46, ../scss/modules/_labels.scss */
+/* line 47, ../scss/modules/_labels.scss */
 .bottom-right.badge {
   position: absolute;
   bottom: 0;
@@ -3823,116 +3886,116 @@ form .select > select {
   transform: translateX(50%) translateY(50%);
 }
 
-/* line 71, ../scss/modules/_labels.scss */
+/* line 72, ../scss/modules/_labels.scss */
 .label, .badge {
   background-color: navy;
   color: #efefef;
   border-color: gray;
 }
-/* line 64, ../scss/modules/_labels.scss */
+/* line 65, ../scss/modules/_labels.scss */
 [href].label:hover, [href].badge:hover {
   background-color: #0000b3;
   color: #efefef;
 }
-/* line 74, ../scss/modules/_labels.scss */
+/* line 75, ../scss/modules/_labels.scss */
 .primary.label, .primary.badge {
   background-color: navy;
   color: #efefef;
   border-color: gray;
 }
-/* line 64, ../scss/modules/_labels.scss */
+/* line 65, ../scss/modules/_labels.scss */
 .primary[href].label:hover, .primary[href].badge:hover {
   background-color: #0000b3;
   color: #efefef;
 }
-/* line 75, ../scss/modules/_labels.scss */
+/* line 76, ../scss/modules/_labels.scss */
 .secondary.label, .secondary.badge {
   background-color: gray;
   color: #efefef;
   border-color: gray;
 }
-/* line 64, ../scss/modules/_labels.scss */
+/* line 65, ../scss/modules/_labels.scss */
 .secondary[href].label:hover, .secondary[href].badge:hover {
   background-color: #0000b3;
   color: #efefef;
 }
-/* line 76, ../scss/modules/_labels.scss */
+/* line 77, ../scss/modules/_labels.scss */
 .light.label, .light.badge {
   background-color: #efefef;
   color: #222222;
   border-color: gray;
 }
-/* line 64, ../scss/modules/_labels.scss */
+/* line 65, ../scss/modules/_labels.scss */
 .light[href].label:hover, .light[href].badge:hover {
   background-color: #0000b3;
   color: #efefef;
 }
-/* line 77, ../scss/modules/_labels.scss */
+/* line 78, ../scss/modules/_labels.scss */
 .dark.label, .dark.badge {
   background-color: #222222;
   color: #efefef;
   border-color: gray;
 }
-/* line 64, ../scss/modules/_labels.scss */
+/* line 65, ../scss/modules/_labels.scss */
 .dark[href].label:hover, .dark[href].badge:hover {
   background-color: #0000b3;
   color: #efefef;
 }
-/* line 79, ../scss/modules/_labels.scss */
+/* line 80, ../scss/modules/_labels.scss */
 .success.label, .success.badge {
   background-color: #96cc69;
   color: #efefef;
   border-color: gray;
 }
-/* line 64, ../scss/modules/_labels.scss */
+/* line 65, ../scss/modules/_labels.scss */
 .success[href].label:hover, .success[href].badge:hover {
   background-color: #0000b3;
   color: #efefef;
 }
-/* line 80, ../scss/modules/_labels.scss */
+/* line 81, ../scss/modules/_labels.scss */
 .warning.label, .warning.badge {
   background-color: #ffcc5c;
   color: #222222;
   border-color: gray;
 }
-/* line 64, ../scss/modules/_labels.scss */
+/* line 65, ../scss/modules/_labels.scss */
 .warning[href].label:hover, .warning[href].badge:hover {
   background-color: #0000b3;
   color: #efefef;
 }
-/* line 81, ../scss/modules/_labels.scss */
+/* line 82, ../scss/modules/_labels.scss */
 .failure.label, .failure.badge {
   background-color: #c44741;
   color: #efefef;
   border-color: gray;
 }
-/* line 64, ../scss/modules/_labels.scss */
+/* line 65, ../scss/modules/_labels.scss */
 .failure[href].label:hover, .failure[href].badge:hover {
   background-color: #0000b3;
   color: #efefef;
 }
 
-/* line 84, ../scss/modules/_labels.scss */
+/* line 85, ../scss/modules/_labels.scss */
 .label, .badge {
   display: inline-block;
   line-height: 1;
   text-decoration: none;
-  vertical-align: baseline;
-}
-/* line 91, ../scss/modules/_labels.scss */
-[class*=infix-].label, [class*=infix-].badge {
-  position: absolute;
+  vertical-align: middle;
   margin: 0 8px;
 }
-/* line 95, ../scss/modules/_labels.scss */
+/* line 93, ../scss/modules/_labels.scss */
+[class*=infix-].label, [class*=infix-].badge {
+  position: absolute;
+}
+/* line 97, ../scss/modules/_labels.scss */
 [class*=infix-].infix-left.label, [class*=infix-].infix-left.badge, [class*=infix-].infix-right.label, [class*=infix-].infix-right.badge {
   z-index: 2;
 }
-/* line 100, ../scss/modules/_labels.scss */
+/* line 102, ../scss/modules/_labels.scss */
 [class*=infix-].infix-left.label, [class*=infix-].infix-left.badge {
   left: 0;
 }
-/* line 101, ../scss/modules/_labels.scss */
+/* line 103, ../scss/modules/_labels.scss */
 [class*=infix-].infix-right.label, [class*=infix-].infix-right.badge {
   right: 0;
 }
@@ -4007,34 +4070,34 @@ table.vertical tr, table.vertical th, table.vertical td {
 table {
   color: #222222;
 }
-/* line 219, ../scss/modules/_themes.scss */
+/* line 228, ../scss/modules/_themes.scss */
 table thead {
   background-color: navy;
   color: #efefef;
 }
-/* line 229, ../scss/modules/_themes.scss */
+/* line 238, ../scss/modules/_themes.scss */
 table tfoot {
   background-color: transparent;
   color: #222222;
 }
-/* line 239, ../scss/modules/_themes.scss */
+/* line 248, ../scss/modules/_themes.scss */
 table tbody {
   background-color: transparent;
   color: #222222;
 }
-/* line 249, ../scss/modules/_themes.scss */
+/* line 258, ../scss/modules/_themes.scss */
 table, table thead, table tr, table th, table td {
   border-color: #dddddd;
 }
-/* line 255, ../scss/modules/_themes.scss */
+/* line 264, ../scss/modules/_themes.scss */
 table.zebra tr:nth-child(even), table.striped tr:nth-child(even) {
   background-color: transparent;
 }
-/* line 259, ../scss/modules/_themes.scss */
+/* line 268, ../scss/modules/_themes.scss */
 table.zebra tr:nth-child(odd), table.striped tr:nth-child(odd) {
   background-color: #efefef;
 }
-/* line 263, ../scss/modules/_themes.scss */
+/* line 272, ../scss/modules/_themes.scss */
 table.zebra tr:only-child, table.striped tr:only-child {
   background-color: transparent;
 }
@@ -4042,34 +4105,34 @@ table.zebra tr:only-child, table.striped tr:only-child {
 table.transparent {
   color: #222222;
 }
-/* line 219, ../scss/modules/_themes.scss */
+/* line 228, ../scss/modules/_themes.scss */
 table.transparent thead {
   background-color: transparent;
   color: inherit;
 }
-/* line 229, ../scss/modules/_themes.scss */
+/* line 238, ../scss/modules/_themes.scss */
 table.transparent tfoot {
   background-color: transparent;
   color: #222222;
 }
-/* line 239, ../scss/modules/_themes.scss */
+/* line 248, ../scss/modules/_themes.scss */
 table.transparent tbody {
   background-color: transparent;
   color: #222222;
 }
-/* line 249, ../scss/modules/_themes.scss */
+/* line 258, ../scss/modules/_themes.scss */
 table.transparent, table.transparent thead, table.transparent tr, table.transparent th, table.transparent td {
   border-color: #dddddd;
 }
-/* line 255, ../scss/modules/_themes.scss */
+/* line 264, ../scss/modules/_themes.scss */
 table.transparent.zebra tr:nth-child(even), table.transparent.striped tr:nth-child(even) {
   background-color: transparent;
 }
-/* line 259, ../scss/modules/_themes.scss */
+/* line 268, ../scss/modules/_themes.scss */
 table.transparent.zebra tr:nth-child(odd), table.transparent.striped tr:nth-child(odd) {
   background-color: #efefef;
 }
-/* line 263, ../scss/modules/_themes.scss */
+/* line 272, ../scss/modules/_themes.scss */
 table.transparent.zebra tr:only-child, table.transparent.striped tr:only-child {
   background-color: transparent;
 }
@@ -4557,115 +4620,4 @@ button.link, .link.button, input.link[type=button], input.link[type=submit], .bu
   color: inherit;
 }
 
-/* line 22, ../scss/extensions/_ext_tabs_underline.scss */
-nav.tabs {
-  background-color: transparent;
-}
-/* line 285, ../scss/modules/_themes.scss */
-nav.tabs ul {
-  border-color: transparent;
-}
-/* line 288, ../scss/modules/_themes.scss */
-nav.tabs ul li {
-  border-color: transparent;
-  background-color: transparent;
-}
-/* line 292, ../scss/modules/_themes.scss */
-nav.tabs ul li, nav.tabs ul li > a {
-  color: navy;
-}
-/* line 296, ../scss/modules/_themes.scss */
-nav.tabs ul li:hover > a, nav.tabs ul li a:hover {
-  color: #0000a4;
-}
-/* line 300, ../scss/modules/_themes.scss */
-nav.tabs ul li:hover {
-  border-color: transparent;
-  background-color: transparent;
-}
-/* line 305, ../scss/modules/_themes.scss */
-nav.tabs ul li.active {
-  border-color: transparent;
-  border-bottom-color: transparent;
-  background-color: transparent;
-}
-/* line 310, ../scss/modules/_themes.scss */
-nav.tabs ul li.active, nav.tabs ul li.active > a, nav.tabs ul li.active > a:hover {
-  color: #222222;
-}
-/* line 317, ../scss/modules/_themes.scss */
-nav.tabs + .tabs-content {
-  border-color: transparent;
-  background-color: transparent;
-}
-/* line 11, ../scss/extensions/_ext_tabs_underline.scss */
-nav.tabs ul {
-  border-bottom-color: #dddddd;
-}
-/* line 15, ../scss/extensions/_ext_tabs_underline.scss */
-nav.tabs ul li:hover, nav.tabs ul li.active {
-  border-bottom-color: navy;
-}
-
 /* Import Themes */
-/* line 15, ../scss/themes/_theme_nav_transparent.scss */
-nav {
-  -webkit-transition-property: background-color, color;
-  -moz-transition-property: background-color, color;
-  -o-transition-property: background-color, color;
-  transition-property: background-color, color;
-  -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-}
-/* line 4, ../scss/themes/_theme_nav_transparent.scss */
-nav > ul > li > a {
-  background-color: transparent;
-  color: inherit;
-}
-/* line 8, ../scss/themes/_theme_nav_transparent.scss */
-nav > ul > li > a:hover {
-  background-color: navy;
-  color: #efefef;
-}
-/* line 4, ../scss/themes/_theme_nav_transparent.scss */
-nav.primary > ul > li > a {
-  background-color: transparent;
-  color: inherit;
-}
-/* line 8, ../scss/themes/_theme_nav_transparent.scss */
-nav.primary > ul > li > a:hover {
-  background-color: navy;
-  color: #efefef;
-}
-/* line 4, ../scss/themes/_theme_nav_transparent.scss */
-nav.secondary > ul > li > a {
-  background-color: transparent;
-  color: inherit;
-}
-/* line 8, ../scss/themes/_theme_nav_transparent.scss */
-nav.secondary > ul > li > a:hover {
-  background-color: gray;
-  color: #efefef;
-}
-/* line 4, ../scss/themes/_theme_nav_transparent.scss */
-nav.light > ul > li > a {
-  background-color: transparent;
-  color: inherit;
-}
-/* line 8, ../scss/themes/_theme_nav_transparent.scss */
-nav.light > ul > li > a:hover {
-  background-color: #efefef;
-  color: #222222;
-}
-/* line 4, ../scss/themes/_theme_nav_transparent.scss */
-nav.dark > ul > li > a {
-  background-color: transparent;
-  color: inherit;
-}
-/* line 8, ../scss/themes/_theme_nav_transparent.scss */
-nav.dark > ul > li > a:hover {
-  background-color: #222222;
-  color: #efefef;
-}

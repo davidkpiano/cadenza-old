@@ -6,6 +6,7 @@
 }
 
 %dropdown-layout {
+    @extend %nav-vertical-layout;
     @extend %list-clean;
 
     @include typeScale($dropdown-type-scale);
@@ -30,6 +31,10 @@
     } @else if $dropdown-align == right {
         right: 0;
         left: inherit;
+    }
+
+    > ul {
+        margin-bottom: 0;
     }
 
     &.left {

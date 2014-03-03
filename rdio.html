@@ -16,7 +16,7 @@
                 <input type="text" name="" id="">
             </form>
             <div class="col-right valign-center-all">
-                <a class="button">Upgrade</a>
+                <a class="button inline">Upgrade</a>
             </div>
         </div>
         <div class="col-3">
@@ -48,14 +48,14 @@
     </header>
     <section id="main">
         <aside class="content">
-            <nav>
+            <nav class="vertical left">
                 <h6>Browse</h6>
                 <ul>
                     <li><a href="#" onclick="activate('heavy_rotation'); return false;">Heavy Rotation</a></li>
-                    <li class="current-item"><a href="#">Recent Activity</a></li>
-                    <li><a href="#">Top Charts</a></li>
+                    <li class="active"><a href="#">Recent Activity</a></li>
+                    <li><a href="#"><span>Top Charts</span> <span class="badge right">33</span></a></li>
                     <li><a href="#">New Releases</a></li>
-                    <li><a href="#">Recommendations</a></li>
+                    <li><a href="#">Recommendations <span class="badge right">248</span></a></li>
                     <li><a href="#" onclick="activate('stations'); return false;">Stations</a></li>
                 </ul>
             </nav>
@@ -243,18 +243,18 @@
                 <article id="stations" class="page scroll content active">
                     <header>
                         <h2>Stations</h2>
-                        <nav class="horizontal tabs small">
-                            <ul>
-                                <li><a href="#">Overview <span class="badge">42</span></a></li>
-                                <li class="active"><a href="#">People</a></li>
-                                <li><a href="#">Genres</a></li>
-                            </ul>
-                        </nav>
-                        <div class="content tabs-content">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, labore repudiandae quasi corporis non quia magni dolores quod enim esse. Velit, repudiandae, nemo in cumque sapiente magnam asperiores incidunt perferendis?</p>
-                            <a href="#">This is a test <span class="badge">42</span></a>
-                        </div>
                     </header>
+                    <nav class="horizontal row-1 small">
+                        <ul>
+                            <li><a href="#"><span>Overview</span><span class="badge">42</span></a></li>
+                            <li class="active"><a href="#"><span>People</span></a></li>
+                            <li><a href="#"><span>Genres</span></a></li>
+                        </ul>
+                    </nav>
+                    <div class="content tabs-content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, labore repudiandae quasi corporis non quia magni dolores quod enim esse. Velit, repudiandae, nemo in cumque sapiente magnam asperiores incidunt perferendis?</p>
+                        <a href="#">This is a test <span class="badge">42</span></a>
+                    </div>
                 </article>
                 <article id="collection" class="page scroll content inactive">
                     <header>

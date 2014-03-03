@@ -118,11 +118,12 @@
 @mixin nav-colors(
     $color: $color-primary,
     $color-text: auto,
-    $color-anchor: $color-text,
-    $color-anchor-hover: $color-anchor,
+    $color-text-hover: auto,
+    $color-text-active: $color,
     $color-menu: transparent,
     $color-item: transparent,
     $color-item-hover: $color,
+    $color-item-active: transparent,
     $color-border: $color,
     $color-icon: $color-text,
     $color-header: $color-text
@@ -134,21 +135,29 @@
     li {
         background-color: $color-item;
         @if $color-text == auto {
-            color: foregroundColor($color-item);
+            &, > a { color: foregroundColor($color-item); }
         } @else {
-            color: $color-text;
-        }
-
-        > a {
-            color: $color-anchor;
-
-            &:hover {
-                color: $color-anchor-hover;
-            }
+            &, > a { color: $color-text; }
         }
 
         &:hover {
             background-color: $color-item-hover;
+
+            @if $color-text-hover == auto {
+                &, > a { color: foregroundColor($color-item-hover); }
+            } @else {
+                &, > a { color: $color-text-hover; }
+            }
+        }
+
+        &.active {
+            background-color: $color-item-active;
+
+            @if $color-text-active == auto {
+                &, > a { color: foregroundColor($color-item-active); }
+            } @else {
+                &, > a { color: $color-text-active; }
+            }
         }
     }
 

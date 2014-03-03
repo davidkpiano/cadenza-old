@@ -1,0 +1,61 @@
+
+$ext-nav-underline-border-width: $form-border-width !default;
+$ext-nav-underline-color-inactive: $color-gray !default;
+
+@mixin ext-nav-underline-colors($color: $color-primary, $color-inactive: $ext-nav-underline-color-inactive) {
+    @include nav-colors(
+        $color-text-hover: $color,
+        $color-text-active: $color,
+        $color-item: transparent,
+        $color-item-hover: transparent,
+        $color-item-active: transparent
+    );
+
+    &, &.vertical {
+        > ul > li.active:before {
+            content: '';
+            display: block;
+            height: 100%;
+            width: $ext-nav-underline-border-width;
+            position: absolute;
+            background-color: $color;
+        }
+
+        &.left > ul > li.active:before {
+            left: 0;
+        }
+
+        &.right > ul > li.active:before {
+            right: 0;
+        }
+    }
+
+    &.horizontal {
+        > ul {
+            border-bottom-width: $ext-nav-underline-border-width;
+            border-bottom-color: $color-inactive;
+            border-bottom-style: solid;
+
+            > li {
+                top: $ext-nav-underline-border-width;
+                border-bottom-width: $ext-nav-underline-border-width;
+                border-bottom-style: solid;
+                border-bottom-color: transparent;
+
+                &:hover {
+                    // border-bottom-color: mix($color, $color-inactive, 50%);
+                }
+
+                &.active {
+                    border-bottom-color: $color;
+                }
+
+                &:before, &.active:before { display: none; }
+            }
+        }
+    }
+}
+
+%theme-nav-underline {
+    @include ext-nav-underline-colors();
+}

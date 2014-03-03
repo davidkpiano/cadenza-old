@@ -13,13 +13,19 @@ $form-use-radius: true;
 $nav-theme: rdio;
 $nav-a-padding: 2px (1rem / 2);
 
-$tabs-a-padding: 0 0 1rem 0;
-
 $anchor-color: $color-primary;
 $anchor-color-hover: $anchor-color;
 $anchor-decoration-hover: underline;
 
 @import 'cadenza.scss';
+
+// RDIO NAV
+%theme-nav-rdio {
+    @include nav-colors($color-item-hover: $color-light);
+}
+nav.horizontal {
+    @include nav(normal, underline);
+}
 
 body {
     @include layout(67px, 90px);

@@ -1,95 +1,94 @@
 
 
-%ext-nav-normal {
+%nav-vertical-layout {
     > #{$type-header-selector} {
         padding: $nav-header-padding;
         margin: 0;
     }
-
+    
     ul {
         @extend ul.clean;
         width: 100%;
         padding: $nav-ul-padding;
-        background-color: $nav-menu-bgcolor;
 
         li {
-            padding: $nav-li-padding;
             @extend %nowrap;
+            display: block;
+            padding: $nav-li-padding;
 
-            a {
+            > a {
                 display: block;
                 padding: $nav-a-padding;
-                
+
                 &, &:hover {
                     text-decoration: none;
                 }
-            }
 
-            &.inactive > ul {
-                display: none;
-            }
+                > *, > .badge, > .label {
+                    vertical-align: middle;
+                }
 
-            &.active > ul {
-                display: block;
-            }
-
-            &.separator, &.hr {
-                border-color: $nav-separator-color;
-                border-style: solid;
-                border-width: 0;
-                border-bottom-width: $nav-separator-width;
-                margin: $nav-separator-margin;
-            }
-        }
-
-        ul {
-            display: none;
-            background-color: $nav-submenu-bgcolor;
-        }
-    }
-
-    &.horizontal {
-        > ul {
-            @extend %clearfix;
-
-
-            > li {
-                float: left;
-            }
-        }
-
-        &.full {
-            height: 100%;
-            margin-bottom: 0;
-
-            > ul {
-                height: 100%;
-
-                > li {
-                    height: 100%;
-                    display: table;
-                    table-layout: fixed;
-
-                    a {
-                        display: table-cell;
-                        vertical-align: middle;
-                        text-align: center;
-                        height: 100%;
-                        width: 100%;
-                        padding-top: 0;
-                        padding-bottom: 0;
-                        margin: 0;
+                > .badge, > .label {
+                    &.right {
+                        position: absolute;
+                        right: 0;
                     }
                 }
             }
+
+            ul, .submenu {
+                display: none;
+            }
+
+            &:hover, &.active {
+                > ul, > .submenu {
+                    display: block;
+                }
+            }
+
+            &.separator, &.hr {
+                border-bottom-width: $nav-separator-width;
+                border-bottom-style: solid;
+                margin: $nav-separator-margin;
+            }
         }
+    }
+}
+
+%nav-horizontal-layout {
+    > ul {
+        @extend %clearfix;
+        height: 100%;
+        margin-bottom: 0;
+
+        > li {
+            float: left;
+            height: 100%;
+
+            > a {
+                @extend %valign-center-all;
+                height: 100%;
+            }
+        }
+    }
+}
+
+%nav-layout {
+    &, &.vertical {
+        @extend %nav-vertical-layout;
     }
 
-    &.dropdown, &.tabs {
-        ul {
-            margin-bottom: 0;
-        }
+    &.horizontal {
+        @extend %nav-horizontal-layout;
     }
+}
+
+%ext-nav-normal {
+    @extend %nav-layout;
+}
+
+%theme-nav-normal {
+    @include nav-colors();
 }
 
 @mixin nav($style: $nav-style, $theme: $nav-theme) {
