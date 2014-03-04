@@ -3717,12 +3717,13 @@ button .label, .button .label, input[type=button] .label, input[type=submit] .la
 .inline.button-group {
   display: inline-block;
   margin-right: 8px;
+  margin-bottom: 0;
 }
-/* line 92, ../scss/modules/_buttons.scss */
+/* line 93, ../scss/modules/_buttons.scss */
 .vertical.button-group {
   display: inline-block;
 }
-/* line 95, ../scss/modules/_buttons.scss */
+/* line 96, ../scss/modules/_buttons.scss */
 .vertical.button-group > button, .vertical.button-group .button, .vertical.button-group input[type=button], .vertical.button-group input[type=submit], .vertical.button-group > label {
   display: block;
   width: 100%;
@@ -3732,12 +3733,12 @@ button .label, .button .label, input[type=button] .label, input[type=submit] .la
   margin-top: -1px;
   float: none;
 }
-/* line 104, ../scss/modules/_buttons.scss */
+/* line 105, ../scss/modules/_buttons.scss */
 .vertical.button-group > button:first-of-type, .vertical.button-group .button:first-of-type, .vertical.button-group input[type=button]:first-of-type, .vertical.button-group input[type=submit]:first-of-type, .vertical.button-group > label:first-of-type {
   margin-left: 0;
   margin-top: inherit;
 }
-/* line 107, ../scss/modules/_buttons.scss */
+/* line 108, ../scss/modules/_buttons.scss */
 .vertical.button-group > button:first-of-type, .vertical.button-group .button:first-of-type, .vertical.button-group input[type=button]:first-of-type, .vertical.button-group input[type=submit]:first-of-type, .vertical.button-group > label:first-of-type {
   -moz-border-radius-bottomleft: 0;
   -webkit-border-bottom-left-radius: 0;
@@ -3749,7 +3750,7 @@ button .label, .button .label, input[type=button] .label, input[type=submit] .la
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 112, ../scss/modules/_buttons.scss */
+/* line 113, ../scss/modules/_buttons.scss */
 .vertical.button-group > button:last-of-type, .vertical.button-group .button:last-of-type, .vertical.button-group input[type=button]:last-of-type, .vertical.button-group input[type=submit]:last-of-type, .vertical.button-group > label:last-of-type {
   -moz-border-radius-topright: 0;
   -webkit-border-top-right-radius: 0;
@@ -3761,26 +3762,26 @@ button .label, .button .label, input[type=button] .label, input[type=submit] .la
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 120, ../scss/modules/_buttons.scss */
+/* line 121, ../scss/modules/_buttons.scss */
 .vertical.block.button-group {
   display: block;
   margin-bottom: 1rem;
 }
-/* line 127, ../scss/modules/_buttons.scss */
+/* line 128, ../scss/modules/_buttons.scss */
 .center.button-group > button, .center.button-group .button, .center.button-group input[type=button], .center.button-group input[type=submit], .center.button-group > label {
   display: inline;
   float: none;
 }
-/* line 141, ../scss/modules/_buttons.scss */
+/* line 142, ../scss/modules/_buttons.scss */
 .button-group:last-child {
   margin-right: 0;
 }
-/* line 147, ../scss/modules/_buttons.scss */
+/* line 148, ../scss/modules/_buttons.scss */
 .button-group > input[type=radio], .button-group > input[type=checkbox] {
   display: none;
 }
 
-/* line 165, ../scss/modules/_buttons.scss */
+/* line 166, ../scss/modules/_buttons.scss */
 .button-group input:checked + label {
   z-index: 2;
 }
@@ -4427,12 +4428,12 @@ table.transparent.zebra tr:only-child, table.transparent.striped tr:only-child {
 }
 
 /* line 1, ../scss/modules/_animations.scss */
-#main_view > .layer > .page.active {
+#main_view .container > .page.active {
   z-index: 2;
 }
 
 /* line 5, ../scss/modules/_animations.scss */
-#main_view > .layer > .page.inactive {
+#main_view .container > .page.inactive {
   z-index: 0;
 }
 
@@ -4485,7 +4486,7 @@ table.transparent.zebra tr:only-child, table.transparent.striped tr:only-child {
 }
 
 /* line 67, ../scss/modules/_animations.scss */
-#main_view > .layer > .page.active {
+#main_view .container > .page.active {
   -webkit-animation-name: scaleUp-active;
   animation-name: scaleUp-active;
   -webkit-animation-duration: 0.5s;
@@ -4505,7 +4506,7 @@ table.transparent.zebra tr:only-child, table.transparent.striped tr:only-child {
 }
 
 /* line 68, ../scss/modules/_animations.scss */
-#main_view > .layer > .page.inactive {
+#main_view .container > .page.inactive {
   -webkit-animation-name: scaleUp-inactive;
   animation-name: scaleUp-inactive;
   -webkit-animation-duration: 0.5s;
@@ -4829,133 +4830,133 @@ nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
   color: auto;
 }
 
-/* line 246, ../scss/modules/_layout.scss */
-body section, body header, body footer, body aside {
+/* line 245, ../scss/modules/_layout.scss */
+body > section, body > header, body > footer, body > aside {
   position: relative;
 }
-/* line 250, ../scss/modules/_layout.scss */
-body header, body footer {
+/* line 249, ../scss/modules/_layout.scss */
+body > header, body > footer {
   z-index: 3;
 }
-/* line 254, ../scss/modules/_layout.scss */
-body aside {
+/* line 253, ../scss/modules/_layout.scss */
+body > aside {
   height: 100%;
 }
-/* line 259, ../scss/modules/_layout.scss */
+/* line 258, ../scss/modules/_layout.scss */
 body > header {
   height: 67px;
 }
-/* line 263, ../scss/modules/_layout.scss */
+/* line 262, ../scss/modules/_layout.scss */
 body > footer {
   height: 90px;
 }
-/* line 267, ../scss/modules/_layout.scss */
+/* line 266, ../scss/modules/_layout.scss */
 body > section {
   height: calc(100% - 67px - 90px);
 }
-/* line 293, ../scss/modules/_layout.scss */
-body section {
+/* line 292, ../scss/modules/_layout.scss */
+body > section {
   width: 100%;
 }
 /* line 33, ../scss/style.scss */
 body > header {
   border-bottom: 2px solid #efefef;
 }
-/* line 246, ../scss/modules/_layout.scss */
-body > footer section, body > footer header, body > footer footer, body > footer aside {
+/* line 245, ../scss/modules/_layout.scss */
+body > footer > section, body > footer > header, body > footer > footer, body > footer > aside {
   position: relative;
 }
-/* line 250, ../scss/modules/_layout.scss */
-body > footer header, body > footer footer {
+/* line 249, ../scss/modules/_layout.scss */
+body > footer > header, body > footer > footer {
   z-index: 3;
 }
-/* line 254, ../scss/modules/_layout.scss */
-body > footer aside {
+/* line 253, ../scss/modules/_layout.scss */
+body > footer > aside {
   height: 100%;
 }
-/* line 271, ../scss/modules/_layout.scss */
+/* line 270, ../scss/modules/_layout.scss */
 body > footer > section {
   height: 100%;
 }
-/* line 277, ../scss/modules/_layout.scss */
+/* line 276, ../scss/modules/_layout.scss */
 body > footer > aside, body > footer > section {
   float: left;
 }
-/* line 281, ../scss/modules/_layout.scss */
+/* line 280, ../scss/modules/_layout.scss */
 body > footer > aside {
   width: 220px;
 }
-/* line 285, ../scss/modules/_layout.scss */
+/* line 284, ../scss/modules/_layout.scss */
 body > footer > section + aside {
   width: 220px;
 }
-/* line 289, ../scss/modules/_layout.scss */
+/* line 288, ../scss/modules/_layout.scss */
 body > footer > section {
   width: calc(100% - 220px - 220px);
 }
 
-/* line 246, ../scss/modules/_layout.scss */
-#main section, #main header, #main footer, #main aside {
+/* line 245, ../scss/modules/_layout.scss */
+#main > section, #main > header, #main > footer, #main > aside {
   position: relative;
 }
-/* line 250, ../scss/modules/_layout.scss */
-#main header, #main footer {
+/* line 249, ../scss/modules/_layout.scss */
+#main > header, #main > footer {
   z-index: 3;
 }
-/* line 254, ../scss/modules/_layout.scss */
-#main aside {
+/* line 253, ../scss/modules/_layout.scss */
+#main > aside {
   height: 100%;
 }
-/* line 271, ../scss/modules/_layout.scss */
+/* line 270, ../scss/modules/_layout.scss */
 #main > section {
   height: 100%;
 }
-/* line 277, ../scss/modules/_layout.scss */
+/* line 276, ../scss/modules/_layout.scss */
 #main > aside, #main > section {
   float: left;
 }
-/* line 281, ../scss/modules/_layout.scss */
+/* line 280, ../scss/modules/_layout.scss */
 #main > aside {
   width: 200px;
 }
-/* line 285, ../scss/modules/_layout.scss */
+/* line 284, ../scss/modules/_layout.scss */
 #main > section + aside {
   width: 0px;
 }
-/* line 289, ../scss/modules/_layout.scss */
+/* line 288, ../scss/modules/_layout.scss */
 #main > section {
   width: calc(100% - 200px - 0px);
 }
 
-/* line 246, ../scss/modules/_layout.scss */
-#main_view section, #main_view header, #main_view footer, #main_view aside {
+/* line 245, ../scss/modules/_layout.scss */
+#main_view > section, #main_view > header, #main_view > footer, #main_view > aside {
   position: relative;
 }
-/* line 250, ../scss/modules/_layout.scss */
-#main_view header, #main_view footer {
+/* line 249, ../scss/modules/_layout.scss */
+#main_view > header, #main_view > footer {
   z-index: 3;
 }
-/* line 254, ../scss/modules/_layout.scss */
-#main_view aside {
+/* line 253, ../scss/modules/_layout.scss */
+#main_view > aside {
   height: 100%;
 }
-/* line 271, ../scss/modules/_layout.scss */
+/* line 270, ../scss/modules/_layout.scss */
 #main_view > section {
   height: 100%;
 }
-/* line 277, ../scss/modules/_layout.scss */
+/* line 276, ../scss/modules/_layout.scss */
 #main_view > aside, #main_view > section {
   float: left;
 }
-/* line 281, ../scss/modules/_layout.scss */
+/* line 280, ../scss/modules/_layout.scss */
 #main_view > aside {
   width: 0px;
 }
-/* line 285, ../scss/modules/_layout.scss */
+/* line 284, ../scss/modules/_layout.scss */
 #main_view > section + aside {
   width: 200px;
 }
-/* line 289, ../scss/modules/_layout.scss */
+/* line 288, ../scss/modules/_layout.scss */
 #main_view > section {
   width: calc(100% - 0px - 200px);
 }
@@ -4983,35 +4984,35 @@ body > footer > section {
 .rotation-item .rotation-item-info {
   margin-top: 4px;
 }
-/* line 246, ../scss/modules/_layout.scss */
-.rotation-item .rotation-item-info section, .rotation-item .rotation-item-info header, .rotation-item .rotation-item-info footer, .rotation-item .rotation-item-info aside {
+/* line 245, ../scss/modules/_layout.scss */
+.rotation-item .rotation-item-info > section, .rotation-item .rotation-item-info > header, .rotation-item .rotation-item-info > footer, .rotation-item .rotation-item-info > aside {
   position: relative;
 }
-/* line 250, ../scss/modules/_layout.scss */
-.rotation-item .rotation-item-info header, .rotation-item .rotation-item-info footer {
+/* line 249, ../scss/modules/_layout.scss */
+.rotation-item .rotation-item-info > header, .rotation-item .rotation-item-info > footer {
   z-index: 3;
 }
-/* line 254, ../scss/modules/_layout.scss */
-.rotation-item .rotation-item-info aside {
+/* line 253, ../scss/modules/_layout.scss */
+.rotation-item .rotation-item-info > aside {
   height: 100%;
 }
-/* line 271, ../scss/modules/_layout.scss */
+/* line 270, ../scss/modules/_layout.scss */
 .rotation-item .rotation-item-info > section {
   height: 100%;
 }
-/* line 277, ../scss/modules/_layout.scss */
+/* line 276, ../scss/modules/_layout.scss */
 .rotation-item .rotation-item-info > aside, .rotation-item .rotation-item-info > section {
   float: left;
 }
-/* line 281, ../scss/modules/_layout.scss */
+/* line 280, ../scss/modules/_layout.scss */
 .rotation-item .rotation-item-info > aside {
   width: 0px;
 }
-/* line 285, ../scss/modules/_layout.scss */
+/* line 284, ../scss/modules/_layout.scss */
 .rotation-item .rotation-item-info > section + aside {
   width: 30px;
 }
-/* line 289, ../scss/modules/_layout.scss */
+/* line 288, ../scss/modules/_layout.scss */
 .rotation-item .rotation-item-info > section {
   width: calc(100% - 0px - 30px);
 }

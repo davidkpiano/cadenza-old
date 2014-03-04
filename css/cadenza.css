@@ -3683,12 +3683,13 @@ button .label, .button .label, input[type=button] .label, input[type=submit] .la
 .inline.button-group {
   display: inline-block;
   margin-right: 8px;
+  margin-bottom: 0;
 }
-/* line 92, ../scss/modules/_buttons.scss */
+/* line 93, ../scss/modules/_buttons.scss */
 .vertical.button-group {
   display: inline-block;
 }
-/* line 95, ../scss/modules/_buttons.scss */
+/* line 96, ../scss/modules/_buttons.scss */
 .vertical.button-group > button, .vertical.button-group .button, .vertical.button-group input[type=button], .vertical.button-group input[type=submit], .vertical.button-group > label {
   display: block;
   width: 100%;
@@ -3698,31 +3699,31 @@ button .label, .button .label, input[type=button] .label, input[type=submit] .la
   margin-top: -1px;
   float: none;
 }
-/* line 104, ../scss/modules/_buttons.scss */
+/* line 105, ../scss/modules/_buttons.scss */
 .vertical.button-group > button:first-of-type, .vertical.button-group .button:first-of-type, .vertical.button-group input[type=button]:first-of-type, .vertical.button-group input[type=submit]:first-of-type, .vertical.button-group > label:first-of-type {
   margin-left: 0;
   margin-top: inherit;
 }
-/* line 120, ../scss/modules/_buttons.scss */
+/* line 121, ../scss/modules/_buttons.scss */
 .vertical.block.button-group {
   display: block;
   margin-bottom: 1rem;
 }
-/* line 127, ../scss/modules/_buttons.scss */
+/* line 128, ../scss/modules/_buttons.scss */
 .center.button-group > button, .center.button-group .button, .center.button-group input[type=button], .center.button-group input[type=submit], .center.button-group > label {
   display: inline;
   float: none;
 }
-/* line 141, ../scss/modules/_buttons.scss */
+/* line 142, ../scss/modules/_buttons.scss */
 .button-group:last-child {
   margin-right: 0;
 }
-/* line 147, ../scss/modules/_buttons.scss */
+/* line 148, ../scss/modules/_buttons.scss */
 .button-group > input[type=radio], .button-group > input[type=checkbox] {
   display: none;
 }
 
-/* line 165, ../scss/modules/_buttons.scss */
+/* line 166, ../scss/modules/_buttons.scss */
 .button-group input:checked + label {
   z-index: 2;
 }

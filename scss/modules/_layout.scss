@@ -240,18 +240,17 @@ html {
     $header: 0px,
     $footer: 0px,
     $left-sidebar: 0px,
-    $right-sidebar: 0px,
-    $selector: ''
+    $right-sidebar: 0px
 ) {
-    section, header, footer, aside {
+    > section, > header, > footer, > aside {
         position: relative;
     }
 
-    header, footer {
+    > header, > footer {
         z-index: 3; // Active pages are z-index 2
     }
 
-    aside {
+    > aside {
         height: 100%;
     }
 
@@ -290,7 +289,7 @@ html {
             width: calc(100% - #{$left-sidebar} - #{$right-sidebar});
         }
     } @else {
-        section {
+        > section {
             width: 100%;
         }
     }

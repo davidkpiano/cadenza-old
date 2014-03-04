@@ -10,13 +10,16 @@
 $x: 16px !default;
 $x-rem: 1rem !default;
 
+// Layout Settings
+$container-min-width: false !default;
+$container-max-width: 960px !default;
+
 // Grid Settings
 $grid-column-selector: ".col, [class*=\"col-\"]" !default;
 $grid-row-selector: ".row, [class*=\"row-\"]" !default;
 $grid-columns: 12 !default;
 $grid-rows: 12 !default;
-$grid-padding: $x !default;
-$grid-max-width: 960px !default;
+$grid-content-padding: $x !default;
 $grid-column-gutter: $x !default;
 $grid-row-gutter: $x !default;
 

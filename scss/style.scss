@@ -46,7 +46,7 @@ body {
 #main_view {
     @include layout($right-sidebar: 200px);
 
-    > .layer { @include activate-all(scaleUp); }
+    .container { @include activate-all(scaleUp); }
 }
 
 .rotation-item {
