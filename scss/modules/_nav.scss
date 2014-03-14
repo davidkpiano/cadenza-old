@@ -25,14 +25,8 @@
                 }
 
                 > *, > .badge, > .label {
+                    @extend %inline-block;
                     vertical-align: middle;
-                }
-
-                > .badge, > .label {
-                    &.right {
-                        position: absolute;
-                        right: 0;
-                    }
                 }
             }
 

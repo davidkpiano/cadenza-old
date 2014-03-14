@@ -86,7 +86,7 @@ $type-pre-color: $type-base-color !default;
 $type-pre-scale: 0 !default;
 $type-pre-font-family: monospace;
 $type-code-color: $type-pre-color !default;
-$type-code-scale: 0 !default;
+$type-code-scale: -1 !default;
 $type-code-font-family: $type-pre-font-family;
 
 $type-list-position: outside !default;
@@ -177,7 +177,7 @@ $button-padding-vertical: $form-padding-vertical !default;
 $button-padding-horizontal: $form-padding-horizontal * 2 !default;
 $button-border-width: $form-border-width !default;
 $button-color-light: white !default;
-$button-type-scale: $form-type-scale - 1 !default;
+$button-type-scale: $form-type-scale !default;
 $button-text-transform: uppercase !default;
 $button-radius: $form-radius !default;
 $button-use-radius: $form-use-radius !default;
@@ -261,7 +261,7 @@ $table-cell-border-width: $table-border-width !default;
 
 // Navigation Settings
 $nav-style: normal !default;
-$nav-theme: underline !default;
+$nav-theme: normal !default;
 $nav-ul-padding: 0 !default;
 $nav-li-padding: 0 !default;
 $nav-a-padding: $x-rem / 2 !default;

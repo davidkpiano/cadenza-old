@@ -1,7 +1,8 @@
 
 // Returns foreground (text) color based on background color and lightness threshold
 @function foregroundColor(
-    $color, $darken: 35%, 
+    $color, 
+    $darken: 35%, 
     $threshold: 65%, 
     $color-light: $color-light, 
     $color-dark: $color-dark,

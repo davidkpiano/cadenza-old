@@ -23,6 +23,30 @@
     }
 }
 
+@mixin fixed-width(
+    $default: 100%,
+    $small: false,
+    $medium: false,
+    $large: false
+) {
+    margin-left: auto;
+    margin-right: auto;
+    
+    @include mq(screen) { max-width: $default; }
+
+    @if $small {
+        @include mq(small) { max-width: $small; }
+    }
+
+    @if $medium {
+        @include mq(medium) { max-width: $medium; }
+    }
+
+    @if $large {
+        @include mq(large) { max-width: $large; }
+    }
+}
+
 // TODO:
 // landscape, portrait, retina
 // multiple arguments for sizes

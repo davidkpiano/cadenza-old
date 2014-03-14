@@ -131,24 +131,26 @@ input, button, textarea, select {
 }
 
 /* line 54, ../scss/modules/_layout.scss */
-.inline-block-all > *, .valign-center-all > *, nav.horizontal > ul > li > a > *, .inline-block, body h1.inline, body h2.inline, body h3.inline, body h4.inline, body h5.inline, body h6.inline, body h1.valign-center-all > *, body h2.valign-center-all > *, body h3.valign-center-all > *, body h4.valign-center-all > *, body h5.valign-center-all > *, body h6.valign-center-all > * {
+.inline-block-all > *, .valign-center-all > *, nav.horizontal > ul > li > a > *, .inline-block, body h1.inline, body h2.inline, body h3.inline, body h4.inline, body h5.inline, body h6.inline, body h1.valign-center-all > *, body h2.valign-center-all > *, body h3.valign-center-all > *, body h4.valign-center-all > *, body h5.valign-center-all > *, body h6.valign-center-all > *, nav ul li > a > *, nav.horizontal ul li > a > *, nav.vertical ul li > a > *, nav.vertical.horizontal ul li > a > *, .dropdown ul li > a > *, nav ul li > a > .badge, nav.horizontal ul li > a > .badge, nav.vertical ul li > a > .badge, .dropdown ul li > a > .badge, nav ul li > a > .label, nav.horizontal ul li > a > .label, nav.vertical ul li > a > .label, .dropdown ul li > a > .label {
   display: inline-block;
   width: auto;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
-/* line 60, ../scss/modules/_layout.scss */
+/* line 62, ../scss/modules/_layout.scss */
 .inline-block-all > * {
   vertical-align: top;
 }
 
-/* line 66, ../scss/modules/_layout.scss */
-*, *:before, *:after, header, footer, section, .col, [class*="col-"], .row, [class*="row-"], .layer, .page, form, form input[type], form textarea {
+/* line 68, ../scss/modules/_layout.scss */
+*, *:before, *:after, header, footer, section, .col, [class*="col-"], .row, [class*="row-"], .layer, form, form input[type], body input[type], form textarea, body textarea {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 70, ../scss/modules/_layout.scss */
+/* line 72, ../scss/modules/_layout.scss */
 .valign-center, button.full, .full.button, input.full[type=button], input.full[type=submit], .button-group > label.full, [class*=infix-].infix-left.label, [class*=infix-].infix-left.badge, [class*=infix-].infix-right.label, [class*=infix-].infix-right.badge {
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -158,7 +160,7 @@ input, button, textarea, select {
   transform: translateY(-50%);
 }
 
-/* line 76, ../scss/modules/_layout.scss */
+/* line 78, ../scss/modules/_layout.scss */
 .valign-center-all:before, nav.horizontal > ul > li > a:before {
   content: '';
   height: 100%;
@@ -167,24 +169,24 @@ input, button, textarea, select {
   width: 1em;
   margin-left: -1em;
 }
-/* line 85, ../scss/modules/_layout.scss */
+/* line 87, ../scss/modules/_layout.scss */
 .valign-center-all > *, nav.horizontal > ul > li > a > * {
   vertical-align: middle;
 }
 
-/* line 91, ../scss/modules/_layout.scss */
+/* line 93, ../scss/modules/_layout.scss */
 .valign-bottom {
   position: absolute;
   bottom: 0;
 }
 
-/* line 95, ../scss/modules/_layout.scss */
+/* line 97, ../scss/modules/_layout.scss */
 .halign-center {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 101, ../scss/modules/_layout.scss */
+/* line 103, ../scss/modules/_layout.scss */
 .position-bottom-center {
   position: absolute;
   bottom: 0;
@@ -196,64 +198,64 @@ input, button, textarea, select {
   transform: translateX(-50%);
 }
 
-/* line 105, ../scss/modules/_layout.scss */
-.halign-center, .full, .rotation-item .rotation-img > img, .full-height, .full-height.button-group, .full-height.button-group > button, .full-height.button-group .button, .full-height.button-group input[type=button], .full-height.button-group input[type=submit], .full-height.button-group > label, .full-width, .clearfix, header, footer, section, .col, [class*="col-"], .row, [class*="row-"], .layer, .page, form, nav.horizontal > ul, .button-group {
+/* line 107, ../scss/modules/_layout.scss */
+.halign-center, .full, .rotation-item .rotation-img > img, .full-height, .full-height.button-group, .full-height.button-group > button, .full-height.button-group .button, .full-height.button-group input[type=button], .full-height.button-group input[type=submit], .full-height.button-group > label, .full-width, .clearfix, header, footer, section, .col, [class*="col-"], .row, [class*="row-"], .layer, form, nav.horizontal > ul, .button-group {
   *zoom: 1;
 }
 /* line 38, ../../../Downloads/CodeKit.app/Contents/Resources/engines/compass/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.halign-center:after, .full:after, .rotation-item .rotation-img > img:after, .full-height:after, .full-height.button-group:after, .full-height.button-group > button:after, .full-height.button-group .button:after, .full-height.button-group input[type=button]:after, .full-height.button-group input[type=submit]:after, .full-height.button-group > label:after, .full-width:after, .clearfix:after, header:after, footer:after, section:after, .col:after, [class*="col-"]:after, .row:after, [class*="row-"]:after, .layer:after, .page:after, form:after, nav.horizontal > ul:after, .button-group:after {
+.halign-center:after, .full:after, .rotation-item .rotation-img > img:after, .full-height:after, .full-height.button-group:after, .full-height.button-group > button:after, .full-height.button-group .button:after, .full-height.button-group input[type=button]:after, .full-height.button-group input[type=submit]:after, .full-height.button-group > label:after, .full-width:after, .clearfix:after, header:after, footer:after, section:after, .col:after, [class*="col-"]:after, .row:after, [class*="row-"]:after, .layer:after, form:after, nav.horizontal > ul:after, .button-group:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 109, ../scss/modules/_layout.scss */
+/* line 111, ../scss/modules/_layout.scss */
 .float-left {
   float: left;
 }
 
-/* line 113, ../scss/modules/_layout.scss */
+/* line 115, ../scss/modules/_layout.scss */
 .float-right {
   float: right;
 }
 
-/* line 117, ../scss/modules/_layout.scss */
+/* line 119, ../scss/modules/_layout.scss */
 .full, .rotation-item .rotation-img > img, .full-height, .full-height.button-group, .full-height.button-group > button, .full-height.button-group .button, .full-height.button-group input[type=button], .full-height.button-group input[type=submit], .full-height.button-group > label {
   margin-top: 0;
   margin-bottom: 0;
   height: 100%;
 }
 
-/* line 124, ../scss/modules/_layout.scss */
+/* line 126, ../scss/modules/_layout.scss */
 .full, .rotation-item .rotation-img > img, .full-width {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
 }
 
-/* line 131, ../scss/modules/_layout.scss */
+/* line 133, ../scss/modules/_layout.scss */
 .full, .rotation-item .rotation-img > img {
   display: block;
   position: absolute;
 }
 
-/* line 138, ../scss/modules/_layout.scss */
+/* line 140, ../scss/modules/_layout.scss */
 html {
   height: 100%;
 }
 
-/* line 142, ../scss/modules/_layout.scss */
+/* line 144, ../scss/modules/_layout.scss */
 *, *:before, *:after {
   position: relative;
 }
 
 /* line 5, ../scss/modules/_grid.scss */
-header.content, footer.content, section.content, .content.col, .content[class*="col-"], .content.row, .content[class*="row-"], .content.layer, .content.page, form.content, .content {
+header.content, footer.content, section.content, .content.col, .content[class*="col-"], .content.row, .content[class*="row-"], .content.layer, form.content, .content {
   padding: 16px;
 }
 
 /* line 8, ../scss/modules/_grid.scss */
-header, footer, section, .col, [class*="col-"], .row, [class*="row-"], .layer, .page, form {
+header, footer, section, .col, [class*="col-"], .row, [class*="row-"], .layer, form {
   margin: 0;
   display: block;
   position: relative;
@@ -273,7 +275,7 @@ header, footer, section, .col, [class*="col-"], .row, [class*="row-"], .layer, .
 }
 
 /* line 30, ../scss/modules/_grid.scss */
-.row, [class*="row-"], .layer, .page, form {
+.row, [class*="row-"], .layer, form {
   width: 100%;
   clear: both;
 }
@@ -3003,18 +3005,37 @@ header, footer, section, .col, [class*="col-"], .row, [class*="row-"], .layer, .
   }
 }
 /* line 3, ../scss/modules/_layers.scss */
-.layer, .page, .layer.scroll, .page.scroll, .scroll {
+.layer, .layer.scroll, .scroll, body > section, body > header, body > footer, body > aside, body > footer > section, body > footer > header, body > footer > footer, body > footer > aside, #main > section, #main > header, #main > footer, #main > aside, #main_view > section, #main_view > header, #main_view > footer, #main_view > aside, .rotation-item .rotation-item-info > section, .rotation-item .rotation-item-info > header, .rotation-item .rotation-item-info > footer, .rotation-item .rotation-item-info > aside {
   overflow: auto;
 }
 
 /* line 7, ../scss/modules/_layers.scss */
-.layer, .page {
+.layer {
   position: absolute;
   height: 100%;
   max-height: 100%;
   top: 0;
   left: 0;
   overflow: hidden;
+  margin: 0;
+}
+
+/* line 21, ../scss/modules/_layers.scss */
+.container {
+  width: 100%;
+  max-width: 960px;
+  min-width: false;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 31, ../scss/modules/_layers.scss */
+.container > .page {
+  position: absolute;
+  min-height: 100%;
+  min-width: 100%;
+  top: 0;
+  left: 0;
   margin: 0;
 }
 
@@ -3028,12 +3049,12 @@ body {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-/* line 78, ../scss/modules/_type.scss */
+/* line 86, ../scss/modules/_type.scss */
 html {
   font-size: 16px;
 }
 
-/* line 82, ../scss/modules/_type.scss */
+/* line 90, ../scss/modules/_type.scss */
 body {
   font-style: normal;
   color: #32393d;
@@ -3045,7 +3066,7 @@ body {
   -o-hyphens: auto;
   hyphens: auto;
 }
-/* line 22, ../scss/modules/_type.scss */
+/* line 28, ../scss/modules/_type.scss */
 body h1, body h2, body h3, body h4, body h5, body h6 {
   line-height: 1.2;
   font-weight: 300;
@@ -3055,209 +3076,214 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-/* line 31, ../scss/modules/_type.scss */
+/* line 37, ../scss/modules/_type.scss */
 body h1.subheader, body h2.subheader, body h3.subheader, body h4.subheader, body h5.subheader, body h6.subheader {
   color: #546067;
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 1rem;
 }
-/* line 42, ../scss/modules/_type.scss */
-body h1 small, body h1 .small, body h1 small, body h1 form input[type].small, form body h1 input[type].small, body h1 form textarea.small, form body h1 textarea.small, body h2 small, body h2 .small, body h2 small, body h2 form input[type].small, form body h2 input[type].small, body h2 form textarea.small, form body h2 textarea.small, body h3 small, body h3 .small, body h3 small, body h3 form input[type].small, form body h3 input[type].small, body h3 form textarea.small, form body h3 textarea.small, body h4 small, body h4 .small, body h4 small, body h4 form input[type].small, form body h4 input[type].small, body h4 form textarea.small, form body h4 textarea.small, body h5 small, body h5 .small, body h5 small, body h5 form input[type].small, form body h5 input[type].small, body h5 form textarea.small, form body h5 textarea.small, body h6 small, body h6 .small, body h6 small, body h6 form input[type].small, form body h6 input[type].small, body h6 form textarea.small, form body h6 textarea.small {
+/* line 44, ../scss/modules/_type.scss */
+body h1.inline, body h2.inline, body h3.inline, body h4.inline, body h5.inline, body h6.inline {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+/* line 50, ../scss/modules/_type.scss */
+body h1 small, body h1 .small, body h1 small, body h1 form input[type].small, form body h1 input[type].small, body h1 input[type].small, body h1 form textarea.small, form body h1 textarea.small, body h1 textarea.small, body h2 small, body h2 .small, body h2 small, body h2 form input[type].small, form body h2 input[type].small, body h2 input[type].small, body h2 form textarea.small, form body h2 textarea.small, body h2 textarea.small, body h3 small, body h3 .small, body h3 small, body h3 form input[type].small, form body h3 input[type].small, body h3 input[type].small, body h3 form textarea.small, form body h3 textarea.small, body h3 textarea.small, body h4 small, body h4 .small, body h4 small, body h4 form input[type].small, form body h4 input[type].small, body h4 input[type].small, body h4 form textarea.small, form body h4 textarea.small, body h4 textarea.small, body h5 small, body h5 .small, body h5 small, body h5 form input[type].small, form body h5 input[type].small, body h5 input[type].small, body h5 form textarea.small, form body h5 textarea.small, body h5 textarea.small, body h6 small, body h6 .small, body h6 small, body h6 form input[type].small, form body h6 input[type].small, body h6 input[type].small, body h6 form textarea.small, form body h6 textarea.small, body h6 textarea.small {
   font-size: 74.13723%;
   color: gray;
 }
-/* line 47, ../scss/modules/_type.scss */
+/* line 55, ../scss/modules/_type.scss */
 body h1:only-child, body h2:only-child, body h3:only-child, body h4:only-child, body h5:only-child, body h6:only-child {
   margin-bottom: 0;
 }
-/* line 51, ../scss/modules/_type.scss */
+/* line 59, ../scss/modules/_type.scss */
 body h1.valign-center-all > *, body h2.valign-center-all > *, body h3.valign-center-all > *, body h4.valign-center-all > *, body h5.valign-center-all > *, body h6.valign-center-all > * {
   vertical-align: middle;
   margin-top: 0;
   margin-bottom: 0;
 }
-/* line 60, ../scss/modules/_type.scss */
+/* line 68, ../scss/modules/_type.scss */
 body h1 {
   font-size: 33.80875px ;
   font-size: 2.11305rem ;
 }
-/* line 60, ../scss/modules/_type.scss */
+/* line 68, ../scss/modules/_type.scss */
 body h2 {
   font-size: 29.11034px ;
   font-size: 1.8194rem ;
 }
-/* line 60, ../scss/modules/_type.scss */
+/* line 68, ../scss/modules/_type.scss */
 body h3 {
   font-size: 25.06487px ;
   font-size: 1.56655rem ;
 }
-/* line 60, ../scss/modules/_type.scss */
+/* line 68, ../scss/modules/_type.scss */
 body h4 {
   font-size: 21.5816px ;
   font-size: 1.34885rem ;
 }
-/* line 60, ../scss/modules/_type.scss */
+/* line 68, ../scss/modules/_type.scss */
 body h5 {
   font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
-/* line 60, ../scss/modules/_type.scss */
+/* line 68, ../scss/modules/_type.scss */
 body h6 {
   font-size: 16px ;
   font-size: 1rem ;
   text-transform: uppercase;
 }
-/* line 69, ../scss/modules/_type.scss */
+/* line 77, ../scss/modules/_type.scss */
 body hgroup {
   margin-bottom: 1rem;
 }
-/* line 70, ../scss/modules/_type.scss */
+/* line 78, ../scss/modules/_type.scss */
 body hgroup > h1, body hgroup > h2, body hgroup > h3, body hgroup > h4, body hgroup > h5, body hgroup > h6 {
   margin-bottom: 0;
 }
 
-/* line 97, ../scss/modules/_type.scss */
+/* line 105, ../scss/modules/_type.scss */
 p {
   margin-bottom: 1rem;
   line-height: 1.5;
   font-weight: 300;
 }
-/* line 102, ../scss/modules/_type.scss */
+/* line 110, ../scss/modules/_type.scss */
 p.lead {
   font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
 
-/* line 108, ../scss/modules/_type.scss */
+/* line 116, ../scss/modules/_type.scss */
 .strong {
   font-weight: bold;
 }
 
-/* line 111, ../scss/modules/_type.scss */
-.small, small, form input[type].small, form textarea.small {
+/* line 119, ../scss/modules/_type.scss */
+.small, small, form input[type].small, body input[type].small, form textarea.small, body textarea.small {
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
 }
 
-/* line 114, ../scss/modules/_type.scss */
-.large, form input[type].large, form textarea.large {
+/* line 122, ../scss/modules/_type.scss */
+.large, form input[type].large, body input[type].large, form textarea.large, body textarea.large {
   font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
 
-/* line 138, ../scss/modules/_type.scss */
+/* line 146, ../scss/modules/_type.scss */
 ul.clean, nav ul, nav.horizontal ul, nav.vertical ul, nav.vertical.horizontal ul, .dropdown ul, ol.clean, dl.clean, .dropdown {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 142, ../scss/modules/_type.scss */
+/* line 150, ../scss/modules/_type.scss */
 ul, ol, dl {
   list-style-position: outside;
   margin-bottom: 1rem;
   padding: 0;
 }
-/* line 150, ../scss/modules/_type.scss */
+/* line 158, ../scss/modules/_type.scss */
 ul.inline, ol.inline, dl.inline {
   margin-left: 0;
 }
-/* line 153, ../scss/modules/_type.scss */
+/* line 161, ../scss/modules/_type.scss */
 ul.inline > li, ol.inline > li, dl.inline > li {
   display: inline-block;
   margin-right: 1rem;
 }
-/* line 161, ../scss/modules/_type.scss */
+/* line 169, ../scss/modules/_type.scss */
 ul ul, ul ol, ul dl, ol ul, ol ol, ol dl, dl ul, dl ol, dl dl {
   margin-bottom: 0;
 }
 
-/* line 166, ../scss/modules/_type.scss */
+/* line 174, ../scss/modules/_type.scss */
 ul {
   margin-left: 1rem;
 }
-/* line 169, ../scss/modules/_type.scss */
+/* line 177, ../scss/modules/_type.scss */
 ul.square {
   list-style-type: square;
 }
-/* line 132, ../scss/modules/_type.scss */
+/* line 140, ../scss/modules/_type.scss */
 ul.square ul, ul.square ol {
   list-style: inherit;
 }
-/* line 170, ../scss/modules/_type.scss */
+/* line 178, ../scss/modules/_type.scss */
 ul.circle {
   list-style-type: circle;
 }
-/* line 132, ../scss/modules/_type.scss */
+/* line 140, ../scss/modules/_type.scss */
 ul.circle ul, ul.circle ol {
   list-style: inherit;
 }
-/* line 171, ../scss/modules/_type.scss */
+/* line 179, ../scss/modules/_type.scss */
 ul.disc {
   list-style-type: disc;
 }
-/* line 132, ../scss/modules/_type.scss */
+/* line 140, ../scss/modules/_type.scss */
 ul.disc ul, ul.disc ol {
   list-style: inherit;
 }
 
-/* line 174, ../scss/modules/_type.scss */
+/* line 182, ../scss/modules/_type.scss */
 ol {
   margin-left: 1.4rem;
 }
 
-/* line 178, ../scss/modules/_type.scss */
+/* line 186, ../scss/modules/_type.scss */
 li {
   list-style-position: outside;
 }
 
-/* line 183, ../scss/modules/_type.scss */
+/* line 191, ../scss/modules/_type.scss */
 dl dt {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-/* line 187, ../scss/modules/_type.scss */
+/* line 195, ../scss/modules/_type.scss */
 dl dd {
   margin-bottom: 0.5rem;
 }
 
-/* line 194, ../scss/modules/_type.scss */
+/* line 202, ../scss/modules/_type.scss */
 ul.inline > li, ol.inline > li, dl.inline > li, .nowrap, nav ul li, nav.horizontal ul li, nav.vertical ul li, nav.vertical.horizontal ul li, .dropdown ul li, .label, .badge {
   white-space: nowrap;
   overflow: hidden;
 }
 
-/* line 204, ../scss/modules/_type.scss */
+/* line 212, ../scss/modules/_type.scss */
 .align-left {
   text-align: left;
 }
 
-/* line 205, ../scss/modules/_type.scss */
+/* line 213, ../scss/modules/_type.scss */
 .align-right {
   text-align: right;
 }
 
-/* line 206, ../scss/modules/_type.scss */
+/* line 214, ../scss/modules/_type.scss */
 .align-center {
   text-align: center;
 }
 
-/* line 207, ../scss/modules/_type.scss */
+/* line 215, ../scss/modules/_type.scss */
 .align-justify {
   text-align: justify;
 }
 
-/* line 210, ../scss/modules/_type.scss */
+/* line 218, ../scss/modules/_type.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 211, ../scss/modules/_type.scss */
+/* line 219, ../scss/modules/_type.scss */
 .lowercase {
   text-transform: lowercase;
 }
 
-/* line 214, ../scss/modules/_type.scss */
+/* line 222, ../scss/modules/_type.scss */
 abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var, xmp {
   -webkit-hyphens: none;
   -moz-hyphens: none;
@@ -3266,7 +3292,7 @@ abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp, tt, var,
   hyphens: none;
 }
 
-/* line 219, ../scss/modules/_type.scss */
+/* line 227, ../scss/modules/_type.scss */
 pre {
   white-space: pre;
   color: #32393d;
@@ -3274,14 +3300,14 @@ pre {
   font-size: 1rem ;
   font-family: monospace;
 }
-/* line 225, ../scss/modules/_type.scss */
+/* line 233, ../scss/modules/_type.scss */
 pre code {
   word-wrap: normal;
   white-space: -moz-pre-wrap;
   white-space: pre-wrap;
 }
 
-/* line 232, ../scss/modules/_type.scss */
+/* line 240, ../scss/modules/_type.scss */
 code {
   white-space: pre;
   color: #32393d;
@@ -3290,26 +3316,26 @@ code {
   font-family: monospace;
 }
 
-/* line 240, ../scss/modules/_type.scss */
+/* line 248, ../scss/modules/_type.scss */
 blockquote {
   color: #546067;
   padding: 1rem;
   border-left: 1px solid #546067;
   margin-bottom: 1rem;
 }
-/* line 246, ../scss/modules/_type.scss */
+/* line 254, ../scss/modules/_type.scss */
 blockquote cite {
   display: block;
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
   color: #546067;
 }
-/* line 252, ../scss/modules/_type.scss */
+/* line 260, ../scss/modules/_type.scss */
 blockquote p {
   color: #546067;
 }
 
-/* line 258, ../scss/modules/_type.scss */
+/* line 266, ../scss/modules/_type.scss */
 hr {
   clear: both;
   height: 0;
@@ -3319,7 +3345,7 @@ hr {
   border-width: 1px 0 0;
 }
 
-/* line 268, ../scss/modules/_type.scss */
+/* line 276, ../scss/modules/_type.scss */
 abbr, acronym {
   font-size: 86.10298%;
   text-transform: uppercase;
@@ -3409,37 +3435,32 @@ nav ul li > a, nav.horizontal ul li > a, nav.vertical ul li > a, nav.vertical.ho
 nav ul li > a > *, nav.horizontal ul li > a > *, nav.vertical ul li > a > *, nav.vertical.horizontal ul li > a > *, .dropdown ul li > a > *, nav ul li > a > .badge, nav.vertical ul li > a > .badge, .dropdown ul li > a > .badge, nav ul li > a > .label, nav.vertical ul li > a > .label, .dropdown ul li > a > .label {
   vertical-align: middle;
 }
-/* line 32, ../scss/modules/_nav.scss */
-nav ul li > a > .badge.right, .dropdown ul li > a > .badge.right, nav ul li > a > .label.right, .dropdown ul li > a > .label.right {
-  position: absolute;
-  right: 0;
-}
-/* line 39, ../scss/modules/_nav.scss */
+/* line 33, ../scss/modules/_nav.scss */
 nav ul li ul, nav.horizontal ul li ul, nav.vertical ul li ul, nav.vertical.horizontal ul li ul, .dropdown ul li ul, nav ul li .submenu, nav.vertical ul li .submenu, .dropdown ul li .submenu {
   display: none;
 }
-/* line 44, ../scss/modules/_nav.scss */
+/* line 38, ../scss/modules/_nav.scss */
 nav ul li:hover > ul, nav.vertical ul li:hover > ul, .dropdown ul li:hover > ul, nav ul li:hover > .submenu, .dropdown ul li:hover > .submenu, nav ul li.active > ul, nav.vertical ul li.active > ul, .dropdown ul li.active > ul, nav ul li.active > .submenu, .dropdown ul li.active > .submenu {
   display: block;
 }
-/* line 49, ../scss/modules/_nav.scss */
+/* line 43, ../scss/modules/_nav.scss */
 nav ul li.separator, nav.vertical ul li.separator, .dropdown ul li.separator, nav ul li.hr, nav.vertical ul li.hr, .dropdown ul li.hr {
   border-bottom-width: 1px;
   border-bottom-style: solid;
   margin: 4px 0;
 }
 
-/* line 59, ../scss/modules/_nav.scss */
+/* line 53, ../scss/modules/_nav.scss */
 nav.horizontal > ul {
   height: 100%;
   margin-bottom: 0;
 }
-/* line 64, ../scss/modules/_nav.scss */
+/* line 58, ../scss/modules/_nav.scss */
 nav.horizontal > ul > li {
   float: left;
   height: 100%;
 }
-/* line 68, ../scss/modules/_nav.scss */
+/* line 62, ../scss/modules/_nav.scss */
 nav.horizontal > ul > li > a {
   height: 100%;
 }
@@ -3614,8 +3635,8 @@ button, .button, input[type=button], input[type=submit], .button-group > label {
   -ms-border-radius: 3px;
   -o-border-radius: 3px;
   border-radius: 3px;
-  font-size: 11.86196px ;
-  font-size: 0.74137rem ;
+  font-size: 13.77648px ;
+  font-size: 0.86103rem ;
   text-align: center;
   text-transform: none;
 }
@@ -3624,20 +3645,20 @@ button, .button, input[type=button], input[type=submit], .button-group > label, 
   text-decoration: none;
 }
 /* line 27, ../scss/modules/_buttons.scss */
-small.button, form input[type].small.button, form input[type].small[type=button], form input[type].small[type=submit], form textarea.small.button, button.small, .small.button, input.small[type=button], input.small[type=submit], .button-group > label.small {
+small.button, form input[type].small.button, body input[type].small.button, form input[type].small[type=button], body input[type].small[type=button], form input[type].small[type=submit], body input[type].small[type=submit], form textarea.small.button, body textarea.small.button, button.small, .small.button, input.small[type=button], input.small[type=submit], .button-group > label.small {
   padding: 0.25rem 0.5rem;
-  font-size: 10.2135px ;
-  font-size: 0.63834rem ;
+  font-size: 11.86196px ;
+  font-size: 0.74137rem ;
 }
 /* line 32, ../scss/modules/_buttons.scss */
-form input[type].large.button, form input[type].large[type=button], form input[type].large[type=submit], form textarea.large.button, button.large, .large.button, input.large[type=button], input.large[type=submit], .button-group > label.large {
-  font-size: 13.77648px ;
-  font-size: 0.86103rem ;
+form input[type].large.button, body input[type].large.button, form input[type].large[type=button], body input[type].large[type=button], form input[type].large[type=submit], body input[type].large[type=submit], form textarea.large.button, body textarea.large.button, button.large, .large.button, input.large[type=button], input.large[type=submit], .button-group > label.large {
+  font-size: 16px ;
+  font-size: 1rem ;
 }
 /* line 36, ../scss/modules/_buttons.scss */
 button.huge, .huge.button, input.huge[type=button], input.huge[type=submit], .button-group > label.huge {
-  font-size: 16px ;
-  font-size: 1rem ;
+  font-size: 18.5824px ;
+  font-size: 1.1614rem ;
 }
 /* line 40, ../scss/modules/_buttons.scss */
 button.left, .left.button, input.left[type=button], input.left[type=submit], .button-group > label.left {
@@ -3787,7 +3808,7 @@ button .label, .button .label, input[type=button] .label, input[type=submit] .la
 }
 
 /* line 2, ../scss/modules/_forms.scss */
-form input[type], form textarea {
+form input[type], body input[type], form textarea, body textarea {
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
   padding: 0.5rem 0.5rem;
@@ -3802,32 +3823,32 @@ form input[type], form textarea {
   border-radius: 3px;
 }
 /* line 15, ../scss/modules/_forms.scss */
-form input[type].full, form textarea.full {
+form input[type].full, body input[type].full, form textarea.full, body textarea.full {
   display: block;
   height: 100%;
   width: 100%;
 }
 /* line 30, ../scss/modules/_forms.scss */
-form textarea {
+form textarea, body textarea {
   height: 5rem;
   resize: vertical;
 }
 /* line 35, ../scss/modules/_forms.scss */
-form label {
+form label, body label {
   display: block;
   margin-bottom: 8px;
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
 }
 /* line 43, ../scss/modules/_forms.scss */
-form .select {
+form .select, body .select {
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
   background: gray;
   border: 1px solid #676767;
 }
 /* line 48, ../scss/modules/_forms.scss */
-form .select:after {
+form .select:after, body .select:after {
   content: "\25BE";
   color: white;
   display: block;
@@ -3841,7 +3862,7 @@ form .select:after {
   background-color: #676767;
 }
 /* line 62, ../scss/modules/_forms.scss */
-form .select > select {
+form .select > select, body .select > select {
   -webkit-appearance: none;
   color: white;
   background: transparent;
@@ -4830,31 +4851,31 @@ nav h1, nav h2, nav h3, nav h4, nav h5, nav h6 {
   color: auto;
 }
 
-/* line 245, ../scss/modules/_layout.scss */
+/* line 247, ../scss/modules/_layout.scss */
 body > section, body > header, body > footer, body > aside {
   position: relative;
 }
-/* line 249, ../scss/modules/_layout.scss */
+/* line 252, ../scss/modules/_layout.scss */
 body > header, body > footer {
   z-index: 3;
 }
-/* line 253, ../scss/modules/_layout.scss */
+/* line 256, ../scss/modules/_layout.scss */
 body > aside {
   height: 100%;
 }
-/* line 258, ../scss/modules/_layout.scss */
+/* line 261, ../scss/modules/_layout.scss */
 body > header {
   height: 67px;
 }
-/* line 262, ../scss/modules/_layout.scss */
+/* line 265, ../scss/modules/_layout.scss */
 body > footer {
   height: 90px;
 }
-/* line 266, ../scss/modules/_layout.scss */
+/* line 269, ../scss/modules/_layout.scss */
 body > section {
   height: calc(100% - 67px - 90px);
 }
-/* line 292, ../scss/modules/_layout.scss */
+/* line 295, ../scss/modules/_layout.scss */
 body > section {
   width: 100%;
 }
@@ -4862,101 +4883,101 @@ body > section {
 body > header {
   border-bottom: 2px solid #efefef;
 }
-/* line 245, ../scss/modules/_layout.scss */
+/* line 247, ../scss/modules/_layout.scss */
 body > footer > section, body > footer > header, body > footer > footer, body > footer > aside {
   position: relative;
 }
-/* line 249, ../scss/modules/_layout.scss */
+/* line 252, ../scss/modules/_layout.scss */
 body > footer > header, body > footer > footer {
   z-index: 3;
 }
-/* line 253, ../scss/modules/_layout.scss */
+/* line 256, ../scss/modules/_layout.scss */
 body > footer > aside {
   height: 100%;
 }
-/* line 270, ../scss/modules/_layout.scss */
+/* line 273, ../scss/modules/_layout.scss */
 body > footer > section {
   height: 100%;
 }
-/* line 276, ../scss/modules/_layout.scss */
+/* line 279, ../scss/modules/_layout.scss */
 body > footer > aside, body > footer > section {
   float: left;
 }
-/* line 280, ../scss/modules/_layout.scss */
+/* line 283, ../scss/modules/_layout.scss */
 body > footer > aside {
   width: 220px;
 }
-/* line 284, ../scss/modules/_layout.scss */
+/* line 287, ../scss/modules/_layout.scss */
 body > footer > section + aside {
   width: 220px;
 }
-/* line 288, ../scss/modules/_layout.scss */
+/* line 291, ../scss/modules/_layout.scss */
 body > footer > section {
   width: calc(100% - 220px - 220px);
 }
 
-/* line 245, ../scss/modules/_layout.scss */
+/* line 247, ../scss/modules/_layout.scss */
 #main > section, #main > header, #main > footer, #main > aside {
   position: relative;
 }
-/* line 249, ../scss/modules/_layout.scss */
+/* line 252, ../scss/modules/_layout.scss */
 #main > header, #main > footer {
   z-index: 3;
 }
-/* line 253, ../scss/modules/_layout.scss */
+/* line 256, ../scss/modules/_layout.scss */
 #main > aside {
   height: 100%;
 }
-/* line 270, ../scss/modules/_layout.scss */
+/* line 273, ../scss/modules/_layout.scss */
 #main > section {
   height: 100%;
 }
-/* line 276, ../scss/modules/_layout.scss */
+/* line 279, ../scss/modules/_layout.scss */
 #main > aside, #main > section {
   float: left;
 }
-/* line 280, ../scss/modules/_layout.scss */
+/* line 283, ../scss/modules/_layout.scss */
 #main > aside {
   width: 200px;
 }
-/* line 284, ../scss/modules/_layout.scss */
+/* line 287, ../scss/modules/_layout.scss */
 #main > section + aside {
   width: 0px;
 }
-/* line 288, ../scss/modules/_layout.scss */
+/* line 291, ../scss/modules/_layout.scss */
 #main > section {
   width: calc(100% - 200px - 0px);
 }
 
-/* line 245, ../scss/modules/_layout.scss */
+/* line 247, ../scss/modules/_layout.scss */
 #main_view > section, #main_view > header, #main_view > footer, #main_view > aside {
   position: relative;
 }
-/* line 249, ../scss/modules/_layout.scss */
+/* line 252, ../scss/modules/_layout.scss */
 #main_view > header, #main_view > footer {
   z-index: 3;
 }
-/* line 253, ../scss/modules/_layout.scss */
+/* line 256, ../scss/modules/_layout.scss */
 #main_view > aside {
   height: 100%;
 }
-/* line 270, ../scss/modules/_layout.scss */
+/* line 273, ../scss/modules/_layout.scss */
 #main_view > section {
   height: 100%;
 }
-/* line 276, ../scss/modules/_layout.scss */
+/* line 279, ../scss/modules/_layout.scss */
 #main_view > aside, #main_view > section {
   float: left;
 }
-/* line 280, ../scss/modules/_layout.scss */
+/* line 283, ../scss/modules/_layout.scss */
 #main_view > aside {
   width: 0px;
 }
-/* line 284, ../scss/modules/_layout.scss */
+/* line 287, ../scss/modules/_layout.scss */
 #main_view > section + aside {
   width: 200px;
 }
-/* line 288, ../scss/modules/_layout.scss */
+/* line 291, ../scss/modules/_layout.scss */
 #main_view > section {
   width: calc(100% - 0px - 200px);
 }
@@ -4984,35 +5005,35 @@ body > footer > section {
 .rotation-item .rotation-item-info {
   margin-top: 4px;
 }
-/* line 245, ../scss/modules/_layout.scss */
+/* line 247, ../scss/modules/_layout.scss */
 .rotation-item .rotation-item-info > section, .rotation-item .rotation-item-info > header, .rotation-item .rotation-item-info > footer, .rotation-item .rotation-item-info > aside {
   position: relative;
 }
-/* line 249, ../scss/modules/_layout.scss */
+/* line 252, ../scss/modules/_layout.scss */
 .rotation-item .rotation-item-info > header, .rotation-item .rotation-item-info > footer {
   z-index: 3;
 }
-/* line 253, ../scss/modules/_layout.scss */
+/* line 256, ../scss/modules/_layout.scss */
 .rotation-item .rotation-item-info > aside {
   height: 100%;
 }
-/* line 270, ../scss/modules/_layout.scss */
+/* line 273, ../scss/modules/_layout.scss */
 .rotation-item .rotation-item-info > section {
   height: 100%;
 }
-/* line 276, ../scss/modules/_layout.scss */
+/* line 279, ../scss/modules/_layout.scss */
 .rotation-item .rotation-item-info > aside, .rotation-item .rotation-item-info > section {
   float: left;
 }
-/* line 280, ../scss/modules/_layout.scss */
+/* line 283, ../scss/modules/_layout.scss */
 .rotation-item .rotation-item-info > aside {
   width: 0px;
 }
-/* line 284, ../scss/modules/_layout.scss */
+/* line 287, ../scss/modules/_layout.scss */
 .rotation-item .rotation-item-info > section + aside {
   width: 30px;
 }
-/* line 288, ../scss/modules/_layout.scss */
+/* line 291, ../scss/modules/_layout.scss */
 .rotation-item .rotation-item-info > section {
   width: calc(100% - 0px - 30px);
 }

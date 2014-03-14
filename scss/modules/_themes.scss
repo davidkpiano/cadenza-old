@@ -51,6 +51,23 @@
 .color-light { @extend %color-light; }
 .color-dark { @extend %color-dark; }
 
+%border {
+    border-style: solid;
+    border-width: $form-border-width;
+    border-color: $color-gray;
+}
+
+%border-primary { @extend %border; border-color: $color-primary; }
+%border-secondary { @extend %border; border-color: $color-secondary; }
+%border-light { @extend %border; border-color: $color-light; }
+%border-dark { @extend %border; border-color: $color-dark; }
+
+.border { @extend %border; }
+.border-primary { @extend %border-primary; }
+.border-secondary { @extend %border-secondary; }
+.border-light { @extend %border-light; }
+.border-dark { @extend %border-dark; }
+
 @mixin button-colors(
     $color: $color-primary,
     $color-text: auto,

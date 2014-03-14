@@ -79,3 +79,7 @@ form {
     @extend %row;
     @include form();
 }
+
+body {
+    @include form();
+}

@@ -14,6 +14,12 @@
     font-family: $type-secondary-font-family;
 }
 
+%overflow-ellipsis {
+    @extend %nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 @mixin typeScaleRelative($exponent: 1, $ratio: $type-ratio) {
     font-size: percentage(pow($ratio, $exponent));
 }
@@ -37,6 +43,8 @@
 
         &.inline {
             @extend %inline-block;
+            margin-bottom: 0;
+            margin-top: 0;
         }
 
         small, .small {

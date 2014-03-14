@@ -1,0 +1,14 @@
+$color-primary: #DC3522;
+$color-secondary: #374140;
+$color-dark: #1E1E20;
+
+@import 'cadenza';
+
+body {
+    @include layout($left-sidebar: 250px);
+}
+
+#components {
+    @include activate-all(fade);
+    > .page { @extend %content; }
+}

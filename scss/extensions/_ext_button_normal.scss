@@ -14,6 +14,13 @@
     &:active {
         @include button-colors($_color-active, $color-border: darken($_color-active, 5%));
     }
+
+    &.reveal {
+        @include button-colors(transparent, $color-text: false);
+
+        &:hover { @include button-colors($_color-normal, $color-border: darken($_color-normal, 5%)); }
+        &:active { @include button-colors($_color-hover, $color-border: darken($_color-hover, 5%)); }
+    }
 }
 
 %ext-button-normal {
@@ -30,7 +37,7 @@
 
     &.link {
         @include button-colors(
-            $color-text: inherit,
+            $color-text: false,
             $color-background: transparent,
             $color-border: transparent
         );

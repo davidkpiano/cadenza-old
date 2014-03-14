@@ -63,7 +63,8 @@
 
 @mixin columnsPosition($position) {
     @if $position == left {
-        clear: right;
+        // Might be unnecessary
+        float: left;
     } @else if $position == right {
         float: right;
         // clear: left;

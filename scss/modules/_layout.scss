@@ -54,6 +54,8 @@
 %inline-block {
     display: inline-block;
     width: auto;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 %inline-block-all {
@@ -243,6 +245,7 @@ html {
     $right-sidebar: 0px
 ) {
     > section, > header, > footer, > aside {
+        @extend %scroll;
         position: relative;
     }
 
@@ -295,8 +298,58 @@ html {
     }
 }
 
+@mixin header-fixed($height: false) {
+    @if $height {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        z-index: 2;
+        height: $height;
+        overflow: hidden;
+
+        + * {
+            margin-top: $height;
+            height: calc(100% - #{$height});
+        }
+    }
+}
+
+@mixin inline-layout(
+    $left: 0px,
+    $middle: 0px,
+    $right: 0px
+) {
+    @if $left == fill {
+        > *:first-child {
+            width: calc(100% - (#{$middle} + #{$right}));
+        }
+        *:first-child + * { width: $middle; }
+        *:last-child { width: $right; }
+    } @else if $middle == fill {
+        *:first-child { width: $left; }
+        > *:first-child + * {
+            width: calc(100% - (#{$left} + #{$right}));
+        }
+        *:last-child { width: $right; }
+    } @else if $right == fill {
+        *:first-child { width: $left; }
+        *:first-child + * { width: $middle; }
+        > *:last-child {
+            width: calc(100% - (#{$left} + #{$middle}));
+        }
+    } @else {
+        *:first-child { width: $left; }
+        *:first-child + * { width: $middle; }
+        *:last-child { width: $right; }
+    }
+}
+
 header, footer, section {
     @extend %grid;
+}
+
+.block {
+    @extend %block;
 }
 
 .inline-block {
