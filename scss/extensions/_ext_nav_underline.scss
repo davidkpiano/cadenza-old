@@ -43,7 +43,7 @@ $ext-nav-underline-color-inactive: $color-gray !default;
                 border-bottom-color: transparent;
 
                 &:hover {
-                    // border-bottom-color: mix($color, $color-inactive, 50%);
+                    border-bottom-color: $color;
                 }
 
                 &.active {
@@ -58,4 +58,9 @@ $ext-nav-underline-color-inactive: $color-gray !default;
 
 %theme-nav-underline {
     @include ext-nav-underline-colors();
+
+    &.primary { @include ext-nav-underline-colors($color-primary); }
+    &.secondary { @include ext-nav-underline-colors($color-secondary); }
+    &.light { @include ext-nav-underline-colors($color-light); }
+    &.dark { @include ext-nav-underline-colors($color-dark); }
 }

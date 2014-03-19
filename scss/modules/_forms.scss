@@ -38,6 +38,12 @@
         @include typeScale($field-label-type-scale);
     }
 
+    input[type=checkbox], input[type=radio] {
+        + label {
+            @extend %inline-block;
+        }
+    }
+
     // Custom select styling
     // TEMPORARY! TODO: move to another module
     .select {

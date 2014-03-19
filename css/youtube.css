@@ -158,7 +158,7 @@ input, button, textarea, select {
 }
 
 /* line 54, ../scss/modules/_layout.scss */
-.inline-block-all > *, .valign-center-all > *, nav.horizontal > ul > li > a > *, .inline-block, body h1.inline, body h2.inline, body h3.inline, body h4.inline, body h5.inline, body h6.inline, body h1.valign-center-all > *, body h2.valign-center-all > *, body h3.valign-center-all > *, body h4.valign-center-all > *, body h5.valign-center-all > *, body h6.valign-center-all > *, nav ul li > a > *, nav.vertical ul li > a > *, .dropdown ul li > a > *, nav ul li > a > .badge, nav.vertical ul li > a > .badge, .dropdown ul li > a > .badge, nav ul li > a > .label, nav.vertical ul li > a > .label, .dropdown ul li > a > .label {
+.inline-block-all > *, .valign-center-all > *, nav.horizontal > ul > li > a > *, .inline-block, body h1.inline, body h2.inline, body h3.inline, body h4.inline, body h5.inline, body h6.inline, body h1.valign-center-all > *, body h2.valign-center-all > *, body h3.valign-center-all > *, body h4.valign-center-all > *, body h5.valign-center-all > *, body h6.valign-center-all > *, nav ul li > a > *, nav.vertical ul li > a > *, .dropdown ul li > a > *, nav ul li > a > .badge, nav.vertical ul li > a > .badge, .dropdown ul li > a > .badge, nav ul li > a > .label, nav.vertical ul li > a > .label, .dropdown ul li > a > .label, form input[type=checkbox] + label, body input[type=checkbox] + label, form input[type=radio] + label, body input[type=radio] + label {
   display: inline-block;
   width: auto;
   margin-top: 0;
@@ -3837,14 +3837,14 @@ form label, body label {
   font-size: 11.19339px ;
   font-size: 0.86103rem ;
 }
-/* line 43, ../scss/modules/_forms.scss */
+/* line 49, ../scss/modules/_forms.scss */
 form .select, body .select {
   font-size: 11.19339px ;
   font-size: 0.86103rem ;
   background: #f0f0f0;
   border: 1px solid #d6d6d6;
 }
-/* line 48, ../scss/modules/_forms.scss */
+/* line 54, ../scss/modules/_forms.scss */
 form .select:after, body .select:after {
   content: "\25BE";
   color: white;
@@ -3858,7 +3858,7 @@ form .select:after, body .select:after {
   padding: 0.5rem;
   background-color: #d6d6d6;
 }
-/* line 62, ../scss/modules/_forms.scss */
+/* line 68, ../scss/modules/_forms.scss */
 form .select > select, body .select > select {
   -webkit-appearance: none;
   color: white;
@@ -4067,9 +4067,10 @@ fieldset {
 }
 /* line 9, ../scss/modules/_fieldsets.scss */
 fieldset legend {
+  padding: 0.5rem 0.5rem;
   margin-bottom: 0.5rem;
 }
-/* line 13, ../scss/modules/_fieldsets.scss */
+/* line 14, ../scss/modules/_fieldsets.scss */
 fieldset .field {
   height: auto;
   padding: 0.5rem 0.5rem;
