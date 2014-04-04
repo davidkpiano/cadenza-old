@@ -1,0 +1,40 @@
+// 
+// Grid Components
+// ===============
+
+// Shared Grid Components
+%grid {
+	@include _grid();
+}
+
+// Horizontal Grid Components
+%column {
+    @include _column();
+}
+
+@each $mq in $grid-column-mqs {
+	@include mq($mq) {
+		$suffix: -#{$mq};
+		@if $mq == 'all' { $suffix: ''; }
+
+		%column-#{$mq} { @include _column(); }
+
+		@for $i from 0 through $grid-columns {
+			%column-#{$i}#{$suffix}, %col-#{$i}#{$suffix} {
+				@extend %column-#{$mq};
+				@include column($i);
+			}
+		}
+	}
+}
+
+.column-2-small {
+	@extend %column-2-small;
+}
+
+// Vertical Grid Components
+%row {
+    @extend %grid;
+    width: 100%;
+    clear: both;
+}

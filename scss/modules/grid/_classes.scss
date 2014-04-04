@@ -1,0 +1,14 @@
+//
+// Grid Classes
+// ============
+
+@each $mq in $grid-column-mqs {
+	$suffix: -#{$mq};
+	@if $mq == 'all' { $suffix: ''; }
+
+	@for $i from 0 through $grid-columns {
+		.col-#{$i}#{$suffix}, .column-#{$i}#{$suffix} {
+			@extend %column-#{$i}#{$suffix};
+		}
+	}
+}

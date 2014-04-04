@@ -1,0 +1,110 @@
+//
+// Grid Mixins and Functions
+// =========================
+
+@function column-width($columns) {
+	// if $columns is an int, calculate from $grid-columns
+	@if round($columns) == $columns and unit($columns) == '' {
+		@return percentage($columns / $grid-columns);
+	} @else if index(('%', 'px', 'em', 'rem'), unit($columns)) {
+		@return $columns;
+	} @else {
+		@return percentage($columns);
+	}
+}
+
+// Grid Component Mixin
+// 
+// Defines a grid element in the grid system.
+@mixin _grid() {
+	@include box-sizing(border-box);
+	@include pie-clearfix;
+
+	margin: 0;
+	display: block;
+	position: relative;
+}
+
+// Column Component Mixin
+// 
+// Defines a column in the grid system.
+// @param (bool) $external: whether this mixin is being used outside of Cadenza
+@mixin _column() {
+	@include _grid;
+	float: left;
+	clear: none;
+	height: 100%;
+}
+
+// Row Component Mixin
+// 
+// Defines a row in the grid system
+// @param (bool) $external: whether this mixin is being used outside of Cadenza
+@mixin _row() {
+	@include _grid;
+	width: 100%;
+	clear: both;
+}
+
+// Column Mixin
+// 
+// Generates a column with the given width
+// @param (int) $columns
+// @param (str) $media
+// @param (int) $offset
+// @param (str) $position
+@mixin column(
+	$columns, 
+	$media: false, 
+	$offset: false, 
+	$position: false
+) {
+	@include mq($media) {	
+		width: column-width($columns);
+	}
+}
+
+// Column Layout Mixin
+// 
+// Specifies the width of each respective child element
+// @param (list) $widths: either a 1D or 2D list
+@mixin column-layout(
+	$column-widths,
+	$media: false
+) {
+	$fill-selector: false;
+	$total-width: 0px;
+
+	@include mq($media) {
+		@for $i from 1 through length($column-widths) {
+			$column-width: nth($column-widths, $i);
+			$width: nth($column-width, 1);
+			$selector: '>:nth-child(#{$i})';
+
+			@if length($column-width) == 2 {
+				$width: nth($column-width, 2);
+				$selector: nth($column-width, 1);
+			}
+
+			@if $width == 'fill' {
+				$fill-selector: $selector;
+			} @else {
+				$total-width: $total-width + ' + ' + column-width($width);
+
+				#{$selector} {
+					width: column-width($width);
+				}
+			}
+		}
+
+		@if $fill-selector {
+			#{$fill-selector} {
+				width: calc(100% - (#{$total-width}));
+			}
+		}
+	}
+}
+
+body {
+
+}
