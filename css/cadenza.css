@@ -3874,6 +3874,48 @@ hgroup > h1, .hgroup > h1, hgroup > h2, .hgroup > h2, hgroup > h3, .hgroup > h3,
   margin-bottom: 0;
 }
 
+/* line 80, ../scss/modules/type/_components.scss */
+h1, .h1 {
+  font-size: 16px ;
+  font-size: 1rem ;
+}
+
+/* line 80, ../scss/modules/type/_components.scss */
+h2, .h2 {
+  font-size: 18.5824px ;
+  font-size: 1.1614rem ;
+}
+
+/* line 80, ../scss/modules/type/_components.scss */
+h3, .h3 {
+  font-size: 21.5816px ;
+  font-size: 1.34885rem ;
+}
+
+/* line 80, ../scss/modules/type/_components.scss */
+h4, .h4 {
+  font-size: 25.06487px ;
+  font-size: 1.56655rem ;
+}
+
+/* line 80, ../scss/modules/type/_components.scss */
+h3, .h3 {
+  font-size: 29.11034px ;
+  font-size: 1.8194rem ;
+}
+
+/* line 80, ../scss/modules/type/_components.scss */
+h2, .h2 {
+  font-size: 33.80875px ;
+  font-size: 2.11305rem ;
+}
+
+/* line 80, ../scss/modules/type/_components.scss */
+h1, .h1 {
+  font-size: 39.26548px ;
+  font-size: 2.45409rem ;
+}
+
 /* line 87, ../scss/modules/type/_components.scss */
 body {
   font-style: normal;
@@ -3955,6 +3997,28 @@ mark, .mark {
   vertical-align: middle;
 }
 
+/* line 171, ../scss/modules/type/_components.scss */
+pre, .pre {
+  white-space: pre;
+  font-size: 16px ;
+  font-size: 1rem ;
+  font-family: monospace;
+}
+/* line 176, ../scss/modules/type/_components.scss */
+pre code, .pre code, pre .code, .pre .code {
+  word-wrap: normal;
+  white-space: -moz-pre-wrap;
+  white-space: pre-wrap;
+}
+
+/* line 183, ../scss/modules/type/_components.scss */
+pre code, pre .code, .pre code, .pre .code, code, .code {
+  white-space: pre;
+  font-size: 13.77648px ;
+  font-size: 0.86103rem ;
+  font-family: monospace;
+}
+
 /* line 12, ../scss/modules/type/_themes.scss */
 body h6 {
   text-transform: uppercase;
@@ -3967,6 +4031,14 @@ body h1, body h2, body h3, body h4, body h5, body h6 {
 /* line 20, ../scss/modules/type/_themes.scss */
 body h1.sub, body h1.subheading, body h1.h1.sub, body h1.h1.subheading, body h1.h2.sub, body h1.h2.subheading, body h1.h3.sub, body h1.h3.subheading, body h1.h4.sub, body h1.h4.subheading, body h1 > h1.small, body .h1 > h1.small, body h2 > h1.small, body .h2 > h1.small, body h3 > h1.small, body .h3 > h1.small, body h4 > h1.small, body .h4 > h1.small, body h2.h1.sub, body h2.h1.subheading, body h2.sub, body h2.subheading, body h2.h2.sub, body h2.h2.subheading, body h2.h3.sub, body h2.h3.subheading, body h2.h4.sub, body h2.h4.subheading, body h1 > h2.small, body .h1 > h2.small, body h2 > h2.small, body .h2 > h2.small, body h3 > h2.small, body .h3 > h2.small, body h4 > h2.small, body .h4 > h2.small, body h3.h1.sub, body h3.h1.subheading, body h3.h2.sub, body h3.h2.subheading, body h3.sub, body h3.subheading, body h3.h3.sub, body h3.h3.subheading, body h3.h4.sub, body h3.h4.subheading, body h1 > h3.small, body .h1 > h3.small, body h2 > h3.small, body .h2 > h3.small, body h3 > h3.small, body .h3 > h3.small, body h4 > h3.small, body .h4 > h3.small, body h4.h1.sub, body h4.h1.subheading, body h4.h2.sub, body h4.h2.subheading, body h4.h3.sub, body h4.h3.subheading, body h4.sub, body h4.subheading, body h4.h4.sub, body h4.h4.subheading, body h1 > h4.small, body .h1 > h4.small, body h2 > h4.small, body .h2 > h4.small, body h3 > h4.small, body .h3 > h4.small, body h4 > h4.small, body .h4 > h4.small, body h5.h1.sub, body h5.h1.subheading, body h5.h2.sub, body h5.h2.subheading, body h5.h3.sub, body h5.h3.subheading, body h5.h4.sub, body h5.h4.subheading, body h1 > h5.small, body .h1 > h5.small, body h2 > h5.small, body .h2 > h5.small, body h3 > h5.small, body .h3 > h5.small, body h4 > h5.small, body .h4 > h5.small, body h6.h1.sub, body h6.h1.subheading, body h6.h2.sub, body h6.h2.subheading, body h6.h3.sub, body h6.h3.subheading, body h6.h4.sub, body h6.h4.subheading, body h1 > h6.small, body .h1 > h6.small, body h2 > h6.small, body .h2 > h6.small, body h3 > h6.small, body .h3 > h6.small, body h4 > h6.small, body .h4 > h6.small {
   color: #9a9a9a;
+}
+/* line 45, ../scss/modules/type/_themes.scss */
+body pre {
+  color: #222222;
+}
+/* line 49, ../scss/modules/type/_themes.scss */
+body code {
+  color: #222222;
 }
 /* line 24, ../scss/modules/_anchors.scss */
 a {

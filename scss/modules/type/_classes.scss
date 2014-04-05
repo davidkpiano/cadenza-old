@@ -63,3 +63,15 @@ em, .italics { @extend %em; }
 .nowrap { @extend %nowrap; }
 
 mark, .mark { @extend %mark; }
+
+// Preformatted Text
+// -----------------
+body { @include pre-style(); }
+
+pre, .pre {
+	@extend %pre;
+
+	code, .code { @extend %code; } // %pre > %code
+}
+
+code, .code { @extend %code; }

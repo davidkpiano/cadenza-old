@@ -73,14 +73,14 @@
 	}
 }
 
-// @each $type-heading in $type-headings {
-// 	$heading-selector: nth($type-heading, 1);
-// 	$heading-scale: nth($type-heading, 2);
+@each $type-heading in $type-headings {
+	$heading-selector: nth($type-heading, 1);
+	$heading-scale: nth($type-heading, 2);
 
-// 	%#{$heading-selector} {
-// 		@include typeScale(6 - $heading-scale);
-// 	}
-// }
+	%#{$heading-selector} {
+		@include typeScale(6 - $heading-scale);
+	}
+}
 
 // Body Copy
 // ---------
@@ -165,3 +165,27 @@
 		vertical-align: middle;
 	}
 }
+
+// Preformatted Text
+// -----------------
+%pre {
+	white-space: pre;
+    @include type-scale($type-pre-scale);
+    font-family: $type-pre-font-family;
+
+    %code {
+        word-wrap: normal;
+        white-space: -moz-pre-wrap;
+        white-space: pre-wrap;
+    }
+}
+
+%code {
+    white-space: pre;
+    @include type-scale($type-code-scale);
+    font-family: $type-code-font-family;
+}
+
+
+
+

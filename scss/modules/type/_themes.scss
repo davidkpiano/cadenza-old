@@ -2,7 +2,7 @@
 // Type Themes
 // ===========
 
-// Heading Themes
+// Heading Theme
 @mixin heading-style($style: default, $theme: default) {
 	@extend %ext-heading-#{$style} !optional;
 	@extend %theme-heading-#{$style} !optional;
@@ -22,6 +22,7 @@
 			}
 		}
 	}
+
 	&%dark {
 		h1, h2, h3, h4, h5, h6 {
 			color: $color-light;
@@ -32,3 +33,37 @@
 		}
 	}
 }
+
+// Preformatted Text Theme
+@mixin pre-style($style: default, $theme: default) {
+	@extend %ext-pre-#{$style} !optional;
+	@extend %theme-pre-#{$style} !optional;
+}
+
+%theme-pre-default {
+	&, &%light {
+		pre {
+			color: $type-pre-color;
+		}
+
+		code {
+			color: $type-code-color;
+		}
+	}
+
+	&%dark {
+		pre {
+			color: $color-gray-light;
+		}
+
+		code {
+			color: $color-gray-light;
+		}
+	}
+}
+
+
+
+
+
+
