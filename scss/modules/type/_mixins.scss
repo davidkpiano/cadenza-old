@@ -1,0 +1,29 @@
+//
+// Type Mixins and Functions
+// =========================
+
+@mixin type-scale(
+	$exponent: 1,
+	$important: false,
+	$base: $type-base-font-size,
+	$unit: $type-unit,
+	$ratio: $type-ratio
+) {
+	$font-size: $base * pow($ratio, -$exponent);
+
+	@if $important {
+		$important: !important;
+	} @else {
+		$important: '';
+	}
+
+	font-size: $font-size #{$important}; // Pixel fallback
+	font-size: ($font-size / $base)#{$unit} #{$important};
+}
+
+@mixin type-scale-relative(
+	$exponent: 1,
+	$ratio: $type-ratio
+) {
+	font-size: percentage(pow($ratio, -$exponent));
+}

@@ -44,11 +44,13 @@
 %color-primary { color: $color-primary; }
 %color-secondary { color: $color-secondary; }
 %color-light { color: $color-light; }
+%color-gray { color: $color-gray; }
 %color-dark { color: $color-dark; }
 
 .color-primary { @extend %color-primary; }
 .color-secondary { @extend %color-secondary; }
 .color-light { @extend %color-light; }
+.color-gray { @extend %color-gray; }
 .color-dark { @extend %color-dark; }
 
 %border {

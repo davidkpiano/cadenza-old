@@ -19,13 +19,33 @@ $type-primary-import: "//fonts.googleapis.com/css?family=Open+Sans:300italic,400
 $type-primary-font-family: "Open Sans" !default;
 $type-secondary-import: '' !default;
 $type-secondary-font-family: Georgia, Times, "Times New Roman", serif !default;
+$type-serif-font-family: "Calisto MT", Georgia, "Times New Roman", Times, serif !default;
+$type-sans-serif-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$type-monospace-font-family: Consolas, monaco, monospace !default;
+$type-script-font-family: "Brush Script MT", cursive !default;
 
 // Headings
 $type-headings: ((h1, 6), (h2, 5), (h3, 4), (h4, 3), (h3, 2), (h2, 1), (h1, 0));
+$type-heading-style: normal !default;
+$type-heading-font-family: $type-primary-font-family !default;
+$type-heading-font-weight: $type-base-font-weight !default;
+$type-heading-font-style: normal !default;
+$type-heading-line-height: 1.2 !default;
+// $type-heading-color: $type-base-color !default;
+// $type-heading-color-light: $type-base-color-light !default;
+// $type-heading-color-secondary: $color-gray !default;
+$type-heading-margin-top: 0 !default;
+$type-heading-margin-bottom: $x-rem !default;
+$type-heading-small-style: uppercase !default;
+$type-heading-small-scale: -2 !default;
+// $type-subheading-color: lighten($type-header-color, 15%) !default;
+$type-subheading-font-weight: 300 !default;
+$type-subheading-margin-top: 0 !default;
+$type-subheading-margin-bottom: $x-rem !default;
 
 // Imports
 @import
 	'_mixins',
 	'_components',
-	'_classes',
-	'_themes';
+	'_themes',
+	'_classes';

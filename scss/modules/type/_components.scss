@@ -1,0 +1,82 @@
+//
+// Type Components
+// ===============
+
+// Typefaces
+@import url($type-primary-import);
+@import url($type-secondary-import);
+
+%type-primary {
+    @if $type-use-custom {
+        font-family: join($type-primary-font-family, $type-base-font-family);
+    } @else {
+        font-family: $type-base-font-family;
+    }
+}
+
+%type-secondary {
+    font-family: $type-secondary-font-family;
+}
+
+%type-serif {
+	font-family: $type-serif-font-family;
+}
+
+%type-sans-serif {
+	font-family: $type-sans-serif-font-family;
+}
+
+%type-monospace {
+	font-family: $type-monospace-font-family;
+}
+
+%type-script {
+	font-family: $type-script-font-family;
+}
+
+// Headings
+%heading {
+	line-height: $type-heading-line-height;
+    font-weight: $type-heading-font-weight;
+    font-style: $type-heading-font-style;
+    font-family: join($type-heading-font-family, $type-base-font-family);
+    margin-top: $type-heading-margin-top;
+    margin-bottom: $type-heading-margin-bottom;
+
+    &:only-child { margin-bottom: 0; }
+}
+
+%heading-inline {
+	@extend %inline-block;
+	margin-bottom: 0;
+	margin-top: 0;
+}
+
+// For smaller text inside headings (parent class)
+%heading-small {
+	@include type-scale-relative($type-heading-small-scale);
+}
+
+%subheading {
+    font-weight: $type-subheading-font-weight;
+    margin-top: $type-subheading-margin-top;
+    margin-bottom: $type-subheading-margin-bottom;
+}
+
+%hgroup {
+	margin-bottom: $hgroup-margin-bottom;
+
+	> h1, > h2, > h3, > h4, > h5, > h6 {
+		margin-bottom: 0;
+	}
+}
+
+@each $type-heading in $type-headings {
+	$heading-selector: nth($type-heading, 1);
+	$heading-scale: nth($type-heading, 2);
+
+	%#{$heading-selector} {
+		@include typeScale(6 - $heading-scale);
+	}
+}
+

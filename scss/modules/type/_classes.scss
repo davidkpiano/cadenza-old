@@ -1,0 +1,35 @@
+//
+// Type Classes
+// ============
+
+// Type Face
+body, .type-primary { @extend %type-primary; }
+
+.type-secondary { @extend %type-secondary; }
+
+.type-serif, .serif { @extend %type-serif; }
+
+.type-sans-serif, .sans-serif { @extend %type-sans-serif; }
+
+.type-monospace, .monospace { @extend %type-monospace; }
+
+.type-script, .cursive { @extend %type-script; }
+
+// Headings
+@each $type-heading in $type-headings {
+	$heading-selector: nth($type-heading, 1);
+
+	#{$heading-selector}, .#{$heading-selector} {
+		@extend %#{$heading-selector};
+
+		&.inline { @extend %heading-inline; }
+
+		> small, > .small { @extend %heading-small; }
+
+		&.sub, &.subheading { @extend %subheading; }
+	}
+}
+
+hgroup, .hgroup { @extend %hgroup; }
+
+body { @include heading-style(); }
