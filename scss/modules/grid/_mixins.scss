@@ -13,6 +13,11 @@
 	}
 }
 
+@function row-height($rows) {
+	// This is (currently) the same result as column-width
+	@return column-width($rows);
+}
+
 // Grid Component Mixin
 // 
 // Defines a grid element in the grid system.
@@ -105,6 +110,61 @@
 	}
 }
 
-body {
+// Row Mixin
+// 
+// Generates a row with the given height
+// @param (int) $rows
+// @param (str) $media
+// @param (int) $offset
+// @param (str) $position
+@mixin row(
+	$rows,
+	$media: false,
+	$offset: false,
+	$position: false
+) {
+	@include mq($media) {
+		height: row-height($rows);
+	}
+}
 
+// Row Layout Mixin
+// 
+// Specifies the height of each respective child element
+// @param (list) $widths: either a 1D or 2D list
+@mixin row-layout(
+	$row-heights,
+	$media: false
+) {
+	$fill-selector: false;
+	$total-height: 0px;
+
+	@include mq($media) {
+		@for $i from 1 through length($row-heights) {
+			$row-height: nth($row-heights, $i);
+			$height: nth($row-height, 1);
+			$selector: '>:nth-child(#{$i})';
+
+			@if length($row-height) == 2 {
+				$height: nth($row-height, 2);
+				$selector: nth($row-height, 1);
+			}
+
+			@if $height == 'fill' {
+				$fill-selector: $selector;
+			} @else {
+				$total-height: $total-height + ' + ' + column-height($height);
+
+				#{$selector} {
+					height: row-height($height);
+				}
+			}
+		}
+
+		@if $fill-selector {
+			#{$fill-selector} {
+				height: calc(100% - (#{$total-height}));
+			}
+		}
+	}
 }

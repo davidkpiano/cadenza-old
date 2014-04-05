@@ -3,14 +3,10 @@
 // ===============
 
 // Shared Grid Components
-%grid {
-	@include _grid();
-}
+%grid { @include _grid(); }
 
 // Horizontal Grid Components
-%column {
-    @include _column();
-}
+%column { @include _column(); }
 
 @each $mq in $grid-column-mqs {
 	@include mq($mq) {
@@ -20,21 +16,259 @@
 		%column-#{$mq} { @include _column(); }
 
 		@for $i from 0 through $grid-columns {
-			%column-#{$i}#{$suffix}, %col-#{$i}#{$suffix} {
+			%column-#{$i}#{$suffix} {
 				@extend %column-#{$mq};
 				@include column($i);
 			}
+
+			%columns-#{$i}#{$suffix} > * {
+				@extend %column-#{$i}#{$suffix};
+
+				@if $i > 0 and round($grid-columns / $i) == $grid-columns / $i {
+					&:nth-child(n+1) {
+						clear: none;
+					}
+
+					&:nth-child(#{$grid-columns / $i}n + 1) {
+						clear: left;
+					}
+				}
+			}
+
+			%column-offset-#{$i}#{$suffix} {
+				@extend %column-#{$mq};
+				margin-left: column-width($i);
+			}
+
+			%columns-offset-#{$i}#{$suffix} > * {
+				@extend %column-offset-#{$i}#{$suffix};
+			}
+
+			%column-push-#{$i}#{$suffix} {
+				@if $i == 0 { left: auto; }
+				@else { left: column-width($i); }
+			}
+
+			%columns-push-#{$i}#{$suffix} > * {
+				@extend %column-push-#{$i}#{$suffix};
+			}
+
+			%column-pull-#{$i}#{$suffix} {
+				@if $i == 0 { right: auto; }
+				@else { right: column-width($i); }
+			}
+
+			%columns-pull-#{$i}#{$suffix} > * {
+				@extend %column-pull-#{$i}#{$suffix};
+			}
+		}
+
+		// TODO: use maps
+		@for $i from 1 through length($grid-fractions) {
+			$fraction: nth($grid-fractions, $i);
+			$denominator: $i + 1;
+
+			%column-#{$fraction}#{$suffix} {
+				@extend %column-#{$mq};
+
+				@if ($grid-columns / $denominator) == round($grid-columns / $denominator) {
+					@extend %column-#{$grid-columns / $denominator}#{$suffix};
+				} @else {
+					@include column(1 / $denominator);
+				}
+			}
+
+			%columns-#{$fraction}#{$suffix} > * {
+				@extend %column-#{$fraction}#{$suffix};
+
+				&:nth-child(n+1) {
+					clear: none;
+				}
+
+				&:nth-child(#{$denominator}n+1) {
+					clear: left;
+				}
+			}
+
+			%column-offset-#{$fraction}#{$suffix} {
+				@extend %column-#{$mq};
+				
+				@if ($grid-columns / $denominator) == round($grid-columns / $denominator) {
+					@extend %column-offset-#{$grid-columns / $denominator}#{$suffix};
+				} @else {
+					margin-left: column-width(1 / $denominator);
+				}
+			}
+
+			%columns-offset-#{$fraction}#{$suffix} > * {
+				@extend %column-offset-#{$fraction}#{$suffix};
+			}
+
+			%column-push-#{$fraction}#{$suffix} {
+				@if $i == 0 { left: auto; }
+				@else { left: column-width(1 / $denominator); }
+			}
+
+			%columns-push-#{$fraction}#{$suffix} > * {
+				@extend %column-push-#{$fraction}#{$suffix};
+			}
+
+			%column-pull-#{$fraction}#{$suffix} {
+				@if $i == 0 { right: auto; }
+				@else { right: column-width(1 / $denominator); }
+			}
+
+			%columns-pull-#{$fraction}#{$suffix} > * {
+				@extend %column-pull-#{$fraction}#{$suffix};
+			}
+		}
+
+		%column-left#{$suffix}, %columns-left#{$suffix} > * { 
+			float: left;
+		}
+
+		%column-right#{$suffix}, %columns-right#{$suffix} > * {
+			float: right;
+		}
+
+		%column-center#{$suffix}, %columns-center#{$suffix} > * { 
+			margin-left: auto; 
+			margin-right: auto;
+			float: none;
 		}
 	}
 }
 
-.column-2-small {
-	@extend %column-2-small;
-}
-
 // Vertical Grid Components
-%row {
-    @extend %grid;
-    width: 100%;
-    clear: both;
+%row { @include _row(); }
+
+@each $mq in $grid-row-mqs {
+	@include mq($mq) {
+		$suffix: -#{$mq};
+		@if $mq == 'all' { $suffix: ''; }
+
+		%row-#{$mq} { @include _row(); }
+
+		@for $i from 0 through $grid-rows {
+			%row-#{$i}#{$suffix} {
+				@extend %row-#{$mq};
+				@include row($i);
+			}
+
+			%rows-#{$i}#{$suffix} > * {
+				@extend %row-#{$i}#{$suffix};
+
+				@if $i > 0 and round($grid-rows / $i) == $grid-rows / $i {
+					&:nth-child(n+1) {
+						clear: none;
+					}
+
+					&:nth-child(#{$grid-rows / $i}n + 1) {
+						clear: left;
+					}
+				}
+			}
+
+			// %row-offset-#{$i}#{$suffix} {
+			// 	@extend %row-#{$mq};
+			// 	margin-left: row-height($i);
+			// }
+
+			// %rows-offset-#{$i}#{$suffix} > * {
+			// 	@extend %row-offset-#{$i}#{$suffix};
+			// }
+
+			%row-push-#{$i}#{$suffix} {
+				@if $i == 0 { top: auto; }
+				@else { top: row-height($i); }
+			}
+
+			%rows-push-#{$i}#{$suffix} > * {
+				@extend %row-push-#{$i}#{$suffix};
+			}
+
+			%row-pull-#{$i}#{$suffix} {
+				@if $i == 0 { bottom: auto; }
+				@else { bottom: row-height($i); }
+			}
+
+			%rows-pull-#{$i}#{$suffix} > * {
+				@extend %row-pull-#{$i}#{$suffix};
+			}
+		}
+
+		// TODO: use maps
+		@for $i from 1 through length($grid-fractions) {
+			$fraction: nth($grid-fractions, $i);
+			$denominator: $i + 1;
+
+			%row-#{$fraction}#{$suffix} {
+				@extend %row-#{$mq};
+
+				@if ($grid-rows / $denominator) == round($grid-rows / $denominator) {
+					@extend %row-#{$grid-rows / $denominator}#{$suffix};
+				} @else {
+					@include row(1 / $denominator);
+				}
+			}
+
+			%rows-#{$fraction}#{$suffix} > * {
+				@extend %row-#{$fraction}#{$suffix};
+
+				&:nth-child(n+1) {
+					clear: none;
+				}
+
+				&:nth-child(#{$denominator}n+1) {
+					clear: left;
+				}
+			}
+
+			// %row-offset-#{$fraction}#{$suffix} {
+			// 	@extend %row-#{$mq};
+				
+			// 	@if ($grid-rows / $denominator) == round($grid-rows / $denominator) {
+			// 		@extend %row-offset-#{$grid-rows / $denominator}#{$suffix};
+			// 	} @else {
+			// 		margin-left: row-height(1 / $denominator);
+			// 	}
+			// }
+
+			// %rows-offset-#{$fraction}#{$suffix} > * {
+			// 	@extend %row-offset-#{$fraction}#{$suffix};
+			// }
+
+			%row-push-#{$fraction}#{$suffix} {
+				@if $i == 0 { top: auto; }
+				@else { top: row-height(1 / $denominator); }
+			}
+
+			%rows-push-#{$fraction}#{$suffix} > * {
+				@extend %row-push-#{$fraction}#{$suffix};
+			}
+
+			%row-pull-#{$fraction}#{$suffix} {
+				@if $i == 0 { bottom: auto; }
+				@else { bottom: row-height(1 / $denominator); }
+			}
+
+			%rows-pull-#{$fraction}#{$suffix} > * {
+				@extend %row-pull-#{$fraction}#{$suffix};
+			}
+		}
+
+		%row-bottom#{$suffix}, %rows-bottom#{$suffix} > * { 
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+
+		%row-top#{$suffix}, %rows-top#{$suffix} > * {
+			// TODO - see if necessary
+		}
+
+		%row-center#{$suffix}, %rows-center#{$suffix} > * { 
+			// TODO - use -50% tranform trick
+		}
+	}
 }

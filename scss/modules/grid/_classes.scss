@@ -2,6 +2,11 @@
 // Grid Classes
 // ============
 
+// Horizontal Grid Classes
+.column {
+	@extend %column;
+}
+
 @each $mq in $grid-column-mqs {
 	$suffix: -#{$mq};
 	@if $mq == 'all' { $suffix: ''; }
@@ -9,6 +14,126 @@
 	@for $i from 0 through $grid-columns {
 		.col-#{$i}#{$suffix}, .column-#{$i}#{$suffix} {
 			@extend %column-#{$i}#{$suffix};
+		}
+
+		.cols-#{$i}#{$suffix}, .columns-#{$i}#{$suffix} {
+			@extend %columns-#{$i}#{$suffix};
+		}
+
+		.col-offset-#{$i}#{$suffix}, .column-offset-#{$i}#{$suffix} {
+			@extend %column-offset-#{$i}#{$suffix};
+		}
+
+		.cols-offset-#{$i}#{$suffix}, .columns-offset-#{$i}#{$suffix} {
+			@extend %columns-offset-#{$i}#{$suffix};
+		}
+
+		.col-push-#{$i}#{$suffix}, .column-push-#{$i}#{$suffix} {
+			@extend %column-push-#{$i}#{$suffix};
+		}
+		
+		.col-pull-#{$i}#{$suffix}, .column-pull-#{$i}#{$suffix} {
+			@extend %column-pull-#{$i}#{$suffix};
+		}
+	}
+
+	@each $fraction in $grid-fractions {
+		.col-#{$fraction}#{$suffix}, .column-#{$fraction}#{$suffix} {
+			@extend %column-#{$fraction}#{$suffix};
+		}
+
+		.cols-#{$fraction}#{$suffix}, .columns-#{$fraction}#{$suffix} {
+			@extend %columns-#{$fraction}#{$suffix};
+		}
+
+		.col-offset-#{$fraction}#{$suffix}, .column-offset-#{$fraction}#{$suffix} {
+			@extend %column-offset-#{$fraction}#{$suffix};
+		}
+
+		.cols-offset-#{$fraction}#{$suffix}, .columns-offset-#{$fraction}#{$suffix} {
+			@extend %columns-offset-#{$fraction}#{$suffix};
+		}
+
+		.col-push-#{$fraction}#{$suffix}, .column-push-#{$fraction}#{$suffix} {
+			@extend %column-push-#{$fraction}#{$suffix};
+		}
+
+		.col-pull-#{$fraction}#{$suffix}, .column-pull-#{$fraction}#{$suffix} {
+			@extend %column-pull-#{$fraction}#{$suffix};
+		}
+	}
+
+	.col-left {
+		@extend %column-left;
+	}
+
+	.col-right {
+		@extend %column-right;
+	}
+
+	.col-center {
+		@extend %column-center;
+	}
+}
+
+// Vertical Grid Classes
+.row {
+	@extend %row;
+}
+
+@each $mq in $grid-row-mqs {
+	$suffix: -#{$mq};
+	@if $mq == 'all' { $suffix: ''; }
+
+	@for $i from 0 through $grid-rows {
+		.row-#{$i}#{$suffix} {
+			@extend %row-#{$i}#{$suffix};
+		}
+
+		.rows-#{$i}#{$suffix} {
+			@extend %rows-#{$i}#{$suffix};
+		}
+
+		.row-offset-#{$i}#{$suffix} {
+			@extend %row-offset-#{$i}#{$suffix};
+		}
+
+		.rows-offset-#{$i}#{$suffix} {
+			@extend %rows-offset-#{$i}#{$suffix};
+		}
+
+		.row-push-#{$i}#{$suffix} {
+			@extend %row-push-#{$i}#{$suffix};
+		}
+		
+		.row-pull-#{$i}#{$suffix} {
+			@extend %row-pull-#{$i}#{$suffix};
+		}
+	}
+
+	@each $fraction in $grid-fractions {
+		.row-#{$fraction}#{$suffix} {
+			@extend %row-#{$fraction}#{$suffix};
+		}
+
+		.rows-#{$fraction}#{$suffix} {
+			@extend %rows-#{$fraction}#{$suffix};
+		}
+
+		// .row-offset-#{$fraction}#{$suffix} {
+		// 	@extend %row-offset-#{$fraction}#{$suffix};
+		// }
+
+		// .rows-offset-#{$fraction}#{$suffix} {
+		// 	@extend %rows-offset-#{$fraction}#{$suffix};
+		// }
+
+		.row-push-#{$fraction}#{$suffix} {
+			@extend %row-push-#{$fraction}#{$suffix};
+		}
+
+		.row-pull-#{$fraction}#{$suffix} {
+			@extend %row-pull-#{$fraction}#{$suffix};
 		}
 	}
 }

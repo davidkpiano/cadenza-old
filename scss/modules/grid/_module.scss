@@ -2,6 +2,10 @@
 // Grid Module
 // ===========
 
+// Shared Grid Settings
+// TODO: use maps
+$grid-fractions: (half, 3rd, 4th, 5th, 6th, 7th, 8th, 9th);
+
 // Horizontal Grid Settings
 $grid-column-selector: ".col, [class*=\"col-\"]" !default;
 $grid-columns: 12 !default;
@@ -12,7 +16,7 @@ $grid-column-mqs: (all, small, medium, large);
 $grid-row-selector: ".row, [class*=\"row-\"]" !default;
 $grid-rows: 12 !default;
 $grid-row-gutter: 1rem !default;
-$grid-row-mqs: "all, short, tall";
+$grid-row-mqs: (all, short, tall);
 
 // Imports
 @import
