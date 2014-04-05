@@ -1,0 +1,31 @@
+//
+// Type Module
+// ===========
+
+// Base Type Settings
+$type-unit: rem !default;
+$type-ratio: 1.25 !default;
+$type-base-font-size: 16px !default; // = 1rem
+$type-base-line-height: 1.65em !default;
+$type-base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$type-base-font-style: normal !default;
+$type-base-font-weight: 300 !default;
+$type-base-color: $color-dark !default;
+$type-base-color-light: $color-light !default;
+
+// Custom Type Settings
+$type-use-custom: true !default;
+$type-primary-import: "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" !default;
+$type-primary-font-family: "Open Sans" !default;
+$type-secondary-import: '' !default;
+$type-secondary-font-family: Georgia, Times, "Times New Roman", serif !default;
+
+// Headings
+$type-headings: ((h1, 6), (h2, 5), (h3, 4), (h4, 3), (h3, 2), (h2, 1), (h1, 0));
+
+// Imports
+@import
+	'_mixins',
+	'_components',
+	'_classes',
+	'_themes';
