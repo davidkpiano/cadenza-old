@@ -94,13 +94,13 @@
 			@extend %rows-#{$i}#{$suffix};
 		}
 
-		.row-offset-#{$i}#{$suffix} {
-			@extend %row-offset-#{$i}#{$suffix};
-		}
+		// .row-offset-#{$i}#{$suffix} {
+		// 	@extend %row-offset-#{$i}#{$suffix};
+		// }
 
-		.rows-offset-#{$i}#{$suffix} {
-			@extend %rows-offset-#{$i}#{$suffix};
-		}
+		// .rows-offset-#{$i}#{$suffix} {
+		// 	@extend %rows-offset-#{$i}#{$suffix};
+		// }
 
 		.row-push-#{$i}#{$suffix} {
 			@extend %row-push-#{$i}#{$suffix};
