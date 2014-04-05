@@ -3945,6 +3945,16 @@ mark, .mark {
   background: yellow;
 }
 
+/* line 160, ../scss/modules/type/_components.scss */
+.text-middle {
+  display: table;
+}
+/* line 163, ../scss/modules/type/_components.scss */
+.text-middle > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 /* line 12, ../scss/modules/type/_themes.scss */
 body h6 {
   text-transform: uppercase;

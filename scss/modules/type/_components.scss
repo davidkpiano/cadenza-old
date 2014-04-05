@@ -98,7 +98,7 @@
     line-height: $type-p-line-height;
     font-weight: $type-p-font-weight;
 
-	&%lead { @include type-scale($type-p-lead-type-scale); }
+	&%lead { @include type-scale($type-p-lead-scale); }
 }
 
 %small {
@@ -138,3 +138,30 @@
 	background: $type-mark-color;
 }
 
+// Alignment
+// ---------
+%text-left {
+	text-align: left;
+}
+
+%text-right {
+	text-align: right;
+}
+
+%text-center {
+	text-align: center;
+}
+
+%text-justify {
+	text-align: justify;
+}
+
+// Parent Class
+%text-middle, .text-middle {
+	display: table;
+
+	> * {
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
