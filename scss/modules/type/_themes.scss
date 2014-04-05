@@ -9,12 +9,12 @@
 }
 
 %ext-heading-default {
-	h6 { text-transform: uppercase; }
+	h6, .h6 { text-transform: uppercase; }
 }
 
 %theme-heading-default {
 	&, &%light {	
-		h1, h2, h3, h4, h5, h6 {
+		h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 			color: $type-base-color;
 
 			&%subheading, &%heading-small {
@@ -24,7 +24,7 @@
 	}
 
 	&%dark {
-		h1, h2, h3, h4, h5, h6 {
+		h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 			color: $color-light;
 
 			&%subheading, &%heading-small {
@@ -42,21 +42,39 @@
 
 %theme-pre-default {
 	&, &%light {
-		pre {
+		pre, .pre {
 			color: $type-pre-color;
 		}
 
-		code {
+		code, .code {
 			color: $type-code-color;
+		}
+
+		kbd, .kbd {
+			&, &.light {
+				font-family: $type-base-font-family;
+				color: $type-base-color;
+				padding: 0.25rem 0.5rem;
+				background: $color-gray-light;
+				border: 1px solid $color-gray;
+				border-bottom-width: 3px;
+				@include border-radius(3px);
+			}
+
+			&.dark {
+				color: $color-light;
+				background: lighten($color-dark, 10%);
+				border-color: $color-dark;
+			}
 		}
 	}
 
 	&%dark {
-		pre {
+		pre, .pre {
 			color: $color-gray-light;
 		}
 
-		code {
+		code, .code {
 			color: $color-gray-light;
 		}
 	}

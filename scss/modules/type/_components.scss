@@ -73,14 +73,14 @@
 	}
 }
 
-@each $type-heading in $type-headings {
-	$heading-selector: nth($type-heading, 1);
-	$heading-scale: nth($type-heading, 2);
+// @each $type-heading in $type-headings {
+// 	$heading-selector: nth($type-heading, 1);
+// 	$heading-scale: nth($type-heading, 2);
 
-	%#{$heading-selector} {
-		@include typeScale(6 - $heading-scale);
-	}
-}
+// 	%#{$heading-selector} {
+// 		@include typeScale(6 - $heading-scale);
+// 	}
+// }
 
 // Body Copy
 // ---------
@@ -186,6 +186,9 @@
     font-family: $type-code-font-family;
 }
 
+%kbd {
+	@include type-scale($type-kbd-scale);
+}
 
 
 
