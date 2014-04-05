@@ -2,7 +2,8 @@
 // Type Classes
 // ============
 
-// Type Face
+// Typefaces
+// ---------
 body, .type-primary { @extend %type-primary; }
 
 .type-secondary { @extend %type-secondary; }
@@ -16,6 +17,7 @@ body, .type-primary { @extend %type-primary; }
 .type-script, .cursive { @extend %type-script; }
 
 // Headings
+// --------
 @each $type-heading in $type-headings {
 	$heading-selector: nth($type-heading, 1);
 
@@ -33,3 +35,31 @@ body, .type-primary { @extend %type-primary; }
 hgroup, .hgroup { @extend %hgroup; }
 
 body { @include heading-style(); }
+
+// Body Copy
+// ---------
+body { @extend %body-type; }
+
+p {
+	@extend %paragraph;
+
+	&.lead { @extend %lead; } // %paragraph > %lead
+}
+
+small, .small { @extend %small; }
+
+.large { @extend %large; }
+
+strong, b, .strong { @extend %strong; }
+
+.weak { @extend %weak; }
+
+em, .italics { @extend %em; }
+
+.uppercase { @extend %uppercase; }
+
+.lowercase { @extend %lowercase; }
+
+.nowrap { @extend %nowrap; }
+
+mark, .mark { @extend %mark; }

@@ -8,11 +8,11 @@
 	@extend %theme-heading-#{$style} !optional;
 }
 
-%ext-heading-normal {
+%ext-heading-default {
 	h6 { text-transform: uppercase; }
 }
 
-%theme-heading-normal {
+%theme-heading-default {
 	&, &%light {	
 		h1, h2, h3, h4, h5, h6 {
 			color: $type-base-color;

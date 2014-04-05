@@ -3,6 +3,7 @@
 // ===============
 
 // Typefaces
+// ---------
 @import url($type-primary-import);
 @import url($type-secondary-import);
 
@@ -35,6 +36,7 @@
 }
 
 // Headings
+// --------
 %heading {
 	line-height: $type-heading-line-height;
     font-weight: $type-heading-font-weight;
@@ -71,12 +73,68 @@
 	}
 }
 
-@each $type-heading in $type-headings {
-	$heading-selector: nth($type-heading, 1);
-	$heading-scale: nth($type-heading, 2);
+// @each $type-heading in $type-headings {
+// 	$heading-selector: nth($type-heading, 1);
+// 	$heading-scale: nth($type-heading, 2);
 
-	%#{$heading-selector} {
-		@include typeScale(6 - $heading-scale);
-	}
+// 	%#{$heading-selector} {
+// 		@include typeScale(6 - $heading-scale);
+// 	}
+// }
+
+// Body Copy
+// ---------
+%body-type {
+	font-style: normal;
+    color: $type-base-color;
+    text-rendering: optimizeLegibility;
+    word-wrap: break-word;
+
+    @include experimental(hyphens, auto);
+}
+
+%paragraph {
+	margin-bottom: $type-p-margin-bottom;
+    line-height: $type-p-line-height;
+    font-weight: $type-p-font-weight;
+
+	&%lead { @include type-scale($type-p-lead-type-scale); }
+}
+
+%small {
+	@include type-scale-relative(-1);
+}
+
+%large {
+	@include type-scale-relative(1);
+}
+
+%strong {
+	font-weight: bold;
+}
+
+%weak {
+	font-weight: normal;
+}
+
+%em {
+	font-style: italic;
+}
+
+%uppercase {
+	text-transform: uppercase;
+}
+
+%lowercase {
+	text-transform: lowercase;
+}
+
+%nowrap {
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+%mark {
+	background: $type-mark-color;
 }
 

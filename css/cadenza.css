@@ -3817,105 +3817,147 @@ header:after, footer:after, section:after {
   margin: 0;
 }
 
-/* line 9, ../scss/modules/type/_components.scss */
+/* line 10, ../scss/modules/type/_components.scss */
 body, .type-primary {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 17, ../scss/modules/type/_components.scss */
+/* line 18, ../scss/modules/type/_components.scss */
 .type-secondary {
   font-family: Georgia, Times, "Times New Roman", serif;
 }
 
-/* line 21, ../scss/modules/type/_components.scss */
+/* line 22, ../scss/modules/type/_components.scss */
 .type-serif, .serif {
   font-family: "Calisto MT", Georgia, "Times New Roman", Times, serif;
 }
 
-/* line 25, ../scss/modules/type/_components.scss */
+/* line 26, ../scss/modules/type/_components.scss */
 .type-sans-serif, .sans-serif {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 29, ../scss/modules/type/_components.scss */
+/* line 30, ../scss/modules/type/_components.scss */
 .type-monospace, .monospace {
   font-family: Consolas, monaco, monospace;
 }
 
-/* line 33, ../scss/modules/type/_components.scss */
+/* line 34, ../scss/modules/type/_components.scss */
 .type-script, .cursive {
   font-family: "Brush Script MT", cursive;
 }
 
-/* line 49, ../scss/modules/type/_components.scss */
+/* line 51, ../scss/modules/type/_components.scss */
 h1.inline, .h1.inline, h2.inline, .h2.inline, h3.inline, .h3.inline, h4.inline, .h4.inline {
   margin-bottom: 0;
   margin-top: 0;
 }
 
-/* line 56, ../scss/modules/type/_components.scss */
+/* line 58, ../scss/modules/type/_components.scss */
 h1 > small, h1 > .small, form h1 > input[type].small, body h1 > input[type].small, form h1 > textarea.small, body h1 > textarea.small, .h1 > small, .h1 > .small, form .h1 > input[type].small, body .h1 > input[type].small, form .h1 > textarea.small, body .h1 > textarea.small, h2 > small, h2 > .small, form h2 > input[type].small, body h2 > input[type].small, form h2 > textarea.small, body h2 > textarea.small, .h2 > small, .h2 > .small, form .h2 > input[type].small, body .h2 > input[type].small, form .h2 > textarea.small, body .h2 > textarea.small, h3 > small, h3 > .small, form h3 > input[type].small, body h3 > input[type].small, form h3 > textarea.small, body h3 > textarea.small, .h3 > small, .h3 > .small, form .h3 > input[type].small, body .h3 > input[type].small, form .h3 > textarea.small, body .h3 > textarea.small, h4 > small, h4 > .small, form h4 > input[type].small, body h4 > input[type].small, form h4 > textarea.small, body h4 > textarea.small, .h4 > small, .h4 > .small, form .h4 > input[type].small, body .h4 > input[type].small, form .h4 > textarea.small, body .h4 > textarea.small {
   font-size: 74.13723%;
 }
 
-/* line 60, ../scss/modules/type/_components.scss */
+/* line 62, ../scss/modules/type/_components.scss */
 h1.sub, h1.subheading, .h1.sub, .h1.subheading, h2.sub, h2.subheading, .h2.sub, .h2.subheading, h3.sub, h3.subheading, .h3.sub, .h3.subheading, h4.sub, h4.subheading, .h4.sub, .h4.subheading {
   font-weight: 300;
   margin-top: 0;
   margin-bottom: 1rem;
 }
 
-/* line 66, ../scss/modules/type/_components.scss */
+/* line 68, ../scss/modules/type/_components.scss */
 hgroup, .hgroup {
   margin-bottom: 1rem;
 }
-/* line 69, ../scss/modules/type/_components.scss */
+/* line 71, ../scss/modules/type/_components.scss */
 hgroup > h1, .hgroup > h1, hgroup > h2, .hgroup > h2, hgroup > h3, .hgroup > h3, hgroup > h4, .hgroup > h4, hgroup > h5, .hgroup > h5, hgroup > h6, .hgroup > h6 {
   margin-bottom: 0;
 }
 
-/* line 78, ../scss/modules/type/_components.scss */
-h1, .h1 {
-  font-size: 16px ;
-  font-size: 1rem ;
+/* line 87, ../scss/modules/type/_components.scss */
+body {
+  font-style: normal;
+  color: #222222;
+  text-rendering: optimizeLegibility;
+  word-wrap: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  -o-hyphens: auto;
+  hyphens: auto;
 }
 
-/* line 78, ../scss/modules/type/_components.scss */
-h2, .h2 {
+/* line 96, ../scss/modules/type/_components.scss */
+p {
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  font-weight: 300;
+}
+/* line 101, ../scss/modules/type/_components.scss */
+p.lead {
   font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
 
-/* line 78, ../scss/modules/type/_components.scss */
-h3, .h3 {
-  font-size: 21.5816px ;
-  font-size: 1.34885rem ;
+/* line 104, ../scss/modules/type/_components.scss */
+small, .small, form input[type].small, body input[type].small, form textarea.small, body textarea.small {
+  font-size: 86.10298%;
 }
 
-/* line 78, ../scss/modules/type/_components.scss */
-h4, .h4 {
-  font-size: 25.06487px ;
-  font-size: 1.56655rem ;
+/* line 108, ../scss/modules/type/_components.scss */
+.large, form input[type].large, body input[type].large, form textarea.large, body textarea.large {
+  font-size: 116.14%;
 }
 
-/* line 78, ../scss/modules/type/_components.scss */
-h3, .h3 {
-  font-size: 29.11034px ;
-  font-size: 1.8194rem ;
+/* line 112, ../scss/modules/type/_components.scss */
+strong, b, .strong {
+  font-weight: bold;
 }
 
-/* line 78, ../scss/modules/type/_components.scss */
-h2, .h2 {
-  font-size: 33.80875px ;
-  font-size: 2.11305rem ;
+/* line 116, ../scss/modules/type/_components.scss */
+.weak {
+  font-weight: normal;
 }
 
-/* line 78, ../scss/modules/type/_components.scss */
-h1, .h1 {
-  font-size: 39.26548px ;
-  font-size: 2.45409rem ;
+/* line 120, ../scss/modules/type/_components.scss */
+em, .italics {
+  font-style: italic;
 }
 
+/* line 124, ../scss/modules/type/_components.scss */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* line 128, ../scss/modules/type/_components.scss */
+.lowercase {
+  text-transform: lowercase;
+}
+
+/* line 132, ../scss/modules/type/_components.scss */
+.nowrap, nav ul li, nav.vertical ul li, .dropdown ul li, .label, .badge {
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* line 137, ../scss/modules/type/_components.scss */
+mark, .mark {
+  background: yellow;
+}
+
+/* line 12, ../scss/modules/type/_themes.scss */
+body h6 {
+  text-transform: uppercase;
+}
+
+/* line 17, ../scss/modules/type/_themes.scss */
+body h1, body h2, body h3, body h4, body h5, body h6 {
+  color: #222222;
+}
+/* line 20, ../scss/modules/type/_themes.scss */
+body h1.sub, body h1.subheading, body h1.h1.sub, body h1.h1.subheading, body h1.h2.sub, body h1.h2.subheading, body h1.h3.sub, body h1.h3.subheading, body h1.h4.sub, body h1.h4.subheading, body h1 > h1.small, body .h1 > h1.small, body h2 > h1.small, body .h2 > h1.small, body h3 > h1.small, body .h3 > h1.small, body h4 > h1.small, body .h4 > h1.small, body h2.h1.sub, body h2.h1.subheading, body h2.sub, body h2.subheading, body h2.h2.sub, body h2.h2.subheading, body h2.h3.sub, body h2.h3.subheading, body h2.h4.sub, body h2.h4.subheading, body h1 > h2.small, body .h1 > h2.small, body h2 > h2.small, body .h2 > h2.small, body h3 > h2.small, body .h3 > h2.small, body h4 > h2.small, body .h4 > h2.small, body h3.h1.sub, body h3.h1.subheading, body h3.h2.sub, body h3.h2.subheading, body h3.sub, body h3.subheading, body h3.h3.sub, body h3.h3.subheading, body h3.h4.sub, body h3.h4.subheading, body h1 > h3.small, body .h1 > h3.small, body h2 > h3.small, body .h2 > h3.small, body h3 > h3.small, body .h3 > h3.small, body h4 > h3.small, body .h4 > h3.small, body h4.h1.sub, body h4.h1.subheading, body h4.h2.sub, body h4.h2.subheading, body h4.h3.sub, body h4.h3.subheading, body h4.sub, body h4.subheading, body h4.h4.sub, body h4.h4.subheading, body h1 > h4.small, body .h1 > h4.small, body h2 > h4.small, body .h2 > h4.small, body h3 > h4.small, body .h3 > h4.small, body h4 > h4.small, body .h4 > h4.small, body h5.h1.sub, body h5.h1.subheading, body h5.h2.sub, body h5.h2.subheading, body h5.h3.sub, body h5.h3.subheading, body h5.h4.sub, body h5.h4.subheading, body h1 > h5.small, body .h1 > h5.small, body h2 > h5.small, body .h2 > h5.small, body h3 > h5.small, body .h3 > h5.small, body h4 > h5.small, body .h4 > h5.small, body h6.h1.sub, body h6.h1.subheading, body h6.h2.sub, body h6.h2.subheading, body h6.h3.sub, body h6.h3.subheading, body h6.h4.sub, body h6.h4.subheading, body h1 > h6.small, body .h1 > h6.small, body h2 > h6.small, body .h2 > h6.small, body h3 > h6.small, body .h3 > h6.small, body h4 > h6.small, body .h4 > h6.small {
+  color: #9a9a9a;
+}
 /* line 24, ../scss/modules/_anchors.scss */
 a {
   text-decoration: none;
