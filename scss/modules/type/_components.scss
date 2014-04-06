@@ -276,7 +276,7 @@
 	@extend %list;
 	margin-left: 0;
 
-	%list-inline-item {
+	li {
 		@extend %nowrap;
 		display: inline-block;
 		padding-right: $type-list-inline-padding;
@@ -303,12 +303,12 @@
 %list-description {
 	@extend %list;
 
-	%list-description-term {
+	dt {
 		font-weight: $type-list-dl-header-weight;
 		margin-bottom: $type-list-dl-header-margin-bottom;
 	}
 
-	%list-description-definition {
+	dd {
 		margin-bottom: $type-list-dl-margin-bottom;
 	}
 }

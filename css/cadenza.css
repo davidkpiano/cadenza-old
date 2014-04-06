@@ -3935,7 +3935,7 @@ blockquote footer cite, em, .italics {
 }
 
 /* line 132, ../scss/modules/type/_components.scss */
-.nowrap, nav ul li, nav.vertical ul li, .dropdown ul li, .label, .badge {
+ul.inline li, .nowrap, nav ul li, nav.vertical ul li, .dropdown ul li, .label, .badge {
   white-space: nowrap;
   overflow: hidden;
 }
@@ -4062,7 +4062,7 @@ hr, .hr {
 }
 
 /* line 255, ../scss/modules/type/_components.scss */
-ul.unstyled, ul, ol, dl {
+ul.unstyled, ul.inline, ul, ol, dl {
   list-style-position: outside;
   margin-bottom: 1rem;
   padding: 0;
@@ -4071,6 +4071,16 @@ ul.unstyled, ul, ol, dl {
 ul.unstyled {
   list-style: none;
   margin-left: 0;
+}
+
+/* line 275, ../scss/modules/type/_components.scss */
+ul.inline {
+  margin-left: 0;
+}
+/* line 279, ../scss/modules/type/_components.scss */
+ul.inline li {
+  display: inline-block;
+  padding-right: 0 1rem 0 0;
 }
 
 /* line 286, ../scss/modules/type/_components.scss */

@@ -124,15 +124,12 @@ ul {
 	&.no-bullet { @extend %list-no-bullet; }
 
 	&.unstyled { @extend %list-unstyled; }
+
+	&.inline { @extend %list-inline; }
 }
 
 ol { @extend %list-ordered; }
 
-dl {
-	@extend %list-description;
-
-	dt { @extend %list-description-term; }
-	dd { @extend %list-description-definition; }
-}
+dl { @extend %list-description; }
 
 
