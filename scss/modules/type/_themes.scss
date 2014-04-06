@@ -2,13 +2,37 @@
 // Type Themes
 // ===========
 
+// Type Theme
+@mixin type-style(
+	$style: $type-style,
+	$theme: $type-theme
+) 
+{
+	@extend %ext-type-#{$style} !optional;
+	@extend %theme-type-#{$theme} !optional;
+}
+
+%theme-type-default {
+	&, &%light {
+		color: $type-base-color;
+
+		p, ul, ol, dl { color: $type-base-color; }
+	}
+
+	&%dark {
+		color: $color-light;
+
+		p, ul, ol, dl { color: $color-light; }
+	}
+}
+
 // Heading Theme
 @mixin heading-style(
 	$style: $type-heading-style,
 	$theme: $type-heading-theme
 ) {
 	@extend %ext-heading-#{$style} !optional;
-	@extend %theme-heading-#{$style} !optional;
+	@extend %theme-heading-#{$theme} !optional;
 }
 
 %ext-heading-default {
@@ -48,7 +72,7 @@ $x-pre-kbd-radius: 0.25rem !default;
 	$theme: $type-pre-theme
 ) {
 	@extend %ext-pre-#{$style} !optional;
-	@extend %theme-pre-#{$style} !optional;
+	@extend %theme-pre-#{$theme} !optional;
 }
 
 %theme-pre-default {
