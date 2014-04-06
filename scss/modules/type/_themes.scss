@@ -20,7 +20,7 @@
 		h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 			color: $type-base-color;
 
-			&%subheading, &%heading-small {
+			&.sub, &.subheading, > small, > .small {
 				color: $color-gray;
 			}
 		}
@@ -30,7 +30,7 @@
 		h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 			color: $color-light;
 
-			&%subheading, &%heading-small {
+			&.sub, &.subheading, > small, > .small {
 				color: $color-gray-light;
 			}
 		}
