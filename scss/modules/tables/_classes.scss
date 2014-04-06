@@ -1,3 +1,17 @@
 //
 // Tables Classes
 // ==============
+
+// Table Classes
+table { 
+	@include table-style();
+	@extend %table; 
+
+	&.horizontal { @extend %table-horizontal; }
+
+	&.vertical { @extend %table-vertical; }
+
+	&.condensed { @extend %table-condensed; }
+}
+
+.table-responsive { @extend %table-responsive; }

@@ -1,3 +1,119 @@
 // 
 // Tables Components
 // =================
+
+%table {
+	margin-bottom: $table-margin-bottom;
+    text-align: $table-text-align;
+    width: 100%;
+    border-collapse: collapse;
+
+    caption {
+        // ...
+    }
+
+    thead {
+        tr {
+            th, td {
+                @include type-scale($table-thead-type-scale);
+                text-transform: $table-thead-text-transform;
+                padding: $table-thead-padding;
+            }
+        }
+    }
+
+    tfoot {
+        tr {
+            td {
+                padding: $table-tfoot-padding;
+            }
+        }
+    }
+
+    &, tbody {
+        tr {
+            td {
+                padding: $table-cell-padding;
+            }
+        }
+    }
+}
+
+%table-horizontal {
+	@extend %table;
+	
+	&, tbody, thead, tfoot {
+		&, tr {
+			&, th, td {
+				border-left-width: 0;
+				border-right-width: 0;
+			}
+		}
+	}
+}
+
+%table-vertical {
+	@extend %table;
+	
+	&, tbody, thead, tfoot {
+		&, tr {
+			&, th, td {
+				border-top-width: 0;
+				border-bottom-width: 0;
+			}
+		}
+	}
+}
+
+%table-condensed {
+	@extend %table;
+
+	thead {
+        tr {
+            th, td {
+                padding: $table-thead-padding / 2;
+            }
+        }
+    }
+
+    tfoot {
+        tr {
+            td {
+                padding: $table-tfoot-padding / 2;
+            }
+        }
+    }
+
+    &, tbody {
+        tr {
+            td {
+                padding: $table-cell-padding / 2;
+            }
+        }
+    }
+}
+
+// Parent class
+%table-responsive {
+	@include mq(small) {
+		margin-bottom: $table-margin-bottom;
+
+		table {
+			overflow-x: scroll;
+			-webkit-overflow-scrolling: touch;
+
+			&, tbody, thead, tfoot {
+				tr {
+					th, td {
+						@extend %nowrap;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+

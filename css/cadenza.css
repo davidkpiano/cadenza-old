@@ -4895,125 +4895,112 @@ fieldset .field {
   margin-bottom: 0.5rem;
 }
 
-/* line 3, ../scss/modules/_tables.scss */
-table {
+/* line 5, ../scss/modules/tables/_components.scss */
+table.horizontal, table.vertical, table.condensed, table {
   margin-bottom: 1rem;
   text-align: left;
   width: 100%;
   border-collapse: collapse;
 }
-/* line 15, ../scss/modules/_tables.scss */
-table thead tr th, table thead tr td {
+/* line 17, ../scss/modules/tables/_components.scss */
+table.horizontal thead tr th, table.vertical thead tr th, table.condensed thead tr th, table thead tr th, table.horizontal thead tr td, table.vertical thead tr td, table.condensed thead tr td, table thead tr td {
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
   text-transform: uppercase;
   padding: 0.5rem;
 }
-/* line 25, ../scss/modules/_tables.scss */
-table tfoot tr td {
+/* line 27, ../scss/modules/tables/_components.scss */
+table.horizontal tfoot tr td, table.vertical tfoot tr td, table.condensed tfoot tr td, table tfoot tr td {
   padding: 0.5rem;
-  border-width: 1px;
-  border-style: solid;
 }
-/* line 35, ../scss/modules/_tables.scss */
-table tbody tr td {
+/* line 35, ../scss/modules/tables/_components.scss */
+table.horizontal tr td, table.vertical tr td, table.condensed tr td, table tr td, table.horizontal tbody tr td, table.vertical tbody tr td, table.condensed tbody tr td, table tbody tr td {
   padding: 0.5rem;
-  border-width: 1px;
-  border-style: solid;
-}
-/* line 43, ../scss/modules/_tables.scss */
-table tr, table th, table td {
-  border-width: 1px;
-  border-style: solid;
 }
 
-/* line 52, ../scss/modules/_tables.scss */
-table thead {
-  border-bottom-width: 2px;
-  border-bottom-style: solid;
-}
-/* line 58, ../scss/modules/_tables.scss */
-table.horizontal tr, table.horizontal th, table.horizontal td {
+/* line 47, ../scss/modules/tables/_components.scss */
+table.horizontal, table.horizontal th, table.horizontal td, table.horizontal tr, table.horizontal tr th, table.horizontal tr td, table.horizontal tbody, table.horizontal tbody th, table.horizontal tbody td, table.horizontal tbody tr, table.horizontal tbody tr th, table.horizontal tbody tr td, table.horizontal thead, table.horizontal thead th, table.horizontal thead td, table.horizontal thead tr, table.horizontal thead tr th, table.horizontal thead tr td, table.horizontal tfoot, table.horizontal tfoot th, table.horizontal tfoot td, table.horizontal tfoot tr, table.horizontal tfoot tr th, table.horizontal tfoot tr td {
   border-left-width: 0;
   border-right-width: 0;
 }
-/* line 62, ../scss/modules/_tables.scss */
-table.vertical tr, table.vertical th, table.vertical td {
+
+/* line 60, ../scss/modules/tables/_components.scss */
+table.vertical, table.vertical th, table.vertical td, table.vertical tr, table.vertical tr th, table.vertical tr td, table.vertical tbody, table.vertical tbody th, table.vertical tbody td, table.vertical tbody tr, table.vertical tbody tr th, table.vertical tbody tr td, table.vertical thead, table.vertical thead th, table.vertical thead td, table.vertical thead tr, table.vertical thead tr th, table.vertical thead tr td, table.vertical tfoot, table.vertical tfoot th, table.vertical tfoot td, table.vertical tfoot tr, table.vertical tfoot tr th, table.vertical tfoot tr td {
   border-top-width: 0;
   border-bottom-width: 0;
 }
 
-/* line 66, ../scss/modules/_tables.scss */
-table {
-  color: #222222;
+/* line 73, ../scss/modules/tables/_components.scss */
+table.condensed thead tr th, table.condensed thead tr td {
+  padding: 0.25rem;
 }
-/* line 247, ../scss/modules/_themes.scss */
+/* line 81, ../scss/modules/tables/_components.scss */
+table.condensed tfoot tr td {
+  padding: 0.25rem;
+}
+/* line 89, ../scss/modules/tables/_components.scss */
+table.condensed tr td, table.condensed tbody tr td {
+  padding: 0.25rem;
+}
+
+@media only screen and (max-width: 47.9375em) {
+  /* line 97, ../scss/modules/tables/_components.scss */
+  .table-responsive {
+    margin-bottom: 1rem;
+  }
+  /* line 101, ../scss/modules/tables/_components.scss */
+  .table-responsive table {
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+/* line 16, ../scss/modules/tables/_themes.scss */
+table tr, table th, table td, table thead tr, table thead th, table thead td, table tbody tr, table tbody th, table tbody td, table tfoot tr, table tfoot th, table tfoot td {
+  border-width: 1px;
+  border-style: solid;
+}
+/* line 22, ../scss/modules/tables/_themes.scss */
+table thead tr {
+  border-bottom-width: 2px;
+}
+/* line 26, ../scss/modules/tables/_themes.scss */
+table tbody + tbody tr:first-child {
+  border-top-width: 2px;
+}
+
+/* line 33, ../scss/modules/tables/_themes.scss */
 table thead {
-  background-color: navy;
-  color: #efefef;
+  background-color: transparent;
 }
-/* line 257, ../scss/modules/_themes.scss */
+/* line 37, ../scss/modules/tables/_themes.scss */
 table tfoot {
   background-color: transparent;
-  color: #222222;
 }
-/* line 267, ../scss/modules/_themes.scss */
-table tbody {
+/* line 41, ../scss/modules/tables/_themes.scss */
+table, table tbody {
   background-color: transparent;
-  color: #222222;
 }
-/* line 277, ../scss/modules/_themes.scss */
-table, table thead, table tr, table th, table td {
+/* line 45, ../scss/modules/tables/_themes.scss */
+table thead, table tr, table th, table td {
   border-color: #9a9a9a;
 }
-/* line 283, ../scss/modules/_themes.scss */
+/* line 50, ../scss/modules/tables/_themes.scss */
 table.zebra tr:nth-child(even), table.striped tr:nth-child(even) {
+  background-color: #f7f7f7;
+}
+/* line 54, ../scss/modules/tables/_themes.scss */
+table.zebra tr:nth-child(odd), table.striped tr:nth-child(odd) {
   background-color: transparent;
 }
-/* line 287, ../scss/modules/_themes.scss */
-table.zebra tr:nth-child(odd), table.striped tr:nth-child(odd) {
-  background-color: #efefef;
-}
-/* line 291, ../scss/modules/_themes.scss */
+/* line 58, ../scss/modules/tables/_themes.scss */
 table.zebra tr:only-child, table.striped tr:only-child {
   background-color: transparent;
 }
-/* line 69, ../scss/modules/_tables.scss */
-table.transparent {
-  color: #222222;
+/* line 64, ../scss/modules/tables/_themes.scss */
+table.hover tr:hover {
+  background-color: #eaeaea;
 }
-/* line 247, ../scss/modules/_themes.scss */
-table.transparent thead {
-  background-color: transparent;
-  color: inherit;
-}
-/* line 257, ../scss/modules/_themes.scss */
-table.transparent tfoot {
-  background-color: transparent;
-  color: #222222;
-}
-/* line 267, ../scss/modules/_themes.scss */
-table.transparent tbody {
-  background-color: transparent;
-  color: #222222;
-}
-/* line 277, ../scss/modules/_themes.scss */
-table.transparent, table.transparent thead, table.transparent tr, table.transparent th, table.transparent td {
-  border-color: #9a9a9a;
-}
-/* line 283, ../scss/modules/_themes.scss */
-table.transparent.zebra tr:nth-child(even), table.transparent.striped tr:nth-child(even) {
-  background-color: transparent;
-}
-/* line 287, ../scss/modules/_themes.scss */
-table.transparent.zebra tr:nth-child(odd), table.transparent.striped tr:nth-child(odd) {
-  background-color: #efefef;
-}
-/* line 291, ../scss/modules/_themes.scss */
-table.transparent.zebra tr:only-child, table.transparent.striped tr:only-child {
-  background-color: transparent;
-}
-
 /* line 25, ../scss/modules/_state.scss */
 .hide, .hidden {
   display: none !important;

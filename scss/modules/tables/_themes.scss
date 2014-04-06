@@ -1,3 +1,83 @@
 // 
 // Tables Themes and Styles
 // ========================
+
+// Table Theme
+@mixin table-style(
+	$style: $table-style,
+	$theme: $table-theme
+) {
+	@extend %ext-table-#{$style} !optional;
+	@extend %theme-table-#{$theme} !optional;
+}
+
+%ext-table-default {
+	&, thead, tbody, tfoot {
+		tr, th, td {
+			border-width: $table-cell-border-width;
+        	border-style: solid;
+		}
+	}
+
+	thead tr {
+		border-bottom-width: $table-cell-border-width * 2;
+	}
+
+	tbody + tbody tr:first-child {
+		border-top-width: $table-cell-border-width * 2;
+	}
+}
+
+%theme-table-default {
+	&, &%light {
+		thead {
+			background-color: transparent;
+		}
+
+		tfoot {
+			background-color: transparent;
+		}
+
+		&, tbody {
+			background-color: transparent;
+		}
+
+		thead, tr, th, td {
+			border-color: $table-border-color;
+		}
+
+		&.zebra, &.striped {
+	        tr:nth-child(even) {
+	            background-color: $color-gray-light;
+	        }
+
+	        tr:nth-child(odd) {
+	            background-color: transparent;
+	        }
+
+	        tr:only-child {
+	            background-color: transparent;
+	        }
+	    }
+
+	    &.hover {
+	    	tr:hover {
+	    		background-color: darken($color-gray-light, 5%);
+	    	}
+	    }
+	}
+
+	&%dark {
+		thead {
+			background-color: $color-light;
+		}
+
+		tfoot {
+			background-color: $color-light;
+		}
+
+		tbody {
+			background-color: $color-light;
+		}
+	}
+}

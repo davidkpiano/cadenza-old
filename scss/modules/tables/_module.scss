@@ -2,6 +2,25 @@
 // Tables Module
 // =============
 
+// Table Settings
+$table-style: default !default;
+$table-theme: default !default;
+$table-margin-bottom: 1rem !default;
+$table-border-width: $form-border-width !default;
+$table-border-color: $color-gray !default;
+$table-text-align: left !default;
+
+$table-cell-padding: 0.5rem !default;
+$table-cell-border-width: $table-border-width !default;
+
+$table-thead-padding: $table-cell-padding !default;
+$table-thead-type-scale: -1 !default;
+$table-thead-text-transform: uppercase !default;
+
+$table-tfoot-padding: $table-cell-padding !default;
+$table-tfoot-type-scale: 0 !default;
+$table-tfoot-text-transform: uppercase !default;
+
 // Imports
 @import
 	'_mixins',
