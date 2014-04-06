@@ -238,4 +238,16 @@
 	&::after { content: '\2019'; }
 }
 
+// Horizontal Rules
+// ----------------
+%hr {
+	clear: both;
+	height: 0;
+	margin: $type-hr-margin;
+	margin-left: 0;
+	margin-right: 0;
+	border-top: $type-hr-border;
+	border-bottom: none;
+}
+
 

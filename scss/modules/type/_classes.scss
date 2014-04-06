@@ -109,5 +109,8 @@ q {
 	&.low-single { @extend %quote-low-single; }
 }
 
+// Horizontal Rules
+// ----------------
+hr, .hr { @extend %hr; }
 
 
