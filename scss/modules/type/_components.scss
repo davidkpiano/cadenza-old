@@ -250,4 +250,90 @@
 	border-bottom: none;
 }
 
+// Lists
+// -----
+%list {
+	list-style-position: $type-list-position;
+    margin-bottom: $type-list-margin-bottom;
+    padding: 0;
+
+    %list-nested {
+    	margin-bottom: 0;
+    }
+
+    %list-item {
+    	list-style-position: $type-list-position;
+    }
+}
+
+%list-unstyled {
+	@extend %list;
+	list-style: none;
+	margin-left: 0;
+}
+
+%list-inline {
+	@extend %list;
+	margin-left: 0;
+
+	%list-inline-item {
+		@extend %nowrap;
+		display: inline-block;
+		padding-right: $type-list-inline-padding;
+	}
+}
+
+%list-unordered {
+	@extend %list;
+
+	margin-left: $type-list-ul-margin;
+}
+
+%list-square { list-style-type: square; }
+%list-circle { list-style-type: circle; }
+%list-disc { list-style-type: disc; }
+%list-no-bullet { list-style-type: none; }
+
+%list-ordered {
+	@extend %list;
+
+	margin-left: $type-list-ol-margin;
+}
+
+%list-description {
+	@extend %list;
+
+	%list-description-term {
+		font-weight: $type-list-dl-header-weight;
+		margin-bottom: $type-list-dl-header-margin-bottom;
+	}
+
+	%list-description-definition {
+		margin-bottom: $type-list-dl-margin-bottom;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

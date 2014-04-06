@@ -77,6 +77,15 @@ $type-blockquote-margin-bottom: 1rem !default;
 $type-hr-margin: 1rem 0 !default;
 $type-hr-border: 1px solid $color-gray-light !default;
 
+// Lists
+$type-list-position: outside !default;
+$type-list-margin-bottom: 1rem !default;
+$type-list-inline-padding: 0 1rem 0 0;
+$type-list-ul-margin: 1rem !default;
+$type-list-ol-margin: 1.4rem !default;
+$type-list-dl-header-weight: bold !default;
+$type-list-dl-header-margin-bottom: 0.5rem !default;
+$type-list-dl-margin-bottom: 0.5rem !default;
 
 // Imports
 @import

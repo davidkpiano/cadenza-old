@@ -113,4 +113,26 @@ q {
 // ----------------
 hr, .hr { @extend %hr; }
 
+// Lists
+// -----
+ul {
+	@extend %list-unordered;
+
+	&.square { @extend %list-square; }
+	&.circle { @extend %list-circle; }
+	&.disc { @extend %list-disc; }
+	&.no-bullet { @extend %list-no-bullet; }
+
+	&.unstyled { @extend %list-unstyled; }
+}
+
+ol { @extend %list-ordered; }
+
+dl {
+	@extend %list-description;
+
+	dt { @extend %list-description-term; }
+	dd { @extend %list-description-definition; }
+}
+
 
