@@ -190,5 +190,52 @@
 	@include type-scale($type-kbd-scale);
 }
 
+// Quotes
+// ------
+%blockquote {
+	padding: $type-blockquote-padding;
+	margin-bottom: $type-blockquote-margin-bottom;
+	@include type-scale($type-blockquote-scale);
+
+	%footer {
+		@include type-scale($type-blockquote-footer-scale);
+
+		%cite { @extend %em; }
+	}
+}
+
+%quote {
+	@extend %quote-double;
+}
+
+%quote-double {
+	&::before { content: '\201C'; }
+	&::after { content: '\201D'; }
+}
+
+%quote-single {
+	&::before { content: '\2018'; }
+	&::after { content: '\2019'; }
+}
+
+%quote-arrow-double {
+	&::before { content: '\00AB'; }
+	&::after { content: '\00BB'; }
+}
+
+%quote-arrow-single {
+	&::before { content: '\2039'; }
+	&::after { content: '\203A'; }
+}
+
+%quote-low-double {
+	&::before { content: '\201E'; }
+	&::after { content: '\201D'; }
+}
+
+%quote-low-single {
+	&::before { content: '\201A'; }
+	&::after { content: '\2019'; }
+}
 
 

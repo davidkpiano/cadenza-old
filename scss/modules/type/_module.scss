@@ -25,8 +25,9 @@ $type-monospace-font-family: Consolas, monaco, monospace !default;
 $type-script-font-family: "Brush Script MT", cursive !default;
 
 // Headings
+$type-heading-style: default !default;
+$type-heading-theme: default !default;
 $type-headings: ((h1, 6), (h2, 5), (h3, 4), (h4, 3), (h3, 2), (h2, 1), (h1, 0));
-$type-heading-style: normal !default;
 $type-heading-font-family: $type-primary-font-family !default;
 $type-heading-font-weight: $type-base-font-weight !default;
 $type-heading-font-style: normal !default;
@@ -51,6 +52,8 @@ $type-p-font-weight: $type-base-font-weight !default;
 $type-p-lead-scale: 1 !default;
 
 // Preformatted Text
+$type-pre-style: default !default;
+$type-pre-theme: default !default;
 $type-pre-color: $type-base-color !default;
 $type-pre-scale: 0 !default;
 $type-pre-font-family: $type-monospace-font-family !default;
@@ -58,6 +61,18 @@ $type-code-color: $type-pre-color !default;
 $type-code-scale: -1 !default;
 $type-code-font-family: $type-pre-font-family !default;
 $type-kbd-scale: -2 !default;
+
+// Quotes
+$type-blockquote-style: default !default;
+$type-blockquote-theme: default !default;
+$type-blockquote-padding: 1rem !default;
+$type-blockquote-scale: 1 !default;
+$type-blockquote-footer-scale: -1 !default;
+$type-blockquote-color: $color-gray !default;
+$type-blockquote-footer-color: $color-gray !default;
+$type-blockquote-border-color: $type-blockquote-color !default;
+$type-blockquote-margin-bottom: 1rem !default;
+
 
 // Imports
 @import

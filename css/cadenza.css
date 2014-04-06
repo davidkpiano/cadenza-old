@@ -3920,7 +3920,7 @@ strong, b, .strong {
 }
 
 /* line 120, ../scss/modules/type/_components.scss */
-em, .italics {
+blockquote footer cite, em, .italics {
   font-style: italic;
 }
 
@@ -3960,7 +3960,7 @@ pre, .pre {
   white-space: pre;
   font-size: 16px ;
   font-size: 1rem ;
-  font-family: monospace;
+  font-family: Consolas, monaco, monospace;
 }
 /* line 176, ../scss/modules/type/_components.scss */
 pre code, .pre code, pre .code, .pre .code {
@@ -3974,7 +3974,7 @@ pre code, pre .code, .pre code, .pre .code, code, .code {
   white-space: pre;
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
-  font-family: monospace;
+  font-family: Consolas, monaco, monospace;
 }
 
 /* line 189, ../scss/modules/type/_components.scss */
@@ -3983,28 +3983,102 @@ kbd, .kbd {
   font-size: 0.74137rem ;
 }
 
-/* line 12, ../scss/modules/type/_themes.scss */
+/* line 195, ../scss/modules/type/_components.scss */
+blockquote {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 18.5824px ;
+  font-size: 1.1614rem ;
+}
+/* line 200, ../scss/modules/type/_components.scss */
+blockquote footer {
+  font-size: 13.77648px ;
+  font-size: 0.86103rem ;
+}
+
+/* line 212, ../scss/modules/type/_components.scss */
+q::before, q.double::before {
+  content: '\201C';
+}
+/* line 213, ../scss/modules/type/_components.scss */
+q::after, q.double::after {
+  content: '\201D';
+}
+
+/* line 217, ../scss/modules/type/_components.scss */
+q > q::before, q.single::before {
+  content: '\2018';
+}
+/* line 218, ../scss/modules/type/_components.scss */
+q > q::after, q.single::after {
+  content: '\2019';
+}
+
+/* line 222, ../scss/modules/type/_components.scss */
+q.arrow-double::before {
+  content: '\00AB';
+}
+/* line 223, ../scss/modules/type/_components.scss */
+q.arrow-double::after {
+  content: '\00BB';
+}
+
+/* line 227, ../scss/modules/type/_components.scss */
+q.arrow-single::before {
+  content: '\2039';
+}
+/* line 228, ../scss/modules/type/_components.scss */
+q.arrow-single::after {
+  content: '\203A';
+}
+
+/* line 232, ../scss/modules/type/_components.scss */
+q.low-double::before {
+  content: '\201E';
+}
+/* line 233, ../scss/modules/type/_components.scss */
+q.low-double::after {
+  content: '\201D';
+}
+
+/* line 237, ../scss/modules/type/_components.scss */
+q.low-single::before {
+  content: '\201A';
+}
+/* line 238, ../scss/modules/type/_components.scss */
+q.low-single::after {
+  content: '\2019';
+}
+
+/* line 15, ../scss/modules/type/_themes.scss */
 body h6, body .h6 {
   text-transform: uppercase;
 }
 
-/* line 17, ../scss/modules/type/_themes.scss */
+/* line 20, ../scss/modules/type/_themes.scss */
 body h1, body h2, body h3, body h4, body h5, body h6, body .h1, body .h2, body .h3, body .h4, body .h5, body .h6 {
   color: #222222;
 }
-/* line 20, ../scss/modules/type/_themes.scss */
+/* line 23, ../scss/modules/type/_themes.scss */
 body h1.sub, body h1.subheading, body h1.h1.sub, body h1.h1.subheading, body h1.h2.sub, body h1.h2.subheading, body h1.h3.sub, body h1.h3.subheading, body h1.h4.sub, body h1.h4.subheading, body h1 > h1.small, body .h1 > h1.small, body h2 > h1.small, body .h2 > h1.small, body h3 > h1.small, body .h3 > h1.small, body h4 > h1.small, body .h4 > h1.small, body h2.h1.sub, body h2.h1.subheading, body h2.sub, body h2.subheading, body h2.h2.sub, body h2.h2.subheading, body h2.h3.sub, body h2.h3.subheading, body h2.h4.sub, body h2.h4.subheading, body h1 > h2.small, body .h1 > h2.small, body h2 > h2.small, body .h2 > h2.small, body h3 > h2.small, body .h3 > h2.small, body h4 > h2.small, body .h4 > h2.small, body h3.h1.sub, body h3.h1.subheading, body h3.h2.sub, body h3.h2.subheading, body h3.sub, body h3.subheading, body h3.h3.sub, body h3.h3.subheading, body h3.h4.sub, body h3.h4.subheading, body h1 > h3.small, body .h1 > h3.small, body h2 > h3.small, body .h2 > h3.small, body h3 > h3.small, body .h3 > h3.small, body h4 > h3.small, body .h4 > h3.small, body h4.h1.sub, body h4.h1.subheading, body h4.h2.sub, body h4.h2.subheading, body h4.h3.sub, body h4.h3.subheading, body h4.sub, body h4.subheading, body h4.h4.sub, body h4.h4.subheading, body h1 > h4.small, body .h1 > h4.small, body h2 > h4.small, body .h2 > h4.small, body h3 > h4.small, body .h3 > h4.small, body h4 > h4.small, body .h4 > h4.small, body h5.h1.sub, body h5.h1.subheading, body h5.h2.sub, body h5.h2.subheading, body h5.h3.sub, body h5.h3.subheading, body h5.h4.sub, body h5.h4.subheading, body h1 > h5.small, body .h1 > h5.small, body h2 > h5.small, body .h2 > h5.small, body h3 > h5.small, body .h3 > h5.small, body h4 > h5.small, body .h4 > h5.small, body h6.h1.sub, body h6.h1.subheading, body h6.h2.sub, body h6.h2.subheading, body h6.h3.sub, body h6.h3.subheading, body h6.h4.sub, body h6.h4.subheading, body h1 > h6.small, body .h1 > h6.small, body h2 > h6.small, body .h2 > h6.small, body h3 > h6.small, body .h3 > h6.small, body h4 > h6.small, body .h4 > h6.small, body .h1.sub, body .h1.subheading, body h1 > small.h1, body h1 > .h1.small, body h1 > input.h1[type].small, body .h1 > small.h1, body .h1 > .h1.small, body h2 > small.h1, body h2 > .h1.small, body h2 > input.h1[type].small, body .h2 > small.h1, body .h2 > .h1.small, body h3 > small.h1, body h3 > .h1.small, body h3 > input.h1[type].small, body .h3 > small.h1, body .h3 > .h1.small, body h4 > small.h1, body h4 > .h1.small, body h4 > input.h1[type].small, body .h4 > small.h1, body .h4 > .h1.small, body .h2.sub, body .h2.subheading, body h1 > small.h2, body h1 > .h2.small, body h1 > input.h2[type].small, body .h1 > small.h2, body .h1 > .h2.small, body h2 > small.h2, body h2 > .h2.small, body h2 > input.h2[type].small, body .h2 > small.h2, body .h2 > .h2.small, body h3 > small.h2, body h3 > .h2.small, body h3 > input.h2[type].small, body .h3 > small.h2, body .h3 > .h2.small, body h4 > small.h2, body h4 > .h2.small, body h4 > input.h2[type].small, body .h4 > small.h2, body .h4 > .h2.small, body .h3.sub, body .h3.subheading, body h1 > small.h3, body h1 > .h3.small, body h1 > input.h3[type].small, body .h1 > small.h3, body .h1 > .h3.small, body h2 > small.h3, body h2 > .h3.small, body h2 > input.h3[type].small, body .h2 > small.h3, body .h2 > .h3.small, body h3 > small.h3, body h3 > .h3.small, body h3 > input.h3[type].small, body .h3 > small.h3, body .h3 > .h3.small, body h4 > small.h3, body h4 > .h3.small, body h4 > input.h3[type].small, body .h4 > small.h3, body .h4 > .h3.small, body .h4.sub, body .h4.subheading, body h1 > small.h4, body h1 > .h4.small, body h1 > input.h4[type].small, body .h1 > small.h4, body .h1 > .h4.small, body h2 > small.h4, body h2 > .h4.small, body h2 > input.h4[type].small, body .h2 > small.h4, body .h2 > .h4.small, body h3 > small.h4, body h3 > .h4.small, body h3 > input.h4[type].small, body .h3 > small.h4, body .h3 > .h4.small, body h4 > small.h4, body h4 > .h4.small, body h4 > input.h4[type].small, body .h4 > small.h4, body .h4 > .h4.small, body h1.h5.sub, body h1.h5.subheading, body .h5.h1.sub, body .h5.h1.subheading, body h2.h5.sub, body h2.h5.subheading, body .h5.h2.sub, body .h5.h2.subheading, body h3.h5.sub, body h3.h5.subheading, body .h5.h3.sub, body .h5.h3.subheading, body h4.h5.sub, body h4.h5.subheading, body .h5.h4.sub, body .h5.h4.subheading, body h1 > small.h5, body h1 > .h5.small, body h1 > input.h5[type].small, body .h1 > small.h5, body .h1 > .h5.small, body h2 > small.h5, body h2 > .h5.small, body h2 > input.h5[type].small, body .h2 > small.h5, body .h2 > .h5.small, body h3 > small.h5, body h3 > .h5.small, body h3 > input.h5[type].small, body .h3 > small.h5, body .h3 > .h5.small, body h4 > small.h5, body h4 > .h5.small, body h4 > input.h5[type].small, body .h4 > small.h5, body .h4 > .h5.small, body h1.h6.sub, body h1.h6.subheading, body .h6.h1.sub, body .h6.h1.subheading, body h2.h6.sub, body h2.h6.subheading, body .h6.h2.sub, body .h6.h2.subheading, body h3.h6.sub, body h3.h6.subheading, body .h6.h3.sub, body .h6.h3.subheading, body h4.h6.sub, body h4.h6.subheading, body .h6.h4.sub, body .h6.h4.subheading, body h1 > small.h6, body h1 > .h6.small, body h1 > input.h6[type].small, body .h1 > small.h6, body .h1 > .h6.small, body h2 > small.h6, body h2 > .h6.small, body h2 > input.h6[type].small, body .h2 > small.h6, body .h2 > .h6.small, body h3 > small.h6, body h3 > .h6.small, body h3 > input.h6[type].small, body .h3 > small.h6, body .h3 > .h6.small, body h4 > small.h6, body h4 > .h6.small, body h4 > input.h6[type].small, body .h4 > small.h6, body .h4 > .h6.small {
   color: #9a9a9a;
 }
-/* line 45, ../scss/modules/type/_themes.scss */
+/* line 56, ../scss/modules/type/_themes.scss */
 body pre, body .pre {
   color: #222222;
 }
-/* line 49, ../scss/modules/type/_themes.scss */
+/* line 60, ../scss/modules/type/_themes.scss */
 body code, body .code {
   color: #222222;
+  padding: 0.25rem 0.5rem;
+  background: #f7f7f7;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  border-radius: 0.25rem;
 }
-/* line 54, ../scss/modules/type/_themes.scss */
+/* line 71, ../scss/modules/type/_themes.scss */
 body kbd, body kbd.light, body .kbd, body .kbd.light {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #222222;
@@ -4012,18 +4086,45 @@ body kbd, body kbd.light, body .kbd, body .kbd.light {
   background: #f7f7f7;
   border: 1px solid #9a9a9a;
   border-bottom-width: 3px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  -ms-border-radius: 3px;
-  -o-border-radius: 3px;
-  border-radius: 3px;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+  border-radius: 0.25rem;
 }
-/* line 64, ../scss/modules/type/_themes.scss */
+/* line 84, ../scss/modules/type/_themes.scss */
 body kbd.dark, body .kbd.dark {
   color: #efefef;
   background: #3c3c3c;
   border-color: #222222;
 }
+/* line 112, ../scss/modules/type/_themes.scss */
+blockquote, blockquote.left {
+  border-style: solid;
+  border-width: 0;
+  border-left-width: 1px;
+}
+/* line 118, ../scss/modules/type/_themes.scss */
+blockquote.right {
+  text-align: right;
+  border-left-width: 0;
+  border-right-width: 1px;
+}
+
+/* line 125, ../scss/modules/type/_themes.scss */
+blockquote {
+  border-color: #9a9a9a;
+  color: #9a9a9a;
+}
+/* line 129, ../scss/modules/type/_themes.scss */
+blockquote footer {
+  color: #9a9a9a;
+}
+/* line 132, ../scss/modules/type/_themes.scss */
+blockquote footer::before {
+  content: '\2014 \00A0';
+}
+
 /* line 24, ../scss/modules/_anchors.scss */
 a {
   text-decoration: none;

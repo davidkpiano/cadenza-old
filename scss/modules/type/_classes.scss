@@ -77,3 +77,37 @@ pre, .pre {
 code, .code { @extend %code; }
 
 kbd, .kbd { @extend %kbd; }
+
+// Quotes
+// ------
+blockquote {
+	@include blockquote-style();
+	@extend %blockquote;
+
+	footer { 
+		@extend %footer;
+
+		cite { @extend %cite; }
+	}
+}
+
+q {
+	@extend %quote;
+
+	> q { @extend %quote-single; }
+
+	&.double { @extend %quote-double; }
+
+	&.single { @extend %quote-single; }
+
+	&.arrow-double { @extend %quote-arrow-double; }
+
+	&.arrow-single { @extend %quote-arrow-single; }
+
+	&.low-double { @extend %quote-low-double; }
+
+	&.low-single { @extend %quote-low-single; }
+}
+
+
+

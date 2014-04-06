@@ -3,7 +3,10 @@
 // ===========
 
 // Heading Theme
-@mixin heading-style($style: default, $theme: default) {
+@mixin heading-style(
+	$style: $type-heading-style,
+	$theme: $type-heading-theme
+) {
 	@extend %ext-heading-#{$style} !optional;
 	@extend %theme-heading-#{$style} !optional;
 }
@@ -35,7 +38,15 @@
 }
 
 // Preformatted Text Theme
-@mixin pre-style($style: default, $theme: default) {
+$x-pre-code-padding: 0.25rem 0.5rem !default;
+$x-pre-code-radius: 0.25rem !default;
+$x-pre-kbd-padding: $x-pre-code-padding !default;
+$x-pre-kbd-radius: 0.25rem !default;
+
+@mixin pre-style(
+	$style: $type-pre-style,
+	$theme: $type-pre-theme
+) {
 	@extend %ext-pre-#{$style} !optional;
 	@extend %theme-pre-#{$style} !optional;
 }
@@ -48,17 +59,26 @@
 
 		code, .code {
 			color: $type-code-color;
+			padding: $x-pre-code-padding;
+			background: $color-gray-light;
+
+			@if $x-pre-code-radius {
+				@include border-radius($x-pre-code-radius);
+			}
 		}
 
 		kbd, .kbd {
 			&, &.light {
 				font-family: $type-base-font-family;
 				color: $type-base-color;
-				padding: 0.25rem 0.5rem;
+				padding: $x-pre-kbd-padding;
 				background: $color-gray-light;
 				border: 1px solid $color-gray;
 				border-bottom-width: 3px;
-				@include border-radius(3px);
+
+				@if $x-pre-kbd-radius {
+					@include border-radius($x-pre-kbd-radius);
+				}
 			}
 
 			&.dark {
@@ -73,9 +93,44 @@
 		pre, .pre {
 			color: $color-gray-light;
 		}
+	}
+}
 
-		code, .code {
-			color: $color-gray-light;
+// Blockquote Theme
+$x-blockquote-border-width: 1px !default;
+$x-blockquote-footer-prefix: '\2014 \00A0';
+
+@mixin blockquote-style(
+	$style: $type-blockquote-style,
+	$theme: $type-blockquote-theme
+) {
+	@extend %ext-blockquote-#{$style} !optional;
+	@extend %theme-blockquote-#{$theme} !optional;
+}
+
+%ext-blockquote-default {
+	&, &.left {
+		border-style: solid;
+		border-width: 0;
+		border-left-width: $x-blockquote-border-width;
+	}
+
+	&.right {
+		text-align: right;
+		border-left-width: 0;
+		border-right-width: $x-blockquote-border-width;
+	}
+}
+
+%theme-blockquote-default {
+	border-color: $type-blockquote-border-color;
+	color: $type-blockquote-color;
+
+	footer {
+		color: $type-blockquote-footer-color;
+
+		&::before {
+			content: '\2014 \00A0';
 		}
 	}
 }
