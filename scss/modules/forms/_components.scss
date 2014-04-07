@@ -5,11 +5,11 @@
 %input {
 	@extend %border-box;
 	@extend %display-block;
-	@include type-scale($form-input-type-scale);
+	@include type-scale($form-input-scale);
 	width: 100%;
-	padding: $form-input-type-padding;
+	padding: $form-input-padding;
 	background-image: none;
-	border-width: $form-input-type-border-width;
+	border-width: $form-input-border-width;
 	border-style: solid;
 
 	@if $form-radius {
@@ -19,12 +19,12 @@
 
 %input-small {
 	@extend %input;
-	@include type-scale($form-input-type-scale - 1);
+	@include type-scale($form-input-scale - 1);
 }
 
 %input-large {
 	@extend %input;
-	@include type-scale($form-input-type-scale + 1);
+	@include type-scale($form-input-scale + 1);
 }
 
 %input-inline {
@@ -44,3 +44,13 @@
 	-webkit-appearance: none;
 }
 
+%label {
+	display: $form-label-display;
+	margin-bottom: $form-label-margin-bottom;
+	@include type-scale($form-label-scale);
+}
+
+%label-inline {
+	display: inline-block;
+	padding: $form-label-padding;
+}

@@ -1,3 +1,43 @@
 // 
 // Forms Mixins and Functions
 // ==========================
+
+// Group Layout Mixin
+// 
+// Provides a more powerful way to do horizontal layouts using (sorry) tables!
+// EXPERIMENTAL - DO NOT USE
+@mixin group-layout(
+    $item-widths,
+    $media: false
+) {
+    @include mq($media) {
+        display: inline-table;
+        vertical-align: middle;
+
+        @for $i from 1 through length($item-widths) {
+            $item-width: nth($item-widths, $i);
+            $selector: '>:nth-child(#{$i})';
+            $width: $item-width;
+
+            @if length($item-width) == 2 {
+                $width: nth($item-width, 2);
+                $selector: nth($item-width, 1);
+            }
+
+            @if $width == 'fill' {
+                // #{$selector} { width: 100%; }
+            } @else if $width == 'auto' {
+                #{$selector} { width: auto; }
+            } @else {
+                #{$selector} { width: column-width($width); }
+            }
+
+            #{$selector} {
+                display: table-cell;
+                margin: 0;
+                white-space: nowrap;
+            }
+        }
+    }
+}
+
