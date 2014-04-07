@@ -162,7 +162,7 @@ input, button, textarea, select {
 }
 
 /* line 54, ../scss/modules/_layout.scss */
-.inline-block-all > *, .valign-center-all > *, nav.horizontal > ul > li > a > *, .inline-block, h1.inline, .h1.inline, h2.inline, .h2.inline, h3.inline, .h3.inline, h4.inline, .h4.inline, nav ul li > a > *, nav.vertical ul li > a > *, .dropdown ul li > a > *, nav ul li > a > .badge, nav.vertical ul li > a > .badge, .dropdown ul li > a > .badge, nav ul li > a > .label, nav.vertical ul li > a > .label, .dropdown ul li > a > .label, form input[type=checkbox] + label, body input[type=checkbox] + label, form input[type=radio] + label, body input[type=radio] + label {
+.inline-block-all > *, .valign-center-all > *, nav.horizontal > ul > li > a > *, .inline-block, h1.inline, .h1.inline, h2.inline, .h2.inline, h3.inline, .h3.inline, h4.inline, .h4.inline, nav ul li > a > *, nav.vertical ul li > a > *, .dropdown ul li > a > *, nav ul li > a > .badge, nav.vertical ul li > a > .badge, .dropdown ul li > a > .badge, nav ul li > a > .label, nav.vertical ul li > a > .label, .dropdown ul li > a > .label {
   display: inline-block;
   width: auto;
   margin-top: 0;
@@ -175,7 +175,7 @@ input, button, textarea, select {
 }
 
 /* line 68, ../scss/modules/_layout.scss */
-*, *:before, *:after, form input[type], body input[type], form textarea, body textarea {
+*, *:before, *:after {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2442,7 +2442,7 @@ header:after, footer:after, section:after {
   }
 }
 /* line 143, ../scss/modules/grid/_components.scss */
-.row, .layer, form {
+.row, .layer {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2454,7 +2454,7 @@ header:after, footer:after, section:after {
   clear: both;
 }
 /* line 38, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.row:after, .layer:after, form:after {
+.row:after, .layer:after {
   content: "";
   display: table;
   clear: both;
@@ -3854,7 +3854,7 @@ h1.inline, .h1.inline, h2.inline, .h2.inline, h3.inline, .h3.inline, h4.inline, 
 }
 
 /* line 58, ../scss/modules/type/_components.scss */
-h1 > small, h1 > .small, form h1 > input[type].small, body h1 > input[type].small, form h1 > textarea.small, body h1 > textarea.small, .h1 > small, .h1 > .small, form .h1 > input[type].small, body .h1 > input[type].small, form .h1 > textarea.small, body .h1 > textarea.small, h2 > small, h2 > .small, form h2 > input[type].small, body h2 > input[type].small, form h2 > textarea.small, body h2 > textarea.small, .h2 > small, .h2 > .small, form .h2 > input[type].small, body .h2 > input[type].small, form .h2 > textarea.small, body .h2 > textarea.small, h3 > small, h3 > .small, form h3 > input[type].small, body h3 > input[type].small, form h3 > textarea.small, body h3 > textarea.small, .h3 > small, .h3 > .small, form .h3 > input[type].small, body .h3 > input[type].small, form .h3 > textarea.small, body .h3 > textarea.small, h4 > small, h4 > .small, form h4 > input[type].small, body h4 > input[type].small, form h4 > textarea.small, body h4 > textarea.small, .h4 > small, .h4 > .small, form .h4 > input[type].small, body .h4 > input[type].small, form .h4 > textarea.small, body .h4 > textarea.small {
+h1 > small, h1 > .small, .h1 > small, .h1 > .small, h2 > small, h2 > .small, .h2 > small, .h2 > .small, h3 > small, h3 > .small, .h3 > small, .h3 > .small, h4 > small, h4 > .small, .h4 > small, .h4 > .small {
   font-size: 74.13723%;
 }
 
@@ -3900,12 +3900,12 @@ p.lead {
 }
 
 /* line 104, ../scss/modules/type/_components.scss */
-small, .small, form input[type].small, body input[type].small, form textarea.small, body textarea.small {
+small, .small {
   font-size: 86.10298%;
 }
 
 /* line 108, ../scss/modules/type/_components.scss */
-.large, form input[type].large, body input[type].large, form textarea.large, body textarea.large {
+.large {
   font-size: 116.14%;
 }
 
@@ -4133,7 +4133,7 @@ body h1, body h2, body h3, body h4, body h5, body h6, body .h1, body .h2, body .
   color: #222222;
 }
 /* line 47, ../scss/modules/type/_themes.scss */
-body h1.sub, body h1.subheading, body h1 > small, body h1 > .small, body form h1 > input[type].small, form body h1 > input[type].small, body h1 > input[type].small, body form h1 > textarea.small, form body h1 > textarea.small, body h1 > textarea.small, body h2.sub, body h2.subheading, body h2 > small, body h2 > .small, body form h2 > input[type].small, form body h2 > input[type].small, body h2 > input[type].small, body form h2 > textarea.small, form body h2 > textarea.small, body h2 > textarea.small, body h3.sub, body h3.subheading, body h3 > small, body h3 > .small, body form h3 > input[type].small, form body h3 > input[type].small, body h3 > input[type].small, body form h3 > textarea.small, form body h3 > textarea.small, body h3 > textarea.small, body h4.sub, body h4.subheading, body h4 > small, body h4 > .small, body form h4 > input[type].small, form body h4 > input[type].small, body h4 > input[type].small, body form h4 > textarea.small, form body h4 > textarea.small, body h4 > textarea.small, body h5.sub, body h5.subheading, body h5 > small, body h5 > .small, body form h5 > input[type].small, form body h5 > input[type].small, body h5 > input[type].small, body form h5 > textarea.small, form body h5 > textarea.small, body h5 > textarea.small, body h6.sub, body h6.subheading, body h6 > small, body h6 > .small, body form h6 > input[type].small, form body h6 > input[type].small, body h6 > input[type].small, body form h6 > textarea.small, form body h6 > textarea.small, body h6 > textarea.small, body .h1.sub, body .h1.subheading, body .h1 > small, body .h1 > .small, body .h1 > input[type].small, body .h2.sub, body .h2.subheading, body .h2 > small, body .h2 > .small, body .h2 > input[type].small, body .h3.sub, body .h3.subheading, body .h3 > small, body .h3 > .small, body .h3 > input[type].small, body .h4.sub, body .h4.subheading, body .h4 > small, body .h4 > .small, body .h4 > input[type].small, body .h5.sub, body .h5.subheading, body .h5 > small, body .h5 > .small, body .h5 > input[type].small, body .h6.sub, body .h6.subheading, body .h6 > small, body .h6 > .small, body .h6 > input[type].small {
+body h1.sub, body h1.subheading, body h1 > small, body h1 > .small, body h2.sub, body h2.subheading, body h2 > small, body h2 > .small, body h3.sub, body h3.subheading, body h3 > small, body h3 > .small, body h4.sub, body h4.subheading, body h4 > small, body h4 > .small, body h5.sub, body h5.subheading, body h5 > small, body h5 > .small, body h6.sub, body h6.subheading, body h6 > small, body h6 > .small, body .h1.sub, body .h1.subheading, body .h1 > small, body .h1 > .small, body .h2.sub, body .h2.subheading, body .h2 > small, body .h2 > .small, body .h3.sub, body .h3.subheading, body .h3 > small, body .h3 > .small, body .h4.sub, body .h4.subheading, body .h4 > small, body .h4 > .small, body .h5.sub, body .h5.subheading, body .h5 > small, body .h5 > .small, body .h6.sub, body .h6.subheading, body .h6 > small, body .h6 > .small {
   color: #9a9a9a;
 }
 /* line 80, ../scss/modules/type/_themes.scss */
@@ -4507,13 +4507,13 @@ button, .button, input[type=button], input[type=submit], .button-group > label, 
   text-decoration: none;
 }
 /* line 27, ../scss/modules/_buttons.scss */
-form input[type].small.button, body input[type].small.button, form input[type].small[type=button], body input[type].small[type=button], form input[type].small[type=submit], body input[type].small[type=submit], form textarea.small.button, body textarea.small.button, button.small, .small.button, input.small[type=button], input.small[type=submit], .button-group > label.small {
+button.small, .small.button, input.small[type=button], input.small[type=submit], .button-group > label.small {
   padding: 0.25rem 0.5rem;
   font-size: 11.86196px ;
   font-size: 0.74137rem ;
 }
 /* line 32, ../scss/modules/_buttons.scss */
-form input[type].large.button, body input[type].large.button, form input[type].large[type=button], body input[type].large[type=button], form input[type].large[type=submit], body input[type].large[type=submit], form textarea.large.button, body textarea.large.button, button.large, .large.button, input.large[type=button], input.large[type=submit], .button-group > label.large {
+button.large, .large.button, input.large[type=button], input.large[type=submit], .button-group > label.large {
   font-size: 16px ;
   font-size: 1rem ;
 }
@@ -4625,66 +4625,6 @@ button .label, .button .label, input[type=button] .label, input[type=submit] .la
 /* line 166, ../scss/modules/_buttons.scss */
 .button-group input:checked + label {
   z-index: 2;
-}
-
-/* line 2, ../scss/modules/_forms.scss */
-form input[type], body input[type], form textarea, body textarea {
-  font-size: 13.77648px ;
-  font-size: 0.86103rem ;
-  padding: 0.5rem 0.5rem;
-  margin-bottom: 0;
-  margin-right: 8px;
-  border: 1px solid;
-  border-color: #9a9a9a;
-}
-/* line 15, ../scss/modules/_forms.scss */
-form input[type].full, body input[type].full, form textarea.full, body textarea.full {
-  display: block;
-  height: 100%;
-  width: 100%;
-}
-/* line 30, ../scss/modules/_forms.scss */
-form textarea, body textarea {
-  height: 5rem;
-  resize: vertical;
-}
-/* line 35, ../scss/modules/_forms.scss */
-form label, body label {
-  display: block;
-  margin-bottom: 8px;
-  font-size: 13.77648px ;
-  font-size: 0.86103rem ;
-}
-/* line 49, ../scss/modules/_forms.scss */
-form .select, body .select {
-  font-size: 13.77648px ;
-  font-size: 0.86103rem ;
-  background: gray;
-  border: 1px solid #676767;
-}
-/* line 54, ../scss/modules/_forms.scss */
-form .select:after, body .select:after {
-  content: "\25BE";
-  color: white;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: 100%;
-  width: 2rem;
-  text-align: center;
-  padding: 0.5rem;
-  background-color: #676767;
-}
-/* line 68, ../scss/modules/_forms.scss */
-form .select > select, body .select > select {
-  -webkit-appearance: none;
-  color: white;
-  background: transparent;
-  padding: 0.5rem;
-  border: none;
-  z-index: 2;
-  width: 100%;
 }
 
 /* line 3, ../scss/modules/_labels.scss */
