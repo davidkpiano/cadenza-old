@@ -1,3 +1,46 @@
 // 
 // Forms Components
 // ================
+
+%input {
+	@extend %border-box;
+	@extend %display-block;
+	@include type-scale($form-input-type-scale);
+	width: 100%;
+	padding: $form-input-type-padding;
+	background-image: none;
+	border-width: $form-input-type-border-width;
+	border-style: solid;
+
+	@if $form-radius {
+		@include border-radius($form-radius);
+	}
+}
+
+%input-small {
+	@extend %input;
+	@include type-scale($form-input-type-scale - 1);
+}
+
+%input-large {
+	@extend %input;
+	@include type-scale($form-input-type-scale + 1);
+}
+
+%input-inline {
+	@extend %input;
+	@extend %inline-block;
+
+	width: auto;
+}
+
+%textarea {
+	@extend %input;
+
+	height: auto;
+}
+
+%input-search {
+	-webkit-appearance: none;
+}
+

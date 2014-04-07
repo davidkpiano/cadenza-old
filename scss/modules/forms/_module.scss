@@ -2,6 +2,18 @@
 // Forms Module
 // ============
 
+// Shared Form Settings
+$form-style: default !default;
+$form-type-scale: -1 !default;
+$form-border-width: 1px !default;
+$form-radius: 3px !default;
+
+// Input Settings
+$form-input-style: default !default;
+$form-input-theme: default !default;
+$form-input-type-scale: $form-type-scale !default;
+$form-input-type-padding: 0.5rem !default;
+$form-input-type-border-width: $form-border-width !default;
 
 // Imports
 @import
