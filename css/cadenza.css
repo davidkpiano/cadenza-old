@@ -163,20 +163,7 @@ input, button, textarea, select {
 
 /* line 54, ../scss/modules/_layout.scss */
 .inline-block-all > *, .valign-center-all > *, nav.horizontal > ul > li > a > *, .inline-block, h1.inline, .h1.inline, h2.inline, .h2.inline, h3.inline, .h3.inline, h4.inline, .h4.inline, nav ul li > a > *, nav.vertical ul li > a > *, .dropdown ul li > a > *, nav ul li > a > .badge, nav.vertical ul li > a > .badge, .dropdown ul li > a > .badge, nav ul li > a > .label, nav.vertical ul li > a > .label, .dropdown ul li > a > .label, textarea.inline,
-input[type="text"].inline,
-input[type="password"].inline,
-input[type="datetime"].inline,
-input[type="datetime-local"].inline,
-input[type="date"].inline,
-input[type="month"].inline,
-input[type="time"].inline,
-input[type="week"].inline,
-input[type="number"].inline,
-input[type="email"].inline,
-input[type="url"].inline,
-input[type="search"].inline,
-input[type="tel"].inline,
-input[type="color"].inline {
+input.inline {
   display: inline-block;
   width: auto;
   margin-top: 0;
@@ -190,62 +177,10 @@ input[type="color"].inline {
 
 /* line 68, ../scss/modules/_layout.scss */
 *, *:before, *:after, textarea.small,
-input[type="text"].small,
-input[type="password"].small,
-input[type="datetime"].small,
-input[type="datetime-local"].small,
-input[type="date"].small,
-input[type="month"].small,
-input[type="time"].small,
-input[type="week"].small,
-input[type="number"].small,
-input[type="email"].small,
-input[type="url"].small,
-input[type="search"].small,
-input[type="tel"].small,
-input[type="color"].small, textarea.large,
-input[type="text"].large,
-input[type="password"].large,
-input[type="datetime"].large,
-input[type="datetime-local"].large,
-input[type="date"].large,
-input[type="month"].large,
-input[type="time"].large,
-input[type="week"].large,
-input[type="number"].large,
-input[type="email"].large,
-input[type="url"].large,
-input[type="search"].large,
-input[type="tel"].large,
-input[type="color"].large, textarea.inline,
-input[type="text"].inline,
-input[type="password"].inline,
-input[type="datetime"].inline,
-input[type="datetime-local"].inline,
-input[type="date"].inline,
-input[type="month"].inline,
-input[type="time"].inline,
-input[type="week"].inline,
-input[type="number"].inline,
-input[type="email"].inline,
-input[type="url"].inline,
-input[type="search"].inline,
-input[type="tel"].inline,
-input[type="color"].inline, textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"] {
+input.small, textarea.large,
+input.large, textarea.inline,
+input.inline, textarea,
+input {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -4699,62 +4634,10 @@ button .label, .button .label, input[type=button] .label, input[type=submit] .la
 
 /* line 5, ../scss/modules/forms/_components.scss */
 textarea.small,
-input[type="text"].small,
-input[type="password"].small,
-input[type="datetime"].small,
-input[type="datetime-local"].small,
-input[type="date"].small,
-input[type="month"].small,
-input[type="time"].small,
-input[type="week"].small,
-input[type="number"].small,
-input[type="email"].small,
-input[type="url"].small,
-input[type="search"].small,
-input[type="tel"].small,
-input[type="color"].small, textarea.large,
-input[type="text"].large,
-input[type="password"].large,
-input[type="datetime"].large,
-input[type="datetime-local"].large,
-input[type="date"].large,
-input[type="month"].large,
-input[type="time"].large,
-input[type="week"].large,
-input[type="number"].large,
-input[type="email"].large,
-input[type="url"].large,
-input[type="search"].large,
-input[type="tel"].large,
-input[type="color"].large, textarea.inline,
-input[type="text"].inline,
-input[type="password"].inline,
-input[type="datetime"].inline,
-input[type="datetime-local"].inline,
-input[type="date"].inline,
-input[type="month"].inline,
-input[type="time"].inline,
-input[type="week"].inline,
-input[type="number"].inline,
-input[type="email"].inline,
-input[type="url"].inline,
-input[type="search"].inline,
-input[type="tel"].inline,
-input[type="color"].inline, textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"] {
+input.small, textarea.large,
+input.large, textarea.inline,
+input.inline, textarea,
+input {
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
   width: 100%;
@@ -4771,60 +4654,21 @@ input[type="color"] {
 
 /* line 20, ../scss/modules/forms/_components.scss */
 textarea.small,
-input[type="text"].small,
-input[type="password"].small,
-input[type="datetime"].small,
-input[type="datetime-local"].small,
-input[type="date"].small,
-input[type="month"].small,
-input[type="time"].small,
-input[type="week"].small,
-input[type="number"].small,
-input[type="email"].small,
-input[type="url"].small,
-input[type="search"].small,
-input[type="tel"].small,
-input[type="color"].small {
+input.small {
   font-size: 11.86196px ;
   font-size: 0.74137rem ;
 }
 
 /* line 25, ../scss/modules/forms/_components.scss */
 textarea.large,
-input[type="text"].large,
-input[type="password"].large,
-input[type="datetime"].large,
-input[type="datetime-local"].large,
-input[type="date"].large,
-input[type="month"].large,
-input[type="time"].large,
-input[type="week"].large,
-input[type="number"].large,
-input[type="email"].large,
-input[type="url"].large,
-input[type="search"].large,
-input[type="tel"].large,
-input[type="color"].large {
+input.large {
   font-size: 16px ;
   font-size: 1rem ;
 }
 
 /* line 30, ../scss/modules/forms/_components.scss */
 textarea.inline,
-input[type="text"].inline,
-input[type="password"].inline,
-input[type="datetime"].inline,
-input[type="datetime-local"].inline,
-input[type="date"].inline,
-input[type="month"].inline,
-input[type="time"].inline,
-input[type="week"].inline,
-input[type="number"].inline,
-input[type="email"].inline,
-input[type="url"].inline,
-input[type="search"].inline,
-input[type="tel"].inline,
-input[type="color"].inline {
+input.inline {
   width: auto;
 }
 
@@ -4835,38 +4679,12 @@ textarea {
 
 /* line 16, ../scss/modules/forms/_themes.scss */
 textarea,
-input[type="text"],
-input[type="password"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="date"],
-input[type="month"],
-input[type="time"],
-input[type="week"],
-input[type="number"],
-input[type="email"],
-input[type="url"],
-input[type="search"],
-input[type="tel"],
-input[type="color"] {
+input {
   border-color: gray;
 }
 /* line 19, ../scss/modules/forms/_themes.scss */
 textarea:focus,
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="time"]:focus,
-input[type="week"]:focus,
-input[type="number"]:focus,
-input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="search"]:focus,
-input[type="tel"]:focus,
-input[type="color"]:focus {
+input:focus {
   border-color: navy;
 }
 
