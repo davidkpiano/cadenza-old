@@ -1,0 +1,14 @@
+// 
+// Buttons Themes and Styles
+// ========================
+
+// Button Theme
+@mixin button-style(
+	$style: $button-style,
+	$theme: $button-theme
+) {
+	@extend %ext-button-#{$style} !optional;
+	@extend %theme-button-#{$theme} !optional;
+}
+
+

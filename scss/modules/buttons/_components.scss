@@ -1,0 +1,23 @@
+// 
+// Buttons Components
+// ==================
+
+%button {
+    display: inline-block;
+    padding: $button-padding;
+    cursor: pointer;
+    margin: $button-margin;
+    border-width: $button-border-width;
+    white-space: nowrap;
+
+    @if $button-radius {
+        @include border-radius($button-radius);
+    }
+
+    // Text style
+    @include type-scale($button-type-scale);
+    text-align: center;
+    text-transform: $button-text-transform;
+}
+
+
