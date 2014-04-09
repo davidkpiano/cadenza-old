@@ -3,12 +3,14 @@
 // ==================
 
 %button {
+    @extend %nowrap;
     display: inline-block;
     padding: $button-padding;
     cursor: pointer;
     margin: $button-margin;
     border-width: $button-border-width;
     white-space: nowrap;
+    background-image: none;
 
     @if $button-radius {
         @include border-radius($button-radius);
@@ -18,6 +20,55 @@
     @include type-scale($button-type-scale);
     text-align: center;
     text-transform: $button-text-transform;
+    text-decoration: none;
 }
 
+%button-tiny {
+    @extend %button;
+    @include type-scale($button-tiny-scale);
+    padding: $button-tiny-padding;
+}
+
+%button-small {
+    @extend %button;
+    @include type-scale($button-small-scale);
+    padding: $button-small-padding;
+}
+
+%button-large {
+    @extend %button;
+    @include type-scale($button-large-scale);
+    padding: $button-large-padding;
+}
+
+%button-huge {
+    @extend %button;
+    @include type-scale($button-huge-scale);
+    padding: $button-huge-padding;
+}
+
+%button-left { 
+    @extend %button;
+    float: left;
+    margin-left: 0;
+}
+
+%button-right {
+    @extend %button;
+    float: right;
+    margin-right: 0;
+}
+
+%button-block {
+    @extend %button;
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+%button-full {
+    @extend %button-block;
+    height: 100%;
+    // TODO: vertical alignment middle
+}
 

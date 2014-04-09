@@ -5,7 +5,7 @@
 // Button Settings
 $button-style: default !default;
 $button-theme: default !default;
-$button-margin: 0.5rem !default;
+$button-margin: 0 0.5rem 0 0 !default;
 $button-padding: 0.5rem 1rem !default;
 $button-border-width: $form-border-width !default;
 // $button-color-light: white !default;
@@ -14,6 +14,16 @@ $button-text-transform: uppercase !default;
 $button-radius: $form-radius !default;
 $button-transition-duration: 0.3s !default;
 $button-icon-margin: 0.5rem !default;
+
+// Sized Button Settings
+$button-tiny-padding: 0.25rem 0.5rem !default;
+$button-tiny-scale: $button-scale - 2 !default;
+$button-small-padding: 0.25rem 0.5rem !default;
+$button-small-scale: $button-scale - 1 !default;
+$button-large-padding: $button-padding !default;
+$button-large-scale: $button-scale + 1 !default;
+$button-huge-padding: 1rem 2rem !default;
+$button-huge-scale: $button-scale + 2 !default;
 
 // Button Group Settings
 $button-group-margin: 0 !default;

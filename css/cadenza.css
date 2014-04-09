@@ -3941,7 +3941,7 @@ blockquote footer cite, em, .italics {
 }
 
 /* line 132, ../scss/modules/type/_components.scss */
-ul.inline li, .nowrap, nav ul li, nav.vertical ul li, .dropdown ul li, .label, .badge {
+ul.inline li, .nowrap, nav ul li, nav.vertical ul li, .dropdown ul li, button.tiny, .button.tiny, input[type=button].tiny, input[type=submit].tiny, button.small, .button.small, input[type=button].small, input[type=submit].small, button.large, .button.large, input[type=button].large, input[type=submit].large, button.huge, .button.huge, input[type=button].huge, input[type=submit].huge, button.left, .button.left, input[type=button].left, input[type=submit].left, button.right, .button.right, input[type=button].right, input[type=submit].right, button.full, .button.full, input[type=button].full, input[type=submit].full, button.block, .button.block, input[type=button].block, input[type=submit].block, button, .button, input[type=button], input[type=submit], .label, .badge {
   white-space: nowrap;
   overflow: hidden;
 }
@@ -4491,6 +4491,79 @@ nav.tabs + .tabs-content {
 .over-bottom.dropdown {
   bottom: inherit;
   top: 0;
+}
+
+/* line 5, ../scss/modules/buttons/_components.scss */
+button.tiny, .button.tiny, input[type=button].tiny, input[type=submit].tiny, button.small, .button.small, input[type=button].small, input[type=submit].small, button.large, .button.large, input[type=button].large, input[type=submit].large, button.huge, .button.huge, input[type=button].huge, input[type=submit].huge, button.left, .button.left, input[type=button].left, input[type=submit].left, button.right, .button.right, input[type=button].right, input[type=submit].right, button.full, .button.full, input[type=button].full, input[type=submit].full, button.block, .button.block, input[type=button].block, input[type=submit].block, button, .button, input[type=button], input[type=submit] {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 0 0.5rem 0 0;
+  border-width: 1px;
+  white-space: nowrap;
+  background-image: none;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 13.77648px ;
+  font-size: 0.86103rem ;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* line 26, ../scss/modules/buttons/_components.scss */
+button.tiny, .button.tiny, input[type=button].tiny, input[type=submit].tiny {
+  font-size: 10.2135px ;
+  font-size: 0.63834rem ;
+  padding: 0.25rem 0.5rem;
+}
+
+/* line 32, ../scss/modules/buttons/_components.scss */
+button.small, .button.small, input[type=button].small, input[type=submit].small {
+  font-size: 11.86196px ;
+  font-size: 0.74137rem ;
+  padding: 0.25rem 0.5rem;
+}
+
+/* line 38, ../scss/modules/buttons/_components.scss */
+button.large, .button.large, input[type=button].large, input[type=submit].large {
+  font-size: 16px ;
+  font-size: 1rem ;
+  padding: 0.5rem 1rem;
+}
+
+/* line 44, ../scss/modules/buttons/_components.scss */
+button.huge, .button.huge, input[type=button].huge, input[type=submit].huge {
+  font-size: 18.5824px ;
+  font-size: 1.1614rem ;
+  padding: 1rem 2rem;
+}
+
+/* line 50, ../scss/modules/buttons/_components.scss */
+button.left, .button.left, input[type=button].left, input[type=submit].left {
+  float: left;
+  margin-left: 0;
+}
+
+/* line 56, ../scss/modules/buttons/_components.scss */
+button.right, .button.right, input[type=button].right, input[type=submit].right {
+  float: right;
+  margin-right: 0;
+}
+
+/* line 62, ../scss/modules/buttons/_components.scss */
+button.full, .button.full, input[type=button].full, input[type=submit].full, button.block, .button.block, input[type=button].block, input[type=submit].block {
+  display: block;
+  margin: 0;
+  width: 100%;
+}
+
+/* line 69, ../scss/modules/buttons/_components.scss */
+button.full, .button.full, input[type=button].full, input[type=submit].full {
+  height: 100%;
 }
 
 /* line 5, ../scss/modules/forms/_components.scss */
