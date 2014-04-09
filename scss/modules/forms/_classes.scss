@@ -1,0 +1,17 @@
+// 
+// Forms Classes
+// =============
+
+textarea,
+input {
+	@extend %input;
+	@include input-style();
+
+	&.small { @extend %input-small; }
+
+	&.large { @extend %input-large; }
+
+	&.inline { @extend %input-inline; }
+}
+
+textarea { @extend %textarea; }

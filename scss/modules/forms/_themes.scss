@@ -1,0 +1,25 @@
+//
+// Forms Themes and Styles
+// =======================
+
+// Input Theme
+@mixin input-style(
+	$style: $form-input-style,
+	$theme: $form-input-theme
+) 
+{
+	@extend %ext-input-#{$style} !optional;
+	@extend %theme-input-#{$theme} !optional;
+}
+
+%theme-input-default {
+	&, &%light {
+		border-color: gray;
+
+		&:focus { border-color: $color-primary; }
+	}
+
+	&%dark {
+
+	}
+}

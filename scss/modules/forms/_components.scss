@@ -1,0 +1,56 @@
+// 
+// Forms Components
+// ================
+
+%input {
+	@extend %border-box;
+	@extend %display-block;
+	@include type-scale($form-input-scale);
+	width: 100%;
+	padding: $form-input-padding;
+	background-image: none;
+	border-width: $form-input-border-width;
+	border-style: solid;
+
+	@if $form-radius {
+		@include border-radius($form-radius);
+	}
+}
+
+%input-small {
+	@extend %input;
+	@include type-scale($form-input-scale - 1);
+}
+
+%input-large {
+	@extend %input;
+	@include type-scale($form-input-scale + 1);
+}
+
+%input-inline {
+	@extend %input;
+	@extend %inline-block;
+
+	width: auto;
+}
+
+%textarea {
+	@extend %input;
+
+	height: auto;
+}
+
+%input-search {
+	-webkit-appearance: none;
+}
+
+%label {
+	display: $form-label-display;
+	margin-bottom: $form-label-margin-bottom;
+	@include type-scale($form-label-scale);
+}
+
+%label-inline {
+	display: inline-block;
+	padding: $form-label-padding;
+}

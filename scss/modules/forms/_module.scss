@@ -1,0 +1,34 @@
+// 
+// Forms Module
+// ============
+
+// Shared Form Settings
+$form-style: default !default;
+$form-scale: -1 !default;
+$form-border-width: 1px !default;
+$form-radius: 3px !default;
+$form-padding: 0.5rem !default;
+
+// Input Settings
+$form-input-style: default !default;
+$form-input-theme: default !default;
+$form-input-scale: $form-scale !default;
+$form-input-padding: $form-padding !default;
+$form-input-border-width: $form-border-width !default;
+
+// Label Settings
+$form-label-style: default !default;
+$form-label-theme: default !default;
+$form-label-display: block !default; // block or inline
+$form-label-padding: $form-padding !default;
+$form-label-scale: $form-scale !default;
+$form-label-border-width: $form-border-width !default;
+$form-label-margin-bottom: 0.25em !default;
+
+
+// Imports
+@import
+	'_mixins',
+	'_components',
+	'_themes',
+	'_classes';
