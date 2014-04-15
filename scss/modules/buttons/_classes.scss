@@ -4,6 +4,7 @@
 
 // Button Classes
 button, .button, input[type=button], input[type=submit] {
+    @include button-style;
     @extend %button;
 
     // Sized Button Classes
@@ -27,4 +28,7 @@ button, .button, input[type=button], input[type=submit] {
     > button, > .button {
         @extend %button-group-buttons;
     }
+
+    &.vertical { @extend %button-group-vertical; }
+    &.inline { @extend %button-group-inline; }
 }
