@@ -71,7 +71,15 @@
 }
 
 %ext-anchor-default {
-	text-decoration: underline;
+	text-decoration: $type-anchor-decoration;
+
+	&:hover {
+		text-decoration: $type-anchor-decoration-hover;
+	}
+
+	> img {
+		border: none;
+	}
 }
 
 %theme-anchor-default {

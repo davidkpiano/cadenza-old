@@ -4154,29 +4154,37 @@ body h1.sub, body h1.subheading, body h1 > small, body h1 > .small, body h2.sub,
 a {
   text-decoration: underline;
 }
+/* line 76, ../scss/modules/type/_themes.scss */
+a:hover {
+  text-decoration: underline;
+}
+/* line 80, ../scss/modules/type/_themes.scss */
+a > img {
+  border: none;
+}
 
-/* line 78, ../scss/modules/type/_themes.scss */
+/* line 86, ../scss/modules/type/_themes.scss */
 a, .light.alert a, .warning.alert a {
   color: #024959;
 }
-/* line 82, ../scss/modules/type/_themes.scss */
+/* line 90, ../scss/modules/type/_themes.scss */
 a:hover, .light.alert a:hover, .warning.alert a:hover, a:focus, .light.alert a:focus, .warning.alert a:focus, a:active, .light.alert a:active, .warning.alert a:active {
   color: #013540;
 }
-/* line 87, ../scss/modules/type/_themes.scss */
+/* line 95, ../scss/modules/type/_themes.scss */
 .alert a, .primary.alert a, .secondary.alert a, .dark.alert a, .success.alert a, .failure.alert a {
   color: #efefef;
 }
-/* line 90, ../scss/modules/type/_themes.scss */
+/* line 98, ../scss/modules/type/_themes.scss */
 .alert a:hover, .alert a:focus, .alert a:active {
   color: #e2e2e2;
 }
 
-/* line 112, ../scss/modules/type/_themes.scss */
+/* line 120, ../scss/modules/type/_themes.scss */
 body pre, body .pre {
   color: #363636;
 }
-/* line 116, ../scss/modules/type/_themes.scss */
+/* line 124, ../scss/modules/type/_themes.scss */
 body code, body .code {
   color: #363636;
   padding: 0.25rem 0.5rem;
@@ -4187,7 +4195,7 @@ body code, body .code {
   -o-border-radius: 0.25rem;
   border-radius: 0.25rem;
 }
-/* line 127, ../scss/modules/type/_themes.scss */
+/* line 135, ../scss/modules/type/_themes.scss */
 body kbd, body kbd.light, body .kbd, body .kbd.light {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #363636;
@@ -4201,35 +4209,35 @@ body kbd, body kbd.light, body .kbd, body .kbd.light {
   -o-border-radius: 0.25rem;
   border-radius: 0.25rem;
 }
-/* line 140, ../scss/modules/type/_themes.scss */
+/* line 148, ../scss/modules/type/_themes.scss */
 body kbd.dark, body .kbd.dark {
   color: #efefef;
   background: #505050;
   border-color: #363636;
 }
-/* line 168, ../scss/modules/type/_themes.scss */
+/* line 176, ../scss/modules/type/_themes.scss */
 blockquote, blockquote.left {
   border-style: solid;
   border-width: 0;
   border-left-width: 1px;
 }
-/* line 174, ../scss/modules/type/_themes.scss */
+/* line 182, ../scss/modules/type/_themes.scss */
 blockquote.right {
   text-align: right;
   border-left-width: 0;
   border-right-width: 1px;
 }
 
-/* line 181, ../scss/modules/type/_themes.scss */
+/* line 189, ../scss/modules/type/_themes.scss */
 blockquote {
   border-color: #525252;
   color: #525252;
 }
-/* line 185, ../scss/modules/type/_themes.scss */
+/* line 193, ../scss/modules/type/_themes.scss */
 blockquote footer {
   color: #525252;
 }
-/* line 188, ../scss/modules/type/_themes.scss */
+/* line 196, ../scss/modules/type/_themes.scss */
 blockquote footer::before {
   content: '\2014 \00A0';
 }
