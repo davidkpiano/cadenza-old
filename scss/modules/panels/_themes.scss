@@ -50,3 +50,45 @@
 	&.warning { @include theme-panel-default($color-warning); }
 	&.failure { @include theme-panel-default($color-failure); }
 }
+
+// Alert Theme
+@mixin alert-style(
+	$style: $alert-style,
+	$theme: $alert-theme
+) {
+	@extend %ext-alert-#{$style} !optional;
+	@extend %theme-alert-#{$theme} !optional;
+}
+
+@mixin theme-alert-default(
+	$color: $color-primary
+) {
+	background-color: $color;
+	border-color: darken($color, 5%);
+	color: foregroundColor($color);
+
+	a {
+		@if is-dark($color) {
+			@extend %theme-anchor-#{$type-anchor-theme}%dark;
+		} @else {
+			@extend %theme-anchor-#{$type-anchor-theme};
+		}
+	}
+}
+
+%theme-alert-default {
+	&, &%light {
+		@include theme-alert-default();
+
+		&.primary { @include theme-alert-default($color-primary); }
+		&.secondary { @include theme-alert-default($color-secondary); }
+		&.light { @include theme-alert-default($color-light); }
+		&.dark { @include theme-alert-default($color-dark); }
+
+		&.success { @include theme-alert-default($color-success); }
+		&.warning { @include theme-alert-default($color-warning); }
+		&.failure { @include theme-alert-default($color-failure); }
+	}
+}
+
+

@@ -34,5 +34,27 @@
     }
 }
 
+%alert {
+    @include type-scale($alert-scale);
+    display: block;
+    width: 100%;
+    padding: $alert-padding;
+    border-width: $alert-border-width;
+    margin: $alert-margin;
+
+    @if $alert-radius {
+        @include border-radius($alert-radius);
+    }
+
+    > *:last-child {
+        margin-bottom: 0;
+    }
+
+    %alert-exit {
+        @include position-absolute(top, right);
+        padding: $alert-exit-padding;
+    }
+}
+
 
 

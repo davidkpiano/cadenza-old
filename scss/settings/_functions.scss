@@ -20,3 +20,11 @@
         @return $color-default;
     }
 }
+
+@function is-dark($color, $threshold: 65%) {
+    @if type-of($color) == color and lightness($color) < $threshold {
+        @return true;
+    } @else {
+        @return false;
+    }
+}

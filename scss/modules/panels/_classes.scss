@@ -13,3 +13,9 @@
 
 	> footer, > .panel-footer { @extend %panel-footer; }
 }
+
+// Alert Classes
+.alert {
+    @include alert-style();
+    @extend %alert;
+}

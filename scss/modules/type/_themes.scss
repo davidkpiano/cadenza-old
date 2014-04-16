@@ -83,6 +83,14 @@
 			color: darken($type-anchor-color, 5%);
 		}
 	}
+
+	&%dark {
+		color: $type-anchor-color-light;
+
+		&:hover, &:focus, &:active {
+			color: darken($type-anchor-color-light, 5%);
+		}
+	}
 }
 
 // Preformatted Text Theme

@@ -14,6 +14,16 @@ $panel-margin: 0 0 1rem 0 !default;
 $panel-radius: $form-radius !default;
 $panel-scale: 0 !default;
 
+// Alerts Settings
+$alert-style: default !default;
+$alert-theme: default !default;
+$alert-padding: 1rem !default;
+$alert-exit-padding: $alert-padding / 2 !default;
+$alert-border-width: 1px !default;
+$alert-margin: 0 0 1rem 0 !default;
+$alert-radius: $form-radius !default;
+$alert-scale: -1 !default;
+
 // Imports
 @import
 	'_mixins',
