@@ -3950,31 +3950,39 @@ mark, .mark {
   background: yellow;
 }
 
-/* line 160, ../scss/modules/type/_components.scss */
+/* line 141, ../scss/modules/type/_components.scss */
+abbr, acronym {
+  font-size: 116.14%;
+  text-transform: uppercase;
+  border-bottom: 1px dotted #525252;
+  cursor: help;
+}
+
+/* line 176, ../scss/modules/type/_components.scss */
 .text-middle {
   display: table;
 }
-/* line 163, ../scss/modules/type/_components.scss */
+/* line 179, ../scss/modules/type/_components.scss */
 .text-middle > * {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 171, ../scss/modules/type/_components.scss */
+/* line 187, ../scss/modules/type/_components.scss */
 pre, .pre {
   white-space: pre;
   font-size: 16px ;
   font-size: 1rem ;
   font-family: Consolas, monaco, monospace;
 }
-/* line 176, ../scss/modules/type/_components.scss */
+/* line 192, ../scss/modules/type/_components.scss */
 pre code, .pre code, pre .code, .pre .code {
   word-wrap: normal;
   white-space: -moz-pre-wrap;
   white-space: pre-wrap;
 }
 
-/* line 183, ../scss/modules/type/_components.scss */
+/* line 199, ../scss/modules/type/_components.scss */
 pre code, pre .code, .pre code, .pre .code, code, .code {
   white-space: pre;
   font-size: 13.77648px ;
@@ -3982,80 +3990,80 @@ pre code, pre .code, .pre code, .pre .code, code, .code {
   font-family: Consolas, monaco, monospace;
 }
 
-/* line 189, ../scss/modules/type/_components.scss */
+/* line 205, ../scss/modules/type/_components.scss */
 kbd, .kbd {
   font-size: 11.86196px ;
   font-size: 0.74137rem ;
 }
 
-/* line 195, ../scss/modules/type/_components.scss */
+/* line 211, ../scss/modules/type/_components.scss */
 blockquote {
   padding: 1rem;
   margin-bottom: 1rem;
   font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
-/* line 200, ../scss/modules/type/_components.scss */
+/* line 216, ../scss/modules/type/_components.scss */
 blockquote footer {
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
 }
 
-/* line 212, ../scss/modules/type/_components.scss */
+/* line 228, ../scss/modules/type/_components.scss */
 q::before, q.double::before {
   content: '\201C';
 }
-/* line 213, ../scss/modules/type/_components.scss */
+/* line 229, ../scss/modules/type/_components.scss */
 q::after, q.double::after {
   content: '\201D';
 }
 
-/* line 217, ../scss/modules/type/_components.scss */
+/* line 233, ../scss/modules/type/_components.scss */
 q > q::before, q.single::before {
   content: '\2018';
 }
-/* line 218, ../scss/modules/type/_components.scss */
+/* line 234, ../scss/modules/type/_components.scss */
 q > q::after, q.single::after {
   content: '\2019';
 }
 
-/* line 222, ../scss/modules/type/_components.scss */
+/* line 238, ../scss/modules/type/_components.scss */
 q.arrow-double::before {
   content: '\00AB';
 }
-/* line 223, ../scss/modules/type/_components.scss */
+/* line 239, ../scss/modules/type/_components.scss */
 q.arrow-double::after {
   content: '\00BB';
 }
 
-/* line 227, ../scss/modules/type/_components.scss */
+/* line 243, ../scss/modules/type/_components.scss */
 q.arrow-single::before {
   content: '\2039';
 }
-/* line 228, ../scss/modules/type/_components.scss */
+/* line 244, ../scss/modules/type/_components.scss */
 q.arrow-single::after {
   content: '\203A';
 }
 
-/* line 232, ../scss/modules/type/_components.scss */
+/* line 248, ../scss/modules/type/_components.scss */
 q.low-double::before {
   content: '\201E';
 }
-/* line 233, ../scss/modules/type/_components.scss */
+/* line 249, ../scss/modules/type/_components.scss */
 q.low-double::after {
   content: '\201D';
 }
 
-/* line 237, ../scss/modules/type/_components.scss */
+/* line 253, ../scss/modules/type/_components.scss */
 q.low-single::before {
   content: '\201A';
 }
-/* line 238, ../scss/modules/type/_components.scss */
+/* line 254, ../scss/modules/type/_components.scss */
 q.low-single::after {
   content: '\2019';
 }
 
-/* line 243, ../scss/modules/type/_components.scss */
+/* line 259, ../scss/modules/type/_components.scss */
 hr, .hr {
   clear: both;
   height: 0;
@@ -4066,64 +4074,64 @@ hr, .hr {
   border-bottom: none;
 }
 
-/* line 255, ../scss/modules/type/_components.scss */
+/* line 271, ../scss/modules/type/_components.scss */
 ul.unstyled, ul.inline, ul, ol, dl {
   list-style-position: outside;
   margin-bottom: 1rem;
   padding: 0;
 }
-/* line 269, ../scss/modules/type/_components.scss */
+/* line 285, ../scss/modules/type/_components.scss */
 ul.unstyled {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 275, ../scss/modules/type/_components.scss */
+/* line 291, ../scss/modules/type/_components.scss */
 ul.inline {
   margin-left: 0;
 }
-/* line 279, ../scss/modules/type/_components.scss */
+/* line 295, ../scss/modules/type/_components.scss */
 ul.inline li {
   display: inline-block;
   padding-right: 0 1rem 0 0;
 }
 
-/* line 286, ../scss/modules/type/_components.scss */
+/* line 302, ../scss/modules/type/_components.scss */
 ul {
   margin-left: 1rem;
 }
 
-/* line 292, ../scss/modules/type/_components.scss */
+/* line 308, ../scss/modules/type/_components.scss */
 ul.square {
   list-style-type: square;
 }
 
-/* line 293, ../scss/modules/type/_components.scss */
+/* line 309, ../scss/modules/type/_components.scss */
 ul.circle {
   list-style-type: circle;
 }
 
-/* line 294, ../scss/modules/type/_components.scss */
+/* line 310, ../scss/modules/type/_components.scss */
 ul.disc {
   list-style-type: disc;
 }
 
-/* line 295, ../scss/modules/type/_components.scss */
+/* line 311, ../scss/modules/type/_components.scss */
 ul.no-bullet {
   list-style-type: none;
 }
 
-/* line 297, ../scss/modules/type/_components.scss */
+/* line 313, ../scss/modules/type/_components.scss */
 ol {
   margin-left: 1.4rem;
 }
 
-/* line 306, ../scss/modules/type/_components.scss */
+/* line 322, ../scss/modules/type/_components.scss */
 dl dt {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-/* line 311, ../scss/modules/type/_components.scss */
+/* line 327, ../scss/modules/type/_components.scss */
 dl dd {
   margin-bottom: 0.5rem;
 }
@@ -4141,11 +4149,25 @@ body h1, body h2, body h3, body h4, body h5, body h6, body .h1, body .h2, body .
 body h1.sub, body h1.subheading, body h1 > small, body h1 > .small, body h2.sub, body h2.subheading, body h2 > small, body h2 > .small, body h3.sub, body h3.subheading, body h3 > small, body h3 > .small, body h4.sub, body h4.subheading, body h4 > small, body h4 > .small, body h5.sub, body h5.subheading, body h5 > small, body h5 > .small, body h6.sub, body h6.subheading, body h6 > small, body h6 > .small, body .h1.sub, body .h1.subheading, body .h1 > small, body .h1 > .small, body .h2.sub, body .h2.subheading, body .h2 > small, body .h2 > .small, body .h3.sub, body .h3.subheading, body .h3 > small, body .h3 > .small, body .h4.sub, body .h4.subheading, body .h4 > small, body .h4 > .small, body .h5.sub, body .h5.subheading, body .h5 > small, body .h5 > .small, body .h6.sub, body .h6.subheading, body .h6 > small, body .h6 > .small {
   color: #525252;
 }
-/* line 80, ../scss/modules/type/_themes.scss */
+/* line 73, ../scss/modules/type/_themes.scss */
+a {
+  text-decoration: underline;
+}
+
+/* line 78, ../scss/modules/type/_themes.scss */
+a {
+  color: #024959;
+}
+/* line 82, ../scss/modules/type/_themes.scss */
+a:hover, a:focus, a:active {
+  color: #013540;
+}
+
+/* line 104, ../scss/modules/type/_themes.scss */
 body pre, body .pre {
   color: #363636;
 }
-/* line 84, ../scss/modules/type/_themes.scss */
+/* line 108, ../scss/modules/type/_themes.scss */
 body code, body .code {
   color: #363636;
   padding: 0.25rem 0.5rem;
@@ -4156,7 +4178,7 @@ body code, body .code {
   -o-border-radius: 0.25rem;
   border-radius: 0.25rem;
 }
-/* line 95, ../scss/modules/type/_themes.scss */
+/* line 119, ../scss/modules/type/_themes.scss */
 body kbd, body kbd.light, body .kbd, body .kbd.light {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #363636;
@@ -4170,91 +4192,37 @@ body kbd, body kbd.light, body .kbd, body .kbd.light {
   -o-border-radius: 0.25rem;
   border-radius: 0.25rem;
 }
-/* line 108, ../scss/modules/type/_themes.scss */
+/* line 132, ../scss/modules/type/_themes.scss */
 body kbd.dark, body .kbd.dark {
   color: #efefef;
   background: #505050;
   border-color: #363636;
 }
-/* line 136, ../scss/modules/type/_themes.scss */
+/* line 160, ../scss/modules/type/_themes.scss */
 blockquote, blockquote.left {
   border-style: solid;
   border-width: 0;
   border-left-width: 1px;
 }
-/* line 142, ../scss/modules/type/_themes.scss */
+/* line 166, ../scss/modules/type/_themes.scss */
 blockquote.right {
   text-align: right;
   border-left-width: 0;
   border-right-width: 1px;
 }
 
-/* line 149, ../scss/modules/type/_themes.scss */
+/* line 173, ../scss/modules/type/_themes.scss */
 blockquote {
   border-color: #525252;
   color: #525252;
 }
-/* line 153, ../scss/modules/type/_themes.scss */
+/* line 177, ../scss/modules/type/_themes.scss */
 blockquote footer {
   color: #525252;
 }
-/* line 156, ../scss/modules/type/_themes.scss */
+/* line 180, ../scss/modules/type/_themes.scss */
 blockquote footer::before {
   content: '\2014 \00A0';
-}
-
-/* line 24, ../scss/modules/_anchors.scss */
-a {
-  text-decoration: none;
-}
-/* line 27, ../scss/modules/_anchors.scss */
-a:hover {
-  text-decoration: none;
-}
-/* line 31, ../scss/modules/_anchors.scss */
-a > img {
-  border: none;
-}
-
-/* line 36, ../scss/modules/_anchors.scss */
-a {
-  color: #024959;
-}
-/* line 20, ../scss/modules/_anchors.scss */
-a:hover {
-  color: #03667c;
-}
-/* line 39, ../scss/modules/_anchors.scss */
-a.light {
-  color: #efefef;
-}
-/* line 20, ../scss/modules/_anchors.scss */
-a.light:hover {
-  color: white;
-}
-/* line 40, ../scss/modules/_anchors.scss */
-a.primary {
-  color: #024959;
-}
-/* line 14, ../scss/modules/_anchors.scss */
-a.primary:hover {
-  color: #024959;
-}
-/* line 41, ../scss/modules/_anchors.scss */
-a.secondary {
-  color: #e74c30;
-}
-/* line 14, ../scss/modules/_anchors.scss */
-a.secondary:hover {
-  color: #e74c30;
-}
-/* line 42, ../scss/modules/_anchors.scss */
-a.dark {
-  color: #363636;
-}
-/* line 14, ../scss/modules/_anchors.scss */
-a.dark:hover {
-  color: #363636;
 }
 
 /* line 4, ../scss/modules/_nav.scss */
@@ -4721,7 +4689,7 @@ button.dark:hover, .dark.button:hover, input.dark[type=button]:hover, input.dark
 }
 
 /* line 5, ../scss/modules/forms/_components.scss */
-button, .button, input[type=button], input[type=submit], textarea,
+a, button, .button, input[type=button], input[type=submit], textarea,
 input {
   -webkit-transition-property: all;
   -moz-transition-property: all;

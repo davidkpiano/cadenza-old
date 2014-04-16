@@ -52,6 +52,15 @@ $type-p-margin-bottom: 1rem !default;
 $type-p-line-height: 1.5 !default;
 $type-p-font-weight: $type-base-font-weight !default;
 $type-p-lead-scale: 1 !default;
+$type-abbr-border: 1px dotted $color-gray !default;
+$type-abbr-cursor: help !default;
+$type-abbr-transform: uppercase !default;
+
+// Anchors
+$type-anchor-style: default !default;
+$type-anchor-theme: default !default;
+$type-anchor-color: $color-primary !default;
+$type-anchor-color-light: $color-light !default;
 
 // Preformatted Text
 $type-pre-style: default !default;

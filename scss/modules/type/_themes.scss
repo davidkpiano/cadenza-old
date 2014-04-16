@@ -61,6 +61,30 @@
 	}
 }
 
+// Anchor Theme
+@mixin anchor-style(
+	$style: $type-anchor-style,
+	$theme: $type-anchor-theme
+) {
+	@extend %ext-anchor-#{$style} !optional;
+	@extend %theme-anchor-#{$theme} !optional;
+}
+
+%ext-anchor-default {
+	text-decoration: underline;
+}
+
+%theme-anchor-default {
+	&, &%light {
+		@extend %form-transition;
+		color: $type-anchor-color;
+
+		&:hover, &:focus, &:active {
+			color: darken($type-anchor-color, 5%);
+		}
+	}
+}
+
 // Preformatted Text Theme
 $x-pre-code-padding: 0.25rem 0.5rem !default;
 $x-pre-code-radius: 0.25rem !default;

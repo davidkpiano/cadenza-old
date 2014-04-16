@@ -138,6 +138,22 @@
 	background: $type-mark-color;
 }
 
+%abbreviation {
+	@if $type-abbr-transform == uppercase {
+        @include type-scale-relative(1);
+    }
+
+    text-transform: $type-abbr-transform;
+    border-bottom: $type-abbr-border;
+    cursor: $type-abbr-cursor;
+}
+
+// Anchors
+// -------
+%anchor {
+	// Styles defined in theme
+}
+
 // Alignment
 // ---------
 %text-left {

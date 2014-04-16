@@ -64,6 +64,15 @@ em, .italics { @extend %em; }
 
 mark, .mark { @extend %mark; }
 
+abbr, acronym { @extend %abbreviation; }
+
+// Anchors
+// -------
+a {
+	@include anchor-style();
+	@extend %anchor;
+}
+
 // Preformatted Text
 // -----------------
 body { @include pre-style(); }
