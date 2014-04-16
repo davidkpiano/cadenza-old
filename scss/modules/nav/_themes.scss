@@ -1,0 +1,26 @@
+// 
+// Nav Themes and Styles
+// ========================
+
+// Nav Theme
+@mixin nav-style(
+	$style: $nav-style,
+	$theme: $nav-theme
+) {
+	@extend %ext-nav-#{$style} !optional;
+	@extend %theme-nav-#{$theme} !optional;
+}
+
+%ext-nav-default {
+
+}
+
+%theme-nav-default {
+	&, &%light {
+
+	}
+
+	&%dark {
+		
+	}
+}
