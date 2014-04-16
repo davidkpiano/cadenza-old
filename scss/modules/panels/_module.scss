@@ -3,6 +3,16 @@
 // =============
 
 // Panel Settings
+$panel-style: default !default;
+$panel-theme: default !default;
+$panel-padding: 1rem !default;
+$panel-header-padding: $panel-padding !default;
+$panel-section-padding: $panel-padding !default;
+$panel-footer-padding: $panel-padding !default;
+$panel-border-width: 1px !default;
+$panel-margin: 0 0 1rem 0 !default;
+$panel-radius: $form-radius !default;
+$panel-scale: 0 !default;
 
 // Imports
 @import

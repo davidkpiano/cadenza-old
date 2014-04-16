@@ -2,6 +2,37 @@
 // Panels Components
 // =================
 
+%panel {
+    @include type-scale($panel-scale);
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: $panel-margin;
+    border-width: $panel-border-width;
+
+    @if $panel-radius {
+        @include border-radius($panel-radius);
+    }
+
+    &, > * {
+        border-style: solid;
+    }
+
+    %panel-header {
+        padding: $panel-header-padding;
+        border-width: 0 0 $panel-border-width 0;
+    }
+
+    %panel-body {
+        padding: $panel-section-padding;
+        border-width: 0;
+    }
+
+    %panel-footer {
+        padding: $panel-footer-padding;
+        border-width: $panel-border-width 0 0 0;
+    }
+}
 
 
 

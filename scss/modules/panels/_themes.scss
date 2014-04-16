@@ -10,3 +10,43 @@
 	@extend %ext-panel-#{$style} !optional;
 	@extend %theme-panel-#{$theme} !optional;
 }
+
+@mixin theme-panel-default(
+	$color: transparent,
+	$color-header: $color-gray-light,
+	$color-footer: $color-header,
+	$color-border: $color-gray
+) {
+	background-color: $color;
+	border-color: $color-border;
+	color: foregroundColor($color);
+
+	> header, > hgroup, .panel-header {
+		background-color: $color-header;
+		border-color: $color-border;
+		color: foregroundColor($color-header);
+	}
+
+	> footer, > .panel-footer {
+		background-color: $color-footer;
+		border-color: $color-border;
+		color: foregroundColor($color-footer);
+	}
+}
+
+%ext-panel-default {
+	// ...
+}
+
+%theme-panel-default {
+	@include theme-panel-default();
+
+	&.primary { @include theme-panel-default($color-primary); }
+	&.secondary { @include theme-panel-default($color-secondary); }
+	&.light { @include theme-panel-default($color-light); }
+	&.dark { @include theme-panel-default($color-dark); }
+
+	&.success { @include theme-panel-default($color-success); }
+	&.warning { @include theme-panel-default($color-warning); }
+	&.failure { @include theme-panel-default($color-failure); }
+}

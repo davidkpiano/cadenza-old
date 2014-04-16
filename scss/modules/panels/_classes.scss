@@ -3,3 +3,13 @@
 // ==============
 
 // Panel Classes
+.panel {
+	@include panel-style();
+	@extend %panel;
+
+	> header, > hgroup, > .panel-header { @extend %panel-header; }
+
+	> section, > .panel-body { @extend %panel-body; }
+
+	> footer, > .panel-footer { @extend %panel-footer; }
+}

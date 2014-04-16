@@ -4070,7 +4070,7 @@ hr, .hr {
   margin: 1rem 0;
   margin-left: 0;
   margin-right: 0;
-  border-top: 1px solid #adadad;
+  border-top: 1px solid #efefef;
   border-bottom: none;
 }
 
@@ -4171,7 +4171,7 @@ body pre, body .pre {
 body code, body .code {
   color: #363636;
   padding: 0.25rem 0.5rem;
-  background: #adadad;
+  background: #efefef;
   -webkit-border-radius: 0.25rem;
   -moz-border-radius: 0.25rem;
   -ms-border-radius: 0.25rem;
@@ -4183,7 +4183,7 @@ body kbd, body kbd.light, body .kbd, body .kbd.light {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #363636;
   padding: 0.25rem 0.5rem;
-  background: #adadad;
+  background: #efefef;
   border: 1px solid #525252;
   border-bottom-width: 3px;
   -webkit-border-radius: 0.25rem;
@@ -4753,7 +4753,7 @@ textarea {
 /* line 16, ../scss/modules/forms/_themes.scss */
 textarea,
 input {
-  border-color: #adadad;
+  border-color: #efefef;
 }
 /* line 20, ../scss/modules/forms/_themes.scss */
 textarea:focus,
@@ -5061,7 +5061,7 @@ table thead, table tr, table th, table td {
 }
 /* line 50, ../scss/modules/tables/_themes.scss */
 table.zebra tr:nth-child(even), table.striped tr:nth-child(even) {
-  background-color: #adadad;
+  background-color: #efefef;
 }
 /* line 54, ../scss/modules/tables/_themes.scss */
 table.zebra tr:nth-child(odd), table.striped tr:nth-child(odd) {
@@ -5073,7 +5073,7 @@ table.zebra tr:only-child, table.striped tr:only-child {
 }
 /* line 64, ../scss/modules/tables/_themes.scss */
 table.hover tr:hover {
-  background-color: #a0a0a0;
+  background-color: #e2e2e2;
 }
 /* line 25, ../scss/modules/_state.scss */
 .hide, .hidden {
@@ -5100,130 +5100,184 @@ table.hover tr:hover {
   }
 }
 
-/* line 1, ../scss/modules/_panels.scss */
+/* line 5, ../scss/modules/panels/_components.scss */
 .panel {
+  font-size: 16px ;
+  font-size: 1rem ;
   display: block;
   width: 100%;
   padding: 0;
-  margin-bottom: 16px;
+  margin: 0 0 1rem 0;
   border-width: 1px;
-  font-size: 16px ;
-  font-size: 1rem ;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
 }
-/* line 8, ../scss/modules/_panels.scss */
-.panel, .panel > header, .panel > hgroup, .panel > footer {
+/* line 17, ../scss/modules/panels/_components.scss */
+.panel, .panel > * {
   border-style: solid;
 }
-/* line 12, ../scss/modules/_panels.scss */
-.panel > header, .panel > hgroup {
+/* line 21, ../scss/modules/panels/_components.scss */
+.panel > header, .panel > hgroup, .panel > .panel-header {
   padding: 1rem;
   border-width: 0 0 1px 0;
 }
-/* line 17, ../scss/modules/_panels.scss */
-.panel > section {
+/* line 26, ../scss/modules/panels/_components.scss */
+.panel > section, .panel > .panel-body {
   padding: 1rem;
+  border-width: 0;
 }
-/* line 21, ../scss/modules/_panels.scss */
-.panel > footer {
+/* line 31, ../scss/modules/panels/_components.scss */
+.panel > footer, .panel > .panel-footer {
   padding: 1rem;
   border-width: 1px 0 0 0;
 }
 
-/* line 37, ../scss/modules/_panels.scss */
+/* line 41, ../scss/modules/panels/_themes.scss */
 .panel {
-  background-color: white;
+  background-color: transparent;
+  border-color: #525252;
+  color: inherit;
+}
+/* line 24, ../scss/modules/panels/_themes.scss */
+.panel > header, .panel > hgroup, .panel .panel-header {
+  background-color: #efefef;
+  border-color: #525252;
   color: #363636;
+}
+/* line 30, ../scss/modules/panels/_themes.scss */
+.panel > footer, .panel > .panel-footer {
+  background-color: #efefef;
   border-color: #525252;
+  color: #363636;
 }
-/* line 121, ../scss/modules/_themes.scss */
-.panel a {
-  color: #024959;
-}
-/* line 123, ../scss/modules/_themes.scss */
-.panel a:hover {
-  color: #03667c;
-}
-/* line 126, ../scss/modules/_themes.scss */
-.panel > header, .panel > hgroup {
-  background-color: #f2f2f2;
+/* line 44, ../scss/modules/panels/_themes.scss */
+.primary.panel {
+  background-color: #024959;
   border-color: #525252;
+  color: #efefef;
 }
-/* line 131, ../scss/modules/_themes.scss */
-.panel > footer {
-  background-color: #f2f2f2;
+/* line 24, ../scss/modules/panels/_themes.scss */
+.primary.panel > header, .primary.panel > hgroup, .primary.panel .panel-header {
+  background-color: #efefef;
   border-color: #525252;
+  color: #363636;
 }
-/* line 40, ../scss/modules/_panels.scss */
+/* line 30, ../scss/modules/panels/_themes.scss */
+.primary.panel > footer, .primary.panel > .panel-footer {
+  background-color: #efefef;
+  border-color: #525252;
+  color: #363636;
+}
+/* line 45, ../scss/modules/panels/_themes.scss */
+.secondary.panel {
+  background-color: #e74c30;
+  border-color: #525252;
+  color: #efefef;
+}
+/* line 24, ../scss/modules/panels/_themes.scss */
+.secondary.panel > header, .secondary.panel > hgroup, .secondary.panel .panel-header {
+  background-color: #efefef;
+  border-color: #525252;
+  color: #363636;
+}
+/* line 30, ../scss/modules/panels/_themes.scss */
+.secondary.panel > footer, .secondary.panel > .panel-footer {
+  background-color: #efefef;
+  border-color: #525252;
+  color: #363636;
+}
+/* line 46, ../scss/modules/panels/_themes.scss */
+.light.panel {
+  background-color: #efefef;
+  border-color: #525252;
+  color: #363636;
+}
+/* line 24, ../scss/modules/panels/_themes.scss */
+.light.panel > header, .light.panel > hgroup, .light.panel .panel-header {
+  background-color: #efefef;
+  border-color: #525252;
+  color: #363636;
+}
+/* line 30, ../scss/modules/panels/_themes.scss */
+.light.panel > footer, .light.panel > .panel-footer {
+  background-color: #efefef;
+  border-color: #525252;
+  color: #363636;
+}
+/* line 47, ../scss/modules/panels/_themes.scss */
+.dark.panel {
+  background-color: #363636;
+  border-color: #525252;
+  color: #efefef;
+}
+/* line 24, ../scss/modules/panels/_themes.scss */
+.dark.panel > header, .dark.panel > hgroup, .dark.panel .panel-header {
+  background-color: #efefef;
+  border-color: #525252;
+  color: #363636;
+}
+/* line 30, ../scss/modules/panels/_themes.scss */
+.dark.panel > footer, .dark.panel > .panel-footer {
+  background-color: #efefef;
+  border-color: #525252;
+  color: #363636;
+}
+/* line 49, ../scss/modules/panels/_themes.scss */
 .success.panel {
   background-color: #96cc69;
+  border-color: #525252;
+  color: #efefef;
+}
+/* line 24, ../scss/modules/panels/_themes.scss */
+.success.panel > header, .success.panel > hgroup, .success.panel .panel-header {
+  background-color: #efefef;
+  border-color: #525252;
   color: #363636;
+}
+/* line 30, ../scss/modules/panels/_themes.scss */
+.success.panel > footer, .success.panel > .panel-footer {
+  background-color: #efefef;
   border-color: #525252;
+  color: #363636;
 }
-/* line 121, ../scss/modules/_themes.scss */
-.success.panel a {
-  color: #024959;
-}
-/* line 123, ../scss/modules/_themes.scss */
-.success.panel a:hover {
-  color: #03667c;
-}
-/* line 126, ../scss/modules/_themes.scss */
-.success.panel > header, .success.panel > hgroup {
-  background-color: #89c656;
-  border-color: #525252;
-}
-/* line 131, ../scss/modules/_themes.scss */
-.success.panel > footer {
-  background-color: #89c656;
-  border-color: #525252;
-}
-/* line 41, ../scss/modules/_panels.scss */
+/* line 50, ../scss/modules/panels/_themes.scss */
 .warning.panel {
   background-color: #ffcc5c;
+  border-color: #525252;
   color: #363636;
+}
+/* line 24, ../scss/modules/panels/_themes.scss */
+.warning.panel > header, .warning.panel > hgroup, .warning.panel .panel-header {
+  background-color: #efefef;
   border-color: #525252;
+  color: #363636;
 }
-/* line 121, ../scss/modules/_themes.scss */
-.warning.panel a {
-  color: #024959;
-}
-/* line 123, ../scss/modules/_themes.scss */
-.warning.panel a:hover {
-  color: #03667c;
-}
-/* line 126, ../scss/modules/_themes.scss */
-.warning.panel > header, .warning.panel > hgroup {
-  background-color: #ffc443;
+/* line 30, ../scss/modules/panels/_themes.scss */
+.warning.panel > footer, .warning.panel > .panel-footer {
+  background-color: #efefef;
   border-color: #525252;
+  color: #363636;
 }
-/* line 131, ../scss/modules/_themes.scss */
-.warning.panel > footer {
-  background-color: #ffc443;
-  border-color: #525252;
-}
-/* line 42, ../scss/modules/_panels.scss */
+/* line 51, ../scss/modules/panels/_themes.scss */
 .failure.panel {
   background-color: #c44741;
+  border-color: #525252;
+  color: #efefef;
+}
+/* line 24, ../scss/modules/panels/_themes.scss */
+.failure.panel > header, .failure.panel > hgroup, .failure.panel .panel-header {
+  background-color: #efefef;
+  border-color: #525252;
   color: #363636;
+}
+/* line 30, ../scss/modules/panels/_themes.scss */
+.failure.panel > footer, .failure.panel > .panel-footer {
+  background-color: #efefef;
   border-color: #525252;
-}
-/* line 121, ../scss/modules/_themes.scss */
-.failure.panel a {
-  color: #024959;
-}
-/* line 123, ../scss/modules/_themes.scss */
-.failure.panel a:hover {
-  color: #03667c;
-}
-/* line 126, ../scss/modules/_themes.scss */
-.failure.panel > header, .failure.panel > hgroup {
-  background-color: #b43d38;
-  border-color: #525252;
-}
-/* line 131, ../scss/modules/_themes.scss */
-.failure.panel > footer {
-  background-color: #b43d38;
-  border-color: #525252;
+  color: #363636;
 }
 
 /* line 11, ../scss/modules/_alerts.scss */
