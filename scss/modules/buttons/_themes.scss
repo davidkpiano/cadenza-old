@@ -11,4 +11,79 @@
 	@extend %theme-button-#{$theme} !optional;
 }
 
+// Default Button Style and Theme
+%ext-button-default {
+	@extend %button;
+}
+
+@mixin theme-button-default($color: $color-primary) {
+	background-color: $color;
+	border-color: darken($color, 10%);
+	color: foregroundColor($color, $color-default: $color-light);
+
+	&:hover, &:active {
+		$color-hover: darken($color, 5%);
+		background-color: $color-hover;
+		border-color: darken($color-hover, 10%);
+	}
+}
+
+%theme-button-default {
+	&, &%light {	
+		@include theme-button-default;
+
+		&.primary { @include theme-button-default($color-primary); }
+		&.secondary { @include theme-button-default($color-secondary); }
+		&.light { @include theme-button-default($color-light); }
+		&.dark { @include theme-button-default($color-dark); }
+
+		&, &.primary, &.secondary, &.light, &.dark {
+			&.quiet {
+				background-color: transparent;
+				border-color: transparent;
+				color: $color-dark;
+			}
+		}
+	}
+
+	&%dark {
+		&.quiet {
+			color: $color-light;
+		}
+	}
+}
+
+// Transparent Button Style and Theme
+%ext-button-transparent {
+	@extend %button;
+}
+
+@mixin theme-button-transparent($color: $color-primary, $color-text: $color) {
+	background-color: transparent;
+	border-color: $color;
+
+	@if $color-text != auto {
+		color: $color-text;
+	}
+
+	&:hover, &:active {
+		background-color: $color;
+		border-color: $color;
+
+		@if $color-text != auto {
+			color: foregroundColor($color);
+		}
+	}
+}
+
+%theme-button-transparent {
+	&, &%light {
+		@include theme-button-transparent;
+
+		&.primary { @include theme-button-transparent($color-primary); }
+		&.secondary { @include theme-button-transparent($color-secondary); }
+		&.light { @include theme-button-transparent($color-light); }
+		&.dark { @include theme-button-transparent($color-dark); }
+	}
+}
 
