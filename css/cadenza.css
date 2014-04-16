@@ -4659,61 +4659,61 @@ button.full, .button.full, input[type=button].full, input[type=submit].full {
   border-bottom-right-radius: 3px;
 }
 
-/* line 80, ../scss/modules/buttons/_themes.scss */
+/* line 81, ../scss/modules/buttons/_themes.scss */
 button, .button, input[type=button], input[type=submit] {
   background-color: transparent;
   border-color: #024959;
   color: #024959;
 }
-/* line 69, ../scss/modules/buttons/_themes.scss */
+/* line 70, ../scss/modules/buttons/_themes.scss */
 button:hover, .button:hover, input[type=button]:hover, input[type=submit]:hover, button:active, .button:active, input[type=button]:active, input[type=submit]:active {
   background-color: #024959;
   border-color: #024959;
   color: #efefef;
 }
-/* line 83, ../scss/modules/buttons/_themes.scss */
+/* line 85, ../scss/modules/buttons/_themes.scss */
 button.primary, .primary.button, input.primary[type=button], input.primary[type=submit] {
   background-color: transparent;
   border-color: #024959;
   color: #024959;
 }
-/* line 69, ../scss/modules/buttons/_themes.scss */
+/* line 70, ../scss/modules/buttons/_themes.scss */
 button.primary:hover, .primary.button:hover, input.primary[type=button]:hover, input.primary[type=submit]:hover, button.primary:active, .primary.button:active, input.primary[type=button]:active, input.primary[type=submit]:active {
   background-color: #024959;
   border-color: #024959;
   color: #efefef;
 }
-/* line 84, ../scss/modules/buttons/_themes.scss */
+/* line 86, ../scss/modules/buttons/_themes.scss */
 button.secondary, .secondary.button, input.secondary[type=button], input.secondary[type=submit] {
   background-color: transparent;
   border-color: #e74c30;
   color: #e74c30;
 }
-/* line 69, ../scss/modules/buttons/_themes.scss */
+/* line 70, ../scss/modules/buttons/_themes.scss */
 button.secondary:hover, .secondary.button:hover, input.secondary[type=button]:hover, input.secondary[type=submit]:hover, button.secondary:active, .secondary.button:active, input.secondary[type=button]:active, input.secondary[type=submit]:active {
   background-color: #e74c30;
   border-color: #e74c30;
   color: #efefef;
 }
-/* line 85, ../scss/modules/buttons/_themes.scss */
+/* line 87, ../scss/modules/buttons/_themes.scss */
 button.light, .light.button, input.light[type=button], input.light[type=submit] {
   background-color: transparent;
   border-color: #efefef;
   color: #efefef;
 }
-/* line 69, ../scss/modules/buttons/_themes.scss */
+/* line 70, ../scss/modules/buttons/_themes.scss */
 button.light:hover, .light.button:hover, input.light[type=button]:hover, input.light[type=submit]:hover, button.light:active, .light.button:active, input.light[type=button]:active, input.light[type=submit]:active {
   background-color: #efefef;
   border-color: #efefef;
   color: #363636;
 }
-/* line 86, ../scss/modules/buttons/_themes.scss */
+/* line 88, ../scss/modules/buttons/_themes.scss */
 button.dark, .dark.button, input.dark[type=button], input.dark[type=submit] {
   background-color: transparent;
   border-color: #363636;
   color: #363636;
 }
-/* line 69, ../scss/modules/buttons/_themes.scss */
+/* line 70, ../scss/modules/buttons/_themes.scss */
 button.dark:hover, .dark.button:hover, input.dark[type=button]:hover, input.dark[type=submit]:hover, button.dark:active, .dark.button:active, input.dark[type=button]:active, input.dark[type=submit]:active {
   background-color: #363636;
   border-color: #363636;
@@ -4721,6 +4721,23 @@ button.dark:hover, .dark.button:hover, input.dark[type=button]:hover, input.dark
 }
 
 /* line 5, ../scss/modules/forms/_components.scss */
+button, .button, input[type=button], input[type=submit], textarea,
+input {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+/* line 11, ../scss/modules/forms/_components.scss */
 textarea.small,
 input.small, textarea.large,
 input.large, textarea.inline,
@@ -4740,27 +4757,27 @@ input {
   border-radius: 3px;
 }
 
-/* line 20, ../scss/modules/forms/_components.scss */
+/* line 26, ../scss/modules/forms/_components.scss */
 textarea.small,
 input.small {
   font-size: 11.86196px ;
   font-size: 0.74137rem ;
 }
 
-/* line 25, ../scss/modules/forms/_components.scss */
+/* line 31, ../scss/modules/forms/_components.scss */
 textarea.large,
 input.large {
   font-size: 16px ;
   font-size: 1rem ;
 }
 
-/* line 30, ../scss/modules/forms/_components.scss */
+/* line 36, ../scss/modules/forms/_components.scss */
 textarea.inline,
 input.inline {
   width: auto;
 }
 
-/* line 37, ../scss/modules/forms/_components.scss */
+/* line 43, ../scss/modules/forms/_components.scss */
 textarea {
   height: auto;
 }
@@ -4768,9 +4785,9 @@ textarea {
 /* line 16, ../scss/modules/forms/_themes.scss */
 textarea,
 input {
-  border-color: gray;
+  border-color: #adadad;
 }
-/* line 19, ../scss/modules/forms/_themes.scss */
+/* line 20, ../scss/modules/forms/_themes.scss */
 textarea:focus,
 input:focus {
   border-color: #024959;

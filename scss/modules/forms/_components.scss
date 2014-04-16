@@ -2,6 +2,12 @@
 // Forms Components
 // ================
 
+%form-transition {
+	@include transition-property(all);
+	@include transition-duration($form-transition-duration);
+	@include transition-timing-function($form-transition-timing-function);
+}
+
 %input {
 	@extend %border-box;
 	@extend %display-block;

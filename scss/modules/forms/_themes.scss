@@ -14,9 +14,12 @@
 
 %theme-input-default {
 	&, &%light {
-		border-color: gray;
+		@extend %form-transition;
+		border-color: $color-gray-light;
 
-		&:focus { border-color: $color-primary; }
+		&:focus { 
+			border-color: $color-primary;
+		}
 	}
 
 	&%dark {

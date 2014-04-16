@@ -29,7 +29,8 @@
 }
 
 %theme-button-default {
-	&, &%light {	
+	&, &%light {
+		@extend %form-transition;
 		@include theme-button-default;
 
 		&.primary { @include theme-button-default($color-primary); }
@@ -78,6 +79,7 @@
 
 %theme-button-transparent {
 	&, &%light {
+		@extend %form-transition;
 		@include theme-button-transparent;
 
 		&.primary { @include theme-button-transparent($color-primary); }
