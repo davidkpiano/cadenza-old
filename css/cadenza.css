@@ -5152,6 +5152,7 @@ table.hover tr:hover {
   width: 100%;
   padding: 16px;
   border-width: 1px;
+  border-style: solid;
   margin: 0 0 1rem 0;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -5159,198 +5160,274 @@ table.hover tr:hover {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 49, ../scss/modules/panels/_components.scss */
+/* line 50, ../scss/modules/panels/_components.scss */
 .alert > *:last-child {
   margin-bottom: 0;
 }
-/* line 41, ../scss/modules/panels/_themes.scss */
-.panel {
-  background-color: transparent;
-  border-color: #525252;
-  color: inherit;
+/* line 60, ../scss/modules/panels/_components.scss */
+.alert-group {
+  margin: 0 0 1rem 0;
 }
-/* line 24, ../scss/modules/panels/_themes.scss */
+/* line 63, ../scss/modules/panels/_components.scss */
+.alert-group > * {
+  margin: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+  border-radius: 0;
+}
+/* line 69, ../scss/modules/panels/_components.scss */
+.alert-group > *:first-child {
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+/* line 73, ../scss/modules/panels/_components.scss */
+.alert-group > *:last-child {
+  -moz-border-radius-bottomleft: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  -moz-border-radius-bottomright: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+/* line 79, ../scss/modules/panels/_components.scss */
+.alert-group > * ~ * {
+  margin-top: -1px;
+}
+
+/* line 47, ../scss/modules/panels/_themes.scss */
+.panel {
+  background-color: #efefef;
+  border-color: #e2e2e2;
+  color: #363636;
+}
+/* line 25, ../scss/modules/panels/_themes.scss */
 .panel > header, .panel > hgroup, .panel .panel-header {
   background-color: #efefef;
-  border-color: #525252;
+  border-color: #e2e2e2;
   color: #363636;
 }
-/* line 30, ../scss/modules/panels/_themes.scss */
+/* line 31, ../scss/modules/panels/_themes.scss */
+.panel > section, .panel > .panel-body {
+  background-color: white;
+  color: #363636;
+}
+/* line 36, ../scss/modules/panels/_themes.scss */
 .panel > footer, .panel > .panel-footer {
   background-color: #efefef;
-  border-color: #525252;
-  color: #363636;
-}
-/* line 44, ../scss/modules/panels/_themes.scss */
-.primary.panel {
-  background-color: #024959;
-  border-color: #525252;
-  color: #efefef;
-}
-/* line 24, ../scss/modules/panels/_themes.scss */
-.primary.panel > header, .primary.panel > hgroup, .primary.panel .panel-header {
-  background-color: #efefef;
-  border-color: #525252;
-  color: #363636;
-}
-/* line 30, ../scss/modules/panels/_themes.scss */
-.primary.panel > footer, .primary.panel > .panel-footer {
-  background-color: #efefef;
-  border-color: #525252;
-  color: #363636;
-}
-/* line 45, ../scss/modules/panels/_themes.scss */
-.secondary.panel {
-  background-color: #e74c30;
-  border-color: #525252;
-  color: #efefef;
-}
-/* line 24, ../scss/modules/panels/_themes.scss */
-.secondary.panel > header, .secondary.panel > hgroup, .secondary.panel .panel-header {
-  background-color: #efefef;
-  border-color: #525252;
-  color: #363636;
-}
-/* line 30, ../scss/modules/panels/_themes.scss */
-.secondary.panel > footer, .secondary.panel > .panel-footer {
-  background-color: #efefef;
-  border-color: #525252;
-  color: #363636;
-}
-/* line 46, ../scss/modules/panels/_themes.scss */
-.light.panel {
-  background-color: #efefef;
-  border-color: #525252;
-  color: #363636;
-}
-/* line 24, ../scss/modules/panels/_themes.scss */
-.light.panel > header, .light.panel > hgroup, .light.panel .panel-header {
-  background-color: #efefef;
-  border-color: #525252;
-  color: #363636;
-}
-/* line 30, ../scss/modules/panels/_themes.scss */
-.light.panel > footer, .light.panel > .panel-footer {
-  background-color: #efefef;
-  border-color: #525252;
-  color: #363636;
-}
-/* line 47, ../scss/modules/panels/_themes.scss */
-.dark.panel {
-  background-color: #363636;
-  border-color: #525252;
-  color: #efefef;
-}
-/* line 24, ../scss/modules/panels/_themes.scss */
-.dark.panel > header, .dark.panel > hgroup, .dark.panel .panel-header {
-  background-color: #efefef;
-  border-color: #525252;
-  color: #363636;
-}
-/* line 30, ../scss/modules/panels/_themes.scss */
-.dark.panel > footer, .dark.panel > .panel-footer {
-  background-color: #efefef;
-  border-color: #525252;
-  color: #363636;
-}
-/* line 49, ../scss/modules/panels/_themes.scss */
-.success.panel {
-  background-color: #96cc69;
-  border-color: #525252;
-  color: #efefef;
-}
-/* line 24, ../scss/modules/panels/_themes.scss */
-.success.panel > header, .success.panel > hgroup, .success.panel .panel-header {
-  background-color: #efefef;
-  border-color: #525252;
-  color: #363636;
-}
-/* line 30, ../scss/modules/panels/_themes.scss */
-.success.panel > footer, .success.panel > .panel-footer {
-  background-color: #efefef;
-  border-color: #525252;
+  border-color: #e2e2e2;
   color: #363636;
 }
 /* line 50, ../scss/modules/panels/_themes.scss */
-.warning.panel {
-  background-color: #ffcc5c;
-  border-color: #525252;
-  color: #363636;
-}
-/* line 24, ../scss/modules/panels/_themes.scss */
-.warning.panel > header, .warning.panel > hgroup, .warning.panel .panel-header {
-  background-color: #efefef;
-  border-color: #525252;
-  color: #363636;
-}
-/* line 30, ../scss/modules/panels/_themes.scss */
-.warning.panel > footer, .warning.panel > .panel-footer {
-  background-color: #efefef;
-  border-color: #525252;
-  color: #363636;
-}
-/* line 51, ../scss/modules/panels/_themes.scss */
-.failure.panel {
-  background-color: #c44741;
-  border-color: #525252;
+.primary.panel {
+  background-color: #024959;
+  border-color: #013540;
   color: #efefef;
 }
-/* line 24, ../scss/modules/panels/_themes.scss */
-.failure.panel > header, .failure.panel > hgroup, .failure.panel .panel-header {
-  background-color: #efefef;
-  border-color: #525252;
+/* line 25, ../scss/modules/panels/_themes.scss */
+.primary.panel > header, .primary.panel > hgroup, .primary.panel .panel-header {
+  background-color: #024959;
+  border-color: #013540;
+  color: #efefef;
+}
+/* line 31, ../scss/modules/panels/_themes.scss */
+.primary.panel > section, .primary.panel > .panel-body {
+  background-color: white;
   color: #363636;
 }
-/* line 30, ../scss/modules/panels/_themes.scss */
-.failure.panel > footer, .failure.panel > .panel-footer {
-  background-color: #efefef;
-  border-color: #525252;
+/* line 36, ../scss/modules/panels/_themes.scss */
+.primary.panel > footer, .primary.panel > .panel-footer {
+  background-color: #024959;
+  border-color: #013540;
+  color: #efefef;
+}
+/* line 51, ../scss/modules/panels/_themes.scss */
+.secondary.panel {
+  background-color: #e74c30;
+  border-color: #e3391a;
+  color: #efefef;
+}
+/* line 25, ../scss/modules/panels/_themes.scss */
+.secondary.panel > header, .secondary.panel > hgroup, .secondary.panel .panel-header {
+  background-color: #e74c30;
+  border-color: #e3391a;
+  color: #efefef;
+}
+/* line 31, ../scss/modules/panels/_themes.scss */
+.secondary.panel > section, .secondary.panel > .panel-body {
+  background-color: white;
   color: #363636;
+}
+/* line 36, ../scss/modules/panels/_themes.scss */
+.secondary.panel > footer, .secondary.panel > .panel-footer {
+  background-color: #e74c30;
+  border-color: #e3391a;
+  color: #efefef;
+}
+/* line 52, ../scss/modules/panels/_themes.scss */
+.light.panel {
+  background-color: #efefef;
+  border-color: #e2e2e2;
+  color: #363636;
+}
+/* line 25, ../scss/modules/panels/_themes.scss */
+.light.panel > header, .light.panel > hgroup, .light.panel .panel-header {
+  background-color: #efefef;
+  border-color: #e2e2e2;
+  color: #363636;
+}
+/* line 31, ../scss/modules/panels/_themes.scss */
+.light.panel > section, .light.panel > .panel-body {
+  background-color: white;
+  color: #363636;
+}
+/* line 36, ../scss/modules/panels/_themes.scss */
+.light.panel > footer, .light.panel > .panel-footer {
+  background-color: #efefef;
+  border-color: #e2e2e2;
+  color: #363636;
+}
+/* line 53, ../scss/modules/panels/_themes.scss */
+.dark.panel {
+  background-color: #363636;
+  border-color: #292929;
+  color: #efefef;
+}
+/* line 25, ../scss/modules/panels/_themes.scss */
+.dark.panel > header, .dark.panel > hgroup, .dark.panel .panel-header {
+  background-color: #363636;
+  border-color: #292929;
+  color: #efefef;
+}
+/* line 31, ../scss/modules/panels/_themes.scss */
+.dark.panel > section, .dark.panel > .panel-body {
+  background-color: white;
+  color: #363636;
+}
+/* line 36, ../scss/modules/panels/_themes.scss */
+.dark.panel > footer, .dark.panel > .panel-footer {
+  background-color: #363636;
+  border-color: #292929;
+  color: #efefef;
+}
+/* line 55, ../scss/modules/panels/_themes.scss */
+.success.panel {
+  background-color: #96cc69;
+  border-color: #89c656;
+  color: #efefef;
+}
+/* line 25, ../scss/modules/panels/_themes.scss */
+.success.panel > header, .success.panel > hgroup, .success.panel .panel-header {
+  background-color: #96cc69;
+  border-color: #89c656;
+  color: #efefef;
+}
+/* line 31, ../scss/modules/panels/_themes.scss */
+.success.panel > section, .success.panel > .panel-body {
+  background-color: white;
+  color: #363636;
+}
+/* line 36, ../scss/modules/panels/_themes.scss */
+.success.panel > footer, .success.panel > .panel-footer {
+  background-color: #96cc69;
+  border-color: #89c656;
+  color: #efefef;
+}
+/* line 56, ../scss/modules/panels/_themes.scss */
+.warning.panel {
+  background-color: #ffcc5c;
+  border-color: #ffc443;
+  color: #363636;
+}
+/* line 25, ../scss/modules/panels/_themes.scss */
+.warning.panel > header, .warning.panel > hgroup, .warning.panel .panel-header {
+  background-color: #ffcc5c;
+  border-color: #ffc443;
+  color: #363636;
+}
+/* line 31, ../scss/modules/panels/_themes.scss */
+.warning.panel > section, .warning.panel > .panel-body {
+  background-color: white;
+  color: #363636;
+}
+/* line 36, ../scss/modules/panels/_themes.scss */
+.warning.panel > footer, .warning.panel > .panel-footer {
+  background-color: #ffcc5c;
+  border-color: #ffc443;
+  color: #363636;
+}
+/* line 57, ../scss/modules/panels/_themes.scss */
+.failure.panel {
+  background-color: #c44741;
+  border-color: #b43d38;
+  color: #efefef;
+}
+/* line 25, ../scss/modules/panels/_themes.scss */
+.failure.panel > header, .failure.panel > hgroup, .failure.panel .panel-header {
+  background-color: #c44741;
+  border-color: #b43d38;
+  color: #efefef;
+}
+/* line 31, ../scss/modules/panels/_themes.scss */
+.failure.panel > section, .failure.panel > .panel-body {
+  background-color: white;
+  color: #363636;
+}
+/* line 36, ../scss/modules/panels/_themes.scss */
+.failure.panel > footer, .failure.panel > .panel-footer {
+  background-color: #c44741;
+  border-color: #b43d38;
+  color: #efefef;
 }
 
-/* line 80, ../scss/modules/panels/_themes.scss */
+/* line 86, ../scss/modules/panels/_themes.scss */
 .alert {
   background-color: #024959;
   border-color: #013540;
   color: #efefef;
 }
-/* line 83, ../scss/modules/panels/_themes.scss */
+/* line 89, ../scss/modules/panels/_themes.scss */
 .primary.alert {
   background-color: #024959;
   border-color: #013540;
   color: #efefef;
 }
-/* line 84, ../scss/modules/panels/_themes.scss */
+/* line 90, ../scss/modules/panels/_themes.scss */
 .secondary.alert {
   background-color: #e74c30;
   border-color: #e3391a;
   color: #efefef;
 }
-/* line 85, ../scss/modules/panels/_themes.scss */
+/* line 91, ../scss/modules/panels/_themes.scss */
 .light.alert {
   background-color: #efefef;
   border-color: #e2e2e2;
   color: #363636;
 }
-/* line 86, ../scss/modules/panels/_themes.scss */
+/* line 92, ../scss/modules/panels/_themes.scss */
 .dark.alert {
   background-color: #363636;
   border-color: #292929;
   color: #efefef;
 }
-/* line 88, ../scss/modules/panels/_themes.scss */
+/* line 94, ../scss/modules/panels/_themes.scss */
 .success.alert {
   background-color: #96cc69;
   border-color: #89c656;
   color: #efefef;
 }
-/* line 89, ../scss/modules/panels/_themes.scss */
+/* line 95, ../scss/modules/panels/_themes.scss */
 .warning.alert {
   background-color: #ffcc5c;
   border-color: #ffc443;
   color: #363636;
 }
-/* line 90, ../scss/modules/panels/_themes.scss */
+/* line 96, ../scss/modules/panels/_themes.scss */
 .failure.alert {
   background-color: #c44741;
   border-color: #b43d38;

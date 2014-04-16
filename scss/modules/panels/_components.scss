@@ -40,6 +40,7 @@
     width: 100%;
     padding: $alert-padding;
     border-width: $alert-border-width;
+    border-style: solid;
     margin: $alert-margin;
 
     @if $alert-radius {
@@ -53,6 +54,31 @@
     %alert-exit {
         @include position-absolute(top, right);
         padding: $alert-exit-padding;
+    }
+}
+
+%alert-group {
+    margin: $alert-margin;
+    
+    > * {
+        margin: 0;
+
+        @if $alert-radius {
+            @include border-radius(0);
+
+            &:first-child {
+                @include border-top-left-radius($alert-radius);
+                @include border-top-right-radius($alert-radius);
+            }
+            &:last-child {
+                @include border-bottom-left-radius($alert-radius);
+                @include border-bottom-right-radius($alert-radius);
+            }
+        }
+
+        & ~ * {
+            margin-top: -1px;
+        }
     }
 }
 

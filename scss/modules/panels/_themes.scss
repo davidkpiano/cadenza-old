@@ -12,10 +12,11 @@
 }
 
 @mixin theme-panel-default(
-	$color: transparent,
-	$color-header: $color-gray-light,
-	$color-footer: $color-header,
-	$color-border: $color-gray
+	$color: $color-light,
+	$color-border: darken($color, 5%),
+	$color-header: $color,
+	$color-body: white,
+	$color-footer: $color
 ) {
 	background-color: $color;
 	border-color: $color-border;
@@ -25,6 +26,11 @@
 		background-color: $color-header;
 		border-color: $color-border;
 		color: foregroundColor($color-header);
+	}
+
+	> section, > .panel-body {
+		background-color: $color-body;
+		color: foregroundColor($color-body);
 	}
 
 	> footer, > .panel-footer {

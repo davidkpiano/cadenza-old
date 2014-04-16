@@ -19,3 +19,7 @@
     @include alert-style();
     @extend %alert;
 }
+
+.alert-group {
+    @extend %alert-group;
+}
