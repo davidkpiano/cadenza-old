@@ -1,0 +1,12 @@
+// 
+// Panels Themes and Styles
+// ========================
+
+// Panel Theme
+@mixin panel-style(
+	$style: $panel-style,
+	$theme: $panel-theme
+) {
+	@extend %ext-panel-#{$style} !optional;
+	@extend %theme-panel-#{$theme} !optional;
+}
