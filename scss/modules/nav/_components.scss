@@ -2,6 +2,74 @@
 // Nav Components
 // =================
 
+%nav {
+	%nav-header {
+		padding: $nav-header-padding;
+		margin: 0;
+	}
+
+	ul {
+		list-style: none;
+		margin-left: 0;
+		width: 100%;
+		padding: $nav-list-padding;
+
+		li {
+			@extend %nowrap;
+			display: block;
+			padding: $nav-list-item-padding;
+
+			> a {
+				@extend %valign-center-all;
+				display: block;
+				padding: $nav-anchor-padding;
+
+				&, &:hover {
+					text-decoration: none;
+				}
+			}
+
+			ul {
+				display: none;
+			}
+
+			&:hover {
+				> ul { display: block; }
+			}
+
+			%nav-seperator {
+				border-bottom-width: $nav-separator-width;
+				border-bottom-style: solid;
+				margin: $nav-separator-margin;
+			}
+		}
+	}
+}
+
+%nav-horizontal {
+	@extend %nav;
+
+	> ul {
+		@extend %clearfix;
+		height: 100%;
+		margin-bottom: 0;
+
+		> li {
+			float: left;
+			height: 100%;
+
+			> a {
+				height: 100%;
+				// TODO: %align-middle; from layouts module
+				@extend %valign-center-all;
+			}
+		}
+	}
+
+	%nav-horizontal-full {
+		height: 100%;
+	}
+}
 
 
 
