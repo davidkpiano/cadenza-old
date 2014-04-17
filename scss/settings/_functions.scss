@@ -14,7 +14,7 @@
         } @else {
             @return $color-light;
         }
-    } @else if $color == static {
+    } @else if $color == static or $color == transparent {
         @return false;
     } @else {
         @return $color-default;

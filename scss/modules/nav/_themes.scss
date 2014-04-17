@@ -11,16 +11,39 @@
 	@extend %theme-nav-#{$theme} !optional;
 }
 
-%ext-nav-default {
+@mixin theme-nav-default(
+    $color: transparent
+) {
+    li {
+        > a {
+            &:hover {
+                @if is-dark($color) {
+                    @extend %theme-anchor-#{$type-anchor-theme}%dark;
+                } @else {
+                    @extend %theme-anchor-#{$type-anchor-theme};
+                }
 
+                background-color: $color;
+            }
+        }
+    }
+}
+
+%ext-nav-default {
+    @extend %nav;
 }
 
 %theme-nav-default {
 	&, &%light {
+         @include theme-nav-default();
 
+         &.primary { @include theme-nav-default($color-primary); }
+         &.secondary { @include theme-nav-default($color-secondary); }
+         &.light { @include theme-nav-default($color-light); }
+         &.dark { @include theme-nav-default($color-dark); }
 	}
 
 	&%dark {
-		
+		// No styles changed
 	}
 }
