@@ -1,0 +1,94 @@
+// 
+// Labels Themes and Styles
+// ========================
+
+// Label Theme
+// -----------
+@mixin label-style(
+	$style: $label-style,
+	$theme: $label-theme
+) {
+	@extend %ext-label-#{$style} !optional;
+	@extend %theme-label-#{$theme} !optional;
+}
+
+@mixin theme-label-default(
+    $color: $color-primary
+) {
+    background-color: $color;
+    color: foregroundColor($color);
+}
+
+%ext-label-default {
+    // No changes
+}
+
+%theme-label-default {
+	&, &%light {
+        @include theme-label-default();
+
+        &.primary { @include theme-label-default($color-primary); }
+        &.secondary { @include theme-label-default($color-secondary); }
+        &.light { @include theme-label-default($color-light); }
+        &.dark { @include theme-label-default($color-dark); }
+
+        &.success { @include theme-label-default($color-success); }
+        &.warning { @include theme-label-default($color-warning); }
+        &.failure { @include theme-label-default($color-failure); }
+
+        &.transparent { @include theme-label-default(transparent); }
+	}
+
+	&%dark {
+		// No changes
+	}
+}
+
+// Badge Theme
+// -----------
+@mixin badge-style(
+    $style: $badge-style,
+    $theme: $badge-theme
+) {
+    @extend %ext-badge-#{$style} !optional;
+    @extend %theme-badge-#{$theme} !optional;
+}
+
+@mixin theme-badge-default(
+    $color: $color-primary
+) {
+    background-color: $color;
+    color: foregroundColor($color);
+}
+
+%ext-badge-default {
+    // No changes
+}
+
+%theme-badge-default {
+    &, &%light {
+        @include theme-badge-default();
+
+        &.primary { @include theme-badge-default($color-primary); }
+        &.secondary { @include theme-badge-default($color-secondary); }
+        &.light { @include theme-badge-default($color-light); }
+        &.dark { @include theme-badge-default($color-dark); }
+
+        &.success { @include theme-badge-default($color-success); }
+        &.warning { @include theme-badge-default($color-warning); }
+        &.failure { @include theme-badge-default($color-failure); }
+
+        &.transparent { 
+            @include theme-badge-default(transparent);
+            color: $color-dark;
+        }
+    }
+
+    &%dark {
+        &.transparent { 
+            @include theme-badge-default(transparent);
+            color: $color-light;
+        }
+    }
+}
+

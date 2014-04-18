@@ -157,12 +157,12 @@ input, button, textarea, select {
   margin: 0;
 }
 
-/* line 100, ../scss/modules/_layout.scss */
+/* line 118, ../scss/modules/_layout.scss */
 .halign-center, .full, .full-height, .full-width, .block {
   display: block;
 }
 
-/* line 105, ../scss/modules/_layout.scss */
+/* line 123, ../scss/modules/_layout.scss */
 .inline-block-all > *, .valign-center-all > *, .tabs ul li > a > *, nav.horizontal ul li > a > *, .nav.horizontal ul li > a > *, nav ul li > a > *, .nav ul li > a > *, nav.vertical ul li > a > *, .nav.vertical ul li > a > *, .dropdown-container ul li > a > *, .inline-block, h1.inline, .h1.inline, h2.inline, .h2.inline, h3.inline, .h3.inline, h4.inline, .h4.inline, textarea.inline,
 input.inline {
   display: inline-block;
@@ -171,12 +171,12 @@ input.inline {
   margin-bottom: 0;
 }
 
-/* line 113, ../scss/modules/_layout.scss */
+/* line 131, ../scss/modules/_layout.scss */
 .inline-block-all > * {
   vertical-align: top;
 }
 
-/* line 119, ../scss/modules/_layout.scss */
+/* line 137, ../scss/modules/_layout.scss */
 *, *:before, *:after, textarea.small,
 input.small, textarea.large,
 input.large, textarea.inline,
@@ -187,8 +187,8 @@ input {
   box-sizing: border-box;
 }
 
-/* line 123, ../scss/modules/_layout.scss */
-.valign-center, [class*=infix-].infix-left.label, [class*=infix-].infix-left.badge, [class*=infix-].infix-right.label, [class*=infix-].infix-right.badge {
+/* line 141, ../scss/modules/_layout.scss */
+.valign-center {
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -197,7 +197,7 @@ input {
   transform: translateY(-50%);
 }
 
-/* line 129, ../scss/modules/_layout.scss */
+/* line 147, ../scss/modules/_layout.scss */
 .valign-center-all:before, .tabs ul li > a:before, nav.horizontal ul li > a:before, .nav.horizontal ul li > a:before, nav ul li > a:before, .nav ul li > a:before, nav.vertical ul li > a:before, .nav.vertical ul li > a:before, .dropdown-container ul li > a:before {
   content: '';
   height: 100%;
@@ -206,25 +206,25 @@ input {
   width: 1em;
   margin-left: -1em;
 }
-/* line 138, ../scss/modules/_layout.scss */
+/* line 156, ../scss/modules/_layout.scss */
 .valign-center-all > *, .tabs ul li > a > *, nav.horizontal ul li > a > *, .nav.horizontal ul li > a > *, nav ul li > a > *, .nav ul li > a > *, nav.vertical ul li > a > *, .nav.vertical ul li > a > *, .dropdown-container ul li > a > * {
   vertical-align: middle;
 }
 
-/* line 144, ../scss/modules/_layout.scss */
+/* line 162, ../scss/modules/_layout.scss */
 .valign-bottom {
   position: absolute;
   bottom: 0;
   top: inherit;
 }
 
-/* line 148, ../scss/modules/_layout.scss */
+/* line 166, ../scss/modules/_layout.scss */
 .halign-center {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 154, ../scss/modules/_layout.scss */
+/* line 172, ../scss/modules/_layout.scss */
 .position-bottom-center {
   position: absolute;
   bottom: 0;
@@ -237,7 +237,7 @@ input {
   transform: translateX(-50%);
 }
 
-/* line 158, ../scss/modules/_layout.scss */
+/* line 176, ../scss/modules/_layout.scss */
 .halign-center, .full, .full-height, .full-width, .block, .clearfix, .layer, .tabs > ul, nav.horizontal > ul, .nav.horizontal > ul, .button-group.inline, .button-group.vertical, .button-group {
   *zoom: 1;
 }
@@ -248,42 +248,42 @@ input {
   clear: both;
 }
 
-/* line 162, ../scss/modules/_layout.scss */
+/* line 180, ../scss/modules/_layout.scss */
 .float-left {
   float: left;
 }
 
-/* line 166, ../scss/modules/_layout.scss */
+/* line 184, ../scss/modules/_layout.scss */
 .float-right {
   float: right;
 }
 
-/* line 170, ../scss/modules/_layout.scss */
+/* line 188, ../scss/modules/_layout.scss */
 .full, .full-height {
   margin-top: 0;
   margin-bottom: 0;
   height: 100%;
 }
 
-/* line 177, ../scss/modules/_layout.scss */
+/* line 195, ../scss/modules/_layout.scss */
 .full, .full-width {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
 }
 
-/* line 184, ../scss/modules/_layout.scss */
+/* line 202, ../scss/modules/_layout.scss */
 .full {
   display: block;
   position: absolute;
 }
 
-/* line 191, ../scss/modules/_layout.scss */
+/* line 209, ../scss/modules/_layout.scss */
 html {
   height: 100%;
 }
 
-/* line 195, ../scss/modules/_layout.scss */
+/* line 213, ../scss/modules/_layout.scss */
 *, *:before, *:after {
   position: relative;
 }
@@ -3985,17 +3985,16 @@ blockquote footer cite, em, .italics {
 }
 
 /* line 132, ../scss/modules/type/_components.scss */
-ul.inline li, .nowrap, .tabs ul li, nav.horizontal ul li, .nav.horizontal ul li, nav ul li, .nav ul li, nav.vertical ul li, .nav.vertical ul li, .dropdown-container ul li, button.tiny, .button.tiny, input[type=button].tiny, input[type=submit].tiny, button.small, .button.small, input[type=button].small, input[type=submit].small, button.large, .button.large, input[type=button].large, input[type=submit].large, button.huge, .button.huge, input[type=button].huge, input[type=submit].huge, button.left, .button.left, input[type=button].left, input[type=submit].left, button.right, .button.right, input[type=button].right, input[type=submit].right, button.full, .button.full, input[type=button].full, input[type=submit].full, button.block, .button.block, input[type=button].block, input[type=submit].block, button, .button, input[type=button], input[type=submit], .label, .badge {
+ul.inline li, .nowrap, .tabs ul li, nav.horizontal ul li, .nav.horizontal ul li, nav ul li, .nav ul li, nav.vertical ul li, .nav.vertical ul li, .dropdown-container ul li, button.tiny, .button.tiny, input[type=button].tiny, input[type=submit].tiny, button.small, .button.small, input[type=button].small, input[type=submit].small, button.large, .button.large, input[type=button].large, input[type=submit].large, button.huge, .button.huge, input[type=button].huge, input[type=submit].huge, button.left, .button.left, input[type=button].left, input[type=submit].left, button.right, .button.right, input[type=button].right, input[type=submit].right, button.full, .button.full, input[type=button].full, input[type=submit].full, button.block, .button.block, input[type=button].block, input[type=submit].block, button, .button, input[type=button], input[type=submit], .badge, .label {
   white-space: nowrap;
-  overflow: hidden;
 }
 
-/* line 137, ../scss/modules/type/_components.scss */
+/* line 136, ../scss/modules/type/_components.scss */
 mark, .mark {
   background: yellow;
 }
 
-/* line 141, ../scss/modules/type/_components.scss */
+/* line 140, ../scss/modules/type/_components.scss */
 abbr, acronym {
   font-size: 116.14%;
   text-transform: uppercase;
@@ -4003,21 +4002,21 @@ abbr, acronym {
   cursor: help;
 }
 
-/* line 187, ../scss/modules/type/_components.scss */
+/* line 186, ../scss/modules/type/_components.scss */
 pre, .pre {
   white-space: pre;
   font-size: 16px ;
   font-size: 1rem ;
   font-family: Consolas, monaco, monospace;
 }
-/* line 192, ../scss/modules/type/_components.scss */
+/* line 191, ../scss/modules/type/_components.scss */
 pre code, .pre code, pre .code, .pre .code {
   word-wrap: normal;
   white-space: -moz-pre-wrap;
   white-space: pre-wrap;
 }
 
-/* line 199, ../scss/modules/type/_components.scss */
+/* line 198, ../scss/modules/type/_components.scss */
 pre code, pre .code, .pre code, .pre .code, code, .code {
   white-space: pre;
   font-size: 13.77648px ;
@@ -4025,80 +4024,80 @@ pre code, pre .code, .pre code, .pre .code, code, .code {
   font-family: Consolas, monaco, monospace;
 }
 
-/* line 205, ../scss/modules/type/_components.scss */
+/* line 204, ../scss/modules/type/_components.scss */
 kbd, .kbd {
   font-size: 11.86196px ;
   font-size: 0.74137rem ;
 }
 
-/* line 211, ../scss/modules/type/_components.scss */
+/* line 210, ../scss/modules/type/_components.scss */
 blockquote {
   padding: 1rem;
   margin-bottom: 1rem;
   font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
-/* line 216, ../scss/modules/type/_components.scss */
+/* line 215, ../scss/modules/type/_components.scss */
 blockquote footer {
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
 }
 
-/* line 228, ../scss/modules/type/_components.scss */
+/* line 227, ../scss/modules/type/_components.scss */
 q::before, q.double::before {
   content: '\201C';
 }
-/* line 229, ../scss/modules/type/_components.scss */
+/* line 228, ../scss/modules/type/_components.scss */
 q::after, q.double::after {
   content: '\201D';
 }
 
-/* line 233, ../scss/modules/type/_components.scss */
+/* line 232, ../scss/modules/type/_components.scss */
 q > q::before, q.single::before {
   content: '\2018';
 }
-/* line 234, ../scss/modules/type/_components.scss */
+/* line 233, ../scss/modules/type/_components.scss */
 q > q::after, q.single::after {
   content: '\2019';
 }
 
-/* line 238, ../scss/modules/type/_components.scss */
+/* line 237, ../scss/modules/type/_components.scss */
 q.arrow-double::before {
   content: '\00AB';
 }
-/* line 239, ../scss/modules/type/_components.scss */
+/* line 238, ../scss/modules/type/_components.scss */
 q.arrow-double::after {
   content: '\00BB';
 }
 
-/* line 243, ../scss/modules/type/_components.scss */
+/* line 242, ../scss/modules/type/_components.scss */
 q.arrow-single::before {
   content: '\2039';
 }
-/* line 244, ../scss/modules/type/_components.scss */
+/* line 243, ../scss/modules/type/_components.scss */
 q.arrow-single::after {
   content: '\203A';
 }
 
-/* line 248, ../scss/modules/type/_components.scss */
+/* line 247, ../scss/modules/type/_components.scss */
 q.low-double::before {
   content: '\201E';
 }
-/* line 249, ../scss/modules/type/_components.scss */
+/* line 248, ../scss/modules/type/_components.scss */
 q.low-double::after {
   content: '\201D';
 }
 
-/* line 253, ../scss/modules/type/_components.scss */
+/* line 252, ../scss/modules/type/_components.scss */
 q.low-single::before {
   content: '\201A';
 }
-/* line 254, ../scss/modules/type/_components.scss */
+/* line 253, ../scss/modules/type/_components.scss */
 q.low-single::after {
   content: '\2019';
 }
 
-/* line 259, ../scss/modules/type/_components.scss */
+/* line 258, ../scss/modules/type/_components.scss */
 hr, .hr {
   clear: both;
   height: 0;
@@ -4109,64 +4108,64 @@ hr, .hr {
   border-bottom: none;
 }
 
-/* line 271, ../scss/modules/type/_components.scss */
+/* line 270, ../scss/modules/type/_components.scss */
 ul.unstyled, ul.inline, ul, ol, dl {
   list-style-position: outside;
   margin-bottom: 1rem;
   padding: 0;
 }
-/* line 285, ../scss/modules/type/_components.scss */
+/* line 284, ../scss/modules/type/_components.scss */
 ul.unstyled {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 291, ../scss/modules/type/_components.scss */
+/* line 290, ../scss/modules/type/_components.scss */
 ul.inline {
   margin-left: 0;
 }
-/* line 295, ../scss/modules/type/_components.scss */
+/* line 294, ../scss/modules/type/_components.scss */
 ul.inline li {
   display: inline-block;
   padding-right: 0 1rem 0 0;
 }
 
-/* line 302, ../scss/modules/type/_components.scss */
+/* line 301, ../scss/modules/type/_components.scss */
 ul {
   margin-left: 1rem;
 }
 
-/* line 308, ../scss/modules/type/_components.scss */
+/* line 307, ../scss/modules/type/_components.scss */
 ul.square {
   list-style-type: square;
 }
 
-/* line 309, ../scss/modules/type/_components.scss */
+/* line 308, ../scss/modules/type/_components.scss */
 ul.circle {
   list-style-type: circle;
 }
 
-/* line 310, ../scss/modules/type/_components.scss */
+/* line 309, ../scss/modules/type/_components.scss */
 ul.disc {
   list-style-type: disc;
 }
 
-/* line 311, ../scss/modules/type/_components.scss */
+/* line 310, ../scss/modules/type/_components.scss */
 ul.no-bullet {
   list-style-type: none;
 }
 
-/* line 313, ../scss/modules/type/_components.scss */
+/* line 312, ../scss/modules/type/_components.scss */
 ol {
   margin-left: 1.4rem;
 }
 
-/* line 322, ../scss/modules/type/_components.scss */
+/* line 321, ../scss/modules/type/_components.scss */
 dl dt {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-/* line 327, ../scss/modules/type/_components.scss */
+/* line 326, ../scss/modules/type/_components.scss */
 dl dd {
   margin-bottom: 0.5rem;
 }
@@ -4198,19 +4197,19 @@ a > img {
 }
 
 /* line 86, ../scss/modules/type/_themes.scss */
-a, .light.dropdown-container > .dropdown li > a:hover, .light.alert a, .warning.alert a {
+a, nav li > a:hover, .nav li > a:hover, nav.light li > a:hover, .light.nav li > a:hover, .light.dropdown-container > .dropdown li > a:hover, .light.alert a, .warning.alert a {
   color: #024959;
 }
 /* line 90, ../scss/modules/type/_themes.scss */
-a:hover, .light.dropdown-container > .dropdown li > a:hover, .light.alert a:hover, .warning.alert a:hover, a:focus, .light.dropdown-container > .dropdown li > a:focus:hover, .light.alert a:focus, .warning.alert a:focus, a:active, .light.dropdown-container > .dropdown li > a:active:hover, .light.alert a:active, .warning.alert a:active {
+a:hover, nav li > a:hover, .nav li > a:hover, nav.light li > a:hover, .light.nav li > a:hover, .light.dropdown-container > .dropdown li > a:hover, .light.alert a:hover, .warning.alert a:hover, a:focus, nav li > a:focus:hover, .nav li > a:focus:hover, nav.light li > a:focus:hover, .light.dropdown-container > .dropdown li > a:focus:hover, .light.alert a:focus, .warning.alert a:focus, a:active, nav li > a:active:hover, .nav li > a:active:hover, nav.light li > a:active:hover, .light.dropdown-container > .dropdown li > a:active:hover, .light.alert a:active, .warning.alert a:active {
   color: #013540;
 }
 /* line 95, ../scss/modules/type/_themes.scss */
-.dropdown-container > .dropdown li > a:hover, .primary.dropdown-container > .dropdown li > a:hover, .secondary.dropdown-container > .dropdown li > a:hover, .dark.dropdown-container > .dropdown li > a:hover, .alert a, .primary.alert a, .secondary.alert a, .dark.alert a, .success.alert a, .failure.alert a {
+nav.primary li > a:hover, .primary.nav li > a:hover, nav.secondary li > a:hover, .secondary.nav li > a:hover, nav.dark li > a:hover, .dark.nav li > a:hover, .dropdown-container > .dropdown li > a:hover, .primary.dropdown-container > .dropdown li > a:hover, .secondary.dropdown-container > .dropdown li > a:hover, .dark.dropdown-container > .dropdown li > a:hover, .alert a, .primary.alert a, .secondary.alert a, .dark.alert a, .success.alert a, .failure.alert a {
   color: #efefef;
 }
 /* line 98, ../scss/modules/type/_themes.scss */
-.dropdown-container > .dropdown li > a:hover, .primary.dropdown-container > .dropdown li > a:hover, .secondary.dropdown-container > .dropdown li > a:hover, .dark.dropdown-container > .dropdown li > a:hover, .alert a:hover, .dropdown-container > .dropdown li > a:focus:hover, .alert a:focus, .dropdown-container > .dropdown li > a:active:hover, .alert a:active {
+nav.primary li > a:hover, .primary.nav li > a:hover, nav.secondary li > a:hover, .secondary.nav li > a:hover, nav.dark li > a:hover, .dark.nav li > a:hover, .dropdown-container > .dropdown li > a:hover, .primary.dropdown-container > .dropdown li > a:hover, .secondary.dropdown-container > .dropdown li > a:hover, .dark.dropdown-container > .dropdown li > a:hover, .alert a:hover, nav.primary li > a:focus:hover, .primary.nav li > a:focus:hover, nav.secondary li > a:focus:hover, .secondary.nav li > a:focus:hover, nav.dark li > a:focus:hover, .dark.nav li > a:focus:hover, .dropdown-container > .dropdown li > a:focus:hover, .alert a:focus, nav.primary li > a:active:hover, .primary.nav li > a:active:hover, nav.secondary li > a:active:hover, .secondary.nav li > a:active:hover, nav.dark li > a:active:hover, .dark.nav li > a:active:hover, .dropdown-container > .dropdown li > a:active:hover, .alert a:active {
   color: #e2e2e2;
 }
 
@@ -4463,200 +4462,45 @@ nav ul li.separator, nav ul .nav.vertical li.separator, nav ul li.hr, nav ul .na
   margin: 0.25rem 0;
 }
 
-/* line 67, ../scss/modules/nav/_themes.scss */
-nav > ul > li, .nav > ul > li, nav.vertical > ul > li, .vertical.nav > ul > li {
-  border-left-width: 3px;
-  border-left-color: #efefef;
-  border-left-style: solid;
+/* line 21, ../scss/modules/nav/_themes.scss */
+nav li.hr, .nav li.hr, nav li.separator, .nav li.separator {
+  border-color: #efefef;
 }
-/* line 73, ../scss/modules/nav/_themes.scss */
-nav > ul > li.hr, .nav > ul > li.hr, nav > ul > li.separator, .nav > ul > li.separator, nav.vertical > ul > li.hr, .vertical.nav > ul > li.hr, nav.vertical > ul > li.separator, .vertical.nav > ul > li.separator {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #efefef;
+/* line 26, ../scss/modules/nav/_themes.scss */
+nav li > a:hover, .nav li > a:hover {
+  background-color: transparent;
 }
-/* line 79, ../scss/modules/nav/_themes.scss */
-nav > ul > li.active, .nav > ul > li.active, nav > ul > li:hover, .nav > ul > li:hover, nav.vertical > ul > li.active, .vertical.nav > ul > li.active, nav.vertical > ul > li:hover, .vertical.nav > ul > li:hover {
-  border-left-color: #024959;
+/* line 21, ../scss/modules/nav/_themes.scss */
+nav.primary li.hr, .primary.nav li.hr, nav.primary li.separator, .primary.nav li.separator {
+  border-color: #efefef;
 }
-/* line 84, ../scss/modules/nav/_themes.scss */
-nav.right > ul > li, .right.nav > ul > li, nav.vertical.right > ul > li, .vertical.right.nav > ul > li {
-  border-left: none;
-  border-right-width: 3px;
-  border-right-color: #efefef;
-  border-right-style: solid;
+/* line 26, ../scss/modules/nav/_themes.scss */
+nav.primary li > a:hover, .primary.nav li > a:hover {
+  background-color: #024959;
 }
-/* line 90, ../scss/modules/nav/_themes.scss */
-nav.right > ul > li.active, .right.nav > ul > li.active, nav.right > ul > li:hover, .right.nav > ul > li:hover, nav.vertical.right > ul > li.active, .vertical.right.nav > ul > li.active, nav.vertical.right > ul > li:hover, .vertical.right.nav > ul > li:hover {
-  border-right-color: #024959;
+/* line 21, ../scss/modules/nav/_themes.scss */
+nav.secondary li.hr, .secondary.nav li.hr, nav.secondary li.separator, .secondary.nav li.separator {
+  border-color: #efefef;
 }
-/* line 97, ../scss/modules/nav/_themes.scss */
-nav.horizontal > ul > li, .horizontal.nav > ul > li {
-  border-left: none;
-  border-right: none;
-  border-bottom-width: 3px;
-  border-bottom-color: #efefef;
-  border-bottom-style: solid;
+/* line 26, ../scss/modules/nav/_themes.scss */
+nav.secondary li > a:hover, .secondary.nav li > a:hover {
+  background-color: #e74c30;
 }
-/* line 104, ../scss/modules/nav/_themes.scss */
-nav.horizontal > ul > li.active, .horizontal.nav > ul > li.active, nav.horizontal > ul > li:hover, .horizontal.nav > ul > li:hover {
-  border-bottom-color: #024959;
+/* line 21, ../scss/modules/nav/_themes.scss */
+nav.light li.hr, .light.nav li.hr, nav.light li.separator, .light.nav li.separator {
+  border-color: #efefef;
 }
-/* line 67, ../scss/modules/nav/_themes.scss */
-nav.primary > ul > li, .primary.nav > ul > li, nav.primary.vertical > ul > li, .primary.vertical.nav > ul > li {
-  border-left-width: 3px;
-  border-left-color: #efefef;
-  border-left-style: solid;
+/* line 26, ../scss/modules/nav/_themes.scss */
+nav.light li > a:hover, .light.nav li > a:hover {
+  background-color: #efefef;
 }
-/* line 73, ../scss/modules/nav/_themes.scss */
-nav.primary > ul > li.hr, .primary.nav > ul > li.hr, nav.primary > ul > li.separator, .primary.nav > ul > li.separator, nav.primary.vertical > ul > li.hr, .primary.vertical.nav > ul > li.hr, nav.primary.vertical > ul > li.separator, .primary.vertical.nav > ul > li.separator {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #efefef;
+/* line 21, ../scss/modules/nav/_themes.scss */
+nav.dark li.hr, .dark.nav li.hr, nav.dark li.separator, .dark.nav li.separator {
+  border-color: #efefef;
 }
-/* line 79, ../scss/modules/nav/_themes.scss */
-nav.primary > ul > li.active, .primary.nav > ul > li.active, nav.primary > ul > li:hover, .primary.nav > ul > li:hover, nav.primary.vertical > ul > li.active, .primary.vertical.nav > ul > li.active, nav.primary.vertical > ul > li:hover, .primary.vertical.nav > ul > li:hover {
-  border-left-color: #024959;
-}
-/* line 84, ../scss/modules/nav/_themes.scss */
-nav.primary.right > ul > li, .primary.right.nav > ul > li, nav.primary.vertical.right > ul > li, .primary.vertical.right.nav > ul > li {
-  border-left: none;
-  border-right-width: 3px;
-  border-right-color: #efefef;
-  border-right-style: solid;
-}
-/* line 90, ../scss/modules/nav/_themes.scss */
-nav.primary.right > ul > li.active, .primary.right.nav > ul > li.active, nav.primary.right > ul > li:hover, .primary.right.nav > ul > li:hover, nav.primary.vertical.right > ul > li.active, .primary.vertical.right.nav > ul > li.active, nav.primary.vertical.right > ul > li:hover, .primary.vertical.right.nav > ul > li:hover {
-  border-right-color: #024959;
-}
-/* line 97, ../scss/modules/nav/_themes.scss */
-nav.primary.horizontal > ul > li, .primary.horizontal.nav > ul > li {
-  border-left: none;
-  border-right: none;
-  border-bottom-width: 3px;
-  border-bottom-color: #efefef;
-  border-bottom-style: solid;
-}
-/* line 104, ../scss/modules/nav/_themes.scss */
-nav.primary.horizontal > ul > li.active, .primary.horizontal.nav > ul > li.active, nav.primary.horizontal > ul > li:hover, .primary.horizontal.nav > ul > li:hover {
-  border-bottom-color: #024959;
-}
-/* line 67, ../scss/modules/nav/_themes.scss */
-nav.secondary > ul > li, .secondary.nav > ul > li, nav.secondary.vertical > ul > li, .secondary.vertical.nav > ul > li {
-  border-left-width: 3px;
-  border-left-color: #efefef;
-  border-left-style: solid;
-}
-/* line 73, ../scss/modules/nav/_themes.scss */
-nav.secondary > ul > li.hr, .secondary.nav > ul > li.hr, nav.secondary > ul > li.separator, .secondary.nav > ul > li.separator, nav.secondary.vertical > ul > li.hr, .secondary.vertical.nav > ul > li.hr, nav.secondary.vertical > ul > li.separator, .secondary.vertical.nav > ul > li.separator {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #efefef;
-}
-/* line 79, ../scss/modules/nav/_themes.scss */
-nav.secondary > ul > li.active, .secondary.nav > ul > li.active, nav.secondary > ul > li:hover, .secondary.nav > ul > li:hover, nav.secondary.vertical > ul > li.active, .secondary.vertical.nav > ul > li.active, nav.secondary.vertical > ul > li:hover, .secondary.vertical.nav > ul > li:hover {
-  border-left-color: #e74c30;
-}
-/* line 84, ../scss/modules/nav/_themes.scss */
-nav.secondary.right > ul > li, .secondary.right.nav > ul > li, nav.secondary.vertical.right > ul > li, .secondary.vertical.right.nav > ul > li {
-  border-left: none;
-  border-right-width: 3px;
-  border-right-color: #efefef;
-  border-right-style: solid;
-}
-/* line 90, ../scss/modules/nav/_themes.scss */
-nav.secondary.right > ul > li.active, .secondary.right.nav > ul > li.active, nav.secondary.right > ul > li:hover, .secondary.right.nav > ul > li:hover, nav.secondary.vertical.right > ul > li.active, .secondary.vertical.right.nav > ul > li.active, nav.secondary.vertical.right > ul > li:hover, .secondary.vertical.right.nav > ul > li:hover {
-  border-right-color: #e74c30;
-}
-/* line 97, ../scss/modules/nav/_themes.scss */
-nav.secondary.horizontal > ul > li, .secondary.horizontal.nav > ul > li {
-  border-left: none;
-  border-right: none;
-  border-bottom-width: 3px;
-  border-bottom-color: #efefef;
-  border-bottom-style: solid;
-}
-/* line 104, ../scss/modules/nav/_themes.scss */
-nav.secondary.horizontal > ul > li.active, .secondary.horizontal.nav > ul > li.active, nav.secondary.horizontal > ul > li:hover, .secondary.horizontal.nav > ul > li:hover {
-  border-bottom-color: #e74c30;
-}
-/* line 67, ../scss/modules/nav/_themes.scss */
-nav.light > ul > li, .light.nav > ul > li, nav.light.vertical > ul > li, .light.vertical.nav > ul > li {
-  border-left-width: 3px;
-  border-left-color: #efefef;
-  border-left-style: solid;
-}
-/* line 73, ../scss/modules/nav/_themes.scss */
-nav.light > ul > li.hr, .light.nav > ul > li.hr, nav.light > ul > li.separator, .light.nav > ul > li.separator, nav.light.vertical > ul > li.hr, .light.vertical.nav > ul > li.hr, nav.light.vertical > ul > li.separator, .light.vertical.nav > ul > li.separator {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #efefef;
-}
-/* line 79, ../scss/modules/nav/_themes.scss */
-nav.light > ul > li.active, .light.nav > ul > li.active, nav.light > ul > li:hover, .light.nav > ul > li:hover, nav.light.vertical > ul > li.active, .light.vertical.nav > ul > li.active, nav.light.vertical > ul > li:hover, .light.vertical.nav > ul > li:hover {
-  border-left-color: #efefef;
-}
-/* line 84, ../scss/modules/nav/_themes.scss */
-nav.light.right > ul > li, .light.right.nav > ul > li, nav.light.vertical.right > ul > li, .light.vertical.right.nav > ul > li {
-  border-left: none;
-  border-right-width: 3px;
-  border-right-color: #efefef;
-  border-right-style: solid;
-}
-/* line 90, ../scss/modules/nav/_themes.scss */
-nav.light.right > ul > li.active, .light.right.nav > ul > li.active, nav.light.right > ul > li:hover, .light.right.nav > ul > li:hover, nav.light.vertical.right > ul > li.active, .light.vertical.right.nav > ul > li.active, nav.light.vertical.right > ul > li:hover, .light.vertical.right.nav > ul > li:hover {
-  border-right-color: #efefef;
-}
-/* line 97, ../scss/modules/nav/_themes.scss */
-nav.light.horizontal > ul > li, .light.horizontal.nav > ul > li {
-  border-left: none;
-  border-right: none;
-  border-bottom-width: 3px;
-  border-bottom-color: #efefef;
-  border-bottom-style: solid;
-}
-/* line 104, ../scss/modules/nav/_themes.scss */
-nav.light.horizontal > ul > li.active, .light.horizontal.nav > ul > li.active, nav.light.horizontal > ul > li:hover, .light.horizontal.nav > ul > li:hover {
-  border-bottom-color: #efefef;
-}
-/* line 67, ../scss/modules/nav/_themes.scss */
-nav.dark > ul > li, .dark.nav > ul > li, nav.dark.vertical > ul > li, .dark.vertical.nav > ul > li {
-  border-left-width: 3px;
-  border-left-color: #efefef;
-  border-left-style: solid;
-}
-/* line 73, ../scss/modules/nav/_themes.scss */
-nav.dark > ul > li.hr, .dark.nav > ul > li.hr, nav.dark > ul > li.separator, .dark.nav > ul > li.separator, nav.dark.vertical > ul > li.hr, .dark.vertical.nav > ul > li.hr, nav.dark.vertical > ul > li.separator, .dark.vertical.nav > ul > li.separator {
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  border-bottom-color: #efefef;
-}
-/* line 79, ../scss/modules/nav/_themes.scss */
-nav.dark > ul > li.active, .dark.nav > ul > li.active, nav.dark > ul > li:hover, .dark.nav > ul > li:hover, nav.dark.vertical > ul > li.active, .dark.vertical.nav > ul > li.active, nav.dark.vertical > ul > li:hover, .dark.vertical.nav > ul > li:hover {
-  border-left-color: #363636;
-}
-/* line 84, ../scss/modules/nav/_themes.scss */
-nav.dark.right > ul > li, .dark.right.nav > ul > li, nav.dark.vertical.right > ul > li, .dark.vertical.right.nav > ul > li {
-  border-left: none;
-  border-right-width: 3px;
-  border-right-color: #efefef;
-  border-right-style: solid;
-}
-/* line 90, ../scss/modules/nav/_themes.scss */
-nav.dark.right > ul > li.active, .dark.right.nav > ul > li.active, nav.dark.right > ul > li:hover, .dark.right.nav > ul > li:hover, nav.dark.vertical.right > ul > li.active, .dark.vertical.right.nav > ul > li.active, nav.dark.vertical.right > ul > li:hover, .dark.vertical.right.nav > ul > li:hover {
-  border-right-color: #363636;
-}
-/* line 97, ../scss/modules/nav/_themes.scss */
-nav.dark.horizontal > ul > li, .dark.horizontal.nav > ul > li {
-  border-left: none;
-  border-right: none;
-  border-bottom-width: 3px;
-  border-bottom-color: #efefef;
-  border-bottom-style: solid;
-}
-/* line 104, ../scss/modules/nav/_themes.scss */
-nav.dark.horizontal > ul > li.active, .dark.horizontal.nav > ul > li.active, nav.dark.horizontal > ul > li:hover, .dark.horizontal.nav > ul > li:hover {
-  border-bottom-color: #363636;
+/* line 26, ../scss/modules/nav/_themes.scss */
+nav.dark li > a:hover, .dark.nav li > a:hover {
+  background-color: #363636;
 }
 
 /* line 136, ../scss/modules/nav/_themes.scss */
@@ -4766,7 +4610,7 @@ nav.dark.horizontal > ul > li.active, .dark.horizontal.nav > ul > li.active, nav
 }
 
 /* line 5, ../scss/modules/forms/_components.scss */
-a, .light.dropdown-container > .dropdown li > a:hover, .light.alert a, .warning.alert a, nav > ul > li, .nav > ul > li, nav.vertical > ul > li, .vertical.nav > ul > li, nav.primary > ul > li, .primary.nav > ul > li, nav.primary.vertical > ul > li, .primary.vertical.nav > ul > li, nav.secondary > ul > li, .secondary.nav > ul > li, nav.secondary.vertical > ul > li, .secondary.vertical.nav > ul > li, nav.light > ul > li, .light.nav > ul > li, nav.light.vertical > ul > li, .light.vertical.nav > ul > li, nav.dark > ul > li, .dark.nav > ul > li, nav.dark.vertical > ul > li, .dark.vertical.nav > ul > li, textarea,
+a, nav li > a:hover, .nav li > a:hover, nav.light li > a:hover, .light.nav li > a:hover, .light.dropdown-container > .dropdown li > a:hover, .light.alert a, .warning.alert a, textarea,
 input {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -4825,6 +4669,14 @@ input.inline {
 /* line 43, ../scss/modules/forms/_components.scss */
 textarea {
   height: auto;
+}
+
+/* line 53, ../scss/modules/forms/_components.scss */
+.badge, .label {
+  display: block;
+  margin-bottom: 0.25em;
+  font-size: 13.77648px ;
+  font-size: 0.86103rem ;
 }
 
 /* line 16, ../scss/modules/forms/_themes.scss */
@@ -5082,30 +4934,59 @@ button.quiet, .quiet.button, input.quiet[type=button], input.quiet[type=submit],
   border-color: transparent;
   color: #363636;
 }
-/* line 3, ../scss/modules/_labels.scss */
-.label {
+/* line 5, ../scss/modules/labels/_components.scss */
+.badge, .label {
   font-size: 11.86196px ;
   font-size: 0.74137rem ;
-  font-weight: bold;
-  padding: 0.25rem 0.5rem;
+  text-decoration: none;
   text-transform: none;
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+  margin: 0 8px;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+}
+/* line 25, ../scss/modules/labels/_components.scss */
+.badge:first-child, .label:first-child {
+  margin-left: 0;
+}
+/* line 26, ../scss/modules/labels/_components.scss */
+.badge:last-child, .label:last-child {
+  margin-right: 0;
 }
 
-/* line 16, ../scss/modules/_labels.scss */
+/* line 29, ../scss/modules/labels/_components.scss */
 .badge {
   font-size: 11.86196px ;
   font-size: 0.74137rem ;
-  font-weight: bold;
-  padding: 0.25rem 0.5rem;
   text-transform: none;
-  vertical-align: middle;
+  text-decoration: none;
+  z-index: 2;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  border-radius: 1rem;
 }
-/* line 30, ../scss/modules/_labels.scss */
+/* line 47, ../scss/modules/labels/_components.scss */
 .badge:empty {
   display: none;
 }
-/* line 35, ../scss/modules/_labels.scss */
-.top-left.badge {
+/* line 50, ../scss/modules/labels/_components.scss */
+.badge.top-left {
+  margin: 0;
   position: absolute;
   top: 0;
   bottom: inherit;
@@ -5117,21 +4998,9 @@ button.quiet, .quiet.button, input.quiet[type=button], input.quiet[type=submit],
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-/* line 39, ../scss/modules/_labels.scss */
-.bottom-left.badge {
-  position: absolute;
-  bottom: 0;
-  top: inherit;
-  left: 0;
-  right: inherit;
-  -webkit-transform: translateX(-50%) translateY(50%);
-  -moz-transform: translateX(-50%) translateY(50%);
-  -ms-transform: translateX(-50%) translateY(50%);
-  -o-transform: translateX(-50%) translateY(50%);
-  transform: translateX(-50%) translateY(50%);
-}
-/* line 43, ../scss/modules/_labels.scss */
-.top-right.badge {
+/* line 56, ../scss/modules/labels/_components.scss */
+.badge.top-right {
+  margin: 0;
   position: absolute;
   top: 0;
   bottom: inherit;
@@ -5143,8 +5012,23 @@ button.quiet, .quiet.button, input.quiet[type=button], input.quiet[type=submit],
   -o-transform: translateX(50%) translateY(-50%);
   transform: translateX(50%) translateY(-50%);
 }
-/* line 47, ../scss/modules/_labels.scss */
-.bottom-right.badge {
+/* line 62, ../scss/modules/labels/_components.scss */
+.badge.bottom-left {
+  margin: 0;
+  position: absolute;
+  bottom: 0;
+  top: inherit;
+  left: 0;
+  right: inherit;
+  -webkit-transform: translateX(-50%) translateY(50%);
+  -moz-transform: translateX(-50%) translateY(50%);
+  -ms-transform: translateX(-50%) translateY(50%);
+  -o-transform: translateX(-50%) translateY(50%);
+  transform: translateX(-50%) translateY(50%);
+}
+/* line 68, ../scss/modules/labels/_components.scss */
+.badge.bottom-right {
+  margin: 0;
   position: absolute;
   bottom: 0;
   top: inherit;
@@ -5157,128 +5041,98 @@ button.quiet, .quiet.button, input.quiet[type=button], input.quiet[type=submit],
   transform: translateX(50%) translateY(50%);
 }
 
-/* line 72, ../scss/modules/_labels.scss */
-.label, .badge {
+/* line 27, ../scss/modules/labels/_themes.scss */
+.label {
   background-color: #024959;
   color: #efefef;
-  border-color: #e74c30;
 }
-/* line 65, ../scss/modules/_labels.scss */
-[href].label:hover, [href].badge:hover {
-  background-color: #03728b;
-  color: #efefef;
-}
-/* line 75, ../scss/modules/_labels.scss */
-.primary.label, .primary.badge {
+/* line 30, ../scss/modules/labels/_themes.scss */
+.primary.label {
   background-color: #024959;
   color: #efefef;
-  border-color: #e74c30;
 }
-/* line 65, ../scss/modules/_labels.scss */
-.primary[href].label:hover, .primary[href].badge:hover {
-  background-color: #03728b;
-  color: #efefef;
-}
-/* line 76, ../scss/modules/_labels.scss */
-.secondary.label, .secondary.badge {
+/* line 31, ../scss/modules/labels/_themes.scss */
+.secondary.label {
   background-color: #e74c30;
   color: #efefef;
-  border-color: #e74c30;
 }
-/* line 65, ../scss/modules/_labels.scss */
-.secondary[href].label:hover, .secondary[href].badge:hover {
-  background-color: #03728b;
-  color: #efefef;
-}
-/* line 77, ../scss/modules/_labels.scss */
-.light.label, .light.badge {
+/* line 32, ../scss/modules/labels/_themes.scss */
+.light.label {
   background-color: #efefef;
   color: #363636;
-  border-color: #e74c30;
 }
-/* line 65, ../scss/modules/_labels.scss */
-.light[href].label:hover, .light[href].badge:hover {
-  background-color: #03728b;
-  color: #efefef;
-}
-/* line 78, ../scss/modules/_labels.scss */
-.dark.label, .dark.badge {
+/* line 33, ../scss/modules/labels/_themes.scss */
+.dark.label {
   background-color: #363636;
   color: #efefef;
-  border-color: #e74c30;
 }
-/* line 65, ../scss/modules/_labels.scss */
-.dark[href].label:hover, .dark[href].badge:hover {
-  background-color: #03728b;
-  color: #efefef;
-}
-/* line 80, ../scss/modules/_labels.scss */
-.success.label, .success.badge {
+/* line 35, ../scss/modules/labels/_themes.scss */
+.success.label {
   background-color: #96cc69;
   color: #efefef;
-  border-color: #e74c30;
 }
-/* line 65, ../scss/modules/_labels.scss */
-.success[href].label:hover, .success[href].badge:hover {
-  background-color: #03728b;
-  color: #efefef;
-}
-/* line 81, ../scss/modules/_labels.scss */
-.warning.label, .warning.badge {
+/* line 36, ../scss/modules/labels/_themes.scss */
+.warning.label {
   background-color: #ffcc5c;
   color: #363636;
-  border-color: #e74c30;
 }
-/* line 65, ../scss/modules/_labels.scss */
-.warning[href].label:hover, .warning[href].badge:hover {
-  background-color: #03728b;
-  color: #efefef;
-}
-/* line 82, ../scss/modules/_labels.scss */
-.failure.label, .failure.badge {
+/* line 37, ../scss/modules/labels/_themes.scss */
+.failure.label {
   background-color: #c44741;
   color: #efefef;
-  border-color: #e74c30;
 }
-/* line 65, ../scss/modules/_labels.scss */
-.failure[href].label:hover, .failure[href].badge:hover {
-  background-color: #03728b;
+/* line 39, ../scss/modules/labels/_themes.scss */
+.transparent.label {
+  background-color: transparent;
+  color: false;
+}
+
+/* line 69, ../scss/modules/labels/_themes.scss */
+.badge {
+  background-color: #024959;
   color: #efefef;
 }
-
-/* line 85, ../scss/modules/_labels.scss */
-.label, .badge {
-  display: inline-block;
-  line-height: 1;
-  text-decoration: none;
-  vertical-align: middle;
-  margin: 0 8px;
+/* line 72, ../scss/modules/labels/_themes.scss */
+.primary.badge {
+  background-color: #024959;
+  color: #efefef;
 }
-/* line 93, ../scss/modules/_labels.scss */
-.label:first-child, .badge:first-child {
-  margin-left: 0;
+/* line 73, ../scss/modules/labels/_themes.scss */
+.secondary.badge {
+  background-color: #e74c30;
+  color: #efefef;
 }
-/* line 94, ../scss/modules/_labels.scss */
-.label:last-child, .badge:last-child {
-  margin-right: 0;
+/* line 74, ../scss/modules/labels/_themes.scss */
+.light.badge {
+  background-color: #efefef;
+  color: #363636;
 }
-/* line 96, ../scss/modules/_labels.scss */
-[class*=infix-].label, [class*=infix-].badge {
-  position: absolute;
+/* line 75, ../scss/modules/labels/_themes.scss */
+.dark.badge {
+  background-color: #363636;
+  color: #efefef;
 }
-/* line 100, ../scss/modules/_labels.scss */
-[class*=infix-].infix-left.label, [class*=infix-].infix-left.badge, [class*=infix-].infix-right.label, [class*=infix-].infix-right.badge {
-  z-index: 2;
+/* line 77, ../scss/modules/labels/_themes.scss */
+.success.badge {
+  background-color: #96cc69;
+  color: #efefef;
 }
-/* line 105, ../scss/modules/_labels.scss */
-[class*=infix-].infix-left.label, [class*=infix-].infix-left.badge {
-  left: 0;
+/* line 78, ../scss/modules/labels/_themes.scss */
+.warning.badge {
+  background-color: #ffcc5c;
+  color: #363636;
 }
-/* line 106, ../scss/modules/_labels.scss */
-[class*=infix-].infix-right.label, [class*=infix-].infix-right.badge {
-  right: 0;
+/* line 79, ../scss/modules/labels/_themes.scss */
+.failure.badge {
+  background-color: #c44741;
+  color: #efefef;
 }
-
+/* line 81, ../scss/modules/labels/_themes.scss */
+.transparent.badge {
+  background-color: transparent;
+  color: false;
+  color: #363636;
+}
 /* line 3, ../scss/modules/_fieldsets.scss */
 fieldset {
   padding: 0.5rem 0.5rem;

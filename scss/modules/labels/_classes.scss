@@ -1,0 +1,20 @@
+//
+// Labels Classes
+// ==============
+
+// Label Classes
+.label {
+    @extend %label;
+    @include label-style;
+}
+
+// Badge Classes
+.badge {
+    @extend %badge;
+    @include badge-style;
+
+    &.top-left { @extend %badge-top-left; }
+    &.top-right { @extend %badge-top-right; }
+    &.bottom-left { @extend %badge-bottom-left; }
+    &.bottom-right { @extend %badge-bottom-right; }
+}

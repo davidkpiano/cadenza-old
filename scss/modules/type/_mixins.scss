@@ -2,6 +2,15 @@
 // Type Mixins and Functions
 // =========================
 
+@function type-scale-size(
+	$exponent: 1,
+	$base: $type-base-font-size,
+	$unit: $type-unit,
+	$ratio: $type-ratio
+) {
+	@return $base * pow($ratio, -$exponent);
+}
+
 @mixin type-scale(
 	$exponent: 1,
 	$important: false,
@@ -9,7 +18,7 @@
 	$unit: $type-unit,
 	$ratio: $type-ratio
 ) {
-	$font-size: $base * pow($ratio, -$exponent);
+	$font-size: type-scale-size($exponent, $base, $unit, $ratio);
 
 	@if $important {
 		$important: !important;
@@ -26,4 +35,21 @@
 	$ratio: $type-ratio
 ) {
 	font-size: percentage(pow($ratio, -$exponent));
+}
+
+// Function for determining the height of standard inline elements
+// that don't have a defined height.
+// 
+// Calculated using border, padding, and type-scale (or optionally font-size)
+@function inline-height(
+    $type-scale: 0,
+    $padding: 0,
+    $border: 0,
+    $font-size: false
+) {
+    @if $font-size == false {
+        $font-size: type-scale-size($type-scale);
+    }
+
+    @return $font-size + $padding + $border;
 }

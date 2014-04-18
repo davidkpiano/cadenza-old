@@ -1,0 +1,34 @@
+// 
+// Labels Module
+// =============
+
+// Label Settings
+$label-style: default !default;
+$label-theme: default !default;
+$label-scale: -2 !default;
+$label-text-transform: none !default;
+$label-text-decoration: none !default;
+$label-padding-vertical: 0.25rem !default;
+$label-padding-horizontal: 0.5rem !default;
+$label-radius: $form-radius !default;
+$label-margin: 0 0.5rem !default;
+
+// Badge Settings
+$badge-style: default !default;
+$badge-theme: default !default;
+$badge-scale: -2 !default;
+$badge-text-transform: none !default;
+$badge-text-decoration: none !default;
+$badge-padding-vertical: 0.25rem !default;
+$badge-padding-horizontal: 0.5rem !default;
+$badge-radius: 1rem !default;
+$badge-margin: 0 0.5rem !default;
+$badge-collapse: true !default;
+$badge-z-index: 2 !default;
+
+// Imports
+@import
+	'_mixins',
+	'_components',
+	'_themes',
+	'_classes';

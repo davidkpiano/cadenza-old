@@ -1,3 +1,21 @@
+
+@mixin translate(
+    $horizontal: false,
+    $vertical: false
+) {
+    @if $vertical and $horizontal {
+        @include experimental(transform, translateX($horizontal) translateY($vertical));
+    } @else {    
+        @if $vertical {
+            @include experimental(transform, translateY($vertical));
+        }
+
+        @if $horizontal {
+            @include experimental(transform, translateX($horizontal));
+        }
+    }
+}
+
 @mixin position-absolute(
     $vertical: false,
     $horizontal: false,

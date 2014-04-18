@@ -1,0 +1,75 @@
+// 
+// Labels Components
+// =================
+
+%label {
+    @extend %nowrap;
+    @include type-scale($label-scale);
+    text-decoration: $label-text-decoration;
+    text-transform: $label-text-transform;
+
+    display: inline-block;
+    line-height: 1;
+    vertical-align: middle;
+    margin: $label-margin;
+
+    padding-top: $label-padding-vertical;
+    padding-bottom: $label-padding-vertical;
+    padding-left: $label-padding-horizontal;
+    padding-right: $label-padding-horizontal;
+
+    @if $label-radius {
+        @include border-radius($label-radius);
+    }
+
+    &:first-child { margin-left: 0; }
+    &:last-child { margin-right: 0; }
+}
+
+%badge {
+    @extend %label;
+    @include type-scale($badge-scale);
+    text-transform: $badge-text-transform;
+    text-decoration: $badge-text-decoration;
+
+    z-index: $badge-z-index;
+
+    padding-top: $badge-padding-vertical;
+    padding-bottom: $badge-padding-vertical;
+    padding-left: $badge-padding-horizontal;
+    padding-right: $badge-padding-horizontal;
+    
+    @if $badge-radius {
+        @include border-radius($badge-radius);
+    }
+
+    @if $badge-collapse {
+        &:empty { display: none; }
+    }
+
+    &%badge-top-left {
+        margin: 0;
+        @include position-absolute(top, left);
+        @include translate(-50%, -50%);
+    }
+
+    &%badge-top-right {
+        margin: 0;
+        @include position-absolute(top, right);
+        @include translate(50%, -50%);
+    }
+
+    &%badge-bottom-left {
+        margin: 0;
+        @include position-absolute(bottom, left);
+        @include translate(-50%, 50%);
+    }
+
+    &%badge-bottom-right {
+        margin: 0;
+        @include position-absolute(bottom, right);
+        @include translate(50%, 50%);
+    }
+}
+
+
