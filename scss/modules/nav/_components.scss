@@ -2,7 +2,7 @@
 // Nav Components
 // =================
 
-%nav {
+%nav, %nav-vertical {
 	%nav-header {
 		padding: $nav-header-padding;
 		margin: 0;
@@ -36,13 +36,13 @@
 			&:hover {
 				> ul { display: block; }
 			}
-
-			%nav-seperator {
-				border-bottom-width: $nav-separator-width;
-				border-bottom-style: solid;
-				margin: $nav-separator-margin;
-			}
 		}
+	}
+
+	%nav-separator {
+		border-bottom-width: $nav-separator-width;
+		border-bottom-style: solid;
+		margin: $nav-separator-margin;
 	}
 }
 
@@ -68,6 +68,66 @@
 
 	%nav-horizontal-full {
 		height: 100%;
+	}
+}
+
+// Dropdown Components
+%dropdown-container {
+	display: inline-block;
+
+	%dropdown {
+		@extend %nav-vertical;
+		@include type-scale($dropdown-scale);
+		min-width: $dropdown-min-width;
+		position: absolute;
+		z-index: $dropdown-z-index;
+		padding: $dropdown-padding;
+
+		@if $dropdown-radius {
+			@include border-radius($dropdown-radius);
+		}
+
+		ul {
+			margin: 0;
+		}
+
+		&%dropdown-below-left {
+			@include position-absolute(below, left);
+		}
+
+		&%dropdown-below-right {
+			@include position-absolute(below, right);
+		}
+
+		&%dropdown-above-left {
+			@include position-absolute(above, left);
+		}
+
+		&%dropdown-above-right {
+			@include position-absolute(above, right);
+		}
+
+		&%dropdown-top-left {
+			@include position-absolute(top, left);
+		}
+
+		&%dropdown-top-right {
+			@include position-absolute(top, right);
+		}
+
+		&%dropdown-bottom-left {
+			@include position-absolute(bottom, left);
+		}
+
+		&%dropdown-bottom-right {
+			@include position-absolute(bottom, right);
+		}
+	}
+
+	%dropdown-separator {
+		border-bottom-width: $nav-separator-width;
+		border-bottom-style: solid;
+		margin: $nav-separator-margin;
 	}
 }
 

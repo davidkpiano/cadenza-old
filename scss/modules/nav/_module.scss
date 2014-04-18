@@ -4,7 +4,7 @@
 
 // Navigation Settings
 $nav-style: default !default;
-$nav-theme: default !default;
+$nav-theme: underline !default;
 $nav-color: $type-anchor-color !default;
 $nav-list-padding: 0 !default;
 $nav-list-item-padding: 0 !default;
@@ -13,6 +13,25 @@ $nav-header-padding: $nav-anchor-padding !default;
 $nav-separator-color: $color-gray-light !default;
 $nav-separator-width: 1px !default;
 $nav-separator-margin: 0.25rem 0 !default;
+
+// Dropdown Settings
+$dropdown-style: default !default;
+$dropdown-theme: default !default;
+$dropdown-color: $nav-color !default;
+$dropdown-bgcolor: $color-white !default;
+$dropdown-border-color: $color-gray-light !default;
+$dropdown-border-width: $form-border-width !default;
+$dropdown-list-padding: $nav-list-padding !default;
+$dropdown-list-item-padding: $nav-list-item-padding !default;
+$dropdown-anchor-padding: 0.25rem 0.5rem !default;
+$dropdown-header-padding: $dropdown-anchor-padding !default;
+$dropdown-separator-color: $nav-separator-color !default;
+$dropdown-separator-width: $nav-separator-width !default;
+$dropdown-separator-margin: $nav-separator-margin !default;
+$dropdown-scale: -1 !default;
+$dropdown-z-index: 999 !default;
+$dropdown-radius: $form-radius !default;
+$dropdown-min-width: 10rem !default;
 
 // Imports
 @import

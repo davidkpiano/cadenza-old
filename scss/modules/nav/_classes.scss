@@ -22,3 +22,26 @@ nav, .nav {
 		&.full { @extend %nav-horizontal-full; }
 	}
 }
+
+// Dropdown Classes
+.dropdown-container {
+	@include dropdown-style();
+	@extend %dropdown-container;
+
+	> nav, > .dropdown {
+		@extend %dropdown;
+
+		ul li {
+			&.separator, &.hr { @extend %dropdown-separator; }
+		}
+
+		&.below-left { @extend %dropdown-below-left; }
+		&.below-right { @extend %dropdown-below-right; }
+		&.above-left { @extend %dropdown-above-left; }
+		&.above-right { @extend %dropdown-above-right; }
+		&.top-left { @extend %dropdown-top-left; }
+		&.top-right { @extend %dropdown-top-right; }
+		&.bottom-left { @extend %dropdown-bottom-left; }
+		&.bottom-right { @extend %dropdown-bottom-right; }
+	}
+}

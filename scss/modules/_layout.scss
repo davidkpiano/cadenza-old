@@ -1,19 +1,50 @@
-@mixin position-absolute($vertical: false, $horizontal: false) {
+@mixin position-absolute(
+    $vertical: false,
+    $horizontal: false,
+    $top: false,
+    $bottom: false,
+    $left: false,
+    $right: false
+) {
     position: absolute;
 
     @if $vertical {    
-        @if $vertical == top { top: 0; }
-        @else if $vertical == bottom { bottom: 0; }
+        @if $vertical == top {
+            top: 0;
+            bottom: inherit;
+        }
+        @else if $vertical == bottom {
+            bottom: 0;
+            top: inherit;
+        }
+        @else if $vertical == below {
+            top: 100%;
+            bottom: inherit;
+        }
+        @else if $vertical == above {
+            bottom: 100%;
+            top: inherit;
+        }
         @else if $vertical == center {
             top: 50%;
             @include experimental(transform, translateY(-50%));
+            bottom: inherit;
         }
-        @else { top: $vertical; }
+        @else {
+            top: $vertical;
+            bottom: inherit;
+        }
     }
 
     @if $horizontal {
-        @if $horizontal == left { left: 0; }
-        @else if $horizontal == right { right: 0; }
+        @if $horizontal == left { 
+            left: 0;
+            right: inherit;
+        }
+        @else if $horizontal == right {
+            right: 0;
+            left: inherit;
+        }
         @else if $horizontal == center {
             left: 50%;
             @include experimental(transform, translateX(-50%));

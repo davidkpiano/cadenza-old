@@ -11,10 +11,16 @@
 	@extend %theme-nav-#{$theme} !optional;
 }
 
+
+// Default Nav Theme
 @mixin theme-nav-default(
     $color: transparent
 ) {
     li {
+        &.hr, &.separator {
+            border-color: $nav-separator-color;
+        }
+
         > a {
             &:hover {
                 @if is-dark($color) {
@@ -35,15 +41,145 @@
 
 %theme-nav-default {
 	&, &%light {
-         @include theme-nav-default();
+        @include theme-nav-default();
 
-         &.primary { @include theme-nav-default($color-primary); }
-         &.secondary { @include theme-nav-default($color-secondary); }
-         &.light { @include theme-nav-default($color-light); }
-         &.dark { @include theme-nav-default($color-dark); }
+        &.primary { @include theme-nav-default($color-primary); }
+        &.secondary { @include theme-nav-default($color-secondary); }
+        &.light { @include theme-nav-default($color-light); }
+        &.dark { @include theme-nav-default($color-dark); }
 	}
 
 	&%dark {
 		// No styles changed
 	}
+}
+
+// Underline Nav Theme
+$x-nav-underline-border-width: 3px !default;
+$x-nav-underline-color-inactive: $color-gray-light;
+
+@mixin theme-nav-underline(
+    $color: $color-primary,
+    $color-inactive: $x-nav-underline-color-inactive
+) {
+    &, &.vertical {
+        > ul > li {
+            @extend %form-transition;
+            border-left-width: $x-nav-underline-border-width;
+            border-left-color: $color-inactive;
+            border-left-style: solid;
+
+            &.hr, &.separator {
+                border-bottom-width: $nav-separator-width;
+                border-bottom-style: solid;
+                border-bottom-color: $nav-separator-color;
+            }
+
+            &.active, &:hover {
+                border-left-color: $color;
+            }
+        }
+
+        &.right > ul > li {
+            border-left: none;
+            border-right-width: $x-nav-underline-border-width;
+            border-right-color: $color-inactive;
+            border-right-style: solid;
+
+            &.active, &:hover {
+                border-right-color: $color;
+            }
+        }
+    }
+
+    &.horizontal {
+        > ul > li {
+            border-left: none;
+            border-right: none;
+            border-bottom-width: $x-nav-underline-border-width;
+            border-bottom-color: $color-inactive;
+            border-bottom-style: solid;
+
+            &.active, &:hover {
+                border-bottom-color: $color;
+            }
+        }
+    }
+}
+
+%theme-nav-underline {
+    &, &%light {
+        @include theme-nav-underline();
+
+        &.primary { @include theme-nav-underline($color-primary); }
+        &.secondary { @include theme-nav-underline($color-secondary); }
+        &.light { @include theme-nav-underline($color-light); }
+        &.dark { @include theme-nav-underline($color-dark); }
+    }
+}
+
+// Dropdown Theme
+@mixin dropdown-style(
+    $style: $dropdown-style,
+    $theme: $dropdown-theme
+) {
+    @extend %ext-dropdown-#{$style} !optional;
+    @extend %theme-dropdown-#{$theme} !optional;
+}
+
+
+// Default Nav Theme
+@mixin theme-dropdown-default(
+    $color: $color-primary
+) {
+    nav {
+        background-color: $dropdown-bgcolor;
+        border-style: solid;
+        border-color: $dropdown-border-color;
+        border-width: $dropdown-border-width;
+
+        ul {
+            li {
+                border: none;
+
+                > a {
+                    &:hover {
+                        @if is-dark($color) {
+                            @extend %theme-anchor-#{$type-anchor-theme}%dark;
+                        } @else {
+                            @extend %theme-anchor-#{$type-anchor-theme};
+                        }
+
+                        background-color: $color;
+                    }
+                }
+
+                &.hr, &.separator {
+                    border-bottom-width: $dropdown-separator-width;
+                    border-bottom-style: solid;
+                    border-bottom-color: $dropdown-separator-color;
+                }
+            }
+        }
+        
+    }
+}
+
+%ext-dropdown-default {
+    @extend %dropdown-container;
+}
+
+%theme-dropdown-default {
+    &, &%light {
+        @include theme-dropdown-default();
+
+        &.primary { @include theme-dropdown-default($color-primary); }
+        &.secondary { @include theme-dropdown-default($color-secondary); }
+        &.light { @include theme-dropdown-default($color-light); }
+        &.dark { @include theme-dropdown-default($color-dark); }
+    }
+
+    &%dark {
+        // No styles changed
+    }
 }
