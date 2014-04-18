@@ -133,36 +133,33 @@ $x-nav-underline-color-inactive: $color-gray-light;
 @mixin theme-dropdown-default(
     $color: $color-primary
 ) {
-    nav {
+    > .dropdown {
         background-color: $dropdown-bgcolor;
         border-style: solid;
         border-color: $dropdown-border-color;
         border-width: $dropdown-border-width;
 
-        ul {
-            li {
-                border: none;
+        li {
+            border: none;
 
-                > a {
-                    &:hover {
-                        @if is-dark($color) {
-                            @extend %theme-anchor-#{$type-anchor-theme}%dark;
-                        } @else {
-                            @extend %theme-anchor-#{$type-anchor-theme};
-                        }
-
-                        background-color: $color;
+            > a {
+                &:hover {
+                    @if is-dark($color) {
+                        @extend %theme-anchor-#{$type-anchor-theme}%dark;
+                    } @else {
+                        @extend %theme-anchor-#{$type-anchor-theme};
                     }
-                }
 
-                &.hr, &.separator {
-                    border-bottom-width: $dropdown-separator-width;
-                    border-bottom-style: solid;
-                    border-bottom-color: $dropdown-separator-color;
+                    background-color: $color;
                 }
             }
+
+            &.hr, &.separator {
+                border-bottom-width: $dropdown-separator-width;
+                border-bottom-style: solid;
+                border-bottom-color: $dropdown-separator-color;
+            }
         }
-        
     }
 }
 

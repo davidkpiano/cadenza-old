@@ -28,10 +28,10 @@ nav, .nav {
 	@include dropdown-style();
 	@extend %dropdown-container;
 
-	> nav, > .dropdown {
+	> .dropdown {
 		@extend %dropdown;
 
-		ul li {
+		li {
 			&.separator, &.hr { @extend %dropdown-separator; }
 		}
 
@@ -43,6 +43,10 @@ nav, .nav {
 		&.top-right { @extend %dropdown-top-right; }
 		&.bottom-left { @extend %dropdown-bottom-left; }
 		&.bottom-right { @extend %dropdown-bottom-right; }
+		&.top-push-left { @extend %dropdown-top-push-left; }
+		&.top-push-right { @extend %dropdown-top-push-right; }
+		&.bottom-push-left { @extend %dropdown-bottom-push-left; }
+		&.bottom-push-right { @extend %dropdown-bottom-push-right; }
 	}
 }
 

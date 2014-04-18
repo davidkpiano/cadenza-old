@@ -78,22 +78,22 @@
 
 // Dropdown Components
 %dropdown-container {
+	@extend %nav-vertical;
 	display: inline-block;
+	overflow: visible;
 
 	%dropdown {
-		@extend %nav-vertical;
 		@include type-scale($dropdown-scale);
 		min-width: $dropdown-min-width;
 		position: absolute;
 		z-index: $dropdown-z-index;
 		padding: $dropdown-padding;
+		text-align: $dropdown-text-align;
+
+		&, & > ul { margin: 0;}
 
 		@if $dropdown-radius {
 			@include border-radius($dropdown-radius);
-		}
-
-		ul {
-			margin: 0;
 		}
 
 		&%dropdown-below-left {
@@ -126,6 +126,22 @@
 
 		&%dropdown-bottom-right {
 			@include position-absolute(bottom, right);
+		}
+
+		&%dropdown-bottom-push-left {
+			@include position-absolute(bottom, $left: 100%);
+		}
+
+		&%dropdown-bottom-push-right {
+			@include position-absolute(bottom, $right: 100%);
+		}
+
+		&%dropdown-top-push-left {
+			@include position-absolute(top, $left: 100%);
+		}
+
+		&%dropdown-top-push-right {
+			@include position-absolute(top, $right: 100%);
 		}
 	}
 

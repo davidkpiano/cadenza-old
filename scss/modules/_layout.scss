@@ -51,6 +51,26 @@
         }
         @else { left: $horizontal; }
     }
+
+    @if $top {
+        top: $top;
+        bottom: inherit;
+    }
+
+    @if $bottom {
+        bottom: $bottom;
+        top: inherit;
+    }
+
+    @if $left {
+        left: $left;
+        right: inherit;
+    }
+
+    @if $right {
+        right: $right;
+        left: inherit;
+    }
 }
 
 @mixin position(
