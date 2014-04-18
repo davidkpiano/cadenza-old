@@ -12,8 +12,10 @@
 }
 
 // Default Button Style and Theme
+
 %ext-button-default {
 	@extend %button;
+	@include form-transition((border-color, background-color, color));
 }
 
 @mixin theme-button-default($color: $color-primary) {
@@ -30,7 +32,6 @@
 
 %theme-button-default {
 	&, &%light {
-		@extend %form-transition;
 		@include theme-button-default;
 
 		&.primary { @include theme-button-default($color-primary); }
@@ -57,6 +58,7 @@
 // Transparent Button Style and Theme
 %ext-button-transparent {
 	@extend %button;
+	@include form-transition((border-color, background-color, color));
 }
 
 @mixin theme-button-transparent($color: $color-primary, $color-text: $color) {
@@ -79,7 +81,6 @@
 
 %theme-button-transparent {
 	&, &%light {
-		@extend %form-transition;
 		@include theme-button-transparent;
 
 		&.primary { @include theme-button-transparent($color-primary); }
