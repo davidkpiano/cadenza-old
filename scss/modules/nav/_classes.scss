@@ -45,3 +45,8 @@ nav, .nav {
 		&.bottom-right { @extend %dropdown-bottom-right; }
 	}
 }
+
+// Tabs Classes
+.tabs {
+	@extend %tabs;
+}

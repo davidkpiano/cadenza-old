@@ -3,6 +3,7 @@
 // ========================
 
 // Nav Theme
+// ---------
 @mixin nav-style(
 	$style: $nav-style,
 	$theme: $nav-theme
@@ -119,6 +120,7 @@ $x-nav-underline-color-inactive: $color-gray-light;
 }
 
 // Dropdown Theme
+// --------------
 @mixin dropdown-style(
     $style: $dropdown-style,
     $theme: $dropdown-theme
@@ -127,8 +129,7 @@ $x-nav-underline-color-inactive: $color-gray-light;
     @extend %theme-dropdown-#{$theme} !optional;
 }
 
-
-// Default Nav Theme
+// Default Dropdown Theme
 @mixin theme-dropdown-default(
     $color: $color-primary
 ) {
@@ -183,3 +184,37 @@ $x-nav-underline-color-inactive: $color-gray-light;
         // No styles changed
     }
 }
+
+// Tabs Theme
+// ----------
+@mixin tabs-style(
+    $style: $tabs-style,
+    $theme: $tabs-theme
+) {
+    @extend %ext-tabs-#{$style} !optional;
+    @extend %theme-tabs-#{$theme} !optional;
+}
+
+@mixin theme-tabs-default(
+    $color: $color-white,
+    $color-inactive: $color-light
+) {
+    > ul {
+        border-bottom-color: darken($color, 5%);
+
+        > li {
+            background-color: $color-inactive;
+            border-color: darken($color-inactive, 5%);
+        }
+    }
+}
+
+%ext-tabs-default {
+    > ul {
+
+        > li {
+            border-width: $tabs-border-width;
+        }
+    }
+}
+

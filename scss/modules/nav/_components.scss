@@ -63,7 +63,12 @@
 				// TODO: %align-middle; from layouts module
 				@extend %valign-center-all;
 			}
+
 		}
+	}
+
+	%nav-horizontal-separator {
+		// TODO: implement
 	}
 
 	%nav-horizontal-full {
@@ -129,6 +134,11 @@
 		border-bottom-style: solid;
 		margin: $nav-separator-margin;
 	}
+}
+
+// Tab Components
+%tabs, %tabs-horizontal {
+	@extend %nav-horizontal;
 }
 
 
