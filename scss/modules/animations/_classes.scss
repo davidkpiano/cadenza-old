@@ -1,0 +1,16 @@
+//
+// Animations Classes
+// ==================
+
+#{$inert-selector} { @extend %inert; }
+#{$active-selector} { @extend %active; }
+#{$inactive-selector} { @extend %inactive; }
+
+// Animations Classes
+.animation-fade {
+	@include animation(fade);
+}
+
+#foo {
+	@include activate-all(flipLeft, $is-3d: true);
+}

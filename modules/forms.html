@@ -4,111 +4,36 @@
 	<meta charset="UTF-8">
 	<title>Forms Module</title>
 	<link rel="stylesheet" href="../css/cadenza.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 </head>
-<body class="layer scroll">
-	<div class="col-4">
-<!-- 		<h6>Input Element</h6>
-		<a href="sadfj">I'm an anchor!</a>
-		<input type="text" name="" id="" class="inline large"><input type="text" name="" id="" class="inline">
-		<textarea name="" id="" cols="30" rows="10"></textarea>
-        <div class="row" id="foobar">
-            <button>25%</button>
-            <input type="text" name="" id="">
-            <button>30%</button>
-            <label for="">eeeek!</label>
-        </div>
-        <a class="button">hi there</button>
-        <a class="button secondary">secondary</a>
-        <a class="button light">light</a>
-        <a class="button dark">dark</a>
-        <button class="primary">primary</button>
-        <button class="secondary">secondary</button>
-        <button class="light">light</button>
-        <button class="dark quiet">dark</button>
-        <button class="quiet">shhh!</button>
-        <button class="small">I'm small</button>
-        <button class="tiny">i'm tiny</button>
-        <button class="large">I'm large</button>
-        <button class="huge">I'm huge</button>
-        <div class="button-group vertical">
-        	<button class="secondary">button 1</button>
-        	<button class="secondary">button 2 is realllyy fucking long</button>
-        	<button class="secondary">button 3</button>
-        </div> -->
-
-		<div class="row-12">
-	        <nav class="light">
-	        	<ul>
-	        		<li><a href="#"><span>Item 1</span><span class="label">hey</span></a></li>
-	        		<li><a href="#">Item 2</a></li>
-	        		<li><a href="#">Item 3</a></li>
-	        		<li class="separator"></li>
-	        		<li><a href="#">Item 4</a></li>
-	        		<li><a href="#">Item 5</a></li>
-	        	</ul>
-	        </nav>
-
-            <nav class="primary horizontal">
-                <ul>
-                    <li><a href="#"><span>Item 1</span><span class="label">hey</span></a></li>
-                    <li><a href="#">Item 2</a></li>
-                    <li><a href="#">Item 3</a></li>
-                    <li class="separator"></li>
-                    <li><a href="#">Item 4</a></li>
-                    <li><span class="badge top-left">39</span><a href="#">Item 5</a></li>
-                </ul>
-            </nav>
-
-            <nav class="tabs">
-            	<ul>
-            		<li><a href="">Item 1</a></li>
-            		<li><a href="">Item 2</a></li>
-            		<li><a href="">Item 3</a></li>
-            		<li><a href="">Item 4</a></li>
-            		<li><a href="">Item 5</a></li>
-            	</ul>
-            </nav>
+<body class="layer scroll foo inert">
+	<div class="row-2"></div>
+	<div class="row-8">
+		<div class="col-6 col-center">
+			<div class="layer inert" id="foo">
+				<div class="page theme-primary inactive" id="bar1">primary Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, molestias, sapiente, at, dolor qui velit amet tenetur voluptas eum explicabo a cum in reprehenderit beatae fuga! Est saepe veritatis modi!</div>
+				<div class="page theme-secondary active" id="bar2">secondary Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, ducimus ipsam velit magni omnis voluptatibus aperiam error iste nam expedita dolor libero atque quo. Placeat, cupiditate error eaque porro. Alias.</div>
+				<div class="page theme-dark inactive" id="bar3">dark Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, vel ad possimus ea in eaque minima consectetur quam. Quasi, nesciunt odio repudiandae asperiores esse magni expedita quo dolor cupiditate debitis.</div>
+			</div>
 		</div>
-
-        <button><span>Hello World</span><span class="badge top-right secondary">69</span></button>
-
-        <div class="button-group">
-            <button>stuff</button>
-            <button>ather</button>
-            <button class="dropdown-container">
-                <span>dropdown!</span>
-                <ul class="dropdown below-left">
-                    <li><a href="">Item #</a></li>
-                    <li><a href="">Item #</a></li>
-                    <li><a href="">Item #</a></li>
-                    <li><a href="">Item #</a></li>
-                </ul>
-            </button>
-            <button>hey</button>
-        </div>
-
-        <div class="panel">
-        	<header><h1>hey there</h1></header>
-        	<section>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis, nemo, dolor dignissimos tempore similique cumque ad assumenda molestias velit fuga magnam officia ab error ipsum veniam enim minima praesentium quam?</section>
-        	<footer>footer stuff</footer>
-        </div>
-
-        <div class="alert">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, iusto, aut nesciunt unde itaque labore dignissimos consequuntur odit officia pariatur repellendus sunt. Animi, odit id dignissimos libero laboriosam impedit eligendi!</p>
-        </div>
-
-        <div class="alert-group">        
-            <div class="alert light">
-                <h1>help me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, et, blanditiis, quas est quasi possimus temporibus autem dolorem nesciunt odio voluptatum id ut culpa dolore exercitationem esse harum accusantium doloremque.</p>
-                <a href="#">I'm an anchor</a>
-            </div>
-            <div class="alert light">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, officia, magni, in, natus dolores iure cumque consectetur qui odit necessitatibus aut doloremque odio laboriosam esse soluta minus ratione nihil ex!</p>
-            </div>
-        </div>
-
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi, voluptatem, molestiae pariatur vel nihil voluptates delectus nesciunt autem alias quidem quas placeat id tempore odit optio quia eveniet asperiores facere?
 	</div>
 </body>
+
+<script>
+    window.activate = function(id) {
+        var $target_page = $('#'+id),
+            $pages = $target_page.parent().find('.page');
+
+        $pages.not('#'+id).removeClass('active').addClass('inactive');
+        $target_page.removeClass('inactive').addClass('active');
+
+        $target_page.parent().removeClass('inert');
+    }
+
+    window.deactivate = function(id) {
+        $('#'+id).removeClass('active').addClass('inactive');
+    }
+
+</script>
 </html>

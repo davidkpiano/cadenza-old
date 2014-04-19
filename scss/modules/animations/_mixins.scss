@@ -1,0 +1,95 @@
+// 
+// Animations Mixins and Functions
+// ===============================
+
+@mixin keyframes($name) {
+    @-webkit-keyframes #{$name} {
+        @content;
+    }
+    @keyframes #{$name} {
+        @content;
+    }
+}
+
+@mixin animation(
+    $name,
+    $duration: $animation-duration,
+    $direction: normal,
+    $delay: false,
+    $iteration-count: false,
+    $play-state: false,
+    $timing-function: $animation-timing-function,
+    $fill-mode: forwards,
+    $is-3d: false,
+    $duration-3d: $animation-duration-3d
+) {
+    @include experimental(animation-name, $name, $khtml: false, $moz: false, $ms: false, $o: false);
+    @include experimental(animation-direction, $direction, $khtml: false, $moz: false, $ms: false, $o: false);
+    @include experimental(animation-delay, $delay, $khtml: false, $moz: false, $ms: false, $o: false);
+    @include experimental(animation-iteration-count, $iteration-count, $khtml: false, $moz: false, $ms: false, $o: false);
+    @include experimental(animation-play-state, $play-state, $khtml: false, $moz: false, $ms: false, $o: false);
+    @include experimental(animation-timing-function, $timing-function, $khtml: false, $moz: false, $ms: false, $o: false);
+    @include experimental(animation-fill-mode, $fill-mode, $khtml: false, $moz: false, $ms: false, $o: false);
+
+    @if $is-3d {
+    	@include experimental(animation-duration, $duration-3d, $khtml: false, $moz: false, $ms: false, $o: false);
+    } @else {
+    	@include experimental(animation-duration, $duration, $khtml: false, $moz: false, $ms: false, $o: false);
+    }
+}
+
+@mixin activate(
+	$active-name,
+	$inactive-name: $active-name,
+	$active-selector: $active-selector,
+	$inactive-selector: $inactive-selector,
+	$inert-selector: $inert-selector
+) {
+    @extend %animation-#{$active-name}-inert;
+
+    &#{$inert-selector} {
+    	@extend %inert;
+    }
+
+    &#{$active-selector} {
+    	@extend %animation-#{$active-name}-active;
+    	@extend %active;
+    }
+    &#{$inactive-selector} {
+    	@extend %animation-#{$inactive-name}-inactive;
+    	@extend %inactive;
+	}
+}
+
+@mixin activate-all(
+	$active-name,
+	$inactive-name: $active-name,
+	$selector: $activation-item-selector,
+	$active-selector: $active-selector,
+	$inactive-selector: $inactive-selector,
+	$inert-selector: $inert-selector,
+	$is-3d: false
+) {
+	@if $is-3d {
+		@extend %is-3d;
+	}
+
+    &#{$inert-selector} {
+    	@extend %inert;
+    }
+
+    > #{$selector} {
+        @extend %animation-#{$active-name}-inert;
+
+
+        &#{$active-selector} {
+        	@extend %animation-#{$active-name}-active;
+        	@extend %active;
+        }
+
+        &#{$inactive-selector} {
+        	@extend %animation-#{$inactive-name}-inactive;
+        	@extend %inactive;
+        }
+    }
+}
