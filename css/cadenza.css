@@ -5608,7 +5608,7 @@ table.hover tr:hover {
 }
 
 /* line 8, ../scss/modules/animations/_components.scss */
-.inert, #foo.inert, .inert > *, #foo.inert > * {
+.inert, .activate-all-fade.inert, .activate-all-scaleUp.inert, .activate-all-scaleDown.inert, .activate-all-slideUp.inert, .activate-all-slideDown.inert, .activate-all-slideLeft.inert, .activate-all-slideRight.inert, .activate-all-flipLeft.inert, .inert > *, .activate-all-fade.inert > *, .activate-all-scaleUp.inert > *, .activate-all-scaleDown.inert > *, .activate-all-slideUp.inert > *, .activate-all-slideDown.inert > *, .activate-all-slideLeft.inert > *, .activate-all-slideRight.inert > *, .activate-all-flipLeft.inert > * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
@@ -5622,17 +5622,17 @@ table.hover tr:hover {
 }
 
 /* line 14, ../scss/modules/animations/_components.scss */
-.active, #foo > .page.active {
+.active, .activate-all-fade > .page.active, .activate-all-scaleUp > .page.active, .activate-all-scaleDown > .page.active, .activate-all-slideUp > .page.active, .activate-all-slideDown > .page.active, .activate-all-slideLeft > .page.active, .activate-all-slideRight > .page.active, .activate-all-flipLeft > .page.active {
   z-index: 2;
 }
 
 /* line 18, ../scss/modules/animations/_components.scss */
-.inactive, #foo > .page.inactive {
+.inactive, .activate-all-fade > .page.inactive, .activate-all-scaleUp > .page.inactive, .activate-all-scaleDown > .page.inactive, .activate-all-slideUp > .page.inactive, .activate-all-slideDown > .page.inactive, .activate-all-slideLeft > .page.inactive, .activate-all-slideRight > .page.inactive, .activate-all-flipLeft > .page.inactive {
   z-index: 0;
 }
 
 /* line 24, ../scss/modules/animations/_components.scss */
-#foo {
+.activate-all-flipLeft {
   -webkit-perspective: 1000;
   -moz-perspective: 1000;
   perspective: 1000;
@@ -5647,6 +5647,46 @@ table.hover tr:hover {
   -ms-transform: translate(0, 0, 0);
   -o-transform: translate(0, 0, 0);
   transform: translate(0, 0, 0);
+}
+
+/* line 35, ../scss/modules/animations/_components.scss */
+.activate-all-fade > .page.active {
+  -webkit-animation-name: fade-active;
+  animation-name: fade-active;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+/* line 36, ../scss/modules/animations/_components.scss */
+.activate-all-fade > .page.inactive {
+  -webkit-animation-name: fade-inactive;
+  animation-name: fade-inactive;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
 }
 
 @-webkit-keyframes fade-active {
@@ -5695,6 +5735,46 @@ table.hover tr:hover {
   to {
     opacity: 0;
   }
+}
+
+/* line 47, ../scss/modules/animations/_components.scss */
+.activate-all-scaleUp > .page.active {
+  -webkit-animation-name: scaleUp-active;
+  animation-name: scaleUp-active;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+/* line 48, ../scss/modules/animations/_components.scss */
+.activate-all-scaleUp > .page.inactive {
+  -webkit-animation-name: scaleUp-inactive;
+  animation-name: scaleUp-inactive;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
 }
 
 @-webkit-keyframes scaleUp-active {
@@ -5783,6 +5863,46 @@ table.hover tr:hover {
     -o-transform: scale(1.2);
     transform: scale(1.2);
   }
+}
+
+/* line 71, ../scss/modules/animations/_components.scss */
+.activate-all-scaleDown > .page.active {
+  -webkit-animation-name: scaleDown-active;
+  animation-name: scaleDown-active;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+/* line 72, ../scss/modules/animations/_components.scss */
+.activate-all-scaleDown > .page.inactive {
+  -webkit-animation-name: scaleDown-inactive;
+  animation-name: scaleDown-inactive;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
 }
 
 @-webkit-keyframes scaleDown-active {
@@ -6017,6 +6137,46 @@ table.hover tr:hover {
   }
 }
 
+/* line 143, ../scss/modules/animations/_components.scss */
+.activate-all-slideLeft > .page.active {
+  -webkit-animation-name: slideLeft-active;
+  animation-name: slideLeft-active;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+/* line 144, ../scss/modules/animations/_components.scss */
+.activate-all-slideLeft > .page.inactive {
+  -webkit-animation-name: slideLeft-inactive;
+  animation-name: slideLeft-inactive;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
 @-webkit-keyframes slideLeft-active {
   /* line 146, ../scss/modules/animations/_components.scss */
   from {
@@ -6095,6 +6255,46 @@ table.hover tr:hover {
     -o-transform: translateX(-100%);
     transform: translateX(-100%);
   }
+}
+
+/* line 155, ../scss/modules/animations/_components.scss */
+.activate-all-slideRight > .page.active {
+  -webkit-animation-name: slideRight-active;
+  animation-name: slideRight-active;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+/* line 156, ../scss/modules/animations/_components.scss */
+.activate-all-slideRight > .page.inactive {
+  -webkit-animation-name: slideRight-inactive;
+  animation-name: slideRight-inactive;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
 }
 
 @-webkit-keyframes slideRight-active {
@@ -6177,6 +6377,46 @@ table.hover tr:hover {
   }
 }
 
+/* line 167, ../scss/modules/animations/_components.scss */
+.activate-all-slideUp > .page.active {
+  -webkit-animation-name: slideUp-active;
+  animation-name: slideUp-active;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+/* line 168, ../scss/modules/animations/_components.scss */
+.activate-all-slideUp > .page.inactive {
+  -webkit-animation-name: slideUp-inactive;
+  animation-name: slideUp-inactive;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
 @-webkit-keyframes slideUp-active {
   /* line 170, ../scss/modules/animations/_components.scss */
   from {
@@ -6255,6 +6495,46 @@ table.hover tr:hover {
     -o-transform: translateY(-100%);
     transform: translateY(-100%);
   }
+}
+
+/* line 179, ../scss/modules/animations/_components.scss */
+.activate-all-slideDown > .page.active {
+  -webkit-animation-name: slideDown-active;
+  animation-name: slideDown-active;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+/* line 180, ../scss/modules/animations/_components.scss */
+.activate-all-slideDown > .page.inactive {
+  -webkit-animation-name: slideDown-inactive;
+  animation-name: slideDown-inactive;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
 }
 
 @-webkit-keyframes slideDown-active {
@@ -6338,7 +6618,7 @@ table.hover tr:hover {
 }
 
 /* line 191, ../scss/modules/animations/_components.scss */
-#foo > .page.active {
+.activate-all-flipLeft > .page.active {
   -webkit-animation-name: flipLeft-active;
   animation-name: flipLeft-active;
   -webkit-animation-direction: normal;
@@ -6358,7 +6638,7 @@ table.hover tr:hover {
 }
 
 /* line 192, ../scss/modules/animations/_components.scss */
-#foo > .page.inactive {
+.activate-all-flipLeft > .page.inactive {
   -webkit-animation-name: flipLeft-inactive;
   animation-name: flipLeft-inactive;
   -webkit-animation-direction: normal;
@@ -6463,26 +6743,6 @@ table.hover tr:hover {
     -o-transform: translateZ(-1000px) rotateY(-180deg);
     transform: translateZ(-1000px) rotateY(-180deg);
   }
-}
-
-/* line 10, ../scss/modules/animations/_classes.scss */
-.animation-fade {
-  -webkit-animation-name: fade;
-  animation-name: fade;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.3s;
-  animation-duration: 0.3s;
 }
 
 /* 'modules/_tabs'; */

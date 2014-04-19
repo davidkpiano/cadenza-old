@@ -7,10 +7,34 @@
 #{$inactive-selector} { @extend %inactive; }
 
 // Animations Classes
-.animation-fade {
-	@include animation(fade);
+.activate-all-fade {
+	@include activate-all(fade);
 }
 
-#foo {
+.activate-all-scaleUp {
+	@include activate-all(scaleUp);
+}
+
+.activate-all-scaleDown {
+	@include activate-all(scaleDown);
+}
+
+.activate-all-slideUp {
+	@include activate-all(slideUp);
+}
+
+.activate-all-slideDown {
+	@include activate-all(slideDown);
+}
+
+.activate-all-slideLeft {
+	@include activate-all(slideLeft);
+}
+
+.activate-all-slideRight {
+	@include activate-all(slideRight);
+}
+
+.activate-all-flipLeft {
 	@include activate-all(flipLeft, $is-3d: true);
 }
