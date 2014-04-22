@@ -1,0 +1,40 @@
+// 
+// Media Module
+// ============
+
+// Media Query Settings
+$mq-aspect-ratio: 16/9 !default;
+$mq-static-width: 960px !default;
+$mq-static-height: $mq-static-width/$mq-aspect-ratio !default;
+$mq-unit: em !default;
+
+// Horizontal Media Breakpoints
+$mq-breakpoint-small: 767px !default;
+$mq-breakpoint-medium: 768px !default;
+$mq-breakpoint-large: 1280px !default;
+
+// Vertical Media Breakpoints
+$mq-breakpoint-short: 700px !default;
+$mq-breakpoint-tall: 900px !default;
+
+// Horizontal Media Queries
+$mq-small: "only screen and (max-width: #{$mq-breakpoint-small / $mq-type-base-font-size}em)" !default;
+$mq-medium: "only screen and (min-width: #{$mq-breakpoint-medium / $mq-type-base-font-size}em)" !default;
+$mq-large: "only screen and (min-width: #{$mq-breakpoint-large / $mq-type-base-font-size}em)" !default;
+
+// Vertical Media Queries
+$mq-short: "only screen and (max-height: #{$mq-breakpoint-short / $mq-type-base-font-size}em)" !default;
+$mq-tall: "only screen and (min-width: #{$mq-breakpoint-tall / $mq-type-base-font-size}em)" !default;
+
+// Non-dimensional Media Queries
+$mq-print: "print" !default;
+
+// Miscellaneous Media Queries
+$mq-screen: "only screen" !default;
+
+
+// Imports
+@import
+	'_mixins',
+	'_components',
+	'_classes';

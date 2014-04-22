@@ -5273,26 +5273,31 @@ table.zebra tr:only-child, table.striped tr:only-child {
 table.hover tr:hover {
   background-color: #e2e2e2;
 }
-/* line 25, ../scss/modules/_state.scss */
+/* line 5, ../scss/modules/states/_components.scss */
 .hide, .hidden {
   display: none !important;
 }
 
+/* line 9, ../scss/modules/states/_components.scss */
+.show {
+  display: inherit !important;
+}
+
 @media only screen {
-  /* line 31, ../scss/modules/_state.scss */
+  /* line 13, ../scss/modules/states/_components.scss */
   .print-only {
     display: none !important;
   }
 }
 @media print {
-  /* line 31, ../scss/modules/_state.scss */
+  /* line 13, ../scss/modules/states/_components.scss */
   .print-only {
     display: inherit !important;
   }
 }
 
 @media print {
-  /* line 36, ../scss/modules/_state.scss */
+  /* line 18, ../scss/modules/states/_components.scss */
   .print-hide {
     display: none !important;
   }
