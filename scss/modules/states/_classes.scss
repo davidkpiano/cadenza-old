@@ -1,0 +1,12 @@
+//
+// States Classes
+// ==============
+
+// State Classes
+.hide, .hidden { @extend %hide; }
+
+.show { @extend %show; }
+
+.print-only { @extend %print-only; }
+
+.print-hide { @extend %print-hide; }

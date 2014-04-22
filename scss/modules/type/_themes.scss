@@ -70,6 +70,19 @@
 	@extend %theme-anchor-#{$theme} !optional;
 }
 
+@mixin theme-anchor-default(
+	$color: $type-anchor-color,
+	$color-hover: darken($color, 5%),
+	$color-focus: $color-hover,
+	$color-active: $color-hover
+) {
+	color: $color;
+
+	&:hover { color: $color-hover; }
+	&:focus { color: $color-focus; }
+	&:focus { color: $color-focus; }
+}
+
 %ext-anchor-default {
 	text-decoration: $type-anchor-decoration;
 
@@ -85,19 +98,11 @@
 %theme-anchor-default {
 	&, &%light {
 		@extend %form-transition;
-		color: $type-anchor-color;
-
-		&:hover, &:focus, &:active {
-			color: darken($type-anchor-color, 5%);
-		}
+		@include theme-anchor-default();
 	}
 
 	&%dark {
-		color: $type-anchor-color-light;
-
-		&:hover, &:focus, &:active {
-			color: darken($type-anchor-color-light, 5%);
-		}
+		@include theme-anchor-default($type-anchor-color-light);
 	}
 }
 

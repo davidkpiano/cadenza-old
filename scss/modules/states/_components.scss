@@ -1,0 +1,22 @@
+// 
+// States Components
+// =================
+
+%hide {
+    @include state(hide);
+}
+
+%show {
+    @include state(show);
+}
+
+%print-only {
+    @include state(hide, screen);
+    @include state(show, print);
+}
+
+%print-hide {
+    @include state(hide, print);
+}
+
+

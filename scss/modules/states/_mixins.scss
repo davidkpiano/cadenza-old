@@ -1,0 +1,25 @@
+// 
+// States Mixins and Functions
+// ===========================
+
+@mixin state($visibility, $mq-sizes...) {
+    @if length($mq-sizes) == 0 {
+        $mq-sizes: all;
+    }
+
+    @each $size in $mq-sizes {
+        @include mq($size) {        
+            @if $visibility == show {
+                display: inherit !important;
+            } @else if $visibility == hide {
+                display: none !important;
+            } @else if $visibility == visible {
+                visibility: visible !important;
+            } @else if ($visibility == invisible or $visibility == hidden) {
+                visibility: hidden !important;
+            } @else if $visibility == collapse {
+                visibility: collapse !important;
+            }
+        }
+    }
+}
