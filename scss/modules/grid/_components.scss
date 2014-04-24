@@ -21,6 +21,11 @@
 				@include column($i);
 			}
 
+			%column-gutter-#{$i}#{$suffix} {
+				@extend %column-#{$mq};
+				@include column($i, $gutter: $grid-column-gutter);
+			}
+
 			%columns-#{$i}#{$suffix} > * {
 				@extend %column-#{$i}#{$suffix};
 
@@ -36,6 +41,11 @@
 			}
 
 			%column-offset-#{$i}#{$suffix} {
+				@extend %column-#{$mq};
+				margin-left: column-width($i);
+			}
+
+			%column-gutter-offset-#{$i}#{$suffix} {
 				@extend %column-#{$mq};
 				margin-left: column-width($i);
 			}

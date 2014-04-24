@@ -2,16 +2,25 @@
 // Grid Mixins and Functions
 // =========================
 
-@function column-width($columns) {
+@function column-width(
+	$columns,
+	$gutter: false
+) {
 	// if $columns is an int, calculate from $grid-columns
 	@if round($columns) == $columns and unit($columns) == '' {
-		@return percentage($columns / $grid-columns);
+
+		@if $gutter {
+			@return calc(#{$columns} * ((100% - #{$gutter * ($grid-columns - 1)}) / #{$grid-columns}) + (#{($columns - 1) * $gutter}));
+		} @else {
+			@return percentage($columns / $grid-columns);
+		}
 	} @else if index(('%', 'px', 'em', 'rem'), unit($columns)) {
 		@return $columns;
 	} @else {
 		@return percentage($columns);
 	}
 }
+
 
 @function row-height($rows) {
 	// This is (currently) the same result as column-width
@@ -41,6 +50,23 @@
 	height: 100%;
 }
 
+.fourth {
+	@include _column();
+	width: column-width(3, 15px);
+	margin-right: 15px;
+
+	&.last {
+		margin-right: 0;
+	}
+}
+
+.fourth-offset {
+	@include _column();
+	width: column-width(3, 15px);
+	margin-left: column-width(3, 15px);
+	margin-right: 15px;
+}
+
 // Row Component Mixin
 // 
 // Defines a row in the grid system
@@ -59,13 +85,14 @@
 // @param (int) $offset
 // @param (str) $position
 @mixin column(
-	$columns, 
+	$columns,
 	$media: false, 
 	$offset: false, 
-	$position: false
+	$position: false,
+	$gutter: false
 ) {
-	@include mq($media) {	
-		width: column-width($columns);
+	@include mq($media) {
+		width: column-width($columns, $gutter: $gutter);
 	}
 }
 
