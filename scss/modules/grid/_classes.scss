@@ -3,7 +3,7 @@
 // ============
 
 // Horizontal Grid Classes
-.column {
+.column, .col, [class*="column-"], [class*="col-"] {
 	@extend %column;
 }
 
@@ -73,6 +73,14 @@
 
 	.col-center {
 		@extend %column-center;
+	}
+
+	.col-gutter {
+		@extend %column-gutter;
+	}
+
+	.cols-gutter {
+		@extend %columns-gutter;
 	}
 }
 

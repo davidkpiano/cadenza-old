@@ -33,9 +33,9 @@
 // Column Component Mixin
 // 
 // Defines a column in the grid system.
-// @param (bool) $external: whether this mixin is being used outside of Cadenza
 @mixin _column() {
 	@include _grid;
+	padding: 0;
 	float: left;
 	clear: none;
 	height: 100%;
@@ -44,9 +44,9 @@
 // Row Component Mixin
 // 
 // Defines a row in the grid system
-// @param (bool) $external: whether this mixin is being used outside of Cadenza
 @mixin _row() {
 	@include _grid;
+	padding: 0;
 	width: 100%;
 	clear: both;
 }
@@ -97,6 +97,7 @@
 				$total-width: $total-width + ' + ' + column-width($width);
 
 				#{$selector} {
+					@include _column();
 					width: column-width($width);
 				}
 			}
@@ -104,6 +105,7 @@
 
 		@if $fill-selector {
 			#{$fill-selector} {
+				@include _column();
 				width: calc(100% - (#{$total-width}));
 			}
 		}
