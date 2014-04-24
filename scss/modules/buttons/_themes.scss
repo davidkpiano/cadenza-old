@@ -19,14 +19,19 @@
 }
 
 @mixin theme-button-default($color: $color-primary) {
-	background-color: $color;
-	border-color: darken($color, 10%);
-	color: foregroundColor($color, $color-default: $color-light);
+	@if $color == transparent {
+		background-color: transparent;
+		border: none;
+	} @else {
+		background-color: $color;
+		border-color: darken($color, 10%);
+		color: foregroundColor($color, $color-default: $color-light);
 
-	&:hover, &:active {
-		$color-hover: darken($color, 5%);
-		background-color: $color-hover;
-		border-color: darken($color-hover, 10%);
+		&:hover, &:active {
+			$color-hover: darken($color, 5%);
+			background-color: $color-hover;
+			border-color: darken($color-hover, 10%);
+		}
 	}
 }
 
@@ -39,6 +44,11 @@
 		&.light { @include theme-button-default($color-light); }
 		&.dark { @include theme-button-default($color-dark); }
 
+		&.link {
+			@include theme-button-default(transparent);
+			@extend %theme-anchor-#{$type-anchor-theme};
+		}
+
 		&, &.primary, &.secondary, &.light, &.dark {
 			&.quiet {
 				background-color: transparent;
@@ -49,6 +59,10 @@
 	}
 
 	&%dark {
+		&.link {
+			@extend %theme-anchor-#{$type-anchor-theme}%dark;
+		}
+
 		&.quiet {
 			color: $color-light;
 		}
