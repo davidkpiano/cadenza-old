@@ -5380,6 +5380,36 @@ abbr, acronym {
   cursor: help;
 }
 
+/* line 158, ../scss/modules/type/_components.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 162, ../scss/modules/type/_components.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 166, ../scss/modules/type/_components.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 170, ../scss/modules/type/_components.scss */
+.text-justify {
+  text-align: justify;
+}
+
+/* line 175, ../scss/modules/type/_components.scss */
+.text-middle {
+  display: table;
+}
+/* line 178, ../scss/modules/type/_components.scss */
+.text-middle > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
 /* line 186, ../scss/modules/type/_components.scss */
 pre, .pre {
   white-space: pre;

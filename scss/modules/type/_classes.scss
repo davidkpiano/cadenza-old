@@ -78,6 +78,15 @@ a {
 	@extend %anchor;
 }
 
+// Alignment
+// ---------
+.text-right { @extend %text-right; }
+.text-left { @extend %text-left; }
+.text-center { @extend %text-center; }
+.text-justify { @extend %text-justify; }
+
+.text-middle { @extend %text-middle; }
+
 // Preformatted Text
 // -----------------
 body { @include pre-style(); }
