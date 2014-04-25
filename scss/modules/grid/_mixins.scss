@@ -21,6 +21,22 @@
 	}
 }
 
+@function column-offset-width(
+	$columns,
+	$gutter: false
+) {
+	// if $columns is an int, calculate from $grid-columns
+	@if round($columns) == $columns and unit($columns) == '' {
+
+		@if $gutter {
+			@return calc(#{$columns} * ((100% - #{$gutter * ($grid-columns - 1)}) / #{$grid-columns}) + (#{$columns * $gutter}));
+		} @else {
+			@return column-width($columns);
+		}
+	} @else {
+		@return column-width($columns);
+	}
+}
 
 @function row-height($rows) {
 	// This is (currently) the same result as column-width

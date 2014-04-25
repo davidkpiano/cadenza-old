@@ -71,12 +71,12 @@
 
 			%column-offset-#{$i}#{$suffix} {
 				@extend %column-#{$mq};
-				margin-left: column-width($i);
+				margin-left: column-offset-width($i);
 			}
 
 			%column-gutter-offset-#{$i}#{$suffix} {
 				@extend %column-#{$mq};
-				margin-left: column-width($i);
+				margin-left: column-offset-width($i, $gutter: $grid-column-gutter);
 			}
 
 			%columns-offset-#{$i}#{$suffix} > * {
