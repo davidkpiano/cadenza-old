@@ -28,6 +28,7 @@
 
 			%columns-#{$i}#{$suffix} > * {
 				@extend %column-#{$i}#{$suffix};
+				height: auto;
 
 				@if $i > 0 and round($grid-columns / $i) == $grid-columns / $i {
 					&:nth-child(n+1) {
@@ -36,6 +37,27 @@
 
 					&:nth-child(#{$grid-columns / $i}n + 1) {
 						clear: left;
+					}
+				}
+			}
+
+			%columns-gutter-#{$i}#{$suffix} > * {
+				&, &:nth-child(n) {				
+					@extend %column-gutter-#{$i}#{$suffix};
+					height: auto;
+				}
+
+				@if $i > 0 and round($grid-columns / $i) == $grid-columns / $i {
+					&:nth-child(n+1) {
+						clear: none;
+					}
+
+					&:nth-child(#{$grid-columns / $i}n + 1) {
+						clear: left;
+					}
+
+					&:nth-child(#{$grid-columns / $i}n) {
+						margin-right: 0;
 					}
 				}
 			}

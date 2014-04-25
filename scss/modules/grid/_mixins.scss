@@ -93,6 +93,10 @@
 ) {
 	@include mq($media) {
 		width: column-width($columns, $gutter: $gutter);
+
+		@if $gutter {
+			margin-right: $gutter;
+		}
 	}
 }
 

@@ -16,8 +16,18 @@
 			@extend %column-#{$i}#{$suffix};
 		}
 
+		.cols-gutter, .columns-gutter {
+			> .col-#{$i}#{$suffix} {
+				@extend %column-gutter-#{$i}#{$suffix};
+			}
+		}
+
 		.cols-#{$i}#{$suffix}, .columns-#{$i}#{$suffix} {
 			@extend %columns-#{$i}#{$suffix};
+		}
+
+		.cols-gutter-#{$i}#{$suffix}, .columns-gutter-#{$i}#{$suffix} {
+			@extend %columns-gutter-#{$i}#{$suffix};
 		}
 
 		.col-offset-#{$i}#{$suffix}, .column-offset-#{$i}#{$suffix} {
