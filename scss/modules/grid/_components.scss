@@ -26,6 +26,12 @@
 				@include column($i, $gutter: $grid-column-gutter);
 			}
 
+			%columns-gutter#{$suffix} > * {
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+
 			%columns-#{$i}#{$suffix} > * {
 				@extend %column-#{$i}#{$suffix};
 				height: auto;
@@ -42,6 +48,7 @@
 			}
 
 			%columns-gutter-#{$i}#{$suffix} > * {
+
 				&, &:nth-child(n) {				
 					@extend %column-gutter-#{$i}#{$suffix};
 					height: auto;
@@ -167,11 +174,6 @@
 			margin-left: auto; 
 			margin-right: auto;
 			float: none;
-		}
-
-		%column-gutter#{$suffix}, %columns-gutter#{$suffix} > * {
-			padding-left: $grid-column-gutter / 2;
-			padding-right: $grid-column-gutter / 2;
 		}
 	}
 }

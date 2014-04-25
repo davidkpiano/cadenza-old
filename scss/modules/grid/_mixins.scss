@@ -44,27 +44,9 @@
 // Defines a column in the grid system.
 @mixin _column() {
 	@include _grid;
-	padding: 0;
 	float: left;
 	clear: none;
 	height: 100%;
-}
-
-.fourth {
-	@include _column();
-	width: column-width(3, 15px);
-	margin-right: 15px;
-
-	&.last {
-		margin-right: 0;
-	}
-}
-
-.fourth-offset {
-	@include _column();
-	width: column-width(3, 15px);
-	margin-left: column-width(3, 15px);
-	margin-right: 15px;
 }
 
 // Row Component Mixin
