@@ -1,0 +1,11 @@
+//
+// Fields Classes
+// ==============
+
+fieldset, .fieldset {
+    @extend %fieldset;
+}
+
+.field {
+    @extend %field;
+}
