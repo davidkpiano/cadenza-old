@@ -3,3 +3,18 @@
 // ==============
 
 // Theme Classes
+@each $theme-color in $theme-colors {
+    $name: nth($theme-color, 1);
+
+    .theme-#{$name} {
+        @extend %theme-#{$name};
+    }
+
+    .color-#{$name} {
+        @extend %color-#{$name};
+    }
+}
+
+body {
+    @include themes();
+}

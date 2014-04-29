@@ -2,49 +2,21 @@
 // Themes Mixins and Functions
 // ===========================
 
+// TODO: use maps (SASS 3.3)
+
 @mixin themes(
     $themes: $themes,
-    $mode: 'light'
+    $mode: $theme-mode
 ) {
+
     @each $theme in $themes {
         $_module: nth($theme, 1);
-        $_theme: if(length($theme) > 1, nth($theme, 2), 'default');
+        $_theme: 'default';
+
+        @if length($theme) > 1 {
+            $_theme: nth($theme, 2);
+        }
 
         @extend %theme-#{$_module}-#{$_theme}%#{$mode};
     }
-}
-
-%theme-foo-default {
-    &, &%light {
-        %foo {
-            background-color: orange;
-        }
-    }
-
-    &%dark {
-        %foo {
-            background-color: teal;
-        }
-    }
-}
-
-@include add-theme('foo');
-
-%foo {
-    border: 2px solid red;
-    padding: 10px;
-}
-
-.foo { @extend %foo; }
-
-.f-dark {
-    @extend %theme-foo-default%dark;
-}
-
-.f-light {
-    @extend %theme-foo-default%light;
-}
-
-body {
-    @include themes();
 }

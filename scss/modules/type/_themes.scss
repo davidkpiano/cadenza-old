@@ -15,7 +15,8 @@
 
 %theme-type-default {
 	&, &%light {
-		color: $type-base-color;
+		// color: $type-base-color;
+		color: green;
 
 		p, ul, ol, dl { color: $type-base-color; }
 	}

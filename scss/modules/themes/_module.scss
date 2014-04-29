@@ -3,6 +3,17 @@
 // =============
 
 // Theme Settings
+$theme-mode: 'light' !default;
+
+// (name, color, is-dark)
+// TODO: use maps (SASS 3.3)
+$theme-colors: (
+    ('light', $color-light, false),
+    ('dark', $color-dark, true),
+    ('primary', $color-primary, is-dark($color-primary)),
+    ('secondary', $color-secondary, is-dark($color-secondary))
+);
+
 
 // Imports
 @import

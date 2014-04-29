@@ -2,25 +2,17 @@
 // Themes Components
 // =================
 
-$colors: (
-    ('light', $color-light),
-    ('dark', $color-dark),
-    ('primary', $color-primary),
-    ('secondary', $color-secondary)
-);
+@each $theme-color in $theme-colors {
+    $name: nth($theme-color, 1);
+    $color: nth($theme-color, 2);
+    $mode: if(nth($theme-color, 3), 'dark', 'light');
 
-$_colors: ();
+    %theme-#{$name} {
+        background-color: $color;
+        @include themes($mode: $mode);
+    }
 
-
-// prep color lightness
-@each $color in $colors {
-
-    $color: append($color, is-dark(nth($color, 2)));
-    $_colors: append($_colors, $color);
-
-    $colors: $_colors;
+    %color-#{$name} {
+        &, p, ul, ol, dl { color: $color; }
+    }
 }
-
-@debug $colors;
-
-
