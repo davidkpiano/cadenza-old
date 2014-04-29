@@ -5,7 +5,8 @@
 // Type Theme
 @mixin type-style(
 	$style: $type-style,
-	$theme: $type-theme
+	$theme: $type-theme,
+	$component: ''
 ) 
 {
 	@extend %ext-type-#{$style} !optional;
@@ -26,13 +27,17 @@
 	}
 }
 
+@include add-theme('type', $type-theme);
+
 // Heading Theme
+// -------------
 @mixin heading-style(
 	$style: $type-heading-style,
-	$theme: $type-heading-theme
+	$theme: $type-heading-theme,
+	$component: 'heading'
 ) {
 	@extend %ext-heading-#{$style} !optional;
-	@extend %theme-heading-#{$theme} !optional;
+	@extend %theme-heading-#{$theme}%#{$component} !optional;
 }
 
 %ext-heading-default {
@@ -41,33 +46,37 @@
 
 %theme-heading-default {
 	&, &%light {	
-		h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		%heading, &%heading {
 			color: $type-base-color;
+		}
 
-			&.sub, &.subheading, > small, > .small {
-				color: $color-gray;
-			}
+		%subheading, %heading-small, &%subheading, &%heading-small {
+			color: $color-gray;
 		}
 	}
 
 	&%dark {
-		h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+		%heading, &%heading {
 			color: $color-light;
+		}
 
-			&.sub, &.subheading, > small, > .small {
-				color: $color-gray-light;
-			}
+		%subheading, %heading-small, &%subheading, &%heading-small {
+			color: $color-gray-light;
 		}
 	}
 }
 
+@include add-theme('heading', $type-heading-theme);
+
 // Anchor Theme
+// ------------
 @mixin anchor-style(
 	$style: $type-anchor-style,
-	$theme: $type-anchor-theme
+	$theme: $type-anchor-theme,
+	$component: 'anchor'
 ) {
 	@extend %ext-anchor-#{$style} !optional;
-	@extend %theme-anchor-#{$theme} !optional;
+	@extend %theme-anchor-#{$theme}%#{$component} !optional;
 }
 
 @mixin theme-anchor-default(
@@ -97,16 +106,24 @@
 
 %theme-anchor-default {
 	&, &%light {
-		@extend %form-transition;
-		@include theme-anchor-default();
+		%anchor, &%anchor {
+			@extend %form-transition;
+			@include theme-anchor-default();
+			background: green;
+		}
 	}
 
 	&%dark {
-		@include theme-anchor-default($type-anchor-color-light);
+		%anchor, &%anchor {
+			@include theme-anchor-default($type-anchor-color-light);
+		}
 	}
 }
 
+@include add-theme('anchor', $type-anchor-theme);
+
 // Preformatted Text Theme
+// -----------------------
 $x-pre-code-padding: 0.25rem 0.5rem !default;
 $x-pre-code-radius: 0.25rem !default;
 $x-pre-kbd-padding: $x-pre-code-padding !default;
@@ -114,19 +131,20 @@ $x-pre-kbd-radius: 0.25rem !default;
 
 @mixin pre-style(
 	$style: $type-pre-style,
-	$theme: $type-pre-theme
+	$theme: $type-pre-theme,
+	$component: 'pre'
 ) {
 	@extend %ext-pre-#{$style} !optional;
-	@extend %theme-pre-#{$theme} !optional;
+	@extend %theme-pre-#{$theme}%#{$component} !optional;
 }
 
 %theme-pre-default {
 	&, &%light {
-		pre, .pre {
+		%pre, &%pre {
 			color: $type-pre-color;
 		}
 
-		code, .code {
+		%code, &%code {
 			color: $type-code-color;
 			padding: $x-pre-code-padding;
 			background: $color-gray-light;
@@ -136,7 +154,7 @@ $x-pre-kbd-radius: 0.25rem !default;
 			}
 		}
 
-		kbd, .kbd {
+		%kbd, &%kbd {
 			&, &.light {
 				font-family: $type-base-font-family;
 				color: $type-base-color;
@@ -159,22 +177,26 @@ $x-pre-kbd-radius: 0.25rem !default;
 	}
 
 	&%dark {
-		pre, .pre {
+		%pre, &%pre {
 			color: $color-gray-light;
 		}
 	}
 }
 
+@include add-theme('pre', $type-pre-theme);
+
 // Blockquote Theme
+// ----------------
 $x-blockquote-border-width: 1px !default;
 $x-blockquote-footer-prefix: '\2014 \00A0';
 
 @mixin blockquote-style(
 	$style: $type-blockquote-style,
-	$theme: $type-blockquote-theme
+	$theme: $type-blockquote-theme,
+	$component: 'blockquote'
 ) {
 	@extend %ext-blockquote-#{$style} !optional;
-	@extend %theme-blockquote-#{$theme} !optional;
+	@extend %theme-blockquote-#{$theme}%#{$component} !optional;
 }
 
 %ext-blockquote-default {
@@ -192,17 +214,29 @@ $x-blockquote-footer-prefix: '\2014 \00A0';
 }
 
 %theme-blockquote-default {
-	border-color: $type-blockquote-border-color;
-	color: $type-blockquote-color;
+	&, &%light {	
+		%blockquote, &%blockquote {	
+			border-color: $type-blockquote-border-color;
+			color: $type-blockquote-color;
 
-	footer {
-		color: $type-blockquote-footer-color;
+			footer {
+				color: $type-blockquote-footer-color;
 
-		&::before {
-			content: '\2014 \00A0';
+				&::before {
+					content: '\2014 \00A0';
+				}
+			}
+		}
+	}
+
+	&%dark {
+		%blockquote, &%blockquote {
+			// TODO
 		}
 	}
 }
+
+@include add-theme('blockquote', $type-blockquote-theme);
 
 
 

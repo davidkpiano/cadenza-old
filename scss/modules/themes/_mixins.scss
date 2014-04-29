@@ -1,0 +1,50 @@
+// 
+// Themes Mixins and Functions
+// ===========================
+
+@mixin themes(
+    $themes: $themes,
+    $mode: 'light'
+) {
+    @each $theme in $themes {
+        $_module: nth($theme, 1);
+        $_theme: if(length($theme) > 1, nth($theme, 2), 'default');
+
+        @extend %theme-#{$_module}-#{$_theme}%#{$mode};
+    }
+}
+
+%theme-foo-default {
+    &, &%light {
+        %foo {
+            background-color: orange;
+        }
+    }
+
+    &%dark {
+        %foo {
+            background-color: teal;
+        }
+    }
+}
+
+@include add-theme('foo');
+
+%foo {
+    border: 2px solid red;
+    padding: 10px;
+}
+
+.foo { @extend %foo; }
+
+.f-dark {
+    @extend %theme-foo-default%dark;
+}
+
+.f-light {
+    @extend %theme-foo-default%light;
+}
+
+body {
+    @include themes();
+}

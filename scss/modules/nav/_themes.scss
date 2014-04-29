@@ -25,9 +25,9 @@
         > a {
             &:hover {
                 @if is-dark($color) {
-                    @extend %theme-anchor-#{$type-anchor-theme}%dark;
+                    @extend %theme-anchor-#{$type-anchor-theme}%dark%anchor;
                 } @else {
-                    @extend %theme-anchor-#{$type-anchor-theme};
+                    @extend %theme-anchor-#{$type-anchor-theme}%anchor;
                 }
 
                 background-color: $color;
@@ -145,9 +145,9 @@ $x-nav-underline-color-inactive: $color-gray-light;
             > a {
                 &:hover {
                     @if is-dark($color) {
-                        @extend %theme-anchor-#{$type-anchor-theme}%dark;
+                        @extend %theme-anchor-#{$type-anchor-theme}%dark%anchor;
                     } @else {
-                        @extend %theme-anchor-#{$type-anchor-theme};
+                        @extend %theme-anchor-#{$type-anchor-theme}%anchor;
                     }
 
                     background-color: $color;

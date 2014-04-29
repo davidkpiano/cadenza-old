@@ -1,0 +1,26 @@
+// 
+// Modules Themes and Styles
+// ========================
+
+// Module Theme
+@mixin module-style(
+	$style: $module-style,
+	$theme: $module-theme
+) {
+	@extend %ext-module-#{$style} !optional;
+	@extend %theme-module-#{$theme} !optional;
+}
+
+%ext-module-default {
+
+}
+
+%theme-module-default {
+	&, &%light {
+
+	}
+
+	&%dark {
+		
+	}
+}
