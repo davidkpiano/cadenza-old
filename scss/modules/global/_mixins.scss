@@ -1,3 +1,11 @@
 // 
 // Global Mixins and Functions
 // ===========================
+
+// TODO: use Sass 3.3 maps
+@mixin add-theme(
+    $module,
+    $theme: 'default'
+) {
+    $themes: append($themes, ($module, $theme));
+}

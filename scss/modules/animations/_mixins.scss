@@ -45,18 +45,18 @@
 	$inactive-selector: $inactive-selector,
 	$inert-selector: $inert-selector
 ) {
-    @extend %animation-#{$active-name}-inert;
+    @extend %animation-#{$active-name}-inert !optional;
 
     &#{$inert-selector} {
     	@extend %inert;
     }
 
     &#{$active-selector} {
-    	@extend %animation-#{$active-name}-active;
+    	@extend %animation-#{$active-name}-active !optional;
     	@extend %active;
     }
     &#{$inactive-selector} {
-    	@extend %animation-#{$inactive-name}-inactive;
+    	@extend %animation-#{$inactive-name}-inactive !optional;
     	@extend %inactive;
 	}
 }
@@ -79,16 +79,16 @@
     }
 
     > #{$selector} {
-        @extend %animation-#{$active-name}-inert;
+        @extend %animation-#{$active-name}-inert !optional;
 
 
         &#{$active-selector} {
-        	@extend %animation-#{$active-name}-active;
+        	@extend %animation-#{$active-name}-active !optional;
         	@extend %active;
         }
 
         &#{$inactive-selector} {
-        	@extend %animation-#{$inactive-name}-inactive;
+        	@extend %animation-#{$inactive-name}-inactive !optional;
         	@extend %inactive;
         }
     }

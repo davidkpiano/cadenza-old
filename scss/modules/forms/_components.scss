@@ -10,8 +10,8 @@
 
 %input {
 	@extend %border-box;
-	@extend %display-block;
 	@include type-scale($form-input-scale);
+	display: block;
 	width: 100%;
 	padding: $form-input-padding;
 	background-image: none;
