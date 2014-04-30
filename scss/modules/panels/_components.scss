@@ -4,6 +4,7 @@
 
 %panel {
     @include type-scale($panel-scale);
+    @extend %clearfix;
     display: block;
     width: 100%;
     padding: 0;
@@ -19,16 +20,19 @@
     }
 
     %panel-header {
+        @extend %clearfix;
         padding: $panel-header-padding;
         border-width: 0 0 $panel-border-width 0;
     }
 
     %panel-body {
+        @extend %clearfix;
         padding: $panel-section-padding;
         border-width: 0;
     }
 
     %panel-footer {
+        @extend %clearfix;
         padding: $panel-footer-padding;
         border-width: $panel-border-width 0 0 0;
     }
@@ -36,6 +40,7 @@
 
 %alert {
     @include type-scale($alert-scale);
+    @extend %clearfix;
     display: block;
     width: 100%;
     padding: $alert-padding;
@@ -80,6 +85,12 @@
             margin-top: -1px;
         }
     }
+}
+
+%modal {
+    @extend %panel;
+    @include position-absolute($modal-vertical, $modal-horizontal);
+    width: $modal-width;
 }
 
 

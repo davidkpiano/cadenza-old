@@ -2,4 +2,26 @@
 // Layers Themes and Styles
 // ========================
 
-// Layer Theme
+// Overlay Theme
+@mixin overlay-style(
+    $style: $overlay-style,
+    $theme: $overlay-theme,
+    $component: 'overlay'
+) {
+    @extend %ext-type-#{$style} !optional;
+    @extend %theme-type-#{$style}%#{$component} !optional;
+}
+
+%theme-overlay-default {
+    %overlay, &%overlay {
+        &.light {
+            background-color: rgba($overlay-color-light, $overlay-opacity);
+        }
+
+        &, &.dark {
+            background-color: rgba($overlay-color-dark, $overlay-opacity);
+        }
+    }
+}
+
+@include add-theme('overlay', $overlay-theme);

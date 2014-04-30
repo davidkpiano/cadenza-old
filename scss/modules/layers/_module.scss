@@ -4,6 +4,17 @@
 
 // Layer Settings
 
+// Overlay Settings
+$overlay-style: default !default;
+$overlay-theme: default !default;
+$overlay-color-light: white !default;
+$overlay-color-dark: black !default;
+$overlay-opacity: 0.3 !default;
+
+// Container Settings
+$container-min-width: false !default;
+$container-max-width: 960px !default;
+
 // Imports
 @import
 	'_mixins',

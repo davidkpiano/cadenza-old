@@ -23,3 +23,15 @@
 .alert-group {
     @extend %alert-group;
 }
+
+// Modal Classes
+.modal {
+    @include panel-style();
+    @extend %modal;
+
+    > header, > hgroup, > .panel-header { @extend %panel-header; }
+
+    > section, > .panel-body { @extend %panel-body; }
+
+    > footer, > .panel-footer { @extend %panel-footer; }
+}

@@ -24,6 +24,11 @@ $alert-margin: 0 0 1rem 0 !default;
 $alert-radius: $form-radius !default;
 $alert-scale: -1 !default;
 
+// Modal Settings
+$modal-vertical: center !default;
+$modal-horizontal: center !default;
+$modal-width: 50% !default;
+
 // Imports
 @import
 	'_mixins',

@@ -1,8 +1,82 @@
 /* Import Settings */
 /* Import Modules */
-/* Typography Resets */
 @import url("//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
 @import url("");
+/* line 5, ../scss/modules/layers/_components.scss */
+.layer {
+  position: absolute;
+  top: 0;
+  bottom: inherit;
+  left: 0;
+  *zoom: 1;
+  height: 100%;
+  max-height: 100%;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+}
+/* line 38, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.layer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 15, ../scss/modules/layers/_components.scss */
+.overlay {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  margin: 0;
+}
+
+/* line 25, ../scss/modules/layers/_components.scss */
+.page {
+  position: absolute;
+  top: 0;
+  bottom: inherit;
+  left: 0;
+  *zoom: 1;
+  min-height: 100%;
+  min-width: 100%;
+  margin: 0;
+}
+/* line 38, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.page:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 33, ../scss/modules/layers/_components.scss */
+.container {
+  *zoom: 1;
+  width: 100%;
+  max-width: 960px;
+  min-width: false;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 38, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 17, ../scss/modules/layers/_themes.scss */
+body .light.overlay, body.light.overlay {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+/* line 21, ../scss/modules/layers/_themes.scss */
+body .overlay, body .dark.overlay, body.overlay, body.dark.overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* Typography Resets */
 /* line 8, ../scss/modules/_reset.scss */
 div, dl, dt, dd,
 ul, ol, li,
@@ -32,12 +106,12 @@ input, button, textarea, select {
   margin: 0;
 }
 
-/* line 118, ../scss/modules/_layout.scss */
+/* line 128, ../scss/modules/_layout.scss */
 .halign-center, .full, .full-height, .full-width, .block {
   display: block;
 }
 
-/* line 123, ../scss/modules/_layout.scss */
+/* line 133, ../scss/modules/_layout.scss */
 .inline-block-all > *, .valign-center-all > *, .tabs ul li > a > *, nav.horizontal ul li > a > *, .nav.horizontal ul li > a > *, nav ul li > a > *, .nav ul li > a > *, nav.vertical ul li > a > *, .nav.vertical ul li > a > *, .dropdown-container ul li > a > *, .inline-block, textarea.inline,
 input.inline {
   display: inline-block;
@@ -46,12 +120,12 @@ input.inline {
   margin-bottom: 0;
 }
 
-/* line 131, ../scss/modules/_layout.scss */
+/* line 141, ../scss/modules/_layout.scss */
 .inline-block-all > * {
   vertical-align: top;
 }
 
-/* line 137, ../scss/modules/_layout.scss */
+/* line 147, ../scss/modules/_layout.scss */
 *, *:before, *:after, textarea.small,
 input.small, textarea.large,
 input.large, textarea.inline,
@@ -62,7 +136,7 @@ input {
   box-sizing: border-box;
 }
 
-/* line 141, ../scss/modules/_layout.scss */
+/* line 151, ../scss/modules/_layout.scss */
 .valign-center {
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -72,7 +146,7 @@ input {
   transform: translateY(-50%);
 }
 
-/* line 147, ../scss/modules/_layout.scss */
+/* line 157, ../scss/modules/_layout.scss */
 .valign-center-all:before, .tabs ul li > a:before, nav.horizontal ul li > a:before, .nav.horizontal ul li > a:before, nav ul li > a:before, .nav ul li > a:before, nav.vertical ul li > a:before, .nav.vertical ul li > a:before, .dropdown-container ul li > a:before {
   content: '';
   height: 100%;
@@ -81,25 +155,25 @@ input {
   width: 1em;
   margin-left: -1em;
 }
-/* line 156, ../scss/modules/_layout.scss */
+/* line 166, ../scss/modules/_layout.scss */
 .valign-center-all > *, .tabs ul li > a > *, nav.horizontal ul li > a > *, .nav.horizontal ul li > a > *, nav ul li > a > *, .nav ul li > a > *, nav.vertical ul li > a > *, .nav.vertical ul li > a > *, .dropdown-container ul li > a > * {
   vertical-align: middle;
 }
 
-/* line 162, ../scss/modules/_layout.scss */
+/* line 172, ../scss/modules/_layout.scss */
 .valign-bottom {
   position: absolute;
   bottom: 0;
   top: inherit;
 }
 
-/* line 166, ../scss/modules/_layout.scss */
+/* line 176, ../scss/modules/_layout.scss */
 .halign-center {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 172, ../scss/modules/_layout.scss */
+/* line 182, ../scss/modules/_layout.scss */
 .position-bottom-center {
   position: absolute;
   bottom: 0;
@@ -112,77 +186,60 @@ input {
   transform: translateX(-50%);
 }
 
-/* line 176, ../scss/modules/_layout.scss */
-.halign-center, .full, .full-height, .full-width, .block, .clearfix, .layer, .tabs > ul, nav.horizontal > ul, .nav.horizontal > ul, .button-group.inline, .button-group.vertical, .button-group {
+/* line 186, ../scss/modules/_layout.scss */
+.halign-center, .full, .full-height, .full-width, .block, .clearfix, .tabs > ul, nav.horizontal > ul, .nav.horizontal > ul, .button-group.inline, .button-group.vertical, .button-group, .modal, .panel, .modal .panel > header, .panel > header, .modal .panel > hgroup, .panel > hgroup, .panel > .panel-header, .modal > header, .panel .modal > header, .modal > hgroup, .panel .modal > hgroup, .modal > .panel-header, .modal .panel > section, .panel > section, .panel > .panel-body, .modal > section, .panel .modal > section, .modal > .panel-body, .modal .panel > footer, .panel > footer, .panel > .panel-footer, .modal > footer, .panel .modal > footer, .modal > .panel-footer, .alert {
   *zoom: 1;
 }
 /* line 38, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.halign-center:after, .full:after, .full-height:after, .full-width:after, .block:after, .clearfix:after, .layer:after, .tabs > ul:after, nav.horizontal > ul:after, .nav.horizontal > ul:after, .button-group.inline:after, .button-group.vertical:after, .button-group:after {
+.halign-center:after, .full:after, .full-height:after, .full-width:after, .block:after, .clearfix:after, .tabs > ul:after, nav.horizontal > ul:after, .nav.horizontal > ul:after, .button-group.inline:after, .button-group.vertical:after, .button-group:after, .modal:after, .panel:after, .modal .panel > header:after, .panel > header:after, .modal .panel > hgroup:after, .panel > hgroup:after, .panel > .panel-header:after, .modal > header:after, .panel .modal > header:after, .modal > hgroup:after, .panel .modal > hgroup:after, .modal > .panel-header:after, .modal .panel > section:after, .panel > section:after, .panel > .panel-body:after, .modal > section:after, .panel .modal > section:after, .modal > .panel-body:after, .modal .panel > footer:after, .panel > footer:after, .panel > .panel-footer:after, .modal > footer:after, .panel .modal > footer:after, .modal > .panel-footer:after, .alert:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 180, ../scss/modules/_layout.scss */
+/* line 190, ../scss/modules/_layout.scss */
 .float-left {
   float: left;
 }
 
-/* line 184, ../scss/modules/_layout.scss */
+/* line 194, ../scss/modules/_layout.scss */
 .float-right {
   float: right;
 }
 
-/* line 188, ../scss/modules/_layout.scss */
+/* line 198, ../scss/modules/_layout.scss */
 .full, .full-height {
   margin-top: 0;
   margin-bottom: 0;
   height: 100%;
 }
 
-/* line 195, ../scss/modules/_layout.scss */
+/* line 205, ../scss/modules/_layout.scss */
 .full, .full-width {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
 }
 
-/* line 202, ../scss/modules/_layout.scss */
+/* line 212, ../scss/modules/_layout.scss */
 .full {
   display: block;
   position: absolute;
 }
 
-/* line 209, ../scss/modules/_layout.scss */
+/* line 219, ../scss/modules/_layout.scss */
 html {
   height: 100%;
 }
 
-/* line 213, ../scss/modules/_layout.scss */
+/* line 223, ../scss/modules/_layout.scss */
 *, *:before, *:after {
   position: relative;
 }
 
-/* line 476, ../scss/modules/_layout.scss */
+/* line 284, ../scss/modules/_layout.scss */
 .content {
   padding: 1rem;
-}
-
-/* line 6, ../scss/modules/grid/_components.scss */
-header, footer, section {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  *zoom: 1;
-  margin: 0;
-  display: block;
-  position: relative;
-}
-/* line 38, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-header:after, footer:after, section:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 /* line 9, ../scss/modules/grid/_components.scss */
@@ -3686,7 +3743,7 @@ header:after, footer:after, section:after {
   }
 }
 /* line 182, ../scss/modules/grid/_components.scss */
-.rows-half > *, .row-half, .rows-3rd > *, .row-3rd, .rows-4th > *, .row-4th, .rows-5th > *, .row-5th, .rows-6th > *, .row-6th, .rows-7th > *, .row-7th, .rows-8th > *, .row-8th, .rows-9th > *, .row-9th, .row, .layer {
+.rows-half > *, .row-half, .rows-3rd > *, .row-3rd, .rows-4th > *, .row-4th, .rows-5th > *, .row-5th, .rows-6th > *, .row-6th, .rows-7th > *, .row-7th, .rows-8th > *, .row-8th, .rows-9th > *, .row-9th, .row {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -3699,7 +3756,7 @@ header:after, footer:after, section:after {
   clear: both;
 }
 /* line 38, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.4/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.rows-half > :after, .row-half:after, .rows-3rd > :after, .row-3rd:after, .rows-4th > :after, .row-4th:after, .rows-5th > :after, .row-5th:after, .rows-6th > :after, .row-6th:after, .rows-7th > :after, .row-7th:after, .rows-8th > :after, .row-8th:after, .rows-9th > :after, .row-9th:after, .row:after, .layer:after {
+.rows-half > :after, .row-half:after, .rows-3rd > :after, .row-3rd:after, .rows-4th > :after, .row-4th:after, .rows-5th > :after, .row-5th:after, .rows-6th > :after, .row-6th:after, .rows-7th > :after, .row-7th:after, .rows-8th > :after, .row-8th:after, .rows-9th > :after, .row-9th:after, .row:after {
   content: "";
   display: table;
   clear: both;
@@ -5030,41 +5087,6 @@ header:after, footer:after, section:after {
     bottom: 11.11111%;
   }
 }
-/* line 3, ../scss/modules/_layers.scss */
-.layer, .layer.scroll, .scroll {
-  overflow: auto;
-}
-
-/* line 7, ../scss/modules/_layers.scss */
-.layer {
-  position: absolute;
-  height: 100%;
-  max-height: 100%;
-  top: 0;
-  left: 0;
-  overflow: hidden;
-  margin: 0;
-}
-
-/* line 21, ../scss/modules/_layers.scss */
-.container {
-  width: 100%;
-  max-width: 960px;
-  min-width: false;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* line 31, ../scss/modules/_layers.scss */
-.layer > .page, .container > .page {
-  position: absolute;
-  min-height: 100%;
-  min-width: 100%;
-  top: 0;
-  left: 0;
-  margin: 0;
-}
-
 /* line 10, ../scss/modules/type/_components.scss */
 body, .type-primary {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -5456,11 +5478,11 @@ dl dd {
 }
 
 /* line 17, ../scss/modules/type/_themes.scss */
-.theme-light, .theme-lighten, body {
+body, .theme-light, .theme-lighten {
   color: #363636;
 }
 /* line 20, ../scss/modules/type/_themes.scss */
-.theme-light p, .theme-lighten p, body p, .theme-light ul, .theme-lighten ul, body ul, .theme-light ol, .theme-lighten ol, body ol, .theme-light dl, .theme-lighten dl, body dl {
+body p, body ul, body ol, body dl, .theme-light p, .theme-lighten p, .theme-light ul, .theme-lighten ul, .theme-light ol, .theme-lighten ol, .theme-light dl, .theme-lighten dl {
   color: #363636;
 }
 /* line 23, ../scss/modules/type/_themes.scss */
@@ -5473,11 +5495,11 @@ dl dd {
 }
 
 /* line 49, ../scss/modules/type/_themes.scss */
-.theme-light h1, .theme-lighten h1, body h1, .theme-light .h1, .theme-lighten .h1, body .h1, .theme-light h2, .theme-lighten h2, body h2, .theme-light .h2, .theme-lighten .h2, body .h2, .theme-light h3, .theme-lighten h3, body h3, .theme-light .h3, .theme-lighten .h3, body .h3, .theme-light h4, .theme-lighten h4, body h4, .theme-light .h4, .theme-lighten .h4, body .h4, .theme-light h5, .theme-lighten h5, body h5, .theme-light .h5, .theme-lighten .h5, body .h5, .theme-light h6, .theme-lighten h6, body h6, .theme-light .h6, .theme-lighten .h6, body .h6, h1.theme-light, h1.theme-lighten, .h1.theme-light, .h1.theme-lighten, body.h1, h2.theme-light, h2.theme-lighten, .h2.theme-light, .h2.theme-lighten, body.h2, h3.theme-light, h3.theme-lighten, .h3.theme-light, .h3.theme-lighten, body.h3, h4.theme-light, h4.theme-lighten, .h4.theme-light, .h4.theme-lighten, body.h4, h5.theme-light, h5.theme-lighten, .h5.theme-light, .h5.theme-lighten, body.h5, h6.theme-light, h6.theme-lighten, .h6.theme-light, .h6.theme-lighten, body.h6 {
+body h1, body .h1, body h2, body .h2, body h3, body .h3, body h4, body .h4, body h5, body .h5, body h6, body .h6, body.h1, body.h2, body.h3, body.h4, body.h5, body.h6, .theme-light h1, .theme-lighten h1, .theme-light .h1, .theme-lighten .h1, .theme-light h2, .theme-lighten h2, .theme-light .h2, .theme-lighten .h2, .theme-light h3, .theme-lighten h3, .theme-light .h3, .theme-lighten .h3, .theme-light h4, .theme-lighten h4, .theme-light .h4, .theme-lighten .h4, .theme-light h5, .theme-lighten h5, .theme-light .h5, .theme-lighten .h5, .theme-light h6, .theme-lighten h6, .theme-light .h6, .theme-lighten .h6, h1.theme-light, h1.theme-lighten, .h1.theme-light, .h1.theme-lighten, h2.theme-light, h2.theme-lighten, .h2.theme-light, .h2.theme-lighten, h3.theme-light, h3.theme-lighten, .h3.theme-light, .h3.theme-lighten, h4.theme-light, h4.theme-lighten, .h4.theme-light, .h4.theme-lighten, h5.theme-light, h5.theme-lighten, .h5.theme-light, .h5.theme-lighten, h6.theme-light, h6.theme-lighten, .h6.theme-light, .h6.theme-lighten {
   color: #363636;
 }
 /* line 53, ../scss/modules/type/_themes.scss */
-.theme-light h1.sub, .theme-lighten h1.sub, body h1.sub, .theme-light h1.subheading, .theme-lighten h1.subheading, body h1.subheading, .theme-light .h1.sub, .theme-lighten .h1.sub, body .h1.sub, .theme-light .h1.subheading, .theme-lighten .h1.subheading, body .h1.subheading, .theme-light h2.sub, .theme-lighten h2.sub, body h2.sub, .theme-light h2.subheading, .theme-lighten h2.subheading, body h2.subheading, .theme-light .h2.sub, .theme-lighten .h2.sub, body .h2.sub, .theme-light .h2.subheading, .theme-lighten .h2.subheading, body .h2.subheading, .theme-light h3.sub, .theme-lighten h3.sub, body h3.sub, .theme-light h3.subheading, .theme-lighten h3.subheading, body h3.subheading, .theme-light .h3.sub, .theme-lighten .h3.sub, body .h3.sub, .theme-light .h3.subheading, .theme-lighten .h3.subheading, body .h3.subheading, .theme-light h4.sub, .theme-lighten h4.sub, body h4.sub, .theme-light h4.subheading, .theme-lighten h4.subheading, body h4.subheading, .theme-light .h4.sub, .theme-lighten .h4.sub, body .h4.sub, .theme-light .h4.subheading, .theme-lighten .h4.subheading, body .h4.subheading, .theme-light h1 > small, .theme-lighten h1 > small, body h1 > small, .theme-light h1 > .small, .theme-lighten h1 > .small, body h1 > .small, .theme-light .h1 > small, .theme-lighten .h1 > small, body .h1 > small, .theme-light .h1 > .small, .theme-lighten .h1 > .small, body .h1 > .small, .theme-light h2 > small, .theme-lighten h2 > small, body h2 > small, .theme-light h2 > .small, .theme-lighten h2 > .small, body h2 > .small, .theme-light .h2 > small, .theme-lighten .h2 > small, body .h2 > small, .theme-light .h2 > .small, .theme-lighten .h2 > .small, body .h2 > .small, .theme-light h3 > small, .theme-lighten h3 > small, body h3 > small, .theme-light h3 > .small, .theme-lighten h3 > .small, body h3 > .small, .theme-light .h3 > small, .theme-lighten .h3 > small, body .h3 > small, .theme-light .h3 > .small, .theme-lighten .h3 > .small, body .h3 > .small, .theme-light h4 > small, .theme-lighten h4 > small, body h4 > small, .theme-light h4 > .small, .theme-lighten h4 > .small, body h4 > .small, .theme-light .h4 > small, .theme-lighten .h4 > small, body .h4 > small, .theme-light .h4 > .small, .theme-lighten .h4 > .small, body .h4 > .small, h1.sub.theme-light, h1.sub.theme-lighten, h1.subheading.theme-light, h1.subheading.theme-lighten, .h1.sub.theme-light, .h1.sub.theme-lighten, body.h1.sub, .h1.subheading.theme-light, .h1.subheading.theme-lighten, body.h1.subheading, h2.sub.theme-light, h2.sub.theme-lighten, h2.subheading.theme-light, h2.subheading.theme-lighten, .h2.sub.theme-light, .h2.sub.theme-lighten, body.h2.sub, .h2.subheading.theme-light, .h2.subheading.theme-lighten, body.h2.subheading, h3.sub.theme-light, h3.sub.theme-lighten, h3.subheading.theme-light, h3.subheading.theme-lighten, .h3.sub.theme-light, .h3.sub.theme-lighten, body.h3.sub, .h3.subheading.theme-light, .h3.subheading.theme-lighten, body.h3.subheading, h4.sub.theme-light, h4.sub.theme-lighten, h4.subheading.theme-light, h4.subheading.theme-lighten, .h4.sub.theme-light, .h4.sub.theme-lighten, body.h4.sub, .h4.subheading.theme-light, .h4.subheading.theme-lighten, body.h4.subheading, h1 > small.theme-light, h1 > small.theme-lighten, h1 > .small.theme-light, h1 > .small.theme-lighten, h1 > body.small, .h1 > small.theme-light, .h1 > small.theme-lighten, .h1 > .small.theme-light, .h1 > .small.theme-lighten, .h1 > body.small, h2 > small.theme-light, h2 > small.theme-lighten, h2 > .small.theme-light, h2 > .small.theme-lighten, h2 > body.small, .h2 > small.theme-light, .h2 > small.theme-lighten, .h2 > .small.theme-light, .h2 > .small.theme-lighten, .h2 > body.small, h3 > small.theme-light, h3 > small.theme-lighten, h3 > .small.theme-light, h3 > .small.theme-lighten, h3 > body.small, .h3 > small.theme-light, .h3 > small.theme-lighten, .h3 > .small.theme-light, .h3 > .small.theme-lighten, .h3 > body.small, h4 > small.theme-light, h4 > small.theme-lighten, h4 > .small.theme-light, h4 > .small.theme-lighten, h4 > body.small, .h4 > small.theme-light, .h4 > small.theme-lighten, .h4 > .small.theme-light, .h4 > .small.theme-lighten, .h4 > body.small {
+body h1.sub, body h1.subheading, body .h1.sub, body .h1.subheading, body h2.sub, body h2.subheading, body .h2.sub, body .h2.subheading, body h3.sub, body h3.subheading, body .h3.sub, body .h3.subheading, body h4.sub, body h4.subheading, body .h4.sub, body .h4.subheading, body h1 > small, body h1 > .small, body .h1 > small, body .h1 > .small, body h2 > small, body h2 > .small, body .h2 > small, body .h2 > .small, body h3 > small, body h3 > .small, body .h3 > small, body .h3 > .small, body h4 > small, body h4 > .small, body .h4 > small, body .h4 > .small, body.h1.sub, body.h1.subheading, body.h2.sub, body.h2.subheading, body.h3.sub, body.h3.subheading, body.h4.sub, body.h4.subheading, h1 > body.small, .h1 > body.small, h2 > body.small, .h2 > body.small, h3 > body.small, .h3 > body.small, h4 > body.small, .h4 > body.small, .theme-light h1.sub, .theme-lighten h1.sub, .theme-light h1.subheading, .theme-lighten h1.subheading, .theme-light .h1.sub, .theme-lighten .h1.sub, .theme-light .h1.subheading, .theme-lighten .h1.subheading, .theme-light h2.sub, .theme-lighten h2.sub, .theme-light h2.subheading, .theme-lighten h2.subheading, .theme-light .h2.sub, .theme-lighten .h2.sub, .theme-light .h2.subheading, .theme-lighten .h2.subheading, .theme-light h3.sub, .theme-lighten h3.sub, .theme-light h3.subheading, .theme-lighten h3.subheading, .theme-light .h3.sub, .theme-lighten .h3.sub, .theme-light .h3.subheading, .theme-lighten .h3.subheading, .theme-light h4.sub, .theme-lighten h4.sub, .theme-light h4.subheading, .theme-lighten h4.subheading, .theme-light .h4.sub, .theme-lighten .h4.sub, .theme-light .h4.subheading, .theme-lighten .h4.subheading, .theme-light h1 > small, .theme-lighten h1 > small, .theme-light h1 > .small, .theme-lighten h1 > .small, .theme-light .h1 > small, .theme-lighten .h1 > small, .theme-light .h1 > .small, .theme-lighten .h1 > .small, .theme-light h2 > small, .theme-lighten h2 > small, .theme-light h2 > .small, .theme-lighten h2 > .small, .theme-light .h2 > small, .theme-lighten .h2 > small, .theme-light .h2 > .small, .theme-lighten .h2 > .small, .theme-light h3 > small, .theme-lighten h3 > small, .theme-light h3 > .small, .theme-lighten h3 > .small, .theme-light .h3 > small, .theme-lighten .h3 > small, .theme-light .h3 > .small, .theme-lighten .h3 > .small, .theme-light h4 > small, .theme-lighten h4 > small, .theme-light h4 > .small, .theme-lighten h4 > .small, .theme-light .h4 > small, .theme-lighten .h4 > small, .theme-light .h4 > .small, .theme-lighten .h4 > .small, h1.sub.theme-light, h1.sub.theme-lighten, h1.subheading.theme-light, h1.subheading.theme-lighten, .h1.sub.theme-light, .h1.sub.theme-lighten, .h1.subheading.theme-light, .h1.subheading.theme-lighten, h2.sub.theme-light, h2.sub.theme-lighten, h2.subheading.theme-light, h2.subheading.theme-lighten, .h2.sub.theme-light, .h2.sub.theme-lighten, .h2.subheading.theme-light, .h2.subheading.theme-lighten, h3.sub.theme-light, h3.sub.theme-lighten, h3.subheading.theme-light, h3.subheading.theme-lighten, .h3.sub.theme-light, .h3.sub.theme-lighten, .h3.subheading.theme-light, .h3.subheading.theme-lighten, h4.sub.theme-light, h4.sub.theme-lighten, h4.subheading.theme-light, h4.subheading.theme-lighten, .h4.sub.theme-light, .h4.sub.theme-lighten, .h4.subheading.theme-light, .h4.subheading.theme-lighten, h1 > small.theme-light, h1 > small.theme-lighten, h1 > .small.theme-light, h1 > .small.theme-lighten, .h1 > small.theme-light, .h1 > small.theme-lighten, .h1 > .small.theme-light, .h1 > .small.theme-lighten, h2 > small.theme-light, h2 > small.theme-lighten, h2 > .small.theme-light, h2 > .small.theme-lighten, .h2 > small.theme-light, .h2 > small.theme-lighten, .h2 > .small.theme-light, .h2 > .small.theme-lighten, h3 > small.theme-light, h3 > small.theme-lighten, h3 > .small.theme-light, h3 > .small.theme-lighten, .h3 > small.theme-light, .h3 > small.theme-lighten, .h3 > .small.theme-light, .h3 > .small.theme-lighten, h4 > small.theme-light, h4 > small.theme-lighten, h4 > .small.theme-light, h4 > .small.theme-lighten, .h4 > small.theme-light, .h4 > small.theme-lighten, .h4 > .small.theme-light, .h4 > .small.theme-lighten {
   color: #525252;
 }
 /* line 59, ../scss/modules/type/_themes.scss */
@@ -5490,20 +5512,20 @@ dl dd {
 }
 
 /* line 109, ../scss/modules/type/_themes.scss */
-button.link a, .link.button a, input.link[type=button] a, input.link[type=submit] a, .light.alert a a, .warning.alert a a, a.link.button, .light.alert a, .warning.alert a, nav li > a:hover, .nav li > a:hover, nav.light li > a:hover, .light.nav li > a:hover, .light.dropdown-container > .dropdown li > a:hover, .theme-light a, .theme-lighten a, body a, a.theme-light, a.theme-lighten {
+button.link a, .link.button a, input.link[type=button] a, input.link[type=submit] a, .light.alert a a, .warning.alert a a, body a, a.link.button, .light.alert a, .warning.alert a, nav li > a:hover, .nav li > a:hover, nav.light li > a:hover, .light.nav li > a:hover, .light.dropdown-container > .dropdown li > a:hover, .theme-light a, .theme-lighten a, a.theme-light, a.theme-lighten {
   color: #024959;
   background: green;
 }
 /* line 90, ../scss/modules/type/_themes.scss */
-button.link a:hover, .link.button a:hover, input.link[type=button] a:hover, input.link[type=submit] a:hover, .light.alert a a:hover, .warning.alert a a:hover, a.link.button:hover, .light.alert a:hover, .warning.alert a:hover, nav li > a:hover, .nav li > a:hover, nav.light li > a:hover, .light.nav li > a:hover, .light.dropdown-container > .dropdown li > a:hover, .theme-light a:hover, .theme-lighten a:hover, body a:hover, a.theme-light:hover, a.theme-lighten:hover {
+button.link a:hover, .link.button a:hover, input.link[type=button] a:hover, input.link[type=submit] a:hover, .light.alert a a:hover, .warning.alert a a:hover, body a:hover, a.link.button:hover, .light.alert a:hover, .warning.alert a:hover, nav li > a:hover, .nav li > a:hover, nav.light li > a:hover, .light.nav li > a:hover, .light.dropdown-container > .dropdown li > a:hover, .theme-light a:hover, .theme-lighten a:hover, a.theme-light:hover, a.theme-lighten:hover {
   color: #013540;
 }
 /* line 91, ../scss/modules/type/_themes.scss */
-button.link a:focus, .link.button a:focus, input.link[type=button] a:focus, input.link[type=submit] a:focus, .light.alert a a:focus, .warning.alert a a:focus, a.link.button:focus, .light.alert a:focus, .warning.alert a:focus, nav li > a:focus:hover, .nav li > a:focus:hover, nav.light li > a:focus:hover, .light.dropdown-container > .dropdown li > a:focus:hover, .theme-light a:focus, .theme-lighten a:focus, body a:focus, a.theme-light:focus, a.theme-lighten:focus {
+button.link a:focus, .link.button a:focus, input.link[type=button] a:focus, input.link[type=submit] a:focus, .light.alert a a:focus, .warning.alert a a:focus, body a:focus, a.link.button:focus, .light.alert a:focus, .warning.alert a:focus, nav li > a:focus:hover, .nav li > a:focus:hover, nav.light li > a:focus:hover, .light.dropdown-container > .dropdown li > a:focus:hover, .theme-light a:focus, .theme-lighten a:focus, a.theme-light:focus, a.theme-lighten:focus {
   color: #013540;
 }
 /* line 92, ../scss/modules/type/_themes.scss */
-button.link a:focus, .link.button a:focus, input.link[type=button] a:focus, input.link[type=submit] a:focus, .light.alert a a:focus, .warning.alert a a:focus, a.link.button:focus, .light.alert a:focus, .warning.alert a:focus, nav li > a:focus:hover, .nav li > a:focus:hover, nav.light li > a:focus:hover, .light.dropdown-container > .dropdown li > a:focus:hover, .theme-light a:focus, .theme-lighten a:focus, body a:focus, a.theme-light:focus, a.theme-lighten:focus {
+button.link a:focus, .link.button a:focus, input.link[type=button] a:focus, input.link[type=submit] a:focus, .light.alert a a:focus, .warning.alert a a:focus, body a:focus, a.link.button:focus, .light.alert a:focus, .warning.alert a:focus, nav li > a:focus:hover, .nav li > a:focus:hover, nav.light li > a:focus:hover, .light.dropdown-container > .dropdown li > a:focus:hover, .theme-light a:focus, .theme-lighten a:focus, a.theme-light:focus, a.theme-lighten:focus {
   color: #013540;
 }
 /* line 117, ../scss/modules/type/_themes.scss */
@@ -5524,11 +5546,11 @@ button.link a:focus, .link.button a:focus, input.link[type=button] a:focus, inpu
 }
 
 /* line 143, ../scss/modules/type/_themes.scss */
-.theme-light pre, .theme-lighten pre, body pre, .theme-light .pre, .theme-lighten .pre, body .pre, pre.theme-light, pre.theme-lighten, .pre.theme-light, .pre.theme-lighten, body.pre {
+body pre, body .pre, body.pre, .theme-light pre, .theme-lighten pre, .theme-light .pre, .theme-lighten .pre, pre.theme-light, pre.theme-lighten, .pre.theme-light, .pre.theme-lighten {
   color: #363636;
 }
 /* line 147, ../scss/modules/type/_themes.scss */
-body .pre code, .pre body code, body .pre .code, .pre body .code, .theme-light code, .theme-lighten code, body code, .theme-light .code, .theme-lighten .code, body .code, .pre body.code, code.theme-light, code.theme-lighten, .code.theme-light, .code.theme-lighten, body.code {
+body .pre code, .pre body code, body .pre .code, .pre body .code, body code, body .code, .pre body.code, body.code, .theme-light code, .theme-lighten code, .theme-light .code, .theme-lighten .code, code.theme-light, code.theme-lighten, .code.theme-light, .code.theme-lighten {
   color: #363636;
   padding: 0.25rem 0.5rem;
   background: #efefef;
@@ -5539,7 +5561,7 @@ body .pre code, .pre body code, body .pre .code, .pre body .code, .theme-light c
   border-radius: 0.25rem;
 }
 /* line 158, ../scss/modules/type/_themes.scss */
-.theme-light kbd, .theme-lighten kbd, body kbd, .theme-light .kbd, .theme-lighten .kbd, body .kbd, .theme-light kbd.light, .theme-lighten kbd.light, body kbd.light, .theme-light .light.kbd, .theme-lighten .light.kbd, body .light.kbd, kbd.theme-light, kbd.theme-lighten, .kbd.theme-light, .kbd.theme-lighten, body.kbd, kbd.light.theme-light, kbd.light.theme-lighten, .light.kbd.theme-light, .light.kbd.theme-lighten, body.light.kbd {
+body kbd, body .kbd, body kbd.light, body .light.kbd, body.kbd, body.light.kbd, .theme-light kbd, .theme-lighten kbd, .theme-light .kbd, .theme-lighten .kbd, .theme-light kbd.light, .theme-lighten kbd.light, .theme-light .light.kbd, .theme-lighten .light.kbd, kbd.theme-light, kbd.theme-lighten, .kbd.theme-light, .kbd.theme-lighten, kbd.light.theme-light, kbd.light.theme-lighten, .light.kbd.theme-light, .light.kbd.theme-lighten {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #363636;
   padding: 0.25rem 0.5rem;
@@ -5553,7 +5575,7 @@ body .pre code, .pre body code, body .pre .code, .pre body .code, .theme-light c
   border-radius: 0.25rem;
 }
 /* line 171, ../scss/modules/type/_themes.scss */
-.theme-light kbd.dark, .theme-lighten kbd.dark, body kbd.dark, .theme-light .dark.kbd, .theme-lighten .dark.kbd, body .dark.kbd, kbd.dark.theme-light, kbd.dark.theme-lighten, .dark.kbd.theme-light, .dark.kbd.theme-lighten, body.dark.kbd {
+body kbd.dark, body .dark.kbd, body.dark.kbd, .theme-light kbd.dark, .theme-lighten kbd.dark, .theme-light .dark.kbd, .theme-lighten .dark.kbd, kbd.dark.theme-light, kbd.dark.theme-lighten, .dark.kbd.theme-light, .dark.kbd.theme-lighten {
   color: #efefef;
   background: #505050;
   border-color: #363636;
@@ -5577,16 +5599,16 @@ blockquote.right {
 }
 
 /* line 218, ../scss/modules/type/_themes.scss */
-blockquote, .theme-light blockquote, .theme-lighten blockquote, body blockquote, blockquote.theme-light, blockquote.theme-lighten {
+body blockquote, blockquote, .theme-light blockquote, .theme-lighten blockquote, blockquote.theme-light, blockquote.theme-lighten {
   border-color: #525252;
   color: #525252;
 }
 /* line 222, ../scss/modules/type/_themes.scss */
-blockquote footer, .theme-light blockquote footer, .theme-lighten blockquote footer, body blockquote footer, blockquote.theme-light footer, blockquote.theme-lighten footer {
+body blockquote footer, blockquote footer, .theme-light blockquote footer, .theme-lighten blockquote footer, blockquote.theme-light footer, blockquote.theme-lighten footer {
   color: #525252;
 }
 /* line 225, ../scss/modules/type/_themes.scss */
-blockquote footer::before, .theme-light blockquote footer::before, .theme-lighten blockquote footer::before, body blockquote footer::before, blockquote.theme-light footer::before, blockquote.theme-lighten footer::before {
+body blockquote footer::before, blockquote footer::before, .theme-light blockquote footer::before, .theme-lighten blockquote footer::before, blockquote.theme-light footer::before, blockquote.theme-lighten footer::before {
   content: '\2014 \00A0';
 }
 
@@ -5925,7 +5947,7 @@ nav.dark li > a:hover, .dark.nav li > a:hover {
 }
 
 /* line 5, ../scss/modules/forms/_components.scss */
-button.link a, .link.button a, input.link[type=button] a, input.link[type=submit] a, .light.alert a a, .warning.alert a a, a.link.button, .light.alert a, .warning.alert a, nav li > a:hover, .nav li > a:hover, nav.light li > a:hover, .light.nav li > a:hover, .light.dropdown-container > .dropdown li > a:hover, .theme-light a, .theme-lighten a, body a, a.theme-light, a.theme-lighten, textarea,
+button.link a, .link.button a, input.link[type=button] a, input.link[type=submit] a, .light.alert a a, .warning.alert a a, body a, a.link.button, .light.alert a, .warning.alert a, nav li > a:hover, .nav li > a:hover, nav.light li > a:hover, .light.nav li > a:hover, .light.dropdown-container > .dropdown li > a:hover, .theme-light a, .theme-lighten a, a.theme-light, a.theme-lighten, textarea,
 input {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -6614,7 +6636,7 @@ table.hover tr:hover {
 }
 
 /* line 5, ../scss/modules/panels/_components.scss */
-.panel {
+.modal, .panel {
   font-size: 16px ;
   font-size: 1rem ;
   display: block;
@@ -6628,27 +6650,27 @@ table.hover tr:hover {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 17, ../scss/modules/panels/_components.scss */
-.panel, .panel > * {
+/* line 18, ../scss/modules/panels/_components.scss */
+.modal, .panel, .modal > *, .panel > * {
   border-style: solid;
 }
-/* line 21, ../scss/modules/panels/_components.scss */
-.panel > header, .panel > hgroup, .panel > .panel-header {
+/* line 22, ../scss/modules/panels/_components.scss */
+.panel > header, .panel > hgroup, .panel > .panel-header, .modal > header, .modal > hgroup, .modal > .panel-header {
   padding: 1rem;
   border-width: 0 0 1px 0;
 }
-/* line 26, ../scss/modules/panels/_components.scss */
-.panel > section, .panel > .panel-body {
+/* line 28, ../scss/modules/panels/_components.scss */
+.panel > section, .panel > .panel-body, .modal > section, .modal > .panel-body {
   padding: 1rem;
   border-width: 0;
 }
-/* line 31, ../scss/modules/panels/_components.scss */
-.panel > footer, .panel > .panel-footer {
+/* line 34, ../scss/modules/panels/_components.scss */
+.panel > footer, .panel > .panel-footer, .modal > footer, .modal > .panel-footer {
   padding: 1rem;
   border-width: 1px 0 0 0;
 }
 
-/* line 37, ../scss/modules/panels/_components.scss */
+/* line 41, ../scss/modules/panels/_components.scss */
 .alert {
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
@@ -6664,15 +6686,15 @@ table.hover tr:hover {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 50, ../scss/modules/panels/_components.scss */
+/* line 55, ../scss/modules/panels/_components.scss */
 .alert > *:last-child {
   margin-bottom: 0;
 }
-/* line 60, ../scss/modules/panels/_components.scss */
+/* line 65, ../scss/modules/panels/_components.scss */
 .alert-group {
   margin: 0 0 1rem 0;
 }
-/* line 63, ../scss/modules/panels/_components.scss */
+/* line 68, ../scss/modules/panels/_components.scss */
 .alert-group > * {
   margin: 0;
   -webkit-border-radius: 0;
@@ -6681,7 +6703,7 @@ table.hover tr:hover {
   -o-border-radius: 0;
   border-radius: 0;
 }
-/* line 69, ../scss/modules/panels/_components.scss */
+/* line 74, ../scss/modules/panels/_components.scss */
 .alert-group > *:first-child {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -6690,7 +6712,7 @@ table.hover tr:hover {
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 73, ../scss/modules/panels/_components.scss */
+/* line 78, ../scss/modules/panels/_components.scss */
 .alert-group > *:last-child {
   -moz-border-radius-bottomleft: 3px;
   -webkit-border-bottom-left-radius: 3px;
@@ -6699,191 +6721,206 @@ table.hover tr:hover {
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 79, ../scss/modules/panels/_components.scss */
+/* line 84, ../scss/modules/panels/_components.scss */
 .alert-group > * ~ * {
   margin-top: -1px;
 }
 
+/* line 90, ../scss/modules/panels/_components.scss */
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: inherit;
+  right: inherit;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 50%;
+}
+
 /* line 47, ../scss/modules/panels/_themes.scss */
-.panel {
+.panel, .modal {
   background-color: #efefef;
   border-color: #e2e2e2;
   color: #363636;
 }
 /* line 25, ../scss/modules/panels/_themes.scss */
-.panel > header, .panel > hgroup, .panel .panel-header {
+.panel > header, .modal > header, .panel > hgroup, .modal > hgroup, .panel .panel-header, .modal .panel-header {
   background-color: #efefef;
   border-color: #e2e2e2;
   color: #363636;
 }
 /* line 31, ../scss/modules/panels/_themes.scss */
-.panel > section, .panel > .panel-body {
+.panel > section, .modal > section, .panel > .panel-body, .modal > .panel-body {
   background-color: white;
   color: #363636;
 }
 /* line 36, ../scss/modules/panels/_themes.scss */
-.panel > footer, .panel > .panel-footer {
+.panel > footer, .modal > footer, .panel > .panel-footer, .modal > .panel-footer {
   background-color: #efefef;
   border-color: #e2e2e2;
   color: #363636;
 }
 /* line 50, ../scss/modules/panels/_themes.scss */
-.primary.panel {
+.primary.panel, .primary.modal {
   background-color: #024959;
   border-color: #013540;
   color: #efefef;
 }
 /* line 25, ../scss/modules/panels/_themes.scss */
-.primary.panel > header, .primary.panel > hgroup, .primary.panel .panel-header {
+.primary.panel > header, .primary.modal > header, .primary.panel > hgroup, .primary.modal > hgroup, .primary.panel .panel-header, .primary.modal .panel-header {
   background-color: #024959;
   border-color: #013540;
   color: #efefef;
 }
 /* line 31, ../scss/modules/panels/_themes.scss */
-.primary.panel > section, .primary.panel > .panel-body {
+.primary.panel > section, .primary.modal > section, .primary.panel > .panel-body, .primary.modal > .panel-body {
   background-color: white;
   color: #363636;
 }
 /* line 36, ../scss/modules/panels/_themes.scss */
-.primary.panel > footer, .primary.panel > .panel-footer {
+.primary.panel > footer, .primary.modal > footer, .primary.panel > .panel-footer, .primary.modal > .panel-footer {
   background-color: #024959;
   border-color: #013540;
   color: #efefef;
 }
 /* line 51, ../scss/modules/panels/_themes.scss */
-.secondary.panel {
+.secondary.panel, .secondary.modal {
   background-color: #e74c30;
   border-color: #e3391a;
   color: #efefef;
 }
 /* line 25, ../scss/modules/panels/_themes.scss */
-.secondary.panel > header, .secondary.panel > hgroup, .secondary.panel .panel-header {
+.secondary.panel > header, .secondary.modal > header, .secondary.panel > hgroup, .secondary.modal > hgroup, .secondary.panel .panel-header, .secondary.modal .panel-header {
   background-color: #e74c30;
   border-color: #e3391a;
   color: #efefef;
 }
 /* line 31, ../scss/modules/panels/_themes.scss */
-.secondary.panel > section, .secondary.panel > .panel-body {
+.secondary.panel > section, .secondary.modal > section, .secondary.panel > .panel-body, .secondary.modal > .panel-body {
   background-color: white;
   color: #363636;
 }
 /* line 36, ../scss/modules/panels/_themes.scss */
-.secondary.panel > footer, .secondary.panel > .panel-footer {
+.secondary.panel > footer, .secondary.modal > footer, .secondary.panel > .panel-footer, .secondary.modal > .panel-footer {
   background-color: #e74c30;
   border-color: #e3391a;
   color: #efefef;
 }
 /* line 52, ../scss/modules/panels/_themes.scss */
-.light.panel {
+.light.panel, .light.modal {
   background-color: #efefef;
   border-color: #e2e2e2;
   color: #363636;
 }
 /* line 25, ../scss/modules/panels/_themes.scss */
-.light.panel > header, .light.panel > hgroup, .light.panel .panel-header {
+.light.panel > header, .light.modal > header, .light.panel > hgroup, .light.modal > hgroup, .light.panel .panel-header, .light.modal .panel-header {
   background-color: #efefef;
   border-color: #e2e2e2;
   color: #363636;
 }
 /* line 31, ../scss/modules/panels/_themes.scss */
-.light.panel > section, .light.panel > .panel-body {
+.light.panel > section, .light.modal > section, .light.panel > .panel-body, .light.modal > .panel-body {
   background-color: white;
   color: #363636;
 }
 /* line 36, ../scss/modules/panels/_themes.scss */
-.light.panel > footer, .light.panel > .panel-footer {
+.light.panel > footer, .light.modal > footer, .light.panel > .panel-footer, .light.modal > .panel-footer {
   background-color: #efefef;
   border-color: #e2e2e2;
   color: #363636;
 }
 /* line 53, ../scss/modules/panels/_themes.scss */
-.dark.panel {
+.dark.panel, .dark.modal {
   background-color: #363636;
   border-color: #292929;
   color: #efefef;
 }
 /* line 25, ../scss/modules/panels/_themes.scss */
-.dark.panel > header, .dark.panel > hgroup, .dark.panel .panel-header {
+.dark.panel > header, .dark.modal > header, .dark.panel > hgroup, .dark.modal > hgroup, .dark.panel .panel-header, .dark.modal .panel-header {
   background-color: #363636;
   border-color: #292929;
   color: #efefef;
 }
 /* line 31, ../scss/modules/panels/_themes.scss */
-.dark.panel > section, .dark.panel > .panel-body {
+.dark.panel > section, .dark.modal > section, .dark.panel > .panel-body, .dark.modal > .panel-body {
   background-color: white;
   color: #363636;
 }
 /* line 36, ../scss/modules/panels/_themes.scss */
-.dark.panel > footer, .dark.panel > .panel-footer {
+.dark.panel > footer, .dark.modal > footer, .dark.panel > .panel-footer, .dark.modal > .panel-footer {
   background-color: #363636;
   border-color: #292929;
   color: #efefef;
 }
 /* line 55, ../scss/modules/panels/_themes.scss */
-.success.panel {
+.success.panel, .success.modal {
   background-color: #96cc69;
   border-color: #89c656;
   color: #efefef;
 }
 /* line 25, ../scss/modules/panels/_themes.scss */
-.success.panel > header, .success.panel > hgroup, .success.panel .panel-header {
+.success.panel > header, .success.modal > header, .success.panel > hgroup, .success.modal > hgroup, .success.panel .panel-header, .success.modal .panel-header {
   background-color: #96cc69;
   border-color: #89c656;
   color: #efefef;
 }
 /* line 31, ../scss/modules/panels/_themes.scss */
-.success.panel > section, .success.panel > .panel-body {
+.success.panel > section, .success.modal > section, .success.panel > .panel-body, .success.modal > .panel-body {
   background-color: white;
   color: #363636;
 }
 /* line 36, ../scss/modules/panels/_themes.scss */
-.success.panel > footer, .success.panel > .panel-footer {
+.success.panel > footer, .success.modal > footer, .success.panel > .panel-footer, .success.modal > .panel-footer {
   background-color: #96cc69;
   border-color: #89c656;
   color: #efefef;
 }
 /* line 56, ../scss/modules/panels/_themes.scss */
-.warning.panel {
+.warning.panel, .warning.modal {
   background-color: #ffcc5c;
   border-color: #ffc443;
   color: #363636;
 }
 /* line 25, ../scss/modules/panels/_themes.scss */
-.warning.panel > header, .warning.panel > hgroup, .warning.panel .panel-header {
+.warning.panel > header, .warning.modal > header, .warning.panel > hgroup, .warning.modal > hgroup, .warning.panel .panel-header, .warning.modal .panel-header {
   background-color: #ffcc5c;
   border-color: #ffc443;
   color: #363636;
 }
 /* line 31, ../scss/modules/panels/_themes.scss */
-.warning.panel > section, .warning.panel > .panel-body {
+.warning.panel > section, .warning.modal > section, .warning.panel > .panel-body, .warning.modal > .panel-body {
   background-color: white;
   color: #363636;
 }
 /* line 36, ../scss/modules/panels/_themes.scss */
-.warning.panel > footer, .warning.panel > .panel-footer {
+.warning.panel > footer, .warning.modal > footer, .warning.panel > .panel-footer, .warning.modal > .panel-footer {
   background-color: #ffcc5c;
   border-color: #ffc443;
   color: #363636;
 }
 /* line 57, ../scss/modules/panels/_themes.scss */
-.failure.panel {
+.failure.panel, .failure.modal {
   background-color: #c44741;
   border-color: #b43d38;
   color: #efefef;
 }
 /* line 25, ../scss/modules/panels/_themes.scss */
-.failure.panel > header, .failure.panel > hgroup, .failure.panel .panel-header {
+.failure.panel > header, .failure.modal > header, .failure.panel > hgroup, .failure.modal > hgroup, .failure.panel .panel-header, .failure.modal .panel-header {
   background-color: #c44741;
   border-color: #b43d38;
   color: #efefef;
 }
 /* line 31, ../scss/modules/panels/_themes.scss */
-.failure.panel > section, .failure.panel > .panel-body {
+.failure.panel > section, .failure.modal > section, .failure.panel > .panel-body, .failure.modal > .panel-body {
   background-color: white;
   color: #363636;
 }
 /* line 36, ../scss/modules/panels/_themes.scss */
-.failure.panel > footer, .failure.panel > .panel-footer {
+.failure.panel > footer, .failure.modal > footer, .failure.panel > .panel-footer, .failure.modal > .panel-footer {
   background-color: #c44741;
   border-color: #b43d38;
   color: #efefef;

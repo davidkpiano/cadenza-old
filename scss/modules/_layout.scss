@@ -26,49 +26,59 @@
 ) {
     position: absolute;
 
-    @if $vertical {    
-        @if $vertical == top {
-            top: 0;
-            bottom: inherit;
+    @if $vertical == center and $horizontal == center {
+        top: 50%;
+        left: 50%;
+        bottom: inherit;
+        right: inherit;
+        @include experimental(transform, translateX(-50%) translateY(-50%));
+    } 
+    @else {    
+        @if $vertical {    
+            @if $vertical == top {
+                top: 0;
+                bottom: inherit;
+            }
+            @else if $vertical == bottom {
+                bottom: 0;
+                top: inherit;
+            }
+            @else if $vertical == below {
+                top: 100%;
+                bottom: inherit;
+            }
+            @else if $vertical == above {
+                bottom: 100%;
+                top: inherit;
+            }
+            @else if $vertical == center {
+                top: 50%;
+                @include experimental(transform, translateY(-50%));
+                bottom: inherit;
+            }
+            @else {
+                top: $vertical;
+                bottom: inherit;
+            }
         }
-        @else if $vertical == bottom {
-            bottom: 0;
-            top: inherit;
-        }
-        @else if $vertical == below {
-            top: 100%;
-            bottom: inherit;
-        }
-        @else if $vertical == above {
-            bottom: 100%;
-            top: inherit;
-        }
-        @else if $vertical == center {
-            top: 50%;
-            @include experimental(transform, translateY(-50%));
-            bottom: inherit;
-        }
-        @else {
-            top: $vertical;
-            bottom: inherit;
+
+        @if $horizontal {
+            @if $horizontal == left { 
+                left: 0;
+                right: inherit;
+            }
+            @else if $horizontal == right {
+                right: 0;
+                left: inherit;
+            }
+            @else if $horizontal == center {
+                left: 50%;
+                @include experimental(transform, translateX(-50%));
+            }
+            @else { left: $horizontal; }
         }
     }
 
-    @if $horizontal {
-        @if $horizontal == left { 
-            left: 0;
-            right: inherit;
-        }
-        @else if $horizontal == right {
-            right: 0;
-            left: inherit;
-        }
-        @else if $horizontal == center {
-            left: 50%;
-            @include experimental(transform, translateX(-50%));
-        }
-        @else { left: $horizontal; }
-    }
 
     @if $top {
         top: $top;
@@ -213,208 +223,6 @@ html {
 *, *:before, *:after {
     position: relative;
     @extend %border-box;
-}
-
-
-// layout mixin must follow this structure:
-// <body>
-//   <header></header>
-//   <section></section>
-//   <footer></footer>
-// </body>
-// THIS IS IE 9+ AND MODERN BROWSERS ONLY
-@mixin layout-fixed(
-    $header: 0px,
-    $footer: 0px,
-    $left-aside: 0px,
-    $right-aside: 0px
-) {
-    position: absolute;
-    height: 100%;
-    max-height: 100%;
-    width: 100%;
-    top: 0;
-    bottom: 0;
-
-    > header, > footer {
-        position: fixed;
-        width: 100%;
-        z-index: 2;
-    }
-
-    > header {
-        height: $header;
-        top: 0;
-    }
-
-    @if $footer > 0 { 
-        > footer {
-            height: $footer; 
-            bottom: 0;
-        }
-
-        &:after {
-            content: "";
-            display: block;
-            height: 1px;
-            margin-top: -1px;
-        }
-    }
-
-    @if $left-aside > 0 or $right-aside > 0 {
-        > aside {
-            position: fixed;
-            min-height: calc(100% - #{$header} - #{$footer});
-            top: $header;
-            bottom: $footer;
-
-            @if $left-aside > 0 and $right-aside <= 0 {
-                left: 0;
-                width: $left-aside;
-            } @else if $right-aside > 0 and $left-aside <= 0 {
-                right: 0;
-                width: $right-aside;
-            } @else {         
-                &:first-of-type {
-                    left: 0;
-                    width: $left-aside;
-                }
-
-                &:nth-of-type(2) {
-                    right: 0;
-                    width: $right-aside;
-                }
-            }
-        }
-    }
-
-    > section {
-        @extend %row;
-        width: auto;
-        min-height: calc(100% - #{$header} - #{$footer});
-        min-width: calc(100% - #{$left-aside} - #{$right-aside});
-        margin-left: $left-aside;
-        margin-right: $right-aside;
-        overflow: auto;
-
-        &:first-of-type {
-            margin-top: $header;
-        }
-
-        &:last-of-type {
-            margin-bottom: $footer;
-        }
-    }
-}
-
-@mixin layout(
-    $header: 0px,
-    $footer: 0px,
-    $left-sidebar: 0px,
-    $right-sidebar: 0px
-) {
-    > section, > header, > footer, > aside {
-        @extend %scroll;
-        position: relative;
-    }
-
-    > header, > footer {
-        z-index: 3; // Active pages are z-index 2
-    }
-
-    > aside {
-        height: 100%;
-    }
-
-    @if $header > 0 or $footer > 0 {
-        > header {
-            height: $header;
-        }
-
-        > footer {
-            height: $footer;
-        }
-
-        > section {
-            height: calc(100% - #{$header} - #{$footer});
-        }
-    } @else {
-        > section {
-            height: 100%;
-        }
-    }
-
-    @if $left-sidebar > 0 or $right-sidebar > 0 {
-        > aside, > section {
-            float: left;
-        }
-
-        > aside {
-            width: $left-sidebar;
-        }
-
-        > section + aside {
-            width: $right-sidebar;
-        }
-
-        > section {
-            width: calc(100% - #{$left-sidebar} - #{$right-sidebar});
-        }
-    } @else {
-        > section {
-            width: 100%;
-        }
-    }
-}
-
-@mixin header-fixed($height: false) {
-    @if $height {
-        position: fixed;
-        width: 100%;
-        left: 0;
-        z-index: 2;
-        height: $height;
-        overflow: hidden;
-
-        + * {
-            margin-top: $height;
-            height: calc(100% - #{$height});
-        }
-    }
-}
-
-@mixin inline-layout(
-    $left: 0px,
-    $middle: 0px,
-    $right: 0px
-) {
-    @if $left == fill {
-        > *:first-child {
-            width: calc(100% - (#{$middle} + #{$right}));
-        }
-        *:first-child + * { width: $middle; }
-        *:last-child { width: $right; }
-    } @else if $middle == fill {
-        *:first-child { width: $left; }
-        > *:first-child + * {
-            width: calc(100% - (#{$left} + #{$right}));
-        }
-        *:last-child { width: $right; }
-    } @else if $right == fill {
-        *:first-child { width: $left; }
-        *:first-child + * { width: $middle; }
-        > *:last-child {
-            width: calc(100% - (#{$left} + #{$middle}));
-        }
-    } @else {
-        *:first-child { width: $left; }
-        *:first-child + * { width: $middle; }
-        *:last-child { width: $right; }
-    }
-}
-
-header, footer, section {
-    @extend %grid;
 }
 
 .block {

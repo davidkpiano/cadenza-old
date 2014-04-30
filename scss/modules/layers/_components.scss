@@ -2,6 +2,44 @@
 // Layers Components
 // =================
 
+%layer {
+    @include position-absolute(0, 0);
+    @include pie-clearfix;
+    height: 100%;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+}
 
+%overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    margin: 0;
+}
+
+%page {
+    @include position-absolute(0, 0);
+    @include pie-clearfix;
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+}
+
+%container {
+    @include pie-clearfix;
+    width: 100%;
+
+    @if $container-max-width or $container-min-width {
+        max-width: $container-max-width;
+        min-width: $container-min-width;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 
