@@ -8,10 +8,12 @@ $theme-mode: 'light' !default;
 // (name, color, is-dark)
 // TODO: use maps (SASS 3.3)
 $theme-colors: (
-    ('light', $color-light, false),
-    ('dark', $color-dark, true),
-    ('primary', $color-primary, is-dark($color-primary)),
-    ('secondary', $color-secondary, is-dark($color-secondary))
+    ('light', $color-light),
+    ('dark', $color-dark),
+    ('primary', $color-primary),
+    ('secondary', $color-secondary),
+    ('lighten', rgba(255,255,255,0.3)),
+    ('darken', rgba(0,0,0,0.3))
 );
 
 

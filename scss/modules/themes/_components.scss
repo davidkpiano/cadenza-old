@@ -5,7 +5,7 @@
 @each $theme-color in $theme-colors {
     $name: nth($theme-color, 1);
     $color: nth($theme-color, 2);
-    $mode: if(nth($theme-color, 3), 'dark', 'light');
+    $mode: if(is-dark($color), 'dark', 'light');
 
     %theme-#{$name} {
         background-color: $color;

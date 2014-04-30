@@ -28,7 +28,7 @@ nav, .nav {
 	@include dropdown-style();
 	@extend %dropdown-container;
 
-	> .dropdown {
+	> menu, > .dropdown {
 		@extend %dropdown;
 
 		li {
