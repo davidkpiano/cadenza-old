@@ -22,6 +22,10 @@
 			> .col-#{$i}#{$suffix} {
 				@extend %column-gutter-#{$i}#{$suffix};
 			}
+
+			> .col-offset-#{$i}#{$suffix} {
+				@extend %column-gutter-offset-#{$i}#{$suffix};
+			}
 		}
 
 		.cols-#{$i}#{$suffix}, .columns-#{$i}#{$suffix} {

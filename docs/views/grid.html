@@ -1,0 +1,23 @@
+<h1>Grid Module</h1>
+
+<h2>Columns</h2>
+<div class="field button-group buttons-tiny">
+    <input type="radio" name="component.grid.columns.class1" ng-model="component.grid.columns.class1" value="cols-gutter" id="columns.cols_gutter">
+    <label class="button" for="columns.cols_gutter">cols-gutter</label>
+    <input type="radio" name="component.grid.columns.class1" ng-model="component.grid.columns.class1" value="" id="columns.default">
+    <label class="button" for="columns.default"><em>default</em></label>
+</div>
+<div class="row-1 field {{component.grid.columns.class1}}" ng-repeat="col_width in [12,6,4,3,2,1]">
+    <div ng-repeat="col in component.util.range(12/col_width)" class="theme-secondary col-{{col_width}}">col-{{col_width}}</div>
+</div>
+
+<h2>Column Offset</h2>
+<div class="field">
+    <strong>Column Width: </strong><input type="number" name="component.grid.column.class1" ng-model="component.grid.column.class1" min="1" max="12">
+</div>
+<div class="field">
+    <strong>Offset: </strong><input type="number" name="component.grid.column.class2" ng-model="component.grid.column.class2" min="0" max="{{12 - component.grid.column.class1}}">
+</div>
+<div class="row-1 field {{component.grid.columns.class1}}">
+    <div class="theme-secondary col-{{component.grid.column.class1}} col-offset-{{component.grid.column.class2}}">col-{{component.grid.column.class1}} col-offset-{{component.grid.column.class2}}</div>
+</div>

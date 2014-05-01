@@ -3,7 +3,7 @@
 // =============
 
 textarea,
-input {
+input:not[type=radio] {
 	@extend %input;
 	@include input-style();
 

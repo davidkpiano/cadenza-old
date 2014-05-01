@@ -22,6 +22,12 @@ button, .button, input[type=button], input[type=submit] {
     &.full { @extend %button-full; }
 }
 
+// Button Parent Classes
+.buttons-tiny { @extend %buttons-tiny; }
+.buttons-small { @extend %buttons-small; }
+.buttons-large { @extend %buttons-large; }
+.buttons-huge { @extend %buttons-huge; }
+
 .button-group {
     @extend %button-group;
 

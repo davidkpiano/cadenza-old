@@ -26,25 +26,25 @@
     text-decoration: none;
 }
 
-%button-tiny {
+%button-tiny, %buttons-tiny > %button {
     @extend %button;
     @include type-scale($button-tiny-scale);
     padding: $button-tiny-padding;
 }
 
-%button-small {
+%button-small, %buttons-small > %button {
     @extend %button;
     @include type-scale($button-small-scale);
     padding: $button-small-padding;
 }
 
-%button-large {
+%button-large, %buttons-large > %button {
     @extend %button;
     @include type-scale($button-large-scale);
     padding: $button-large-padding;
 }
 
-%button-huge {
+%button-huge, %buttons-huge > %button {
     @extend %button;
     @include type-scale($button-huge-scale);
     padding: $button-huge-padding;
