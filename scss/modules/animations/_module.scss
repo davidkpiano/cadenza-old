@@ -9,10 +9,10 @@ $animation-timing-function: ease-in-out !default;
 $animation-perspective: 1000 !default;
 
 // Activation Settings
-$activation-item-selector: '.page' !default;
+$activation-item-selector: '[ui-view]' !default;
 $inert-selector: '.inert' !default; 
-$active-selector: '.active' !default;
-$inactive-selector: '.inactive' !default;
+$active-selector: '.ng-enter' !default;
+$inactive-selector: '.ng-leave' !default;
 $active-z-index: 2 !default;
 $inactive-z-index: 0 !default;
 

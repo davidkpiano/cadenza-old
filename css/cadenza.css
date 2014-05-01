@@ -5745,79 +5745,78 @@ dl dd {
 }
 
 /* line 17, ../scss/modules/type/_themes.scss */
-body, .theme-light, .theme-lighten {
+body, .theme-light, .theme-white, .theme-lighten {
   color: #363636;
 }
 /* line 20, ../scss/modules/type/_themes.scss */
-body p, body ul, body ol, body dl, .theme-light p, .theme-lighten p, .theme-light ul, .theme-lighten ul, .theme-light ol, .theme-lighten ol, .theme-light dl, .theme-lighten dl {
+body p, body ul, body ol, body dl, .theme-light p, .theme-white p, .theme-lighten p, .theme-light ul, .theme-white ul, .theme-lighten ul, .theme-light ol, .theme-white ol, .theme-lighten ol, .theme-light dl, .theme-white dl, .theme-lighten dl {
   color: #363636;
 }
 /* line 23, ../scss/modules/type/_themes.scss */
-.theme-dark, .theme-primary, .theme-secondary, .theme-darken {
+.theme-dark, .theme-primary, .theme-secondary, .theme-black, .theme-darken {
   color: #efefef;
 }
 /* line 26, ../scss/modules/type/_themes.scss */
-.theme-dark p, .theme-primary p, .theme-secondary p, .theme-darken p, .theme-dark ul, .theme-primary ul, .theme-secondary ul, .theme-darken ul, .theme-dark ol, .theme-primary ol, .theme-secondary ol, .theme-darken ol, .theme-dark dl, .theme-primary dl, .theme-secondary dl, .theme-darken dl {
+.theme-dark p, .theme-primary p, .theme-secondary p, .theme-black p, .theme-darken p, .theme-dark ul, .theme-primary ul, .theme-secondary ul, .theme-black ul, .theme-darken ul, .theme-dark ol, .theme-primary ol, .theme-secondary ol, .theme-black ol, .theme-darken ol, .theme-dark dl, .theme-primary dl, .theme-secondary dl, .theme-black dl, .theme-darken dl {
   color: #efefef;
 }
 
 /* line 49, ../scss/modules/type/_themes.scss */
-body h1, body .h1, body h2, body .h2, body h3, body .h3, body h4, body .h4, body h5, body .h5, body h6, body .h6, body.h1, body.h2, body.h3, body.h4, body.h5, body.h6, .theme-light h1, .theme-lighten h1, .theme-light .h1, .theme-lighten .h1, .theme-light h2, .theme-lighten h2, .theme-light .h2, .theme-lighten .h2, .theme-light h3, .theme-lighten h3, .theme-light .h3, .theme-lighten .h3, .theme-light h4, .theme-lighten h4, .theme-light .h4, .theme-lighten .h4, .theme-light h5, .theme-lighten h5, .theme-light .h5, .theme-lighten .h5, .theme-light h6, .theme-lighten h6, .theme-light .h6, .theme-lighten .h6, h1.theme-light, h1.theme-lighten, .h1.theme-light, .h1.theme-lighten, h2.theme-light, h2.theme-lighten, .h2.theme-light, .h2.theme-lighten, h3.theme-light, h3.theme-lighten, .h3.theme-light, .h3.theme-lighten, h4.theme-light, h4.theme-lighten, .h4.theme-light, .h4.theme-lighten, h5.theme-light, h5.theme-lighten, .h5.theme-light, .h5.theme-lighten, h6.theme-light, h6.theme-lighten, .h6.theme-light, .h6.theme-lighten {
+body h1, body .h1, body h2, body .h2, body h3, body .h3, body h4, body .h4, body h5, body .h5, body h6, body .h6, body.h1, body.h2, body.h3, body.h4, body.h5, body.h6, .theme-light h1, .theme-white h1, .theme-lighten h1, .theme-light .h1, .theme-white .h1, .theme-lighten .h1, .theme-light h2, .theme-white h2, .theme-lighten h2, .theme-light .h2, .theme-white .h2, .theme-lighten .h2, .theme-light h3, .theme-white h3, .theme-lighten h3, .theme-light .h3, .theme-white .h3, .theme-lighten .h3, .theme-light h4, .theme-white h4, .theme-lighten h4, .theme-light .h4, .theme-white .h4, .theme-lighten .h4, .theme-light h5, .theme-white h5, .theme-lighten h5, .theme-light .h5, .theme-white .h5, .theme-lighten .h5, .theme-light h6, .theme-white h6, .theme-lighten h6, .theme-light .h6, .theme-white .h6, .theme-lighten .h6, h1.theme-light, h1.theme-white, h1.theme-lighten, .h1.theme-light, .h1.theme-white, .h1.theme-lighten, h2.theme-light, h2.theme-white, h2.theme-lighten, .h2.theme-light, .h2.theme-white, .h2.theme-lighten, h3.theme-light, h3.theme-white, h3.theme-lighten, .h3.theme-light, .h3.theme-white, .h3.theme-lighten, h4.theme-light, h4.theme-white, h4.theme-lighten, .h4.theme-light, .h4.theme-white, .h4.theme-lighten, h5.theme-light, h5.theme-white, h5.theme-lighten, .h5.theme-light, .h5.theme-white, .h5.theme-lighten, h6.theme-light, h6.theme-white, h6.theme-lighten, .h6.theme-light, .h6.theme-white, .h6.theme-lighten {
   color: #363636;
 }
 /* line 53, ../scss/modules/type/_themes.scss */
-body h1.sub, body h1.subheading, body .h1.sub, body .h1.subheading, body h2.sub, body h2.subheading, body .h2.sub, body .h2.subheading, body h3.sub, body h3.subheading, body .h3.sub, body .h3.subheading, body h4.sub, body h4.subheading, body .h4.sub, body .h4.subheading, body h1 > small, body h1 > .small, body .h1 > small, body .h1 > .small, body h2 > small, body h2 > .small, body .h2 > small, body .h2 > .small, body h3 > small, body h3 > .small, body .h3 > small, body .h3 > .small, body h4 > small, body h4 > .small, body .h4 > small, body .h4 > .small, body.h1.sub, body.h1.subheading, body.h2.sub, body.h2.subheading, body.h3.sub, body.h3.subheading, body.h4.sub, body.h4.subheading, h1 > body.small, .h1 > body.small, h2 > body.small, .h2 > body.small, h3 > body.small, .h3 > body.small, h4 > body.small, .h4 > body.small, .theme-light h1.sub, .theme-lighten h1.sub, .theme-light h1.subheading, .theme-lighten h1.subheading, .theme-light .h1.sub, .theme-lighten .h1.sub, .theme-light .h1.subheading, .theme-lighten .h1.subheading, .theme-light h2.sub, .theme-lighten h2.sub, .theme-light h2.subheading, .theme-lighten h2.subheading, .theme-light .h2.sub, .theme-lighten .h2.sub, .theme-light .h2.subheading, .theme-lighten .h2.subheading, .theme-light h3.sub, .theme-lighten h3.sub, .theme-light h3.subheading, .theme-lighten h3.subheading, .theme-light .h3.sub, .theme-lighten .h3.sub, .theme-light .h3.subheading, .theme-lighten .h3.subheading, .theme-light h4.sub, .theme-lighten h4.sub, .theme-light h4.subheading, .theme-lighten h4.subheading, .theme-light .h4.sub, .theme-lighten .h4.sub, .theme-light .h4.subheading, .theme-lighten .h4.subheading, .theme-light h1 > small, .theme-lighten h1 > small, .theme-light h1 > .small, .theme-lighten h1 > .small, .theme-light .h1 > small, .theme-lighten .h1 > small, .theme-light .h1 > .small, .theme-lighten .h1 > .small, .theme-light h2 > small, .theme-lighten h2 > small, .theme-light h2 > .small, .theme-lighten h2 > .small, .theme-light .h2 > small, .theme-lighten .h2 > small, .theme-light .h2 > .small, .theme-lighten .h2 > .small, .theme-light h3 > small, .theme-lighten h3 > small, .theme-light h3 > .small, .theme-lighten h3 > .small, .theme-light .h3 > small, .theme-lighten .h3 > small, .theme-light .h3 > .small, .theme-lighten .h3 > .small, .theme-light h4 > small, .theme-lighten h4 > small, .theme-light h4 > .small, .theme-lighten h4 > .small, .theme-light .h4 > small, .theme-lighten .h4 > small, .theme-light .h4 > .small, .theme-lighten .h4 > .small, h1.sub.theme-light, h1.sub.theme-lighten, h1.subheading.theme-light, h1.subheading.theme-lighten, .h1.sub.theme-light, .h1.sub.theme-lighten, .h1.subheading.theme-light, .h1.subheading.theme-lighten, h2.sub.theme-light, h2.sub.theme-lighten, h2.subheading.theme-light, h2.subheading.theme-lighten, .h2.sub.theme-light, .h2.sub.theme-lighten, .h2.subheading.theme-light, .h2.subheading.theme-lighten, h3.sub.theme-light, h3.sub.theme-lighten, h3.subheading.theme-light, h3.subheading.theme-lighten, .h3.sub.theme-light, .h3.sub.theme-lighten, .h3.subheading.theme-light, .h3.subheading.theme-lighten, h4.sub.theme-light, h4.sub.theme-lighten, h4.subheading.theme-light, h4.subheading.theme-lighten, .h4.sub.theme-light, .h4.sub.theme-lighten, .h4.subheading.theme-light, .h4.subheading.theme-lighten, h1 > small.theme-light, h1 > small.theme-lighten, h1 > .small.theme-light, h1 > .small.theme-lighten, .h1 > small.theme-light, .h1 > small.theme-lighten, .h1 > .small.theme-light, .h1 > .small.theme-lighten, h2 > small.theme-light, h2 > small.theme-lighten, h2 > .small.theme-light, h2 > .small.theme-lighten, .h2 > small.theme-light, .h2 > small.theme-lighten, .h2 > .small.theme-light, .h2 > .small.theme-lighten, h3 > small.theme-light, h3 > small.theme-lighten, h3 > .small.theme-light, h3 > .small.theme-lighten, .h3 > small.theme-light, .h3 > small.theme-lighten, .h3 > .small.theme-light, .h3 > .small.theme-lighten, h4 > small.theme-light, h4 > small.theme-lighten, h4 > .small.theme-light, h4 > .small.theme-lighten, .h4 > small.theme-light, .h4 > small.theme-lighten, .h4 > .small.theme-light, .h4 > .small.theme-lighten {
+body h1.sub, body h1.subheading, body .h1.sub, body .h1.subheading, body h2.sub, body h2.subheading, body .h2.sub, body .h2.subheading, body h3.sub, body h3.subheading, body .h3.sub, body .h3.subheading, body h4.sub, body h4.subheading, body .h4.sub, body .h4.subheading, body h1 > small, body h1 > .small, body .h1 > small, body .h1 > .small, body h2 > small, body h2 > .small, body .h2 > small, body .h2 > .small, body h3 > small, body h3 > .small, body .h3 > small, body .h3 > .small, body h4 > small, body h4 > .small, body .h4 > small, body .h4 > .small, body.h1.sub, body.h1.subheading, body.h2.sub, body.h2.subheading, body.h3.sub, body.h3.subheading, body.h4.sub, body.h4.subheading, h1 > body.small, .h1 > body.small, h2 > body.small, .h2 > body.small, h3 > body.small, .h3 > body.small, h4 > body.small, .h4 > body.small, .theme-light h1.sub, .theme-white h1.sub, .theme-lighten h1.sub, .theme-light h1.subheading, .theme-white h1.subheading, .theme-lighten h1.subheading, .theme-light .h1.sub, .theme-white .h1.sub, .theme-lighten .h1.sub, .theme-light .h1.subheading, .theme-white .h1.subheading, .theme-lighten .h1.subheading, .theme-light h2.sub, .theme-white h2.sub, .theme-lighten h2.sub, .theme-light h2.subheading, .theme-white h2.subheading, .theme-lighten h2.subheading, .theme-light .h2.sub, .theme-white .h2.sub, .theme-lighten .h2.sub, .theme-light .h2.subheading, .theme-white .h2.subheading, .theme-lighten .h2.subheading, .theme-light h3.sub, .theme-white h3.sub, .theme-lighten h3.sub, .theme-light h3.subheading, .theme-white h3.subheading, .theme-lighten h3.subheading, .theme-light .h3.sub, .theme-white .h3.sub, .theme-lighten .h3.sub, .theme-light .h3.subheading, .theme-white .h3.subheading, .theme-lighten .h3.subheading, .theme-light h4.sub, .theme-white h4.sub, .theme-lighten h4.sub, .theme-light h4.subheading, .theme-white h4.subheading, .theme-lighten h4.subheading, .theme-light .h4.sub, .theme-white .h4.sub, .theme-lighten .h4.sub, .theme-light .h4.subheading, .theme-white .h4.subheading, .theme-lighten .h4.subheading, .theme-light h1 > small, .theme-white h1 > small, .theme-lighten h1 > small, .theme-light h1 > .small, .theme-white h1 > .small, .theme-lighten h1 > .small, .theme-light .h1 > small, .theme-white .h1 > small, .theme-lighten .h1 > small, .theme-light .h1 > .small, .theme-white .h1 > .small, .theme-lighten .h1 > .small, .theme-light h2 > small, .theme-white h2 > small, .theme-lighten h2 > small, .theme-light h2 > .small, .theme-white h2 > .small, .theme-lighten h2 > .small, .theme-light .h2 > small, .theme-white .h2 > small, .theme-lighten .h2 > small, .theme-light .h2 > .small, .theme-white .h2 > .small, .theme-lighten .h2 > .small, .theme-light h3 > small, .theme-white h3 > small, .theme-lighten h3 > small, .theme-light h3 > .small, .theme-white h3 > .small, .theme-lighten h3 > .small, .theme-light .h3 > small, .theme-white .h3 > small, .theme-lighten .h3 > small, .theme-light .h3 > .small, .theme-white .h3 > .small, .theme-lighten .h3 > .small, .theme-light h4 > small, .theme-white h4 > small, .theme-lighten h4 > small, .theme-light h4 > .small, .theme-white h4 > .small, .theme-lighten h4 > .small, .theme-light .h4 > small, .theme-white .h4 > small, .theme-lighten .h4 > small, .theme-light .h4 > .small, .theme-white .h4 > .small, .theme-lighten .h4 > .small, h1.sub.theme-light, h1.sub.theme-white, h1.sub.theme-lighten, h1.subheading.theme-light, h1.subheading.theme-white, h1.subheading.theme-lighten, .h1.sub.theme-light, .h1.sub.theme-white, .h1.sub.theme-lighten, .h1.subheading.theme-light, .h1.subheading.theme-white, .h1.subheading.theme-lighten, h2.sub.theme-light, h2.sub.theme-white, h2.sub.theme-lighten, h2.subheading.theme-light, h2.subheading.theme-white, h2.subheading.theme-lighten, .h2.sub.theme-light, .h2.sub.theme-white, .h2.sub.theme-lighten, .h2.subheading.theme-light, .h2.subheading.theme-white, .h2.subheading.theme-lighten, h3.sub.theme-light, h3.sub.theme-white, h3.sub.theme-lighten, h3.subheading.theme-light, h3.subheading.theme-white, h3.subheading.theme-lighten, .h3.sub.theme-light, .h3.sub.theme-white, .h3.sub.theme-lighten, .h3.subheading.theme-light, .h3.subheading.theme-white, .h3.subheading.theme-lighten, h4.sub.theme-light, h4.sub.theme-white, h4.sub.theme-lighten, h4.subheading.theme-light, h4.subheading.theme-white, h4.subheading.theme-lighten, .h4.sub.theme-light, .h4.sub.theme-white, .h4.sub.theme-lighten, .h4.subheading.theme-light, .h4.subheading.theme-white, .h4.subheading.theme-lighten, h1 > small.theme-light, h1 > small.theme-white, h1 > small.theme-lighten, h1 > .small.theme-light, h1 > .small.theme-white, h1 > .small.theme-lighten, .h1 > small.theme-light, .h1 > small.theme-white, .h1 > small.theme-lighten, .h1 > .small.theme-light, .h1 > .small.theme-white, .h1 > .small.theme-lighten, h2 > small.theme-light, h2 > small.theme-white, h2 > small.theme-lighten, h2 > .small.theme-light, h2 > .small.theme-white, h2 > .small.theme-lighten, .h2 > small.theme-light, .h2 > small.theme-white, .h2 > small.theme-lighten, .h2 > .small.theme-light, .h2 > .small.theme-white, .h2 > .small.theme-lighten, h3 > small.theme-light, h3 > small.theme-white, h3 > small.theme-lighten, h3 > .small.theme-light, h3 > .small.theme-white, h3 > .small.theme-lighten, .h3 > small.theme-light, .h3 > small.theme-white, .h3 > small.theme-lighten, .h3 > .small.theme-light, .h3 > .small.theme-white, .h3 > .small.theme-lighten, h4 > small.theme-light, h4 > small.theme-white, h4 > small.theme-lighten, h4 > .small.theme-light, h4 > .small.theme-white, h4 > .small.theme-lighten, .h4 > small.theme-light, .h4 > small.theme-white, .h4 > small.theme-lighten, .h4 > .small.theme-light, .h4 > .small.theme-white, .h4 > .small.theme-lighten {
   color: #525252;
 }
 /* line 59, ../scss/modules/type/_themes.scss */
-.theme-dark h1, .theme-primary h1, .theme-secondary h1, .theme-darken h1, .theme-dark .h1, .theme-primary .h1, .theme-secondary .h1, .theme-darken .h1, .theme-dark h2, .theme-primary h2, .theme-secondary h2, .theme-darken h2, .theme-dark .h2, .theme-primary .h2, .theme-secondary .h2, .theme-darken .h2, .theme-dark h3, .theme-primary h3, .theme-secondary h3, .theme-darken h3, .theme-dark .h3, .theme-primary .h3, .theme-secondary .h3, .theme-darken .h3, .theme-dark h4, .theme-primary h4, .theme-secondary h4, .theme-darken h4, .theme-dark .h4, .theme-primary .h4, .theme-secondary .h4, .theme-darken .h4, .theme-dark h5, .theme-primary h5, .theme-secondary h5, .theme-darken h5, .theme-dark .h5, .theme-primary .h5, .theme-secondary .h5, .theme-darken .h5, .theme-dark h6, .theme-primary h6, .theme-secondary h6, .theme-darken h6, .theme-dark .h6, .theme-primary .h6, .theme-secondary .h6, .theme-darken .h6, h1.theme-dark, h1.theme-primary, h1.theme-secondary, h1.theme-darken, .h1.theme-dark, .h1.theme-primary, .h1.theme-secondary, .h1.theme-darken, h2.theme-dark, h2.theme-primary, h2.theme-secondary, h2.theme-darken, .h2.theme-dark, .h2.theme-primary, .h2.theme-secondary, .h2.theme-darken, h3.theme-dark, h3.theme-primary, h3.theme-secondary, h3.theme-darken, .h3.theme-dark, .h3.theme-primary, .h3.theme-secondary, .h3.theme-darken, h4.theme-dark, h4.theme-primary, h4.theme-secondary, h4.theme-darken, .h4.theme-dark, .h4.theme-primary, .h4.theme-secondary, .h4.theme-darken, h5.theme-dark, h5.theme-primary, h5.theme-secondary, h5.theme-darken, .h5.theme-dark, .h5.theme-primary, .h5.theme-secondary, .h5.theme-darken, h6.theme-dark, h6.theme-primary, h6.theme-secondary, h6.theme-darken, .h6.theme-dark, .h6.theme-primary, .h6.theme-secondary, .h6.theme-darken {
+.theme-dark h1, .theme-primary h1, .theme-secondary h1, .theme-black h1, .theme-darken h1, .theme-dark .h1, .theme-primary .h1, .theme-secondary .h1, .theme-black .h1, .theme-darken .h1, .theme-dark h2, .theme-primary h2, .theme-secondary h2, .theme-black h2, .theme-darken h2, .theme-dark .h2, .theme-primary .h2, .theme-secondary .h2, .theme-black .h2, .theme-darken .h2, .theme-dark h3, .theme-primary h3, .theme-secondary h3, .theme-black h3, .theme-darken h3, .theme-dark .h3, .theme-primary .h3, .theme-secondary .h3, .theme-black .h3, .theme-darken .h3, .theme-dark h4, .theme-primary h4, .theme-secondary h4, .theme-black h4, .theme-darken h4, .theme-dark .h4, .theme-primary .h4, .theme-secondary .h4, .theme-black .h4, .theme-darken .h4, .theme-dark h5, .theme-primary h5, .theme-secondary h5, .theme-black h5, .theme-darken h5, .theme-dark .h5, .theme-primary .h5, .theme-secondary .h5, .theme-black .h5, .theme-darken .h5, .theme-dark h6, .theme-primary h6, .theme-secondary h6, .theme-black h6, .theme-darken h6, .theme-dark .h6, .theme-primary .h6, .theme-secondary .h6, .theme-black .h6, .theme-darken .h6, h1.theme-dark, h1.theme-primary, h1.theme-secondary, h1.theme-black, h1.theme-darken, .h1.theme-dark, .h1.theme-primary, .h1.theme-secondary, .h1.theme-black, .h1.theme-darken, h2.theme-dark, h2.theme-primary, h2.theme-secondary, h2.theme-black, h2.theme-darken, .h2.theme-dark, .h2.theme-primary, .h2.theme-secondary, .h2.theme-black, .h2.theme-darken, h3.theme-dark, h3.theme-primary, h3.theme-secondary, h3.theme-black, h3.theme-darken, .h3.theme-dark, .h3.theme-primary, .h3.theme-secondary, .h3.theme-black, .h3.theme-darken, h4.theme-dark, h4.theme-primary, h4.theme-secondary, h4.theme-black, h4.theme-darken, .h4.theme-dark, .h4.theme-primary, .h4.theme-secondary, .h4.theme-black, .h4.theme-darken, h5.theme-dark, h5.theme-primary, h5.theme-secondary, h5.theme-black, h5.theme-darken, .h5.theme-dark, .h5.theme-primary, .h5.theme-secondary, .h5.theme-black, .h5.theme-darken, h6.theme-dark, h6.theme-primary, h6.theme-secondary, h6.theme-black, h6.theme-darken, .h6.theme-dark, .h6.theme-primary, .h6.theme-secondary, .h6.theme-black, .h6.theme-darken {
   color: #efefef;
 }
 /* line 63, ../scss/modules/type/_themes.scss */
-.theme-dark h1.sub, .theme-primary h1.sub, .theme-secondary h1.sub, .theme-darken h1.sub, .theme-dark h1.subheading, .theme-primary h1.subheading, .theme-secondary h1.subheading, .theme-darken h1.subheading, .theme-dark .h1.sub, .theme-primary .h1.sub, .theme-secondary .h1.sub, .theme-darken .h1.sub, .theme-dark .h1.subheading, .theme-primary .h1.subheading, .theme-secondary .h1.subheading, .theme-darken .h1.subheading, .theme-dark h2.sub, .theme-primary h2.sub, .theme-secondary h2.sub, .theme-darken h2.sub, .theme-dark h2.subheading, .theme-primary h2.subheading, .theme-secondary h2.subheading, .theme-darken h2.subheading, .theme-dark .h2.sub, .theme-primary .h2.sub, .theme-secondary .h2.sub, .theme-darken .h2.sub, .theme-dark .h2.subheading, .theme-primary .h2.subheading, .theme-secondary .h2.subheading, .theme-darken .h2.subheading, .theme-dark h3.sub, .theme-primary h3.sub, .theme-secondary h3.sub, .theme-darken h3.sub, .theme-dark h3.subheading, .theme-primary h3.subheading, .theme-secondary h3.subheading, .theme-darken h3.subheading, .theme-dark .h3.sub, .theme-primary .h3.sub, .theme-secondary .h3.sub, .theme-darken .h3.sub, .theme-dark .h3.subheading, .theme-primary .h3.subheading, .theme-secondary .h3.subheading, .theme-darken .h3.subheading, .theme-dark h4.sub, .theme-primary h4.sub, .theme-secondary h4.sub, .theme-darken h4.sub, .theme-dark h4.subheading, .theme-primary h4.subheading, .theme-secondary h4.subheading, .theme-darken h4.subheading, .theme-dark .h4.sub, .theme-primary .h4.sub, .theme-secondary .h4.sub, .theme-darken .h4.sub, .theme-dark .h4.subheading, .theme-primary .h4.subheading, .theme-secondary .h4.subheading, .theme-darken .h4.subheading, .theme-dark h1 > small, .theme-primary h1 > small, .theme-secondary h1 > small, .theme-darken h1 > small, .theme-dark h1 > .small, .theme-primary h1 > .small, .theme-secondary h1 > .small, .theme-darken h1 > .small, .theme-dark .h1 > small, .theme-primary .h1 > small, .theme-secondary .h1 > small, .theme-darken .h1 > small, .theme-dark .h1 > .small, .theme-primary .h1 > .small, .theme-secondary .h1 > .small, .theme-darken .h1 > .small, .theme-dark h2 > small, .theme-primary h2 > small, .theme-secondary h2 > small, .theme-darken h2 > small, .theme-dark h2 > .small, .theme-primary h2 > .small, .theme-secondary h2 > .small, .theme-darken h2 > .small, .theme-dark .h2 > small, .theme-primary .h2 > small, .theme-secondary .h2 > small, .theme-darken .h2 > small, .theme-dark .h2 > .small, .theme-primary .h2 > .small, .theme-secondary .h2 > .small, .theme-darken .h2 > .small, .theme-dark h3 > small, .theme-primary h3 > small, .theme-secondary h3 > small, .theme-darken h3 > small, .theme-dark h3 > .small, .theme-primary h3 > .small, .theme-secondary h3 > .small, .theme-darken h3 > .small, .theme-dark .h3 > small, .theme-primary .h3 > small, .theme-secondary .h3 > small, .theme-darken .h3 > small, .theme-dark .h3 > .small, .theme-primary .h3 > .small, .theme-secondary .h3 > .small, .theme-darken .h3 > .small, .theme-dark h4 > small, .theme-primary h4 > small, .theme-secondary h4 > small, .theme-darken h4 > small, .theme-dark h4 > .small, .theme-primary h4 > .small, .theme-secondary h4 > .small, .theme-darken h4 > .small, .theme-dark .h4 > small, .theme-primary .h4 > small, .theme-secondary .h4 > small, .theme-darken .h4 > small, .theme-dark .h4 > .small, .theme-primary .h4 > .small, .theme-secondary .h4 > .small, .theme-darken .h4 > .small, h1.sub.theme-dark, h1.sub.theme-primary, h1.sub.theme-secondary, h1.sub.theme-darken, h1.subheading.theme-dark, h1.subheading.theme-primary, h1.subheading.theme-secondary, h1.subheading.theme-darken, .h1.sub.theme-dark, .h1.sub.theme-primary, .h1.sub.theme-secondary, .h1.sub.theme-darken, .h1.subheading.theme-dark, .h1.subheading.theme-primary, .h1.subheading.theme-secondary, .h1.subheading.theme-darken, h2.sub.theme-dark, h2.sub.theme-primary, h2.sub.theme-secondary, h2.sub.theme-darken, h2.subheading.theme-dark, h2.subheading.theme-primary, h2.subheading.theme-secondary, h2.subheading.theme-darken, .h2.sub.theme-dark, .h2.sub.theme-primary, .h2.sub.theme-secondary, .h2.sub.theme-darken, .h2.subheading.theme-dark, .h2.subheading.theme-primary, .h2.subheading.theme-secondary, .h2.subheading.theme-darken, h3.sub.theme-dark, h3.sub.theme-primary, h3.sub.theme-secondary, h3.sub.theme-darken, h3.subheading.theme-dark, h3.subheading.theme-primary, h3.subheading.theme-secondary, h3.subheading.theme-darken, .h3.sub.theme-dark, .h3.sub.theme-primary, .h3.sub.theme-secondary, .h3.sub.theme-darken, .h3.subheading.theme-dark, .h3.subheading.theme-primary, .h3.subheading.theme-secondary, .h3.subheading.theme-darken, h4.sub.theme-dark, h4.sub.theme-primary, h4.sub.theme-secondary, h4.sub.theme-darken, h4.subheading.theme-dark, h4.subheading.theme-primary, h4.subheading.theme-secondary, h4.subheading.theme-darken, .h4.sub.theme-dark, .h4.sub.theme-primary, .h4.sub.theme-secondary, .h4.sub.theme-darken, .h4.subheading.theme-dark, .h4.subheading.theme-primary, .h4.subheading.theme-secondary, .h4.subheading.theme-darken, h1 > small.theme-dark, h1 > small.theme-primary, h1 > small.theme-secondary, h1 > small.theme-darken, h1 > .small.theme-dark, h1 > .small.theme-primary, h1 > .small.theme-secondary, h1 > .small.theme-darken, .h1 > small.theme-dark, .h1 > small.theme-primary, .h1 > small.theme-secondary, .h1 > small.theme-darken, .h1 > .small.theme-dark, .h1 > .small.theme-primary, .h1 > .small.theme-secondary, .h1 > .small.theme-darken, h2 > small.theme-dark, h2 > small.theme-primary, h2 > small.theme-secondary, h2 > small.theme-darken, h2 > .small.theme-dark, h2 > .small.theme-primary, h2 > .small.theme-secondary, h2 > .small.theme-darken, .h2 > small.theme-dark, .h2 > small.theme-primary, .h2 > small.theme-secondary, .h2 > small.theme-darken, .h2 > .small.theme-dark, .h2 > .small.theme-primary, .h2 > .small.theme-secondary, .h2 > .small.theme-darken, h3 > small.theme-dark, h3 > small.theme-primary, h3 > small.theme-secondary, h3 > small.theme-darken, h3 > .small.theme-dark, h3 > .small.theme-primary, h3 > .small.theme-secondary, h3 > .small.theme-darken, .h3 > small.theme-dark, .h3 > small.theme-primary, .h3 > small.theme-secondary, .h3 > small.theme-darken, .h3 > .small.theme-dark, .h3 > .small.theme-primary, .h3 > .small.theme-secondary, .h3 > .small.theme-darken, h4 > small.theme-dark, h4 > small.theme-primary, h4 > small.theme-secondary, h4 > small.theme-darken, h4 > .small.theme-dark, h4 > .small.theme-primary, h4 > .small.theme-secondary, h4 > .small.theme-darken, .h4 > small.theme-dark, .h4 > small.theme-primary, .h4 > small.theme-secondary, .h4 > small.theme-darken, .h4 > .small.theme-dark, .h4 > .small.theme-primary, .h4 > .small.theme-secondary, .h4 > .small.theme-darken {
+.theme-dark h1.sub, .theme-primary h1.sub, .theme-secondary h1.sub, .theme-black h1.sub, .theme-darken h1.sub, .theme-dark h1.subheading, .theme-primary h1.subheading, .theme-secondary h1.subheading, .theme-black h1.subheading, .theme-darken h1.subheading, .theme-dark .h1.sub, .theme-primary .h1.sub, .theme-secondary .h1.sub, .theme-black .h1.sub, .theme-darken .h1.sub, .theme-dark .h1.subheading, .theme-primary .h1.subheading, .theme-secondary .h1.subheading, .theme-black .h1.subheading, .theme-darken .h1.subheading, .theme-dark h2.sub, .theme-primary h2.sub, .theme-secondary h2.sub, .theme-black h2.sub, .theme-darken h2.sub, .theme-dark h2.subheading, .theme-primary h2.subheading, .theme-secondary h2.subheading, .theme-black h2.subheading, .theme-darken h2.subheading, .theme-dark .h2.sub, .theme-primary .h2.sub, .theme-secondary .h2.sub, .theme-black .h2.sub, .theme-darken .h2.sub, .theme-dark .h2.subheading, .theme-primary .h2.subheading, .theme-secondary .h2.subheading, .theme-black .h2.subheading, .theme-darken .h2.subheading, .theme-dark h3.sub, .theme-primary h3.sub, .theme-secondary h3.sub, .theme-black h3.sub, .theme-darken h3.sub, .theme-dark h3.subheading, .theme-primary h3.subheading, .theme-secondary h3.subheading, .theme-black h3.subheading, .theme-darken h3.subheading, .theme-dark .h3.sub, .theme-primary .h3.sub, .theme-secondary .h3.sub, .theme-black .h3.sub, .theme-darken .h3.sub, .theme-dark .h3.subheading, .theme-primary .h3.subheading, .theme-secondary .h3.subheading, .theme-black .h3.subheading, .theme-darken .h3.subheading, .theme-dark h4.sub, .theme-primary h4.sub, .theme-secondary h4.sub, .theme-black h4.sub, .theme-darken h4.sub, .theme-dark h4.subheading, .theme-primary h4.subheading, .theme-secondary h4.subheading, .theme-black h4.subheading, .theme-darken h4.subheading, .theme-dark .h4.sub, .theme-primary .h4.sub, .theme-secondary .h4.sub, .theme-black .h4.sub, .theme-darken .h4.sub, .theme-dark .h4.subheading, .theme-primary .h4.subheading, .theme-secondary .h4.subheading, .theme-black .h4.subheading, .theme-darken .h4.subheading, .theme-dark h1 > small, .theme-primary h1 > small, .theme-secondary h1 > small, .theme-black h1 > small, .theme-darken h1 > small, .theme-dark h1 > .small, .theme-primary h1 > .small, .theme-secondary h1 > .small, .theme-black h1 > .small, .theme-darken h1 > .small, .theme-dark .h1 > small, .theme-primary .h1 > small, .theme-secondary .h1 > small, .theme-black .h1 > small, .theme-darken .h1 > small, .theme-dark .h1 > .small, .theme-primary .h1 > .small, .theme-secondary .h1 > .small, .theme-black .h1 > .small, .theme-darken .h1 > .small, .theme-dark h2 > small, .theme-primary h2 > small, .theme-secondary h2 > small, .theme-black h2 > small, .theme-darken h2 > small, .theme-dark h2 > .small, .theme-primary h2 > .small, .theme-secondary h2 > .small, .theme-black h2 > .small, .theme-darken h2 > .small, .theme-dark .h2 > small, .theme-primary .h2 > small, .theme-secondary .h2 > small, .theme-black .h2 > small, .theme-darken .h2 > small, .theme-dark .h2 > .small, .theme-primary .h2 > .small, .theme-secondary .h2 > .small, .theme-black .h2 > .small, .theme-darken .h2 > .small, .theme-dark h3 > small, .theme-primary h3 > small, .theme-secondary h3 > small, .theme-black h3 > small, .theme-darken h3 > small, .theme-dark h3 > .small, .theme-primary h3 > .small, .theme-secondary h3 > .small, .theme-black h3 > .small, .theme-darken h3 > .small, .theme-dark .h3 > small, .theme-primary .h3 > small, .theme-secondary .h3 > small, .theme-black .h3 > small, .theme-darken .h3 > small, .theme-dark .h3 > .small, .theme-primary .h3 > .small, .theme-secondary .h3 > .small, .theme-black .h3 > .small, .theme-darken .h3 > .small, .theme-dark h4 > small, .theme-primary h4 > small, .theme-secondary h4 > small, .theme-black h4 > small, .theme-darken h4 > small, .theme-dark h4 > .small, .theme-primary h4 > .small, .theme-secondary h4 > .small, .theme-black h4 > .small, .theme-darken h4 > .small, .theme-dark .h4 > small, .theme-primary .h4 > small, .theme-secondary .h4 > small, .theme-black .h4 > small, .theme-darken .h4 > small, .theme-dark .h4 > .small, .theme-primary .h4 > .small, .theme-secondary .h4 > .small, .theme-black .h4 > .small, .theme-darken .h4 > .small, h1.sub.theme-dark, h1.sub.theme-primary, h1.sub.theme-secondary, h1.sub.theme-black, h1.sub.theme-darken, h1.subheading.theme-dark, h1.subheading.theme-primary, h1.subheading.theme-secondary, h1.subheading.theme-black, h1.subheading.theme-darken, .h1.sub.theme-dark, .h1.sub.theme-primary, .h1.sub.theme-secondary, .h1.sub.theme-black, .h1.sub.theme-darken, .h1.subheading.theme-dark, .h1.subheading.theme-primary, .h1.subheading.theme-secondary, .h1.subheading.theme-black, .h1.subheading.theme-darken, h2.sub.theme-dark, h2.sub.theme-primary, h2.sub.theme-secondary, h2.sub.theme-black, h2.sub.theme-darken, h2.subheading.theme-dark, h2.subheading.theme-primary, h2.subheading.theme-secondary, h2.subheading.theme-black, h2.subheading.theme-darken, .h2.sub.theme-dark, .h2.sub.theme-primary, .h2.sub.theme-secondary, .h2.sub.theme-black, .h2.sub.theme-darken, .h2.subheading.theme-dark, .h2.subheading.theme-primary, .h2.subheading.theme-secondary, .h2.subheading.theme-black, .h2.subheading.theme-darken, h3.sub.theme-dark, h3.sub.theme-primary, h3.sub.theme-secondary, h3.sub.theme-black, h3.sub.theme-darken, h3.subheading.theme-dark, h3.subheading.theme-primary, h3.subheading.theme-secondary, h3.subheading.theme-black, h3.subheading.theme-darken, .h3.sub.theme-dark, .h3.sub.theme-primary, .h3.sub.theme-secondary, .h3.sub.theme-black, .h3.sub.theme-darken, .h3.subheading.theme-dark, .h3.subheading.theme-primary, .h3.subheading.theme-secondary, .h3.subheading.theme-black, .h3.subheading.theme-darken, h4.sub.theme-dark, h4.sub.theme-primary, h4.sub.theme-secondary, h4.sub.theme-black, h4.sub.theme-darken, h4.subheading.theme-dark, h4.subheading.theme-primary, h4.subheading.theme-secondary, h4.subheading.theme-black, h4.subheading.theme-darken, .h4.sub.theme-dark, .h4.sub.theme-primary, .h4.sub.theme-secondary, .h4.sub.theme-black, .h4.sub.theme-darken, .h4.subheading.theme-dark, .h4.subheading.theme-primary, .h4.subheading.theme-secondary, .h4.subheading.theme-black, .h4.subheading.theme-darken, h1 > small.theme-dark, h1 > small.theme-primary, h1 > small.theme-secondary, h1 > small.theme-black, h1 > small.theme-darken, h1 > .small.theme-dark, h1 > .small.theme-primary, h1 > .small.theme-secondary, h1 > .small.theme-black, h1 > .small.theme-darken, .h1 > small.theme-dark, .h1 > small.theme-primary, .h1 > small.theme-secondary, .h1 > small.theme-black, .h1 > small.theme-darken, .h1 > .small.theme-dark, .h1 > .small.theme-primary, .h1 > .small.theme-secondary, .h1 > .small.theme-black, .h1 > .small.theme-darken, h2 > small.theme-dark, h2 > small.theme-primary, h2 > small.theme-secondary, h2 > small.theme-black, h2 > small.theme-darken, h2 > .small.theme-dark, h2 > .small.theme-primary, h2 > .small.theme-secondary, h2 > .small.theme-black, h2 > .small.theme-darken, .h2 > small.theme-dark, .h2 > small.theme-primary, .h2 > small.theme-secondary, .h2 > small.theme-black, .h2 > small.theme-darken, .h2 > .small.theme-dark, .h2 > .small.theme-primary, .h2 > .small.theme-secondary, .h2 > .small.theme-black, .h2 > .small.theme-darken, h3 > small.theme-dark, h3 > small.theme-primary, h3 > small.theme-secondary, h3 > small.theme-black, h3 > small.theme-darken, h3 > .small.theme-dark, h3 > .small.theme-primary, h3 > .small.theme-secondary, h3 > .small.theme-black, h3 > .small.theme-darken, .h3 > small.theme-dark, .h3 > small.theme-primary, .h3 > small.theme-secondary, .h3 > small.theme-black, .h3 > small.theme-darken, .h3 > .small.theme-dark, .h3 > .small.theme-primary, .h3 > .small.theme-secondary, .h3 > .small.theme-black, .h3 > .small.theme-darken, h4 > small.theme-dark, h4 > small.theme-primary, h4 > small.theme-secondary, h4 > small.theme-black, h4 > small.theme-darken, h4 > .small.theme-dark, h4 > .small.theme-primary, h4 > .small.theme-secondary, h4 > .small.theme-black, h4 > .small.theme-darken, .h4 > small.theme-dark, .h4 > small.theme-primary, .h4 > small.theme-secondary, .h4 > small.theme-black, .h4 > small.theme-darken, .h4 > .small.theme-dark, .h4 > .small.theme-primary, .h4 > .small.theme-secondary, .h4 > .small.theme-black, .h4 > .small.theme-darken {
   color: #efefef;
 }
 
 /* line 109, ../scss/modules/type/_themes.scss */
-button.link a, .link.button a, input.link[type=button] a, input.link[type=submit] a, .light.alert a a, .warning.alert a a, body a, a.link.button, .light.alert a, .warning.alert a, nav li > a:hover, .nav li > a:hover, nav.light li > a:hover, .light.nav li > a:hover, .light.dropdown-container > .dropdown li > a:hover, .theme-light a, .theme-lighten a, a.theme-light, a.theme-lighten {
+button.link a, .link.button a, input.link[type=button] a, input.link[type=submit] a, .light.alert a a, .warning.alert a a, body a, a.link.button, .light.alert a, .warning.alert a, nav li > a:hover, .nav li > a:hover, nav.light li > a:hover, .light.nav li > a:hover, .light.dropdown-container > .dropdown li > a:hover, .theme-light a, .theme-white a, .theme-lighten a, a.theme-light, a.theme-white, a.theme-lighten {
   color: #024959;
-  background: green;
 }
 /* line 90, ../scss/modules/type/_themes.scss */
-button.link a:hover, .link.button a:hover, input.link[type=button] a:hover, input.link[type=submit] a:hover, .light.alert a a:hover, .warning.alert a a:hover, body a:hover, a.link.button:hover, .light.alert a:hover, .warning.alert a:hover, nav li > a:hover, .nav li > a:hover, nav.light li > a:hover, .light.nav li > a:hover, .light.dropdown-container > .dropdown li > a:hover, .theme-light a:hover, .theme-lighten a:hover, a.theme-light:hover, a.theme-lighten:hover {
+button.link a:hover, .link.button a:hover, input.link[type=button] a:hover, input.link[type=submit] a:hover, .light.alert a a:hover, .warning.alert a a:hover, body a:hover, a.link.button:hover, .light.alert a:hover, .warning.alert a:hover, nav li > a:hover, .nav li > a:hover, nav.light li > a:hover, .light.nav li > a:hover, .light.dropdown-container > .dropdown li > a:hover, .theme-light a:hover, .theme-white a:hover, .theme-lighten a:hover, a.theme-light:hover, a.theme-white:hover, a.theme-lighten:hover {
   color: #013540;
 }
 /* line 91, ../scss/modules/type/_themes.scss */
-button.link a:focus, .link.button a:focus, input.link[type=button] a:focus, input.link[type=submit] a:focus, .light.alert a a:focus, .warning.alert a a:focus, body a:focus, a.link.button:focus, .light.alert a:focus, .warning.alert a:focus, nav li > a:focus:hover, .nav li > a:focus:hover, nav.light li > a:focus:hover, .light.dropdown-container > .dropdown li > a:focus:hover, .theme-light a:focus, .theme-lighten a:focus, a.theme-light:focus, a.theme-lighten:focus {
+button.link a:focus, .link.button a:focus, input.link[type=button] a:focus, input.link[type=submit] a:focus, .light.alert a a:focus, .warning.alert a a:focus, body a:focus, a.link.button:focus, .light.alert a:focus, .warning.alert a:focus, nav li > a:focus:hover, .nav li > a:focus:hover, nav.light li > a:focus:hover, .light.dropdown-container > .dropdown li > a:focus:hover, .theme-light a:focus, .theme-white a:focus, .theme-lighten a:focus, a.theme-light:focus, a.theme-white:focus, a.theme-lighten:focus {
   color: #013540;
 }
 /* line 92, ../scss/modules/type/_themes.scss */
-button.link a:focus, .link.button a:focus, input.link[type=button] a:focus, input.link[type=submit] a:focus, .light.alert a a:focus, .warning.alert a a:focus, body a:focus, a.link.button:focus, .light.alert a:focus, .warning.alert a:focus, nav li > a:focus:hover, .nav li > a:focus:hover, nav.light li > a:focus:hover, .light.dropdown-container > .dropdown li > a:focus:hover, .theme-light a:focus, .theme-lighten a:focus, a.theme-light:focus, a.theme-lighten:focus {
+button.link a:focus, .link.button a:focus, input.link[type=button] a:focus, input.link[type=submit] a:focus, .light.alert a a:focus, .warning.alert a a:focus, body a:focus, a.link.button:focus, .light.alert a:focus, .warning.alert a:focus, nav li > a:focus:hover, .nav li > a:focus:hover, nav.light li > a:focus:hover, .light.dropdown-container > .dropdown li > a:focus:hover, .theme-light a:focus, .theme-white a:focus, .theme-lighten a:focus, a.theme-light:focus, a.theme-white:focus, a.theme-lighten:focus {
   color: #013540;
 }
-/* line 117, ../scss/modules/type/_themes.scss */
-.alert a a, .primary.alert a a, .secondary.alert a a, .dark.alert a a, .success.alert a a, .failure.alert a a, .theme-dark a, .theme-primary a, .theme-secondary a, .theme-darken a, .alert a, .primary.alert a, .secondary.alert a, .dark.alert a, .success.alert a, .failure.alert a, a.theme-dark, a.theme-primary, a.theme-secondary, a.theme-darken, nav.primary li > a:hover, .primary.nav li > a:hover, nav.secondary li > a:hover, .secondary.nav li > a:hover, nav.dark li > a:hover, .dark.nav li > a:hover, .dropdown-container > .dropdown li > a:hover, .primary.dropdown-container > .dropdown li > a:hover, .secondary.dropdown-container > .dropdown li > a:hover, .dark.dropdown-container > .dropdown li > a:hover {
+/* line 116, ../scss/modules/type/_themes.scss */
+.alert a a, .primary.alert a a, .secondary.alert a a, .dark.alert a a, .success.alert a a, .failure.alert a a, .theme-dark a, .theme-primary a, .theme-secondary a, .theme-black a, .theme-darken a, .alert a, .primary.alert a, .secondary.alert a, .dark.alert a, .success.alert a, .failure.alert a, a.theme-dark, a.theme-primary, a.theme-secondary, a.theme-black, a.theme-darken, nav.primary li > a:hover, .primary.nav li > a:hover, nav.secondary li > a:hover, .secondary.nav li > a:hover, nav.dark li > a:hover, .dark.nav li > a:hover, .dropdown-container > .dropdown li > a:hover, .primary.dropdown-container > .dropdown li > a:hover, .secondary.dropdown-container > .dropdown li > a:hover, .dark.dropdown-container > .dropdown li > a:hover {
   color: #efefef;
 }
 /* line 90, ../scss/modules/type/_themes.scss */
-.alert a a:hover, .primary.alert a a:hover, .secondary.alert a a:hover, .dark.alert a a:hover, .success.alert a a:hover, .failure.alert a a:hover, .theme-dark a:hover, .theme-primary a:hover, .theme-secondary a:hover, .theme-darken a:hover, .alert a:hover, a.theme-dark:hover, a.theme-primary:hover, a.theme-secondary:hover, a.theme-darken:hover, nav.primary li > a:hover, .primary.nav li > a:hover, nav.secondary li > a:hover, .secondary.nav li > a:hover, nav.dark li > a:hover, .dark.nav li > a:hover, .dropdown-container > .dropdown li > a:hover, .primary.dropdown-container > .dropdown li > a:hover, .secondary.dropdown-container > .dropdown li > a:hover, .dark.dropdown-container > .dropdown li > a:hover, .primary.alert a:hover, .secondary.alert a:hover, .dark.alert a:hover, .success.alert a:hover, .failure.alert a:hover {
+.alert a a:hover, .primary.alert a a:hover, .secondary.alert a a:hover, .dark.alert a a:hover, .success.alert a a:hover, .failure.alert a a:hover, .theme-dark a:hover, .theme-primary a:hover, .theme-secondary a:hover, .theme-black a:hover, .theme-darken a:hover, .alert a:hover, a.theme-dark:hover, a.theme-primary:hover, a.theme-secondary:hover, a.theme-black:hover, a.theme-darken:hover, nav.primary li > a:hover, .primary.nav li > a:hover, nav.secondary li > a:hover, .secondary.nav li > a:hover, nav.dark li > a:hover, .dark.nav li > a:hover, .dropdown-container > .dropdown li > a:hover, .primary.dropdown-container > .dropdown li > a:hover, .secondary.dropdown-container > .dropdown li > a:hover, .dark.dropdown-container > .dropdown li > a:hover, .primary.alert a:hover, .secondary.alert a:hover, .dark.alert a:hover, .success.alert a:hover, .failure.alert a:hover {
   color: #e2e2e2;
 }
 /* line 91, ../scss/modules/type/_themes.scss */
-.alert a a:focus, .primary.alert a a:focus, .secondary.alert a a:focus, .dark.alert a a:focus, .success.alert a a:focus, .failure.alert a a:focus, .theme-dark a:focus, .theme-primary a:focus, .theme-secondary a:focus, .theme-darken a:focus, .alert a:focus, a.theme-dark:focus, a.theme-primary:focus, a.theme-secondary:focus, a.theme-darken:focus, nav.primary li > a:focus:hover, .primary.nav li > a:focus:hover, nav.secondary li > a:focus:hover, .secondary.nav li > a:focus:hover, nav.dark li > a:focus:hover, .dark.nav li > a:focus:hover, .dropdown-container > .dropdown li > a:focus:hover, .primary.dropdown-container > .dropdown li > a:focus:hover, .secondary.dropdown-container > .dropdown li > a:focus:hover, .dark.dropdown-container > .dropdown li > a:focus:hover, .primary.alert a:focus, .secondary.alert a:focus, .dark.alert a:focus, .success.alert a:focus, .failure.alert a:focus {
+.alert a a:focus, .primary.alert a a:focus, .secondary.alert a a:focus, .dark.alert a a:focus, .success.alert a a:focus, .failure.alert a a:focus, .theme-dark a:focus, .theme-primary a:focus, .theme-secondary a:focus, .theme-black a:focus, .theme-darken a:focus, .alert a:focus, a.theme-dark:focus, a.theme-primary:focus, a.theme-secondary:focus, a.theme-black:focus, a.theme-darken:focus, nav.primary li > a:focus:hover, .primary.nav li > a:focus:hover, nav.secondary li > a:focus:hover, .secondary.nav li > a:focus:hover, nav.dark li > a:focus:hover, .dark.nav li > a:focus:hover, .dropdown-container > .dropdown li > a:focus:hover, .primary.dropdown-container > .dropdown li > a:focus:hover, .secondary.dropdown-container > .dropdown li > a:focus:hover, .dark.dropdown-container > .dropdown li > a:focus:hover, .primary.alert a:focus, .secondary.alert a:focus, .dark.alert a:focus, .success.alert a:focus, .failure.alert a:focus {
   color: #e2e2e2;
 }
 /* line 92, ../scss/modules/type/_themes.scss */
-.alert a a:focus, .primary.alert a a:focus, .secondary.alert a a:focus, .dark.alert a a:focus, .success.alert a a:focus, .failure.alert a a:focus, .theme-dark a:focus, .theme-primary a:focus, .theme-secondary a:focus, .theme-darken a:focus, .alert a:focus, a.theme-dark:focus, a.theme-primary:focus, a.theme-secondary:focus, a.theme-darken:focus, nav.primary li > a:focus:hover, .primary.nav li > a:focus:hover, nav.secondary li > a:focus:hover, .secondary.nav li > a:focus:hover, nav.dark li > a:focus:hover, .dark.nav li > a:focus:hover, .dropdown-container > .dropdown li > a:focus:hover, .primary.dropdown-container > .dropdown li > a:focus:hover, .secondary.dropdown-container > .dropdown li > a:focus:hover, .dark.dropdown-container > .dropdown li > a:focus:hover, .primary.alert a:focus, .secondary.alert a:focus, .dark.alert a:focus, .success.alert a:focus, .failure.alert a:focus {
+.alert a a:focus, .primary.alert a a:focus, .secondary.alert a a:focus, .dark.alert a a:focus, .success.alert a a:focus, .failure.alert a a:focus, .theme-dark a:focus, .theme-primary a:focus, .theme-secondary a:focus, .theme-black a:focus, .theme-darken a:focus, .alert a:focus, a.theme-dark:focus, a.theme-primary:focus, a.theme-secondary:focus, a.theme-black:focus, a.theme-darken:focus, nav.primary li > a:focus:hover, .primary.nav li > a:focus:hover, nav.secondary li > a:focus:hover, .secondary.nav li > a:focus:hover, nav.dark li > a:focus:hover, .dark.nav li > a:focus:hover, .dropdown-container > .dropdown li > a:focus:hover, .primary.dropdown-container > .dropdown li > a:focus:hover, .secondary.dropdown-container > .dropdown li > a:focus:hover, .dark.dropdown-container > .dropdown li > a:focus:hover, .primary.alert a:focus, .secondary.alert a:focus, .dark.alert a:focus, .success.alert a:focus, .failure.alert a:focus {
   color: #e2e2e2;
 }
 
-/* line 143, ../scss/modules/type/_themes.scss */
-body pre, body .pre, body.pre, .theme-light pre, .theme-lighten pre, .theme-light .pre, .theme-lighten .pre, pre.theme-light, pre.theme-lighten, .pre.theme-light, .pre.theme-lighten {
+/* line 142, ../scss/modules/type/_themes.scss */
+body pre, body .pre, body.pre, .theme-light pre, .theme-white pre, .theme-lighten pre, .theme-light .pre, .theme-white .pre, .theme-lighten .pre, pre.theme-light, pre.theme-white, pre.theme-lighten, .pre.theme-light, .pre.theme-white, .pre.theme-lighten {
   color: #363636;
 }
-/* line 147, ../scss/modules/type/_themes.scss */
-body .pre code, .pre body code, body .pre .code, .pre body .code, body code, body .code, .pre body.code, body.code, .theme-light code, .theme-lighten code, .theme-light .code, .theme-lighten .code, code.theme-light, code.theme-lighten, .code.theme-light, .code.theme-lighten {
+/* line 146, ../scss/modules/type/_themes.scss */
+body .pre code, .pre body code, body .pre .code, .pre body .code, body code, body .code, .pre body.code, body.code, .theme-light code, .theme-white code, .theme-lighten code, .theme-light .code, .theme-white .code, .theme-lighten .code, code.theme-light, code.theme-white, code.theme-lighten, .code.theme-light, .code.theme-white, .code.theme-lighten {
   color: #363636;
   padding: 0.25rem 0.5rem;
   background: #efefef;
@@ -5827,8 +5826,8 @@ body .pre code, .pre body code, body .pre .code, .pre body .code, body code, bod
   -o-border-radius: 0.25rem;
   border-radius: 0.25rem;
 }
-/* line 158, ../scss/modules/type/_themes.scss */
-body kbd, body .kbd, body kbd.light, body .light.kbd, body.kbd, body.light.kbd, .theme-light kbd, .theme-lighten kbd, .theme-light .kbd, .theme-lighten .kbd, .theme-light kbd.light, .theme-lighten kbd.light, .theme-light .light.kbd, .theme-lighten .light.kbd, kbd.theme-light, kbd.theme-lighten, .kbd.theme-light, .kbd.theme-lighten, kbd.light.theme-light, kbd.light.theme-lighten, .light.kbd.theme-light, .light.kbd.theme-lighten {
+/* line 157, ../scss/modules/type/_themes.scss */
+body kbd, body .kbd, body kbd.light, body .light.kbd, body.kbd, body.light.kbd, .theme-light kbd, .theme-white kbd, .theme-lighten kbd, .theme-light .kbd, .theme-white .kbd, .theme-lighten .kbd, .theme-light kbd.light, .theme-white kbd.light, .theme-lighten kbd.light, .theme-light .light.kbd, .theme-white .light.kbd, .theme-lighten .light.kbd, kbd.theme-light, kbd.theme-white, kbd.theme-lighten, .kbd.theme-light, .kbd.theme-white, .kbd.theme-lighten, kbd.light.theme-light, kbd.light.theme-white, kbd.light.theme-lighten, .light.kbd.theme-light, .light.kbd.theme-white, .light.kbd.theme-lighten {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #363636;
   padding: 0.25rem 0.5rem;
@@ -5841,41 +5840,41 @@ body kbd, body .kbd, body kbd.light, body .light.kbd, body.kbd, body.light.kbd, 
   -o-border-radius: 0.25rem;
   border-radius: 0.25rem;
 }
-/* line 171, ../scss/modules/type/_themes.scss */
-body kbd.dark, body .dark.kbd, body.dark.kbd, .theme-light kbd.dark, .theme-lighten kbd.dark, .theme-light .dark.kbd, .theme-lighten .dark.kbd, kbd.dark.theme-light, kbd.dark.theme-lighten, .dark.kbd.theme-light, .dark.kbd.theme-lighten {
+/* line 170, ../scss/modules/type/_themes.scss */
+body kbd.dark, body .dark.kbd, body.dark.kbd, .theme-light kbd.dark, .theme-white kbd.dark, .theme-lighten kbd.dark, .theme-light .dark.kbd, .theme-white .dark.kbd, .theme-lighten .dark.kbd, kbd.dark.theme-light, kbd.dark.theme-white, kbd.dark.theme-lighten, .dark.kbd.theme-light, .dark.kbd.theme-white, .dark.kbd.theme-lighten {
   color: #efefef;
   background: #505050;
   border-color: #363636;
 }
-/* line 180, ../scss/modules/type/_themes.scss */
-.theme-dark pre, .theme-primary pre, .theme-secondary pre, .theme-darken pre, .theme-dark .pre, .theme-primary .pre, .theme-secondary .pre, .theme-darken .pre, pre.theme-dark, pre.theme-primary, pre.theme-secondary, pre.theme-darken, .pre.theme-dark, .pre.theme-primary, .pre.theme-secondary, .pre.theme-darken {
+/* line 179, ../scss/modules/type/_themes.scss */
+.theme-dark pre, .theme-primary pre, .theme-secondary pre, .theme-black pre, .theme-darken pre, .theme-dark .pre, .theme-primary .pre, .theme-secondary .pre, .theme-black .pre, .theme-darken .pre, pre.theme-dark, pre.theme-primary, pre.theme-secondary, pre.theme-black, pre.theme-darken, .pre.theme-dark, .pre.theme-primary, .pre.theme-secondary, .pre.theme-black, .pre.theme-darken {
   color: #efefef;
 }
 
-/* line 203, ../scss/modules/type/_themes.scss */
+/* line 202, ../scss/modules/type/_themes.scss */
 blockquote, blockquote.left {
   border-style: solid;
   border-width: 0;
   border-left-width: 1px;
 }
-/* line 209, ../scss/modules/type/_themes.scss */
+/* line 208, ../scss/modules/type/_themes.scss */
 blockquote.right {
   text-align: right;
   border-left-width: 0;
   border-right-width: 1px;
 }
 
-/* line 218, ../scss/modules/type/_themes.scss */
-body blockquote, blockquote, .theme-light blockquote, .theme-lighten blockquote, blockquote.theme-light, blockquote.theme-lighten {
+/* line 217, ../scss/modules/type/_themes.scss */
+body blockquote, blockquote, .theme-light blockquote, .theme-white blockquote, .theme-lighten blockquote, blockquote.theme-light, blockquote.theme-white, blockquote.theme-lighten {
   border-color: #525252;
   color: #525252;
 }
-/* line 222, ../scss/modules/type/_themes.scss */
-body blockquote footer, blockquote footer, .theme-light blockquote footer, .theme-lighten blockquote footer, blockquote.theme-light footer, blockquote.theme-lighten footer {
+/* line 221, ../scss/modules/type/_themes.scss */
+body blockquote footer, blockquote footer, .theme-light blockquote footer, .theme-white blockquote footer, .theme-lighten blockquote footer, blockquote.theme-light footer, blockquote.theme-white footer, blockquote.theme-lighten footer {
   color: #525252;
 }
-/* line 225, ../scss/modules/type/_themes.scss */
-body blockquote footer::before, blockquote footer::before, .theme-light blockquote footer::before, .theme-lighten blockquote footer::before, blockquote.theme-light footer::before, blockquote.theme-lighten footer::before {
+/* line 224, ../scss/modules/type/_themes.scss */
+body blockquote footer::before, blockquote footer::before, .theme-light blockquote footer::before, .theme-white blockquote footer::before, .theme-lighten blockquote footer::before, blockquote.theme-light footer::before, blockquote.theme-white footer::before, blockquote.theme-lighten footer::before {
   content: '\2014 \00A0';
 }
 
@@ -6214,7 +6213,7 @@ nav.dark li > a:hover, .dark.nav li > a:hover {
 }
 
 /* line 5, ../scss/modules/forms/_components.scss */
-button.link a, .link.button a, input.link[type=button] a, input.link[type=submit] a, .light.alert a a, .warning.alert a a, body a, a.link.button, .light.alert a, .warning.alert a, nav li > a:hover, .nav li > a:hover, nav.light li > a:hover, .light.nav li > a:hover, .light.dropdown-container > .dropdown li > a:hover, .theme-light a, .theme-lighten a, a.theme-light, a.theme-lighten, textarea,
+button.link a, .link.button a, input.link[type=button] a, input.link[type=submit] a, .light.alert a a, .warning.alert a a, body a, a.link.button, .light.alert a, .warning.alert a, nav li > a:hover, .nav li > a:hover, nav.light li > a:hover, .light.nav li > a:hover, .light.dropdown-container > .dropdown li > a:hover, .theme-light a, .theme-white a, .theme-lighten a, a.theme-light, a.theme-white, a.theme-lighten, textarea,
 input[type=radio]:not {
   -webkit-transition-property: all;
   -moz-transition-property: all;
@@ -6917,13 +6916,17 @@ table.hover tr:hover {
   padding: 1rem;
   border-width: 0;
 }
-/* line 34, ../scss/modules/panels/_components.scss */
+/* line 33, ../scss/modules/panels/_components.scss */
+.panel > section > *:last-child, .panel > .panel-body > *:last-child, .modal > section > *:last-child, .modal > .panel-body > *:last-child {
+  margin-bottom: 0;
+}
+/* line 38, ../scss/modules/panels/_components.scss */
 .panel > footer, .panel > .panel-footer, .modal > footer, .modal > .panel-footer {
   padding: 1rem;
   border-width: 1px 0 0 0;
 }
 
-/* line 41, ../scss/modules/panels/_components.scss */
+/* line 45, ../scss/modules/panels/_components.scss */
 .alert {
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
@@ -6939,15 +6942,25 @@ table.hover tr:hover {
   -o-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 55, ../scss/modules/panels/_components.scss */
+/* line 59, ../scss/modules/panels/_components.scss */
 .alert > *:last-child {
   margin-bottom: 0;
 }
-/* line 65, ../scss/modules/panels/_components.scss */
+/* line 63, ../scss/modules/panels/_components.scss */
+.alert .alert-exit {
+  position: absolute;
+  top: 0;
+  bottom: inherit;
+  right: 0;
+  left: inherit;
+  padding: 8px;
+}
+
+/* line 69, ../scss/modules/panels/_components.scss */
 .alert-group {
   margin: 0 0 1rem 0;
 }
-/* line 68, ../scss/modules/panels/_components.scss */
+/* line 72, ../scss/modules/panels/_components.scss */
 .alert-group > * {
   margin: 0;
   -webkit-border-radius: 0;
@@ -6956,7 +6969,7 @@ table.hover tr:hover {
   -o-border-radius: 0;
   border-radius: 0;
 }
-/* line 74, ../scss/modules/panels/_components.scss */
+/* line 78, ../scss/modules/panels/_components.scss */
 .alert-group > *:first-child {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -6965,7 +6978,7 @@ table.hover tr:hover {
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 78, ../scss/modules/panels/_components.scss */
+/* line 82, ../scss/modules/panels/_components.scss */
 .alert-group > *:last-child {
   -moz-border-radius-bottomleft: 3px;
   -webkit-border-bottom-left-radius: 3px;
@@ -6974,12 +6987,12 @@ table.hover tr:hover {
   -webkit-border-bottom-right-radius: 3px;
   border-bottom-right-radius: 3px;
 }
-/* line 84, ../scss/modules/panels/_components.scss */
+/* line 88, ../scss/modules/panels/_components.scss */
 .alert-group > * ~ * {
   margin-top: -1px;
 }
 
-/* line 90, ../scss/modules/panels/_components.scss */
+/* line 94, ../scss/modules/panels/_components.scss */
 .modal {
   position: absolute;
   top: 50%;
@@ -7179,57 +7192,81 @@ table.hover tr:hover {
   color: #efefef;
 }
 
-/* line 86, ../scss/modules/panels/_themes.scss */
+/* line 87, ../scss/modules/panels/_themes.scss */
 .alert {
   background-color: #024959;
   border-color: #013540;
-  color: #efefef;
 }
-/* line 89, ../scss/modules/panels/_themes.scss */
-.primary.alert {
-  background-color: #024959;
-  border-color: #013540;
+/* line 75, ../scss/modules/panels/_themes.scss */
+.alert, .alert p {
   color: #efefef;
 }
 /* line 90, ../scss/modules/panels/_themes.scss */
-.secondary.alert {
-  background-color: #e74c30;
-  border-color: #e3391a;
+.primary.alert {
+  background-color: #024959;
+  border-color: #013540;
+}
+/* line 75, ../scss/modules/panels/_themes.scss */
+.primary.alert, .primary.alert p {
   color: #efefef;
 }
 /* line 91, ../scss/modules/panels/_themes.scss */
+.secondary.alert {
+  background-color: #e74c30;
+  border-color: #e3391a;
+}
+/* line 75, ../scss/modules/panels/_themes.scss */
+.secondary.alert, .secondary.alert p {
+  color: #efefef;
+}
+/* line 92, ../scss/modules/panels/_themes.scss */
 .light.alert {
   background-color: #efefef;
   border-color: #e2e2e2;
+}
+/* line 75, ../scss/modules/panels/_themes.scss */
+.light.alert, .light.alert p {
   color: #363636;
 }
-/* line 92, ../scss/modules/panels/_themes.scss */
+/* line 93, ../scss/modules/panels/_themes.scss */
 .dark.alert {
   background-color: #363636;
   border-color: #292929;
-  color: #efefef;
 }
-/* line 94, ../scss/modules/panels/_themes.scss */
-.success.alert {
-  background-color: #96cc69;
-  border-color: #89c656;
+/* line 75, ../scss/modules/panels/_themes.scss */
+.dark.alert, .dark.alert p {
   color: #efefef;
 }
 /* line 95, ../scss/modules/panels/_themes.scss */
+.success.alert {
+  background-color: #96cc69;
+  border-color: #89c656;
+}
+/* line 75, ../scss/modules/panels/_themes.scss */
+.success.alert, .success.alert p {
+  color: #efefef;
+}
+/* line 96, ../scss/modules/panels/_themes.scss */
 .warning.alert {
   background-color: #ffcc5c;
   border-color: #ffc443;
+}
+/* line 75, ../scss/modules/panels/_themes.scss */
+.warning.alert, .warning.alert p {
   color: #363636;
 }
-/* line 96, ../scss/modules/panels/_themes.scss */
+/* line 97, ../scss/modules/panels/_themes.scss */
 .failure.alert {
   background-color: #c44741;
   border-color: #b43d38;
+}
+/* line 75, ../scss/modules/panels/_themes.scss */
+.failure.alert, .failure.alert p {
   color: #efefef;
 }
 
 /* line 8, ../scss/modules/animations/_components.scss */
-.inert, .activate-all-fade.inert, .activate-all-scaleUp.inert, .activate-all-scaleDown.inert, .activate-all-slideUp.inert, .activate-all-slideDown.inert, .activate-all-slideLeft.inert, .activate-all-slideRight.inert, .activate-all-flipLeft.inert, .inert > *, .activate-all-fade.inert > *, .activate-all-scaleUp.inert > *, .activate-all-scaleDown.inert > *, .activate-all-slideUp.inert > *, .activate-all-slideDown.inert > *, .activate-all-slideLeft.inert > *, .activate-all-slideRight.inert > *, .activate-all-flipLeft.inert > * {
+.inert, .activate-all-fade.inert, .activate-all-scaleUp.inert, .activate-all-scaleDown.inert, .activate-all-slideUp.inert, .activate-all-slideDown.inert, .activate-all-slideLeft.inert, .activate-all-slideRight.inert, .activate-all-flipLeft.inert, .activate-fade.inert, .inert > *, .activate-all-fade.inert > *, .activate-all-scaleUp.inert > *, .activate-all-scaleDown.inert > *, .activate-all-slideUp.inert > *, .activate-all-slideDown.inert > *, .activate-all-slideLeft.inert > *, .activate-all-slideRight.inert > *, .activate-all-flipLeft.inert > *, .activate-fade.inert > * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
@@ -7243,12 +7280,12 @@ table.hover tr:hover {
 }
 
 /* line 14, ../scss/modules/animations/_components.scss */
-.active, .activate-all-fade > .page.active, .activate-all-scaleUp > .page.active, .activate-all-scaleDown > .page.active, .activate-all-slideUp > .page.active, .activate-all-slideDown > .page.active, .activate-all-slideLeft > .page.active, .activate-all-slideRight > .page.active, .activate-all-flipLeft > .page.active {
+.ng-enter, .activate-all-fade > [ui-view].ng-enter, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-flipLeft > [ui-view].ng-enter, .activate-fade.ng-enter {
   z-index: 2;
 }
 
 /* line 18, ../scss/modules/animations/_components.scss */
-.inactive, .activate-all-fade > .page.inactive, .activate-all-scaleUp > .page.inactive, .activate-all-scaleDown > .page.inactive, .activate-all-slideUp > .page.inactive, .activate-all-slideDown > .page.inactive, .activate-all-slideLeft > .page.inactive, .activate-all-slideRight > .page.inactive, .activate-all-flipLeft > .page.inactive {
+.ng-leave, .activate-all-fade > [ui-view].ng-leave, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-flipLeft > [ui-view].ng-leave, .activate-fade.ng-leave {
   z-index: 0;
 }
 
@@ -7271,7 +7308,7 @@ table.hover tr:hover {
 }
 
 /* line 35, ../scss/modules/animations/_components.scss */
-.activate-all-fade > .page.active {
+.activate-all-fade > [ui-view].ng-enter, .activate-fade.ng-enter {
   -webkit-animation-name: fade-active;
   animation-name: fade-active;
   -webkit-animation-direction: normal;
@@ -7291,7 +7328,7 @@ table.hover tr:hover {
 }
 
 /* line 36, ../scss/modules/animations/_components.scss */
-.activate-all-fade > .page.inactive {
+.activate-all-fade > [ui-view].ng-leave, .activate-fade.ng-leave {
   -webkit-animation-name: fade-inactive;
   animation-name: fade-inactive;
   -webkit-animation-direction: normal;
@@ -7359,7 +7396,7 @@ table.hover tr:hover {
 }
 
 /* line 47, ../scss/modules/animations/_components.scss */
-.activate-all-scaleUp > .page.active {
+.activate-all-scaleUp > [ui-view].ng-enter {
   -webkit-animation-name: scaleUp-active;
   animation-name: scaleUp-active;
   -webkit-animation-direction: normal;
@@ -7379,7 +7416,7 @@ table.hover tr:hover {
 }
 
 /* line 48, ../scss/modules/animations/_components.scss */
-.activate-all-scaleUp > .page.inactive {
+.activate-all-scaleUp > [ui-view].ng-leave {
   -webkit-animation-name: scaleUp-inactive;
   animation-name: scaleUp-inactive;
   -webkit-animation-direction: normal;
@@ -7487,7 +7524,7 @@ table.hover tr:hover {
 }
 
 /* line 71, ../scss/modules/animations/_components.scss */
-.activate-all-scaleDown > .page.active {
+.activate-all-scaleDown > [ui-view].ng-enter {
   -webkit-animation-name: scaleDown-active;
   animation-name: scaleDown-active;
   -webkit-animation-direction: normal;
@@ -7507,7 +7544,7 @@ table.hover tr:hover {
 }
 
 /* line 72, ../scss/modules/animations/_components.scss */
-.activate-all-scaleDown > .page.inactive {
+.activate-all-scaleDown > [ui-view].ng-leave {
   -webkit-animation-name: scaleDown-inactive;
   animation-name: scaleDown-inactive;
   -webkit-animation-direction: normal;
@@ -7759,7 +7796,7 @@ table.hover tr:hover {
 }
 
 /* line 143, ../scss/modules/animations/_components.scss */
-.activate-all-slideLeft > .page.active {
+.activate-all-slideLeft > [ui-view].ng-enter {
   -webkit-animation-name: slideLeft-active;
   animation-name: slideLeft-active;
   -webkit-animation-direction: normal;
@@ -7779,7 +7816,7 @@ table.hover tr:hover {
 }
 
 /* line 144, ../scss/modules/animations/_components.scss */
-.activate-all-slideLeft > .page.inactive {
+.activate-all-slideLeft > [ui-view].ng-leave {
   -webkit-animation-name: slideLeft-inactive;
   animation-name: slideLeft-inactive;
   -webkit-animation-direction: normal;
@@ -7879,7 +7916,7 @@ table.hover tr:hover {
 }
 
 /* line 155, ../scss/modules/animations/_components.scss */
-.activate-all-slideRight > .page.active {
+.activate-all-slideRight > [ui-view].ng-enter {
   -webkit-animation-name: slideRight-active;
   animation-name: slideRight-active;
   -webkit-animation-direction: normal;
@@ -7899,7 +7936,7 @@ table.hover tr:hover {
 }
 
 /* line 156, ../scss/modules/animations/_components.scss */
-.activate-all-slideRight > .page.inactive {
+.activate-all-slideRight > [ui-view].ng-leave {
   -webkit-animation-name: slideRight-inactive;
   animation-name: slideRight-inactive;
   -webkit-animation-direction: normal;
@@ -7999,7 +8036,7 @@ table.hover tr:hover {
 }
 
 /* line 167, ../scss/modules/animations/_components.scss */
-.activate-all-slideUp > .page.active {
+.activate-all-slideUp > [ui-view].ng-enter {
   -webkit-animation-name: slideUp-active;
   animation-name: slideUp-active;
   -webkit-animation-direction: normal;
@@ -8019,7 +8056,7 @@ table.hover tr:hover {
 }
 
 /* line 168, ../scss/modules/animations/_components.scss */
-.activate-all-slideUp > .page.inactive {
+.activate-all-slideUp > [ui-view].ng-leave {
   -webkit-animation-name: slideUp-inactive;
   animation-name: slideUp-inactive;
   -webkit-animation-direction: normal;
@@ -8119,7 +8156,7 @@ table.hover tr:hover {
 }
 
 /* line 179, ../scss/modules/animations/_components.scss */
-.activate-all-slideDown > .page.active {
+.activate-all-slideDown > [ui-view].ng-enter {
   -webkit-animation-name: slideDown-active;
   animation-name: slideDown-active;
   -webkit-animation-direction: normal;
@@ -8139,7 +8176,7 @@ table.hover tr:hover {
 }
 
 /* line 180, ../scss/modules/animations/_components.scss */
-.activate-all-slideDown > .page.inactive {
+.activate-all-slideDown > [ui-view].ng-leave {
   -webkit-animation-name: slideDown-inactive;
   animation-name: slideDown-inactive;
   -webkit-animation-direction: normal;
@@ -8239,7 +8276,7 @@ table.hover tr:hover {
 }
 
 /* line 191, ../scss/modules/animations/_components.scss */
-.activate-all-flipLeft > .page.active {
+.activate-all-flipLeft > [ui-view].ng-enter {
   -webkit-animation-name: flipLeft-active;
   animation-name: flipLeft-active;
   -webkit-animation-direction: normal;
@@ -8259,7 +8296,7 @@ table.hover tr:hover {
 }
 
 /* line 192, ../scss/modules/animations/_components.scss */
-.activate-all-flipLeft > .page.inactive {
+.activate-all-flipLeft > [ui-view].ng-leave {
   -webkit-animation-name: flipLeft-inactive;
   animation-name: flipLeft-inactive;
   -webkit-animation-direction: normal;
@@ -8376,6 +8413,13 @@ table.hover tr:hover {
   color: #efefef;
 }
 
+/* line 19, ../scss/modules/themes/_components.scss */
+.border-light {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #efefef;
+}
+
 /* line 10, ../scss/modules/themes/_components.scss */
 .theme-dark {
   background-color: #363636;
@@ -8384,6 +8428,13 @@ table.hover tr:hover {
 /* line 16, ../scss/modules/themes/_components.scss */
 .color-dark, .color-dark p, .color-dark ul, .color-dark ol, .color-dark dl {
   color: #363636;
+}
+
+/* line 19, ../scss/modules/themes/_components.scss */
+.border-dark {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #363636;
 }
 
 /* line 10, ../scss/modules/themes/_components.scss */
@@ -8396,6 +8447,13 @@ table.hover tr:hover {
   color: #024959;
 }
 
+/* line 19, ../scss/modules/themes/_components.scss */
+.border-primary {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #024959;
+}
+
 /* line 10, ../scss/modules/themes/_components.scss */
 .theme-secondary {
   background-color: #e74c30;
@@ -8404,6 +8462,47 @@ table.hover tr:hover {
 /* line 16, ../scss/modules/themes/_components.scss */
 .color-secondary, .color-secondary p, .color-secondary ul, .color-secondary ol, .color-secondary dl {
   color: #e74c30;
+}
+
+/* line 19, ../scss/modules/themes/_components.scss */
+.border-secondary {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e74c30;
+}
+
+/* line 10, ../scss/modules/themes/_components.scss */
+.theme-white {
+  background-color: white;
+}
+
+/* line 16, ../scss/modules/themes/_components.scss */
+.color-white, .color-white p, .color-white ul, .color-white ol, .color-white dl {
+  color: white;
+}
+
+/* line 19, ../scss/modules/themes/_components.scss */
+.border-white {
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+}
+
+/* line 10, ../scss/modules/themes/_components.scss */
+.theme-black {
+  background-color: black;
+}
+
+/* line 16, ../scss/modules/themes/_components.scss */
+.color-black, .color-black p, .color-black ul, .color-black ol, .color-black dl {
+  color: black;
+}
+
+/* line 19, ../scss/modules/themes/_components.scss */
+.border-black {
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
 }
 
 /* line 10, ../scss/modules/themes/_components.scss */
@@ -8416,6 +8515,13 @@ table.hover tr:hover {
   color: rgba(255, 255, 255, 0.3);
 }
 
+/* line 19, ../scss/modules/themes/_components.scss */
+.border-lighten {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
 /* line 10, ../scss/modules/themes/_components.scss */
 .theme-darken {
   background-color: rgba(0, 0, 0, 0.3);
@@ -8424,6 +8530,13 @@ table.hover tr:hover {
 /* line 16, ../scss/modules/themes/_components.scss */
 .color-darken, .color-darken p, .color-darken ul, .color-darken ol, .color-darken dl {
   color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 19, ../scss/modules/themes/_components.scss */
+.border-darken {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.3);
 }
 
 /* 'modules/_tabs'; */

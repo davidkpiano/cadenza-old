@@ -71,7 +71,8 @@
 ) {
 	background-color: $color;
 	border-color: darken($color, 5%);
-	color: foregroundColor($color);
+	
+	&, p { color: foregroundColor($color); }
 
 	a {
 		@if is-dark($color) {

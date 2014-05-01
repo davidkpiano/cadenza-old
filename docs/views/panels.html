@@ -1,0 +1,46 @@
+<h1>Panels Module</h1>
+
+<h2>Panels</h2>
+
+<div ng-repeat="panel_class in ['', 'primary', 'secondary', 'light', 'dark', 'success', 'warning', 'failure']" class="panel {{panel_class}}">
+    <div class="panel-header">
+        <h3>Panel Header</h3>
+    </div>
+    <div class="panel-body">
+        <strong>panel {{panel_class}}</strong>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, quod, dignissimos, facilis quos enim dolore fuga consequatur dolorem repellendus autem vero rem quibusdam consectetur aliquid saepe consequuntur ipsum nobis recusandae.</p>
+    </div>
+    <div class="panel-footer">
+        <strong>Panel Footer</strong>
+    </div>
+</div>
+
+<h2>Alerts</h2>
+
+<div ng-repeat="alert_class in ['', 'primary', 'secondary', 'light', 'dark', 'success', 'warning', 'failure']" class="alert {{alert_class}}">
+    <div class="alert-exit">x</div>
+    <strong>alert {{alert_class}}</strong>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, itaque, consequuntur, similique natus soluta harum debitis ipsam mollitia labore fuga suscipit quidem amet totam commodi aspernatur. Dolore, nostrum facere qui.</p>
+</div>
+
+<h2>Modals</h2>
+
+<div class="field">
+    <button ng-click="component.panels.modal.show = true">Click to activate modal</button>
+</div>
+
+<div class="overlay" ng-show="component.panels.modal.show">
+    <div class="modal">
+        <div class="panel-header">
+            <h3>Modal Header</h3>
+        </div>
+        <div class="panel-body">
+            <strong>modal {{modal_class}}</strong>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, recusandae est odio maiores asperiores laboriosam tenetur facere minima. Est dignissimos voluptatibus alias quaerat ipsum nesciunt consequuntur excepturi hic deleniti non.</p>
+        </div>
+        <div class="panel-footer">
+            <button class="right" ng-click="component.panels.modal.show = false">Okay</button>
+        </div>
+    </div>
+</div>
+

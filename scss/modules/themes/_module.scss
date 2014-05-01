@@ -4,6 +4,7 @@
 
 // Theme Settings
 $theme-mode: 'light' !default;
+$theme-border-width: 1px !default;
 
 // (name, color, is-dark)
 // TODO: use maps (SASS 3.3)
@@ -12,6 +13,8 @@ $theme-colors: (
     ('dark', $color-dark),
     ('primary', $color-primary),
     ('secondary', $color-secondary),
+    ('white', white),
+    ('black', black),
     ('lighten', rgba(255,255,255,0.3)),
     ('darken', rgba(0,0,0,0.3))
 );

@@ -13,6 +13,10 @@
     .color-#{$name} {
         @extend %color-#{$name};
     }
+
+    .border-#{$name} {
+        @extend %border-#{$name};
+    }
 }
 
 body {

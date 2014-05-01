@@ -29,6 +29,10 @@
         @extend %clearfix;
         padding: $panel-section-padding;
         border-width: 0;
+
+        > *:last-child {
+            margin-bottom: 0;
+        }
     }
 
     %panel-footer {

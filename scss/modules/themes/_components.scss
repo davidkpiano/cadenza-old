@@ -15,4 +15,10 @@
     %color-#{$name} {
         &, p, ul, ol, dl { color: $color; }
     }
+
+    %border-#{$name} {
+        border-width: $theme-border-width;
+        border-style: solid;
+        border-color: $color;
+    }
 }

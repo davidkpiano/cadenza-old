@@ -38,3 +38,7 @@
 .activate-all-flipLeft {
 	@include activate-all(flipLeft, $is-3d: true);
 }
+
+.activate-fade {
+    @include activate(fade);
+}

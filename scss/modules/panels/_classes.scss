@@ -18,6 +18,8 @@
 .alert {
     @include alert-style();
     @extend %alert;
+
+    .alert-exit { @extend %alert-exit; }
 }
 
 .alert-group {
