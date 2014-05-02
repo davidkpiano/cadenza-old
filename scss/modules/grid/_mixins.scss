@@ -70,7 +70,6 @@
 // Defines a row in the grid system
 @mixin _row() {
 	@include _grid;
-	padding: 0;
 	width: 100%;
 	clear: both;
 }

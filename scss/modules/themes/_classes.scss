@@ -2,6 +2,18 @@
 // Themes Classes
 // ==============
 
+.theme-dark {
+    @extend %theme-dark;
+
+    .theme-light { @extend %theme-light; }
+}
+
+.theme-light {
+    @extend %theme-light;
+
+    .theme-dark { @extend %theme-dark; }
+}
+
 // Theme Classes
 @each $theme-color in $theme-colors {
     $name: nth($theme-color, 1);

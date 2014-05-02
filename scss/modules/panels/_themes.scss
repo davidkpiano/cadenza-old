@@ -23,9 +23,8 @@
 	color: foregroundColor($color);
 
 	> header, > hgroup, .panel-header {
-		background-color: $color-header;
+		@include theme($color-header);
 		border-color: $color-border;
-		color: foregroundColor($color-header);
 	}
 
 	> section, > .panel-body {

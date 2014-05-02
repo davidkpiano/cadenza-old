@@ -10,6 +10,16 @@
     $themes: append($themes, ($module, $theme));
 }
 
+@mixin theme($color) {
+    @if is-dark($color) {
+        @extend %dark;
+    } @else {
+        @extend %light;
+    }
+
+    background-color: $color;
+}
+
 @mixin translate(
     $horizontal: false,
     $vertical: false

@@ -16,14 +16,10 @@
 %theme-type-default {
 	&, &%light {
 		color: $type-base-color;
-
-		p, ul, ol, dl { color: $type-base-color; }
 	}
 
 	&%dark {
 		color: $color-light;
-
-		p, ul, ol, dl { color: $color-light; }
 	}
 }
 
@@ -46,21 +42,21 @@
 
 %theme-heading-default {
 	&, &%light {	
-		%heading, &%heading {
-			color: $type-base-color;
-		}
+		// %heading {
+		// 	color: $type-base-color;
+		// }
 
-		%subheading, %heading-small, &%subheading, &%heading-small {
+		%subheading, %heading-small {
 			color: $color-gray;
 		}
 	}
 
 	&%dark {
-		%heading, &%heading {
-			color: $color-light;
-		}
+		// %heading {
+		// 	color: $color-light;
+		// }
 
-		%subheading, %heading-small, &%subheading, &%heading-small {
+		%subheading, %heading-small  {
 			color: $color-gray-light;
 		}
 	}
@@ -106,14 +102,14 @@
 
 %theme-anchor-default {
 	&, &%light {
-		%anchor, &%anchor {
+		%anchor {
 			@extend %form-transition;
 			@include theme-anchor-default();
 		}
 	}
 
 	&%dark {
-		%anchor, &%anchor {
+		%anchor {
 			@include theme-anchor-default($type-anchor-color-light);
 		}
 	}
@@ -139,11 +135,11 @@ $x-pre-kbd-radius: 0.25rem !default;
 
 %theme-pre-default {
 	&, &%light {
-		%pre, &%pre {
+		%pre {
 			color: $type-pre-color;
 		}
 
-		%code, &%code {
+		%code {
 			color: $type-code-color;
 			padding: $x-pre-code-padding;
 			background: $color-gray-light;
@@ -153,7 +149,7 @@ $x-pre-kbd-radius: 0.25rem !default;
 			}
 		}
 
-		%kbd, &%kbd {
+		%kbd {
 			&, &.light {
 				font-family: $type-base-font-family;
 				color: $type-base-color;
@@ -176,7 +172,7 @@ $x-pre-kbd-radius: 0.25rem !default;
 	}
 
 	&%dark {
-		%pre, &%pre {
+		%pre {
 			color: $color-gray-light;
 		}
 	}
@@ -214,7 +210,7 @@ $x-blockquote-footer-prefix: '\2014 \00A0';
 
 %theme-blockquote-default {
 	&, &%light {	
-		%blockquote, &%blockquote {	
+		%blockquote {	
 			border-color: $type-blockquote-border-color;
 			color: $type-blockquote-color;
 
@@ -229,7 +225,7 @@ $x-blockquote-footer-prefix: '\2014 \00A0';
 	}
 
 	&%dark {
-		%blockquote, &%blockquote {
+		%blockquote {
 			// TODO
 		}
 	}
