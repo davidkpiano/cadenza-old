@@ -12,12 +12,39 @@
 
 @mixin theme($color) {
     @if is-dark($color) {
-        @extend %dark;
+        @extend %color-dark;
     } @else {
-        @extend %light;
+        @extend %color-light;
     }
 
     background-color: $color;
+}
+
+@mixin foreground-color(
+    $color, 
+    $darken: 35%, 
+    $threshold: 65%, 
+    $color-light: $type-base-color-light, 
+    $color-dark: $type-base-color-dark,
+    $color-default: inherit
+) {
+    $_color: $color-default !default;
+
+    @if type-of($color) == color {
+        @if lightness($color) > $threshold {
+            &, p, li, span { color: $color-dark; }
+            %heading { color: $type-heading-color-dark; }
+            %anchor { color: $type-anchor-color-dark; }
+        } @else {
+            &, p, li, span { color: $color-light; }
+            %heading { color: $type-heading-color-light; }
+            %anchor { color: $type-anchor-color-light; }
+        }
+    } @else if $color == static or $color == transparent {
+        $_color: false;
+    } @else {
+        $_color: $color-default;
+    }
 }
 
 @mixin translate(

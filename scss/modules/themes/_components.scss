@@ -2,32 +2,23 @@
 // Themes Components
 // =================
 
-%light {
-    @include themes($mode: 'light');
-}
-
-%dark {
-    @include themes($mode: 'dark');
-}
-
 %color-light {
-    color: if(is-dark($type-base-color), $type-base-color, $color-dark);
+    @include foreground-color(black);
 }
 
 %color-dark {
-    color: if(is-dark($type-base-color) == false, $type-base-color, $color-light);
+    @include foreground-color(white);
 }
 
 @each $theme-color in $theme-colors {
     $name: nth($theme-color, 1);
     $color: nth($theme-color, 2);
-    $mode: if(is-dark($color), 'dark', 'light');
 
     %theme-#{$name} {        
         @if is-dark($color) {
-            @extend %dark;
+            @extend %color-light;
         } @else {
-            @extend %light;
+            @extend %color-dark;
         }
 
         background-color: $color;
@@ -42,4 +33,8 @@
         border-style: solid;
         border-color: $color;
     }
+}
+
+body {
+    @include themes();
 }

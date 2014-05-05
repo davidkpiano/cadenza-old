@@ -23,12 +23,14 @@
 		background-color: transparent;
 		border: none;
 	} @else {
+		@include foreground-color($color, $color-default: $color-light);
 		background-color: $color;
 		border-color: darken($color, 10%);
-		color: foregroundColor($color, $color-default: $color-light);
 
 		&:hover, &:active {
 			$color-hover: darken($color, 5%);
+
+			@include foreground-color($color-hover, $color-default: $color-light);
 			background-color: $color-hover;
 			border-color: darken($color-hover, 10%);
 		}
@@ -36,7 +38,7 @@
 }
 
 %theme-button-default {
-	&, &%light {
+	%button {	
 		@include theme-button-default;
 
 		&.primary { @include theme-button-default($color-primary); }
@@ -57,17 +59,9 @@
 			}
 		}
 	}
-
-	&%dark {
-		&.link {
-			@extend %theme-anchor-#{$type-anchor-theme}%dark;
-		}
-
-		&.quiet {
-			color: $color-light;
-		}
-	}
 }
+
+@include add-theme('button', $button-theme);
 
 // Transparent Button Style and Theme
 %ext-button-transparent {
@@ -94,7 +88,7 @@
 }
 
 %theme-button-transparent {
-	&, &%light {
+	%button {
 		@include theme-button-transparent;
 
 		&.primary { @include theme-button-transparent($color-primary); }

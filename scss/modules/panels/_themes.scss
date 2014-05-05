@@ -23,19 +23,28 @@
 	color: foregroundColor($color);
 
 	> header, > hgroup, .panel-header {
-		@include theme($color-header);
-		border-color: $color-border;
+		&, %heading {
+			@include foreground-color($color-header);
+		}
+
+		border-color: $color-border;	
 	}
 
 	> section, > .panel-body {
+		&, %heading {
+			@include foreground-color($color-body);
+		}
+
 		background-color: $color-body;
-		color: foregroundColor($color-body);
 	}
 
 	> footer, > .panel-footer {
+		&, %heading {
+			@include foreground-color($color-footer);
+		}
+
 		background-color: $color-footer;
 		border-color: $color-border;
-		color: foregroundColor($color-footer);
 	}
 }
 
@@ -44,17 +53,21 @@
 }
 
 %theme-panel-default {
-	@include theme-panel-default();
+	%panel {	
+		@include theme-panel-default();
 
-	&.primary { @include theme-panel-default($color-primary); }
-	&.secondary { @include theme-panel-default($color-secondary); }
-	&.light { @include theme-panel-default($color-light); }
-	&.dark { @include theme-panel-default($color-dark); }
+		&.primary { @include theme-panel-default($color-primary); }
+		&.secondary { @include theme-panel-default($color-secondary); }
+		&.light { @include theme-panel-default($color-light); }
+		&.dark { @include theme-panel-default($color-dark); }
 
-	&.success { @include theme-panel-default($color-success); }
-	&.warning { @include theme-panel-default($color-warning); }
-	&.failure { @include theme-panel-default($color-failure); }
+		&.success { @include theme-panel-default($color-success); }
+		&.warning { @include theme-panel-default($color-warning); }
+		&.failure { @include theme-panel-default($color-failure); }
+	}
 }
+
+@include add-theme('panel', $panel-theme);
 
 // Alert Theme
 @mixin alert-style(
@@ -68,22 +81,24 @@
 @mixin theme-alert-default(
 	$color: $color-primary
 ) {
+	@include foreground-color($color);
+
 	background-color: $color;
 	border-color: darken($color, 5%);
 	
-	&, p { color: foregroundColor($color); }
+	// &, p { color: foregroundColor($color); }
 
-	a {
-		@if is-dark($color) {
-			@extend %theme-anchor-#{$type-anchor-theme}%dark;
-		} @else {
-			@extend %theme-anchor-#{$type-anchor-theme};
-		}
-	}
+	// a {
+	// 	@if is-dark($color) {
+	// 		@extend %theme-anchor-#{$type-anchor-theme}%dark;
+	// 	} @else {
+	// 		@extend %theme-anchor-#{$type-anchor-theme};
+	// 	}
+	// }
 }
 
 %theme-alert-default {
-	&, &%light {
+	%alert {
 		@include theme-alert-default();
 
 		&.primary { @include theme-alert-default($color-primary); }
@@ -96,5 +111,7 @@
 		&.failure { @include theme-alert-default($color-failure); }
 	}
 }
+
+@include add-theme('alert', $alert-theme);
 
 

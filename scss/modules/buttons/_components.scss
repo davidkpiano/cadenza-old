@@ -24,56 +24,52 @@
     text-align: center;
     text-transform: $button-text-transform;
     text-decoration: none;
+
+    %button-tiny, %buttons-tiny > & {
+        @include type-scale($button-tiny-scale);
+        padding: $button-tiny-padding;
+    }
+
+    %button-small, %buttons-small > & {
+        @include type-scale($button-small-scale);
+        padding: $button-small-padding;
+    }
+
+    %button-large, %buttons-large > & {
+        @include type-scale($button-large-scale);
+        padding: $button-large-padding;
+    }
+
+    %button-huge, %buttons-huge > & {
+        @include type-scale($button-huge-scale);
+        padding: $button-huge-padding;
+    }
+
+    %button-left { 
+        float: left;
+        margin-left: 0;
+    }
+
+    %button-right {
+        float: right;
+        margin-right: 0;
+    }
+
+    %button-block {
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
+    %button-full {
+        display: block;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        // TODO: vertical alignment middle
+    }
 }
 
-%button-tiny, %buttons-tiny > %button {
-    @extend %button;
-    @include type-scale($button-tiny-scale);
-    padding: $button-tiny-padding;
-}
-
-%button-small, %buttons-small > %button {
-    @extend %button;
-    @include type-scale($button-small-scale);
-    padding: $button-small-padding;
-}
-
-%button-large, %buttons-large > %button {
-    @extend %button;
-    @include type-scale($button-large-scale);
-    padding: $button-large-padding;
-}
-
-%button-huge, %buttons-huge > %button {
-    @extend %button;
-    @include type-scale($button-huge-scale);
-    padding: $button-huge-padding;
-}
-
-%button-left { 
-    @extend %button;
-    float: left;
-    margin-left: 0;
-}
-
-%button-right {
-    @extend %button;
-    float: right;
-    margin-right: 0;
-}
-
-%button-block {
-    @extend %button;
-    display: block;
-    margin: 0;
-    width: 100%;
-}
-
-%button-full {
-    @extend %button-block;
-    height: 100%;
-    // TODO: vertical alignment middle
-}
 
 // Button Groups
 // -------------

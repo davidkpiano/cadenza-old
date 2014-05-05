@@ -4,7 +4,6 @@
 
 // Button Classes
 button, .button, input[type=button], input[type=submit] {
-    @include button-style;
     @extend %button;
 
     // Sized Button Classes

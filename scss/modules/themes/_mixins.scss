@@ -5,19 +5,17 @@
 // TODO: use maps (SASS 3.3)
 
 @mixin themes(
-    $themes: $themes,
-    $mode: false
+    $themes: $themes
 ) {
 
     @each $theme in $themes {
         $_module: nth($theme, 1);
         $_theme: 'default';
-        $_mode: if($mode, '%#{$mode}', '');
 
         @if length($theme) > 1 {
             $_theme: nth($theme, 2);
         }
 
-        @extend %theme-#{$_module}-#{$_theme}#{$_mode};
+        @extend %theme-#{$_module}-#{$_theme};
     }
 }

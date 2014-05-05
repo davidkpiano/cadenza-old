@@ -14,12 +14,11 @@
 }
 
 %theme-type-default {
-	&, &%light {
+	&, p, li, span {
 		color: $type-base-color;
-	}
 
-	&%dark {
-		color: $color-light;
+		&.dark { color: $type-base-color-dark; }
+		&.light { color: $type-base-color-light; }
 	}
 }
 
@@ -37,28 +36,22 @@
 }
 
 %ext-heading-default {
-	h6, .h6 { text-transform: uppercase; }
+	%h6 { text-transform: uppercase; }
 }
 
 %theme-heading-default {
-	&, &%light {	
-		// %heading {
-		// 	color: $type-base-color;
-		// }
+	%heading {
+		color: $type-heading-color;
 
-		%subheading, %heading-small {
-			color: $color-gray;
-		}
+		&.dark { color: $type-heading-color-dark; }
+		&.light { color: $type-heading-color-light; }
 	}
 
-	&%dark {
-		// %heading {
-		// 	color: $color-light;
-		// }
+	%subheading, %heading-small {
+		color: $type-subheading-color;
 
-		%subheading, %heading-small  {
-			color: $color-gray-light;
-		}
+		&.dark { color: $type-subheading-color-dark; }
+		&.light { color: $type-subheading-color-light; }
 	}
 }
 
@@ -68,11 +61,10 @@
 // ------------
 @mixin anchor-style(
 	$style: $type-anchor-style,
-	$theme: $type-anchor-theme,
-	$component: 'anchor'
+	$theme: $type-anchor-theme
 ) {
 	@extend %ext-anchor-#{$style} !optional;
-	@extend %theme-anchor-#{$theme}%#{$component} !optional;
+	@extend %theme-anchor-#{$theme} !optional;
 }
 
 @mixin theme-anchor-default(
@@ -101,17 +93,12 @@
 }
 
 %theme-anchor-default {
-	&, &%light {
-		%anchor {
-			@extend %form-transition;
-			@include theme-anchor-default();
-		}
-	}
+	%anchor {
+		@extend %form-transition;
+		@include theme-anchor-default();
 
-	&%dark {
-		%anchor {
-			@include theme-anchor-default($type-anchor-color-light);
-		}
+		&.light { @include theme-anchor-default($type-anchor-color-light); }
+		&.dark { @include theme-anchor-default($type-anchor-color-dark); }
 	}
 }
 
@@ -134,46 +121,41 @@ $x-pre-kbd-radius: 0.25rem !default;
 }
 
 %theme-pre-default {
-	&, &%light {
-		%pre {
-			color: $type-pre-color;
-		}
+	%pre {
+		color: $type-pre-color;
 
-		%code {
-			color: $type-code-color;
-			padding: $x-pre-code-padding;
-			background: $color-gray-light;
+		&.light { color: $type-pre-color-light; }
+		&.dark { color: $type-pre-color-dark; }
+	}
 
-			@if $x-pre-code-radius {
-				@include border-radius($x-pre-code-radius);
-			}
-		}
+	%code {
+		color: $type-code-color;
+		padding: $x-pre-code-padding;
+		background: $color-gray-light;
 
-		%kbd {
-			&, &.light {
-				font-family: $type-base-font-family;
-				color: $type-base-color;
-				padding: $x-pre-kbd-padding;
-				background: $color-gray-light;
-				border: 1px solid $color-gray;
-				border-bottom-width: 3px;
-
-				@if $x-pre-kbd-radius {
-					@include border-radius($x-pre-kbd-radius);
-				}
-			}
-
-			&.dark {
-				color: $color-light;
-				background: lighten($color-dark, 10%);
-				border-color: $color-dark;
-			}
+		@if $x-pre-code-radius {
+			@include border-radius($x-pre-code-radius);
 		}
 	}
 
-	&%dark {
-		%pre {
-			color: $color-gray-light;
+	%kbd {
+		&, &.light {
+			font-family: $type-base-font-family;
+			color: $type-base-color;
+			padding: $x-pre-kbd-padding;
+			background: $color-gray-light;
+			border: 1px solid $color-gray;
+			border-bottom-width: 3px;
+
+			@if $x-pre-kbd-radius {
+				@include border-radius($x-pre-kbd-radius);
+			}
+		}
+
+		&.dark {
+			color: $color-light;
+			background: lighten($color-dark, 10%);
+			border-color: $color-dark;
 		}
 	}
 }
@@ -208,25 +190,18 @@ $x-blockquote-footer-prefix: '\2014 \00A0';
 	}
 }
 
+// TODO: dark theme
 %theme-blockquote-default {
-	&, &%light {	
-		%blockquote {	
-			border-color: $type-blockquote-border-color;
-			color: $type-blockquote-color;
+	%blockquote {	
+		border-color: $type-blockquote-border-color;
+		color: $type-blockquote-color;
 
-			footer {
-				color: $type-blockquote-footer-color;
+		footer {
+			color: $type-blockquote-footer-color;
 
-				&::before {
-					content: '\2014 \00A0';
-				}
+			&::before {
+				content: '\2014 \00A0';
 			}
-		}
-	}
-
-	&%dark {
-		%blockquote {
-			// TODO
 		}
 	}
 }
