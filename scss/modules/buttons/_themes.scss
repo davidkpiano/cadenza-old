@@ -23,14 +23,14 @@
 		background-color: transparent;
 		border: none;
 	} @else {
-		@include foreground-color($color, $color-default: $color-light);
+		color: foregroundColor($color, $color-default: $color-light);
 		background-color: $color;
 		border-color: darken($color, 10%);
 
 		&:hover, &:active {
 			$color-hover: darken($color, 5%);
 
-			@include foreground-color($color-hover, $color-default: $color-light);
+			color: foregroundColor($color-hover, $color-default: $color-light);
 			background-color: $color-hover;
 			border-color: darken($color-hover, 10%);
 		}

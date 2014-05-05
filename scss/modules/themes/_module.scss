@@ -5,16 +5,20 @@
 // Theme Settings
 $theme-mode: 'light' !default;
 $theme-border-width: 1px !default;
+$theme-lighten-opacity: 0.3 !default;
+$theme-darken-opacity: 0.3 !default;
 
-// (name, color, is-dark)
+// (name, color)
 // TODO: use maps (SASS 3.3)
 $theme-colors: (
+    ('light', $color-light),
+    ('dark', $color-dark),
     ('primary', $color-primary),
     ('secondary', $color-secondary),
     ('white', white),
     ('black', black),
-    ('lighten', rgba(255,255,255,0.3)),
-    ('darken', rgba(0,0,0,0.3))
+    ('lighten', rgba(255, 255, 255, $theme-lighten-opacity)),
+    ('darken', rgba(0, 0, 0, $theme-darken-opacity))
 );
 
 

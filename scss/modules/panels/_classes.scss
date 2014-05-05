@@ -4,7 +4,6 @@
 
 // Panel Classes
 .panel {
-	@include panel-style();
 	@extend %panel;
 
 	> header, > hgroup, > .panel-header { @extend %panel-header; }
@@ -16,24 +15,12 @@
 
 // Alert Classes
 .alert {
-    @include alert-style();
     @extend %alert;
 
     .alert-exit { @extend %alert-exit; }
 }
 
-.alert-group {
-    @extend %alert-group;
-}
+.alert-group { @extend %alert-group; }
 
 // Modal Classes
-.modal {
-    @include panel-style();
-    @extend %modal;
-
-    > header, > hgroup, > .panel-header { @extend %panel-header; }
-
-    > section, > .panel-body { @extend %panel-body; }
-
-    > footer, > .panel-footer { @extend %panel-footer; }
-}
+.modal { @extend %modal; }

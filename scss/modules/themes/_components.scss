@@ -15,17 +15,13 @@
     $color: nth($theme-color, 2);
 
     %theme-#{$name} {        
-        @if is-dark($color) {
-            @extend %color-light;
-        } @else {
-            @extend %color-dark;
-        }
+        @include foreground-color($color);
 
         background-color: $color;
     }
 
     %color-#{$name} {
-        &, p, ul, ol, dl { color: $color; }
+        &, p, li, span { color: $color; }
     }
 
     %border-#{$name} {

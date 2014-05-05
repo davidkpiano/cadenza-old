@@ -20,29 +20,20 @@
 ) {
 	background-color: $color;
 	border-color: $color-border;
-	color: foregroundColor($color);
 
 	> header, > hgroup, .panel-header {
-		&, %heading {
-			@include foreground-color($color-header);
-		}
-
+		@include foreground-color($color-header);
+		background-color: $color-header;
 		border-color: $color-border;	
 	}
 
 	> section, > .panel-body {
-		&, %heading {
-			@include foreground-color($color-body);
-		}
-
+		@include foreground-color($color-body);
 		background-color: $color-body;
 	}
 
 	> footer, > .panel-footer {
-		&, %heading {
-			@include foreground-color($color-footer);
-		}
-
+		@include foreground-color($color-footer);
 		background-color: $color-footer;
 		border-color: $color-border;
 	}
@@ -85,16 +76,6 @@
 
 	background-color: $color;
 	border-color: darken($color, 5%);
-	
-	// &, p { color: foregroundColor($color); }
-
-	// a {
-	// 	@if is-dark($color) {
-	// 		@extend %theme-anchor-#{$type-anchor-theme}%dark;
-	// 	} @else {
-	// 		@extend %theme-anchor-#{$type-anchor-theme};
-	// 	}
-	// }
 }
 
 %theme-alert-default {
