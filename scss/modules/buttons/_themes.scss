@@ -48,7 +48,6 @@
 
 		&.link {
 			@include theme-button-default(transparent);
-			@extend %theme-anchor-#{$type-anchor-theme};
 		}
 
 		&, &.primary, &.secondary, &.light, &.dark {

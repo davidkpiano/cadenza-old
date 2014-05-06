@@ -16,6 +16,6 @@
             $_theme: nth($theme, 2);
         }
 
-        @extend %theme-#{$_module}-#{$_theme};
+        // @extend %theme-#{$_module}-#{$_theme};
     }
 }

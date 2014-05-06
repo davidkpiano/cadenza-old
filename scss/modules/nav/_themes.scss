@@ -17,21 +17,15 @@
 @mixin theme-nav-default(
     $color: transparent
 ) {
+    color: green;
+    
     li {
         &.hr, &.separator {
             border-color: $nav-separator-color;
         }
 
-        > a {
-            &:hover {
-                @if is-dark($color) {
-                    @extend %theme-anchor-#{$type-anchor-theme}%dark%anchor;
-                } @else {
-                    @extend %theme-anchor-#{$type-anchor-theme}%anchor;
-                }
-
-                background-color: $color;
-            }
+        &:hover {
+            @include foreground-color($color, $component: 'anchor');
         }
     }
 }
@@ -41,7 +35,7 @@
 }
 
 %theme-nav-default {
-	&, &%light {
+	nav {
         @include theme-nav-default();
 
         &.primary { @include theme-nav-default($color-primary); }
@@ -49,11 +43,9 @@
         &.light { @include theme-nav-default($color-light); }
         &.dark { @include theme-nav-default($color-dark); }
 	}
-
-	&%dark {
-		// No styles changed
-	}
 }
+
+@include add-theme('nav', $nav-theme);
 
 // Underline Nav Theme
 $x-nav-underline-border-width: 3px !default;
@@ -109,7 +101,7 @@ $x-nav-underline-color-inactive: $color-gray-light;
 }
 
 %theme-nav-underline {
-    &, &%light {
+    nav, .nav {
         @include theme-nav-underline();
 
         &.primary { @include theme-nav-underline($color-primary); }
@@ -133,7 +125,7 @@ $x-nav-underline-color-inactive: $color-gray-light;
 @mixin theme-dropdown-default(
     $color: $color-primary
 ) {
-    > .dropdown {
+    %dropdown {
         background-color: $dropdown-bgcolor;
         border-style: solid;
         border-color: $dropdown-border-color;
@@ -168,7 +160,7 @@ $x-nav-underline-color-inactive: $color-gray-light;
 }
 
 %theme-dropdown-default {
-    &, &%light {
+    %dropdown {
         @include theme-dropdown-default();
 
         &.primary { @include theme-dropdown-default($color-primary); }
@@ -176,42 +168,4 @@ $x-nav-underline-color-inactive: $color-gray-light;
         &.light { @include theme-dropdown-default($color-light); }
         &.dark { @include theme-dropdown-default($color-dark); }
     }
-
-    &%dark {
-        // No styles changed
-    }
 }
-
-// Tabs Theme
-// ----------
-@mixin tabs-style(
-    $style: $tabs-style,
-    $theme: $tabs-theme
-) {
-    @extend %ext-tabs-#{$style} !optional;
-    @extend %theme-tabs-#{$theme} !optional;
-}
-
-@mixin theme-tabs-default(
-    $color: $color-white,
-    $color-inactive: $color-light
-) {
-    > ul {
-        border-bottom-color: darken($color, 5%);
-
-        > li {
-            background-color: $color-inactive;
-            border-color: darken($color-inactive, 5%);
-        }
-    }
-}
-
-%ext-tabs-default {
-    > ul {
-
-        > li {
-            border-width: $tabs-border-width;
-        }
-    }
-}
-

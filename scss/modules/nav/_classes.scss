@@ -3,10 +3,8 @@
 // ==============
 
 // Nav Classes
-nav, .nav {
-	@include nav-style();
-	
-	&, &.vertical { @extend %nav; }
+nav {
+	@extend %nav;
 
 	> h1, > h2, > h3, > h4, > h5, > h6, > hgroup {
 		@extend %nav-header;
@@ -15,17 +13,16 @@ nav, .nav {
 	ul li {
 		&.separator, &.hr { @extend %nav-separator; }
 	}
+}
 
-	&.horizontal { 
-		@extend %nav-horizontal;
+nav.horizontal {
+	@extend %nav-horizontal;
 
-		&.full { @extend %nav-horizontal-full; }
-	}
+	&.full { @extend %nav-horizontal-full; }
 }
 
 // Dropdown Classes
 .dropdown-container {
-	@include dropdown-style();
 	@extend %dropdown-container;
 
 	> menu, > .dropdown {
@@ -48,9 +45,4 @@ nav, .nav {
 		&.bottom-push-left { @extend %dropdown-bottom-push-left; }
 		&.bottom-push-right { @extend %dropdown-bottom-push-right; }
 	}
-}
-
-// Tabs Classes
-.tabs {
-	@extend %tabs;
 }

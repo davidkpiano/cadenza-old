@@ -26,19 +26,32 @@
     $threshold: 65%, 
     $color-light: $type-base-color-light, 
     $color-dark: $type-base-color-dark,
-    $color-default: inherit
+    $color-default: inherit,
+    $component: 'all'
 ) {
     $_color: $color-default !default;
 
     @if type-of($color) == color {
         @if lightness($color) > $threshold {
-            &, p, li, span { color: $color-dark; }
-            %heading { color: $type-heading-color-dark; }
-            %anchor { color: $type-anchor-color-dark; }
+            @if ($component == 'type' or $component == 'all') {
+                &, p, li, span { color: $color-dark; }
+            }
+            @if ($component == 'heading' or $component == 'all') {
+                %heading { color: $type-heading-color-dark; }
+            }
+            @if ($component == 'anchor' or $component == 'all') {
+                %anchor { @extend %anchor.dark; }
+            }
         } @else {
-            &, p, li, span { color: $color-light; }
-            %heading { color: $type-heading-color-light; }
-            %anchor { color: $type-anchor-color-light; }
+            @if ($component == 'type' or $component == 'all') {
+                &, p, li, span { color: $color-light; }
+            }
+            @if ($component == 'heading' or $component == 'all') {
+                %heading { color: $type-heading-color-light; }
+            }
+            @if ($component == 'anchor' or $component == 'all') {
+                %anchor { @extend %anchor.light; }
+            }
         }
     } @else if $color == static or $color == transparent {
         $_color: false;
