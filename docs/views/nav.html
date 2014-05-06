@@ -1,10 +1,12 @@
 <h1>Navigation Module</h1>
 
-<h2>Dropdown Menu</h2>
+<div class="col-6">
+    <h2>Nav Menus</h2>
 
-<div class="dropdown-container">
-    <button ng-click="component.dropdown.open = !component.dropdown.open">Open Dropdown</button>
-    <menu ng-show="component.dropdown.open">
+    <select name="component.nav.color" ng-model="component.nav.color">
+        <option value="{{color}}" ng-repeat="color in ['primary','secondary','light','dark']">nav.{{color}}</option>
+    </select>
+    <nav ng-repeat="position in ['horizontal','vertical']" class="{{position}} {{component.nav.color}}">
         <ul>
             <li><a href="#">Link 1</a></li>
             <li><a href="#">Link 2</a></li>
@@ -12,15 +14,50 @@
             <li><a href="#">Link 4</a></li>
             <li><a href="#">Link 5</a></li>
         </ul>
-    </menu>
+    </nav>
 </div>
 
-<nav ng-repeat="position in ['horizontal','vertical']" class="{{position}}">
-    <ul>
-        <li><a href="#">Link 1</a></li>
-        <li><a href="#">Link 2</a></li>
-        <li><a href="#">Link 3</a></li>
-        <li><a href="#">Link 4</a></li>
-        <li><a href="#">Link 5</a></li>
-    </ul>
-</nav>
+<div class="col-6">
+    <h2>Dropdown Menus</h2>
+
+    <div>
+        <div class="field">        
+            <select name="component.dropdown.color" ng-model="component.dropdown.color">
+                <option value="{{color}}" ng-repeat="color in ['primary','secondary','light','dark']">dropdown.{{color}}</option>
+            </select>
+            <select name="component.dropdown.position" ng-model="component.dropdown.position">
+                <option value="{{position}}" ng-repeat="position in [
+                    'below-left',
+                    'below-right',
+                    'above-left',
+                    'above-right',
+                    'top-left',
+                    'top-right',
+                    'bottom-left',
+                    'bottom-right',
+                    'top-push-left',
+                    'top-push-right',
+                    'bottom-push-left',
+                    'bottom-push-right']">
+                    dropdown.{{position}}
+                </option>
+            </select>
+        </div>
+
+        <div class="field">
+            <div class="col-6 col-center dropdown-container">            
+                <button ng-click="component.dropdown.open = !component.dropdown.open" class="block">Open Dropdown</button>
+                <menu ng-show="component.dropdown.open" class="{{component.dropdown.color}} {{component.dropdown.position}}">
+                    <ul>
+                        <li><a href="#">Link 1</a></li>
+                        <li><a href="#">Link 2</a></li>
+                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Link 4</a></li>
+                        <li><a href="#">Link 5</a></li>
+                    </ul>
+                </menu>
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -15,7 +15,7 @@
 
 %ext-button-default {
 	@extend %button;
-	@include form-transition((border-color, background-color, color));
+	@include transition((border-color, background-color, color));
 }
 
 @mixin theme-button-default($color: $color-primary, $quiet: false) {
@@ -43,6 +43,10 @@
 }
 
 %theme-button-default {
+	%button {
+		@include transition((border-color, background-color, color));
+	}
+	
 	// Default style
 	%button:not(.link):not(.quiet) {	
 		@include theme-button-default;
@@ -59,7 +63,7 @@
 	// Quiet styles
 	%button.quiet {
 		@include theme-button-default($quiet: true);
-		
+
 		&.primary { @include theme-button-default($color-primary, $quiet: true); }
 		&.secondary { @include theme-button-default($color-secondary, $quiet: true); }
 		&.light { @include theme-button-default($color-light, $quiet: true); }
@@ -77,7 +81,7 @@
 // Transparent Button Style and Theme
 %ext-button-transparent {
 	@extend %button;
-	@include form-transition((border-color, background-color, color));
+	@include transition((border-color, background-color, color));
 }
 
 @mixin theme-button-transparent($color: $color-primary, $color-text: $color) {

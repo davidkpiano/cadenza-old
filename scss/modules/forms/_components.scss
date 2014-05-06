@@ -3,9 +3,7 @@
 // ================
 
 %form-transition {
-	@include transition-property(all);
-	@include transition-duration($form-transition-duration);
-	@include transition-timing-function($form-transition-timing-function);
+	@include transition('all');
 }
 
 %input {

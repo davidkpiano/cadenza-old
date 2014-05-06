@@ -18,6 +18,8 @@
     $color: transparent
 ) { 
     li {
+        @include transition(('background-color', 'color'));
+        
         &.hr, &.separator {
             border-color: $nav-separator-color;
         }

@@ -40,12 +40,3 @@
         }
     }
 }
-
-// Form Transition Mixin
-@mixin form-transition(
-    $property: all
-) {
-    @include transition-property($property);
-    @include transition-duration($form-transition-duration);
-    @include transition-timing-function($form-transition-timing-function);
-}
