@@ -78,7 +78,7 @@
     	@extend %inert;
     }
 
-    > #{$selector} {
+    #{$selector} {
         @extend %animation-#{$active-name}-inert !optional;
 
 

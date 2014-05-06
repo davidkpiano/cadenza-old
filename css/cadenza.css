@@ -24,12 +24,12 @@
 }
 
 /* line 14, ../scss/modules/animations/_components.scss */
-.ng-enter, .activate-all-fade > [ui-view].ng-enter, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-flipLeft > [ui-view].ng-enter, .activate-fade.ng-enter {
+.ng-enter, .activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-fade.ng-enter {
   z-index: 2;
 }
 
 /* line 18, ../scss/modules/animations/_components.scss */
-.ng-leave, .activate-all-fade > [ui-view].ng-leave, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-flipLeft > [ui-view].ng-leave, .activate-fade.ng-leave {
+.ng-leave, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-fade.ng-leave {
   z-index: 0;
 }
 
@@ -52,7 +52,7 @@
 }
 
 /* line 35, ../scss/modules/animations/_components.scss */
-.activate-all-fade > [ui-view].ng-enter, .activate-fade.ng-enter {
+.activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-fade.ng-enter {
   -webkit-animation-name: fade-active;
   animation-name: fade-active;
   -webkit-animation-direction: normal;
@@ -72,7 +72,7 @@
 }
 
 /* line 36, ../scss/modules/animations/_components.scss */
-.activate-all-fade > [ui-view].ng-leave, .activate-fade.ng-leave {
+.activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-fade.ng-leave {
   -webkit-animation-name: fade-inactive;
   animation-name: fade-inactive;
   -webkit-animation-direction: normal;
@@ -140,7 +140,7 @@
 }
 
 /* line 47, ../scss/modules/animations/_components.scss */
-.activate-all-scaleUp > [ui-view].ng-enter {
+.activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter {
   -webkit-animation-name: scaleUp-active;
   animation-name: scaleUp-active;
   -webkit-animation-direction: normal;
@@ -160,7 +160,7 @@
 }
 
 /* line 48, ../scss/modules/animations/_components.scss */
-.activate-all-scaleUp > [ui-view].ng-leave {
+.activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave {
   -webkit-animation-name: scaleUp-inactive;
   animation-name: scaleUp-inactive;
   -webkit-animation-direction: normal;
@@ -268,7 +268,7 @@
 }
 
 /* line 71, ../scss/modules/animations/_components.scss */
-.activate-all-scaleDown > [ui-view].ng-enter {
+.activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter {
   -webkit-animation-name: scaleDown-active;
   animation-name: scaleDown-active;
   -webkit-animation-direction: normal;
@@ -288,7 +288,7 @@
 }
 
 /* line 72, ../scss/modules/animations/_components.scss */
-.activate-all-scaleDown > [ui-view].ng-leave {
+.activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave {
   -webkit-animation-name: scaleDown-inactive;
   animation-name: scaleDown-inactive;
   -webkit-animation-direction: normal;
@@ -540,7 +540,7 @@
 }
 
 /* line 143, ../scss/modules/animations/_components.scss */
-.activate-all-slideLeft > [ui-view].ng-enter {
+.activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter {
   -webkit-animation-name: slideLeft-active;
   animation-name: slideLeft-active;
   -webkit-animation-direction: normal;
@@ -560,7 +560,7 @@
 }
 
 /* line 144, ../scss/modules/animations/_components.scss */
-.activate-all-slideLeft > [ui-view].ng-leave {
+.activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave {
   -webkit-animation-name: slideLeft-inactive;
   animation-name: slideLeft-inactive;
   -webkit-animation-direction: normal;
@@ -660,7 +660,7 @@
 }
 
 /* line 155, ../scss/modules/animations/_components.scss */
-.activate-all-slideRight > [ui-view].ng-enter {
+.activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter {
   -webkit-animation-name: slideRight-active;
   animation-name: slideRight-active;
   -webkit-animation-direction: normal;
@@ -680,7 +680,7 @@
 }
 
 /* line 156, ../scss/modules/animations/_components.scss */
-.activate-all-slideRight > [ui-view].ng-leave {
+.activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave {
   -webkit-animation-name: slideRight-inactive;
   animation-name: slideRight-inactive;
   -webkit-animation-direction: normal;
@@ -780,7 +780,7 @@
 }
 
 /* line 167, ../scss/modules/animations/_components.scss */
-.activate-all-slideUp > [ui-view].ng-enter {
+.activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter {
   -webkit-animation-name: slideUp-active;
   animation-name: slideUp-active;
   -webkit-animation-direction: normal;
@@ -800,7 +800,7 @@
 }
 
 /* line 168, ../scss/modules/animations/_components.scss */
-.activate-all-slideUp > [ui-view].ng-leave {
+.activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave {
   -webkit-animation-name: slideUp-inactive;
   animation-name: slideUp-inactive;
   -webkit-animation-direction: normal;
@@ -900,7 +900,7 @@
 }
 
 /* line 179, ../scss/modules/animations/_components.scss */
-.activate-all-slideDown > [ui-view].ng-enter {
+.activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter {
   -webkit-animation-name: slideDown-active;
   animation-name: slideDown-active;
   -webkit-animation-direction: normal;
@@ -920,7 +920,7 @@
 }
 
 /* line 180, ../scss/modules/animations/_components.scss */
-.activate-all-slideDown > [ui-view].ng-leave {
+.activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave {
   -webkit-animation-name: slideDown-inactive;
   animation-name: slideDown-inactive;
   -webkit-animation-direction: normal;
@@ -1020,7 +1020,7 @@
 }
 
 /* line 191, ../scss/modules/animations/_components.scss */
-.activate-all-flipLeft > [ui-view].ng-enter {
+.activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter {
   -webkit-animation-name: flipLeft-active;
   animation-name: flipLeft-active;
   -webkit-animation-direction: normal;
@@ -1040,7 +1040,7 @@
 }
 
 /* line 192, ../scss/modules/animations/_components.scss */
-.activate-all-flipLeft > [ui-view].ng-leave {
+.activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave {
   -webkit-animation-name: flipLeft-inactive;
   animation-name: flipLeft-inactive;
   -webkit-animation-direction: normal;

@@ -9,7 +9,8 @@ app.config(['$stateProvider', '$urlRouterProvider',
             'panels',
             'themes',
             'buttons',
-            'nav'
+            'nav',
+            'animations'
         ];
 
         _.each(components, function(component) {
