@@ -95,10 +95,10 @@
 	%anchor {
 		@extend %form-transition;
 		@include theme-anchor-default();
-
-		&.light { @include theme-anchor-default($type-anchor-color-light); }
-		&.dark { @include theme-anchor-default($type-anchor-color-dark); }
 	}
+
+	%anchor-light { @include theme-anchor-default($type-anchor-color-light); }
+	%anchor-dark { @include theme-anchor-default($type-anchor-color-dark); }
 }
 
 @include add-theme('anchor', $type-anchor-theme);

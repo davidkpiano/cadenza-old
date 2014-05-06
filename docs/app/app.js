@@ -7,7 +7,8 @@ app.config(['$stateProvider', '$urlRouterProvider',
         var components = [
             'grid',
             'panels',
-            'themes'
+            'themes',
+            'buttons'
         ];
 
         _.each(components, function(component) {

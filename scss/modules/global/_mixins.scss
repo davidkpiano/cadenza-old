@@ -36,7 +36,7 @@
                 %heading { color: $type-heading-color-dark; }
             }
             @if ($component == 'anchor' or $component == 'all') {
-                %anchor { @extend %anchor.dark; }
+                %anchor { @extend %anchor-dark; }
             }
         } @else {
             @if ($component == 'type' or $component == 'all') {
@@ -46,7 +46,7 @@
                 %heading { color: $type-heading-color-light; }
             }
             @if ($component == 'anchor' or $component == 'all') {
-                %anchor { @extend %anchor.light; }
+                %anchor { @extend %anchor-light; }
             }
         }
     } @else if $color == static or $color == transparent {

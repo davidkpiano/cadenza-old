@@ -18,14 +18,19 @@
 	@include form-transition((border-color, background-color, color));
 }
 
-@mixin theme-button-default($color: $color-primary) {
+@mixin theme-button-default($color: $color-primary, $quiet: false) {
 	@if $color == transparent {
 		background-color: transparent;
 		border: none;
 	} @else {
-		color: foregroundColor($color, $color-default: $color-light);
-		background-color: $color;
-		border-color: darken($color, 10%);
+		@if $quiet == false {		
+			color: foregroundColor($color, $color-default: $color-light);
+			background-color: $color;
+			border-color: darken($color, 10%);
+		} @else {
+			background-color: transparent;
+			border-color: transparent;
+		}
 
 		&:hover, &:active {
 			$color-hover: darken($color, 5%);
@@ -38,25 +43,32 @@
 }
 
 %theme-button-default {
-	%button {	
+	// Default style
+	%button:not(.link):not(.quiet) {	
 		@include theme-button-default;
+	}
 
+	// Normal styles
+	%button:not(.quiet) {
 		&.primary { @include theme-button-default($color-primary); }
 		&.secondary { @include theme-button-default($color-secondary); }
 		&.light { @include theme-button-default($color-light); }
 		&.dark { @include theme-button-default($color-dark); }
+	}
 
-		&.link {
-			@include theme-button-default(transparent);
-		}
+	// Quiet styles
+	%button.quiet {
+		@include theme-button-default($quiet: true);
+		
+		&.primary { @include theme-button-default($color-primary, $quiet: true); }
+		&.secondary { @include theme-button-default($color-secondary, $quiet: true); }
+		&.light { @include theme-button-default($color-light, $quiet: true); }
+		&.dark { @include theme-button-default($color-dark, $quiet: true); }
+	}
 
-		&, &.primary, &.secondary, &.light, &.dark {
-			&.quiet {
-				background-color: transparent;
-				border-color: transparent;
-				color: $color-dark;
-			}
-		}
+	// Link style
+	%button.link {
+		@include theme-button-default(transparent);
 	}
 }
 

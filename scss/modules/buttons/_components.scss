@@ -24,50 +24,50 @@
     text-align: center;
     text-transform: $button-text-transform;
     text-decoration: none;
+}
 
-    %button-tiny, %buttons-tiny > & {
-        @include type-scale($button-tiny-scale);
-        padding: $button-tiny-padding;
-    }
+%button-tiny, %buttons-tiny > %button {
+    @include type-scale($button-tiny-scale);
+    padding: $button-tiny-padding;
+}
 
-    %button-small, %buttons-small > & {
-        @include type-scale($button-small-scale);
-        padding: $button-small-padding;
-    }
+%button-small, %buttons-small > %button {
+    @include type-scale($button-small-scale);
+    padding: $button-small-padding;
+}
 
-    %button-large, %buttons-large > & {
-        @include type-scale($button-large-scale);
-        padding: $button-large-padding;
-    }
+%button-large, %buttons-large > %button {
+    @include type-scale($button-large-scale);
+    padding: $button-large-padding;
+}
 
-    %button-huge, %buttons-huge > & {
-        @include type-scale($button-huge-scale);
-        padding: $button-huge-padding;
-    }
+%button-huge, %buttons-huge > %button {
+    @include type-scale($button-huge-scale);
+    padding: $button-huge-padding;
+}
 
-    %button-left { 
-        float: left;
-        margin-left: 0;
-    }
+%button-left { 
+    float: left;
+    margin-left: 0;
+}
 
-    %button-right {
-        float: right;
-        margin-right: 0;
-    }
+%button-right {
+    float: right;
+    margin-right: 0;
+}
 
-    %button-block {
-        display: block;
-        margin: 0;
-        width: 100%;
-    }
+%button-block {
+    display: block;
+    margin: 0;
+    width: 100%;
+}
 
-    %button-full {
-        display: block;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-        // TODO: vertical alignment middle
-    }
+%button-full {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    // TODO: vertical alignment middle
 }
 
 
@@ -76,65 +76,63 @@
 %button-group {
     @extend %clearfix;
 
-    %button-group-buttons {
-        @include border-radius(0);
-        margin: 0;
-        margin-left: -$button-border-width;
-        float: left;
-
-        &:first-of-type { margin-left: inherit; }
-        &:hover, &:focus { z-index: 2; }
-
-        @if $button-radius {
-            &:first-of-type {
-                @include border-top-left-radius($button-radius);
-                @include border-bottom-left-radius($button-radius);
-            }
-            &:last-of-type {
-                @include border-top-right-radius($button-radius);
-                @include border-bottom-right-radius($button-radius);
-            }
-        }
-    }
-
     > input[type=radio], > input[type=checkbox] {
         display: none;
     }
 }
 
+%button-group-buttons {
+    @include border-radius(0);
+    margin: 0;
+    margin-left: -$button-border-width;
+    float: left;
+
+    &:first-of-type { margin-left: inherit; }
+    &:hover, &:focus { z-index: 2; }
+
+    @if $button-radius {
+        &:first-of-type {
+            @include border-top-left-radius($button-radius);
+            @include border-bottom-left-radius($button-radius);
+        }
+        &:last-of-type {
+            @include border-top-right-radius($button-radius);
+            @include border-bottom-right-radius($button-radius);
+        }
+    }
+}
+
 %button-group-inline {
-    @extend %button-group;
     display: inline-block;
     margin: $button-group-margin;
     margin-bottom: 0;
 }
 
 %button-group-vertical {
-    @extend %button-group;
     display: inline-block;
+}
 
-    > %button-group-buttons {
-        display: block;
-        width: 100%;
-        max-width: 100%;
-        margin: 0;
-        margin-left: 0;
-        margin-top: -$button-border-width;
-        float: none;
+%button-group-vertical-buttons {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    margin-left: 0;
+    margin-top: -$button-border-width;
+    float: none;
 
-        &:first-of-type { margin-left: 0; margin-top: inherit; }
-            
-        @if $button-radius {
-            &:first-of-type {
-                @include border-bottom-left-radius(0);
-                @include border-top-left-radius($button-radius);
-                @include border-top-right-radius($button-radius);
-            }
-            &:last-of-type {
-                @include border-top-right-radius(0);
-                @include border-bottom-left-radius($button-radius);
-                @include border-bottom-right-radius($button-radius);
-            }
+    &:first-of-type { margin-left: 0; margin-top: inherit; }
+        
+    @if $button-radius {
+        &:first-of-type {
+            @include border-bottom-left-radius(0);
+            @include border-top-left-radius($button-radius);
+            @include border-top-right-radius($button-radius);
+        }
+        &:last-of-type {
+            @include border-top-right-radius(0);
+            @include border-bottom-left-radius($button-radius);
+            @include border-bottom-right-radius($button-radius);
         }
     }
 }

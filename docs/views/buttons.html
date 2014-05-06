@@ -1,0 +1,36 @@
+<h1>Buttons Module</h1>
+
+<a ng-repeat="color in ['','primary','secondary','light','dark']" class="button {{color}}">a.{{color}}</a>
+<a href="_" class="button link">a.button.link</a>
+
+<h2>Quiet Buttons</h2>
+<a ng-repeat="color in ['','primary','secondary','light','dark']" class="button {{color}} quiet">button.{{color}}.quiet</a>
+
+<h2>Button Sizes</h2>
+<a ng-repeat="size in ['tiny','small','large','huge']" class="button {{size}}">a.{{size}}</a>
+
+<h2>Button Positions</h2>
+<div class="row field" ng-repeat="position in ['left','right','block']">
+    <a class="button {{position}}">a.{{position}}</a>
+</div>
+
+<h2>Button Groups</h2>
+<div class="button-group field">
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <button>Button 3</button>
+    <button>Button 4</button>
+    <button>Button 5</button>
+</div>
+
+<div ng-repeat="position in ['', 'vertical']" class="button-group {{position}} field">
+    <a ng-repeat="color in ['primary','secondary','light','dark']" class="button {{color}}">a.{{color}}</a>
+</div>
+
+<div class="button-group vertical field">
+    <button>Button 1</button>
+    <button>Button 2</button>
+    <button>Button 3</button>
+    <button>Button 4</button>
+    <button>Button 5</button>
+</div>

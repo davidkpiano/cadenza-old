@@ -34,6 +34,11 @@ button, .button, input[type=button], input[type=submit] {
         @extend %button-group-buttons;
     }
 
-    &.vertical { @extend %button-group-vertical; }
+    &.vertical { 
+        @extend %button-group-vertical;
+
+        > button, > .button { @extend %button-group-vertical-buttons; }
+    }
+    
     &.inline { @extend %button-group-inline; }
 }
