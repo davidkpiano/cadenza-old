@@ -16,9 +16,7 @@
 // Default Nav Theme
 @mixin theme-nav-default(
     $color: transparent
-) {
-    color: green;
-    
+) { 
     li {
         &.hr, &.separator {
             border-color: $nav-separator-color;
@@ -26,6 +24,7 @@
 
         &:hover {
             @include foreground-color($color, $component: 'anchor');
+            background-color: $color;
         }
     }
 }
@@ -125,32 +124,24 @@ $x-nav-underline-color-inactive: $color-gray-light;
 @mixin theme-dropdown-default(
     $color: $color-primary
 ) {
-    %dropdown {
-        background-color: $dropdown-bgcolor;
-        border-style: solid;
-        border-color: $dropdown-border-color;
-        border-width: $dropdown-border-width;
+    background-color: $dropdown-bgcolor;
+    border-style: solid;
+    border-color: $dropdown-border-color;
+    border-width: $dropdown-border-width;
 
-        li {
-            border: none;
+    li {
+        border: none;
 
-            > a {
-                &:hover {
-                    @if is-dark($color) {
-                        @extend %theme-anchor-#{$type-anchor-theme}%dark%anchor;
-                    } @else {
-                        @extend %theme-anchor-#{$type-anchor-theme}%anchor;
-                    }
+        &:hover {
+            @include foreground-color($color, $component: 'anchor');
 
-                    background-color: $color;
-                }
-            }
+            > a { background-color: $color; }
+        }
 
-            &.hr, &.separator {
-                border-bottom-width: $dropdown-separator-width;
-                border-bottom-style: solid;
-                border-bottom-color: $dropdown-separator-color;
-            }
+        &.hr, &.separator {
+            border-bottom-width: $dropdown-separator-width;
+            border-bottom-style: solid;
+            border-bottom-color: $dropdown-separator-color;
         }
     }
 }
@@ -169,3 +160,5 @@ $x-nav-underline-color-inactive: $color-gray-light;
         &.dark { @include theme-dropdown-default($color-dark); }
     }
 }
+
+@include add-theme('dropdown', $dropdown-theme);
