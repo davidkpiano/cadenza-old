@@ -7,7 +7,7 @@
     $name: nth($theme-color, 1);
 
     .theme-#{$name} {
-        &, [class*="theme-"] & { @extend %theme-#{$name}; }
+        @extend %theme-#{$name};
     }
 
     .color-#{$name} {

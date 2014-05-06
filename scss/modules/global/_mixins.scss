@@ -11,11 +11,7 @@
 }
 
 @mixin theme($color) {
-    @if is-dark($color) {
-        @extend %color-dark;
-    } @else {
-        @extend %color-light;
-    }
+    @include foreground-color($color);
 
     background-color: $color;
 }

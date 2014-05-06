@@ -2,6 +2,8 @@
 // Panels Components
 // =================
 
+// Panel Components
+// ----------------
 %panel {
     @include type-scale($panel-scale);
     @extend %clearfix;
@@ -19,29 +21,32 @@
         border-style: solid;
     }
 
-    %panel-header {
-        @extend %clearfix;
-        padding: $panel-header-padding;
-        border-width: 0 0 $panel-border-width 0;
-    }
+}
 
-    %panel-body {
-        @extend %clearfix;
-        padding: $panel-section-padding;
-        border-width: 0;
+%panel-header {
+    @extend %clearfix;
+    padding: $panel-header-padding;
+    border-width: 0 0 $panel-border-width 0;
+}
 
-        > *:last-child {
-            margin-bottom: 0;
-        }
-    }
+%panel-body {
+    @extend %clearfix;
+    padding: $panel-section-padding;
+    border-width: 0;
 
-    %panel-footer {
-        @extend %clearfix;
-        padding: $panel-footer-padding;
-        border-width: $panel-border-width 0 0 0;
+    > *:last-child {
+        margin-bottom: 0;
     }
 }
 
+%panel-footer {
+    @extend %clearfix;
+    padding: $panel-footer-padding;
+    border-width: $panel-border-width 0 0 0;
+}
+
+// Alert Components
+// ----------------
 %alert {
     @include type-scale($alert-scale);
     @extend %clearfix;
@@ -60,10 +65,11 @@
         margin-bottom: 0;
     }
 
-    %alert-exit {
-        @include position-absolute(top, right);
-        padding: $alert-exit-padding;
-    }
+}
+
+%alert-exit {
+    @include position-absolute(top, right);
+    padding: $alert-exit-padding;
 }
 
 %alert-group {
@@ -91,6 +97,8 @@
     }
 }
 
+// Modal Components
+// ----------------
 %modal {
     @extend %panel;
     @include position-absolute($modal-vertical, $modal-horizontal);
