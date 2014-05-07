@@ -10,7 +10,7 @@
 }
 
 /* line 8, ../scss/modules/animations/_components.scss */
-.inert, .activate-all-fade.inert, .activate-all-scaleUp.inert, .activate-all-scaleDown.inert, .activate-all-slideUp.inert, .activate-all-slideDown.inert, .activate-all-slideLeft.inert, .activate-all-slideRight.inert, .activate-all-flipLeft.inert, .activate-fade.inert, .inert > *, .activate-all-fade.inert > *, .activate-all-scaleUp.inert > *, .activate-all-scaleDown.inert > *, .activate-all-slideUp.inert > *, .activate-all-slideDown.inert > *, .activate-all-slideLeft.inert > *, .activate-all-slideRight.inert > *, .activate-all-flipLeft.inert > *, .activate-fade.inert > * {
+.inert, .activate-all-fade.inert, .activate-all-scaleUp.inert, .activate-all-scaleDown.inert, .activate-all-slideUp.inert, .activate-all-slideDown.inert, .activate-all-slideLeft.inert, .activate-all-slideRight.inert, .activate-all-shiftUp.inert, .activate-all-shiftDown.inert, .activate-all-shiftLeft.inert, .activate-all-shiftRight.inert, .activate-all-flipLeft.inert, .activate-fade.inert, .inert > *, .activate-all-fade.inert > *, .activate-all-scaleUp.inert > *, .activate-all-scaleDown.inert > *, .activate-all-slideUp.inert > *, .activate-all-slideDown.inert > *, .activate-all-slideLeft.inert > *, .activate-all-slideRight.inert > *, .activate-all-shiftUp.inert > *, .activate-all-shiftDown.inert > *, .activate-all-shiftLeft.inert > *, .activate-all-shiftRight.inert > *, .activate-all-flipLeft.inert > *, .activate-fade.inert > * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
@@ -24,12 +24,12 @@
 }
 
 /* line 14, ../scss/modules/animations/_components.scss */
-.ng-enter, .activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-fade.ng-enter {
+.ng-enter, .activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-fade.ng-enter {
   z-index: 2;
 }
 
 /* line 18, ../scss/modules/animations/_components.scss */
-.ng-leave, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-fade.ng-leave {
+.ng-leave, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-fade.ng-leave {
   z-index: 0;
 }
 
@@ -1020,6 +1020,518 @@
 }
 
 /* line 191, ../scss/modules/animations/_components.scss */
+.activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter {
+  -webkit-animation-name: shiftUp-active;
+  animation-name: shiftUp-active;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+/* line 192, ../scss/modules/animations/_components.scss */
+.activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave {
+  -webkit-animation-name: shiftUp-inactive;
+  animation-name: shiftUp-inactive;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+@-webkit-keyframes shiftUp-active {
+  /* line 194, ../scss/modules/animations/_components.scss */
+  from {
+    -webkit-transform: translateY(5rem);
+    -moz-transform: translateY(5rem);
+    -ms-transform: translateY(5rem);
+    -o-transform: translateY(5rem);
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+
+  /* line 198, ../scss/modules/animations/_components.scss */
+  to {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shiftUp-active {
+  /* line 194, ../scss/modules/animations/_components.scss */
+  from {
+    -webkit-transform: translateY(5rem);
+    -moz-transform: translateY(5rem);
+    -ms-transform: translateY(5rem);
+    -o-transform: translateY(5rem);
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+
+  /* line 198, ../scss/modules/animations/_components.scss */
+  to {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes shiftUp-inactive {
+  /* line 204, ../scss/modules/animations/_components.scss */
+  from {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* line 208, ../scss/modules/animations/_components.scss */
+  to {
+    -webkit-transform: translateY(-5rem);
+    -moz-transform: translateY(-5rem);
+    -ms-transform: translateY(-5rem);
+    -o-transform: translateY(-5rem);
+    transform: translateY(-5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes shiftUp-inactive {
+  /* line 204, ../scss/modules/animations/_components.scss */
+  from {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* line 208, ../scss/modules/animations/_components.scss */
+  to {
+    -webkit-transform: translateY(-5rem);
+    -moz-transform: translateY(-5rem);
+    -ms-transform: translateY(-5rem);
+    -o-transform: translateY(-5rem);
+    transform: translateY(-5rem);
+    opacity: 0;
+  }
+}
+
+/* line 215, ../scss/modules/animations/_components.scss */
+.activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter {
+  -webkit-animation-name: shiftDown-active;
+  animation-name: shiftDown-active;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+/* line 216, ../scss/modules/animations/_components.scss */
+.activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave {
+  -webkit-animation-name: shiftDown-inactive;
+  animation-name: shiftDown-inactive;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+@-webkit-keyframes shiftDown-active {
+  /* line 218, ../scss/modules/animations/_components.scss */
+  from {
+    -webkit-transform: translateY(-5rem);
+    -moz-transform: translateY(-5rem);
+    -ms-transform: translateY(-5rem);
+    -o-transform: translateY(-5rem);
+    transform: translateY(-5rem);
+    opacity: 0;
+  }
+
+  /* line 222, ../scss/modules/animations/_components.scss */
+  to {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shiftDown-active {
+  /* line 218, ../scss/modules/animations/_components.scss */
+  from {
+    -webkit-transform: translateY(-5rem);
+    -moz-transform: translateY(-5rem);
+    -ms-transform: translateY(-5rem);
+    -o-transform: translateY(-5rem);
+    transform: translateY(-5rem);
+    opacity: 0;
+  }
+
+  /* line 222, ../scss/modules/animations/_components.scss */
+  to {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes shiftDown-inactive {
+  /* line 228, ../scss/modules/animations/_components.scss */
+  from {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* line 232, ../scss/modules/animations/_components.scss */
+  to {
+    -webkit-transform: translateY(5rem);
+    -moz-transform: translateY(5rem);
+    -ms-transform: translateY(5rem);
+    -o-transform: translateY(5rem);
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes shiftDown-inactive {
+  /* line 228, ../scss/modules/animations/_components.scss */
+  from {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  /* line 232, ../scss/modules/animations/_components.scss */
+  to {
+    -webkit-transform: translateY(5rem);
+    -moz-transform: translateY(5rem);
+    -ms-transform: translateY(5rem);
+    -o-transform: translateY(5rem);
+    transform: translateY(5rem);
+    opacity: 0;
+  }
+}
+
+/* line 239, ../scss/modules/animations/_components.scss */
+.activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter {
+  -webkit-animation-name: shiftLeft-active;
+  animation-name: shiftLeft-active;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+/* line 240, ../scss/modules/animations/_components.scss */
+.activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave {
+  -webkit-animation-name: shiftLeft-inactive;
+  animation-name: shiftLeft-inactive;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+@-webkit-keyframes shiftLeft-active {
+  /* line 242, ../scss/modules/animations/_components.scss */
+  from {
+    -webkit-transform: translateX(5rem);
+    -moz-transform: translateX(5rem);
+    -ms-transform: translateX(5rem);
+    -o-transform: translateX(5rem);
+    transform: translateX(5rem);
+    opacity: 0;
+  }
+
+  /* line 246, ../scss/modules/animations/_components.scss */
+  to {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shiftLeft-active {
+  /* line 242, ../scss/modules/animations/_components.scss */
+  from {
+    -webkit-transform: translateX(5rem);
+    -moz-transform: translateX(5rem);
+    -ms-transform: translateX(5rem);
+    -o-transform: translateX(5rem);
+    transform: translateX(5rem);
+    opacity: 0;
+  }
+
+  /* line 246, ../scss/modules/animations/_components.scss */
+  to {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes shiftLeft-inactive {
+  /* line 252, ../scss/modules/animations/_components.scss */
+  from {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* line 256, ../scss/modules/animations/_components.scss */
+  to {
+    -webkit-transform: translateX(-5rem);
+    -moz-transform: translateX(-5rem);
+    -ms-transform: translateX(-5rem);
+    -o-transform: translateX(-5rem);
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes shiftLeft-inactive {
+  /* line 252, ../scss/modules/animations/_components.scss */
+  from {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* line 256, ../scss/modules/animations/_components.scss */
+  to {
+    -webkit-transform: translateX(-5rem);
+    -moz-transform: translateX(-5rem);
+    -ms-transform: translateX(-5rem);
+    -o-transform: translateX(-5rem);
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+}
+
+/* line 263, ../scss/modules/animations/_components.scss */
+.activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter {
+  -webkit-animation-name: shiftRight-active;
+  animation-name: shiftRight-active;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+/* line 264, ../scss/modules/animations/_components.scss */
+.activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave {
+  -webkit-animation-name: shiftRight-inactive;
+  animation-name: shiftRight-inactive;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -webkit-animation-delay: false;
+  animation-delay: false;
+  -webkit-animation-iteration-count: false;
+  animation-iteration-count: false;
+  -webkit-animation-play-state: false;
+  animation-play-state: false;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
+@-webkit-keyframes shiftRight-active {
+  /* line 266, ../scss/modules/animations/_components.scss */
+  from {
+    -webkit-transform: translateX(-5rem);
+    -moz-transform: translateX(-5rem);
+    -ms-transform: translateX(-5rem);
+    -o-transform: translateX(-5rem);
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+
+  /* line 270, ../scss/modules/animations/_components.scss */
+  to {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes shiftRight-active {
+  /* line 266, ../scss/modules/animations/_components.scss */
+  from {
+    -webkit-transform: translateX(-5rem);
+    -moz-transform: translateX(-5rem);
+    -ms-transform: translateX(-5rem);
+    -o-transform: translateX(-5rem);
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+
+  /* line 270, ../scss/modules/animations/_components.scss */
+  to {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes shiftRight-inactive {
+  /* line 276, ../scss/modules/animations/_components.scss */
+  from {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* line 280, ../scss/modules/animations/_components.scss */
+  to {
+    -webkit-transform: translateX(5rem);
+    -moz-transform: translateX(5rem);
+    -ms-transform: translateX(5rem);
+    -o-transform: translateX(5rem);
+    transform: translateX(5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes shiftRight-inactive {
+  /* line 276, ../scss/modules/animations/_components.scss */
+  from {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  /* line 280, ../scss/modules/animations/_components.scss */
+  to {
+    -webkit-transform: translateX(5rem);
+    -moz-transform: translateX(5rem);
+    -ms-transform: translateX(5rem);
+    -o-transform: translateX(5rem);
+    transform: translateX(5rem);
+    opacity: 0;
+  }
+}
+
+/* line 287, ../scss/modules/animations/_components.scss */
 .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter {
   -webkit-animation-name: flipLeft-active;
   animation-name: flipLeft-active;
@@ -1039,7 +1551,7 @@
   animation-duration: 2s;
 }
 
-/* line 192, ../scss/modules/animations/_components.scss */
+/* line 288, ../scss/modules/animations/_components.scss */
 .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave {
   -webkit-animation-name: flipLeft-inactive;
   animation-name: flipLeft-inactive;
@@ -1060,7 +1572,7 @@
 }
 
 @-webkit-keyframes flipLeft-active {
-  /* line 194, ../scss/modules/animations/_components.scss */
+  /* line 290, ../scss/modules/animations/_components.scss */
   from {
     z-index: 1;
     -webkit-transform: translateZ(-1000px) rotateY(180deg);
@@ -1070,7 +1582,7 @@
     transform: translateZ(-1000px) rotateY(180deg);
   }
 
-  /* line 195, ../scss/modules/animations/_components.scss */
+  /* line 291, ../scss/modules/animations/_components.scss */
   to {
     z-index: 2;
     -webkit-transform: translateZ(0) rotateY(0);
@@ -1082,7 +1594,7 @@
 }
 
 @keyframes flipLeft-active {
-  /* line 194, ../scss/modules/animations/_components.scss */
+  /* line 290, ../scss/modules/animations/_components.scss */
   from {
     z-index: 1;
     -webkit-transform: translateZ(-1000px) rotateY(180deg);
@@ -1092,7 +1604,7 @@
     transform: translateZ(-1000px) rotateY(180deg);
   }
 
-  /* line 195, ../scss/modules/animations/_components.scss */
+  /* line 291, ../scss/modules/animations/_components.scss */
   to {
     z-index: 2;
     -webkit-transform: translateZ(0) rotateY(0);
@@ -1104,7 +1616,7 @@
 }
 
 @-webkit-keyframes flipLeft-inactive {
-  /* line 198, ../scss/modules/animations/_components.scss */
+  /* line 294, ../scss/modules/animations/_components.scss */
   from {
     z-index: 2;
     -webkit-transform: translateZ(0) rotateY(0);
@@ -1114,7 +1626,7 @@
     transform: translateZ(0) rotateY(0);
   }
 
-  /* line 202, ../scss/modules/animations/_components.scss */
+  /* line 298, ../scss/modules/animations/_components.scss */
   to {
     z-index: 1;
     -webkit-transform: translateZ(-1000px) rotateY(-180deg);
@@ -1126,7 +1638,7 @@
 }
 
 @keyframes flipLeft-inactive {
-  /* line 198, ../scss/modules/animations/_components.scss */
+  /* line 294, ../scss/modules/animations/_components.scss */
   from {
     z-index: 2;
     -webkit-transform: translateZ(0) rotateY(0);
@@ -1136,7 +1648,7 @@
     transform: translateZ(0) rotateY(0);
   }
 
-  /* line 202, ../scss/modules/animations/_components.scss */
+  /* line 298, ../scss/modules/animations/_components.scss */
   to {
     z-index: 1;
     -webkit-transform: translateZ(-1000px) rotateY(-180deg);

@@ -187,6 +187,102 @@
     to { @include transform(translateY(100%)); }
 }
 
+// Shift Up
+%animation-shiftUp-active { @include animation(shiftUp-active); }
+%animation-shiftUp-inactive { @include animation(shiftUp-inactive); }
+@include keyframes(shiftUp-active) {
+    from { 
+        @include transform(translateY($animation-delta));
+        opacity: 0;
+    }
+    to {
+        @include transform(translateY(0));
+        opacity: 1;
+    }
+}
+@include keyframes(shiftUp-inactive) {
+    from {
+        @include transform(translateY(0));
+        opacity: 1;
+    }
+    to {
+        @include transform(translateY(-$animation-delta));
+        opacity: 0;
+    }
+}
+
+// Shift Down
+%animation-shiftDown-active { @include animation(shiftDown-active); }
+%animation-shiftDown-inactive { @include animation(shiftDown-inactive); }
+@include keyframes(shiftDown-active) {
+    from { 
+        @include transform(translateY(-$animation-delta));
+        opacity: 0;
+    }
+    to {
+        @include transform(translateY(0));
+        opacity: 1;
+    }
+}
+@include keyframes(shiftDown-inactive) {
+    from {
+        @include transform(translateY(0));
+        opacity: 1;
+    }
+    to {
+        @include transform(translateY($animation-delta));
+        opacity: 0;
+    }
+}
+
+// Shift Left
+%animation-shiftLeft-active { @include animation(shiftLeft-active); }
+%animation-shiftLeft-inactive { @include animation(shiftLeft-inactive); }
+@include keyframes(shiftLeft-active) {
+    from { 
+        @include transform(translateX($animation-delta));
+        opacity: 0;
+    }
+    to {
+        @include transform(translateX(0));
+        opacity: 1;
+    }
+}
+@include keyframes(shiftLeft-inactive) {
+    from {
+        @include transform(translateX(0));
+        opacity: 1;
+    }
+    to {
+        @include transform(translateX(-$animation-delta));
+        opacity: 0;
+    }
+}
+
+// Shift Right
+%animation-shiftRight-active { @include animation(shiftRight-active); }
+%animation-shiftRight-inactive { @include animation(shiftRight-inactive); }
+@include keyframes(shiftRight-active) {
+    from { 
+        @include transform(translateX(-$animation-delta));
+        opacity: 0;
+    }
+    to {
+        @include transform(translateX(0));
+        opacity: 1;
+    }
+}
+@include keyframes(shiftRight-inactive) {
+    from {
+        @include transform(translateX(0));
+        opacity: 1;
+    }
+    to {
+        @include transform(translateX($animation-delta));
+        opacity: 0;
+    }
+}
+
 // Flip Left
 %animation-flipLeft-active { @include animation(flipLeft-active, $is-3d: true); }
 %animation-flipLeft-inactive { @include animation(flipLeft-inactive, $is-3d: true); }

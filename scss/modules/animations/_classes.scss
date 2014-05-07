@@ -35,6 +35,22 @@
 	@include activate-all(slideRight);
 }
 
+.activate-all-shiftUp {
+    @include activate-all(shiftUp);
+}
+
+.activate-all-shiftDown {
+    @include activate-all(shiftDown);
+}
+
+.activate-all-shiftLeft {
+    @include activate-all(shiftLeft);
+}
+
+.activate-all-shiftRight {
+    @include activate-all(shiftRight);
+}
+
 .activate-all-flipLeft {
 	@include activate-all(flipLeft, $is-3d: true);
 }
