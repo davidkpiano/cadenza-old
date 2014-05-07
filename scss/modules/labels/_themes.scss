@@ -19,14 +19,10 @@
     color: foregroundColor($color);
 }
 
-%ext-label-default {
-    // No changes
-}
-
 %theme-label-default {
-	&, &%light {
-        @include theme-label-default();
+    %label:not(.transparent) { @include theme-label-default(); }
 
+	%label {
         &.primary { @include theme-label-default($color-primary); }
         &.secondary { @include theme-label-default($color-secondary); }
         &.light { @include theme-label-default($color-light); }
@@ -38,11 +34,9 @@
 
         &.transparent { @include theme-label-default(transparent); }
 	}
-
-	&%dark {
-		// No changes
-	}
 }
+
+@include add-theme('label', $label-theme);
 
 // Badge Theme
 // -----------
@@ -66,9 +60,9 @@
 }
 
 %theme-badge-default {
-    &, &%light {
-        @include theme-badge-default();
+    %badge:not(.transparent) { @include theme-badge-default(); }
 
+    %badge {
         &.primary { @include theme-badge-default($color-primary); }
         &.secondary { @include theme-badge-default($color-secondary); }
         &.light { @include theme-badge-default($color-light); }
@@ -78,17 +72,7 @@
         &.warning { @include theme-badge-default($color-warning); }
         &.failure { @include theme-badge-default($color-failure); }
 
-        &.transparent { 
-            @include theme-badge-default(transparent);
-            color: $color-dark;
-        }
-    }
-
-    &%dark {
-        &.transparent { 
-            @include theme-badge-default(transparent);
-            color: $color-light;
-        }
+        &.transparent { @include theme-badge-default(transparent); }
     }
 }
 

@@ -8446,98 +8446,52 @@ body button.link, body .link.button, body input.link[type=button], body input.li
   transform: translateX(50%) translateY(50%);
 }
 
+/* line 23, ../scss/modules/labels/_themes.scss */
+body .badge:not(.transparent), body .label:not(.transparent) {
+  background-color: #024959;
+  color: #efefef;
+}
+/* line 26, ../scss/modules/labels/_themes.scss */
+body .primary.badge, body .primary.label {
+  background-color: #024959;
+  color: #efefef;
+}
 /* line 27, ../scss/modules/labels/_themes.scss */
-.label {
-  background-color: #024959;
-  color: #efefef;
-}
-/* line 30, ../scss/modules/labels/_themes.scss */
-.primary.label {
-  background-color: #024959;
-  color: #efefef;
-}
-/* line 31, ../scss/modules/labels/_themes.scss */
-.secondary.label {
+body .secondary.badge, body .secondary.label {
   background-color: #e74c30;
   color: #efefef;
 }
-/* line 32, ../scss/modules/labels/_themes.scss */
-.light.label {
+/* line 28, ../scss/modules/labels/_themes.scss */
+body .light.badge, body .light.label {
   background-color: #efefef;
   color: #363636;
 }
-/* line 33, ../scss/modules/labels/_themes.scss */
-.dark.label {
+/* line 29, ../scss/modules/labels/_themes.scss */
+body .dark.badge, body .dark.label {
   background-color: #363636;
   color: #efefef;
 }
-/* line 35, ../scss/modules/labels/_themes.scss */
-.success.label {
+/* line 31, ../scss/modules/labels/_themes.scss */
+body .success.badge, body .success.label {
   background-color: #96cc69;
   color: #efefef;
 }
-/* line 36, ../scss/modules/labels/_themes.scss */
-.warning.label {
+/* line 32, ../scss/modules/labels/_themes.scss */
+body .warning.badge, body .warning.label {
   background-color: #ffcc5c;
   color: #363636;
 }
-/* line 37, ../scss/modules/labels/_themes.scss */
-.failure.label {
+/* line 33, ../scss/modules/labels/_themes.scss */
+body .failure.badge, body .failure.label {
   background-color: #c44741;
   color: #efefef;
 }
-/* line 39, ../scss/modules/labels/_themes.scss */
-.transparent.label {
+/* line 35, ../scss/modules/labels/_themes.scss */
+body .transparent.badge, body .transparent.label {
   background-color: transparent;
   color: false;
 }
 
-/* line 69, ../scss/modules/labels/_themes.scss */
-.badge {
-  background-color: #024959;
-  color: #efefef;
-}
-/* line 72, ../scss/modules/labels/_themes.scss */
-.primary.badge {
-  background-color: #024959;
-  color: #efefef;
-}
-/* line 73, ../scss/modules/labels/_themes.scss */
-.secondary.badge {
-  background-color: #e74c30;
-  color: #efefef;
-}
-/* line 74, ../scss/modules/labels/_themes.scss */
-.light.badge {
-  background-color: #efefef;
-  color: #363636;
-}
-/* line 75, ../scss/modules/labels/_themes.scss */
-.dark.badge {
-  background-color: #363636;
-  color: #efefef;
-}
-/* line 77, ../scss/modules/labels/_themes.scss */
-.success.badge {
-  background-color: #96cc69;
-  color: #efefef;
-}
-/* line 78, ../scss/modules/labels/_themes.scss */
-.warning.badge {
-  background-color: #ffcc5c;
-  color: #363636;
-}
-/* line 79, ../scss/modules/labels/_themes.scss */
-.failure.badge {
-  background-color: #c44741;
-  color: #efefef;
-}
-/* line 81, ../scss/modules/labels/_themes.scss */
-.transparent.badge {
-  background-color: transparent;
-  color: false;
-  color: #363636;
-}
 /* line 9, ../scss/modules/fields/_components.scss */
 .field {
   margin-bottom: 0.5rem;

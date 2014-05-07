@@ -3,15 +3,11 @@
 // ==============
 
 // Label Classes
-.label {
-    @extend %label;
-    @include label-style;
-}
+.label { @extend %label; }
 
 // Badge Classes
 .badge {
     @extend %badge;
-    @include badge-style;
 
     &.top-left { @extend %badge-top-left; }
     &.top-right { @extend %badge-top-right; }
