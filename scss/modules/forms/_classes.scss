@@ -3,9 +3,8 @@
 // =============
 
 textarea,
-input:not[type=radio] {
+input:not([type=radio]) {
 	@extend %input;
-	@include input-style();
 
 	&.small { @extend %input-small; }
 
@@ -15,3 +14,5 @@ input:not[type=radio] {
 }
 
 textarea { @extend %textarea; }
+
+select { @extend %select; }

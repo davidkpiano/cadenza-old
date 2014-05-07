@@ -12,17 +12,44 @@
 	@extend %theme-input-#{$theme} !optional;
 }
 
-%theme-input-default {
-	&, &%light {
-		@extend %form-transition;
-		border-color: $color-gray-light;
+@mixin theme-input-default(
+	$color: $color-primary,
+	$border-color-blur: mix(white, $color, 50%),
+	$border-color-hover: $color,
+	$border-color-focus: $color,
 
-		&:focus { 
-			border-color: $color-primary;
-		}
+	$type-color-blur: $color-gray,
+	$type-color-hover: $color-gray,
+	$type-color-focus: $type-base-color-dark
+) {
+	border-color: $border-color-blur;
+	color: $type-color-blur;
+
+	&:hover {
+		border-color: $border-color-hover;
+		color: $type-color-hover;
 	}
 
-	&%dark {
-
+	&:focus {
+		border-color: $border-color-focus;
+		color: $type-color-focus;
 	}
 }
+
+%theme-input-default {
+	%input {
+		@extend %form-transition;
+		@include theme-input-default($color-gray);
+
+		&.primary { @include theme-input-default($color-primary); }
+		&.secondary { @include theme-input-default($color-secondary); }
+		&.light { @include theme-input-default($color-light); }
+		&.dark { @include theme-input-default($color-dark); }
+
+		&.success { @include theme-input-default($color-success); }
+		&.warning { @include theme-input-default($color-warning); }
+		&.failure { @include theme-input-default($color-failure); }
+	}
+}
+
+@include add-theme('input', $form-input-theme);

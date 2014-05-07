@@ -1770,7 +1770,7 @@ input, button, textarea, select {
 
 /* line 133, ../scss/modules/_layout.scss */
 .inline-block-all > *, .valign-center-all > *, .dropdown-container > menu ul li > a > *, .dropdown-container > .dropdown ul li > a > *, nav ul li > a > *, nav.horizontal > ul > li > a > *, .inline-block, textarea.inline,
-input[type=radio].inline:not {
+input.inline:not([type=radio]) {
   display: inline-block;
   width: auto;
   margin-top: 0;
@@ -1784,10 +1784,10 @@ input[type=radio].inline:not {
 
 /* line 147, ../scss/modules/_layout.scss */
 *, *:before, *:after, textarea.small,
-input[type=radio].small:not, textarea.large,
-input[type=radio].large:not, textarea.inline,
-input[type=radio].inline:not, textarea,
-input[type=radio]:not {
+input.small:not([type=radio]), textarea.large,
+input.large:not([type=radio]), textarea.inline,
+input.inline:not([type=radio]), textarea,
+input:not([type=radio]) {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -7950,8 +7950,11 @@ body .dropdown-container > menu.dark li.hr, body .dropdown-container > .dark.dro
 }
 
 /* line 5, ../scss/modules/forms/_components.scss */
-body a, textarea,
-input[type=radio]:not {
+body a, body textarea.small,
+body input.small:not([type=radio]), body textarea.large,
+body input.large:not([type=radio]), body textarea.inline,
+body input.inline:not([type=radio]), body textarea,
+body input:not([type=radio]) {
   -webkit-transition-property: all;
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -7968,10 +7971,22 @@ input[type=radio]:not {
 
 /* line 9, ../scss/modules/forms/_components.scss */
 textarea.small,
-input[type=radio].small:not, textarea.large,
-input[type=radio].large:not, textarea.inline,
-input[type=radio].inline:not, textarea,
-input[type=radio]:not {
+input.small:not([type=radio]), textarea.large,
+input.large:not([type=radio]), textarea.inline,
+input.inline:not([type=radio]), textarea,
+input:not([type=radio]) {
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-timing-function: ease-in-out;
+  -moz-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
   display: block;
@@ -7987,48 +8002,183 @@ input[type=radio]:not {
   border-radius: 3px;
 }
 
-/* line 24, ../scss/modules/forms/_components.scss */
+/* line 25, ../scss/modules/forms/_components.scss */
 textarea.small,
-input[type=radio].small:not {
+input.small:not([type=radio]) {
   font-size: 11.86196px ;
   font-size: 0.74137rem ;
 }
 
-/* line 29, ../scss/modules/forms/_components.scss */
+/* line 30, ../scss/modules/forms/_components.scss */
 textarea.large,
-input[type=radio].large:not {
+input.large:not([type=radio]) {
   font-size: 16px ;
   font-size: 1rem ;
 }
 
-/* line 34, ../scss/modules/forms/_components.scss */
+/* line 35, ../scss/modules/forms/_components.scss */
 textarea.inline,
-input[type=radio].inline:not {
+input.inline:not([type=radio]) {
   width: auto;
 }
 
-/* line 41, ../scss/modules/forms/_components.scss */
+/* line 42, ../scss/modules/forms/_components.scss */
 textarea {
   height: auto;
 }
 
-/* line 51, ../scss/modules/forms/_components.scss */
-.badge, .label {
+/* line 52, ../scss/modules/forms/_components.scss */
+select {
   display: block;
-  margin-bottom: 0.25em;
-  font-size: 13.77648px ;
-  font-size: 0.86103rem ;
+  width: 100%;
 }
 
-/* line 16, ../scss/modules/forms/_themes.scss */
-textarea,
-input[type=radio]:not {
-  border-color: #efefef;
+/* line 40, ../scss/modules/forms/_themes.scss */
+body textarea.small,
+body input.small:not([type=radio]), body textarea.large,
+body input.large:not([type=radio]), body textarea.inline,
+body input.inline:not([type=radio]), body textarea,
+body input:not([type=radio]) {
+  border-color: #a8a8a8;
+  color: #525252;
 }
-/* line 20, ../scss/modules/forms/_themes.scss */
-textarea:focus,
-input[type=radio]:focus:not {
+/* line 28, ../scss/modules/forms/_themes.scss */
+body textarea:hover,
+body input:hover:not([type=radio]) {
+  border-color: #525252;
+  color: #525252;
+}
+/* line 33, ../scss/modules/forms/_themes.scss */
+body textarea:focus,
+body input:focus:not([type=radio]) {
+  border-color: #525252;
+  color: #363636;
+}
+/* line 44, ../scss/modules/forms/_themes.scss */
+body textarea.primary,
+body input.primary:not([type=radio]) {
+  border-color: #80a4ac;
+  color: #525252;
+}
+/* line 28, ../scss/modules/forms/_themes.scss */
+body textarea.primary:hover,
+body input.primary:hover:not([type=radio]) {
   border-color: #024959;
+  color: #525252;
+}
+/* line 33, ../scss/modules/forms/_themes.scss */
+body textarea.primary:focus,
+body input.primary:focus:not([type=radio]) {
+  border-color: #024959;
+  color: #363636;
+}
+/* line 45, ../scss/modules/forms/_themes.scss */
+body textarea.secondary,
+body input.secondary:not([type=radio]) {
+  border-color: #f3a597;
+  color: #525252;
+}
+/* line 28, ../scss/modules/forms/_themes.scss */
+body textarea.secondary:hover,
+body input.secondary:hover:not([type=radio]) {
+  border-color: #e74c30;
+  color: #525252;
+}
+/* line 33, ../scss/modules/forms/_themes.scss */
+body textarea.secondary:focus,
+body input.secondary:focus:not([type=radio]) {
+  border-color: #e74c30;
+  color: #363636;
+}
+/* line 46, ../scss/modules/forms/_themes.scss */
+body textarea.light,
+body input.light:not([type=radio]) {
+  border-color: #f7f7f7;
+  color: #525252;
+}
+/* line 28, ../scss/modules/forms/_themes.scss */
+body textarea.light:hover,
+body input.light:hover:not([type=radio]) {
+  border-color: #efefef;
+  color: #525252;
+}
+/* line 33, ../scss/modules/forms/_themes.scss */
+body textarea.light:focus,
+body input.light:focus:not([type=radio]) {
+  border-color: #efefef;
+  color: #363636;
+}
+/* line 47, ../scss/modules/forms/_themes.scss */
+body textarea.dark,
+body input.dark:not([type=radio]) {
+  border-color: #9a9a9a;
+  color: #525252;
+}
+/* line 28, ../scss/modules/forms/_themes.scss */
+body textarea.dark:hover,
+body input.dark:hover:not([type=radio]) {
+  border-color: #363636;
+  color: #525252;
+}
+/* line 33, ../scss/modules/forms/_themes.scss */
+body textarea.dark:focus,
+body input.dark:focus:not([type=radio]) {
+  border-color: #363636;
+  color: #363636;
+}
+/* line 49, ../scss/modules/forms/_themes.scss */
+body textarea.success,
+body input.success:not([type=radio]) {
+  border-color: #cae5b4;
+  color: #525252;
+}
+/* line 28, ../scss/modules/forms/_themes.scss */
+body textarea.success:hover,
+body input.success:hover:not([type=radio]) {
+  border-color: #96cc69;
+  color: #525252;
+}
+/* line 33, ../scss/modules/forms/_themes.scss */
+body textarea.success:focus,
+body input.success:focus:not([type=radio]) {
+  border-color: #96cc69;
+  color: #363636;
+}
+/* line 50, ../scss/modules/forms/_themes.scss */
+body textarea.warning,
+body input.warning:not([type=radio]) {
+  border-color: #ffe5ad;
+  color: #525252;
+}
+/* line 28, ../scss/modules/forms/_themes.scss */
+body textarea.warning:hover,
+body input.warning:hover:not([type=radio]) {
+  border-color: #ffcc5c;
+  color: #525252;
+}
+/* line 33, ../scss/modules/forms/_themes.scss */
+body textarea.warning:focus,
+body input.warning:focus:not([type=radio]) {
+  border-color: #ffcc5c;
+  color: #363636;
+}
+/* line 51, ../scss/modules/forms/_themes.scss */
+body textarea.failure,
+body input.failure:not([type=radio]) {
+  border-color: #e1a3a0;
+  color: #525252;
+}
+/* line 28, ../scss/modules/forms/_themes.scss */
+body textarea.failure:hover,
+body input.failure:hover:not([type=radio]) {
+  border-color: #c44741;
+  color: #525252;
+}
+/* line 33, ../scss/modules/forms/_themes.scss */
+body textarea.failure:focus,
+body input.failure:focus:not([type=radio]) {
+  border-color: #c44741;
+  color: #363636;
 }
 
 /* line 7, ../scss/modules/buttons/_components.scss */
@@ -8203,7 +8353,7 @@ button.full, .button.full, input[type=button].full, input[type=submit].full {
   border-bottom-right-radius: 3px;
 }
 
-/* line 46, ../scss/modules/buttons/_themes.scss */
+/* line 63, ../scss/modules/buttons/_themes.scss */
 body button, body .button, body input[type=button], body input[type=submit] {
   -webkit-transition-property: border-color, background-color, color;
   -moz-transition-property: border-color, background-color, color;
@@ -8218,122 +8368,122 @@ body button, body .button, body input[type=button], body input[type=submit] {
   -o-transition-timing-function: ease-in-out;
   transition-timing-function: ease-in-out;
 }
-/* line 51, ../scss/modules/buttons/_themes.scss */
+/* line 68, ../scss/modules/buttons/_themes.scss */
 body button:not(.link):not(.quiet), body .button:not(.link):not(.quiet), body input[type=button]:not(.link):not(.quiet), body input[type=submit]:not(.link):not(.quiet) {
   color: #efefef;
   background-color: #024959;
   border-color: #012027;
 }
-/* line 35, ../scss/modules/buttons/_themes.scss */
+/* line 40, ../scss/modules/buttons/_themes.scss */
 body button:not(.link):not(.quiet):hover, body .button:not(.link):not(.quiet):hover, body input[type=button]:not(.link):not(.quiet):hover, body input[type=submit]:not(.link):not(.quiet):hover, body button:not(.link):not(.quiet):active, body .button:not(.link):not(.quiet):active, body input[type=button]:not(.link):not(.quiet):active, body input[type=submit]:not(.link):not(.quiet):active {
   color: #efefef;
-  background-color: #013540;
-  border-color: #000c0e;
+  background-color: #035d72;
+  border-color: #013540;
 }
-/* line 57, ../scss/modules/buttons/_themes.scss */
+/* line 74, ../scss/modules/buttons/_themes.scss */
 body button:not(.quiet).primary, body .button:not(.quiet).primary, body input[type=button]:not(.quiet).primary, body input[type=submit]:not(.quiet).primary {
   color: #efefef;
   background-color: #024959;
   border-color: #012027;
 }
-/* line 35, ../scss/modules/buttons/_themes.scss */
+/* line 40, ../scss/modules/buttons/_themes.scss */
 body button:not(.quiet).primary:hover, body .button:not(.quiet).primary:hover, body input[type=button]:not(.quiet).primary:hover, body input[type=submit]:not(.quiet).primary:hover, body button:not(.quiet).primary:active, body .button:not(.quiet).primary:active, body input[type=button]:not(.quiet).primary:active, body input[type=submit]:not(.quiet).primary:active {
   color: #efefef;
-  background-color: #013540;
-  border-color: #000c0e;
+  background-color: #035d72;
+  border-color: #013540;
 }
-/* line 58, ../scss/modules/buttons/_themes.scss */
+/* line 75, ../scss/modules/buttons/_themes.scss */
 body button:not(.quiet).secondary, body .button:not(.quiet).secondary, body input[type=button]:not(.quiet).secondary, body input[type=submit]:not(.quiet).secondary {
   color: #efefef;
   background-color: #e74c30;
   border-color: #cc3318;
 }
-/* line 35, ../scss/modules/buttons/_themes.scss */
+/* line 40, ../scss/modules/buttons/_themes.scss */
 body button:not(.quiet).secondary:hover, body .button:not(.quiet).secondary:hover, body input[type=button]:not(.quiet).secondary:hover, body input[type=submit]:not(.quiet).secondary:hover, body button:not(.quiet).secondary:active, body .button:not(.quiet).secondary:active, body input[type=button]:not(.quiet).secondary:active, body input[type=submit]:not(.quiet).secondary:active {
   color: #efefef;
-  background-color: #e3391a;
-  border-color: #b52e15;
+  background-color: #ea6047;
+  border-color: #e3391a;
 }
-/* line 59, ../scss/modules/buttons/_themes.scss */
+/* line 76, ../scss/modules/buttons/_themes.scss */
 body button:not(.quiet).light, body .button:not(.quiet).light, body input[type=button]:not(.quiet).light, body input[type=submit]:not(.quiet).light {
   color: #363636;
   background-color: #efefef;
   border-color: #d5d5d5;
 }
-/* line 35, ../scss/modules/buttons/_themes.scss */
+/* line 40, ../scss/modules/buttons/_themes.scss */
 body button:not(.quiet).light:hover, body .button:not(.quiet).light:hover, body input[type=button]:not(.quiet).light:hover, body input[type=submit]:not(.quiet).light:hover, body button:not(.quiet).light:active, body .button:not(.quiet).light:active, body input[type=button]:not(.quiet).light:active, body input[type=submit]:not(.quiet).light:active {
   color: #363636;
-  background-color: #e2e2e2;
-  border-color: #c9c9c9;
+  background-color: #fcfcfc;
+  border-color: #e2e2e2;
 }
-/* line 60, ../scss/modules/buttons/_themes.scss */
+/* line 77, ../scss/modules/buttons/_themes.scss */
 body button:not(.quiet).dark, body .button:not(.quiet).dark, body input[type=button]:not(.quiet).dark, body input[type=submit]:not(.quiet).dark {
   color: #efefef;
   background-color: #363636;
   border-color: #1c1c1c;
 }
-/* line 35, ../scss/modules/buttons/_themes.scss */
+/* line 40, ../scss/modules/buttons/_themes.scss */
 body button:not(.quiet).dark:hover, body .button:not(.quiet).dark:hover, body input[type=button]:not(.quiet).dark:hover, body input[type=submit]:not(.quiet).dark:hover, body button:not(.quiet).dark:active, body .button:not(.quiet).dark:active, body input[type=button]:not(.quiet).dark:active, body input[type=submit]:not(.quiet).dark:active {
   color: #efefef;
-  background-color: #292929;
-  border-color: #101010;
+  background-color: #434343;
+  border-color: #292929;
 }
-/* line 64, ../scss/modules/buttons/_themes.scss */
+/* line 81, ../scss/modules/buttons/_themes.scss */
 body button.quiet, body .quiet.button, body input.quiet[type=button], body input.quiet[type=submit] {
   background-color: transparent;
   border-color: transparent;
 }
-/* line 35, ../scss/modules/buttons/_themes.scss */
+/* line 49, ../scss/modules/buttons/_themes.scss */
 body button.quiet:hover, body .quiet.button:hover, body input.quiet[type=button]:hover, body input.quiet[type=submit]:hover, body button.quiet:active, body .quiet.button:active, body input.quiet[type=button]:active, body input.quiet[type=submit]:active {
   color: #efefef;
-  background-color: #013540;
-  border-color: #000c0e;
+  background-color: #024959;
+  border-color: #012027;
 }
-/* line 67, ../scss/modules/buttons/_themes.scss */
+/* line 84, ../scss/modules/buttons/_themes.scss */
 body button.quiet.primary, body .quiet.primary.button, body input.quiet.primary[type=button], body input.quiet.primary[type=submit] {
   background-color: transparent;
   border-color: transparent;
 }
-/* line 35, ../scss/modules/buttons/_themes.scss */
+/* line 49, ../scss/modules/buttons/_themes.scss */
 body button.quiet.primary:hover, body .quiet.primary.button:hover, body input.quiet.primary[type=button]:hover, body input.quiet.primary[type=submit]:hover, body button.quiet.primary:active, body .quiet.primary.button:active, body input.quiet.primary[type=button]:active, body input.quiet.primary[type=submit]:active {
   color: #efefef;
-  background-color: #013540;
-  border-color: #000c0e;
+  background-color: #024959;
+  border-color: #012027;
 }
-/* line 68, ../scss/modules/buttons/_themes.scss */
+/* line 85, ../scss/modules/buttons/_themes.scss */
 body button.quiet.secondary, body .quiet.secondary.button, body input.quiet.secondary[type=button], body input.quiet.secondary[type=submit] {
   background-color: transparent;
   border-color: transparent;
 }
-/* line 35, ../scss/modules/buttons/_themes.scss */
+/* line 49, ../scss/modules/buttons/_themes.scss */
 body button.quiet.secondary:hover, body .quiet.secondary.button:hover, body input.quiet.secondary[type=button]:hover, body input.quiet.secondary[type=submit]:hover, body button.quiet.secondary:active, body .quiet.secondary.button:active, body input.quiet.secondary[type=button]:active, body input.quiet.secondary[type=submit]:active {
   color: #efefef;
-  background-color: #e3391a;
-  border-color: #b52e15;
+  background-color: #e74c30;
+  border-color: #cc3318;
 }
-/* line 69, ../scss/modules/buttons/_themes.scss */
+/* line 86, ../scss/modules/buttons/_themes.scss */
 body button.quiet.light, body .quiet.light.button, body input.quiet.light[type=button], body input.quiet.light[type=submit] {
   background-color: transparent;
   border-color: transparent;
 }
-/* line 35, ../scss/modules/buttons/_themes.scss */
+/* line 49, ../scss/modules/buttons/_themes.scss */
 body button.quiet.light:hover, body .quiet.light.button:hover, body input.quiet.light[type=button]:hover, body input.quiet.light[type=submit]:hover, body button.quiet.light:active, body .quiet.light.button:active, body input.quiet.light[type=button]:active, body input.quiet.light[type=submit]:active {
   color: #363636;
-  background-color: #e2e2e2;
-  border-color: #c9c9c9;
+  background-color: #efefef;
+  border-color: #d5d5d5;
 }
-/* line 70, ../scss/modules/buttons/_themes.scss */
+/* line 87, ../scss/modules/buttons/_themes.scss */
 body button.quiet.dark, body .quiet.dark.button, body input.quiet.dark[type=button], body input.quiet.dark[type=submit] {
   background-color: transparent;
   border-color: transparent;
 }
-/* line 35, ../scss/modules/buttons/_themes.scss */
+/* line 49, ../scss/modules/buttons/_themes.scss */
 body button.quiet.dark:hover, body .quiet.dark.button:hover, body input.quiet.dark[type=button]:hover, body input.quiet.dark[type=submit]:hover, body button.quiet.dark:active, body .quiet.dark.button:active, body input.quiet.dark[type=button]:active, body input.quiet.dark[type=submit]:active {
   color: #efefef;
-  background-color: #292929;
-  border-color: #101010;
+  background-color: #363636;
+  border-color: #1c1c1c;
 }
-/* line 74, ../scss/modules/buttons/_themes.scss */
+/* line 91, ../scss/modules/buttons/_themes.scss */
 body button.link, body .link.button, body input.link[type=button], body input.link[type=submit] {
   background-color: transparent;
   border: none;

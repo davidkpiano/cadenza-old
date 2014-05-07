@@ -18,26 +18,43 @@
 	@include transition((border-color, background-color, color));
 }
 
-@mixin theme-button-default($color: $color-primary, $quiet: false) {
+@mixin theme-button-default(
+	$color: $color-primary,
+	$type-color: foregroundColor($color, $color-default: $color-light),
+	$type-color-hover: $type-color,
+	$bg-color: $color,
+	$bg-color-hover: lighten($bg-color, 5%),
+	$border-color: darken($bg-color, 10%),
+	$border-color-hover: darken($bg-color-hover, 10%),
+	$quiet: false
+) {
 	@if $color == transparent {
 		background-color: transparent;
 		border: none;
 	} @else {
 		@if $quiet == false {		
-			color: foregroundColor($color, $color-default: $color-light);
-			background-color: $color;
-			border-color: darken($color, 10%);
+			color: $type-color;
+			background-color: $bg-color;
+			border-color: $border-color;
+
+			&:hover, &:active {
+				color: $type-color-hover;
+				background-color: $bg-color-hover;
+				border-color: $border-color-hover;
+			}
 		} @else {
 			background-color: transparent;
 			border-color: transparent;
+
+			&:hover, &:active {
+				color: $type-color;
+				background-color: $bg-color;
+				border-color: $border-color;
+			}
 		}
 
-		&:hover, &:active {
-			$color-hover: darken($color, 5%);
-
-			color: foregroundColor($color-hover, $color-default: $color-light);
-			background-color: $color-hover;
-			border-color: darken($color-hover, 10%);
+		&:active {
+			// TODO
 		}
 	}
 }
@@ -72,7 +89,7 @@
 
 	// Link style
 	%button.link {
-		@include theme-button-default(transparent);
+		@include theme-button-default(transparent, $bg-color-hover: transparent, $border-color: transparent, $border-color-hover: transparent);
 	}
 }
 

@@ -1,0 +1,23 @@
+<h1>Forms Module</h1>
+
+<div class="col-6">
+    <div class="row columns-gutter field">    
+        <div class="field col-6">
+            <label for="input_1">Color:</label>
+            <select name="input_1" ng-model="component.input.color">
+                <option value="{{color}}" ng-repeat="color in ['primary','secondary','light','dark','success','warning','failure']">input.{{color}}</option>
+            </select>
+        </div>
+        <div class="field col-6">
+            <label for="input_2">Last Name:</label>
+            <input type="text" id="input_2" class="{{component.input.color}}">
+        </div>
+    </div>
+
+    <div class="row cols-gutter">    
+        <div class="field">
+            <label for="input_3">Email Address:</label>
+            <input type="text" id="input_3">
+        </div>
+    </div>
+</div>

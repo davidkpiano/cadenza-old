@@ -8,6 +8,7 @@
 
 %input {
 	@extend %border-box;
+	@include transition('all');
 	@include type-scale($form-input-scale);
 	display: block;
 	width: 100%;
@@ -48,13 +49,18 @@
 	-webkit-appearance: none;
 }
 
-%label {
+%select {
+	display: block;
+	width: 100%;
+}
+
+%form-label {
 	display: $form-label-display;
 	margin-bottom: $form-label-margin-bottom;
 	@include type-scale($form-label-scale);
 }
 
-%label-inline {
+%form-label-inline {
 	display: inline-block;
 	padding: $form-label-padding;
 }

@@ -11,7 +11,8 @@ app.config(['$stateProvider', '$urlRouterProvider',
             'buttons',
             'nav',
             'animations',
-            'labels'
+            'labels',
+            'forms'
         ];
 
         _.each(components, function(component) {
