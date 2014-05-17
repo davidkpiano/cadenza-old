@@ -16,6 +16,37 @@
     background-color: $color;
 }
 
+// TODO: add support for rgba() values! (alpha channel)
+@function delta-color(
+    $color,
+    $delta: 10%
+) {
+    @if is-dark($color) {
+        @return darken($color, $delta);
+    } @else {
+        @return lighten($color, $delta);
+    }
+}
+
+@function foreground-color(
+    $color,
+    $delta: 0%,
+    $threshold: 65%,
+    $color-light: $color-light,
+    $color-dark: $color-dark
+) {
+    @if type-of($color) == color {
+        @if lightness($color) > $threshold {
+            @return delta-color($color-dark);
+
+        } @else if lightness($color) <= $threshold {
+            @return delta-color($color-light);
+        }
+    } @else {
+        @return inherit;
+    }
+}
+
 @mixin foreground-color(
     $color, 
     $darken: 35%, 

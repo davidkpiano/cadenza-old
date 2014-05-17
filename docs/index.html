@@ -23,6 +23,8 @@
                 <li><a ui-sref="forms">Forms</a></li>
             </ul>
         </nav>
+        <label for="toggle_theme">Toggle Dark Theme</label>
+        <input type="checkbox" name="main.theme" id="toggle_theme" ng-model="main.theme">
     </aside>
     <section class="col-10 content scroll activate-all-scaleUp">
         <div class="layer cols-gutter content hide">
@@ -39,17 +41,17 @@
             <div class="col-1 theme-light"></div>
             <div class="col-1 theme-light"></div>
         </div>
-        <div ui-view class="layer content">
+        <div ui-view class="layer content {{main.theme ? 'theme-dark' : ''}}">
             
         </div>
     </section>
 </body>
 
 <!-- DEPENDENCIES -->
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
-<script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0-beta.3/angular-animate.min.js"></script>
+<script src="assets/js/angular.min.js"></script>
+<script src="assets/js/angular-ui-router.min.js"></script>
+<script src="assets/js/lodash.min.js"></script>
+<script src="assets/js/angular-animate.min.js"></script>
 
 <!-- MODULES -->
 <script src="app/app.js"></script>

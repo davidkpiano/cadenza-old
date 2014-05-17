@@ -175,6 +175,10 @@
 			margin-right: auto;
 			float: none;
 		}
+
+		%column-auto#{$suffix}, %columns-auto#{$suffix} > * {
+			height: auto !important;
+		}
 	}
 }
 

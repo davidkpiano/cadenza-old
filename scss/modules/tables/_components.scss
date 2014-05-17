@@ -33,6 +33,7 @@
     &, tbody {
         tr {
             td {
+                @include type-scale($table-cell-type-scale);
                 padding: $table-cell-padding;
             }
         }
@@ -50,6 +51,14 @@
 			}
 		}
 	}
+
+    thead {
+        &, tr {
+            &, th, td {
+                border-top: 0;
+            }
+        }
+    }
 }
 
 %table-vertical {

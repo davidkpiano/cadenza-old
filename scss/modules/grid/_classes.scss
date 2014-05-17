@@ -90,6 +90,14 @@
 	.col-center {
 		@extend %column-center;
 	}
+
+	.col-auto#{$suffix}, .column-auto#{$suffix} {
+		@extend %column-auto#{$suffix};
+	}
+
+	.cols-auto#{$suffix}, .columns-auto#{$suffix} {
+		@extend %columns-auto#{$suffix};
+	}
 }
 
 // Vertical Grid Classes

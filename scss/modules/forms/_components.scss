@@ -6,6 +6,8 @@
 	@include transition('all');
 }
 
+// Inputs
+// ------
 %input {
 	@extend %border-box;
 	@include transition('all');
@@ -54,6 +56,8 @@
 	width: 100%;
 }
 
+// Form Labels
+// -----------
 %form-label {
 	display: $form-label-display;
 	margin-bottom: $form-label-margin-bottom;

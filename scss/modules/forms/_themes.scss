@@ -36,6 +36,38 @@
 	}
 }
 
+@mixin theme-input-transparent(
+	$color: $form-input-bgcolor-lighten,
+
+	$bgcolor: $color,
+	$bgcolor-hover: delta-color($color),
+	$bgcolor-focus: $bgcolor-hover,
+
+	$type-color: inherit,
+	$type-color-hover: $type-color,
+	$type-color-focus: $type-color-hover,
+
+	$border-color: delta-color($bgcolor),
+	$border-color-hover: delta-color($bgcolor-hover),
+	$border-color-focus: delta-color($bgcolor-focus)
+) {
+	background-color: $bgcolor;
+	color: $type-color;
+	border-color: $border-color;
+
+	&:hover {
+		background-color: $bgcolor-hover;
+		color: $type-color-hover;
+		border-color: $border-color-hover;
+	}
+
+	&:focus {
+		background-color: $bgcolor-focus;
+		color: $type-color-focus;
+		border-color: $border-color-focus;
+	}
+}
+
 %theme-input-default {
 	%input {
 		@extend %form-transition;
@@ -49,6 +81,9 @@
 		&.success { @include theme-input-default($color-success); }
 		&.warning { @include theme-input-default($color-warning); }
 		&.failure { @include theme-input-default($color-failure); }
+
+		&.lighten { @include theme-input-transparent($form-input-bgcolor-lighten); }
+		&.darken { @include theme-input-transparent($form-input-bgcolor-darken); }
 	}
 }
 

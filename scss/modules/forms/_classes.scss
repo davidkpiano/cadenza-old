@@ -16,3 +16,9 @@ input:not([type=radio]) {
 textarea { @extend %textarea; }
 
 select { @extend %select; }
+
+label { 
+    @extend %form-label;
+
+    &.inline { @extend %form-label-inline; }
+}

@@ -42,6 +42,11 @@
 				background-color: $bg-color-hover;
 				border-color: $border-color-hover;
 			}
+
+			&:focus {
+				outline: 1px solid white;
+				outline-offset: -2px;
+			}
 		} @else {
 			background-color: transparent;
 			border-color: transparent;

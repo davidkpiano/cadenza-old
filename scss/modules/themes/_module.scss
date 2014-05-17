@@ -17,8 +17,8 @@ $theme-colors: (
     ('secondary', $color-secondary),
     ('white', white),
     ('black', black),
-    ('lighten', rgba(255, 255, 255, $theme-lighten-opacity)),
-    ('darken', rgba(0, 0, 0, $theme-darken-opacity))
+    ('lighten', $color-lighten),
+    ('darken', $color-darken)
 );
 
 
