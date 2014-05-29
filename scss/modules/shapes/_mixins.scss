@@ -1,0 +1,28 @@
+// 
+// Shapes Mixins and Functions
+// ===========================
+
+@mixin shape-triangle(
+    $direction: up,
+    $width: 1rem,
+    $height: $width * 2,
+    $color: $color-primary
+) {
+    @if $direction == up {
+        border-bottom: $width solid $color;
+        border-left: ($height / 2) solid transparent;
+        border-right: ($height / 2) solid transparent;
+    } @else if $direction == down {
+        border-top: $width solid $color;
+        border-left: ($height / 2) solid transparent;
+        border-right: ($height / 2) solid transparent;
+    } @else if $direction == right {
+        border-left: $width solid $color;
+        border-top: ($height / 2) solid transparent;
+        border-bottom: ($height / 2) solid transparent;
+    } @else if $direction == left {
+        border-right: $width solid $color;
+        border-top: ($height / 2) solid transparent;
+        border-bottom: ($height / 2) solid transparent;
+    }
+}

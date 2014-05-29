@@ -26,6 +26,18 @@ $badge-margin: 0 0.5rem !default;
 $badge-collapse: true !default;
 $badge-z-index: 2 !default;
 
+// Tooltip Settings
+$tooltip-style: default !default;
+$tooltip-theme: default !default;
+$tooltip-scale: $label-scale !default;
+$tooltip-text-transform: none !default;
+$tooltip-text-decoration: none !default;
+$tooltip-padding-vertical: 0.5rem !default;
+$tooltip-padding-horizontal: 0.5rem !default;
+$tooltip-radius: $label-radius !default;
+$tooltip-arrow-width: 1rem !default;
+$tooltip-margin: 0.5rem !default;
+
 // Imports
 @import
 	'_mixins',

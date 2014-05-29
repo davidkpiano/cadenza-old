@@ -52,7 +52,15 @@
 }
 
 %select {
+	@include type-scale($form-input-scale);
 	display: block;
+	width: 100%;
+
+	-webkit-appearance: none;
+	padding: 0.5rem;
+	border-width: $form-input-border-width;
+	border-style: solid;
+	z-index: 2;
 	width: 100%;
 }
 

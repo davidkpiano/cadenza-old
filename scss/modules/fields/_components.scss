@@ -7,5 +7,7 @@
 }
 
 %field {
+    @include clearfix;
+    overflow: visible;
     margin-bottom: $field-margin-bottom;
 }

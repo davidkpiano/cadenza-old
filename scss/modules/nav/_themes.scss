@@ -124,15 +124,22 @@ $x-nav-underline-color-inactive: $color-gray-light;
 
 // Default Dropdown Theme
 @mixin theme-dropdown-default(
-    $color: $color-primary
+    $color: $color-primary,
+    $bgcolor: $dropdown-bgcolor,
+    $type-color: foreground-color($bgcolor),
+    $border-color: $dropdown-border-color,
+    $separator-color: $dropdown-separator-color
 ) {
-    background-color: $dropdown-bgcolor;
+    background-color: $bgcolor;
     border-style: solid;
-    border-color: $dropdown-border-color;
+    border-color: $border-color;
     border-width: $dropdown-border-width;
+
 
     li {
         border: none;
+
+        &, & > a { color: $type-color; }
 
         &:hover {
             @include foreground-color($color, $component: 'anchor');
@@ -143,7 +150,7 @@ $x-nav-underline-color-inactive: $color-gray-light;
         &.hr, &.separator {
             border-bottom-width: $dropdown-separator-width;
             border-bottom-style: solid;
-            border-bottom-color: $dropdown-separator-color;
+            border-bottom-color: $separator-color;
         }
     }
 }

@@ -3,8 +3,9 @@
 // =================
 
 %label {
-    @extend %nowrap;
     @include type-scale($label-scale);
+    white-space: nowrap;
+    overflow: hidden;
     text-decoration: $label-text-decoration;
     text-transform: $label-text-transform;
 
@@ -69,6 +70,21 @@
         margin: 0;
         @include position-absolute(bottom, right);
         @include translate(50%, 50%);
+    }
+}
+
+%tooltip {
+    &:hover:before {
+        @extend %label;
+        @include position-absolute(above, center);
+        margin: $tooltip-margin;
+        content: attr(title);
+    }
+
+    &:hover:after {
+        content: '';
+        @include shape-triangle(down, 0.5rem);
+        @include position-absolute(-$tooltip-margin, center);
     }
 }
 

@@ -1,7 +1,16 @@
 <h1>Labels Module</h1>
 
 <h2>Labels</h2>
-<span class="label {{color}}" ng-repeat="color in ['primary','secondary','light','dark','success','warning','failure','transparent']">span.label.{{color}}</span>
+<div class="field">
+    <span class="label {{color}}" ng-repeat="color in ['primary','secondary','light','dark','success','warning','failure','transparent']">span.label.{{color}}</span>
+</div>
 
 <h2>Badges</h2>
-<span class="badge {{color}}" ng-repeat="color in ['primary','secondary','light','dark','success','warning','failure','transparent']">{{$index}}</span>
+<div class="field">
+    <span class="badge {{color}}" ng-repeat="color in ['primary','secondary','light','dark','success','warning','failure','transparent']">{{$index}}</span>
+</div>
+
+<h2>Tooltips</h2>
+<div class="field">
+    <a href="#" title="Hover text!" class="tooltip">Hover over me.</a>
+</div>
