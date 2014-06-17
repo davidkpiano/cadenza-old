@@ -7,54 +7,38 @@
 #{$inactive-selector} { @extend %inactive; }
 
 // Animations Classes
-.activate-all-fade {
-	@include activate-all(fade);
-}
+.activate-all-fade { @include activate-all(fade); }
+.activate-fade { @include activate(fade); }
 
-.activate-all-scaleUp {
-	@include activate-all(scaleUp);
-}
+.activate-all-scaleUp { @include activate-all(scaleUp); }
+.actiave-scaleUp { @include activate(scaleUp); }
 
-.activate-all-scaleDown {
-	@include activate-all(scaleDown);
-}
+.activate-all-scaleDown { @include activate-all(scaleDown); }
+.actiave-scaleDown { @include activate(scaleDown); }
 
-.activate-all-slideUp {
-	@include activate-all(slideUp);
-}
+.activate-all-slideUp { @include activate-all(slideUp); }
+.actiave-slideUp { @include activate(slideUp); }
 
-.activate-all-slideDown {
-	@include activate-all(slideDown);
-}
+.activate-all-slideDown { @include activate-all(slideDown); }
+.actiave-slideDown { @include activate(slideDown); }
 
-.activate-all-slideLeft {
-	@include activate-all(slideLeft);
-}
+.activate-all-slideLeft { @include activate-all(slideLeft); }
+.actiave-slideLeft { @include activate(slideLeft); }
 
-.activate-all-slideRight {
-	@include activate-all(slideRight);
-}
+.activate-all-slideRight { @include activate-all(slideRight); }
+.actiave-slideRight { @include activate(slideRight); }
 
-.activate-all-shiftUp {
-    @include activate-all(shiftUp);
-}
+.activate-all-shiftUp { @include activate-all(shiftUp); }
+.actiave-shiftUp { @include activate(shiftUp); }
 
-.activate-all-shiftDown {
-    @include activate-all(shiftDown);
-}
+.activate-all-shiftDown { @include activate-all(shiftDown); }
+.actiave-shiftDown { @include activate(shiftDown); }
 
-.activate-all-shiftLeft {
-    @include activate-all(shiftLeft);
-}
+.activate-all-shiftLeft { @include activate-all(shiftLeft); }
+.actiave-shiftLeft { @include activate(shiftLeft); }
 
-.activate-all-shiftRight {
-    @include activate-all(shiftRight);
-}
+.activate-all-shiftRight { @include activate-all(shiftRight); }
+.actiave-shiftRight { @include activate(shiftRight); }
 
-.activate-all-flipLeft {
-	@include activate-all(flipLeft, $is-3d: true);
-}
-
-.activate-fade {
-    @include activate(fade);
-}
+.activate-all-flipLeft { @include activate-all(flipLeft, $is-3d: true); }
+.actiave-flipLeft { @include activate(flipLeft); }

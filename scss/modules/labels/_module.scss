@@ -33,10 +33,26 @@ $tooltip-scale: $label-scale !default;
 $tooltip-text-transform: none !default;
 $tooltip-text-decoration: none !default;
 $tooltip-padding-vertical: 0.5rem !default;
-$tooltip-padding-horizontal: 0.5rem !default;
+$tooltip-padding-horizontal: 1rem !default;
 $tooltip-radius: $label-radius !default;
 $tooltip-arrow-width: 1rem !default;
-$tooltip-margin: 0.5rem !default;
+$tooltip-arrow-indent: 0.5rem !default;
+$tooltip-margin-vertical: 0.5rem !default;
+$tooltip-margin-horizontal: $tooltip-margin-vertical !default;
+
+// Popover Settings
+$popover-style: default !default;
+$popover-theme: default !default;
+$popover-scale: $label-scale !default;
+$popover-text-transform: none !default;
+$popover-text-decoration: none !default;
+$popover-padding-vertical: 0.5rem !default;
+$popover-padding-horizontal: 1rem !default;
+$popover-radius: $label-radius !default;
+$popover-arrow-width: 1rem !default;
+$popover-arrow-indent: 0.5rem !default;
+$popover-margin-vertical: 0.5rem !default;
+$popover-margin-horizontal: $popover-margin-vertical !default;
 
 // Imports
 @import

@@ -24,7 +24,7 @@
             border-color: $nav-separator-color;
         }
 
-        &:hover {
+        &.active, &:hover {
             @include foreground-color($color, $component: 'anchor');
             background-color: $color;
         }

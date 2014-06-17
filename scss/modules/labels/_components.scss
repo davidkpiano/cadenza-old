@@ -74,18 +74,115 @@
 }
 
 %tooltip {
-    &:hover:before {
-        @extend %label;
-        @include position-absolute(above, center);
-        margin: $tooltip-margin;
+    &:before {
+        @include type-scale($tooltip-scale);
+        white-space: nowrap;
+        overflow: hidden;
+        text-decoration: $tooltip-text-decoration;
+        text-transform: $tooltip-text-transform;
+
+        display: inline-block;
+        line-height: 1;
+        vertical-align: middle;
+
+        padding: $tooltip-padding-vertical $tooltip-padding-horizontal;
+
+        @if $tooltip-radius {
+            @include border-radius($tooltip-radius);
+        }
+
         content: attr(title);
     }
 
-    &:hover:after {
+    &:after {
         content: '';
-        @include shape-triangle(down, 0.5rem);
-        @include position-absolute(-$tooltip-margin, center);
     }
 }
+
+// Tooltip Positions
+%tooltip,
+%tooltip-above-left,
+%tooltip-above-right,
+%tooltip-below-left,
+%tooltip-below-right {
+    &:before { margin: $tooltip-margin-vertical 0; }
+}
+
+%tooltip-above-left,
+%tooltip-above-right,
+%tooltip-above-center {
+    &:after { @include shape-triangle(down, $tooltip-arrow-width / 2); }
+}
+
+%tooltip-below-left,
+%tooltip-below-right,
+%tooltip-below-center {
+    &:after { @include shape-triangle(up, $tooltip-arrow-width / 2); }
+}
+
+%tooltip-above-left {
+    &:before { @include position-absolute(above, left); }
+    &:after { @include position-absolute(-$tooltip-margin-vertical, $left: $tooltip-arrow-indent); }
+}
+
+%tooltip-above-right {
+    &:before { @include position-absolute(above, right); }
+    &:after { @include position-absolute(-$tooltip-margin-vertical, $right: $tooltip-arrow-indent); }
+}
+
+%tooltip-below-left {
+    &:before { @include position-absolute(below, left); }
+    &:after { @include position-absolute($bottom: -$tooltip-margin-vertical, $left: $tooltip-arrow-indent); }
+}
+
+%tooltip-below-right {
+    &:before { @include position-absolute(below, right); }
+    &:after { @include position-absolute($bottom: -$tooltip-margin-vertical, $right: $tooltip-arrow-indent); }
+}
+
+// Popovers
+
+%popover {
+    & {
+        @extend %tooltip:before;
+        overflow: visible;
+    }
+
+    &:after { @extend %tooltip:after; }
+}
+
+// Popover Positions
+%popover-above-left {
+    & { @extend %tooltip-above-left:before; }
+    &:after {
+        @extend %tooltip-above-left:after;
+        @include position-absolute(below, $left: $popover-arrow-indent);
+    }
+}
+
+%popover-above-right {
+    & { @extend %tooltip-above-right:before; }
+    &:after {
+        @extend %tooltip-above-right:after;
+        @include position-absolute(below, $right: $popover-arrow-indent);
+    }
+}
+
+%popover-below-left {
+    & { @extend %tooltip-below-left:before; }
+    &:after {
+        @extend %tooltip-below-left:after;
+        @include position-absolute(above, $left: $popover-arrow-indent);
+    }
+}
+
+%popover-below-left {
+    & { @extend %tooltip-below-left:before; }
+    &:after {
+        @extend %tooltip-below-left:after;
+        @include position-absolute(above, $left: $popover-arrow-indent);
+    }
+}
+
 
 

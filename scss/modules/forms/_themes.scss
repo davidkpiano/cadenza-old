@@ -13,17 +13,18 @@
 }
 
 @mixin theme-input-default(
-	$color: $color-primary,
-	$border-color-blur: mix(white, $color, 50%),
-	$border-color-hover: $color,
-	$border-color-focus: $color,
+	$color: $form-border-color,
 
-	$type-color-blur: $color-gray,
+	$border-color: $color,
+	$border-color-hover: darken($color, 10%),
+	$border-color-focus: $form-border-color-focus,
+
+	$type-color: $color-gray,
 	$type-color-hover: $color-gray,
 	$type-color-focus: $type-base-color-dark
 ) {
-	border-color: $border-color-blur;
-	color: $type-color-blur;
+	border-color: $border-color;
+	color: $type-color;
 
 	&:hover {
 		border-color: $border-color-hover;
@@ -71,7 +72,7 @@
 %theme-input-default {
 	%input {
 		@extend %form-transition;
-		@include theme-input-default($color-gray);
+		@include theme-input-default();
 
 		&.primary { @include theme-input-default($color-primary); }
 		&.secondary { @include theme-input-default($color-secondary); }
@@ -91,14 +92,36 @@
 
 // Select Theme
 @mixin theme-select-default(
-	$color: $color-light,
-	$bg-color: $color,
-	$border-color: darken($color, 5%),
-	$type-color: foreground-color($color)
+	$color: $form-border-color,
+
+	$bg-color: $form-select-bgcolor,
+	$bg-color-hover: $bg-color,
+	$bg-color-focus: $bg-color,
+
+	$border-color: $color,
+	$border-color-hover: darken($color, 10%),
+	$border-color-focus: $form-border-color-focus,
+
+	$type-color: foreground-color($color),
+	$type-color-hover: $type-color,
+	$type-color-focus: $type-color
 ) {
 	background-color: $bg-color;
 	border-color: $border-color;
 	color: $type-color;
+
+	&:hover {
+		background-color: $bg-color-hover;
+		border-color: $border-color-hover;
+		color: $type-color-hover;
+	}
+
+	&:focus {
+		background-color: $bg-color-focus;
+		border-color: $border-color-focus;
+		color: $type-color-focus;
+	}
+
 	background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeD0iMHB4IiB5PSIwcHgiIHdpZHRoPSI2cHgiIGhlaWdodD0iM3B4IiB2aWV3Qm94PSIwIDAgNiAzIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA2IDMiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxwb2x5Z29uIHBvaW50cz0iNS45OTIsMCAyLjk5MiwzIC0wLjAwOCwwICIvPjwvc3ZnPg==');
 	background-position-x: calc(100% - 1rem);
 	background-position-y: center;

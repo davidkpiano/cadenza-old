@@ -10,10 +10,10 @@ $animation-perspective: 1000 !default;
 $animation-delta: 5rem !default;
 
 // Activation Settings
-$activation-item-selector: '> [ui-view], > .page' !default;
+$activation-item-selector: '> [ui-view], > .page, > [ng-if]' !default;
 $inert-selector: '.inert' !default; 
-$active-selector: '.ng-enter' !default;
-$inactive-selector: '.ng-leave' !default;
+$active-selector: '.ng-enter, .ng-show' !default;
+$inactive-selector: '.ng-leave, .ng-hide' !default;
 $active-z-index: 2 !default;
 $inactive-z-index: 0 !default;
 

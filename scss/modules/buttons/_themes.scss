@@ -37,6 +37,12 @@
 			background-color: $bg-color;
 			border-color: $border-color;
 
+			&:disabled {
+				color: $type-color !important;
+				background-color: $bg-color !important;
+				border-color: $border-color !important;
+			}
+
 			&:hover, &:active {
 				color: $type-color-hover;
 				background-color: $bg-color-hover;

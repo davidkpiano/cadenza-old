@@ -76,3 +76,62 @@
     }
 }
 
+@include add-theme('badge', $badge-theme);
+
+// Tooltip Theme
+// -------------
+@mixin theme-tooltip-default(
+    $color: $color-primary
+) {
+    &:before { @include theme-label-default($color); }
+
+    &, &[class*="tooltip-above-"], &[class*="tooltip-below-"] {
+        &:after { border-top-color: $color; border-bottom-color: $color; }
+    }
+}
+
+%theme-tooltip-default {
+    %tooltip {
+        @include theme-tooltip-default();
+
+        &.primary { @include theme-tooltip-default($color-primary); }
+        &.secondary { @include theme-tooltip-default($color-secondary); }
+        &.light { @include theme-tooltip-default($color-light); }
+        &.dark { @include theme-tooltip-default($color-dark); }
+
+        &.success { @include theme-tooltip-default($color-success); }
+        &.warning { @include theme-tooltip-default($color-warning); }
+        &.failure { @include theme-tooltip-default($color-failure); }
+    }
+}
+
+@include add-theme('tooltip', $tooltip-theme);
+
+// Popover Theme
+// -------------
+@mixin theme-popover-default(
+    $color: $color-primary
+) {
+    @include theme-label-default($color);
+
+    &, &[class*="popover-above-"], &[class*="popover-below-"] {
+        &:after { border-top-color: $color; border-bottom-color: $color; }
+    }
+}
+
+%theme-popover-default {
+    %popover {
+        @include theme-popover-default();
+
+        &.primary { @include theme-popover-default($color-primary); }
+        &.secondary { @include theme-popover-default($color-secondary); }
+        &.light { @include theme-popover-default($color-light); }
+        &.dark { @include theme-popover-default($color-dark); }
+
+        &.success { @include theme-popover-default($color-success); }
+        &.warning { @include theme-popover-default($color-warning); }
+        &.failure { @include theme-popover-default($color-failure); }
+    }
+}
+
+@include add-theme('popover', $popover-theme);

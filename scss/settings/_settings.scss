@@ -165,10 +165,10 @@ $mq-screen: "only screen" !default;
 $prefixes: moz, webkit, o !default;
 
 // Form Elements
-$form-style: normal !default;
+// $form-style: normal !default;
 $form-affixable-selectors: "button, .button, input[type=submit], input[type=text], label";
-$form-type-scale: -1 !default;
-$form-border-width: 1px !default;
+// $form-type-scale: -1 !default;
+// $form-border-width: 1px !default;
 $form-margin-right: $x/2 !default;
 $form-padding-vertical: $x-rem/2 !default;
 $form-padding-horizontal: $x-rem/2 !default;
@@ -185,7 +185,7 @@ $button-padding-vertical: $form-padding-vertical !default;
 $button-padding-horizontal: $form-padding-horizontal * 2 !default;
 // $button-border-width: $form-border-width !default;
 $button-color-light: white !default;
-$button-type-scale: $form-type-scale !default;
+// $button-type-scale: $form-type-scale !default;
 // $button-text-transform: uppercase !default;
 // $button-radius: $form-radius !default;
 $button-use-radius: $form-use-radius !default;
@@ -193,7 +193,7 @@ $button-transition-duration: 0.3s !default;
 $button-icon-margin: $x-rem / 2 !default;
 
 // Transparent Buttons
-$button-transparent-border-width: $form-border-width !default;
+// $button-transparent-border-width: $form-border-width !default;
 
 // Small Buttons 
 $button-small-padding-vertical: $button-padding-vertical / 2 !default;
@@ -204,19 +204,19 @@ $button-group-margin-bottom: $x-rem !default;
 $button-group-margin-right: $button-margin-right !default;
 
 // Text Box Settings
-$text-margin-right: $form-margin-right !default;
-$text-margin-bottom: 0 !default;
-$text-full-margin-bottom: $x/2 !default;
-$text-padding-vertical: $form-padding-vertical !default;
-$text-padding-horizontal: $form-padding-horizontal !default;
-$text-border-width: $form-border-width !default;
-$text-border-color: $color-gray !default;
-$text-border-focus-color: $color-primary !default;
-$text-border-success-color: $color-success !default;
-$text-border-warning-color: $color-warning !default;
-$text-border-failure-color: $color-failure !default;
-$text-type-scale: $form-type-scale !default;
-$text-radius: $form-radius !default;
+// $text-margin-right: $form-margin-right !default;
+// $text-margin-bottom: 0 !default;
+// $text-full-margin-bottom: $x/2 !default;
+// $text-padding-vertical: $form-padding-vertical !default;
+// $text-padding-horizontal: $form-padding-horizontal !default;
+// $text-border-width: $form-border-width !default;
+// $text-border-color: $color-gray !default;
+// $text-border-focus-color: $color-primary !default;
+// $text-border-success-color: $color-success !default;
+// $text-border-warning-color: $color-warning !default;
+// $text-border-failure-color: $color-failure !default;
+// $text-type-scale: $form-type-scale !default;
+// $text-radius: $form-radius !default;
 
 // Textarea Settings
 $textarea-height: 5 * $x-rem !default;
@@ -225,13 +225,13 @@ $textarea-resize: vertical !default;
 // Field Label Settings
 $field-label-display: block !default;
 $field-label-margin-bottom: $x/2 !default;
-$field-label-type-scale: $form-type-scale !default;
-$field-label-affix-type-scale: $field-label-type-scale !default;
+// $field-label-type-scale: $form-type-scale !default;
+// $field-label-affix-type-scale: $field-label-type-scale !default;
 $field-label-affix-padding-vertical: $form-padding-vertical !default;
 $field-label-affix-padding-horizontal: $form-padding-horizontal !default;
 $field-label-affix-bgcolor: $color-gray !default;
 $field-label-affix-border-color: darken($color-gray, 15%) !default;
-$field-label-affix-border-width: $form-border-width !default;
+// $field-label-affix-border-width: $form-border-width !default;
 
 // Fieldset Settings
 $fieldset-style: normal !default;
@@ -287,7 +287,7 @@ $tabs-active-bgcolor: white !default;
 $tabs-li-padding: $nav-li-padding !default;
 $tabs-li-margin: 0 $x-rem 0 0 !default;
 $tabs-a-padding: $x-rem !default;
-$tabs-border-width: $form-border-width !default;
+// $tabs-border-width: $form-border-width !default;
 $tabs-border-color: $color-gray !default;
 $tabs-radius: $form-radius !default;
 $tabs-use-radius: $form-use-radius !default;
@@ -295,9 +295,9 @@ $tabs-use-radius: $form-use-radius !default;
 // Dropdown Settings
 $dropdown-padding: ($x-rem / 2) 0 !default;
 $dropdown-border-color: $color-gray !default;
-$dropdown-border-width: $form-border-width !default;
+// $dropdown-border-width: $form-border-width !default;
 $dropdown-bgcolor: white !default;
-$dropdown-type-scale: -1 !default;
+// $dropdown-type-scale: -1 !default;
 $dropdown-z-index: 999 !default;
 $dropdown-align: left !default;
 $dropdown-use-radius: $form-use-radius !default;
@@ -305,7 +305,7 @@ $dropdown-use-radius: $form-use-radius !default;
 // Label (and Badge) Settings
 $label-style: normal !default;
 $label-valign: middle !default;
-$label-type-scale: -2 !default;
+// $label-type-scale: -2 !default;
 $label-font-weight: bold !default;
 $label-text-transform: none !default;
 $label-padding: $x-rem/4 $x-rem/2 !default;
@@ -316,7 +316,7 @@ $label-margin: 0 $x/2 !default;
 
 $badge-style: normal !default;
 $badge-valign: $label-valign !default;
-$badge-type-scale: $label-type-scale !default;
+// $badge-type-scale: $label-type-scale !default;
 $badge-font-weight: $label-font-weight !default;
 $badge-text-transform: none !default;
 $badge-padding: $label-padding !default;
@@ -333,7 +333,7 @@ $alert-color-light: white !default;
 $alert-margin-bottom: $x !default;
 $alert-radius: $form-radius !default;
 $alert-use-radius: true !default;
-$alert-type-scale: -1 !default;
+// $alert-type-scale: -1 !default;
 
 // Panel Settings
 // $panel-style: normal !default;

@@ -7,10 +7,15 @@
 
 <h2>Badges</h2>
 <div class="field">
+    <div class="panel popover-above-left">
+        <section>blah blah</section>
+    </div>
     <span class="badge {{color}}" ng-repeat="color in ['primary','secondary','light','dark','success','warning','failure','transparent']">{{$index}}</span>
 </div>
 
 <h2>Tooltips</h2>
 <div class="field">
-    <a href="#" title="Hover text!" class="tooltip">Hover over me.</a>
+    <a href="#" title="Hover text!" class="tooltip-above-left">Hover over me.</a>
 </div>
+
+<div class="field"><a href="#">Test <span class="popover-above-left secondary">hover me</span></a></div>

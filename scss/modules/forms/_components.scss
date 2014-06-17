@@ -9,7 +9,7 @@
 // Inputs
 // ------
 %input {
-	@extend %border-box;
+	// @extend %border-box;
 	@include transition('all');
 	@include type-scale($form-input-scale);
 	display: block;
@@ -25,17 +25,14 @@
 }
 
 %input-small {
-	@extend %input;
 	@include type-scale($form-input-scale - 1);
 }
 
 %input-large {
-	@extend %input;
 	@include type-scale($form-input-scale + 1);
 }
 
 %input-inline {
-	@extend %input;
 	@extend %inline-block;
 
 	width: auto;
@@ -52,6 +49,7 @@
 }
 
 %select {
+	@include transition('all');
 	@include type-scale($form-input-scale);
 	display: block;
 	width: 100%;
@@ -64,12 +62,20 @@
 	width: 100%;
 }
 
+%radio {
+	margin-right: $form-radio-margin-right;
+}
+
+%checkbox {
+	margin-right: $form-checkbox-margin-right;
+}
+
 // Form Labels
 // -----------
 %form-label {
+	@include type-scale($form-label-scale);
 	display: $form-label-display;
 	margin-bottom: $form-label-margin-bottom;
-	@include type-scale($form-label-scale);
 }
 
 %form-label-inline {

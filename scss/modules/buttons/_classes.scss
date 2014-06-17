@@ -19,6 +19,9 @@ button, .button, input[type=button], input[type=submit] {
     // Display Button Classes
     &.block { @extend %button-block; }
     &.full { @extend %button-full; }
+
+    // Button State Classes
+    &:disabled { @extend %button-disabled; }
 }
 
 // Button Parent Classes

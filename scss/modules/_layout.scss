@@ -16,90 +16,90 @@
     }
 }
 
-@mixin position-absolute(
-    $vertical: false,
-    $horizontal: false,
-    $top: false,
-    $bottom: false,
-    $left: false,
-    $right: false
-) {
-    position: absolute;
+// @mixin position-absolute(
+//     $vertical: false,
+//     $horizontal: false,
+//     $top: false,
+//     $bottom: false,
+//     $left: false,
+//     $right: false
+// ) {
+//     position: absolute;
 
-    @if $vertical == center and $horizontal == center {
-        top: 50%;
-        left: 50%;
-        bottom: inherit;
-        right: inherit;
-        @include experimental(transform, translateX(-50%) translateY(-50%));
-    } 
-    @else {    
-        @if $vertical {    
-            @if $vertical == top {
-                top: 0;
-                bottom: inherit;
-            }
-            @else if $vertical == bottom {
-                bottom: 0;
-                top: inherit;
-            }
-            @else if $vertical == below {
-                top: 100%;
-                bottom: inherit;
-            }
-            @else if $vertical == above {
-                bottom: 100%;
-                top: inherit;
-            }
-            @else if $vertical == center {
-                top: 50%;
-                @include experimental(transform, translateY(-50%));
-                bottom: inherit;
-            }
-            @else {
-                top: $vertical;
-                bottom: inherit;
-            }
-        }
+//     @if $vertical == center and $horizontal == center {
+//         top: 50%;
+//         left: 50%;
+//         bottom: inherit;
+//         right: inherit;
+//         @include experimental(transform, translateX(-50%) translateY(-50%));
+//     } 
+//     @else {    
+//         @if $vertical {    
+//             @if $vertical == top {
+//                 top: 0;
+//                 bottom: inherit;
+//             }
+//             @else if $vertical == bottom {
+//                 bottom: 0;
+//                 top: inherit;
+//             }
+//             @else if $vertical == below {
+//                 top: 100%;
+//                 bottom: inherit;
+//             }
+//             @else if $vertical == above {
+//                 bottom: 100%;
+//                 top: inherit;
+//             }
+//             @else if $vertical == center {
+//                 top: 50%;
+//                 @include experimental(transform, translateY(-50%));
+//                 bottom: inherit;
+//             }
+//             @else {
+//                 top: $vertical;
+//                 bottom: inherit;
+//             }
+//         }
 
-        @if $horizontal {
-            @if $horizontal == left { 
-                left: 0;
-                right: inherit;
-            }
-            @else if $horizontal == right {
-                right: 0;
-                left: inherit;
-            }
-            @else if $horizontal == center {
-                left: 50%;
-                @include experimental(transform, translateX(-50%));
-            }
-            @else { left: $horizontal; }
-        }
-    }
+//         @if $horizontal {
+//             @if $horizontal == left { 
+//                 left: 0;
+//                 right: inherit;
+//             }
+//             @else if $horizontal == right {
+//                 right: 0;
+//                 left: inherit;
+//             }
+//             @else if $horizontal == center {
+//                 left: 50%;
+//                 @include experimental(transform, translateX(-50%));
+//             }
+//             @else { left: $horizontal; }
+//         }
+//     }
 
 
-    @if $top {
-        top: $top;
-        bottom: inherit;
-    }
+//     @if $top {
+//         top: $top;
+//         bottom: inherit;
+//     }
 
-    @if $bottom {
-        bottom: $bottom;
-        top: inherit;
-    }
+//     @if $bottom {
+//         bottom: $bottom;
+//         top: inherit;
+//     }
 
-    @if $left {
-        left: $left;
-        right: inherit;
-    }
+//     @if $left {
+//         left: $left;
+//         right: inherit;
+//     }
 
-    @if $right {
-        right: $right;
-        left: inherit;
-    }
-}
+//     @if $right {
+//         right: $right;
+//         left: inherit;
+//     }
+// }
 
 @mixin position(
     $type: relative, 

@@ -16,6 +16,19 @@
 }
 
 // Tooltip Classes
-.tooltip[title] {
+.tooltip[title], [class*="tooltip-"][title] {
     @extend %tooltip;
 }
+
+.tooltip-above-left { @extend %tooltip-above-left; }
+.tooltip-above-right { @extend %tooltip-above-right; }
+.tooltip-below-left { @extend %tooltip-below-left; }
+.tooltip-below-right { @extend %tooltip-below-right; }
+
+// Popover Classes
+.popover, [class*="popover-"] { @extend %popover; }
+
+.popover-above-left { @extend %popover-above-left; }
+.popover-above-right { @extend %popover-above-right; }
+.popover-below-left { @extend %popover-below-left; }
+.popover-below-right { @extend %popover-below-right; }
