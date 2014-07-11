@@ -1664,17 +1664,7 @@
   position: absolute;
   top: 0;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 0;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   *zoom: 1;
   height: 100%;
   max-height: 100%;
@@ -1706,17 +1696,7 @@
   position: absolute;
   top: 0;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 0;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   *zoom: 1;
   min-height: 100%;
   min-width: 100%;
@@ -1852,11 +1832,6 @@ input[type="color"].inline {
   position: absolute;
   bottom: 0;
   top: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 
 /* line 176, ../scss/modules/_layout.scss */
@@ -1870,11 +1845,6 @@ input[type="color"].inline {
   position: absolute;
   bottom: 0;
   top: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -1971,7 +1941,7 @@ html {
 }
 
 /* line 30, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+> * .cols-gutter:last-child, > * .columns-gutter:last-child {
   margin-right: 0;
 }
 
@@ -2017,7 +1987,7 @@ html {
 }
 
 /* line 30, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+> * .cols-gutter:last-child, > * .columns-gutter:last-child {
   margin-right: 0;
 }
 
@@ -2083,7 +2053,7 @@ html {
 }
 
 /* line 30, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+> * .cols-gutter:last-child, > * .columns-gutter:last-child {
   margin-right: 0;
 }
 
@@ -2149,7 +2119,7 @@ html {
 }
 
 /* line 30, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+> * .cols-gutter:last-child, > * .columns-gutter:last-child {
   margin-right: 0;
 }
 
@@ -2215,7 +2185,7 @@ html {
 }
 
 /* line 30, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+> * .cols-gutter:last-child, > * .columns-gutter:last-child {
   margin-right: 0;
 }
 
@@ -2281,7 +2251,7 @@ html {
 }
 
 /* line 30, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+> * .cols-gutter:last-child, > * .columns-gutter:last-child {
   margin-right: 0;
 }
 
@@ -2327,7 +2297,7 @@ html {
 }
 
 /* line 30, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+> * .cols-gutter:last-child, > * .columns-gutter:last-child {
   margin-right: 0;
 }
 
@@ -2393,7 +2363,7 @@ html {
 }
 
 /* line 30, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+> * .cols-gutter:last-child, > * .columns-gutter:last-child {
   margin-right: 0;
 }
 
@@ -2439,7 +2409,7 @@ html {
 }
 
 /* line 30, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+> * .cols-gutter:last-child, > * .columns-gutter:last-child {
   margin-right: 0;
 }
 
@@ -2485,7 +2455,7 @@ html {
 }
 
 /* line 30, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+> * .cols-gutter:last-child, > * .columns-gutter:last-child {
   margin-right: 0;
 }
 
@@ -2531,7 +2501,7 @@ html {
 }
 
 /* line 30, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+> * .cols-gutter:last-child, > * .columns-gutter:last-child {
   margin-right: 0;
 }
 
@@ -2577,7 +2547,7 @@ html {
 }
 
 /* line 30, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+> * .cols-gutter:last-child, > * .columns-gutter:last-child {
   margin-right: 0;
 }
 
@@ -2623,7 +2593,7 @@ html {
 }
 
 /* line 30, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+> * .cols-gutter:last-child, > * .columns-gutter:last-child {
   margin-right: 0;
 }
 
@@ -2904,7 +2874,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -2950,7 +2920,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -3016,7 +2986,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -3082,7 +3052,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -3148,7 +3118,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -3214,7 +3184,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -3260,7 +3230,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -3326,7 +3296,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -3372,7 +3342,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -3418,7 +3388,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -3464,7 +3434,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -3510,7 +3480,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -3556,7 +3526,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -3820,7 +3790,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -3866,7 +3836,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -3932,7 +3902,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -3998,7 +3968,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -4064,7 +4034,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -4130,7 +4100,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -4176,7 +4146,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -4242,7 +4212,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -4288,7 +4258,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -4334,7 +4304,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -4380,7 +4350,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -4426,7 +4396,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -4472,7 +4442,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -4736,7 +4706,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -4782,7 +4752,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -4848,7 +4818,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -4914,7 +4884,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -4980,7 +4950,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -5046,7 +5016,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -5092,7 +5062,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -5158,7 +5128,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -5204,7 +5174,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -5250,7 +5220,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -5296,7 +5266,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -5342,7 +5312,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -5388,7 +5358,7 @@ html {
   }
 
   /* line 30, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  > * .cols-gutter:last-child, > * .columns-gutter:last-child {
     margin-right: 0;
   }
 
@@ -8395,216 +8365,96 @@ nav.horizontal.full {
   position: absolute;
   top: 100%;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 0;
   right: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 /* line 104, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.below-right, .dropdown-container > .dropdown.below-right {
   position: absolute;
   top: 100%;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   right: 0;
   left: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 /* line 108, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.above-left, .dropdown-container > .dropdown.above-left {
   position: absolute;
   bottom: 100%;
   top: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 0;
   right: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 /* line 112, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.above-right, .dropdown-container > .dropdown.above-right {
   position: absolute;
   bottom: 100%;
   top: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   right: 0;
   left: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 /* line 116, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.top-left, .dropdown-container > .dropdown.top-left {
   position: absolute;
   top: 0;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 0;
   right: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 /* line 120, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.top-right, .dropdown-container > .dropdown.top-right {
   position: absolute;
   top: 0;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   right: 0;
   left: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 /* line 124, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.bottom-left, .dropdown-container > .dropdown.bottom-left {
   position: absolute;
   bottom: 0;
   top: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 0;
   right: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 /* line 128, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.bottom-right, .dropdown-container > .dropdown.bottom-right {
   position: absolute;
   bottom: 0;
   top: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   right: 0;
   left: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 /* line 132, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.bottom-push-right, .dropdown-container > .dropdown.bottom-push-right {
   position: absolute;
   bottom: 0;
   top: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 100%;
   right: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 /* line 136, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.bottom-push-left, .dropdown-container > .dropdown.bottom-push-left {
   position: absolute;
   bottom: 0;
   top: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   right: 100%;
   left: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 /* line 140, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.top-push-right, .dropdown-container > .dropdown.top-push-right {
   position: absolute;
   top: 0;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 100%;
   right: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 /* line 144, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.top-push-left, .dropdown-container > .dropdown.top-push-left {
   position: absolute;
   top: 0;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   right: 100%;
   left: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 
 /* line 149, ../scss/modules/nav/_components.scss */
@@ -9299,18 +9149,8 @@ body button.link, body .link.button, body input.link[type=button], body input.li
   position: absolute;
   top: 0;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 0;
   right: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -9323,18 +9163,8 @@ body button.link, body .link.button, body input.link[type=button], body input.li
   position: absolute;
   top: 0;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   right: 0;
   left: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   -webkit-transform: translateX(50%) translateY(-50%);
   -moz-transform: translateX(50%) translateY(-50%);
   -ms-transform: translateX(50%) translateY(-50%);
@@ -9347,18 +9177,8 @@ body button.link, body .link.button, body input.link[type=button], body input.li
   position: absolute;
   bottom: 0;
   top: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 0;
   right: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   -webkit-transform: translateX(-50%) translateY(50%);
   -moz-transform: translateX(-50%) translateY(50%);
   -ms-transform: translateX(-50%) translateY(50%);
@@ -9371,18 +9191,8 @@ body button.link, body .link.button, body input.link[type=button], body input.li
   position: absolute;
   bottom: 0;
   top: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   right: 0;
   left: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   -webkit-transform: translateX(50%) translateY(50%);
   -moz-transform: translateX(50%) translateY(50%);
   -ms-transform: translateX(50%) translateY(50%);
@@ -9391,7 +9201,7 @@ body button.link, body .link.button, body input.link[type=button], body input.li
 }
 
 /* line 77, ../scss/modules/labels/_components.scss */
-.popover, [class*="popover-"], .tooltip[title]:before, [class*="tooltip-"][title]:before {
+.popover, [class*="popover-"], .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before {
   font-size: 11.86196px ;
   font-size: 0.74137rem ;
   white-space: nowrap;
@@ -9410,14 +9220,12 @@ body button.link, body .link.button, body input.link[type=button], body input.li
   content: attr(title);
 }
 /* line 97, ../scss/modules/labels/_components.scss */
-.popover:after, [class*="popover-"]:after, .tooltip[title]:after, [class*="tooltip-"][title]:after {
+.popover:after, [class*="popover-"]:after, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after {
   content: '';
 }
 
-/* line 108, ../scss/modules/labels/_components.scss */
-.popover, [class*="popover-"], .tooltip[title]:before, [class*="tooltip-"][title]:before,
-.popover-above-left,
-.tooltip-above-left:before,
+/* line 107, ../scss/modules/labels/_components.scss */
+.popover-above-left, .tooltip-above-left:before,
 .popover-above-right,
 .tooltip-above-right:before,
 .popover-below-left,
@@ -9426,250 +9234,256 @@ body button.link, body .link.button, body input.link[type=button], body input.li
   margin: 0.5rem 0;
 }
 
-/* line 114, ../scss/modules/labels/_components.scss */
+/* line 112, ../scss/modules/labels/_components.scss */
+.tooltip-left:before,
+.tooltip-right:before {
+  margin: 0 0.5rem;
+}
+
+/* line 118, ../scss/modules/labels/_components.scss */
 .popover-above-left:after, .tooltip-above-left:after,
 .popover-above-right:after,
-.tooltip-above-right:after {
+.tooltip-above-right:after,
+.tooltip-above-center:after {
   border-top: 0.5rem solid #024959;
   border-left: 0.5rem solid transparent;
   border-right: 0.5rem solid transparent;
 }
 
-/* line 120, ../scss/modules/labels/_components.scss */
+/* line 124, ../scss/modules/labels/_components.scss */
 .popover-below-left:after, .tooltip-below-left:after,
-.tooltip-below-right:after {
+.tooltip-below-right:after,
+.tooltip-below-center:after {
   border-bottom: 0.5rem solid #024959;
   border-left: 0.5rem solid transparent;
   border-right: 0.5rem solid transparent;
 }
 
-/* line 124, ../scss/modules/labels/_components.scss */
+/* line 128, ../scss/modules/labels/_components.scss */
+.tooltip-left:after {
+  border-left: 0.5rem solid #024959;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+}
+
+/* line 132, ../scss/modules/labels/_components.scss */
+.tooltip-right:after {
+  border-right: 0.5rem solid #024959;
+  border-top: 0.5rem solid transparent;
+  border-bottom: 0.5rem solid transparent;
+}
+
+/* line 136, ../scss/modules/labels/_components.scss */
 .popover-above-left, .tooltip-above-left:before {
   position: absolute;
   bottom: 100%;
   top: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 0;
   right: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
-/* line 125, ../scss/modules/labels/_components.scss */
+/* line 137, ../scss/modules/labels/_components.scss */
 .popover-above-left:after, .tooltip-above-left:after {
   position: absolute;
   top: -0.5rem;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 0.5rem;
   right: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 
-/* line 129, ../scss/modules/labels/_components.scss */
+/* line 141, ../scss/modules/labels/_components.scss */
 .popover-above-right, .tooltip-above-right:before {
   position: absolute;
   bottom: 100%;
   top: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   right: 0;
   left: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
-/* line 130, ../scss/modules/labels/_components.scss */
+/* line 142, ../scss/modules/labels/_components.scss */
 .popover-above-right:after, .tooltip-above-right:after {
   position: absolute;
   top: -0.5rem;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   right: 0.5rem;
   left: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 
-/* line 134, ../scss/modules/labels/_components.scss */
+/* line 146, ../scss/modules/labels/_components.scss */
+.tooltip-above-center:before {
+  position: absolute;
+  bottom: 100%;
+  top: inherit;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* line 147, ../scss/modules/labels/_components.scss */
+.tooltip-above-center:after {
+  position: absolute;
+  top: -0.5rem;
+  bottom: inherit;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 151, ../scss/modules/labels/_components.scss */
 .popover-below-left, .tooltip-below-left:before {
   position: absolute;
   top: 100%;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 0;
   right: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
-/* line 135, ../scss/modules/labels/_components.scss */
+/* line 152, ../scss/modules/labels/_components.scss */
 .popover-below-left:after, .tooltip-below-left:after {
   position: absolute;
   bottom: -0.5rem;
   top: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 0.5rem;
   right: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 
-/* line 139, ../scss/modules/labels/_components.scss */
+/* line 156, ../scss/modules/labels/_components.scss */
 .tooltip-below-right:before {
   position: absolute;
   top: 100%;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   right: 0;
   left: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
-/* line 140, ../scss/modules/labels/_components.scss */
+/* line 157, ../scss/modules/labels/_components.scss */
 .tooltip-below-right:after {
   position: absolute;
   bottom: -0.5rem;
   top: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   right: 0.5rem;
   left: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 
-/* line 146, ../scss/modules/labels/_components.scss */
+/* line 161, ../scss/modules/labels/_components.scss */
+.tooltip-below-center:before {
+  position: absolute;
+  top: 100%;
+  bottom: inherit;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* line 162, ../scss/modules/labels/_components.scss */
+.tooltip-below-center:after {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: -0.5rem;
+  top: inherit;
+}
+
+/* line 166, ../scss/modules/labels/_components.scss */
+.tooltip-left:before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  bottom: inherit;
+  right: 100%;
+  left: inherit;
+}
+/* line 167, ../scss/modules/labels/_components.scss */
+.tooltip-left:after {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  bottom: inherit;
+  right: 100%;
+  left: inherit;
+}
+
+/* line 171, ../scss/modules/labels/_components.scss */
+.tooltip-right:before {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  bottom: inherit;
+  left: 100%;
+  right: inherit;
+}
+/* line 172, ../scss/modules/labels/_components.scss */
+.tooltip-right:after {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  bottom: inherit;
+  left: 100%;
+  right: inherit;
+}
+
+/* line 178, ../scss/modules/labels/_components.scss */
 .popover, [class*="popover-"] {
   overflow: visible;
 }
 
-/* line 157, ../scss/modules/labels/_components.scss */
+/* line 190, ../scss/modules/labels/_components.scss */
 .popover-above-left:after {
   position: absolute;
   top: 100%;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 0.5rem;
   right: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 
-/* line 165, ../scss/modules/labels/_components.scss */
+/* line 199, ../scss/modules/labels/_components.scss */
 .popover-above-right:after {
   position: absolute;
   top: 100%;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   right: 0.5rem;
   left: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 
-/* line 173, ../scss/modules/labels/_components.scss */
+/* line 208, ../scss/modules/labels/_components.scss */
 .popover-below-left:after {
   position: absolute;
   bottom: 100%;
   top: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 0.5rem;
   right: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 
-/* line 181, ../scss/modules/labels/_components.scss */
+/* line 217, ../scss/modules/labels/_components.scss */
 .popover-below-left:after {
   position: absolute;
   bottom: 100%;
   top: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   left: 0.5rem;
   right: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
 }
 
 /* line 23, ../scss/modules/labels/_themes.scss */
@@ -9765,162 +9579,202 @@ body .transparent.badge {
 }
 
 /* line 86, ../scss/modules/labels/_themes.scss */
-body .popover, body [class*="popover-"], body .tooltip[title]:before, body [class*="tooltip-"][title]:before {
+body .popover, body [class*="popover-"], body .tooltip[title]:before, body [class*=" tooltip-"][title]:before, body [class^="tooltip-"][title]:before {
   background-color: #024959;
   color: #efefef;
 }
 /* line 89, ../scss/modules/labels/_themes.scss */
-body .popover:after, body [class*="popover-"]:after, body .tooltip[title]:after, body [class*="tooltip-"][title]:after, body [class*="tooltip-above-"].popover:after, body [class*="tooltip-above-"][class*="popover-"]:after, body [class*="tooltip-above-"].tooltip[title]:after, body [class*="tooltip-above-"][class*="tooltip-"][title]:after, body [class*="tooltip-below-"].popover:after, body [class*="tooltip-below-"][class*="popover-"]:after, body [class*="tooltip-below-"].tooltip[title]:after, body [class*="tooltip-below-"][class*="tooltip-"][title]:after {
+body .tooltip[title] .tooltip-above:after, body [class*=" tooltip-"][title] .tooltip-above:after, body [class^="tooltip-"][title] .tooltip-above:after, body .tooltip[title] [class*=" tooltip-above-"]:after, body [class*=" tooltip-"][title] [class*=" tooltip-above-"]:after, body [class^="tooltip-"][title] [class*=" tooltip-above-"]:after, body .tooltip[title] [class^="tooltip-above-"]:after, body [class*=" tooltip-"][title] [class^="tooltip-above-"]:after, body [class^="tooltip-"][title] [class^="tooltip-above-"]:after, body .tooltip[title] .tooltip-below:after, body [class*=" tooltip-"][title] .tooltip-below:after, body [class^="tooltip-"][title] .tooltip-below:after, body .tooltip[title] [class*=" tooltip-below-"]:after, body [class*=" tooltip-"][title] [class*=" tooltip-below-"]:after, body [class^="tooltip-"][title] [class*=" tooltip-below-"]:after, body .tooltip[title] [class^="tooltip-below-"]:after, body [class*=" tooltip-"][title] [class^="tooltip-below-"]:after, body [class^="tooltip-"][title] [class^="tooltip-below-"]:after {
   border-top-color: #024959;
   border-bottom-color: #024959;
 }
+/* line 93, ../scss/modules/labels/_themes.scss */
+body .tooltip[title] .tooltip-left:after, body [class*=" tooltip-"][title] .tooltip-left:after, body [class^="tooltip-"][title] .tooltip-left:after, body .tooltip[title] [class*=" tooltip-left-"]:after, body [class*=" tooltip-"][title] [class*=" tooltip-left-"]:after, body [class^="tooltip-"][title] [class*=" tooltip-left-"]:after, body .tooltip[title] [class^="tooltip-left-"]:after, body [class*=" tooltip-"][title] [class^="tooltip-left-"]:after, body [class^="tooltip-"][title] [class^="tooltip-left-"]:after, body .tooltip[title] .tooltip-right:after, body [class*=" tooltip-"][title] .tooltip-right:after, body [class^="tooltip-"][title] .tooltip-right:after, body .tooltip[title] [class*=" tooltip-right-"]:after, body [class*=" tooltip-"][title] [class*=" tooltip-right-"]:after, body [class^="tooltip-"][title] [class*=" tooltip-right-"]:after, body .tooltip[title] [class^="tooltip-right-"]:after, body [class*=" tooltip-"][title] [class^="tooltip-right-"]:after, body [class^="tooltip-"][title] [class^="tooltip-right-"]:after {
+  border-left-color: #024959;
+  border-right-color: #024959;
+}
 /* line 86, ../scss/modules/labels/_themes.scss */
-body .primary.popover, body .primary[class*="popover-"], body .primary.tooltip[title]:before, body .primary[class*="tooltip-"][title]:before {
+body .primary.popover, body .primary[class*="popover-"], body .primary.tooltip[title]:before, body .primary[class*=" tooltip-"][title]:before, body .primary[class^="tooltip-"][title]:before {
   background-color: #024959;
   color: #efefef;
 }
 /* line 89, ../scss/modules/labels/_themes.scss */
-body .primary.popover:after, body .primary[class*="popover-"]:after, body .primary.tooltip[title]:after, body .primary[class*="tooltip-"][title]:after, body .primary[class*="tooltip-above-"].popover:after, body .primary[class*="tooltip-above-"][class*="popover-"]:after, body .primary[class*="tooltip-above-"].tooltip[title]:after, body .primary[class*="tooltip-above-"][class*="tooltip-"][title]:after, body .primary[class*="tooltip-below-"].popover:after, body .primary[class*="tooltip-below-"][class*="popover-"]:after, body .primary[class*="tooltip-below-"].tooltip[title]:after, body .primary[class*="tooltip-below-"][class*="tooltip-"][title]:after {
+body .primary.tooltip[title] .tooltip-above:after, body .primary[class*=" tooltip-"][title] .tooltip-above:after, body .primary[class^="tooltip-"][title] .tooltip-above:after, body .primary.tooltip[title] [class*=" tooltip-above-"]:after, body .primary[class*=" tooltip-"][title] [class*=" tooltip-above-"]:after, body .primary[class^="tooltip-"][title] [class*=" tooltip-above-"]:after, body .primary.tooltip[title] [class^="tooltip-above-"]:after, body .primary[class*=" tooltip-"][title] [class^="tooltip-above-"]:after, body .primary[class^="tooltip-"][title] [class^="tooltip-above-"]:after, body .primary.tooltip[title] .tooltip-below:after, body .primary[class*=" tooltip-"][title] .tooltip-below:after, body .primary[class^="tooltip-"][title] .tooltip-below:after, body .primary.tooltip[title] [class*=" tooltip-below-"]:after, body .primary[class*=" tooltip-"][title] [class*=" tooltip-below-"]:after, body .primary[class^="tooltip-"][title] [class*=" tooltip-below-"]:after, body .primary.tooltip[title] [class^="tooltip-below-"]:after, body .primary[class*=" tooltip-"][title] [class^="tooltip-below-"]:after, body .primary[class^="tooltip-"][title] [class^="tooltip-below-"]:after {
   border-top-color: #024959;
   border-bottom-color: #024959;
 }
+/* line 93, ../scss/modules/labels/_themes.scss */
+body .primary.tooltip[title] .tooltip-left:after, body .primary[class*=" tooltip-"][title] .tooltip-left:after, body .primary[class^="tooltip-"][title] .tooltip-left:after, body .primary.tooltip[title] [class*=" tooltip-left-"]:after, body .primary[class*=" tooltip-"][title] [class*=" tooltip-left-"]:after, body .primary[class^="tooltip-"][title] [class*=" tooltip-left-"]:after, body .primary.tooltip[title] [class^="tooltip-left-"]:after, body .primary[class*=" tooltip-"][title] [class^="tooltip-left-"]:after, body .primary[class^="tooltip-"][title] [class^="tooltip-left-"]:after, body .primary.tooltip[title] .tooltip-right:after, body .primary[class*=" tooltip-"][title] .tooltip-right:after, body .primary[class^="tooltip-"][title] .tooltip-right:after, body .primary.tooltip[title] [class*=" tooltip-right-"]:after, body .primary[class*=" tooltip-"][title] [class*=" tooltip-right-"]:after, body .primary[class^="tooltip-"][title] [class*=" tooltip-right-"]:after, body .primary.tooltip[title] [class^="tooltip-right-"]:after, body .primary[class*=" tooltip-"][title] [class^="tooltip-right-"]:after, body .primary[class^="tooltip-"][title] [class^="tooltip-right-"]:after {
+  border-left-color: #024959;
+  border-right-color: #024959;
+}
 /* line 86, ../scss/modules/labels/_themes.scss */
-body .secondary.popover, body .secondary[class*="popover-"], body .secondary.tooltip[title]:before, body .secondary[class*="tooltip-"][title]:before {
+body .secondary.popover, body .secondary[class*="popover-"], body .secondary.tooltip[title]:before, body .secondary[class*=" tooltip-"][title]:before, body .secondary[class^="tooltip-"][title]:before {
   background-color: #e74c30;
   color: #efefef;
 }
 /* line 89, ../scss/modules/labels/_themes.scss */
-body .secondary.popover:after, body .secondary[class*="popover-"]:after, body .secondary.tooltip[title]:after, body .secondary[class*="tooltip-"][title]:after, body .secondary[class*="tooltip-above-"].popover:after, body .secondary[class*="tooltip-above-"][class*="popover-"]:after, body .secondary[class*="tooltip-above-"].tooltip[title]:after, body .secondary[class*="tooltip-above-"][class*="tooltip-"][title]:after, body .secondary[class*="tooltip-below-"].popover:after, body .secondary[class*="tooltip-below-"][class*="popover-"]:after, body .secondary[class*="tooltip-below-"].tooltip[title]:after, body .secondary[class*="tooltip-below-"][class*="tooltip-"][title]:after {
+body .secondary.tooltip[title] .tooltip-above:after, body .secondary[class*=" tooltip-"][title] .tooltip-above:after, body .secondary[class^="tooltip-"][title] .tooltip-above:after, body .secondary.tooltip[title] [class*=" tooltip-above-"]:after, body .secondary[class*=" tooltip-"][title] [class*=" tooltip-above-"]:after, body .secondary[class^="tooltip-"][title] [class*=" tooltip-above-"]:after, body .secondary.tooltip[title] [class^="tooltip-above-"]:after, body .secondary[class*=" tooltip-"][title] [class^="tooltip-above-"]:after, body .secondary[class^="tooltip-"][title] [class^="tooltip-above-"]:after, body .secondary.tooltip[title] .tooltip-below:after, body .secondary[class*=" tooltip-"][title] .tooltip-below:after, body .secondary[class^="tooltip-"][title] .tooltip-below:after, body .secondary.tooltip[title] [class*=" tooltip-below-"]:after, body .secondary[class*=" tooltip-"][title] [class*=" tooltip-below-"]:after, body .secondary[class^="tooltip-"][title] [class*=" tooltip-below-"]:after, body .secondary.tooltip[title] [class^="tooltip-below-"]:after, body .secondary[class*=" tooltip-"][title] [class^="tooltip-below-"]:after, body .secondary[class^="tooltip-"][title] [class^="tooltip-below-"]:after {
   border-top-color: #e74c30;
   border-bottom-color: #e74c30;
 }
+/* line 93, ../scss/modules/labels/_themes.scss */
+body .secondary.tooltip[title] .tooltip-left:after, body .secondary[class*=" tooltip-"][title] .tooltip-left:after, body .secondary[class^="tooltip-"][title] .tooltip-left:after, body .secondary.tooltip[title] [class*=" tooltip-left-"]:after, body .secondary[class*=" tooltip-"][title] [class*=" tooltip-left-"]:after, body .secondary[class^="tooltip-"][title] [class*=" tooltip-left-"]:after, body .secondary.tooltip[title] [class^="tooltip-left-"]:after, body .secondary[class*=" tooltip-"][title] [class^="tooltip-left-"]:after, body .secondary[class^="tooltip-"][title] [class^="tooltip-left-"]:after, body .secondary.tooltip[title] .tooltip-right:after, body .secondary[class*=" tooltip-"][title] .tooltip-right:after, body .secondary[class^="tooltip-"][title] .tooltip-right:after, body .secondary.tooltip[title] [class*=" tooltip-right-"]:after, body .secondary[class*=" tooltip-"][title] [class*=" tooltip-right-"]:after, body .secondary[class^="tooltip-"][title] [class*=" tooltip-right-"]:after, body .secondary.tooltip[title] [class^="tooltip-right-"]:after, body .secondary[class*=" tooltip-"][title] [class^="tooltip-right-"]:after, body .secondary[class^="tooltip-"][title] [class^="tooltip-right-"]:after {
+  border-left-color: #e74c30;
+  border-right-color: #e74c30;
+}
 /* line 86, ../scss/modules/labels/_themes.scss */
-body .light.popover, body .light[class*="popover-"], body .light.tooltip[title]:before, body .light[class*="tooltip-"][title]:before {
+body .light.popover, body .light[class*="popover-"], body .light.tooltip[title]:before, body .light[class*=" tooltip-"][title]:before, body .light[class^="tooltip-"][title]:before {
   background-color: #efefef;
   color: #363636;
 }
 /* line 89, ../scss/modules/labels/_themes.scss */
-body .light.popover:after, body .light[class*="popover-"]:after, body .light.tooltip[title]:after, body .light[class*="tooltip-"][title]:after, body .light[class*="tooltip-above-"].popover:after, body .light[class*="tooltip-above-"][class*="popover-"]:after, body .light[class*="tooltip-above-"].tooltip[title]:after, body .light[class*="tooltip-above-"][class*="tooltip-"][title]:after, body .light[class*="tooltip-below-"].popover:after, body .light[class*="tooltip-below-"][class*="popover-"]:after, body .light[class*="tooltip-below-"].tooltip[title]:after, body .light[class*="tooltip-below-"][class*="tooltip-"][title]:after {
+body .light.tooltip[title] .tooltip-above:after, body .light[class*=" tooltip-"][title] .tooltip-above:after, body .light[class^="tooltip-"][title] .tooltip-above:after, body .light.tooltip[title] [class*=" tooltip-above-"]:after, body .light[class*=" tooltip-"][title] [class*=" tooltip-above-"]:after, body .light[class^="tooltip-"][title] [class*=" tooltip-above-"]:after, body .light.tooltip[title] [class^="tooltip-above-"]:after, body .light[class*=" tooltip-"][title] [class^="tooltip-above-"]:after, body .light[class^="tooltip-"][title] [class^="tooltip-above-"]:after, body .light.tooltip[title] .tooltip-below:after, body .light[class*=" tooltip-"][title] .tooltip-below:after, body .light[class^="tooltip-"][title] .tooltip-below:after, body .light.tooltip[title] [class*=" tooltip-below-"]:after, body .light[class*=" tooltip-"][title] [class*=" tooltip-below-"]:after, body .light[class^="tooltip-"][title] [class*=" tooltip-below-"]:after, body .light.tooltip[title] [class^="tooltip-below-"]:after, body .light[class*=" tooltip-"][title] [class^="tooltip-below-"]:after, body .light[class^="tooltip-"][title] [class^="tooltip-below-"]:after {
   border-top-color: #efefef;
   border-bottom-color: #efefef;
 }
+/* line 93, ../scss/modules/labels/_themes.scss */
+body .light.tooltip[title] .tooltip-left:after, body .light[class*=" tooltip-"][title] .tooltip-left:after, body .light[class^="tooltip-"][title] .tooltip-left:after, body .light.tooltip[title] [class*=" tooltip-left-"]:after, body .light[class*=" tooltip-"][title] [class*=" tooltip-left-"]:after, body .light[class^="tooltip-"][title] [class*=" tooltip-left-"]:after, body .light.tooltip[title] [class^="tooltip-left-"]:after, body .light[class*=" tooltip-"][title] [class^="tooltip-left-"]:after, body .light[class^="tooltip-"][title] [class^="tooltip-left-"]:after, body .light.tooltip[title] .tooltip-right:after, body .light[class*=" tooltip-"][title] .tooltip-right:after, body .light[class^="tooltip-"][title] .tooltip-right:after, body .light.tooltip[title] [class*=" tooltip-right-"]:after, body .light[class*=" tooltip-"][title] [class*=" tooltip-right-"]:after, body .light[class^="tooltip-"][title] [class*=" tooltip-right-"]:after, body .light.tooltip[title] [class^="tooltip-right-"]:after, body .light[class*=" tooltip-"][title] [class^="tooltip-right-"]:after, body .light[class^="tooltip-"][title] [class^="tooltip-right-"]:after {
+  border-left-color: #efefef;
+  border-right-color: #efefef;
+}
 /* line 86, ../scss/modules/labels/_themes.scss */
-body .dark.popover, body .dark[class*="popover-"], body .dark.tooltip[title]:before, body .dark[class*="tooltip-"][title]:before {
+body .dark.popover, body .dark[class*="popover-"], body .dark.tooltip[title]:before, body .dark[class*=" tooltip-"][title]:before, body .dark[class^="tooltip-"][title]:before {
   background-color: #363636;
   color: #efefef;
 }
 /* line 89, ../scss/modules/labels/_themes.scss */
-body .dark.popover:after, body .dark[class*="popover-"]:after, body .dark.tooltip[title]:after, body .dark[class*="tooltip-"][title]:after, body .dark[class*="tooltip-above-"].popover:after, body .dark[class*="tooltip-above-"][class*="popover-"]:after, body .dark[class*="tooltip-above-"].tooltip[title]:after, body .dark[class*="tooltip-above-"][class*="tooltip-"][title]:after, body .dark[class*="tooltip-below-"].popover:after, body .dark[class*="tooltip-below-"][class*="popover-"]:after, body .dark[class*="tooltip-below-"].tooltip[title]:after, body .dark[class*="tooltip-below-"][class*="tooltip-"][title]:after {
+body .dark.tooltip[title] .tooltip-above:after, body .dark[class*=" tooltip-"][title] .tooltip-above:after, body .dark[class^="tooltip-"][title] .tooltip-above:after, body .dark.tooltip[title] [class*=" tooltip-above-"]:after, body .dark[class*=" tooltip-"][title] [class*=" tooltip-above-"]:after, body .dark[class^="tooltip-"][title] [class*=" tooltip-above-"]:after, body .dark.tooltip[title] [class^="tooltip-above-"]:after, body .dark[class*=" tooltip-"][title] [class^="tooltip-above-"]:after, body .dark[class^="tooltip-"][title] [class^="tooltip-above-"]:after, body .dark.tooltip[title] .tooltip-below:after, body .dark[class*=" tooltip-"][title] .tooltip-below:after, body .dark[class^="tooltip-"][title] .tooltip-below:after, body .dark.tooltip[title] [class*=" tooltip-below-"]:after, body .dark[class*=" tooltip-"][title] [class*=" tooltip-below-"]:after, body .dark[class^="tooltip-"][title] [class*=" tooltip-below-"]:after, body .dark.tooltip[title] [class^="tooltip-below-"]:after, body .dark[class*=" tooltip-"][title] [class^="tooltip-below-"]:after, body .dark[class^="tooltip-"][title] [class^="tooltip-below-"]:after {
   border-top-color: #363636;
   border-bottom-color: #363636;
 }
+/* line 93, ../scss/modules/labels/_themes.scss */
+body .dark.tooltip[title] .tooltip-left:after, body .dark[class*=" tooltip-"][title] .tooltip-left:after, body .dark[class^="tooltip-"][title] .tooltip-left:after, body .dark.tooltip[title] [class*=" tooltip-left-"]:after, body .dark[class*=" tooltip-"][title] [class*=" tooltip-left-"]:after, body .dark[class^="tooltip-"][title] [class*=" tooltip-left-"]:after, body .dark.tooltip[title] [class^="tooltip-left-"]:after, body .dark[class*=" tooltip-"][title] [class^="tooltip-left-"]:after, body .dark[class^="tooltip-"][title] [class^="tooltip-left-"]:after, body .dark.tooltip[title] .tooltip-right:after, body .dark[class*=" tooltip-"][title] .tooltip-right:after, body .dark[class^="tooltip-"][title] .tooltip-right:after, body .dark.tooltip[title] [class*=" tooltip-right-"]:after, body .dark[class*=" tooltip-"][title] [class*=" tooltip-right-"]:after, body .dark[class^="tooltip-"][title] [class*=" tooltip-right-"]:after, body .dark.tooltip[title] [class^="tooltip-right-"]:after, body .dark[class*=" tooltip-"][title] [class^="tooltip-right-"]:after, body .dark[class^="tooltip-"][title] [class^="tooltip-right-"]:after {
+  border-left-color: #363636;
+  border-right-color: #363636;
+}
 /* line 86, ../scss/modules/labels/_themes.scss */
-body .success.popover, body .success[class*="popover-"], body .success.tooltip[title]:before, body .success[class*="tooltip-"][title]:before {
+body .success.popover, body .success[class*="popover-"], body .success.tooltip[title]:before, body .success[class*=" tooltip-"][title]:before, body .success[class^="tooltip-"][title]:before {
   background-color: #96cc69;
   color: #efefef;
 }
 /* line 89, ../scss/modules/labels/_themes.scss */
-body .success.popover:after, body .success[class*="popover-"]:after, body .success.tooltip[title]:after, body .success[class*="tooltip-"][title]:after, body .success[class*="tooltip-above-"].popover:after, body .success[class*="tooltip-above-"][class*="popover-"]:after, body .success[class*="tooltip-above-"].tooltip[title]:after, body .success[class*="tooltip-above-"][class*="tooltip-"][title]:after, body .success[class*="tooltip-below-"].popover:after, body .success[class*="tooltip-below-"][class*="popover-"]:after, body .success[class*="tooltip-below-"].tooltip[title]:after, body .success[class*="tooltip-below-"][class*="tooltip-"][title]:after {
+body .success.tooltip[title] .tooltip-above:after, body .success[class*=" tooltip-"][title] .tooltip-above:after, body .success[class^="tooltip-"][title] .tooltip-above:after, body .success.tooltip[title] [class*=" tooltip-above-"]:after, body .success[class*=" tooltip-"][title] [class*=" tooltip-above-"]:after, body .success[class^="tooltip-"][title] [class*=" tooltip-above-"]:after, body .success.tooltip[title] [class^="tooltip-above-"]:after, body .success[class*=" tooltip-"][title] [class^="tooltip-above-"]:after, body .success[class^="tooltip-"][title] [class^="tooltip-above-"]:after, body .success.tooltip[title] .tooltip-below:after, body .success[class*=" tooltip-"][title] .tooltip-below:after, body .success[class^="tooltip-"][title] .tooltip-below:after, body .success.tooltip[title] [class*=" tooltip-below-"]:after, body .success[class*=" tooltip-"][title] [class*=" tooltip-below-"]:after, body .success[class^="tooltip-"][title] [class*=" tooltip-below-"]:after, body .success.tooltip[title] [class^="tooltip-below-"]:after, body .success[class*=" tooltip-"][title] [class^="tooltip-below-"]:after, body .success[class^="tooltip-"][title] [class^="tooltip-below-"]:after {
   border-top-color: #96cc69;
   border-bottom-color: #96cc69;
 }
+/* line 93, ../scss/modules/labels/_themes.scss */
+body .success.tooltip[title] .tooltip-left:after, body .success[class*=" tooltip-"][title] .tooltip-left:after, body .success[class^="tooltip-"][title] .tooltip-left:after, body .success.tooltip[title] [class*=" tooltip-left-"]:after, body .success[class*=" tooltip-"][title] [class*=" tooltip-left-"]:after, body .success[class^="tooltip-"][title] [class*=" tooltip-left-"]:after, body .success.tooltip[title] [class^="tooltip-left-"]:after, body .success[class*=" tooltip-"][title] [class^="tooltip-left-"]:after, body .success[class^="tooltip-"][title] [class^="tooltip-left-"]:after, body .success.tooltip[title] .tooltip-right:after, body .success[class*=" tooltip-"][title] .tooltip-right:after, body .success[class^="tooltip-"][title] .tooltip-right:after, body .success.tooltip[title] [class*=" tooltip-right-"]:after, body .success[class*=" tooltip-"][title] [class*=" tooltip-right-"]:after, body .success[class^="tooltip-"][title] [class*=" tooltip-right-"]:after, body .success.tooltip[title] [class^="tooltip-right-"]:after, body .success[class*=" tooltip-"][title] [class^="tooltip-right-"]:after, body .success[class^="tooltip-"][title] [class^="tooltip-right-"]:after {
+  border-left-color: #96cc69;
+  border-right-color: #96cc69;
+}
 /* line 86, ../scss/modules/labels/_themes.scss */
-body .warning.popover, body .warning[class*="popover-"], body .warning.tooltip[title]:before, body .warning[class*="tooltip-"][title]:before {
+body .warning.popover, body .warning[class*="popover-"], body .warning.tooltip[title]:before, body .warning[class*=" tooltip-"][title]:before, body .warning[class^="tooltip-"][title]:before {
   background-color: #ffcc5c;
   color: #363636;
 }
 /* line 89, ../scss/modules/labels/_themes.scss */
-body .warning.popover:after, body .warning[class*="popover-"]:after, body .warning.tooltip[title]:after, body .warning[class*="tooltip-"][title]:after, body .warning[class*="tooltip-above-"].popover:after, body .warning[class*="tooltip-above-"][class*="popover-"]:after, body .warning[class*="tooltip-above-"].tooltip[title]:after, body .warning[class*="tooltip-above-"][class*="tooltip-"][title]:after, body .warning[class*="tooltip-below-"].popover:after, body .warning[class*="tooltip-below-"][class*="popover-"]:after, body .warning[class*="tooltip-below-"].tooltip[title]:after, body .warning[class*="tooltip-below-"][class*="tooltip-"][title]:after {
+body .warning.tooltip[title] .tooltip-above:after, body .warning[class*=" tooltip-"][title] .tooltip-above:after, body .warning[class^="tooltip-"][title] .tooltip-above:after, body .warning.tooltip[title] [class*=" tooltip-above-"]:after, body .warning[class*=" tooltip-"][title] [class*=" tooltip-above-"]:after, body .warning[class^="tooltip-"][title] [class*=" tooltip-above-"]:after, body .warning.tooltip[title] [class^="tooltip-above-"]:after, body .warning[class*=" tooltip-"][title] [class^="tooltip-above-"]:after, body .warning[class^="tooltip-"][title] [class^="tooltip-above-"]:after, body .warning.tooltip[title] .tooltip-below:after, body .warning[class*=" tooltip-"][title] .tooltip-below:after, body .warning[class^="tooltip-"][title] .tooltip-below:after, body .warning.tooltip[title] [class*=" tooltip-below-"]:after, body .warning[class*=" tooltip-"][title] [class*=" tooltip-below-"]:after, body .warning[class^="tooltip-"][title] [class*=" tooltip-below-"]:after, body .warning.tooltip[title] [class^="tooltip-below-"]:after, body .warning[class*=" tooltip-"][title] [class^="tooltip-below-"]:after, body .warning[class^="tooltip-"][title] [class^="tooltip-below-"]:after {
   border-top-color: #ffcc5c;
   border-bottom-color: #ffcc5c;
 }
+/* line 93, ../scss/modules/labels/_themes.scss */
+body .warning.tooltip[title] .tooltip-left:after, body .warning[class*=" tooltip-"][title] .tooltip-left:after, body .warning[class^="tooltip-"][title] .tooltip-left:after, body .warning.tooltip[title] [class*=" tooltip-left-"]:after, body .warning[class*=" tooltip-"][title] [class*=" tooltip-left-"]:after, body .warning[class^="tooltip-"][title] [class*=" tooltip-left-"]:after, body .warning.tooltip[title] [class^="tooltip-left-"]:after, body .warning[class*=" tooltip-"][title] [class^="tooltip-left-"]:after, body .warning[class^="tooltip-"][title] [class^="tooltip-left-"]:after, body .warning.tooltip[title] .tooltip-right:after, body .warning[class*=" tooltip-"][title] .tooltip-right:after, body .warning[class^="tooltip-"][title] .tooltip-right:after, body .warning.tooltip[title] [class*=" tooltip-right-"]:after, body .warning[class*=" tooltip-"][title] [class*=" tooltip-right-"]:after, body .warning[class^="tooltip-"][title] [class*=" tooltip-right-"]:after, body .warning.tooltip[title] [class^="tooltip-right-"]:after, body .warning[class*=" tooltip-"][title] [class^="tooltip-right-"]:after, body .warning[class^="tooltip-"][title] [class^="tooltip-right-"]:after {
+  border-left-color: #ffcc5c;
+  border-right-color: #ffcc5c;
+}
 /* line 86, ../scss/modules/labels/_themes.scss */
-body .failure.popover, body .failure[class*="popover-"], body .failure.tooltip[title]:before, body .failure[class*="tooltip-"][title]:before {
+body .failure.popover, body .failure[class*="popover-"], body .failure.tooltip[title]:before, body .failure[class*=" tooltip-"][title]:before, body .failure[class^="tooltip-"][title]:before {
   background-color: #c44741;
   color: #efefef;
 }
 /* line 89, ../scss/modules/labels/_themes.scss */
-body .failure.popover:after, body .failure[class*="popover-"]:after, body .failure.tooltip[title]:after, body .failure[class*="tooltip-"][title]:after, body .failure[class*="tooltip-above-"].popover:after, body .failure[class*="tooltip-above-"][class*="popover-"]:after, body .failure[class*="tooltip-above-"].tooltip[title]:after, body .failure[class*="tooltip-above-"][class*="tooltip-"][title]:after, body .failure[class*="tooltip-below-"].popover:after, body .failure[class*="tooltip-below-"][class*="popover-"]:after, body .failure[class*="tooltip-below-"].tooltip[title]:after, body .failure[class*="tooltip-below-"][class*="tooltip-"][title]:after {
+body .failure.tooltip[title] .tooltip-above:after, body .failure[class*=" tooltip-"][title] .tooltip-above:after, body .failure[class^="tooltip-"][title] .tooltip-above:after, body .failure.tooltip[title] [class*=" tooltip-above-"]:after, body .failure[class*=" tooltip-"][title] [class*=" tooltip-above-"]:after, body .failure[class^="tooltip-"][title] [class*=" tooltip-above-"]:after, body .failure.tooltip[title] [class^="tooltip-above-"]:after, body .failure[class*=" tooltip-"][title] [class^="tooltip-above-"]:after, body .failure[class^="tooltip-"][title] [class^="tooltip-above-"]:after, body .failure.tooltip[title] .tooltip-below:after, body .failure[class*=" tooltip-"][title] .tooltip-below:after, body .failure[class^="tooltip-"][title] .tooltip-below:after, body .failure.tooltip[title] [class*=" tooltip-below-"]:after, body .failure[class*=" tooltip-"][title] [class*=" tooltip-below-"]:after, body .failure[class^="tooltip-"][title] [class*=" tooltip-below-"]:after, body .failure.tooltip[title] [class^="tooltip-below-"]:after, body .failure[class*=" tooltip-"][title] [class^="tooltip-below-"]:after, body .failure[class^="tooltip-"][title] [class^="tooltip-below-"]:after {
   border-top-color: #c44741;
   border-bottom-color: #c44741;
 }
+/* line 93, ../scss/modules/labels/_themes.scss */
+body .failure.tooltip[title] .tooltip-left:after, body .failure[class*=" tooltip-"][title] .tooltip-left:after, body .failure[class^="tooltip-"][title] .tooltip-left:after, body .failure.tooltip[title] [class*=" tooltip-left-"]:after, body .failure[class*=" tooltip-"][title] [class*=" tooltip-left-"]:after, body .failure[class^="tooltip-"][title] [class*=" tooltip-left-"]:after, body .failure.tooltip[title] [class^="tooltip-left-"]:after, body .failure[class*=" tooltip-"][title] [class^="tooltip-left-"]:after, body .failure[class^="tooltip-"][title] [class^="tooltip-left-"]:after, body .failure.tooltip[title] .tooltip-right:after, body .failure[class*=" tooltip-"][title] .tooltip-right:after, body .failure[class^="tooltip-"][title] .tooltip-right:after, body .failure.tooltip[title] [class*=" tooltip-right-"]:after, body .failure[class*=" tooltip-"][title] [class*=" tooltip-right-"]:after, body .failure[class^="tooltip-"][title] [class*=" tooltip-right-"]:after, body .failure.tooltip[title] [class^="tooltip-right-"]:after, body .failure[class*=" tooltip-"][title] [class^="tooltip-right-"]:after, body .failure[class^="tooltip-"][title] [class^="tooltip-right-"]:after {
+  border-left-color: #c44741;
+  border-right-color: #c44741;
+}
 
-/* line 123, ../scss/modules/labels/_themes.scss */
+/* line 130, ../scss/modules/labels/_themes.scss */
 body .popover, body [class*="popover-"] {
   background-color: #024959;
   color: #efefef;
 }
-/* line 118, ../scss/modules/labels/_themes.scss */
+/* line 125, ../scss/modules/labels/_themes.scss */
 body .popover:after, body [class*="popover-"]:after, body [class*="popover-above-"].popover:after, body [class*="popover-above-"][class*="popover-"]:after, body [class*="popover-below-"].popover:after, body [class*="popover-below-"][class*="popover-"]:after {
   border-top-color: #024959;
   border-bottom-color: #024959;
 }
-/* line 126, ../scss/modules/labels/_themes.scss */
+/* line 133, ../scss/modules/labels/_themes.scss */
 body .primary.popover, body .primary[class*="popover-"] {
   background-color: #024959;
   color: #efefef;
 }
-/* line 118, ../scss/modules/labels/_themes.scss */
+/* line 125, ../scss/modules/labels/_themes.scss */
 body .primary.popover:after, body .primary[class*="popover-"]:after, body .primary[class*="popover-above-"].popover:after, body .primary[class*="popover-above-"][class*="popover-"]:after, body .primary[class*="popover-below-"].popover:after, body .primary[class*="popover-below-"][class*="popover-"]:after {
   border-top-color: #024959;
   border-bottom-color: #024959;
 }
-/* line 127, ../scss/modules/labels/_themes.scss */
+/* line 134, ../scss/modules/labels/_themes.scss */
 body .secondary.popover, body .secondary[class*="popover-"] {
   background-color: #e74c30;
   color: #efefef;
 }
-/* line 118, ../scss/modules/labels/_themes.scss */
+/* line 125, ../scss/modules/labels/_themes.scss */
 body .secondary.popover:after, body .secondary[class*="popover-"]:after, body .secondary[class*="popover-above-"].popover:after, body .secondary[class*="popover-above-"][class*="popover-"]:after, body .secondary[class*="popover-below-"].popover:after, body .secondary[class*="popover-below-"][class*="popover-"]:after {
   border-top-color: #e74c30;
   border-bottom-color: #e74c30;
 }
-/* line 128, ../scss/modules/labels/_themes.scss */
+/* line 135, ../scss/modules/labels/_themes.scss */
 body .light.popover, body .light[class*="popover-"] {
   background-color: #efefef;
   color: #363636;
 }
-/* line 118, ../scss/modules/labels/_themes.scss */
+/* line 125, ../scss/modules/labels/_themes.scss */
 body .light.popover:after, body .light[class*="popover-"]:after, body .light[class*="popover-above-"].popover:after, body .light[class*="popover-above-"][class*="popover-"]:after, body .light[class*="popover-below-"].popover:after, body .light[class*="popover-below-"][class*="popover-"]:after {
   border-top-color: #efefef;
   border-bottom-color: #efefef;
 }
-/* line 129, ../scss/modules/labels/_themes.scss */
+/* line 136, ../scss/modules/labels/_themes.scss */
 body .dark.popover, body .dark[class*="popover-"] {
   background-color: #363636;
   color: #efefef;
 }
-/* line 118, ../scss/modules/labels/_themes.scss */
+/* line 125, ../scss/modules/labels/_themes.scss */
 body .dark.popover:after, body .dark[class*="popover-"]:after, body .dark[class*="popover-above-"].popover:after, body .dark[class*="popover-above-"][class*="popover-"]:after, body .dark[class*="popover-below-"].popover:after, body .dark[class*="popover-below-"][class*="popover-"]:after {
   border-top-color: #363636;
   border-bottom-color: #363636;
 }
-/* line 131, ../scss/modules/labels/_themes.scss */
+/* line 138, ../scss/modules/labels/_themes.scss */
 body .success.popover, body .success[class*="popover-"] {
   background-color: #96cc69;
   color: #efefef;
 }
-/* line 118, ../scss/modules/labels/_themes.scss */
+/* line 125, ../scss/modules/labels/_themes.scss */
 body .success.popover:after, body .success[class*="popover-"]:after, body .success[class*="popover-above-"].popover:after, body .success[class*="popover-above-"][class*="popover-"]:after, body .success[class*="popover-below-"].popover:after, body .success[class*="popover-below-"][class*="popover-"]:after {
   border-top-color: #96cc69;
   border-bottom-color: #96cc69;
 }
-/* line 132, ../scss/modules/labels/_themes.scss */
+/* line 139, ../scss/modules/labels/_themes.scss */
 body .warning.popover, body .warning[class*="popover-"] {
   background-color: #ffcc5c;
   color: #363636;
 }
-/* line 118, ../scss/modules/labels/_themes.scss */
+/* line 125, ../scss/modules/labels/_themes.scss */
 body .warning.popover:after, body .warning[class*="popover-"]:after, body .warning[class*="popover-above-"].popover:after, body .warning[class*="popover-above-"][class*="popover-"]:after, body .warning[class*="popover-below-"].popover:after, body .warning[class*="popover-below-"][class*="popover-"]:after {
   border-top-color: #ffcc5c;
   border-bottom-color: #ffcc5c;
 }
-/* line 133, ../scss/modules/labels/_themes.scss */
+/* line 140, ../scss/modules/labels/_themes.scss */
 body .failure.popover, body .failure[class*="popover-"] {
   background-color: #c44741;
   color: #efefef;
 }
-/* line 118, ../scss/modules/labels/_themes.scss */
+/* line 125, ../scss/modules/labels/_themes.scss */
 body .failure.popover:after, body .failure[class*="popover-"]:after, body .failure[class*="popover-above-"].popover:after, body .failure[class*="popover-above-"][class*="popover-"]:after, body .failure[class*="popover-below-"].popover:after, body .failure[class*="popover-below-"][class*="popover-"]:after {
   border-top-color: #c44741;
   border-bottom-color: #c44741;
@@ -10148,18 +10002,8 @@ table.hover tr:hover {
   position: absolute;
   top: 0;
   bottom: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   right: 0;
   left: inherit;
-  -webkit-transform: none;
-  -moz-transform: none;
-  -ms-transform: none;
-  -o-transform: none;
-  transform: none;
   padding: 8px;
 }
 

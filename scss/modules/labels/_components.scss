@@ -100,12 +100,16 @@
 }
 
 // Tooltip Positions
-%tooltip,
 %tooltip-above-left,
 %tooltip-above-right,
 %tooltip-below-left,
 %tooltip-below-right {
     &:before { margin: $tooltip-margin-vertical 0; }
+}
+
+%tooltip-left,
+%tooltip-right {
+    &:before { margin: 0 $tooltip-margin-horizontal; }
 }
 
 %tooltip-above-left,
@@ -120,6 +124,14 @@
     &:after { @include shape-triangle(up, $tooltip-arrow-width / 2); }
 }
 
+%tooltip-left {
+    &:after { @include shape-triangle(right, $tooltip-arrow-width / 2); }
+}
+
+%tooltip-right {
+    &:after { @include shape-triangle(left, $tooltip-arrow-width / 2); }
+}
+
 %tooltip-above-left {
     &:before { @include position-absolute(above, left); }
     &:after { @include position-absolute(-$tooltip-margin-vertical, $left: $tooltip-arrow-indent); }
@@ -130,6 +142,11 @@
     &:after { @include position-absolute(-$tooltip-margin-vertical, $right: $tooltip-arrow-indent); }
 }
 
+%tooltip-above-center {
+    &:before { @include position-absolute(above, center); }
+    &:after { @include position-absolute(-$tooltip-margin-vertical, center); }
+}
+
 %tooltip-below-left {
     &:before { @include position-absolute(below, left); }
     &:after { @include position-absolute($bottom: -$tooltip-margin-vertical, $left: $tooltip-arrow-indent); }
@@ -138,6 +155,21 @@
 %tooltip-below-right {
     &:before { @include position-absolute(below, right); }
     &:after { @include position-absolute($bottom: -$tooltip-margin-vertical, $right: $tooltip-arrow-indent); }
+}
+
+%tooltip-below-center {
+    &:before { @include position-absolute(below, center); }
+    &:after { @include position-absolute($bottom: -$tooltip-margin-vertical, $horizontal: center); }
+}
+
+%tooltip-left {
+    &:before { @include position-absolute(center, $right: 100%); }
+    &:after { @include position-absolute(center, $right: 100%); }
+}
+
+%tooltip-right {
+    &:before { @include position-absolute(center, $left: 100%); }
+    &:after { @include position-absolute(center, $left: 100%); }
 }
 
 // Popovers
@@ -154,6 +186,7 @@
 // Popover Positions
 %popover-above-left {
     & { @extend %tooltip-above-left:before; }
+
     &:after {
         @extend %tooltip-above-left:after;
         @include position-absolute(below, $left: $popover-arrow-indent);
@@ -162,6 +195,7 @@
 
 %popover-above-right {
     & { @extend %tooltip-above-right:before; }
+
     &:after {
         @extend %tooltip-above-right:after;
         @include position-absolute(below, $right: $popover-arrow-indent);
@@ -170,6 +204,7 @@
 
 %popover-below-left {
     & { @extend %tooltip-below-left:before; }
+
     &:after {
         @extend %tooltip-below-left:after;
         @include position-absolute(above, $left: $popover-arrow-indent);
@@ -178,6 +213,7 @@
 
 %popover-below-left {
     & { @extend %tooltip-below-left:before; }
+
     &:after {
         @extend %tooltip-below-left:after;
         @include position-absolute(above, $left: $popover-arrow-indent);

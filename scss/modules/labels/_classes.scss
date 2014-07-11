@@ -16,14 +16,20 @@
 }
 
 // Tooltip Classes
-.tooltip[title], [class*="tooltip-"][title] {
+.tooltip[title], #{prefixed-class('tooltip', $selector: '[title]')} {
     @extend %tooltip;
 }
 
 .tooltip-above-left { @extend %tooltip-above-left; }
 .tooltip-above-right { @extend %tooltip-above-right; }
+.tooltip-above-center { @extend %tooltip-above-center; }
+
 .tooltip-below-left { @extend %tooltip-below-left; }
 .tooltip-below-right { @extend %tooltip-below-right; }
+.tooltip-below-center { @extend %tooltip-below-center; }
+
+.tooltip-left { @extend %tooltip-left; }
+.tooltip-right { @extend %tooltip-right; }
 
 // Popover Classes
 .popover, [class*="popover-"] { @extend %popover; }

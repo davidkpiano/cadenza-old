@@ -129,22 +129,22 @@
         @if $vertical == top {
             top: 0;
             bottom: inherit;
-            @include experimental(transform, none);
+            // @include experimental(transform, none);
         }
         @else if $vertical == bottom {
             bottom: 0;
             top: inherit;
-            @include experimental(transform, none);
+            // @include experimental(transform, none);
         }
         @else if $vertical == below {
             top: 100%;
             bottom: inherit;
-            @include experimental(transform, none);
+            // @include experimental(transform, none);
         }
         @else if $vertical == above {
             bottom: 100%;
             top: inherit;
-            @include experimental(transform, none);
+            // @include experimental(transform, none);
         }
         @else if $vertical == center {
             top: 50%;
@@ -154,7 +154,7 @@
         @else {
             top: $vertical;
             bottom: inherit;
-            @include experimental(transform, none);
+            // @include experimental(transform, none);
         }
     }
 
@@ -162,12 +162,12 @@
         @if $horizontal == left { 
             left: 0;
             right: inherit;
-            @include experimental(transform, none);
+            // @include experimental(transform, none);
         }
         @else if $horizontal == right {
             right: 0;
             left: inherit;
-            @include experimental(transform, none);
+            // @include experimental(transform, none);
         }
         @else if $horizontal == center {
             left: 50%;
@@ -175,32 +175,32 @@
         }
         @else {
             left: $horizontal;
-            @include experimental(transform, none);
+            // @include experimental(transform, none);
         }
     }
 
     @if $top {
         top: $top;
         bottom: inherit;
-        @include experimental(transform, none);
+        // @include experimental(transform, none);
     }
 
     @if $bottom {
         bottom: $bottom;
         top: inherit;
-        @include experimental(transform, none);
+        // @include experimental(transform, none);
     }
 
     @if $left {
         left: $left;
         right: inherit;
-        @include experimental(transform, none);
+        // @include experimental(transform, none);
     }
 
     @if $right {
         right: $right;
         left: inherit;
-        @include experimental(transform, none);
+        // @include experimental(transform, none);
     }
 }
 

@@ -85,8 +85,15 @@
 ) {
     &:before { @include theme-label-default($color); }
 
-    &, &[class*="tooltip-above-"], &[class*="tooltip-below-"] {
+    #{prefixed-class('tooltip-above')}, #{prefixed-class('tooltip-below')} {
         &:after { border-top-color: $color; border-bottom-color: $color; }
+    }
+
+    #{prefixed-class('tooltip-left')}, #{prefixed-class('tooltip-right')} {
+        &:after {
+            border-left-color: $color;
+            border-right-color: $color;
+        }
     }
 }
 
