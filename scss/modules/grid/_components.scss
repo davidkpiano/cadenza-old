@@ -13,16 +13,16 @@
 		$suffix: -#{$mq};
 		@if $mq == 'all' { $suffix: ''; }
 
-		%column#{$suffix} { @include _column(); }
+		// %column#{$suffix} { @include _column(); }
 
 		@for $i from 0 through $grid-columns {
 			%column-#{$i}#{$suffix} {
-				@extend %column#{$suffix};
+				// @extend %column#{$suffix};
 				@include column($i);
 			}
 
 			%column-gutter-#{$i}#{$suffix} {
-				@extend %column#{$suffix};
+				// @extend %column#{$suffix};
 				@include column($i, $gutter: $grid-column-gutter);
 			}
 
@@ -70,12 +70,12 @@
 			}
 
 			%column-offset-#{$i}#{$suffix} {
-				@extend %column#{$suffix};
+				// @extend %column#{$suffix};
 				margin-left: column-offset-width($i);
 			}
 
 			%column-gutter-offset-#{$i}#{$suffix} {
-				@extend %column#{$suffix};
+				// @extend %column#{$suffix};
 				margin-left: column-offset-width($i, $gutter: $grid-column-gutter);
 			}
 
@@ -108,7 +108,7 @@
 			$denominator: $i + 1;
 
 			%column-#{$fraction}#{$suffix} {
-				@extend %column#{$suffix};
+				// @extend %column#{$suffix};
 
 				@if ($grid-columns / $denominator) == round($grid-columns / $denominator) {
 					@extend %column-#{$grid-columns / $denominator}#{$suffix};
@@ -130,7 +130,7 @@
 			}
 
 			%column-offset-#{$fraction}#{$suffix} {
-				@extend %column#{$suffix};
+				// @extend %column#{$suffix};
 				
 				@if ($grid-columns / $denominator) == round($grid-columns / $denominator) {
 					@extend %column-offset-#{$grid-columns / $denominator}#{$suffix};

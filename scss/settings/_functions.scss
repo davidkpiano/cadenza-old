@@ -28,3 +28,15 @@
         @return false;
     }
 }
+
+@function prefixed-class(
+    $class,
+    $separator: '-',
+    $standalone: true,
+    $selector: false
+) {
+    $_standalone-class: if($standalone, '.#{$class}', '');
+    $_selector: if($selector, '#{$selector}', '');
+
+    @return '#{$_standalone-class}#{$_selector}, [class*=" #{$class}#{$separator}"]#{$_selector}, [class^="#{$class}#{$separator}"]#{$_selector}';
+}

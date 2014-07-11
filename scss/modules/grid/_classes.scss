@@ -3,7 +3,7 @@
 // ============
 
 // Horizontal Grid Classes
-.column, .col, [class*="column-"], [class*="col-"] {
+#{prefixed-class('col')}, #{prefixed-class('column')}, #{prefixed-class('columns', $selector: ' > *')}, #{prefixed-class('cols', $selector: ' > *')} {
 	@extend %column;
 }
 

@@ -32,8 +32,9 @@
 		background-color: transparent;
 		border: none;
 	} @else {
-		@if $quiet == false {		
-			color: $type-color;
+		@if $quiet == false {	
+			&, & > * { color: $type-color; }
+			
 			background-color: $bg-color;
 			border-color: $border-color;
 
