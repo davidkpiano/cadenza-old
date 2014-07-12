@@ -12,7 +12,8 @@ app.config(['$stateProvider', '$urlRouterProvider',
             'nav',
             'animations',
             'labels',
-            'forms'
+            'forms',
+            'sandbox'
         ];
 
         _.each(components, function(component) {

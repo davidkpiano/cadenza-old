@@ -37,3 +37,9 @@
 /* Import Extensions */
 
 /* Import Themes */
+
+
+// DELETE EVERYTHING BELOW THIS
+.gg-header {
+    @include column-layout((4rem, fill));
+}
