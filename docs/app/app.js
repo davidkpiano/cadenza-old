@@ -37,4 +37,18 @@ app.controller('ComponentController', [function() {
     this.grid = {
         parentClass: ''
     }
+
+    this.tooltips = {
+        positions: [
+            'above-left',
+            'above-right',
+            'above-center',
+            'below-left',
+            'below-right',
+            'below-center',
+            'left',
+            'right'
+        ],
+        position: 'above-right'
+    }
 }]);

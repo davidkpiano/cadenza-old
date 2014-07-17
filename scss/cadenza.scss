@@ -8,6 +8,9 @@
     'settings/_settings',
     'settings/_helpers';
 
+/* Import Assets */
+@import
+    '../assets/font-awesome-4.1.0/scss/font-awesome';
     
 /* Import Modules */
 @import
@@ -19,6 +22,7 @@
     'modules/shapes/_module',
     'modules/media/_module',
     'modules/grid/_module',
+    'modules/icons/_module',
     'modules/type/_module',
     'modules/forms/_module',
     'modules/nav/_module',

@@ -14,8 +14,12 @@
 </div>
 
 <h2>Tooltips</h2>
+<select class="inline" ng-model="component.tooltips.position">
+    <option value="{{position}}" ng-repeat="position in component.tooltips.positions">{{position}}</option>
+</select>
+
 <div class="field text-center">
-    <a href="#" title="Hover text!" class="tooltip-right text-center">Hover over me.</a>
+    <a class="tooltip-{{component.tooltips.position}}" title="Hover text!">Hover over me!</a>
 </div>
 
 <div class="field"><a href="#">Test <span class="popover-above-left secondary">hover me</span></a></div>

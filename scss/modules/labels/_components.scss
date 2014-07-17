@@ -102,8 +102,10 @@
 // Tooltip Positions
 %tooltip-above-left,
 %tooltip-above-right,
+%tooltip-above-center,
 %tooltip-below-left,
-%tooltip-below-right {
+%tooltip-below-right,
+%tooltip-below-center {
     &:before { margin: $tooltip-margin-vertical 0; }
 }
 

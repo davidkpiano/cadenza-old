@@ -22,8 +22,12 @@ input[type="color"] {
 	&.small { @extend %input-small; }
 
 	&.large { @extend %input-large; }
+}
 
-	&.inline { @extend %input-inline; }
+input.inline,
+select.inline,
+textarea.inline {
+    @extend %input-inline;
 }
 
 textarea { @extend %textarea; }
