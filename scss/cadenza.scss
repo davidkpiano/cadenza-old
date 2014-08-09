@@ -44,6 +44,25 @@
 
 
 // DELETE EVERYTHING BELOW THIS
-.gg-header {
-    @include column-layout((4rem, fill));
+.gg-device {
+    height: 640px;
+    width: 360px;
+
+    @include row-layout((3rem, fill, 3rem));
 }
+.gg-header {
+    // height: 3rem;
+    @include column-layout((3.5rem, fill, 2.5rem, 2.5rem), $display: table);
+    @include valign-all(middle);
+}
+
+.gg-list {
+    height: 3.5rem;
+    @include column-layout((3.5rem, fill, 3rem), $display: table);
+    @include valign-all(middle);
+}
+
+.gg-avatar {
+    @include shape-circle(2rem);
+}
+

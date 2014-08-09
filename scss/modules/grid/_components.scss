@@ -2,6 +2,21 @@
 // Grid Components
 // ===============
 
+%content, %pad {
+    padding: $grid-content-padding;
+}
+
+%pad-vertical {
+    padding-top: $grid-content-padding;
+    padding-bottom: $grid-content-padding;
+}
+
+%pad-horizontal {
+    padding-left: $grid-content-padding;
+    padding-right: $grid-content-padding;
+}
+
+
 // Shared Grid Components
 %grid { @include _grid(); }
 

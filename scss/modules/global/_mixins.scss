@@ -204,3 +204,24 @@
     }
 }
 
+@mixin valign($position, $selector: false) {
+    display: table;
+
+    $_selector: '> * ';
+
+    @if $selector {
+        $_selector: $selector;
+    }
+
+    #{$_selector} {
+        display: table-cell;
+        vertical-align: $position;
+    }
+}
+
+@mixin valign-all($position, $selector: false) {
+    > * {
+        @include valign($position, $selector);
+    }
+}
+

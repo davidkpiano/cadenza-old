@@ -10,6 +10,10 @@
         @extend %theme-#{$name};
     }
 
+    .bg-#{$name} {
+        @extend %background-#{$name};
+    }
+
     .color-#{$name} {
         @extend %color-#{$name};
     }

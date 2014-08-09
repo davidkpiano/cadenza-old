@@ -26,3 +26,16 @@
         border-bottom: ($height / 2) solid transparent;
     }
 }
+
+@mixin shape-circle($diameter: false, $display: block) {
+    @if $diameter {    
+        width: $diameter;
+        height: $diameter;
+    }
+
+    @if $display {
+        display: $display;
+    }
+
+    @include border-radius(50%);
+}

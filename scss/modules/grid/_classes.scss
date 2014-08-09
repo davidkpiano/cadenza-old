@@ -2,6 +2,12 @@
 // Grid Classes
 // ============
 
+// Content Classes
+.content { @extend %content; }
+.pad { @extend %pad; }
+.pad-vertical { @extend %pad-vertical; }
+.pad-horizontal { @extend %pad-horizontal; }
+
 // Horizontal Grid Classes
 #{prefixed-class('col')}, #{prefixed-class('column')}, #{prefixed-class('columns', $selector: ' > *')}, #{prefixed-class('cols', $selector: ' > *')} {
 	@extend %column;
@@ -101,7 +107,7 @@
 }
 
 // Vertical Grid Classes
-.row {
+#{prefixed-class('row')}, #{prefixed-class('rows', $selector: ' > *')} {
 	@extend %row;
 }
 
@@ -160,4 +166,6 @@
 			@extend %row-pull-#{$fraction}#{$suffix};
 		}
 	}
+
+	.row-bottom#{$suffix} { @extend %row-bottom#{$suffix}; }
 }

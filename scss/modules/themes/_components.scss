@@ -20,6 +20,10 @@
         background-color: $color;
     }
 
+    %background-#{$name} {
+        background-color: $color;
+    }
+
     %color-#{$name} {
         &, p, li, span { color: $color; }
     }

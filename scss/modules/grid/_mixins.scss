@@ -46,20 +46,20 @@
 // Grid Component Mixin
 // 
 // Defines a grid element in the grid system.
-@mixin _grid() {
+@mixin _grid($display: block) {
 	@include box-sizing(border-box);
 	@include pie-clearfix;
 
 	margin: 0;
-	display: block;
+	display: $display;
 	position: relative;
 }
 
 // Column Component Mixin
 // 
 // Defines a column in the grid system.
-@mixin _column() {
-	@include _grid;
+@mixin _column($display: block) {
+	@include _grid($display);
 	float: left;
 	clear: none;
 	height: 100%;
@@ -68,8 +68,8 @@
 // Row Component Mixin
 // 
 // Defines a row in the grid system
-@mixin _row() {
-	@include _grid;
+@mixin _row($display: block) {
+	@include _grid($display);
 	width: 100%;
 	clear: both;
 }
@@ -103,12 +103,15 @@
 // @param (list) $widths: either a 1D or 2D list
 @mixin column-layout(
 	$column-widths,
-	$media: false
+	$media: false,
+	$display: block
 ) {
 	$fill-selector: false;
 	$total-width: 0px;
 
 	@include mq($media) {
+		@include pie-clearfix;
+		
 		@for $i from 1 through length($column-widths) {
 			$column-width: nth($column-widths, $i);
 			$width: nth($column-width, 1);
@@ -125,7 +128,8 @@
 				$total-width: $total-width + ' + ' + column-width($width);
 
 				#{$selector} {
-					@include _column();
+					@include _column($display);
+
 					width: column-width($width);
 				}
 			}
@@ -133,7 +137,8 @@
 
 		@if $fill-selector {
 			#{$fill-selector} {
-				@include _column();
+				@include _column($display);
+
 				width: calc(100% - (#{$total-width}));
 			}
 		}
@@ -183,7 +188,7 @@
 			@if $height == 'fill' {
 				$fill-selector: $selector;
 			} @else {
-				$total-height: $total-height + ' + ' + column-height($height);
+				$total-height: $total-height + ' + ' + row-height($height);
 
 				#{$selector} {
 					height: row-height($height);

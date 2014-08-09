@@ -2,9 +2,7 @@
 // Global Grid Styles
 // ==================
 
-%content {
-    padding: $grid-content-padding;
-}
+
 %grid {
     @extend %border-box;
     @extend %clearfix;
@@ -12,35 +10,33 @@
     margin: 0;
     display: block;
     position: relative;
-
-    &.content { @extend %content; }
 }
+
 %column {
     @extend %grid;
     float: left;
     clear: none;
     height: 100%;
 }
+
 %columns-gutter {
     &, > [class*="col-"], > .col {
         padding-left: $grid-column-gutter / 2;
         padding-right: $grid-column-gutter / 2;  
     }
 }
+
 %row {
     @extend %grid;
     width: 100%;
     clear: both;
 }
+
 %rows-gutter {
     &, > [class*="row-"], > .row {
         padding-top: $grid-row-gutter / 2;
         padding-bottom: $grid-row-gutter / 2;  
     }
-}
-
-.content {
-    @extend %content;
 }
 
 //
