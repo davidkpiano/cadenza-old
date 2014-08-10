@@ -187,6 +187,30 @@
     to { @include transform(translateY(100%)); }
 }
 
+// Slide Up/Down
+%animation-slideUpDown-active { @include animation(slideUpDown-active); }
+%animation-slideUpDown-inactive { @include animation(slideUpDown-inactive); }
+@include keyframes(slideUpDown-active) {
+    from { @include transform(translateY(100%)); }
+    to { @include transform(translateY(0)); }
+}
+@include keyframes(slideUpDown-inactive) {
+    from { @include transform(translateY(0)); }
+    to { @include transform(translateY(100%)); }
+}
+
+// Slide Down/Up
+%animation-slideDownUp-active { @include animation(slideDownUp-active); }
+%animation-slideDownUp-inactive { @include animation(slideDownUp-inactive); }
+@include keyframes(slideDownUp-active) {
+    from { @include transform(translateY(-100%)); }
+    to { @include transform(translateY(0)); }
+}
+@include keyframes(slideDownUp-inactive) {
+    from { @include transform(translateY(0)); }
+    to { @include transform(translateY(-100%)); }
+}
+
 // Shift Up
 %animation-shiftUp-active { @include animation(shiftUp-active); }
 %animation-shiftUp-inactive { @include animation(shiftUp-inactive); }

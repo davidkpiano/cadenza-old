@@ -1,4 +1,9 @@
 <h1>Sandbox</h1>
+<h2>Sandbox</h2>
+<h3>Sandbox</h3>
+<h4>Sandbox</h4>
+<h5>Sandbox</h5>
+<h6>Sandbox</h6>
 
 <div class="gg-device border-light">
     <header class="gg-header theme-primary">
@@ -7,25 +12,33 @@
             <span>All</span>
         </div>
         <div class="text-center"><i class="fa fa-search"></i></div>
-        <div class="text-center"><i class="fa fa-ellipsis-v"></i></div>
+        <div class="text-center" ng-click="component.foo = !component.foo"><i class="fa fa-ellipsis-v"></i></div>
     </header>
     <div class="row">
         <section class="layer">
-            <div class="gg-list">
+            <div class="gg-list-item">
                 <div class="text-center"><i class="fa fa-star"></i></div>
                 <div class="pad-horizontal"><span>Janet Perkins</span></div>
                 <div>
                     <div><span class="bg-dark gg-avatar"></span></div>
                 </div>
             </div>
-            <div class="gg-list">
+            <div class="gg-list-item">
                 <div class="text-center"><i class="fa fa-star"></i></div>
                 <div class="pad-horizontal"><span>Mary Johnson</span></div>
                 <div>
                     <div><span class="bg-dark gg-avatar"></span></div>
                 </div>
             </div>
-            <div class="gg-list">
+            <div class="gg-list-item">
+                <div class="text-center"><i class="fa fa-star"></i></div>
+                <div class="pad-horizontal"><span>Peter Carlsson</span></div>
+                <div>
+                    <div><span class="bg-dark gg-avatar"></span></div>
+                </div>
+            </div>
+            <hr>
+            <div class="gg-list-item">
                 <div class="text-center"><i class="fa fa-star"></i></div>
                 <div class="pad-horizontal"><span>Peter Carlsson</span></div>
                 <div>
@@ -33,29 +46,31 @@
                 </div>
             </div>
         </section>
-        <section class="layer bg-darken">
+        <section class="layer bg-darken activate-fade" ng-if="component.foo" ng-animate>
             <div class="row-bottom theme-white">
-                <div class="gg-list">
-                    <div class="text-center"><i class="fa"></i></div>
+                <h5 class="inline pad">Add to My Drive</h5>
+                <div class="gg-list-item">
+                    <div class="text-center"><i class="fa fa-share-alt"></i></div>
                     <div class="pad-horizontal"><span>Share</span></div>
                     <div></div>
                 </div>
-                <div class="gg-list">
-                    <div class="text-center"><i class="fa"></i></div>
+                <div class="gg-list-item">
+                    <div class="text-center"><i class="fa fa-upload"></i></div>
                     <div class="pad-horizontal"><span>Upload</span></div>
                     <div></div>
                 </div>
-                <div class="gg-list">
-                    <div class="text-center"><i class="fa"></i></div>
+                <div class="gg-list-item">
+                    <div class="text-center"><i class="fa fa-copy"></i></div>
                     <div class="pad-horizontal"><span>Copy</span></div>
                     <div></div>
                 </div>
-                <div class="gg-list">
-                    <div class="text-center"><i class="fa"></i></div>
+                <div class="gg-list-item">
+                    <div class="text-center"><i class="fa fa-print"></i></div>
                     <div class="pad-horizontal"><span>Print This Page</span></div>
                     <div></div>
                 </div>
             </div>
         </section>
     </div>
+    <div class="bg-dark"></div>
 </div>

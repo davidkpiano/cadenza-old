@@ -3,7 +3,7 @@
 // ==================
 
 #{$inert-selector} { @extend %inert; }
-#{$active-selector} { @extend %active; }
+#{prefixed-class('activate-')} #{$active-selector} { @extend %active; }
 #{$inactive-selector} { @extend %inactive; }
 
 // Animations Classes
@@ -18,6 +18,9 @@
 
 .activate-all-slideUp { @include activate-all(slideUp); }
 .activate-slideUp { @include activate(slideUp); }
+
+.activate-all-slideUpDown { @include activate-all(slideUpDown); }
+.activate-slideUpDown { @include activate(slideUpDown); }
 
 .activate-all-slideDown { @include activate-all(slideDown); }
 .activate-slideDown { @include activate(slideDown); }
