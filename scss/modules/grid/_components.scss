@@ -16,6 +16,20 @@
     padding-right: $grid-content-padding;
 }
 
+%pad-small {
+	padding: $grid-content-padding-small;
+}
+
+%pad-vertical-small {
+    padding-top: $grid-content-padding-small;
+    padding-bottom: $grid-content-padding-small;
+}
+
+%pad-horizontal-small {
+    padding-left: $grid-content-padding-small;
+    padding-right: $grid-content-padding-small;
+}
+
 
 // Shared Grid Components
 %grid { @include _grid(); }

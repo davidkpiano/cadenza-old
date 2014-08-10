@@ -31,6 +31,13 @@
     margin: 0;
 }
 
+%card {
+    @include pie-clearfix;
+    @extend %shadow-#{$card-shadow-index};
+    margin: $card-margin-vertical $card-margin-horizontal;
+    width: calc(100% - #{2 * $card-margin-horizontal});
+}
+
 %container {
     @include pie-clearfix;
     width: 100%;

@@ -16,6 +16,11 @@ $overlay-z-index: 10 !default;
 $container-min-width: false !default;
 $container-max-width: 960px !default;
 
+// Card Settings
+$card-shadow-index: 1 !default;
+$card-margin-vertical: 0.5rem !default;
+$card-margin-horizontal: 0.5rem !default;
+
 // Imports
 @import
 	'_mixins',

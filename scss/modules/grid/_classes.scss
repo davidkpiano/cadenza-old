@@ -8,6 +8,10 @@
 .pad-vertical { @extend %pad-vertical; }
 .pad-horizontal { @extend %pad-horizontal; }
 
+.pad-small { @extend %pad-small; }
+.pad-vertical-small { @extend %pad-vertical-small; }
+.pad-horizontal-small { @extend %pad-horizonta-smalll; }
+
 // Horizontal Grid Classes
 #{prefixed-class('col')}, #{prefixed-class('column')}, #{prefixed-class('columns', $selector: ' > *')}, #{prefixed-class('cols', $selector: ' > *')} {
 	@extend %column;

@@ -1,0 +1,10 @@
+//
+// Lighting Classes
+// ================
+
+// Shadow Classes
+@for $i from 1 through 5 {
+    .shadow-#{$i} {
+        @extend %shadow-#{$i};
+    }
+}
