@@ -74,6 +74,8 @@
 }
 
 %tooltip {
+    @include activate($tooltip-animation, $active-selector: ':hover:before, &:hover:after', $inactive-selector: ':before, &:after');
+
     &:before {
         @include type-scale($tooltip-scale);
         white-space: nowrap;

@@ -123,6 +123,8 @@
     $left: false,
     $right: false
 ) {
+    $transform-list: null;
+
     position: absolute;
 
     @if $vertical {    
@@ -148,7 +150,7 @@
         }
         @else if $vertical == center {
             top: 50%;
-            @include experimental(transform, translateY(-50%));
+            $transform-list: append($transform-list, translateY(-50%));
             bottom: inherit;
         }
         @else {
@@ -171,7 +173,7 @@
         }
         @else if $horizontal == center {
             left: 50%;
-            @include experimental(transform, translateX(-50%));
+            $transform-list: append($transform-list, translateX(-50%));
         }
         @else {
             left: $horizontal;
@@ -202,6 +204,10 @@
         left: inherit;
         // @include experimental(transform, none);
     }
+
+    @if $transform-list {
+        @include experimental(transform, $transform-list);
+    }
 }
 
 @mixin valign($position, $selector: false) {
@@ -223,5 +229,46 @@
     > * {
         @include valign($position, $selector);
     }
+}
+
+@function column-width(
+    $columns,
+    $gutter: false
+) {
+    // if $columns is an int, calculate from $grid-columns
+    @if round($columns) == $columns and unit($columns) == '' {
+
+        @if $gutter {
+            @return calc(#{$columns} * ((100% - #{$gutter * ($grid-columns - 1)}) / #{$grid-columns}) + (#{($columns - 1) * $gutter}));
+        } @else {
+            @return percentage($columns / $grid-columns);
+        }
+    } @else if index(('%', 'px', 'em', 'rem'), unit($columns)) {
+        @return $columns;
+    } @else {
+        @return percentage($columns);
+    }
+}
+
+@function column-offset-width(
+    $columns,
+    $gutter: false
+) {
+    // if $columns is an int, calculate from $grid-columns
+    @if round($columns) == $columns and unit($columns) == '' {
+
+        @if $gutter {
+            @return calc(#{$columns} * ((100% - #{$gutter * ($grid-columns - 1)}) / #{$grid-columns}) + (#{$columns * $gutter}));
+        } @else {
+            @return column-width($columns);
+        }
+    } @else {
+        @return column-width($columns);
+    }
+}
+
+@function row-height($rows) {
+    // This is (currently) the same result as column-width
+    @return column-width($rows);
 }
 

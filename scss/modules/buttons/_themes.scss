@@ -25,44 +25,32 @@
 	$bg-color: $color,
 	$bg-color-hover: lighten($bg-color, 5%),
 	$border-color: darken($bg-color, 10%),
-	$border-color-hover: darken($bg-color-hover, 10%),
-	$quiet: false
+	$border-color-hover: darken($bg-color-hover, 10%)
 ) {
 	@if $color == transparent {
 		background-color: transparent;
 		border: none;
 	} @else {
-		@if $quiet == false {	
-			&, & > * { color: $type-color; }
-			
-			background-color: $bg-color;
-			border-color: $border-color;
+		&, & > * { color: $type-color; }
+		
+		background-color: $bg-color;
+		border-color: $border-color;
 
-			&:disabled {
-				color: $type-color !important;
-				background-color: $bg-color !important;
-				border-color: $border-color !important;
-			}
+		&:disabled {
+			color: $type-color !important;
+			background-color: $bg-color !important;
+			border-color: $border-color !important;
+		}
 
-			&:hover, &:active {
-				color: $type-color-hover;
-				background-color: $bg-color-hover;
-				border-color: $border-color-hover;
-			}
+		&:hover, &:active {
+			color: $type-color-hover;
+			background-color: $bg-color-hover;
+			border-color: $border-color-hover;
+		}
 
-			&:focus {
-				outline: 1px solid white;
-				outline-offset: -2px;
-			}
-		} @else {
-			background-color: transparent;
-			border-color: transparent;
-
-			&:hover, &:active {
-				color: $type-color;
-				background-color: $bg-color;
-				border-color: $border-color;
-			}
+		&:focus {
+			outline: 1px solid white;
+			outline-offset: -2px;
 		}
 
 		&:active {
@@ -74,29 +62,12 @@
 %theme-button-default {
 	%button {
 		@include transition((border-color, background-color, color));
-	}
-	
-	// Default style
-	%button:not(.link):not(.quiet) {	
 		@include theme-button-default;
-	}
 
-	// Normal styles
-	%button:not(.quiet) {
 		&.primary { @include theme-button-default($color-primary); }
 		&.secondary { @include theme-button-default($color-secondary); }
 		&.light { @include theme-button-default($color-light); }
 		&.dark { @include theme-button-default($color-dark); }
-	}
-
-	// Quiet styles
-	%button.quiet {
-		@include theme-button-default($quiet: true);
-
-		&.primary { @include theme-button-default($color-primary, $quiet: true); }
-		&.secondary { @include theme-button-default($color-secondary, $quiet: true); }
-		&.light { @include theme-button-default($color-light, $quiet: true); }
-		&.dark { @include theme-button-default($color-dark, $quiet: true); }
 	}
 
 	// Link style

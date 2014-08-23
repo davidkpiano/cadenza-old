@@ -11,4 +11,16 @@
 
 .container { @extend %container; }
 
-.card { @extend %card; }
+.layer, .overlay, .page, .container {
+    &.transparent { @extend %transparent; }
+}
+
+.scroll { @extend %scroll; }
+.scroll-x { @extend %scroll-x; }
+.scroll-y { @extend %scroll-y; }
+
+#{prefixed-class('card')} { @extend %card; }
+
+@for $i from 0 through $grid-rows {
+    .card-#{$i} { @extend %card-#{$i}; }
+}

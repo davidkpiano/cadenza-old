@@ -70,6 +70,10 @@
 %alert-exit {
     @include position-absolute(top, right);
     padding: $alert-exit-padding;
+
+    &:before {
+        content: $alert-exit-symbol;
+    }
 }
 
 %alert-group {

@@ -18,8 +18,10 @@ $container-max-width: 960px !default;
 
 // Card Settings
 $card-shadow-index: 1 !default;
-$card-margin-vertical: 0.5rem !default;
-$card-margin-horizontal: 0.5rem !default;
+$card-gutter: 0.5rem !default;
+$card-margin-vertical: $card-gutter !default;
+$card-margin-horizontal: $card-gutter !default;
+$card-radius: 2px !default;
 
 // Imports
 @import

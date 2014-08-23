@@ -10,6 +10,19 @@
     width: 100%;
     max-width: 100%;
     margin: 0;
+    overflow: hidden;
+}
+
+%scroll-x {
+    overflow-x: auto;
+}
+
+%scroll-y {
+    overflow-y: auto;
+}
+
+%scroll {
+    overflow: auto;
 }
 
 %overlay {
@@ -31,11 +44,27 @@
     margin: 0;
 }
 
+%transparent {
+    background: transparent;
+    pointer-events: none;
+
+    > * {
+        pointer-events: auto;
+    }
+}
+
 %card {
     @include pie-clearfix;
+    @include border-radius($card-radius);
     @extend %shadow-#{$card-shadow-index};
     margin: $card-margin-vertical $card-margin-horizontal;
     width: calc(100% - #{2 * $card-margin-horizontal});
+}
+
+@for $i from 0 through $grid-rows {
+    %card-#{$i} {
+        height: row-height($i);
+    }
 }
 
 %container {

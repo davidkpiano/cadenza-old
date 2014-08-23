@@ -3,9 +3,9 @@
 // =================
 
 // Animation Settings
-$animation-duration: 0.3s !default;
-$animation-duration-3d: 2s !default;
-$animation-timing-function: ease-in-out !default;
+$animation-duration: 300ms !default;
+$animation-duration-3d: 1000ms !default;
+$animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1) !default;
 $animation-perspective: 1000 !default;
 $animation-delta: 5rem !default;
 
@@ -18,8 +18,8 @@ $active-z-index: 2 !default;
 $inactive-z-index: 0 !default;
 
 // Transition Settings
-$animation-transition-duration: 0.2s !default;
-$animation-transition-timing-function: ease-in-out !default;
+$animation-transition-duration: 300ms !default;
+$animation-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1) !default; // easeInOutCubic
 
 // Imports
 @import
