@@ -90,8 +90,8 @@
 // Transition Mixin
 @mixin transition(
     $property: all,
-    $transition-duration: $animation-transition-duration,
-    $transition-timing-function: $animation-transition-timing-function
+    $transition-duration: $transition-duration,
+    $transition-timing-function: $transition-timing-function
 ) {
     @include transition-property($property);
     @include transition-duration($transition-duration);

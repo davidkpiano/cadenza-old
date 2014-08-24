@@ -16,10 +16,16 @@ $active-selector: '.ng-enter' !default;
 $inactive-selector: '.ng-leave' !default;
 $active-z-index: 2 !default;
 $inactive-z-index: 0 !default;
+$active-delay: $animation-duration !default;
 
 // Transition Settings
-$animation-transition-duration: 300ms !default;
-$animation-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1) !default; // easeInOutCubic
+$transition-property: all !default;
+$transition-selector: '.active' !default;
+$transition-duration: 300ms !default;
+$transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1) !default; // easeInOutCubic
+$transition-delay: 0 !default;
+
+$transition-delta-opacity: 0.3 !default;
 
 // Imports
 @import

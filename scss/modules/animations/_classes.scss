@@ -6,6 +6,8 @@
 #{prefixed-class('activate-')} #{$active-selector} { @extend %active; }
 #{$inactive-selector} { @extend %inactive; }
 
+.delay, .delay-all > * { @extend %active-delay; }
+
 // Animations Classes
 .activate-all-fade { @include activate-all(fade); }
 .activate-fade { @include activate(fade); }
@@ -15,6 +17,12 @@
 
 .activate-all-scaleDown { @include activate-all(scaleDown); }
 .activate-scaleDown { @include activate(scaleDown); }
+
+.activate-all-scaleUpDown { @include activate-all(scaleUp, scaleDown); }
+.activate-scaleUpDown { @include activate(scaleUp, scaleDown); }
+
+.activate-all-scaleDownUp { @include activate-all(scaleDown, scaleUp); }
+.activate-scaleDownUp { @include activate(scaleDown, scaleUp); }
 
 .activate-all-slideUp { @include activate-all(slideUp); }
 .activate-slideUp { @include activate(slideUp); }
@@ -45,3 +53,10 @@
 
 .activate-all-flipLeft { @include activate-all(flipLeft, $is-3d: true); }
 .activate-flipLeft { @include activate(flipLeft); }
+
+// Transition classes
+.transition-lighten { @extend %transition-lighten; }
+.hover-lighten { @extend %hover-lighten; }
+
+.transition-scaleUp { @extend %transition-scaleUp; }
+.hover-scaleUp { @extend %hover-scaleUp; }

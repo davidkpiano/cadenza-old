@@ -38,6 +38,23 @@
     }
 }
 
+@mixin movement(
+    $property: $transition-property,
+    $selector: $transition-selector,
+    $duration: $transition-duration,
+    $timing-function: $transition-timing-function,
+    $delay: $transition-delay
+) {
+    @include transition-property($property);
+    @include transition-duration($duration);
+    @include transition-timing-function($timing-function);
+    @include transition-delay($delay);
+
+    &#{$selector} {
+        @content;
+    }
+}
+
 @mixin activate(
 	$active-name,
 	$inactive-name: $active-name,

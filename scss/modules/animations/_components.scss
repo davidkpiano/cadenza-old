@@ -19,6 +19,13 @@
 	z-index: 0;
 }
 
+%active-delay {
+    &#{$active-selector} {
+        @include experimental(animation-delay, $active-delay !important, $khtml: false, $moz: false, $ms: false, $o: false);
+    }
+
+}
+
 // 3D Components
 // -------------
 %is-3d {
@@ -325,5 +332,28 @@
     }
 }
 
+// Transitions
+// -----------
+%transition-lighten {
+    @include movement(opacity) {
+        opacity: 1 - $transition-delta-opacity;
+    }
+}
+%hover-lighten {
+    @extend %transition-lighten;
+
+    &:hover { @extend %transition-lighten#{$transition-selector}; }
+}
+
+%transition-scaleUp {
+    @include movement(transform) {
+        @include transform(scale(1.2));
+    }
+}
+%hover-scaleUp {
+    @extend %transition-scaleUp;
+
+    &:hover { @extend %transition-scaleUp#{$transition-selector}; }
+}
 
 

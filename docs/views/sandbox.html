@@ -98,3 +98,25 @@
         </div>
     </div>
 </div>
+
+<div class="row-6">
+    <div class="col-6 foo">    
+        <img src="http://onedesigncompany.com/assets/work/encore/encore-featured.jpg" alt="" class="layer hover-scaleUp">
+        <div class="layer text-middle text-center bar theme-darken">
+            <hgroup class="inline">
+                <h6 class="color-white">ENCORE</h6>
+                <h5 class="color-white">----</h5>
+                <h4 class="color-white">Next-level event <br>technology.</h4>
+            </hgroup>
+        </div>
+    </div>
+</div>
+
+<div class="row-6" ng-init="component.loading = true">
+    <button ng-click="component.loading = !component.loading">
+        <span ng-if="component.loading" class="activate-slideUp">Load</span>
+        <span ng-if="!component.loading" class="activate-slideUp">Loading...</span>
+    </button>
+
+    {{component.loading}}
+</div>

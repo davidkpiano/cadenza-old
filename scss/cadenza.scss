@@ -67,3 +67,14 @@
     @include shape-circle(2rem);
 }
 
+.foo {
+    overflow: hidden;
+    
+    .bar { @include animation(fade-inactive); }
+    .bar hgroup { @include animation(scaleDown-inactive); }
+    &:hover .bar { @include animation(fade-active); }
+    &:hover .bar hgroup { @include animation(scaleUp-active); }
+
+    &:hover img { @extend %transition-scaleUp#{$transition-selector}; }
+}
+
