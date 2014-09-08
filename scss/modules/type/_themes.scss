@@ -79,6 +79,15 @@
 	&:focus { color: $color-focus; }
 }
 
+@mixin theme-anchors-hint-default(
+	$color: $type-anchor-unhinted-color,
+	$color-hover: $type-anchor-hinted-color
+) {
+	%anchor { color: $color; }
+
+	&:hover %anchor { color: $color-hover; }
+}
+
 %ext-anchor-default {
 	text-decoration: $type-anchor-decoration;
 
@@ -99,6 +108,8 @@
 
 	%anchor-light { @include theme-anchor-default($type-anchor-color-light); }
 	%anchor-dark { @include theme-anchor-default($type-anchor-color-dark); }
+
+	%anchors-hint { @include theme-anchors-hint-default(); }
 }
 
 @include add-theme('anchor', $type-anchor-theme);

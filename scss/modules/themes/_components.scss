@@ -10,6 +10,64 @@
     @include foreground-color(white);
 }
 
+%border {
+    border-width: $border-width;
+    border-style: solid;
+    border-color: $border-color;
+}
+
+%borders-top > * {
+    border-top-width: $border-width;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-right-width: 0 !important;
+}
+
+%borders-bottom > * {
+    border-top-width: 0 !important;
+    border-bottom-width: $border-width;
+    border-left-width: 0 !important;
+    border-right-width: 0 !important;
+}
+
+%borders-left > * {
+    border-top-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: $border-width;
+    border-right-width: 0 !important;
+}
+
+%borders-right > * {
+    border-top-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: 0 !important;
+    border-right-width: $border-width;
+}
+
+%borders-inside-vertical {
+    @extend %borders-top;
+
+    > *:first-child { border-top-width: 0 !important; }
+}
+
+%borders-outside-vertical {
+    @extend %borders-bottom;
+
+    > *:first-child { border-top-width: $border-width; }
+}
+
+%borders-inside-horizontal {
+    @extend %borders-left;
+
+    > *:first-child { border-left-width: 0 !important; }
+}
+
+%borders-outside-horizontal {
+    @extend %borders-right;
+
+    > *:first-child { border-left-width: $border-width; }
+}
+
 @each $theme-color in $theme-colors {
     $name: nth($theme-color, 1);
     $color: nth($theme-color, 2);
@@ -29,12 +87,6 @@
     }
 
     %border-#{$name} {
-        border-width: $theme-border-width;
-        border-style: solid;
         border-color: $color;
     }
-}
-
-body {
-    @include themes();
 }

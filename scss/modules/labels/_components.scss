@@ -4,6 +4,7 @@
 
 %label {
     @include type-scale($label-scale);
+
     white-space: nowrap;
     overflow: hidden;
     text-decoration: $label-text-decoration;
@@ -25,6 +26,11 @@
 
     &:first-child { margin-left: 0; }
     &:last-child { margin-right: 0; }
+
+    > * {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 
 %badge {
@@ -75,6 +81,10 @@
 
 %tooltip {
     @include activate($tooltip-animation, $active-selector: ':hover:before, &:hover:after', $inactive-selector: ':before, &:after');
+
+    &:before, &:after {
+        pointer-events: none;
+    }
 
     &:before {
         @include type-scale($tooltip-scale);
@@ -223,6 +233,5 @@
         @include position-absolute(above, $left: $popover-arrow-indent);
     }
 }
-
 
 

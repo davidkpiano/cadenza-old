@@ -9,7 +9,6 @@
 // Inputs
 // ------
 %input {
-	// @extend %border-box;
 	@include transition('all');
 	@include type-scale($form-input-scale);
 	display: block;
@@ -36,6 +35,12 @@
 	@extend %inline-block;
 
 	width: auto;
+}
+
+%input-implicit {
+	padding: 0;
+	background: transparent;
+	border-width: 0;
 }
 
 %textarea {

@@ -30,6 +30,20 @@
     padding-right: $grid-content-padding-small;
 }
 
+%pad-none {
+	padding: 0 !important;
+}
+
+%pad-vertical-none {
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+}
+
+%pad-horizontal-none {
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
 
 // Shared Grid Components
 %grid { @include _grid(); }
@@ -207,6 +221,13 @@
 
 		%column-auto#{$suffix}, %columns-auto#{$suffix} > * {
 			height: auto !important;
+		}
+
+		// Parent class
+		%columns-middle#{$suffix} {
+			@extend %text-middle;
+
+			> * { float: none; }
 		}
 	}
 }

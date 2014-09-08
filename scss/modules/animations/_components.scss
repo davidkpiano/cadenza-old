@@ -23,7 +23,6 @@
     &#{$active-selector} {
         @include experimental(animation-delay, $active-delay !important, $khtml: false, $moz: false, $ms: false, $o: false);
     }
-
 }
 
 // 3D Components
@@ -332,28 +331,62 @@
     }
 }
 
+// Tilt
+%animation-tilt-active { @include animation(tilt-active, $is-3d: true); }
+%animation-tilt-inactive { @include animation(tilt-inactive, $is-3d: true); }
+@include keyframes(tilt-active) {
+    0% {
+        @include transform(translateZ(-500px) rotateY(0deg));
+        opacity: 0;
+    }
+    20% {
+        @include transform(translateZ(-250px) rotateY(30deg));
+        opacity: 0.5;
+    }
+    100% {
+        @include transform(translateZ(0px) rotateY(0deg));
+        opacity: 1;
+    }
+}
+@include keyframes(tilt-inactive) {
+    50% {
+        @include transform(translateZ(-250px) rotateY(30deg));
+    }
+    75% {
+        @include transform(translateZ(-372.5px) rotateY(15deg));
+        opacity: .5;
+    }
+    100% {
+        @include transform(translateZ(-500px) rotateY(0deg));
+        opacity: 0;
+    }
+}
+
 // Transitions
 // -----------
+%hover-all {
+
+}
+
+%transition {
+    @include transition-property($transition-property);
+    @include transition-duration($transition-duration);
+    @include transition-timing-function($transition-timing-function);
+    @include transition-delay($transition-delay);
+}
+
 %transition-lighten {
     @include movement(opacity) {
         opacity: 1 - $transition-delta-opacity;
     }
 }
-%hover-lighten {
-    @extend %transition-lighten;
-
-    &:hover { @extend %transition-lighten#{$transition-selector}; }
-}
+%hover-lighten { @include hover-movement(lighten); }
 
 %transition-scaleUp {
     @include movement(transform) {
         @include transform(scale(1.2));
     }
 }
-%hover-scaleUp {
-    @extend %transition-scaleUp;
-
-    &:hover { @extend %transition-scaleUp#{$transition-selector}; }
-}
+%hover-scaleUp { @include hover-movement(scaleUp); }
 
 

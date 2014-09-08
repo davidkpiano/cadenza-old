@@ -39,20 +39,33 @@
 }
 
 @mixin movement(
-    $property: $transition-property,
+    $property: default,
     $selector: $transition-selector,
-    $duration: $transition-duration,
-    $timing-function: $transition-timing-function,
-    $delay: $transition-delay
+    $duration: default,
+    $timing-function: default,
+    $delay: default,
+    $parent-hover: true
 ) {
-    @include transition-property($property);
-    @include transition-duration($duration);
-    @include transition-timing-function($timing-function);
-    @include transition-delay($delay);
+    @if $property != default { @include transition-property($property); }
+    @if $duration != default { @include transition-duration($duration); }
+    @if $timing-function != default { @include transition-timing-function($timing-function); }
+    @if $delay != default { @include transition-delay($delay); }
 
-    &#{$selector} {
-        @content;
+    @if $parent-hover {    
+        &#{$selector}, %hover-all:hover > & {
+            @content;
+        }
+    } @else {
+        &#{$selector} {
+            @content;
+        }
     }
+}
+
+@mixin hover-movement($name) {
+    @extend %transition-#{$name};
+
+    &:hover { @extend %transition-#{$name}#{$transition-selector}; }
 }
 
 @mixin activate(

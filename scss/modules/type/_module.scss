@@ -63,11 +63,18 @@ $type-abbr-transform: uppercase !default;
 // Anchors
 $type-anchor-style: default !default;
 $type-anchor-theme: default !default;
+$type-anchor-display: inline-block !default;
 $type-anchor-decoration: underline !default;
 $type-anchor-decoration-hover: underline !default;
 $type-anchor-color: $color-primary !default;
 $type-anchor-color-light: $color-light !default;
 $type-anchor-color-dark: $type-anchor-color !default;
+$type-anchor-unhinted-decoration: none !default;
+$type-anchor-unhinted-color: $type-base-color !default;
+$type-anchor-unhinted-color-light: $type-base-color-light !default;
+$type-anchor-unhinted-color-dark: $type-base-color-dark !default;
+$type-anchor-hinted-decoration: underline !default;
+$type-anchor-hinted-color: $type-anchor-color !default;
 
 // Preformatted Text
 $type-pre-style: default !default;

@@ -47,7 +47,7 @@
         <div class="field">
             <div class="col-6 col-center dropdown-container">            
                 <button ng-click="component.dropdown.open = !component.dropdown.open" class="block">Open Dropdown</button>
-                <menu ng-show="component.dropdown.open" class="{{component.dropdown.color}} {{component.dropdown.position}}">
+                <menu class="{{component.dropdown.color}} {{component.dropdown.position}}" ng-class="{active: component.dropdown.open}">
                     <ul>
                         <li><a href="#">Link 1</a></li>
                         <li><a href="#">Link 2</a></li>

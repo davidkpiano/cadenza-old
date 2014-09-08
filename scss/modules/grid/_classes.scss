@@ -10,7 +10,11 @@
 
 .pad-small { @extend %pad-small; }
 .pad-vertical-small { @extend %pad-vertical-small; }
-.pad-horizontal-small { @extend %pad-horizonta-smalll; }
+.pad-horizontal-small { @extend %pad-horizontal-small; }
+
+.no-pad, .pad-none { @extend %pad-none; }
+.pad-vertical-none { @extend %pad-vertical-none; }
+.pad-horizontal-none { @extend %pad-horizontal-none; }
 
 // Horizontal Grid Classes
 #{prefixed-class('col')}, #{prefixed-class('column')}, #{prefixed-class('columns', $selector: ' > *')}, #{prefixed-class('cols', $selector: ' > *')} {
@@ -107,6 +111,10 @@
 
 	.cols-auto#{$suffix}, .columns-auto#{$suffix} {
 		@extend %columns-auto#{$suffix};
+	}
+
+	.cols-middle#{$suffix}, .columns-middle#{$suffix} {
+		@extend %columns-middle#{$suffix};
 	}
 }
 

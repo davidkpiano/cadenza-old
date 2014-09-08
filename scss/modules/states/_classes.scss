@@ -3,9 +3,14 @@
 // ==============
 
 // State Classes
-.hide, .hidden { @extend %hide; }
+@each $mq in $state-mqs {
+    $suffix: -#{$mq};
+    @if $mq == 'all' { $suffix: ''; }
 
-.show { @extend %show; }
+    .hide#{$suffix}, .hidden#{$suffix} { @extend %hide-#{$mq}; }
+
+    .show#{$suffix} { @extend %show-#{$mq}; }
+}
 
 .print-only { @extend %print-only; }
 

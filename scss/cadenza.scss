@@ -67,14 +67,14 @@
     @include shape-circle(2rem);
 }
 
-.foo {
-    overflow: hidden;
-    
-    .bar { @include animation(fade-inactive); }
-    .bar hgroup { @include animation(scaleDown-inactive); }
-    &:hover .bar { @include animation(fade-active); }
-    &:hover .bar hgroup { @include animation(scaleUp-active); }
+.gg-flex-list {
+    > * { @extend %transition; }
 
-    &:hover img { @extend %transition-scaleUp#{$transition-selector}; }
+    @include column-layout((3.5rem, fill, 2.5rem));
+
+    &:hover {
+        @include column-layout((4.5rem, fill, 0));
+    }
 }
+
 

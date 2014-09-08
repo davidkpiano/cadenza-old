@@ -4,9 +4,12 @@
 
 // Theme Settings
 $theme-mode: 'light' !default;
-$theme-border-width: 1px !default;
 $theme-lighten-opacity: 0.3 !default;
 $theme-darken-opacity: 0.3 !default;
+
+// Border Settings
+$border-width: 1px !default;
+$border-color: $color-gray-light !default;
 
 // (name, color)
 // TODO: use maps (SASS 3.3)

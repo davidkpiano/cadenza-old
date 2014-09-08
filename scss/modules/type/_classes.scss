@@ -70,11 +70,17 @@ mark, .mark { @extend %mark; }
 
 abbr, acronym { @extend %abbreviation; }
 
+.small-caps { @extend %small-caps; }
+
+.upper-caps { @extend %upper-caps; }
+
 // Anchors
 // -------
 a {
 	@extend %anchor;
 }
+
+.anchors-hint { @extend %anchors-hint; }
 
 // Alignment
 // ---------

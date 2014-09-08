@@ -147,10 +147,31 @@
     cursor: $type-abbr-cursor;
 }
 
+%small-caps {
+    font-variant: small-caps;
+}
+
+%upper-caps {
+    @extend %small-caps;
+
+    text-transform: lowercase;
+}
+
 // Anchors
 // -------
 %anchor {
-	// Styles defined in theme
+	display: $type-anchor-display;
+}
+
+// Parent Class
+%anchors-hint {
+    %anchor {
+        text-decoration: $type-anchor-unhinted-decoration;
+    }
+
+    &:hover %anchor {
+        text-decoration: $type-anchor-hinted-decoration;
+    }
 }
 
 // Alignment
@@ -179,6 +200,11 @@
 		display: table-cell;
 		vertical-align: middle;
 	}
+}
+
+%nowrap {
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 // Preformatted Text

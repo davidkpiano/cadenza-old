@@ -43,6 +43,8 @@
         &.secondary { @include theme-nav-default($color-secondary); }
         &.light { @include theme-nav-default($color-light); }
         &.dark { @include theme-nav-default($color-dark); }
+        &.lighten { @include theme-nav-default($color-lighten); }
+        &.darken { @include theme-nav-default($color-darken); }
 	}
 }
 

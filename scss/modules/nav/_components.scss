@@ -86,12 +86,13 @@
 	@extend %nav;
 	@include type-scale($dropdown-scale);
 	min-width: $dropdown-min-width;
+	overflow-x: hidden;
 	position: absolute;
 	z-index: $dropdown-z-index;
 	padding: $dropdown-padding;
 	text-align: $dropdown-text-align;
 
-	&, & > ul { margin: 0;}
+	&, & > ul { margin: 0; }
 
 	@if $dropdown-radius {
 		@include border-radius($dropdown-radius);

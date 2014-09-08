@@ -71,38 +71,57 @@
 </div>
 
 <div class="gg-device border-light float-left">
-    <header class="gg-header theme-primary">test</header>
-    <div>
-        <div class="card-6">
-            <div style="height: 100px" class="theme-primary">
-                <div class="row-bottom pad">
-                    <h4>Top 10 Australian Beaches</h4>
-                </div>
-            </div>
-            <div class="pad">
-                <h6>Number 10</h6>
-                <p>Whitehaven Beach <br>Whitsunday Island, Whitsunday Islands</p>
-            </div>
+    <header class="gg-header theme-primary">
+        <span>test</span>
+    </header>
+    <div class="borders-inside-vertical">
+        <div class="pad">
+            <span>To</span>
+            <span class="badge light no-pad">
+                <img src="" alt="" class="circle bg-primary" height="30" width="30">
+                <span class="pad-horizontal-small">Trevor Hansen</span>
+            </span>
+            <span class="badge light no-pad">
+                <img src="" alt="" class="circle bg-primary" height="30" width="30">
+                <span class="pad-horizontal-small">Alex Nielson</span>
+            </span>
         </div>
-        <div class="card-4">
-            <div class="col-2 bg-secondary">
-                
+        <div class="pad">
+            <input type="text" class="implicit">
+        </div>
+        <div class="pad">
+            <textarea name="" id="" cols="30" rows="10" class="implicit"></textarea>
+        </div>
+        <div class="card borders-inside-vertical">
+            <div class="borders-inside-horizontal">
+                <a href="#" class="pad-small">Update Status</a>
+                <a href="#" class="pad-small">Add Photos/Video</a>
             </div>
-            <div class="col-10 pad">
-                <hgroup>
-                    <h3>El Pooch</h3>
-                    <h5>By Alex Nielson</h5>
-                </hgroup>
-                <button class="primary inline">Free Sample</button><button class="light">Review</button>
+            <div class="pad-small">
+                <textarea name="" id="" placeholder="What's on your mind?" class="implicit"></textarea>
+            </div>
+            <div class="bg-light row columns-middle">
+                <nav class="col-6 horizontal primary">                
+                    <ul class="cols-4th text-center">
+                        <li><a><i class="fa fa-plus"></i></a></li>
+                        <li><a><i class="fa fa-map-marker"></i></a></li>
+                        <li><a><i class="fa fa-camera"></i></a></li>
+                        <li><a><i class="fa fa-smile-o"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="col-6">
+                    <button class="right small">Post</button>
+                    <button class="right small light">Friends</button>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
 <div class="row-6">
-    <div class="col-6 foo">    
-        <img src="http://onedesigncompany.com/assets/work/encore/encore-featured.jpg" alt="" class="layer hover-scaleUp">
-        <div class="layer text-middle text-center bar theme-darken">
+    <div class="col-6 hover-all nowrap">
+        <img src="http://onedesigncompany.com/assets/work/encore/encore-featured.jpg" alt="" class="layer transition-scaleUp">
+        <div class="layer text-middle text-center theme-darken transition-scaleUp">
             <hgroup class="inline">
                 <h6 class="color-white">ENCORE</h6>
                 <h5 class="color-white">----</h5>
@@ -110,13 +129,4 @@
             </hgroup>
         </div>
     </div>
-</div>
-
-<div class="row-6" ng-init="component.loading = true">
-    <button ng-click="component.loading = !component.loading">
-        <span ng-if="component.loading" class="activate-slideUp">Load</span>
-        <span ng-if="!component.loading" class="activate-slideUp">Loading...</span>
-    </button>
-
-    {{component.loading}}
 </div>

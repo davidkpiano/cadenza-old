@@ -8,6 +8,8 @@
 
 .delay, .delay-all > * { @extend %active-delay; }
 
+.is-3d { @extend %is-3d; }
+
 // Animations Classes
 .activate-all-fade { @include activate-all(fade); }
 .activate-fade { @include activate(fade); }
@@ -51,10 +53,20 @@
 .activate-all-shiftRight { @include activate-all(shiftRight); }
 .activate-shiftRight { @include activate(shiftRight); }
 
+.activate-all-shiftLeftRight { @include activate-all(shiftLeft, shiftRight); }
+.activate-shiftLeftRight { @include activate(shiftLeft, shiftRight); }
+
 .activate-all-flipLeft { @include activate-all(flipLeft, $is-3d: true); }
 .activate-flipLeft { @include activate(flipLeft); }
 
+.activate-all-tilt { @include activate-all(tilt, $is-3d: true); }
+.activate-tilt { @include activate(tilt); }
+
 // Transition classes
+.hover-all { @extend %hover-all; }
+
+#{prefixed-class('transition')} { @extend %transition; }
+
 .transition-lighten { @extend %transition-lighten; }
 .hover-lighten { @extend %hover-lighten; }
 
