@@ -18,14 +18,19 @@ $type-base-color-dark: $color-dark !default;
 
 // Custom Type Settings
 $type-use-custom: true !default;
-$type-primary-import: "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" !default;
+$type-import-primary: "//fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" !default;
+$type-import-secondary: "//fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic,300,700)" !default;
+$type-imports: (
+    $type-import-primary,
+    $type-import-secondary
+);
 $type-primary-font-family: "Open Sans" !default;
-$type-secondary-import: '' !default;
 $type-secondary-font-family: Georgia, Times, "Times New Roman", serif !default;
 $type-serif-font-family: "Calisto MT", Georgia, "Times New Roman", Times, serif !default;
 $type-sans-serif-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $type-monospace-font-family: Consolas, monaco, monospace !default;
 $type-script-font-family: "Brush Script MT", cursive !default;
+$type-condensed-font-family: "Open Sans Condensed" !default;
 
 // Headings
 $type-heading-style: default !default;

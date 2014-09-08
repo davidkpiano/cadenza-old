@@ -4,8 +4,9 @@
 
 // Typefaces
 // ---------
-@import url($type-primary-import);
-@import url($type-secondary-import);
+@each $type-import in $type-imports {
+    @import url($type-import);
+}
 
 %type-primary {
     @if $type-use-custom {
@@ -33,6 +34,10 @@
 
 %type-script {
 	font-family: $type-script-font-family;
+}
+
+%type-condensed {
+    font-family: $type-condensed-font-family;
 }
 
 // Headings
