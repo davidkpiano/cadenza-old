@@ -13,8 +13,8 @@ button, .button, input[type=button], input[type=submit] {
     &.huge { @extend %button-huge; }
 
     // Positioned Button Classes
-    &.left { @extend %button-left; }
-    &.right { @extend %button-right; }
+    &.left, .buttons-left > & { @extend %button-left; }
+    &.right, .buttons-right > & { @extend %button-right; }
 
     // Display Button Classes
     &.block { @extend %button-block; }

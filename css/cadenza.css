@@ -12003,25 +12003,27 @@ button.huge, .button.huge, input[type=button].huge, input[type=submit].huge, .bu
 }
 
 /* line 49, ../scss/modules/buttons/_components.scss */
-button.left, .button.left, input[type=button].left, input[type=submit].left {
+button.left, .buttons-left > button, .button.left, .buttons-left > .button, input[type=button].left, .buttons-left > input[type=button], input[type=submit].left, .buttons-left > input[type=submit] {
   float: left;
   margin-left: 0;
+  margin-right: 0.5rem;
 }
 
-/* line 54, ../scss/modules/buttons/_components.scss */
-button.right, .button.right, input[type=button].right, input[type=submit].right {
+/* line 55, ../scss/modules/buttons/_components.scss */
+button.right, .buttons-right > button, .button.right, .buttons-right > .button, input[type=button].right, .buttons-right > input[type=button], input[type=submit].right, .buttons-right > input[type=submit] {
   float: right;
+  margin-left: 0.5rem;
   margin-right: 0;
 }
 
-/* line 59, ../scss/modules/buttons/_components.scss */
+/* line 61, ../scss/modules/buttons/_components.scss */
 button.block, .button.block, input[type=button].block, input[type=submit].block {
   display: block;
   margin: 0;
   width: 100%;
 }
 
-/* line 65, ../scss/modules/buttons/_components.scss */
+/* line 67, ../scss/modules/buttons/_components.scss */
 button.full, .button.full, input[type=button].full, input[type=submit].full {
   display: block;
   margin: 0;
@@ -12029,18 +12031,18 @@ button.full, .button.full, input[type=button].full, input[type=submit].full {
   height: 100%;
 }
 
-/* line 73, ../scss/modules/buttons/_components.scss */
+/* line 75, ../scss/modules/buttons/_components.scss */
 button:disabled, .button:disabled, input[type=button]:disabled, input[type=submit]:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
-/* line 84, ../scss/modules/buttons/_components.scss */
+/* line 86, ../scss/modules/buttons/_components.scss */
 .button-group > input[type=radio], .button-group > input[type=checkbox] {
   display: none;
 }
 
-/* line 89, ../scss/modules/buttons/_components.scss */
+/* line 91, ../scss/modules/buttons/_components.scss */
 .button-group > button, .button-group > .button {
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -12051,15 +12053,15 @@ button:disabled, .button:disabled, input[type=button]:disabled, input[type=submi
   margin-left: -1px;
   float: left;
 }
-/* line 95, ../scss/modules/buttons/_components.scss */
+/* line 97, ../scss/modules/buttons/_components.scss */
 .button-group > button:first-of-type, .button-group > .button:first-of-type {
   margin-left: inherit;
 }
-/* line 96, ../scss/modules/buttons/_components.scss */
+/* line 98, ../scss/modules/buttons/_components.scss */
 .button-group > button:hover, .button-group > .button:hover, .button-group > button:focus, .button-group > .button:focus {
   z-index: 2;
 }
-/* line 99, ../scss/modules/buttons/_components.scss */
+/* line 101, ../scss/modules/buttons/_components.scss */
 .button-group > button:first-of-type, .button-group > .button:first-of-type {
   -moz-border-radius-topleft: 3px;
   -webkit-border-top-left-radius: 3px;
@@ -12068,7 +12070,7 @@ button:disabled, .button:disabled, input[type=button]:disabled, input[type=submi
   -webkit-border-bottom-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
-/* line 103, ../scss/modules/buttons/_components.scss */
+/* line 105, ../scss/modules/buttons/_components.scss */
 .button-group > button:last-of-type, .button-group > .button:last-of-type {
   -moz-border-radius-topright: 3px;
   -webkit-border-top-right-radius: 3px;
@@ -12078,7 +12080,7 @@ button:disabled, .button:disabled, input[type=button]:disabled, input[type=submi
   border-bottom-right-radius: 3px;
 }
 
-/* line 110, ../scss/modules/buttons/_components.scss */
+/* line 112, ../scss/modules/buttons/_components.scss */
 .button-group.inline {
   display: inline-block;
   margin: 0 0.5rem 0 0;
@@ -12086,12 +12088,12 @@ button:disabled, .button:disabled, input[type=button]:disabled, input[type=submi
   vertical-align: middle;
 }
 
-/* line 117, ../scss/modules/buttons/_components.scss */
+/* line 119, ../scss/modules/buttons/_components.scss */
 .button-group.vertical {
   display: inline-block;
 }
 
-/* line 121, ../scss/modules/buttons/_components.scss */
+/* line 123, ../scss/modules/buttons/_components.scss */
 .button-group.vertical > button, .button-group.vertical > .button {
   display: block;
   width: 100%;
@@ -12101,12 +12103,12 @@ button:disabled, .button:disabled, input[type=button]:disabled, input[type=submi
   margin-top: -1px;
   float: none;
 }
-/* line 130, ../scss/modules/buttons/_components.scss */
+/* line 132, ../scss/modules/buttons/_components.scss */
 .button-group.vertical > button:first-of-type, .button-group.vertical > .button:first-of-type {
   margin-left: 0;
   margin-top: inherit;
 }
-/* line 133, ../scss/modules/buttons/_components.scss */
+/* line 135, ../scss/modules/buttons/_components.scss */
 .button-group.vertical > button:first-of-type, .button-group.vertical > .button:first-of-type {
   -moz-border-radius-bottomleft: 0;
   -webkit-border-bottom-left-radius: 0;
@@ -12118,7 +12120,7 @@ button:disabled, .button:disabled, input[type=button]:disabled, input[type=submi
   -webkit-border-top-right-radius: 3px;
   border-top-right-radius: 3px;
 }
-/* line 138, ../scss/modules/buttons/_components.scss */
+/* line 140, ../scss/modules/buttons/_components.scss */
 .button-group.vertical > button:last-of-type, .button-group.vertical > .button:last-of-type {
   -moz-border-radius-topright: 0;
   -webkit-border-top-right-radius: 0;
