@@ -4,3 +4,10 @@
 
 // Global Classes
 * { @extend %global; }
+
+
+// Move to positioning
+.overlap-top { @extend %overlap-top; }
+.overlap-bottom { @extend %overlap-bottom; }
+.overlap-left { @extend %overlap-left; }
+.overlap-right { @extend %overlap-right; }

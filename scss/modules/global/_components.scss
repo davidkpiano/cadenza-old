@@ -6,4 +6,20 @@
     @include box-sizing(border-box);
 }
 
+// Move to positioning
+%overlap-top {
+    @include translate($vertical: -50%);
+}
+
+%overlap-bottom {
+    @include translate($vertical: 50%);
+}
+
+%overlap-left {
+    @include translate($horizontal: -50%);
+}
+
+%overlap-right {
+    @include translate($vertical: 50%);
+}
 

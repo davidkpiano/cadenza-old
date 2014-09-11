@@ -14,11 +14,14 @@
 }
 
 // Alert Classes
-.alert {
+#{prefixed-class('alert')} {
     @extend %alert;
+    @include alert-style;
 
     .alert-exit { @extend %alert-exit; }
 }
+
+.alert-small { @extend %alert-small; }
 
 .alert-group { @extend %alert-group; }
 

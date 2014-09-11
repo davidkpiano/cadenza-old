@@ -6,9 +6,10 @@
 	$exponent: 1,
 	$base: $type-base-font-size,
 	$unit: $type-unit,
-	$ratio: $type-ratio
+	$ratio: $type-ratio,
+    $factor: 1
 ) {
-	@return $base * pow($ratio, -$exponent);
+	@return ($factor * $base) * pow($ratio, -$exponent);
 }
 
 @mixin type-scale(
@@ -16,9 +17,10 @@
 	$important: false,
 	$base: $type-base-font-size,
 	$unit: $type-unit,
-	$ratio: $type-ratio
+	$ratio: $type-ratio,
+    $factor: 1
 ) {
-	$font-size: type-scale-size($exponent, $base, $unit, $ratio);
+	$font-size: type-scale-size($exponent, $base, $unit, $ratio, $factor);
 
 	@if $important {
 		$important: !important;

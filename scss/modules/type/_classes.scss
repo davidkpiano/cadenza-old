@@ -31,10 +31,13 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	#{$heading-selector}, .#{$heading-selector} {
 		@extend %#{$heading-selector};
 
+		&.double { @extend %#{$heading-selector}-double; }
+
 		&.inline { @extend %heading-inline; }
 
 		> small, > .small { @extend %heading-small; }
 
+		> .large { @extend %heading-large; }
 	}
 }
 
@@ -139,7 +142,11 @@ q {
 
 // Horizontal Rules
 // ----------------
-hr, .hr { @extend %hr; }
+hr, .hr {
+	@extend %hr;
+
+	&.dotted { @extend %hr-dotted; }
+}
 
 // Lists
 // -----

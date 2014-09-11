@@ -6,4 +6,27 @@
     @include shape-circle();
 }
 
+%circle-small {
+    @include shape-circle($circle-small-width);
+}
+
+%circle-medium {
+    @include shape-circle($circle-medium-width);
+}
+
+%circle-large {
+    @include shape-circle($circle-large-width);
+}
+
+%square-small {
+    @include shape-square($square-small-width);
+}
+
+%square-medium {
+    @include shape-square($square-medium-width);
+}
+
+%square-large {
+    @include shape-square($square-large-width);
+}
 

@@ -3,6 +3,12 @@
 // ==============
 
 // Shape Classes
-.circle {
-    @extend %circle;
-}
+.shape-circle { @extend %circle; }
+
+.shape-circle-small { @extend %circle-small; }
+.shape-circle-medium { @extend %circle-medium; }
+.shape-circle-large { @extend %circle-large; }
+
+.shape-square-small { @extend %square-small; }
+.shape-square-medium { @extend %square-medium; }
+.shape-square-large { @extend %square-large; }

@@ -18,12 +18,14 @@ $panel-scale: 0 !default;
 $alert-style: default !default;
 $alert-theme: default !default;
 $alert-padding: 1rem !default;
+$alert-margin: 0 0 1rem 0 !default;
 $alert-exit-padding: $alert-padding / 2 !default;
 $alert-exit-symbol: '\00d7' !default;
 $alert-border-width: 1px !default;
-$alert-margin: 0 0 1rem 0 !default;
 $alert-radius: $form-radius !default;
 $alert-scale: -1 !default;
+$alert-small-padding: 0.5rem !default;
+$alert-small-margin: 0 0 0.5rem 0 !default;
 
 // Modal Settings
 $modal-vertical: center !default;

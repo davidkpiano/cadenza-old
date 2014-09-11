@@ -79,20 +79,15 @@
 }
 
 %theme-alert-default {
-	%alert {
-		@include theme-alert-default();
+	@include theme-alert-default();
 
-		&.primary { @include theme-alert-default($color-primary); }
-		&.secondary { @include theme-alert-default($color-secondary); }
-		&.light { @include theme-alert-default($color-light); }
-		&.dark { @include theme-alert-default($color-dark); }
+	&.primary { @include theme-alert-default($color-primary); }
+	&.secondary { @include theme-alert-default($color-secondary); }
+	&.light { @include theme-alert-default($color-light); }
+	&.dark { @include theme-alert-default($color-dark); }
 
-		&.success { @include theme-alert-default($color-success); }
-		&.warning { @include theme-alert-default($color-warning); }
-		&.failure { @include theme-alert-default($color-failure); }
-	}
+	&.success { @include theme-alert-default($color-success); }
+	&.warning { @include theme-alert-default($color-warning); }
+	&.failure { @include theme-alert-default($color-failure); }
 }
-
-@include add-theme('alert', $alert-theme);
-
 

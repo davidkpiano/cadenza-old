@@ -3,7 +3,11 @@
 // ==============
 
 // Label Classes
-.label { @extend %label; }
+.label {
+    @extend %label;
+
+    &.block { @extend %label-block; }
+}
 
 // Badge Classes
 .badge {

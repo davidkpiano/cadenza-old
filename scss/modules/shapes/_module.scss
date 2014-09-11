@@ -3,6 +3,17 @@
 // =============
 
 // Shape Settings
+$shape-small-width: 1rem !default;
+$shape-medium-width: 2rem !default;
+$shape-large-width: 3rem !default;
+
+$square-small-width: $shape-small-width !default;
+$square-medium-width: $shape-medium-width !default;
+$square-large-width: $shape-large-width !default;
+
+$circle-small-width: $shape-small-width !default;
+$circle-medium-width: $shape-medium-width !default;
+$circle-large-width: $shape-large-width !default;
 
 // Imports
 @import

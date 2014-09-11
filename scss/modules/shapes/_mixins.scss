@@ -39,3 +39,13 @@
 
     @include border-radius(50%);
 }
+
+@mixin shape-square($width, $display: block) {
+    @include shape-rectangle($width, $width, $display);
+}
+
+@mixin shape-rectangle($width: auto, $height: auto, $display: block) {
+    width: $width;
+    height: $height;
+    display: $display;
+}

@@ -33,6 +33,11 @@
     }
 }
 
+%label-block {
+    margin: 0;
+    display: block;
+}
+
 %badge {
     @extend %label;
     @include type-scale($badge-scale);
