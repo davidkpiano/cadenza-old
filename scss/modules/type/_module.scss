@@ -15,6 +15,9 @@ $type-base-font-weight: 300 !default;
 $type-base-color: $color-dark !default;
 $type-base-color-light: $color-light !default;
 $type-base-color-dark: $color-dark !default;
+$type-subtext-color: if(is-dark($type-base-color), $color-darken, $color-lighten) !default;
+$type-subtext-color-light: $color-darken !default;
+$type-subtext-color-dark: $color-lighten !default;
 
 // Custom Type Settings
 $type-use-custom: true !default;
