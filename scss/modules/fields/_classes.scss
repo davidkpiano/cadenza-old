@@ -3,7 +3,7 @@
 // ==============
 
 fieldset, .fieldset {
-    @extend %fieldset;
+    @extend %fieldset !optional;
 }
 
 .field {

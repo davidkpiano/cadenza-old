@@ -1,33 +1,110 @@
 // 
 // Themes Module
 // =============
+@import '_mixins';
+
+// Style Settings
+$style-default: default !default;
 
 // Theme Settings
+$theme-default: default !default;
 $theme-mode: 'light' !default;
 $theme-lighten-opacity: 0.3 !default;
 $theme-darken-opacity: 0.3 !default;
+$theme-lightness-threshold: 65% !default;
+$theme-lighten-percent: 10% !default;
+$theme-darken-percent: 10% !default;
+$theme-mix-percent: 50% !default;
+
+// Color Palette
+$color-primary: #024959 !default;
+$color-secondary: #E74C30 !default;
+$color-dark: #363636 !default;
+$color-light: #EFEFEF !default;
+$color-gray: #525252 !default;
+$color-gray-light: #E7E7E7 !default;
+$color-white: #FFF !default;
+
+$color-lighten-opacity: 0.4 !default;
+$color-darken-opacity: 0.4 !default;
+$color-lighten: rgba(255, 255, 255, $color-lighten-opacity) !default;
+$color-darken: rgba(0, 0, 0, $color-darken-opacity) !default;
+
+$color-success: #96CC69 !default;
+$color-warning: #FFCC5C !default;
+$color-failure: #C44741 !default;
 
 // Border Settings
 $border-width: 1px !default;
 $border-color: $color-gray-light !default;
 
+// Type Settings
+$text-color-light: $color-light !default;
+$text-color-dark: $color-dark !default;
+$text-color: theme-mode($text-color-light, $text-color-dark) !default;
+
+$subtext-color-light: $color-lighten !default;
+$subtext-color-dark: $color-darken !default;
+$subtext-color: theme-mode($subtext-color-light, $subtext-color-dark) !default;
+
+$heading-color-light: $text-color-light !default;
+$heading-color-dark: $text-color-dark !default;
+$heading-color: theme-mode($heading-color-light, $heading-color-dark) !default;
+
+$subheading-color-light: rgba($heading-color-light, $color-lighten-opacity) !default;
+$subheading-color-dark: rgba($heading-color-dark, $color-lighten-opacity) !default;
+$subheading-color: theme-mode($subheading-color-light, $subheading-color-dark) !default;
+
+$anchor-color-light: $color-light !default;
+$anchor-color-dark: $color-primary !default;
+$anchor-color: theme-mode($anchor-color-light, $anchor-color-dark) !default;
+$anchor-hover-color-light: lighten($anchor-color-light, $theme-lighten-percent) !default;
+$anchor-hover-color-dark: lighten($anchor-color-dark, $theme-lighten-percent) !default;
+$anchor-hover-color: theme-mode($anchor-hover-color-light, $anchor-hover-color-dark) !default;
+$anchor-unhinted-color-light: $text-color-light !default;
+$anchor-unhinted-color-dark: $text-color-dark !default;
+$anchor-unhinted-color: theme-mode($anchor-unhinted-color-light, $anchor-unhinted-color-dark) !default;
+$anchor-hinted-color-light: $anchor-color-light !default;
+$anchor-hinted-color-dark: $anchor-color-dark !default;
+$anchor-hinted-color: theme-mode($anchor-hinted-color-light, $anchor-hinted-color-dark) !default;
+
+$pre-color-light: $text-color-light !default;
+$pre-color-dark: $text-color !default;
+$pre-color: theme-mode($pre-color-light, $pre-color-dark) !default;
+
+$code-color-light: $pre-color-light !default;
+$code-color-dark: $pre-color-dark !default;
+$code-color: theme-mode($code-color-light, $code-color-dark) !default;
+
+$blockquote-color: $color-gray !default;
+$blockquote-footer-color: $color-gray !default;
+$blockquote-border-color: $blockquote-color !default;
+
+$hr-color-light: $color-light !default;
+$hr-color-dark: $color-gray-light !default;
+$hr-border-color: theme-mode($hr-color-light, $hr-color-dark) !default;
+
 // (name, color)
 // TODO: use maps (SASS 3.3)
-$theme-colors: (
-    ('light', $color-light),
-    ('dark', $color-dark),
-    ('primary', $color-primary),
-    ('secondary', $color-secondary),
-    ('white', white),
-    ('black', black),
-    ('lighten', $color-lighten),
-    ('darken', $color-darken)
+$colors: (
+    'light': $color-light,
+    'dark': $color-dark,
+    'primary': $color-primary,
+    'secondary': $color-secondary,
+    'white': white,
+    'black': black,
+    'lighten': $color-lighten,
+    'darken': $color-darken
+);
+
+$themes: (
+    light: (),
+    dark: ()
 );
 
 
 // Imports
 @import
-	'_mixins',
 	'_components',
 	'_themes',
 	'_classes';

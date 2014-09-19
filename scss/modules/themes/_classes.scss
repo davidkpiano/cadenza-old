@@ -3,23 +3,18 @@
 // ==============
 
 // Theme Classes
-@each $theme-color in $theme-colors {
-    $name: nth($theme-color, 1);
+@each $color-name, $color-value in $colors {
 
-    .theme-#{$name} {
-        @extend %theme-#{$name};
+    .bg-#{$color-name} {
+        @extend %background-#{$color-name};
     }
 
-    .bg-#{$name} {
-        @extend %background-#{$name};
+    .color-#{$color-name} {
+        @extend %color-#{$color-name};
     }
 
-    .color-#{$name} {
-        @extend %color-#{$name};
-    }
-
-    .border-#{$name}, .borders-#{$name} > * {
-        @extend %border-#{$name};
+    .border-#{$color-name}, .borders-#{$color-name} > * {
+        @extend %border-#{$color-name};
     }
 }
 
@@ -36,7 +31,3 @@
 .borders-outside-vertical { @extend %borders-outside-vertical; }
 .borders-inside-horizontal { @extend %borders-inside-horizontal; }
 .borders-outside-horizontal { @extend %borders-outside-horizontal; }
-
-body {
-    @include themes();
-}

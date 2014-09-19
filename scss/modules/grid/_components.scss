@@ -225,9 +225,13 @@
 
 		// Parent class
 		%columns-middle#{$suffix} {
-			@extend %text-middle;
+			display: table;
 
-			> * { float: none; }
+			> * {
+				float: none;
+				display: table-cell;
+				vertical-align: middle;
+			}
 		}
 	}
 }

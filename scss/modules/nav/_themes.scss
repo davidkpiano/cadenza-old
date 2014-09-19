@@ -4,51 +4,47 @@
 
 // Nav Theme
 // ---------
-@mixin nav-style(
-	$style: $nav-style,
-	$theme: $nav-theme
-) {
-	@extend %ext-nav-#{$style} !optional;
-	@extend %theme-nav-#{$theme} !optional;
-}
-
 
 // Default Nav Theme
 @mixin theme-nav-default(
-    $color: transparent
+    $bgcolor: theme-mode($nav-bgcolor-light, $nav-bgcolor-dark),
+    $color: theme-mode($nav-color-light, $nav-color-dark),
+    $item-bgcolor: false,
+    $item-bgcolor-hover: $bgcolor,
+    $item-color: false,
+    $item-color-hover: $color
 ) { 
-    li {
-        @include transition(('background-color', 'color'));
-        
-        &.hr, &.separator {
-            border-color: $nav-separator-color;
+    %nav-menu-item {
+        @if $item-color {
+            &, %nav-menu-item-link { color: $item-color; }
         }
 
-        &.active, &:hover {
-            @include foreground-color($color, $component: 'anchor');
-            background-color: $color;
+        @if $item-bgcolor {
+            background-color: $item-bgcolor;
         }
+    }
+
+    %nav-menu-item-active {
+        &, %nav-menu-item-link { color: $item-color-hover; }
+
+        background-color: $item-bgcolor-hover;
+    }
+
+    %nav-separator {
+        border-color: white;
     }
 }
 
-%ext-nav-default {
-    @extend %nav;
-}
-
 %theme-nav-default {
-	nav {
-        @include theme-nav-default();
+    %nav-menu-item, %nav-menu-item-link {
+        @include transition(('background-color', 'color'));
+    }
 
-        &.primary { @include theme-nav-default($color-primary); }
-        &.secondary { @include theme-nav-default($color-secondary); }
-        &.light { @include theme-nav-default($color-light); }
-        &.dark { @include theme-nav-default($color-dark); }
-        &.lighten { @include theme-nav-default($color-lighten); }
-        &.darken { @include theme-nav-default($color-darken); }
-	}
+    @include theme-nav-default();
+
+    &-light { @include theme-nav-default($nav-bgcolor-light, $nav-color-light); }
+    &-dark { @include theme-nav-default($nav-bgcolor-dark, $nav-color-dark); }
 }
-
-@include add-theme('nav', $nav-theme);
 
 // Underline Nav Theme
 $x-nav-underline-border-width: 3px !default;
@@ -58,60 +54,57 @@ $x-nav-underline-color-inactive: $color-gray-light;
     $color: $color-primary,
     $color-inactive: $x-nav-underline-color-inactive
 ) {
-    &, &.vertical {
-        > ul > li {
-            @extend %form-transition;
+    &, &-vertical {
+        %nav-menu-item {
             border-left-width: $x-nav-underline-border-width;
             border-left-color: $color-inactive;
             border-left-style: solid;
-
-            &.hr, &.separator {
-                border-bottom-width: $nav-separator-width;
-                border-bottom-style: solid;
-                border-bottom-color: $nav-separator-color;
-            }
-
-            &.active, &:hover {
-                border-left-color: $color;
-            }
         }
 
-        &.right > ul > li {
-            border-left: none;
-            border-right-width: $x-nav-underline-border-width;
-            border-right-color: $color-inactive;
-            border-right-style: solid;
+        %nav-separator {
+            border-bottom-width: $nav-separator-width;
+            border-bottom-style: solid;
+            border-bottom-color: $nav-separator-color;
+        }
 
-            &.active, &:hover {
+        %nav-menu-item-active {
+            border-left-color: $color;
+        }
+
+        &-right {
+            %nav-menu-item {            
+                border-left: none;
+                border-right-width: $x-nav-underline-border-width;
+                border-right-color: $color-inactive;
+                border-right-style: solid;
+            }
+
+            %nav-separator {
                 border-right-color: $color;
             }
         }
     }
 
-    &.horizontal {
-        > ul > li {
+    &-horizontal {
+        %nav-menu-item {
             border-left: none;
             border-right: none;
             border-bottom-width: $x-nav-underline-border-width;
             border-bottom-color: $color-inactive;
             border-bottom-style: solid;
+        }
 
-            &.active, &:hover {
-                border-bottom-color: $color;
-            }
+        %nav-menu-item-active {
+            border-bottom-color: $color;
         }
     }
 }
 
 %theme-nav-underline {
-    nav, .nav {
-        @include theme-nav-underline();
+    @include theme-nav-underline();
 
-        &.primary { @include theme-nav-underline($color-primary); }
-        &.secondary { @include theme-nav-underline($color-secondary); }
-        &.light { @include theme-nav-underline($color-light); }
-        &.dark { @include theme-nav-underline($color-dark); }
-    }
+    &-light { @include theme-nav-underline($color-light); }
+    &-dark { @include theme-nav-underline($color-secondary); }
 }
 
 // Dropdown Theme
@@ -144,7 +137,7 @@ $x-nav-underline-color-inactive: $color-gray-light;
         &, & > a { color: $type-color; }
 
         &:hover {
-            @include foreground-color($color, $component: 'anchor');
+            // @include foreground-color($color, $component: 'anchor');
 
             > a { background-color: $color; }
         }
@@ -158,18 +151,14 @@ $x-nav-underline-color-inactive: $color-gray-light;
 }
 
 %ext-dropdown-default {
-    @extend %dropdown-container;
+    // @extend %dropdown-container;
 }
 
 %theme-dropdown-default {
-    %dropdown {
-        @include theme-dropdown-default();
+    @include theme-dropdown-default();
 
-        &.primary { @include theme-dropdown-default($color-primary); }
-        &.secondary { @include theme-dropdown-default($color-secondary); }
-        &.light { @include theme-dropdown-default($color-light); }
-        &.dark { @include theme-dropdown-default($color-dark); }
-    }
+    &.primary { @include theme-dropdown-default($color-primary); }
+    &.secondary { @include theme-dropdown-default($color-secondary); }
+    &.light { @include theme-dropdown-default($color-light); }
+    &.dark { @include theme-dropdown-default($color-dark); }
 }
-
-@include add-theme('dropdown', $dropdown-theme);

@@ -22,18 +22,18 @@
 	border-color: $color-border;
 
 	> header, > hgroup, .panel-header {
-		@include foreground-color($color-header);
+		// @include foreground-color($color-header);
 		background-color: $color-header;
 		border-color: $color-border;	
 	}
 
 	> section, > .panel-body {
-		@include foreground-color($color-body);
+		// @include foreground-color($color-body);
 		background-color: $color-body;
 	}
 
 	> footer, > .panel-footer {
-		@include foreground-color($color-footer);
+		// @include foreground-color($color-footer);
 		background-color: $color-footer;
 		border-color: $color-border;
 	}
@@ -72,7 +72,7 @@
 @mixin theme-alert-default(
 	$color: $color-primary
 ) {
-	@include foreground-color($color);
+	// @include foreground-color($color);
 
 	background-color: $color;
 	border-color: darken($color, 5%);

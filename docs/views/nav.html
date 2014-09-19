@@ -4,7 +4,7 @@
     <h2>Nav Menus</h2>
 
     <select name="component.nav.color" ng-model="component.nav.color">
-        <option value="{{color}}" ng-repeat="color in ['primary','secondary','light','dark']">nav.{{color}}</option>
+        <option value="{{color}}" ng-repeat="color in ['light','dark']">nav.{{color}}</option>
     </select>
     <nav ng-repeat="position in ['horizontal','vertical']" class="{{position}} {{component.nav.color}}">
         <ul>

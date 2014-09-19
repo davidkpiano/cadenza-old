@@ -5,13 +5,31 @@
 // Nav Classes
 nav {
 	@extend %nav;
+	@include style('nav');
+
+	&.light { @include style('nav', 'light'); }
+	&.dark { @include style('nav', 'dark'); }
 
 	> h1, > h2, > h3, > h4, > h5, > h6, > hgroup {
 		@extend %nav-header;
 	}
 
-	ul li {
+	> ul { @extend %nav-menu; }
+
+	li {
+		@extend %nav-menu-item;
+
+		a { @extend %nav-menu-item-link; }
+
+		> ul { @extend %nav-submenu; }
+
 		&.separator, &.hr { @extend %nav-separator; }
+
+		&:hover, &.active {
+			@extend %nav-menu-item-active;
+
+			a:hover { @extend %nav-menu-item-link; }
+		}
 	}
 }
 
@@ -19,6 +37,8 @@ nav.horizontal {
 	@extend %nav-horizontal;
 
 	&.full { @extend %nav-horizontal-full; }
+
+	&.right { @extend %nav-horizontal-right; }
 }
 
 // Dropdown Classes
@@ -27,6 +47,15 @@ nav.horizontal {
 
 	> menu, > .dropdown {
 		@extend %dropdown;
+		@include dropdown-style();
+
+		ul { @extend %dropdown-menu; }
+
+		li {
+			@extend %dropdown-menu-item;
+
+			a { @extend %dropdown-menu-item-link; }
+		}
 
 		li {
 			&.separator, &.hr { @extend %dropdown-separator; }

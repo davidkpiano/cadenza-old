@@ -7,6 +7,7 @@
 @import "compass/css3/border-radius";
 @import "compass/css3/transition";
 @import "compass/css3/transform";
+@import "compass/css3/flexbox";
 
 // Units
 $x: 16px !default;
@@ -25,30 +26,6 @@ $grid-content-padding: $x !default;
 $grid-column-gutter: $x !default;
 $grid-row-gutter: $x !default;
 
-// Color Palette
-$color-primary: #024959 !default;
-$color-secondary: #E74C30 !default;
-$color-dark: #363636 !default;
-$color-light: #EFEFEF !default;
-$color-gray: #525252 !default;
-$color-gray-light: #E7E7E7 !default;
-$color-white: #FFF !default;
-
-$color-lighten-opacity: 0.4 !default;
-$color-darken-opacity: 0.4 !default;
-$color-lighten: rgba(255, 255, 255, $color-lighten-opacity) !default;
-$color-darken: rgba(0, 0, 0, $color-darken-opacity) !default;
-
-$color-success: #96CC69 !default;
-$color-warning: #FFCC5C !default;
-$color-failure: #C44741 !default;
-
-// Theme Settings
-$theme-lightness-threshold: 65% !default;
-$theme-lighten-percent: 10% !default;
-$theme-darken-percent: 10% !default;
-$theme-mix-percent: 50% !default;
-
 // Typography Settings
 $type-unit: rem !default;
 $type-ratio: 1/1.1614 !default;
@@ -57,8 +34,6 @@ $type-base-line-height: 1.65em !default;
 $type-base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $type-base-font-style: normal !default;
 $type-base-font-weight: 300 !default;
-$type-base-color: $color-dark !default;
-$type-base-color-light: $color-light !default;
 
 $type-custom-import: "http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700" !default;
 $type-custom-font-family: "Open Sans" !default;
@@ -67,29 +42,10 @@ $type-use-custom: true !default;
 $type-secondary-import: '' !default;
 $type-secondary-font-family: Georgia, Times, "Times New Roman", serif !default;
 
-$type-header-selector: "h1, h2, h3, h4, h5, h6" !default;
-$type-header-font-family: $type-custom-font-family !default;
-$type-header-font-weight: $type-base-font-weight !default;
-$type-header-font-style: normal !default;
-$type-header-line-height: 1.2 !default;
-$type-header-color: $type-base-color !default;
-$type-header-color-light: $type-base-color-light !default;
-$type-header-secondary-color: $color-secondary !default;
-$type-header-margin-top: 0 !default;
-$type-header-margin-bottom: $x-rem !default;
-$type-header-small-style: uppercase !default;
-
-$hgroup-margin-bottom: $type-header-margin-bottom !default;
-
 // $type-p-margin-bottom: $x-rem !default;
 // $type-p-line-height: 1.5 !default;
 // $type-p-font-weight: $type-base-font-weight !default;
 // $type-p-lead-type-scale: 1 !default;
-
-$type-subheader-color: lighten($type-header-color, 15%) !default;
-$type-subheader-font-weight: 300 !default;
-$type-subheader-margin-top: 0 !default;
-$type-subheader-margin-bottom: $x-rem !default;
 
 // $type-pre-color: $type-base-color !default;
 // $type-pre-scale: 0 !default;
@@ -117,20 +73,6 @@ $type-subheader-margin-bottom: $x-rem !default;
 // $type-abbr-border: 1px dotted $color-secondary !default;
 // $type-abbr-cursor: help !default;
 // $type-abbr-transform: uppercase !default;
-
-// Anchor Settings
-$anchor-decoration: none !default;
-$anchor-decoration-hover: $anchor-decoration !default;
-$anchor-color: $color-primary !default;
-$anchor-color-hover: lighten($anchor-color, 7%) !default;
-$anchor-color-light: $color-light !default;
-$anchor-color-light-hover: lighten($anchor-color-light, 7%) !default;
-
-// Horizontal Rule Settings
-$hr-border-style: solid !default;
-$hr-border-width: 1px !default;
-$hr-border-color: lighten($color-dark, 45%) !default;
-$hr-margin: $x-rem/2;
 
 // Media Query Settings
 $aspect-ratio: 16/9 !default;
@@ -230,14 +172,14 @@ $field-label-margin-bottom: $x/2 !default;
 // $field-label-affix-type-scale: $field-label-type-scale !default;
 $field-label-affix-padding-vertical: $form-padding-vertical !default;
 $field-label-affix-padding-horizontal: $form-padding-horizontal !default;
-$field-label-affix-bgcolor: $color-gray !default;
-$field-label-affix-border-color: darken($color-gray, 15%) !default;
+// $field-label-affix-bgcolor: $color-gray !default;
+// $field-label-affix-border-color: darken($color-gray, 15%) !default;
 // $field-label-affix-border-width: $form-border-width !default;
 
 // Fieldset Settings
 $fieldset-style: normal !default;
 $fieldset-border-width: 0 !default;
-$fieldset-border-color: $color-primary !default;
+// $fieldset-border-color: $color-primary !default;
 $fieldset-padding-horizontal: $form-padding-horizontal !default;
 $fieldset-padding-vertical: $form-padding-vertical !default;
 $fieldset-margin-bottom: $x-rem / 2 !default;
@@ -284,20 +226,20 @@ $nav-li-padding: 0 !default;
 // Tabs Settings
 $tabs-style: normal !default;
 $tabs-theme: normal !default;
-$tabs-active-bgcolor: white !default;
+// $tabs-active-bgcolor: white !default;
 $tabs-li-padding: $nav-li-padding !default;
 $tabs-li-margin: 0 $x-rem 0 0 !default;
 $tabs-a-padding: $x-rem !default;
 // $tabs-border-width: $form-border-width !default;
-$tabs-border-color: $color-gray !default;
+// $tabs-border-color: $color-gray !default;
 $tabs-radius: $form-radius !default;
 $tabs-use-radius: $form-use-radius !default;
 
 // Dropdown Settings
 $dropdown-padding: ($x-rem / 2) 0 !default;
-$dropdown-border-color: $color-gray !default;
+// $dropdown-border-color: $color-gray !default;
 // $dropdown-border-width: $form-border-width !default;
-$dropdown-bgcolor: white !default;
+// $dropdown-bgcolor: white !default;
 // $dropdown-type-scale: -1 !default;
 $dropdown-z-index: 999 !default;
 $dropdown-align: left !default;
@@ -310,8 +252,8 @@ $label-valign: middle !default;
 $label-font-weight: bold !default;
 $label-text-transform: none !default;
 $label-padding: $x-rem/4 $x-rem/2 !default;
-$label-bgcolor: $color-primary !default;
-$label-color: $color-light !default;
+// $label-bgcolor: $color-primary !default;
+// $label-color: $color-light !default;
 $label-use-radius: $form-use-radius !default;
 $label-margin: 0 $x/2 !default;
 
@@ -321,8 +263,8 @@ $badge-valign: $label-valign !default;
 $badge-font-weight: $label-font-weight !default;
 $badge-text-transform: none !default;
 $badge-padding: $label-padding !default;
-$badge-bgcolor: $label-bgcolor !default;
-$badge-color: $label-color !default;
+// $badge-bgcolor: $label-bgcolor !default;
+// $badge-color: $label-color !default;
 $badge-use-radius: $label-use-radius !default;
 $badge-collapse: true !default;
 
@@ -330,7 +272,7 @@ $badge-collapse: true !default;
 $alert-style: normal !default;
 $alert-padding: $x !default;
 $alert-border: 1px solid !default;
-$alert-color-light: white !default;
+// $alert-color-light: white !default;
 $alert-margin-bottom: $x !default;
 $alert-radius: $form-radius !default;
 $alert-use-radius: true !default;

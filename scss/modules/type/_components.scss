@@ -104,7 +104,6 @@
 // ---------
 %body-type {
 	font-style: normal;
-    color: $type-base-color;
     text-rendering: optimizeLegibility;
     word-wrap: break-word;
 
@@ -179,6 +178,9 @@
 // -------
 %anchor {
 	display: $type-anchor-display;
+    text-decoration: $type-anchor-decoration;
+
+    &:hover { text-decoration: $type-anchor-decoration-hover; }
 }
 
 // Parent Class
@@ -302,10 +304,11 @@
 %hr {
 	clear: both;
 	height: 0;
-	margin: $type-hr-margin;
+	margin: $hr-margin;
 	margin-left: 0;
 	margin-right: 0;
-	border-top: $type-hr-border;
+	border-top-width: $hr-border-width;
+    border-top-style: $hr-border-style;
 	border-bottom-width: 0;
     border-left-width: 0;
     border-right-width: 0;

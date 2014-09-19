@@ -12,12 +12,6 @@ $type-base-line-height: 1.65em !default;
 $type-base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $type-base-font-style: normal !default;
 $type-base-font-weight: 300 !default;
-$type-base-color: $color-dark !default;
-$type-base-color-light: $color-light !default;
-$type-base-color-dark: $color-dark !default;
-$type-subtext-color: if(is-dark($type-base-color), $color-darken, $color-lighten) !default;
-$type-subtext-color-light: $color-darken !default;
-$type-subtext-color-dark: $color-lighten !default;
 
 // Custom Type Settings
 $type-use-custom: true !default;
@@ -43,9 +37,6 @@ $type-heading-font-family: $type-primary-font-family !default;
 $type-heading-font-weight: $type-base-font-weight !default;
 $type-heading-font-style: normal !default;
 $type-heading-line-height: 1.2 !default;
-$type-heading-color: $type-base-color !default;
-$type-heading-color-dark: $type-heading-color !default;
-$type-heading-color-light: $type-base-color-light !default;
 $type-heading-margin-top: 0 !default;
 $type-heading-margin-bottom: $x-rem !default;
 $type-heading-large-style: inherit !default;
@@ -58,9 +49,8 @@ $type-heading-double-font-weight: $type-base-font-weight !default;
 $type-subheading-font-weight: 300 !default;
 $type-subheading-margin-top: 0 !default;
 $type-subheading-margin-bottom: $x-rem !default;
-$type-subheading-color: $color-gray !default;
-$type-subheading-color-dark: $type-subheading-color !default;
-$type-subheading-color-light: $color-gray-light !default;
+
+$hgroup-margin-bottom: 1rem !default;
 
 // Body Copy
 $type-mark-color: #FF0 !default;
@@ -78,27 +68,14 @@ $type-anchor-theme: default !default;
 $type-anchor-display: inline-block !default;
 $type-anchor-decoration: underline !default;
 $type-anchor-decoration-hover: underline !default;
-$type-anchor-color: $color-primary !default;
-$type-anchor-color-light: $color-light !default;
-$type-anchor-color-dark: $type-anchor-color !default;
 $type-anchor-unhinted-decoration: none !default;
-$type-anchor-unhinted-color: $type-base-color !default;
-$type-anchor-unhinted-color-light: $type-base-color-light !default;
-$type-anchor-unhinted-color-dark: $type-base-color-dark !default;
 $type-anchor-hinted-decoration: underline !default;
-$type-anchor-hinted-color: $type-anchor-color !default;
 
 // Preformatted Text
 $type-pre-style: default !default;
 $type-pre-theme: default !default;
-$type-pre-color: $type-base-color !default;
-$type-pre-color-light: $type-base-color-light !default;
-$type-pre-color-dark: $type-pre-color !default;
 $type-pre-scale: 0 !default;
 $type-pre-font-family: $type-monospace-font-family !default;
-$type-code-color: $type-pre-color !default;
-$type-code-color-light: $type-pre-color-light !default;
-$type-code-color-dark: $type-pre-color-dark !default;
 $type-code-scale: -1 !default;
 $type-code-font-family: $type-pre-font-family !default;
 $type-kbd-scale: -2 !default;
@@ -109,14 +86,12 @@ $type-blockquote-theme: default !default;
 $type-blockquote-padding: 1rem !default;
 $type-blockquote-scale: 1 !default;
 $type-blockquote-footer-scale: -1 !default;
-$type-blockquote-color: $color-gray !default;
-$type-blockquote-footer-color: $color-gray !default;
-$type-blockquote-border-color: $type-blockquote-color !default;
 $type-blockquote-margin-bottom: 1rem !default;
 
 // Horizontal Rule
-$type-hr-margin: 1rem 0 !default;
-$type-hr-border: 1px solid $color-gray-light !default;
+$hr-margin: 1rem 0 !default;
+$hr-border-width: 1px !default;
+$hr-border-style: solid !default;
 
 // Lists
 $type-list-position: outside !default;

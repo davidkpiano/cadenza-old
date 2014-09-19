@@ -2,13 +2,13 @@
 // Themes Components
 // =================
 
-%color-light {
-    @include foreground-color(black);
-}
+// %color-light {
+//     @include foreground-color(black);
+// }
 
-%color-dark {
-    @include foreground-color(white);
-}
+// %color-dark {
+//     @include foreground-color(white);
+// }
 
 %border {
     border-width: $border-width;
@@ -68,25 +68,17 @@
     > *:first-child { border-left-width: $border-width; }
 }
 
-@each $theme-color in $theme-colors {
-    $name: nth($theme-color, 1);
-    $color: nth($theme-color, 2);
+@each $color-name, $color-value in $colors {
 
-    %theme-#{$name} {        
-        @include foreground-color($color);
-
-        background-color: $color;
+    %background-#{$color-name} {
+        background-color: $color-value;
     }
 
-    %background-#{$name} {
-        background-color: $color;
+    %color-#{$color-name} {
+        &, p, li, span { color: $color-value; }
     }
 
-    %color-#{$name} {
-        &, p, li, span { color: $color; }
-    }
-
-    %border-#{$name} {
-        border-color: $color;
+    %border-#{$color-name} {
+        border-color: $color-value;
     }
 }

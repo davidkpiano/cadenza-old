@@ -30,6 +30,10 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 
 	#{$heading-selector}, .#{$heading-selector} {
 		@extend %#{$heading-selector};
+		@include style('heading');
+
+		&.color-light { @include style('heading', 'light'); }
+		&.color-dark { @include style('heading', 'dark'); }
 
 		&.double { @extend %#{$heading-selector}-double; }
 
@@ -41,13 +45,32 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 	}
 }
 
-.subheading { @extend %subheading; }
+.subheading {
+	@extend %subheading;
+	@include style('subheading');
+
+	&-light { @include style('subheading', 'light'); }
+	&-dark { @include style('subheading', 'dark'); }
+}
 
 hgroup { @extend %hgroup; }
 
 // Body Copy
 // ---------
 body { @extend %body-type; }
+
+body, p, li, span {
+	@extend %text;
+	@include style('text');
+}
+
+.subtext {
+	@extend %subtext;
+	@include style('subtext');
+
+	&-light { @include style('subtext', 'light'); }
+	&-dark { @include style('subtext', 'dark'); }
+}
 
 p {
 	@extend %paragraph;
@@ -83,9 +106,13 @@ abbr, acronym { @extend %abbreviation; }
 // -------
 a {
 	@extend %anchor;
+	@include style('anchor');
 }
 
-.anchors-hint { @extend %anchors-hint; }
+.anchors-hint {
+	@extend %anchors-hint;
+	@include style('anchors-hint');
+}
 
 // Alignment
 // ---------
@@ -112,7 +139,6 @@ kbd, .kbd { @extend %kbd; }
 // Quotes
 // ------
 blockquote {
-	@include blockquote-style();
 	@extend %blockquote;
 
 	footer { 

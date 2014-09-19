@@ -3,65 +3,74 @@
 // =================
 
 %nav {
-	ul {
+	%nav-menu {
 		list-style: none;
 		margin-left: 0;
 		width: 100%;
-		padding: $nav-list-padding;
+		padding: $nav-menu-padding;
+	}
 
-		li {
-			@extend %nowrap;
-			display: block;
-			padding: $nav-list-item-padding;
+	%nav-menu-item {
+		@extend %nowrap;
+		display: block;
+		padding: $nav-menu-item-padding;
+	}
 
-			> a {
-				@extend %valign-center-all;
-				display: block;
-				padding: $nav-anchor-padding;
+	%nav-menu-item-active {
+		display: block; // TODO: remove
+	}
 
-				&, &:hover {
-					text-decoration: none;
-				}
-			}
+	%nav-menu-item-link {
+		@extend %valign-center-all;
+		display: block;
+		padding: $nav-menu-item-link-padding;
 
-			ul {
-				display: none;
-			}
-
-			&:hover {
-				> ul { display: block; }
-			}
+		&, &:hover {
+			text-decoration: none;
 		}
+	}
+
+	%nav-submenu {
+		display: none;
+	}
+
+	%nav-header {
+		padding: $nav-header-padding;
+		margin: 0;
+	}
+	
+	%nav-separator {
+		border-bottom-width: $nav-separator-width;
+		border-bottom-style: solid;
+		margin: $nav-separator-margin;
 	}
 }
 
-%nav-header {
-	padding: $nav-header-padding;
-	margin: 0;
-}
 
-%nav-separator {
-	border-bottom-width: $nav-separator-width;
-	border-bottom-style: solid;
-	margin: $nav-separator-margin;
-}
 
 %nav-horizontal {
-	> ul {
+	@extend %clearfix;
+
+	%nav-menu {
 		@extend %clearfix;
 		height: 100%;
 		margin-bottom: 0;
+	}
 
-		> li {
-			float: left;
-			height: 100%;
+	%nav-menu-item {
+		float: left;
+		height: 100%;
+	}
 
-			> a {
-				height: 100%;
-				// TODO: %align-middle; from layouts module
-				@extend %valign-center-all;
-			}
+	%nav-menu-item-link {
+		height: 100%;
+		// TODO: %align-middle; from layouts module
+		@extend %valign-center-all;
+	}
 
+	&-right {
+		%nav-menu-item {
+			float: right;
 		}
 	}
 
@@ -83,7 +92,6 @@
 }
 
 %dropdown {
-	@extend %nav;
 	@include type-scale($dropdown-scale);
 	min-width: $dropdown-min-width;
 	overflow-x: hidden;
@@ -91,8 +99,26 @@
 	z-index: $dropdown-z-index;
 	padding: $dropdown-padding;
 	text-align: $dropdown-text-align;
+	margin: 0;
 
-	&, & > ul { margin: 0; }
+	%dropdown-menu {
+		list-style: none;
+		margin: 0;
+		width: 100%;
+		padding: $dropdown-menu-padding;
+	}
+
+	%dropdown-menu-item {
+		@extend %nowrap;
+		display: block;
+		padding: $dropdown-menu-item-padding;
+	}
+
+	%dropdown-menu-item-link {
+		display: block;
+		text-decoration: $dropdown-menu-item-link-decoration;
+		padding: $dropdown-menu-item-link-padding;
+	}
 
 	@if $dropdown-radius {
 		@include border-radius($dropdown-radius);

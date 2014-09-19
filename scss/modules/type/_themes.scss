@@ -2,77 +2,49 @@
 // Type Themes
 // ===========
 
-// Type Theme
-@mixin type-style(
-	$style: $type-style,
-	$theme: $type-theme,
-	$component: ''
-) 
-{
-	@extend %ext-type-#{$style} !optional;
-	@extend %theme-type-#{$theme} !optional;
+%theme-text-default {
+	color: $text-color;
+
+	&-light { color: $text-color-light; }
+	&-dark { color: $text-color-dark; }
 }
 
-%theme-type-default {
-	&, p, li, span {
-		color: $type-base-color;
+%theme-subtext-default {
+	color: $subtext-color;
 
-		&.dark { color: $type-base-color-dark; }
-		&.light { color: $type-base-color-light; }
-		&.subtext { color: $type-subtext-color; }
-		&.subtext-light { color: $type-subtext-color-light; }
-		&.subtext-dark { color: $type-subtext-color-dark; }
-	}
+	&-light { color: $subtext-color-light; }
+	&-dark { color: $subtext-color-dark; }
 }
-
-@include add-theme('type', $type-theme);
 
 // Heading Theme
 // -------------
-@mixin heading-style(
-	$style: $type-heading-style,
-	$theme: $type-heading-theme,
-	$component: 'heading'
-) {
-	@extend %ext-heading-#{$style} !optional;
-	@extend %theme-heading-#{$theme}%#{$component} !optional;
-}
 
-%ext-heading-default {
-	%h6 { text-transform: uppercase; }
+%style-heading-default {
+	@at-root %h6 {
+		text-transform: uppercase;
+	}
 }
 
 %theme-heading-default {
-	%heading {
-		color: $type-heading-color;
+	color: $heading-color;
 
-		&.dark { color: $type-heading-color-dark; }
-		&.light { color: $type-heading-color-light; }
-	}
-
-	%subheading, %heading-small {
-		color: $type-subheading-color;
-
-		&.dark { color: $type-subheading-color-dark; }
-		&.light { color: $type-subheading-color-light; }
-	}
+	&-light { color: $heading-color-light; }
+	&-dark { color: $heading-color-dark; }
 }
 
-@include add-theme('heading', $type-heading-theme);
+%theme-subheading-default {
+	color: $subheading-color;
+
+	&-light { color: $subheading-color-light; }
+	&-dark { color: $subheading-color-dark; }
+}
 
 // Anchor Theme
 // ------------
-@mixin anchor-style(
-	$style: $type-anchor-style,
-	$theme: $type-anchor-theme
-) {
-	@extend %ext-anchor-#{$style} !optional;
-	@extend %theme-anchor-#{$theme} !optional;
-}
 
 @mixin theme-anchor-default(
-	$color: $type-anchor-color,
-	$color-hover: darken($color, 5%),
+	$color: $anchor-color,
+	$color-hover: $anchor-hover-color,
 	$color-focus: $color-hover,
 	$color-active: $color-hover
 ) {
@@ -82,144 +54,136 @@
 	&:focus { color: $color-focus; }
 }
 
+%style-anchor-default {
+	//
+}
+
+%theme-anchor-default {
+	@include theme-anchor-default();
+
+	&-light { @include theme-anchor-default($anchor-color-light, $anchor-hover-color-light); }
+	&-dark { @include theme-anchor-default($anchor-color-dark, $anchor-hover-color-dark); }
+}
+
 @mixin theme-anchors-hint-default(
-	$color: $type-anchor-unhinted-color,
-	$color-hover: $type-anchor-hinted-color
+	$color: $anchor-unhinted-color,
+	$color-hover: $anchor-hinted-color
 ) {
 	%anchor { color: $color; }
 
 	&:hover %anchor { color: $color-hover; }
 }
 
-%ext-anchor-default {
-	text-decoration: $type-anchor-decoration;
+%theme-anchors-hint-default {
+	@include theme-anchors-hint-default();
 
-	&:hover {
-		text-decoration: $type-anchor-decoration-hover;
-	}
-
-	> img {
-		border: none;
-	}
+	&-light { @include theme-anchors-hint-default($anchor-unhinted-color-light, $anchor-hinted-color-light); }
+	&-dark { @include theme-anchors-hint-default($anchor-unhinted-color-dark, $anchor-hinted-color-dark); }
 }
 
-%theme-anchor-default {
-	%anchor {
-		@extend %form-transition;
-		@include theme-anchor-default();
-	}
+// // Preformatted Text Theme
+// // -----------------------
+// $x-pre-code-padding: 0.25rem 0.5rem !default;
+// $x-pre-code-radius: 0.25rem !default;
+// $x-pre-kbd-padding: $x-pre-code-padding !default;
+// $x-pre-kbd-radius: 0.25rem !default;
 
-	%anchor-light { @include theme-anchor-default($type-anchor-color-light); }
-	%anchor-dark { @include theme-anchor-default($type-anchor-color-dark); }
+// @mixin pre-style(
+// 	$style: $type-pre-style,
+// 	$theme: $type-pre-theme,
+// 	$component: 'pre'
+// ) {
+// 	@extend %ext-pre-#{$style} !optional;
+// 	@extend %theme-pre-#{$theme}%#{$component} !optional;
+// }
 
-	%anchors-hint { @include theme-anchors-hint-default(); }
-}
+// %theme-pre-default {
+// 	%pre {
+// 		color: $type-pre-color;
 
-@include add-theme('anchor', $type-anchor-theme);
+// 		&.light { color: $type-pre-color-light; }
+// 		&.dark { color: $type-pre-color-dark; }
+// 	}
 
-// Preformatted Text Theme
-// -----------------------
-$x-pre-code-padding: 0.25rem 0.5rem !default;
-$x-pre-code-radius: 0.25rem !default;
-$x-pre-kbd-padding: $x-pre-code-padding !default;
-$x-pre-kbd-radius: 0.25rem !default;
+// 	%code {
+// 		color: $type-code-color;
+// 		padding: $x-pre-code-padding;
+// 		background: $color-gray-light;
 
-@mixin pre-style(
-	$style: $type-pre-style,
-	$theme: $type-pre-theme,
-	$component: 'pre'
-) {
-	@extend %ext-pre-#{$style} !optional;
-	@extend %theme-pre-#{$theme}%#{$component} !optional;
-}
+// 		@if $x-pre-code-radius {
+// 			@include border-radius($x-pre-code-radius);
+// 		}
+// 	}
 
-%theme-pre-default {
-	%pre {
-		color: $type-pre-color;
+// 	%kbd {
+// 		&, &.light {
+// 			font-family: $type-base-font-family;
+// 			color: $type-base-color;
+// 			padding: $x-pre-kbd-padding;
+// 			background: $color-gray-light;
+// 			border: 1px solid $color-gray;
+// 			border-bottom-width: 3px;
 
-		&.light { color: $type-pre-color-light; }
-		&.dark { color: $type-pre-color-dark; }
-	}
+// 			@if $x-pre-kbd-radius {
+// 				@include border-radius($x-pre-kbd-radius);
+// 			}
+// 		}
 
-	%code {
-		color: $type-code-color;
-		padding: $x-pre-code-padding;
-		background: $color-gray-light;
+// 		&.dark {
+// 			color: $color-light;
+// 			background: lighten($color-dark, 10%);
+// 			border-color: $color-dark;
+// 		}
+// 	}
+// }
 
-		@if $x-pre-code-radius {
-			@include border-radius($x-pre-code-radius);
-		}
-	}
+// @include add-theme('pre', $type-pre-theme);
 
-	%kbd {
-		&, &.light {
-			font-family: $type-base-font-family;
-			color: $type-base-color;
-			padding: $x-pre-kbd-padding;
-			background: $color-gray-light;
-			border: 1px solid $color-gray;
-			border-bottom-width: 3px;
+// // Blockquote Theme
+// // ----------------
+// $x-blockquote-border-width: 1px !default;
+// $x-blockquote-footer-prefix: '\2014 \00A0';
 
-			@if $x-pre-kbd-radius {
-				@include border-radius($x-pre-kbd-radius);
-			}
-		}
+// @mixin blockquote-style(
+// 	$style: $type-blockquote-style,
+// 	$theme: $type-blockquote-theme,
+// 	$component: 'blockquote'
+// ) {
+// 	@extend %ext-blockquote-#{$style} !optional;
+// 	@extend %theme-blockquote-#{$theme}%#{$component} !optional;
+// }
 
-		&.dark {
-			color: $color-light;
-			background: lighten($color-dark, 10%);
-			border-color: $color-dark;
-		}
-	}
-}
+// %ext-blockquote-default {
+// 	&, &.left {
+// 		border-style: solid;
+// 		border-width: 0;
+// 		border-left-width: $x-blockquote-border-width;
+// 	}
 
-@include add-theme('pre', $type-pre-theme);
+// 	&.right {
+// 		text-align: right;
+// 		border-left-width: 0;
+// 		border-right-width: $x-blockquote-border-width;
+// 	}
+// }
 
-// Blockquote Theme
-// ----------------
-$x-blockquote-border-width: 1px !default;
-$x-blockquote-footer-prefix: '\2014 \00A0';
+// // TODO: dark theme
+// %theme-blockquote-default {
+// 	%blockquote {	
+// 		border-color: $type-blockquote-border-color;
+// 		color: $type-blockquote-color;
 
-@mixin blockquote-style(
-	$style: $type-blockquote-style,
-	$theme: $type-blockquote-theme,
-	$component: 'blockquote'
-) {
-	@extend %ext-blockquote-#{$style} !optional;
-	@extend %theme-blockquote-#{$theme}%#{$component} !optional;
-}
+// 		footer {
+// 			color: $type-blockquote-footer-color;
 
-%ext-blockquote-default {
-	&, &.left {
-		border-style: solid;
-		border-width: 0;
-		border-left-width: $x-blockquote-border-width;
-	}
+// 			&::before {
+// 				content: '\2014 \00A0';
+// 			}
+// 		}
+// 	}
+// }
 
-	&.right {
-		text-align: right;
-		border-left-width: 0;
-		border-right-width: $x-blockquote-border-width;
-	}
-}
-
-// TODO: dark theme
-%theme-blockquote-default {
-	%blockquote {	
-		border-color: $type-blockquote-border-color;
-		color: $type-blockquote-color;
-
-		footer {
-			color: $type-blockquote-footer-color;
-
-			&::before {
-				content: '\2014 \00A0';
-			}
-		}
-	}
-}
-
-@include add-theme('blockquote', $type-blockquote-theme);
+// @include add-theme('blockquote', $type-blockquote-theme);
 
 
 

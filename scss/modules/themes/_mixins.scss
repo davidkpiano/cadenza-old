@@ -2,20 +2,72 @@
 // Themes Mixins and Functions
 // ===========================
 
-// TODO: use maps (SASS 3.3)
-
-@mixin themes(
-    $themes: $themes
+@mixin style(
+    $component,
+    $subcomponent: false,
+    $style: $style-default,
+    $theme: $theme-default
 ) {
-
-    @each $theme in $themes {
-        $_module: nth($theme, 1);
-        $_theme: 'default';
-
-        @if length($theme) > 1 {
-            $_theme: nth($theme, 2);
-        }
-
-        @extend %theme-#{$_module}-#{$_theme};
+    @if $subcomponent {
+        $subcomponent: -#{$subcomponent};
+    } @else {
+        $subcomponent: '';
     }
+
+    @extend %style-#{$component}-#{$style}#{$subcomponent} !optional;
+    @extend %theme-#{$component}-#{$theme}#{$subcomponent} !optional;
+}
+
+// TODO: add support for rgba() values! (alpha channel)
+@function delta-color(
+    $color,
+    $delta: 10%
+) {
+    @if is-dark($color) {
+        @return darken($color, $delta);
+    } @else {
+        @return lighten($color, $delta);
+    }
+}
+
+@function is-dark($color, $threshold: $theme-lightness-threshold) {
+    @if type-of($color) == color and lightness($color) < $threshold {
+        @return true;
+    } @else {
+        @return false;
+    }
+}
+
+@function foreground-color(
+    $color,
+    $color-light: $color-light,
+    $color-dark: $color-dark,
+    $delta: 0%,
+    $threshold: $theme-lightness-threshold
+) {
+    @if type-of($color) == color {
+        @if lightness($color) > $threshold {
+            @return $color-dark;
+        } @else if lightness($color) <= $threshold {
+            @return $color-light;
+        }
+    } @else {
+        @return inherit;
+    }
+}
+
+@function theme-mode(
+    $color-light,
+    $color-dark,
+    $theme-mode: $theme-mode
+) {
+    @return if($theme-mode == 'light', $color-dark, $color-light);
+}
+
+.theme-light {
+    %text { @extend %theme-text-default-light; }
+    %subtext { @extend %theme-subtext-default-light; }
+    %heading { @extend %theme-heading-default-light; }
+    %subheading { @extend %theme-subheading-default-light; }
+    %anchor { @extend %theme-anchor-default-light; }
 }

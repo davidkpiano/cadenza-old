@@ -230,12 +230,12 @@
     }
 }
 
-%popover-below-left {
-    & { @extend %tooltip-below-left:before; }
+%popover-below-right {
+    & { @extend %tooltip-below-right:before; }
 
     &:after {
-        @extend %tooltip-below-left:after;
-        @include position-absolute(above, $left: $popover-arrow-indent);
+        @extend %tooltip-below-right:after;
+        @include position-absolute(above, $right: $popover-arrow-indent);
     }
 }
 
