@@ -17,14 +17,14 @@ $nav-separator-margin: 0.25rem 0 !default;
 // Navigation Theme
 $nav-bgcolor-light: $color-light !default;
 $nav-bgcolor-dark: $color-primary !default;
+$nav-bgcolor: theme-mode($nav-bgcolor-light, $nav-bgcolor-dark) !default;
 $nav-color-light: $anchor-color-dark !default;
 $nav-color-dark: $anchor-color-light !default;
+$nav-color: theme-mode($nav-color-light, $nav-color-dark) !default;
 
 // Dropdown Settings
 $dropdown-style: default !default;
 $dropdown-theme: default !default;
-$dropdown-color: $nav-color !default;
-$dropdown-bgcolor: $color-white !default;
 $dropdown-border-color: $color-gray-light !default;
 $dropdown-border-width: $form-border-width !default;
 $dropdown-menu-padding: $nav-menu-padding !default;
@@ -42,6 +42,14 @@ $dropdown-min-width: 10rem !default;
 $dropdown-text-align: left !default;
 $dropdown-clip: true !default;
 $dropdown-margin: 0.25rem !default;
+
+// Dropdown Theme
+$dropdown-bgcolor-light: $color-light !default;
+$dropdown-bgcolor-dark: $color-primary !default;
+$dropdown-bgcolor: theme-mode($dropdown-bgcolor-light, $dropdown-bgcolor-dark) !default;
+$dropdown-color-light: $anchor-color-dark !default;
+$dropdown-color-dark: $anchor-color-light !default;
+$dropdown-color: theme-mode($dropdown-color-light, $dropdown-color-dark) !default;
 
 // Tabs Settings
 $tabs-style: default !default;

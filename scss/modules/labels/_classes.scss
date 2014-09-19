@@ -5,6 +5,16 @@
 // Label Classes
 .label {
     @extend %label;
+    @include style('label');
+
+    &.light { @include style('label', 'light'); }
+    &.dark { @include style('label', 'dark'); }
+    &.success { @include style('label', 'success'); }
+    &.warning { @include style('label', 'warning'); }
+    &.failure { @include style('label', 'failure'); }
+
+    &.transparent { @include style('label', 'transparent'); }
+
 
     &.block { @extend %label-block; }
 }
@@ -12,6 +22,16 @@
 // Badge Classes
 .badge {
     @extend %badge;
+
+    @include style('badge');
+
+    &.light { @include style('badge', 'light'); }
+    &.dark { @include style('badge', 'dark'); }
+    &.success { @include style('badge', 'success'); }
+    &.warning { @include style('badge', 'warning'); }
+    &.failure { @include style('badge', 'failure'); }
+
+    &.transparent { @include style('badge', 'transparent'); }
 
     &.top-left { @extend %badge-top-left; }
     &.top-right { @extend %badge-top-right; }
@@ -22,6 +42,11 @@
 // Tooltip Classes
 .tooltip[title], #{prefixed-class('tooltip', $selector: '[title]')} {
     @extend %tooltip;
+    @include style('tooltip');
+
+    // &:before { @extend %tooltip-content; }
+
+    // &:after { @extend %tooltip-arrow; }
 }
 
 .tooltip-above-left { @extend %tooltip-above-left; }
@@ -36,9 +61,9 @@
 .tooltip-right { @extend %tooltip-right; }
 
 // Popover Classes
-.popover, [class*="popover-"] { @extend %popover; }
+// .popover, [class*="popover-"] { @extend %popover; }
 
-.popover-above-left { @extend %popover-above-left; }
-.popover-above-right { @extend %popover-above-right; }
-.popover-below-left { @extend %popover-below-left; }
-.popover-below-right { @extend %popover-below-right; }
+// .popover-above-left { @extend %popover-above-left; }
+// .popover-above-right { @extend %popover-above-right; }
+// .popover-below-left { @extend %popover-below-left; }
+// .popover-below-right { @extend %popover-below-right; }

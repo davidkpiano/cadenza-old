@@ -7,16 +7,17 @@
 
 // Default Nav Theme
 @mixin theme-nav-default(
-    $bgcolor: theme-mode($nav-bgcolor-light, $nav-bgcolor-dark),
-    $color: theme-mode($nav-color-light, $nav-color-dark),
+    $bgcolor: $nav-bgcolor,
+    $color: $nav-color,
     $item-bgcolor: false,
     $item-bgcolor-hover: $bgcolor,
     $item-color: false,
-    $item-color-hover: $color
+    $item-color-hover: $color,
+    $component: 'nav'
 ) { 
-    %nav-menu-item {
+    %#{$component}-menu-item {
         @if $item-color {
-            &, %nav-menu-item-link { color: $item-color; }
+            &, %#{$component}-menu-item-link { color: $item-color; }
         }
 
         @if $item-bgcolor {
@@ -24,13 +25,13 @@
         }
     }
 
-    %nav-menu-item-active {
-        &, %nav-menu-item-link { color: $item-color-hover; }
+    %#{$component}-menu-item-active {
+        &, %#{$component}-menu-item-link { color: $item-color-hover; }
 
         background-color: $item-bgcolor-hover;
     }
 
-    %nav-separator {
+    %#{$component}-separator {
         border-color: white;
     }
 }
@@ -109,56 +110,31 @@ $x-nav-underline-color-inactive: $color-gray-light;
 
 // Dropdown Theme
 // --------------
-@mixin dropdown-style(
-    $style: $dropdown-style,
-    $theme: $dropdown-theme
-) {
-    @extend %ext-dropdown-#{$style} !optional;
-    @extend %theme-dropdown-#{$theme} !optional;
-}
 
 // Default Dropdown Theme
 @mixin theme-dropdown-default(
-    $color: $color-primary,
     $bgcolor: $dropdown-bgcolor,
-    $type-color: foreground-color($bgcolor),
-    $border-color: $dropdown-border-color,
-    $separator-color: $dropdown-separator-color
+    $color: $dropdown-color,
+    $item-bgcolor: false,
+    $item-bgcolor-hover: $bgcolor,
+    $item-link-color: false,
+    $item-link-color-hover: $color,
+    $component: 'dropdown'
 ) {
-    background-color: $bgcolor;
-    border-style: solid;
-    border-color: $border-color;
-    border-width: $dropdown-border-width;
-
-
-    li {
-        border: none;
-
-        &, & > a { color: $type-color; }
-
-        &:hover {
-            // @include foreground-color($color, $component: 'anchor');
-
-            > a { background-color: $color; }
-        }
-
-        &.hr, &.separator {
-            border-bottom-width: $dropdown-separator-width;
-            border-bottom-style: solid;
-            border-bottom-color: $separator-color;
-        }
-    }
-}
-
-%ext-dropdown-default {
-    // @extend %dropdown-container;
+    @include theme-nav-default(
+        $bgcolor,
+        $color,
+        $item-bgcolor,
+        $item-bgcolor-hover,
+        $item-link-color,
+        $item-link-color-hover,
+        $component
+    );
 }
 
 %theme-dropdown-default {
     @include theme-dropdown-default();
 
-    &.primary { @include theme-dropdown-default($color-primary); }
-    &.secondary { @include theme-dropdown-default($color-secondary); }
-    &.light { @include theme-dropdown-default($color-light); }
-    &.dark { @include theme-dropdown-default($color-dark); }
+    &-light { @include theme-dropdown-default($dropdown-bgcolor-light, $dropdown-color-light); }
+    &-dark { @include theme-dropdown-default($dropdown-bgcolor-dark, $dropdown-color-dark); }
 }

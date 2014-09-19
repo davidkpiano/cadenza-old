@@ -45,9 +45,12 @@ nav.horizontal {
 .dropdown-container {
 	@extend %dropdown-container;
 
-	> menu, > .dropdown {
+	> menu {
 		@extend %dropdown;
-		@include dropdown-style();
+		@include style('dropdown');
+
+		&.light { @include style('dropdown', 'light'); }
+		&.dark { @include style('dropdown', 'dark'); }
 
 		ul { @extend %dropdown-menu; }
 
@@ -55,6 +58,12 @@ nav.horizontal {
 			@extend %dropdown-menu-item;
 
 			a { @extend %dropdown-menu-item-link; }
+
+			&:hover, &.active {
+				@extend %dropdown-menu-item-active;
+
+				a:hover { @extend %dropdown-menu-item-link; }
+			}
 		}
 
 		li {

@@ -13,6 +13,11 @@ $label-padding-horizontal: 0.5rem !default;
 $label-radius: $form-radius !default;
 $label-margin: 0 0.5rem !default;
 
+// Label Theme
+$label-bgcolor-light: $color-light !default;
+$label-bgcolor-dark: $color-primary !default;
+$label-bgcolor: theme-mode($label-bgcolor-dark, $label-bgcolor-light) !default;
+
 // Badge Settings
 $badge-style: default !default;
 $badge-theme: default !default;
@@ -25,6 +30,11 @@ $badge-radius: 1rem !default;
 $badge-margin: 0 0.5rem !default;
 $badge-collapse: true !default;
 $badge-z-index: 2 !default;
+
+// Badge Theme
+$badge-bgcolor-light: $label-bgcolor-light !default;
+$badge-bgcolor-dark: $label-bgcolor-dark !default;
+$badge-bgcolor: theme-mode($badge-bgcolor-dark, $badge-bgcolor-light) !default;
 
 // Tooltip Settings
 $tooltip-style: default !default;

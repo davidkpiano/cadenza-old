@@ -4,55 +4,42 @@
 
 // Label Theme
 // -----------
-@mixin label-style(
-	$style: $label-style,
-	$theme: $label-theme
-) {
-	@extend %ext-label-#{$style} !optional;
-	@extend %theme-label-#{$theme} !optional;
-}
-
 @mixin theme-label-default(
-    $color: $color-primary
+    $bgcolor: $label-bgcolor,
+    $component: 'label'
 ) {
-    background-color: $color;
-    color: foregroundColor($color);
+    background-color: $bgcolor;
+
+    @if ($bgcolor == transparent) {
+        // Do nothing
+    } @else {
+        color: foregroundColor($bgcolor);
+    }
 }
 
 %theme-label-default {
-    %label:not(.transparent) { @include theme-label-default(); }
+    @include theme-label-default();
 
-	%label {
-        &.primary { @include theme-label-default($color-primary); }
-        &.secondary { @include theme-label-default($color-secondary); }
-        &.light { @include theme-label-default($color-light); }
-        &.dark { @include theme-label-default($color-dark); }
+    &-light { @include theme-label-default($label-bgcolor-light); }
+    &-dark { @include theme-label-default($label-bgcolor-dark); }
 
-        &.success { @include theme-label-default($color-success); }
-        &.warning { @include theme-label-default($color-warning); }
-        &.failure { @include theme-label-default($color-failure); }
+    &-success { @include theme-label-default($color-success); }
+    &-warning { @include theme-label-default($color-warning); }
+    &-failure { @include theme-label-default($color-failure); }
 
-        &.transparent { @include theme-label-default(transparent); }
-	}
+    &-transparent { @include theme-label-default(transparent); }
 }
-
-@include add-theme('label', $label-theme);
 
 // Badge Theme
 // -----------
-@mixin badge-style(
-    $style: $badge-style,
-    $theme: $badge-theme
-) {
-    @extend %ext-badge-#{$style} !optional;
-    @extend %theme-badge-#{$theme} !optional;
-}
-
 @mixin theme-badge-default(
-    $color: $color-primary
+    $bgcolor: $badge-bgcolor,
+    $component: 'badge'
 ) {
-    background-color: $color;
-    color: foregroundColor($color);
+    @include theme-label-default(
+        $bgcolor,
+        $component
+    );
 }
 
 %ext-badge-default {
@@ -60,37 +47,33 @@
 }
 
 %theme-badge-default {
-    %badge:not(.transparent) { @include theme-badge-default(); }
+    @include theme-badge-default();
 
-    %badge {
-        &.primary { @include theme-badge-default($color-primary); }
-        &.secondary { @include theme-badge-default($color-secondary); }
-        &.light { @include theme-badge-default($color-light); }
-        &.dark { @include theme-badge-default($color-dark); }
+    &-light { @include theme-badge-default($badge-bgcolor-light); }
+    &-dark { @include theme-badge-default($badge-bgcolor-dark); }
 
-        &.success { @include theme-badge-default($color-success); }
-        &.warning { @include theme-badge-default($color-warning); }
-        &.failure { @include theme-badge-default($color-failure); }
+    &-success { @include theme-badge-default($color-success); }
+    &-warning { @include theme-badge-default($color-warning); }
+    &-failure { @include theme-badge-default($color-failure); }
 
-        &.transparent { @include theme-badge-default(transparent); }
-    }
+    &-transparent { @include theme-badge-default(transparent); }
 }
-
-@include add-theme('badge', $badge-theme);
 
 // Tooltip Theme
 // -------------
 @mixin theme-tooltip-default(
-    $color: $color-primary
+    $color: $color-primary,
+    $axis: vertical
 ) {
-    &:before { @include theme-label-default($color); }
-
-    #{prefixed-class('tooltip-above')}, #{prefixed-class('tooltip-below')} {
-        &:after { border-top-color: $color; border-bottom-color: $color; }
+    &-content {
+        @include theme-label-default($color);
     }
 
-    #{prefixed-class('tooltip-left')}, #{prefixed-class('tooltip-right')} {
-        &:after {
+    &-arrow {    
+        @if $axis == vertical {
+            border-top-color: $color;
+            border-bottom-color: $color;
+        } @else if $axis == horizontal {
             border-left-color: $color;
             border-right-color: $color;
         }
@@ -98,18 +81,16 @@
 }
 
 %theme-tooltip-default {
-    %tooltip {
-        @include theme-tooltip-default();
+    @include theme-tooltip-default();
 
-        &.primary { @include theme-tooltip-default($color-primary); }
-        &.secondary { @include theme-tooltip-default($color-secondary); }
-        &.light { @include theme-tooltip-default($color-light); }
-        &.dark { @include theme-tooltip-default($color-dark); }
+    &-primary { @include theme-tooltip-default($color-primary); }
+    &-secondary { @include theme-tooltip-default($color-secondary); }
+    &-light { @include theme-tooltip-default($color-light); }
+    &-dark { @include theme-tooltip-default($color-dark); }
 
-        &.success { @include theme-tooltip-default($color-success); }
-        &.warning { @include theme-tooltip-default($color-warning); }
-        &.failure { @include theme-tooltip-default($color-failure); }
-    }
+    &-success { @include theme-tooltip-default($color-success); }
+    &-warning { @include theme-tooltip-default($color-warning); }
+    &-failure { @include theme-tooltip-default($color-failure); }
 }
 
 @include add-theme('tooltip', $tooltip-theme);
