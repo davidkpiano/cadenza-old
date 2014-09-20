@@ -21,13 +21,32 @@
 // TODO: add support for rgba() values! (alpha channel)
 @function delta-color(
     $color,
+    $type: false,
     $delta: 10%
 ) {
-    @if is-dark($color) {
-        @return darken($color, $delta);
-    } @else {
-        @return lighten($color, $delta);
+    @if type-of($color) == color {
+        @if $type == darken {
+            @return darken($color, $delta);
+        } @else if $type == lighten {
+            @return lighten($color, $delta);
+        } @else {        
+            @if is-dark($color) {
+                @return darken($color, $delta);
+            } @else {
+                @return lighten($color, $delta);
+            }
+        }
     }
+
+    @return false;
+}
+
+@function delta-lighten($color, $delta: 10%) {
+    @return delta-color($color, lighten, $delta);
+}
+
+@function delta-darken($color, $delta: 10%) {
+    @return delta-color($color, darken, $delta);
 }
 
 @function is-dark($color, $threshold: $theme-lightness-threshold) {

@@ -23,7 +23,11 @@
     @include type-scale($button-scale);
     text-align: center;
     text-transform: $button-text-transform;
-    text-decoration: none;
+    text-decoration: $button-decoration;
+}
+
+%button-hover {
+    text-decoration: $button-hover-decoration;
 }
 
 %button-tiny, %buttons-tiny > %button {

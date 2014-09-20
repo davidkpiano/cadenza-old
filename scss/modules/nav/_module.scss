@@ -5,7 +5,6 @@
 // Navigation Settings
 $nav-style: default !default;
 $nav-theme: default !default;
-$nav-color: $anchor-color !default;
 $nav-menu-padding: 0 !default;
 $nav-menu-item-padding: 0 !default;
 $nav-menu-item-link-padding: 0.5rem !default;
@@ -17,10 +16,12 @@ $nav-separator-margin: 0.25rem 0 !default;
 // Navigation Theme
 $nav-bgcolor-light: $color-light !default;
 $nav-bgcolor-dark: $color-primary !default;
-$nav-bgcolor: theme-mode($nav-bgcolor-light, $nav-bgcolor-dark) !default;
+// $nav-bgcolor: theme-mode($nav-bgcolor-light, $nav-bgcolor-dark) !default;
+$nav-bgcolor: transparent !default;
 $nav-color-light: $anchor-color-dark !default;
 $nav-color-dark: $anchor-color-light !default;
-$nav-color: theme-mode($nav-color-light, $nav-color-dark) !default;
+// $nav-color: theme-mode($nav-color-light, $nav-color-dark) !default;
+$nav-color: false !default;
 
 // Dropdown Settings
 $dropdown-style: default !default;

@@ -5,6 +5,15 @@
 // Button Classes
 button, .button, input[type=button], input[type=submit] {
     @extend %button;
+    &:not(.link) { @include style('button'); }
+
+    &:hover { @extend %button-hover; }
+
+    &.primary { @include style('button', 'primary'); }
+    &.secondary { @include style('button', 'secondary'); }
+    &.light { @include style('button', 'light'); }
+    &.dark { @include style('button', 'dark'); }
+    &.link { @include style('button', 'link'); }
 
     // Sized Button Classes
     &.tiny { @extend %button-tiny; }   

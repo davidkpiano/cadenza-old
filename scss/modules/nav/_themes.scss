@@ -10,9 +10,9 @@
     $bgcolor: $nav-bgcolor,
     $color: $nav-color,
     $item-bgcolor: false,
-    $item-bgcolor-hover: $bgcolor,
+    $item-bgcolor-active: $bgcolor,
     $item-color: false,
-    $item-color-hover: $color,
+    $item-color-active: $color,
     $component: 'nav'
 ) { 
     %#{$component}-menu-item {
@@ -26,9 +26,13 @@
     }
 
     %#{$component}-menu-item-active {
-        &, %#{$component}-menu-item-link { color: $item-color-hover; }
+        @if $item-color-active {
+            &, %#{$component}-menu-item-link { color: $item-color-active; }
+        }
 
-        background-color: $item-bgcolor-hover;
+        @if $item-bgcolor-active {
+            background-color: $item-bgcolor-active;
+        }
     }
 
     %#{$component}-separator {

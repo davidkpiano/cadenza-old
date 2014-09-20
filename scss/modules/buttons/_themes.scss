@@ -3,86 +3,62 @@
 // ========================
 
 // Button Theme
-@mixin button-style(
-	$style: $button-style,
-	$theme: $button-theme
-) {
-	@extend %ext-button-#{$style} !optional;
-	@extend %theme-button-#{$theme} !optional;
-}
-
-// Default Button Style and Theme
-
-%ext-button-default {
-	@extend %button;
-	@include transition((border-color, background-color, color));
-}
-
 @mixin theme-button-default(
-	$color: $color-primary,
-	$type-color: foregroundColor($color, $color-default: $color-light),
-	$type-color-hover: $type-color,
-	$bg-color: $color,
-	$bg-color-hover: lighten($bg-color, 5%),
-	$border-color: darken($bg-color, 10%),
-	$border-color-hover: darken($bg-color-hover, 10%)
+	$bgcolor: $button-bgcolor,
+	$color: $button-color,
+	$bgcolor-hover: delta-lighten($bgcolor),
+	$color-hover: $color,
+	$border-color: delta-darken($bgcolor),
+	$border-color-hover: delta-darken($bgcolor-hover)
 ) {
-	@if $color == transparent {
-		background-color: transparent;
-		border: none;
-	} @else {
-		&, & > * { color: $type-color; }
-		
-		background-color: $bg-color;
-		border-color: $border-color;
+	@debug $bgcolor;
+	@debug $color;
+	@if $border-color { border-color: $border-color; }
+	@if $bgcolor { background-color: $bgcolor; }
+	@if $color {
+		&, & > * { color: $color; }
+	}
 
-		&:disabled {
-			color: $type-color !important;
-			background-color: $bg-color !important;
-			border-color: $border-color !important;
+	&:disabled {
+		// TODO
+		@if $border-color { border-color: $border-color !important; }
+		@if $bgcolor { background-color: $bgcolor !important; }
+		@if $color {
+			&, & > * { color: $color; }
 		}
+	}
 
-		&:hover, &:active {
-			color: $type-color-hover;
-			background-color: $bg-color-hover;
-			border-color: $border-color-hover;
+	&:hover, &:active {
+		@if $border-color-hover { border-color: $border-color-hover; }
+		@if $bgcolor-hover { background-color: $bgcolor-hover; }
+		@if $color-hover {
+			&, & > * { color: $color-hover; }
 		}
+	}
 
-		&:focus {
-			outline: 1px solid white;
-			outline-offset: -2px;
-		}
+	&:focus {
+		outline: 1px solid white;
+		outline-offset: -2px;
+	}
 
-		&:active {
-			// TODO
-		}
+	&:active {
+		// TODO
 	}
 }
 
 %theme-button-default {
-	%button {
-		@include transition((border-color, background-color, color));
-		@include theme-button-default;
+	@include transition((border-color, background-color, color));
+	@include theme-button-default();
 
-		&.primary { @include theme-button-default($color-primary); }
-		&.secondary { @include theme-button-default($color-secondary); }
-		&.light { @include theme-button-default($color-light); }
-		&.dark { @include theme-button-default($color-dark); }
-	}
+	&-primary { @include theme-button-default($color-primary); }
+	&-secondary { @include theme-button-default($color-secondary); }
+	&-light { @include theme-button-default($button-bgcolor-light, $button-color-light); }
+	&-dark { @include theme-button-default($button-bgcolor-dark, $button-color-dark); }
 
-	// Link style
-	%button.link {
-		@include theme-button-default(transparent, $bg-color-hover: transparent, $border-color: transparent, $border-color-hover: transparent);
-	}
+	&-link { @include theme-button-default(false, false); }
 }
-
-@include add-theme('button', $button-theme);
 
 // Transparent Button Style and Theme
-%ext-button-transparent {
-	@extend %button;
-	@include transition((border-color, background-color, color));
-}
 
 @mixin theme-button-transparent($color: $color-primary, $color-text: $color) {
 	background-color: transparent;
@@ -103,13 +79,11 @@
 }
 
 %theme-button-transparent {
-	%button {
-		@include theme-button-transparent;
+	@include theme-button-transparent();
 
-		&.primary { @include theme-button-transparent($color-primary); }
-		&.secondary { @include theme-button-transparent($color-secondary); }
-		&.light { @include theme-button-transparent($color-light); }
-		&.dark { @include theme-button-transparent($color-dark); }
-	}
+	&-primary { @include theme-button-transparent($color-primary); }
+	&-secondary { @include theme-button-transparent($color-secondary); }
+	&-light { @include theme-button-transparent($color-light); }
+	&-dark { @include theme-button-transparent($color-dark); }
 }
 

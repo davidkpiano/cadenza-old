@@ -16,6 +16,10 @@ $button-transition-duration: 0.3s !default;
 $button-icon-margin: 0.5rem !default;
 $button-disabled-opacity: 0.5 !default;
 $button-disabled-cursor: not-allowed !default;
+$button-decoration: none !default;
+
+// Hover Button Settings
+$button-hover-decoration: none !default;
 
 // Sized Button Settings
 $button-tiny-padding: 0.25rem 0.5rem !default;
@@ -29,6 +33,14 @@ $button-huge-scale: $button-scale + 2 !default;
 
 // Button Group Settings
 $button-group-margin: $button-margin !default;
+
+// Button Theme Settings
+$button-bgcolor-light: $color-light !default;
+$button-bgcolor-dark: $color-dark !default;
+$button-bgcolor: $color-primary !default;
+$button-color-light: $anchor-color-dark !default;
+$button-color-dark: $anchor-color-light !default;
+$button-color: if(is-dark($button-bgcolor), $button-color-dark, $button-color-light) !default;
 
 // Imports
 @import
