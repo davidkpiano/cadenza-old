@@ -127,11 +127,11 @@
 }
 
 %strong {
-	font-weight: bold;
+	font-weight: bold !important;
 }
 
 %weak {
-	font-weight: normal;
+	font-weight: normal !important;
 }
 
 %em {
@@ -316,6 +316,35 @@
 
 %hr-dotted {
     border-style: dotted;
+}
+
+%hr-thick {
+    border-top-width: $hr-border-width-thick;
+}
+
+%hr-thin {
+    border-top-width: $hr-border-width-thin;
+}
+
+%hr-small {
+    width: $hr-width-small;
+}
+
+%hr-large {
+    width: $hr-width-large;
+}
+
+%hr-left {
+    margin-right: auto;
+}
+
+%hr-right {
+    margin-left: auto;
+}
+
+%hr-center {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 // Lists

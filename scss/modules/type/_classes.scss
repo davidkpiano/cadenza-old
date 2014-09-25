@@ -21,21 +21,26 @@ body, .type-primary { @extend %type-primary; }
 // Headings
 // --------
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, h2, h3, h4, h5, h6, #{prefixed-class('h')} {
 	@extend %heading;
 }
 
 @each $type-heading in $type-headings {
+	// TODO: use maps
 	$heading-selector: nth($type-heading, 1);
+	$heading-index: nth($type-heading, 2);
 
-	#{$heading-selector}, .#{$heading-selector} {
+	#{$heading-selector}, .h-#{$heading-index} {
 		@extend %#{$heading-selector};
+
+		&.double { @extend %#{$heading-selector}-double; }
+	}
+
+	#{$heading-selector}, #{prefixed-class('h')} {
 		@include style('heading');
 
 		&.color-light { @include style('heading', 'light'); }
 		&.color-dark { @include style('heading', 'dark'); }
-
-		&.double { @extend %#{$heading-selector}-double; }
 
 		&.inline { @extend %heading-inline; }
 
@@ -168,10 +173,20 @@ q {
 
 // Horizontal Rules
 // ----------------
-hr, .hr {
+hr {
 	@extend %hr;
 
 	&.dotted { @extend %hr-dotted; }
+
+	&.thick { @extend %hr-thick; }
+	&.thin { @extend %hr-thin; }
+
+	&.small { @extend %hr-small; }
+	&.large { @extend %hr-large; }
+
+	&.left { @extend %hr-left; }
+	&.right { @extend %hr-right; }
+	&.center { @extend %hr-center; }
 }
 
 // Lists

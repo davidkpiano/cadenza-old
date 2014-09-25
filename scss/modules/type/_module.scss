@@ -90,7 +90,11 @@ $type-blockquote-margin-bottom: 1rem !default;
 
 // Horizontal Rule
 $hr-margin: 1rem 0 !default;
-$hr-border-width: 1px !default;
+$hr-border-width: 2px !default;
+$hr-border-width-thin: $hr-border-width / 2 !default;
+$hr-border-width-thick: $hr-border-width * 2 !default;
+$hr-width-small: 3rem !default;
+$hr-width-large: $hr-width-small * 2 !default;
 $hr-border-style: solid !default;
 
 // Lists

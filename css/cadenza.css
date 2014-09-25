@@ -9838,7 +9838,7 @@ body, .type-primary {
 }
 
 /* line 45, ../scss/modules/type/_components.scss */
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, h2, h3, h4, h5, h6, .h, [class*=" h-"], [class^="h-"] {
   line-height: 1.2;
   font-weight: 300;
   font-style: normal;
@@ -9847,29 +9847,29 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   margin-bottom: 1rem;
 }
 /* line 53, ../scss/modules/type/_components.scss */
-h1:only-child, .h1:only-child, h2:only-child, .h2:only-child, h3:only-child, .h3:only-child, h4:only-child, .h4:only-child, h5:only-child, .h5:only-child, h6:only-child, .h6:only-child {
+h1:only-child, h2:only-child, h3:only-child, h4:only-child, h5:only-child, h6:only-child, .h:only-child, [class*=" h-"]:only-child, [class^="h-"]:only-child {
   margin-bottom: 0;
 }
 
 /* line 56, ../scss/modules/type/_components.scss */
-h1.inline, .h1.inline, h2.inline, .h2.inline, h3.inline, .h3.inline, h4.inline, .h4.inline, h5.inline, .h5.inline, h6.inline, .h6.inline {
+h1.inline, .h.inline, [class*=" h-"].inline, [class^="h-"].inline, h2.inline, h3.inline, h4.inline, h5.inline, h6.inline {
   display: inline-block;
   margin-bottom: 0;
   margin-top: 0;
 }
 
 /* line 63, ../scss/modules/type/_components.scss */
-h1 > small, h1 > .small, .h1 > small, .h1 > .small, h2 > small, h2 > .small, .h2 > small, .h2 > .small, h3 > small, h3 > .small, .h3 > small, .h3 > .small, h4 > small, h4 > .small, .h4 > small, .h4 > .small, h5 > small, h5 > .small, .h5 > small, .h5 > .small, h6 > small, h6 > .small, .h6 > small, .h6 > .small {
+h1 > small, h1 > .small, .h > small, .h > .small, [class*=" h-"] > small, [class*=" h-"] > .small, [class^="h-"] > small, [class^="h-"] > .small, h2 > small, h2 > .small, h3 > small, h3 > .small, h4 > small, h4 > .small, h5 > small, h5 > .small, h6 > small, h6 > .small {
   font-size: 74.13723%;
 }
 
 /* line 67, ../scss/modules/type/_components.scss */
-h1 > .large, .h1 > .large, h2 > .large, .h2 > .large, h3 > .large, .h3 > .large, h4 > .large, .h4 > .large, h5 > .large, .h5 > .large, h6 > .large, .h6 > .large {
+h1 > .large, .h > .large, [class*=" h-"] > .large, [class^="h-"] > .large, h2 > .large, h3 > .large, h4 > .large, h5 > .large, h6 > .large {
   font-size: 134.885%;
 }
 
 /* line 71, ../scss/modules/type/_components.scss */
-h1.double, .h1.double, h2.double, .h2.double, h3.double, .h3.double, h4.double, .h4.double, h5.double, .h5.double, h6.double, .h6.double {
+h1.double, .h-1.double, h2.double, .h-2.double, h3.double, .h-3.double, h4.double, .h-4.double, h5.double, .h-5.double, h6.double, .h-6.double {
   font-weight: 300;
 }
 
@@ -9890,73 +9890,73 @@ hgroup > * {
 }
 
 /* line 93, ../scss/modules/type/_components.scss */
-h1, .h1 {
+h1, .h-1 {
   font-size: 33.80875px ;
   font-size: 2.11305rem ;
 }
 
 /* line 97, ../scss/modules/type/_components.scss */
-h1.double, .h1.double {
+h1.double, .h-1.double {
   font-size: 67.6175px ;
   font-size: 4.22609rem ;
 }
 
 /* line 93, ../scss/modules/type/_components.scss */
-h2, .h2 {
+h2, .h-2 {
   font-size: 29.11034px ;
   font-size: 1.8194rem ;
 }
 
 /* line 97, ../scss/modules/type/_components.scss */
-h2.double, .h2.double {
+h2.double, .h-2.double {
   font-size: 58.22068px ;
   font-size: 3.63879rem ;
 }
 
 /* line 93, ../scss/modules/type/_components.scss */
-h3, .h3 {
+h3, .h-3 {
   font-size: 25.06487px ;
   font-size: 1.56655rem ;
 }
 
 /* line 97, ../scss/modules/type/_components.scss */
-h3.double, .h3.double {
+h3.double, .h-3.double {
   font-size: 50.12974px ;
   font-size: 3.13311rem ;
 }
 
 /* line 93, ../scss/modules/type/_components.scss */
-h4, .h4 {
+h4, .h-4 {
   font-size: 21.5816px ;
   font-size: 1.34885rem ;
 }
 
 /* line 97, ../scss/modules/type/_components.scss */
-h4.double, .h4.double {
+h4.double, .h-4.double {
   font-size: 43.1632px ;
   font-size: 2.6977rem ;
 }
 
 /* line 93, ../scss/modules/type/_components.scss */
-h5, .h5 {
+h5, .h-5 {
   font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
 
 /* line 97, ../scss/modules/type/_components.scss */
-h5.double, .h5.double {
+h5.double, .h-5.double {
   font-size: 37.1648px ;
   font-size: 2.3228rem ;
 }
 
 /* line 93, ../scss/modules/type/_components.scss */
-h6, .h6 {
+h6, .h-6 {
   font-size: 16px ;
   font-size: 1rem ;
 }
 
 /* line 97, ../scss/modules/type/_components.scss */
-h6.double, .h6.double {
+h6.double, .h-6.double {
   font-size: 32px ;
   font-size: 2rem ;
 }
@@ -9997,12 +9997,12 @@ small, .small {
 
 /* line 129, ../scss/modules/type/_components.scss */
 strong, b, .strong {
-  font-weight: bold;
+  font-weight: bold !important;
 }
 
 /* line 133, ../scss/modules/type/_components.scss */
 .weak {
-  font-weight: normal;
+  font-weight: normal !important;
 }
 
 /* line 137, ../scss/modules/type/_components.scss */
@@ -10199,13 +10199,13 @@ q.low-single::after {
 }
 
 /* line 304, ../scss/modules/type/_components.scss */
-hr, .hr {
+hr {
   clear: both;
   height: 0;
   margin: 1rem 0;
   margin-left: 0;
   margin-right: 0;
-  border-top-width: 1px;
+  border-top-width: 2px;
   border-top-style: solid;
   border-bottom-width: 0;
   border-left-width: 0;
@@ -10213,68 +10213,104 @@ hr, .hr {
 }
 
 /* line 317, ../scss/modules/type/_components.scss */
-hr.dotted, .hr.dotted {
+hr.dotted {
   border-style: dotted;
 }
 
-/* line 323, ../scss/modules/type/_components.scss */
+/* line 321, ../scss/modules/type/_components.scss */
+hr.thick {
+  border-top-width: 4px;
+}
+
+/* line 325, ../scss/modules/type/_components.scss */
+hr.thin {
+  border-top-width: 1px;
+}
+
+/* line 329, ../scss/modules/type/_components.scss */
+hr.small {
+  width: 3rem;
+}
+
+/* line 333, ../scss/modules/type/_components.scss */
+hr.large {
+  width: 6rem;
+}
+
+/* line 337, ../scss/modules/type/_components.scss */
+hr.left {
+  margin-right: auto;
+}
+
+/* line 341, ../scss/modules/type/_components.scss */
+hr.right {
+  margin-left: auto;
+}
+
+/* line 345, ../scss/modules/type/_components.scss */
+hr.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 352, ../scss/modules/type/_components.scss */
 ul.unstyled, ul.inline, ul, ol, dl {
   list-style-position: outside;
   margin-bottom: 1rem;
   padding: 0;
 }
-/* line 337, ../scss/modules/type/_components.scss */
+/* line 366, ../scss/modules/type/_components.scss */
 ul.unstyled {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 343, ../scss/modules/type/_components.scss */
+/* line 372, ../scss/modules/type/_components.scss */
 ul.inline {
   margin-left: 0;
 }
-/* line 347, ../scss/modules/type/_components.scss */
+/* line 376, ../scss/modules/type/_components.scss */
 ul.inline li {
   display: inline-block;
   padding-right: 0 1rem 0 0;
 }
 
-/* line 354, ../scss/modules/type/_components.scss */
+/* line 383, ../scss/modules/type/_components.scss */
 ul {
   margin-left: 1rem;
 }
 
-/* line 360, ../scss/modules/type/_components.scss */
+/* line 389, ../scss/modules/type/_components.scss */
 ul.square {
   list-style-type: square;
 }
 
-/* line 361, ../scss/modules/type/_components.scss */
+/* line 390, ../scss/modules/type/_components.scss */
 ul.circle {
   list-style-type: circle;
 }
 
-/* line 362, ../scss/modules/type/_components.scss */
+/* line 391, ../scss/modules/type/_components.scss */
 ul.disc {
   list-style-type: disc;
 }
 
-/* line 363, ../scss/modules/type/_components.scss */
+/* line 392, ../scss/modules/type/_components.scss */
 ul.no-bullet {
   list-style-type: none;
 }
 
-/* line 365, ../scss/modules/type/_components.scss */
+/* line 394, ../scss/modules/type/_components.scss */
 ol {
   margin-left: 1.4rem;
 }
 
-/* line 374, ../scss/modules/type/_components.scss */
+/* line 403, ../scss/modules/type/_components.scss */
 dl dt {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-/* line 379, ../scss/modules/type/_components.scss */
+/* line 408, ../scss/modules/type/_components.scss */
 dl dd {
   margin-bottom: 0.5rem;
 }
@@ -10306,20 +10342,20 @@ body, p, li, span {
 }
 
 /* line 23, ../scss/modules/type/_themes.scss */
-h6, .h6 {
+h6, .h-6 {
   text-transform: uppercase;
 }
 
 /* line 28, ../scss/modules/type/_themes.scss */
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+h1, .h, [class*=" h-"], [class^="h-"], h2, h3, h4, h5, h6 {
   color: #363636;
 }
 /* line 31, ../scss/modules/type/_themes.scss */
-.theme-light h1, .theme-light .h1, .theme-light h2, .theme-light .h2, .theme-light h3, .theme-light .h3, .theme-light h4, .theme-light .h4, .theme-light h5, .theme-light .h5, .theme-light h6, .theme-light .h6, .hover-theme-light:hover h1, .hover-theme-light:hover .h1, .hover-theme-light:hover h2, .hover-theme-light:hover .h2, .hover-theme-light:hover h3, .hover-theme-light:hover .h3, .hover-theme-light:hover h4, .hover-theme-light:hover .h4, .hover-theme-light:hover h5, .hover-theme-light:hover .h5, .hover-theme-light:hover h6, .hover-theme-light:hover .h6, h1.color-light, .h1.color-light, h2.color-light, .h2.color-light, h3.color-light, .h3.color-light, h4.color-light, .h4.color-light, h5.color-light, .h5.color-light, h6.color-light, .h6.color-light {
+.theme-light h1, .theme-light h2, .theme-light h3, .theme-light h4, .theme-light h5, .theme-light h6, .theme-light .h, .theme-light [class*=" h-"], .theme-light [class^="h-"], .hover-theme-light:hover h1, .hover-theme-light:hover h2, .hover-theme-light:hover h3, .hover-theme-light:hover h4, .hover-theme-light:hover h5, .hover-theme-light:hover h6, .hover-theme-light:hover .h, .hover-theme-light:hover [class*=" h-"], .hover-theme-light:hover [class^="h-"], h1.color-light, .h.color-light, [class*=" h-"].color-light, [class^="h-"].color-light, h2.color-light, h3.color-light, h4.color-light, h5.color-light, h6.color-light {
   color: #EFEFEF;
 }
 /* line 32, ../scss/modules/type/_themes.scss */
-.theme-dark h1, .theme-dark .h1, .theme-dark h2, .theme-dark .h2, .theme-dark h3, .theme-dark .h3, .theme-dark h4, .theme-dark .h4, .theme-dark h5, .theme-dark .h5, .theme-dark h6, .theme-dark .h6, .hover-theme-dark:hover h1, .hover-theme-dark:hover .h1, .hover-theme-dark:hover h2, .hover-theme-dark:hover .h2, .hover-theme-dark:hover h3, .hover-theme-dark:hover .h3, .hover-theme-dark:hover h4, .hover-theme-dark:hover .h4, .hover-theme-dark:hover h5, .hover-theme-dark:hover .h5, .hover-theme-dark:hover h6, .hover-theme-dark:hover .h6, h1.color-dark, .h1.color-dark, h2.color-dark, .h2.color-dark, h3.color-dark, .h3.color-dark, h4.color-dark, .h4.color-dark, h5.color-dark, .h5.color-dark, h6.color-dark, .h6.color-dark {
+.theme-dark h1, .theme-dark h2, .theme-dark h3, .theme-dark h4, .theme-dark h5, .theme-dark h6, .theme-dark .h, .theme-dark [class*=" h-"], .theme-dark [class^="h-"], .hover-theme-dark:hover h1, .hover-theme-dark:hover h2, .hover-theme-dark:hover h3, .hover-theme-dark:hover h4, .hover-theme-dark:hover h5, .hover-theme-dark:hover h6, .hover-theme-dark:hover .h, .hover-theme-dark:hover [class*=" h-"], .hover-theme-dark:hover [class^="h-"], h1.color-dark, .h.color-dark, [class*=" h-"].color-dark, [class^="h-"].color-dark, h2.color-dark, h3.color-dark, h4.color-dark, h5.color-dark, h6.color-dark {
   color: #363636;
 }
 
