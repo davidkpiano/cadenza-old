@@ -44,6 +44,18 @@
     @extend %tooltip;
     @include style('tooltip');
 
+    &:before { @extend %tooltip-content; }
+    &:after { @extend %tooltip-arrow; }
+
+    &.light { @include style('tooltip', 'light'); }
+    &.dark { @include style('tooltip', 'dark'); }
+    &.primary { @include style('tooltip', 'primary'); }
+    &.secondary { @include style('tooltip', 'secondary'); }
+
+    &.success { @include style('tooltip', 'success'); }
+    &.warning { @include style('tooltip', 'warning'); }
+    &.failure { @include style('tooltip', 'failure'); }
+
     // &:before { @extend %tooltip-content; }
 
     // &:after { @extend %tooltip-arrow; }

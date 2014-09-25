@@ -33,6 +33,16 @@ button, .button, input[type=button], input[type=submit] {
     &:disabled { @extend %button-disabled; }
 }
 
+button.box, .button-box {
+    @extend %button-box;
+
+    > span {
+        @extend %button-box-content;
+
+        &.inactive { @extend %button-box-content-inactive; }
+    }
+}
+
 // Button Parent Classes
 .buttons-tiny { @extend %buttons-tiny; }
 .buttons-small { @extend %buttons-small; }

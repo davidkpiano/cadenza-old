@@ -26,6 +26,21 @@
     text-decoration: $button-decoration;
 }
 
+%button-box {
+    padding: 0;
+
+    &-content {    
+        display: inline-block;
+        padding: $button-padding;
+
+        &-inactive {
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    }
+}
+
 %button-hover {
     text-decoration: $button-hover-decoration;
 }

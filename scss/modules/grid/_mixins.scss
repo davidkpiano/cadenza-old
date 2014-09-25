@@ -48,7 +48,7 @@
 	$gutter: false
 ) {
 	@include mq($media) {
-		width: column-width($columns, $gutter: $gutter);
+		width: column-width($columns, $gutter: $gutter) !important;
 
 		@if $gutter {
 			margin-right: $gutter;
@@ -118,7 +118,7 @@
 	$position: false
 ) {
 	@include mq($media) {
-		height: row-height($rows);
+		height: row-height($rows) !important;
 	}
 }
 

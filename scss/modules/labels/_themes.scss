@@ -30,25 +30,15 @@
     &-transparent { @include theme-label-default(transparent); }
 }
 
-// Badge Theme
-// -----------
-@mixin theme-badge-default(
-    $bgcolor: $badge-bgcolor,
-    $component: 'badge'
-) {
-    @include theme-label-default(
-        $bgcolor,
-        $component
-    );
-}
-
-%ext-badge-default {
-    // No changes
+@mixin theme-badge-default($args...) {
+    @include theme-label-default($args...);
 }
 
 %theme-badge-default {
     @include theme-badge-default();
 
+    &-primary { @include theme-badge-default($color-primary); }
+    &-secondary { @include theme-badge-default($color-secondary); }
     &-light { @include theme-badge-default($badge-bgcolor-light); }
     &-dark { @include theme-badge-default($badge-bgcolor-dark); }
 
@@ -92,8 +82,6 @@
     &-warning { @include theme-tooltip-default($color-warning); }
     &-failure { @include theme-tooltip-default($color-failure); }
 }
-
-@include add-theme('tooltip', $tooltip-theme);
 
 // Popover Theme
 // -------------

@@ -7,6 +7,7 @@
 $grid-fractions: (half, 3rd, 4th, 5th, 6th, 7th, 8th, 9th);
 $grid-content-padding: 1rem !default;
 $grid-content-padding-small: $grid-content-padding / 2 !default;
+$grid-content-padding-large: $grid-content-padding * 2 !default;
 
 // Horizontal Grid Settings
 $grid-column-selector: ".col, [class*=\"col-\"]" !default;

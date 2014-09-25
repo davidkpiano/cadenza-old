@@ -30,6 +30,20 @@
     padding-right: $grid-content-padding-small;
 }
 
+%pad-large {
+	padding: $grid-content-padding-large;
+}
+
+%pad-vertical-large {
+    padding-top: $grid-content-padding-large;
+    padding-bottom: $grid-content-padding-large;
+}
+
+%pad-horizontal-large {
+    padding-left: $grid-content-padding-large;
+    padding-right: $grid-content-padding-large;
+}
+
 %pad-none {
 	padding: 0 !important;
 }
@@ -75,17 +89,31 @@
 				}
 			}
 
-			%columns-#{$i}#{$suffix} > * {
-				@extend %column-#{$i}#{$suffix};
-				height: auto;
+			%columns-#{$i}#{$suffix} {
+				> * {				
+					@extend %column-#{$i}#{$suffix};
+					height: auto;
 
-				@if $i > 0 and round($grid-columns / $i) == $grid-columns / $i {
-					&:nth-child(n+1) {
-						clear: none;
+					@if $i > 0 and round($grid-columns / $i) == $grid-columns / $i {
+						&:nth-child(n+1) {
+							clear: none;
+						}
+
+						&:nth-child(#{$grid-columns / $i}n + 1) {
+							clear: left;
+						}
 					}
+				}
 
-					&:nth-child(#{$grid-columns / $i}n + 1) {
-						clear: left;
+				&-bordered > * {
+					@if $i > 0 and round($grid-columns / $i) == $grid-columns / $i {
+						&:not(:nth-child(#{$grid-columns / $i}n + 1)) {
+							border-left-width: 0 !important;
+						}
+
+						&:nth-child(n+#{($grid-columns / $i)+1}) {
+							border-top-width: 0 !important;
+						}
 					}
 				}
 			}
@@ -254,16 +282,6 @@
 
 			%rows-#{$i}#{$suffix} > * {
 				@extend %row-#{$i}#{$suffix};
-
-				@if $i > 0 and round($grid-rows / $i) == $grid-rows / $i {
-					&:nth-child(n+1) {
-						clear: none;
-					}
-
-					&:nth-child(#{$grid-rows / $i}n + 1) {
-						clear: left;
-					}
-				}
 			}
 
 			// %row-offset-#{$i}#{$suffix} {
@@ -311,14 +329,6 @@
 
 			%rows-#{$fraction}#{$suffix} > * {
 				@extend %row-#{$fraction}#{$suffix};
-
-				&:nth-child(n+1) {
-					clear: none;
-				}
-
-				&:nth-child(#{$denominator}n+1) {
-					clear: left;
-				}
 			}
 
 			// %row-offset-#{$fraction}#{$suffix} {

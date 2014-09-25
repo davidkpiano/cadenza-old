@@ -65,7 +65,7 @@
 // Transition classes
 .hover-all { @extend %hover-all; }
 
-#{prefixed-class('transition')} { @extend %transition; }
+#{prefixed-class('transition')}, #{prefixed-class('hover')} { @extend %transition; }
 
 .transition-lighten { @extend %transition-lighten; }
 .hover-lighten { @extend %hover-lighten; }

@@ -12,6 +12,10 @@
 .pad-vertical-small { @extend %pad-vertical-small; }
 .pad-horizontal-small { @extend %pad-horizontal-small; }
 
+.pad-large { @extend %pad-large; }
+.pad-vertical-large { @extend %pad-vertical-large; }
+.pad-horizontal-large { @extend %pad-horizontal-large; }
+
 .no-pad, .pad-none { @extend %pad-none; }
 .pad-vertical-none { @extend %pad-vertical-none; }
 .pad-horizontal-none { @extend %pad-horizontal-none; }
@@ -44,6 +48,10 @@
 
 		.cols-#{$i}#{$suffix}, .columns-#{$i}#{$suffix} {
 			@extend %columns-#{$i}#{$suffix};
+
+			&.cols-bordered {
+				@extend %columns-#{$i}#{$suffix}-bordered !optional;
+			}
 		}
 
 		.cols-gutter-#{$i}#{$suffix}, .columns-gutter-#{$i}#{$suffix} {

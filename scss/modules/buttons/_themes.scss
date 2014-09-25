@@ -11,8 +11,6 @@
 	$border-color: delta-darken($bgcolor),
 	$border-color-hover: delta-darken($bgcolor-hover)
 ) {
-	@debug $bgcolor;
-	@debug $color;
 	@if $border-color { border-color: $border-color; }
 	@if $bgcolor { background-color: $bgcolor; }
 	@if $color {

@@ -82,11 +82,3 @@
 ) {
     @return if($theme-mode == 'light', $color-dark, $color-light);
 }
-
-.theme-light {
-    %text { @extend %theme-text-default-light; }
-    %subtext { @extend %theme-subtext-default-light; }
-    %heading { @extend %theme-heading-default-light; }
-    %subheading { @extend %theme-subheading-default-light; }
-    %anchor { @extend %theme-anchor-default-light; }
-}

@@ -32,11 +32,11 @@ app.controller('ComponentController', [function() {
         range: function(quantity) {
             return _.range(quantity);
         }
-    }
+    };
 
     this.grid = {
         parentClass: ''
-    }
+    };
 
     this.tooltips = {
         positions: [
@@ -50,5 +50,9 @@ app.controller('ComponentController', [function() {
             'right'
         ],
         position: 'above-right'
-    }
+    };
+
+    this.range = function(quantity) {
+        return _.range(quantity);
+    };
 }]);

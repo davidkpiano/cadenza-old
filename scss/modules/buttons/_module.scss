@@ -38,8 +38,8 @@ $button-group-margin: $button-margin !default;
 $button-bgcolor-light: $color-light !default;
 $button-bgcolor-dark: $color-dark !default;
 $button-bgcolor: $color-primary !default;
-$button-color-light: $anchor-color-dark !default;
-$button-color-dark: $anchor-color-light !default;
+$button-color-light: $text-color-dark !default;
+$button-color-dark: $text-color-light !default;
 $button-color: if(is-dark($button-bgcolor), $button-color-dark, $button-color-light) !default;
 
 // Imports

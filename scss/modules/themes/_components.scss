@@ -75,7 +75,7 @@
     }
 
     %color-#{$color-name} {
-        &, p, li, span { color: $color-value; }
+        &, p, li, span { color: $color-value !important; }
     }
 
     %border-#{$color-name} {

@@ -5,7 +5,7 @@
 // Theme Classes
 @each $color-name, $color-value in $colors {
 
-    .bg-#{$color-name} {
+    .bg-#{$color-name}, .hover-bg-#{$color-name}:hover {
         @extend %background-#{$color-name};
     }
 
@@ -31,3 +31,20 @@
 .borders-outside-vertical { @extend %borders-outside-vertical; }
 .borders-inside-horizontal { @extend %borders-inside-horizontal; }
 .borders-outside-horizontal { @extend %borders-outside-horizontal; }
+
+// Themes
+.theme-light, .hover-theme-light:hover {
+    %text { @extend %theme-text-default-light; }
+    %subtext { @extend %theme-subtext-default-light; }
+    %heading { @extend %theme-heading-default-light; }
+    %subheading { @extend %theme-subheading-default-light; }
+    %anchor { @extend %theme-anchor-default-light; }
+}
+
+.theme-dark, .hover-theme-dark:hover {
+    %text { @extend %theme-text-default-dark; }
+    %subtext { @extend %theme-subtext-default-dark; }
+    %heading { @extend %theme-heading-default-dark; }
+    %subheading { @extend %theme-subheading-default-dark; }
+    %anchor { @extend %theme-anchor-default-dark; }
+}

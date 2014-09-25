@@ -91,7 +91,11 @@
         pointer-events: none;
     }
 
-    &:before {
+    &-content {
+        color: green;
+    }
+
+    &-content, &:before {
         @include type-scale($tooltip-scale);
         white-space: nowrap;
         overflow: hidden;
@@ -111,7 +115,7 @@
         content: attr(title);
     }
 
-    &:after {
+    &-arrow, &:after {
         content: '';
     }
 }
