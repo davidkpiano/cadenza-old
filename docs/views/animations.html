@@ -11,12 +11,12 @@
 </div>
 <div class="field">
     <select name="component.animations.type" ng-model="component.animations.type">
-        <option value="{{type}}" ng-repeat="type in ['fade','scaleUp','scaleDown', 'scaleUpDown', 'scaleDownUp','slideUp','slideDown','slideLeft','slideRight','flipLeft','shiftUp','shiftDown','shiftLeft','shiftRight']">{{type}}</option>
+        <option value="{{type}}" ng-repeat="type in ['fade','fadeIn', 'scaleUp','scaleDown', 'scaleUpDown', 'scaleDownUp','slideUp','slideDown','slideLeft','slideRight','flipLeft','shiftUp','shiftDown','shiftLeft','shiftRight']">{{type}}</option>
     </select>
 </div>
 <div class="row-6">
     <div class="col-6 col-center activate-all-{{component.animations.type}}" ng-class="{'delay-all': component.animations.delay}" style="overflow:hidden">
-        <div class="page theme-{{color}} content" ng-repeat="color in ['primary','secondary','light','dark']" ng-class="component.animations.page == color ? 'ng-enter' : 'ng-leave'">
+        <div class="page bg-{{color}} content" ng-repeat="color in ['primary','secondary','light','dark']" ng-class="component.animations.page == color ? 'ng-enter' : 'ng-leave'">
             <h3>Page <small>.theme-{{color}}</small></h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, consequatur aliquam <a href="#">corporis</a> quisquam a fuga dolores et deleniti veritatis amet nesciunt eos adipisci illo totam inventore accusantium at aspernatur incidunt.</p>
         </div>

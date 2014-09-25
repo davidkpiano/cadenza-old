@@ -97,6 +97,11 @@ $hr-width-small: 3rem !default;
 $hr-width-large: $hr-width-small * 2 !default;
 $hr-border-style: solid !default;
 
+// Horizontal Rule Theme
+$hr-color-light: $color-light !default;
+$hr-color-dark: $color-dark !default;
+$hr-color: theme-mode($color-light, $color-dark) !default;
+
 // Lists
 $type-list-position: outside !default;
 $type-list-margin-bottom: 1rem !default;

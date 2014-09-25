@@ -175,6 +175,12 @@ q {
 // ----------------
 hr {
 	@extend %hr;
+	@include style('hr');
+
+	&.light { @include style('hr', 'light'); }
+	&.dark { @include style('hr', 'dark'); }
+	&.lighten { @include style('hr', 'lighten'); }
+	&.darken { @include style('hr', 'darken'); }
 
 	&.dotted { @extend %hr-dotted; }
 

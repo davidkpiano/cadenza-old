@@ -55,11 +55,11 @@
     $color: $color-primary,
     $axis: vertical
 ) {
-    &-content {
+    &%tooltip-content {
         @include theme-label-default($color);
     }
 
-    &-arrow {    
+    &%tooltip-arrow {    
         @if $axis == vertical {
             border-top-color: $color;
             border-bottom-color: $color;

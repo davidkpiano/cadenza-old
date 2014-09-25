@@ -81,6 +81,19 @@
 	&-dark { @include theme-anchors-hint-default($anchor-unhinted-color-dark, $anchor-hinted-color-dark); }
 }
 
+@mixin theme-hr-default($color: $hr-color) {
+	border-color: $color;
+}
+
+%theme-hr-default {
+	@include theme-hr-default();
+
+	&-light { @include theme-hr-default($hr-color-light); }
+	&-dark { @include theme-hr-default($hr-color-dark); }
+	&-lighten { @include theme-hr-default($color-lighten); }
+	&-darken { @include theme-hr-default($color-darken); }
+}
+
 // // Preformatted Text Theme
 // // -----------------------
 // $x-pre-code-padding: 0.25rem 0.5rem !default;

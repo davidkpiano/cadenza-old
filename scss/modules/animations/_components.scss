@@ -49,6 +49,13 @@
     to { opacity: 0; }
 }
 
+// Fade In
+%animation-fadeIn-active { @include animation(fade-active); }
+%animation-fadeIn-inactive { @include animation(fadeIn-inactive); }
+@include keyframes(fadeIn-inactive) {
+    from, to { opacity: 0; }
+}
+
 // Scale Up / Scale Up
 %animation-scaleUp-active { @include animation(scaleUp-active); }
 %animation-scaleUp-inactive { @include animation(scaleUp-inactive); }

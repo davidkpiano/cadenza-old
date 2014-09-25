@@ -87,16 +87,13 @@
 %tooltip {
     @include activate($tooltip-animation, $active-selector: ':hover:before, &:hover:after', $inactive-selector: ':before, &:after');
 
-    &:before, &:after {
+    &-content, &-arrow {
         pointer-events: none;
     }
 
     &-content {
-        color: green;
-    }
-
-    &-content, &:before {
         @include type-scale($tooltip-scale);
+        content: attr(title);
         white-space: nowrap;
         overflow: hidden;
         text-decoration: $tooltip-text-decoration;
@@ -111,11 +108,9 @@
         @if $tooltip-radius {
             @include border-radius($tooltip-radius);
         }
-
-        content: attr(title);
     }
 
-    &-arrow, &:after {
+    &-arrow {
         content: '';
     }
 }

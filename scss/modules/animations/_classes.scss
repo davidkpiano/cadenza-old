@@ -14,6 +14,9 @@
 .activate-all-fade { @include activate-all(fade); }
 .activate-fade { @include activate(fade); }
 
+.activate-all-fadeIn { @include activate-all(fadeIn); }
+.activate-fadeIn { @include activate(fadeIn); }
+
 .activate-all-scaleUp { @include activate-all(scaleUp); }
 .activate-scaleUp { @include activate(scaleUp); }
 
