@@ -67,6 +67,44 @@
     }
 }
 
+%drawer {
+    position: absolute;
+
+    &-left {
+        right: inherit;
+        left: 0;
+    }
+
+    &-right {
+        left: inherit;
+        right: 0;
+    }
+
+    &-top {
+        bottom: inherit;
+        top: 0;
+    }
+
+    &-bottom {
+        top: inherit;
+        bottom: 0;
+    }
+}
+
+@for $i from 1 through $grid-columns {
+    @each $drawer-position in (left, right) {    
+        %drawer-#{$drawer-position}-#{$i} {
+            @include drawer($width: $i, $position: $drawer-position, $push: true, $extend: false);
+        }
+    }
+
+    @each $drawer-position in (top, bottom) {    
+        %drawer-#{$drawer-position}-#{$i} {
+            @include drawer($height: $i, $position: $drawer-position, $push: true, $extend: false);
+        }
+    }
+}
+
 %container {
     @include pie-clearfix;
     width: 100%;

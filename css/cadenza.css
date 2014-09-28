@@ -2721,7 +2721,7 @@
 }
 
 /* line 8, ../scss/modules/animations/_components.scss */
-.inert, .activate-all-fade.inert, .activate-fade.inert, .activate-all-fadeIn.inert, .activate-fadeIn.inert, .activate-all-scaleUp.inert, .activate-scaleUp.inert, .activate-all-scaleDown.inert, .activate-scaleDown.inert, .activate-all-scaleUpDown.inert, .activate-scaleUpDown.inert, .activate-all-scaleDownUp.inert, .activate-scaleDownUp.inert, .activate-all-slideUp.inert, .activate-slideUp.inert, .activate-all-slideUpDown.inert, .activate-slideUpDown.inert, .activate-all-slideDown.inert, .activate-slideDown.inert, .activate-all-slideLeft.inert, .activate-slideLeft.inert, .activate-all-slideRight.inert, .activate-slideRight.inert, .activate-all-shiftUp.inert, .activate-shiftUp.inert, .activate-all-shiftDown.inert, .activate-shiftDown.inert, .activate-all-shiftLeft.inert, .activate-shiftLeft.inert, .activate-all-shiftRight.inert, .activate-shiftRight.inert, .activate-all-shiftLeftRight.inert, .activate-shiftLeftRight.inert, .activate-all-flipLeft.inert, .activate-flipLeft.inert, .activate-all-tilt.inert, .activate-tilt.inert, .inert.tooltip[title], .inert[class*=" tooltip-"][title], .inert[class^="tooltip-"][title], .inert > *, .activate-all-fade.inert > *, .activate-fade.inert > *, .activate-all-fadeIn.inert > *, .activate-fadeIn.inert > *, .activate-all-scaleUp.inert > *, .activate-scaleUp.inert > *, .activate-all-scaleDown.inert > *, .activate-scaleDown.inert > *, .activate-all-scaleUpDown.inert > *, .activate-scaleUpDown.inert > *, .activate-all-scaleDownUp.inert > *, .activate-scaleDownUp.inert > *, .activate-all-slideUp.inert > *, .activate-slideUp.inert > *, .activate-all-slideUpDown.inert > *, .activate-slideUpDown.inert > *, .activate-all-slideDown.inert > *, .activate-slideDown.inert > *, .activate-all-slideLeft.inert > *, .activate-slideLeft.inert > *, .activate-all-slideRight.inert > *, .activate-slideRight.inert > *, .activate-all-shiftUp.inert > *, .activate-shiftUp.inert > *, .activate-all-shiftDown.inert > *, .activate-shiftDown.inert > *, .activate-all-shiftLeft.inert > *, .activate-shiftLeft.inert > *, .activate-all-shiftRight.inert > *, .activate-shiftRight.inert > *, .activate-all-shiftLeftRight.inert > *, .activate-shiftLeftRight.inert > *, .activate-all-flipLeft.inert > *, .activate-flipLeft.inert > *, .activate-all-tilt.inert > *, .activate-tilt.inert > *, .inert.tooltip[title] > *, .inert[class*=" tooltip-"][title] > *, .inert[class^="tooltip-"][title] > * {
+.layer.bg-dark.inert, .inert, .activate-all-fade.inert, .activate-fade.inert, .activate-all-fadeIn.inert, .activate-fadeIn.inert, .activate-all-scaleUp.inert, .activate-scaleUp.inert, .activate-all-scaleDown.inert, .activate-scaleDown.inert, .activate-all-scaleUpDown.inert, .activate-scaleUpDown.inert, .activate-all-scaleDownUp.inert, .activate-scaleDownUp.inert, .activate-all-slideUp.inert, .activate-slideUp.inert, .activate-all-slideUpDown.inert, .activate-slideUpDown.inert, .activate-all-slideDown.inert, .activate-slideDown.inert, .activate-all-slideLeft.inert, .activate-slideLeft.inert, .activate-all-slideRight.inert, .activate-slideRight.inert, .activate-all-shiftUp.inert, .activate-shiftUp.inert, .activate-all-shiftDown.inert, .activate-shiftDown.inert, .activate-all-shiftLeft.inert, .activate-shiftLeft.inert, .activate-all-shiftRight.inert, .activate-shiftRight.inert, .activate-all-shiftLeftRight.inert, .activate-shiftLeftRight.inert, .activate-all-flipLeft.inert, .activate-flipLeft.inert, .activate-all-tilt.inert, .activate-tilt.inert, .inert.tooltip[title], .inert[class*=" tooltip-"][title], .inert[class^="tooltip-"][title], .layer.bg-dark.inert > *, .inert > *, .activate-all-fade.inert > *, .activate-fade.inert > *, .activate-all-fadeIn.inert > *, .activate-fadeIn.inert > *, .activate-all-scaleUp.inert > *, .activate-scaleUp.inert > *, .activate-all-scaleDown.inert > *, .activate-scaleDown.inert > *, .activate-all-scaleUpDown.inert > *, .activate-scaleUpDown.inert > *, .activate-all-scaleDownUp.inert > *, .activate-scaleDownUp.inert > *, .activate-all-slideUp.inert > *, .activate-slideUp.inert > *, .activate-all-slideUpDown.inert > *, .activate-slideUpDown.inert > *, .activate-all-slideDown.inert > *, .activate-slideDown.inert > *, .activate-all-slideLeft.inert > *, .activate-slideLeft.inert > *, .activate-all-slideRight.inert > *, .activate-slideRight.inert > *, .activate-all-shiftUp.inert > *, .activate-shiftUp.inert > *, .activate-all-shiftDown.inert > *, .activate-shiftDown.inert > *, .activate-all-shiftLeft.inert > *, .activate-shiftLeft.inert > *, .activate-all-shiftRight.inert > *, .activate-shiftRight.inert > *, .activate-all-shiftLeftRight.inert > *, .activate-shiftLeftRight.inert > *, .activate-all-flipLeft.inert > *, .activate-flipLeft.inert > *, .activate-all-tilt.inert > *, .activate-tilt.inert > *, .inert.tooltip[title] > *, .inert[class*=" tooltip-"][title] > *, .inert[class^="tooltip-"][title] > * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
@@ -2735,12 +2735,12 @@
 }
 
 /* line 14, ../scss/modules/animations/_components.scss */
-.activate-, [class*=" activate--"], [class^="activate--"] .ng-enter, .activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-fade.ng-enter, .activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter, .activate-fadeIn.ng-enter, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-scaleUp.ng-enter, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-scaleDown.ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter, .activate-scaleUpDown.ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter, .activate-scaleDownUp.ng-enter, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter, .activate-slideUp.ng-enter, .activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter, .activate-slideUpDown.ng-enter, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter, .activate-slideDown.ng-enter, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter, .activate-slideLeft.ng-enter, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter, .activate-slideRight.ng-enter, .activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter, .activate-shiftUp.ng-enter, .activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter, .activate-shiftDown.ng-enter, .activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-shiftLeft.ng-enter, .activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter, .activate-shiftRight.ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter, .activate-shiftLeftRight.ng-enter, .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-flipLeft.ng-enter, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-tilt.ng-enter, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after {
+.layer.bg-dark:hover, .activate-, [class*=" activate--"], [class^="activate--"] .ng-enter, .activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-fade.ng-enter, .activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter, .activate-fadeIn.ng-enter, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-scaleUp.ng-enter, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-scaleDown.ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter, .activate-scaleUpDown.ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter, .activate-scaleDownUp.ng-enter, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter, .activate-slideUp.ng-enter, .activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter, .activate-slideUpDown.ng-enter, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter, .activate-slideDown.ng-enter, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter, .activate-slideLeft.ng-enter, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter, .activate-slideRight.ng-enter, .activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter, .activate-shiftUp.ng-enter, .activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter, .activate-shiftDown.ng-enter, .activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-shiftLeft.ng-enter, .activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter, .activate-shiftRight.ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter, .activate-shiftLeftRight.ng-enter, .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-flipLeft.ng-enter, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-tilt.ng-enter, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after {
   z-index: 2;
 }
 
 /* line 18, ../scss/modules/animations/_components.scss */
-.ng-leave, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-fade.ng-leave, .activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave, .activate-fadeIn.ng-leave, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-scaleUp.ng-leave, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-scaleDown.ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave, .activate-scaleUpDown.ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave, .activate-scaleDownUp.ng-leave, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave, .activate-slideUp.ng-leave, .activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave, .activate-slideUpDown.ng-leave, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave, .activate-slideDown.ng-leave, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave, .activate-slideLeft.ng-leave, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave, .activate-slideRight.ng-leave, .activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave, .activate-shiftUp.ng-leave, .activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave, .activate-shiftDown.ng-leave, .activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave, .activate-shiftLeft.ng-leave, .activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-shiftRight.ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave, .activate-shiftLeftRight.ng-leave, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-flipLeft.ng-leave, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-tilt.ng-leave, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after {
+.layer.bg-dark.ng-leave, .ng-leave, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-fade.ng-leave, .activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave, .activate-fadeIn.ng-leave, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-scaleUp.ng-leave, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-scaleDown.ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave, .activate-scaleUpDown.ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave, .activate-scaleDownUp.ng-leave, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave, .activate-slideUp.ng-leave, .activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave, .activate-slideUpDown.ng-leave, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave, .activate-slideDown.ng-leave, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave, .activate-slideLeft.ng-leave, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave, .activate-slideRight.ng-leave, .activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave, .activate-shiftUp.ng-leave, .activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave, .activate-shiftDown.ng-leave, .activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave, .activate-shiftLeft.ng-leave, .activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-shiftRight.ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave, .activate-shiftLeftRight.ng-leave, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-flipLeft.ng-leave, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-tilt.ng-leave, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after {
   z-index: 0;
 }
 
@@ -2751,15 +2751,43 @@
 }
 
 /* line 30, ../scss/modules/animations/_components.scss */
-.is-3d, .activate-all-flipLeft, .activate-all-tilt {
-  -webkit-perspective: 1000;
+.layer.bg-dark:hover, .activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-fade.ng-enter, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after, .layer.bg-dark.ng-leave, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-fade.ng-leave, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after, .activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter, .activate-fadeIn.ng-enter, .activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave, .activate-fadeIn.ng-leave, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-scaleUp.ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter, .activate-scaleUpDown.ng-enter, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-scaleUp.ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave, .activate-scaleDownUp.ng-leave, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-scaleDown.ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter, .activate-scaleDownUp.ng-enter, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-scaleDown.ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave, .activate-scaleUpDown.ng-leave, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter, .activate-slideLeft.ng-enter, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave, .activate-slideLeft.ng-leave, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter, .activate-slideRight.ng-enter, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave, .activate-slideRight.ng-leave, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter, .activate-slideUp.ng-enter, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave, .activate-slideUp.ng-leave, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter, .activate-slideDown.ng-enter, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave, .activate-slideDown.ng-leave, .activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter, .activate-slideUpDown.ng-enter, .activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave, .activate-slideUpDown.ng-leave, .activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter, .activate-shiftUp.ng-enter, .activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave, .activate-shiftUp.ng-leave, .activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter, .activate-shiftDown.ng-enter, .activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave, .activate-shiftDown.ng-leave, .activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-shiftLeft.ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter, .activate-shiftLeftRight.ng-enter, .activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave, .activate-shiftLeft.ng-leave, .activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter, .activate-shiftRight.ng-enter, .activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-shiftRight.ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave, .activate-shiftLeftRight.ng-leave, .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-flipLeft.ng-enter, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-flipLeft.ng-leave, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-tilt.ng-enter, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-tilt.ng-leave {
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -moz-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -moz-animation-delay: 0;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-play-state: running;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  -moz-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+/* line 40, ../scss/modules/animations/_components.scss */
+.activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-flipLeft.ng-enter, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-flipLeft.ng-leave, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-tilt.ng-enter, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-tilt.ng-leave, .animation-3d, .activate-all-flipLeft, .activate-all-tilt {
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
   -moz-perspective: 1000;
+  -webkit-perspective: 1000;
   perspective: 1000;
-  -webkit-transform-style: preserve-3d;
   -moz-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
-  -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -moz-transform: translate(0, 0, 0);
   -ms-transform: translate(0, 0, 0);
@@ -2767,42 +2795,22 @@
   transform: translate(0, 0, 0);
 }
 
-/* line 41, ../scss/modules/animations/_components.scss */
-.activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-fade.ng-enter, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after {
+/* line 49, ../scss/modules/animations/_components.scss */
+.layer.bg-dark:hover, .activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-fade.ng-enter, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after {
+  -moz-animation-name: fade-active;
   -webkit-animation-name: fade-active;
   animation-name: fade-active;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
 
-/* line 42, ../scss/modules/animations/_components.scss */
-.activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-fade.ng-leave, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after {
+/* line 50, ../scss/modules/animations/_components.scss */
+.layer.bg-dark.ng-leave, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-fade.ng-leave, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after {
+  -moz-animation-name: fade-inactive;
   -webkit-animation-name: fade-inactive;
   animation-name: fade-inactive;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
@@ -2839,42 +2847,22 @@
     opacity: 0;
   }
 }
-/* line 53, ../scss/modules/animations/_components.scss */
+/* line 61, ../scss/modules/animations/_components.scss */
 .activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter, .activate-fadeIn.ng-enter {
+  -moz-animation-name: fade-active;
   -webkit-animation-name: fade-active;
   animation-name: fade-active;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
 
-/* line 54, ../scss/modules/animations/_components.scss */
+/* line 62, ../scss/modules/animations/_components.scss */
 .activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave, .activate-fadeIn.ng-leave {
+  -moz-animation-name: fadeIn-inactive;
   -webkit-animation-name: fadeIn-inactive;
   animation-name: fadeIn-inactive;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
@@ -2889,42 +2877,22 @@
     opacity: 0;
   }
 }
-/* line 60, ../scss/modules/animations/_components.scss */
+/* line 68, ../scss/modules/animations/_components.scss */
 .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-scaleUp.ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter, .activate-scaleUpDown.ng-enter {
+  -moz-animation-name: scaleUp-active;
   -webkit-animation-name: scaleUp-active;
   animation-name: scaleUp-active;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
 
-/* line 61, ../scss/modules/animations/_components.scss */
+/* line 69, ../scss/modules/animations/_components.scss */
 .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-scaleUp.ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave, .activate-scaleDownUp.ng-leave {
+  -moz-animation-name: scaleUp-inactive;
   -webkit-animation-name: scaleUp-inactive;
   animation-name: scaleUp-inactive;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
@@ -2993,42 +2961,22 @@
     transform: scale(1.2);
   }
 }
-/* line 84, ../scss/modules/animations/_components.scss */
+/* line 92, ../scss/modules/animations/_components.scss */
 .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-scaleDown.ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter, .activate-scaleDownUp.ng-enter {
+  -moz-animation-name: scaleDown-active;
   -webkit-animation-name: scaleDown-active;
   animation-name: scaleDown-active;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
 
-/* line 85, ../scss/modules/animations/_components.scss */
+/* line 93, ../scss/modules/animations/_components.scss */
 .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-scaleDown.ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave, .activate-scaleUpDown.ng-leave {
+  -moz-animation-name: scaleDown-inactive;
   -webkit-animation-name: scaleDown-inactive;
   animation-name: scaleDown-inactive;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
@@ -3201,42 +3149,22 @@
     transform: scale(1);
   }
 }
-/* line 156, ../scss/modules/animations/_components.scss */
+/* line 164, ../scss/modules/animations/_components.scss */
 .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter, .activate-slideLeft.ng-enter {
+  -moz-animation-name: slideLeft-active;
   -webkit-animation-name: slideLeft-active;
   animation-name: slideLeft-active;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
 
-/* line 157, ../scss/modules/animations/_components.scss */
+/* line 165, ../scss/modules/animations/_components.scss */
 .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave, .activate-slideLeft.ng-leave {
+  -moz-animation-name: slideLeft-inactive;
   -webkit-animation-name: slideLeft-inactive;
   animation-name: slideLeft-inactive;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
@@ -3297,42 +3225,22 @@
     transform: translateX(-100%);
   }
 }
-/* line 168, ../scss/modules/animations/_components.scss */
+/* line 176, ../scss/modules/animations/_components.scss */
 .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter, .activate-slideRight.ng-enter {
+  -moz-animation-name: slideRight-active;
   -webkit-animation-name: slideRight-active;
   animation-name: slideRight-active;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
 
-/* line 169, ../scss/modules/animations/_components.scss */
+/* line 177, ../scss/modules/animations/_components.scss */
 .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave, .activate-slideRight.ng-leave {
+  -moz-animation-name: slideRight-inactive;
   -webkit-animation-name: slideRight-inactive;
   animation-name: slideRight-inactive;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
@@ -3393,42 +3301,22 @@
     transform: translateX(100%);
   }
 }
-/* line 180, ../scss/modules/animations/_components.scss */
+/* line 188, ../scss/modules/animations/_components.scss */
 .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter, .activate-slideUp.ng-enter {
+  -moz-animation-name: slideUp-active;
   -webkit-animation-name: slideUp-active;
   animation-name: slideUp-active;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
 
-/* line 181, ../scss/modules/animations/_components.scss */
+/* line 189, ../scss/modules/animations/_components.scss */
 .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave, .activate-slideUp.ng-leave {
+  -moz-animation-name: slideUp-inactive;
   -webkit-animation-name: slideUp-inactive;
   animation-name: slideUp-inactive;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
@@ -3489,42 +3377,22 @@
     transform: translateY(-100%);
   }
 }
-/* line 192, ../scss/modules/animations/_components.scss */
+/* line 200, ../scss/modules/animations/_components.scss */
 .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter, .activate-slideDown.ng-enter {
+  -moz-animation-name: slideDown-active;
   -webkit-animation-name: slideDown-active;
   animation-name: slideDown-active;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
 
-/* line 193, ../scss/modules/animations/_components.scss */
+/* line 201, ../scss/modules/animations/_components.scss */
 .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave, .activate-slideDown.ng-leave {
+  -moz-animation-name: slideDown-inactive;
   -webkit-animation-name: slideDown-inactive;
   animation-name: slideDown-inactive;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
@@ -3585,42 +3453,22 @@
     transform: translateY(100%);
   }
 }
-/* line 204, ../scss/modules/animations/_components.scss */
+/* line 212, ../scss/modules/animations/_components.scss */
 .activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter, .activate-slideUpDown.ng-enter {
+  -moz-animation-name: slideUpDown-active;
   -webkit-animation-name: slideUpDown-active;
   animation-name: slideUpDown-active;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
 
-/* line 205, ../scss/modules/animations/_components.scss */
+/* line 213, ../scss/modules/animations/_components.scss */
 .activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave, .activate-slideUpDown.ng-leave {
+  -moz-animation-name: slideUpDown-inactive;
   -webkit-animation-name: slideUpDown-inactive;
   animation-name: slideUpDown-inactive;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
@@ -3737,42 +3585,22 @@
     transform: translateY(-100%);
   }
 }
-/* line 228, ../scss/modules/animations/_components.scss */
+/* line 236, ../scss/modules/animations/_components.scss */
 .activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter, .activate-shiftUp.ng-enter {
+  -moz-animation-name: shiftUp-active;
   -webkit-animation-name: shiftUp-active;
   animation-name: shiftUp-active;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
 
-/* line 229, ../scss/modules/animations/_components.scss */
+/* line 237, ../scss/modules/animations/_components.scss */
 .activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave, .activate-shiftUp.ng-leave {
+  -moz-animation-name: shiftUp-inactive;
   -webkit-animation-name: shiftUp-inactive;
   animation-name: shiftUp-inactive;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
@@ -3841,42 +3669,22 @@
     opacity: 0;
   }
 }
-/* line 252, ../scss/modules/animations/_components.scss */
+/* line 260, ../scss/modules/animations/_components.scss */
 .activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter, .activate-shiftDown.ng-enter {
+  -moz-animation-name: shiftDown-active;
   -webkit-animation-name: shiftDown-active;
   animation-name: shiftDown-active;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
 
-/* line 253, ../scss/modules/animations/_components.scss */
+/* line 261, ../scss/modules/animations/_components.scss */
 .activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave, .activate-shiftDown.ng-leave {
+  -moz-animation-name: shiftDown-inactive;
   -webkit-animation-name: shiftDown-inactive;
   animation-name: shiftDown-inactive;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
@@ -3945,42 +3753,22 @@
     opacity: 0;
   }
 }
-/* line 276, ../scss/modules/animations/_components.scss */
+/* line 284, ../scss/modules/animations/_components.scss */
 .activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-shiftLeft.ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter, .activate-shiftLeftRight.ng-enter {
+  -moz-animation-name: shiftLeft-active;
   -webkit-animation-name: shiftLeft-active;
   animation-name: shiftLeft-active;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
 
-/* line 277, ../scss/modules/animations/_components.scss */
+/* line 285, ../scss/modules/animations/_components.scss */
 .activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave, .activate-shiftLeft.ng-leave {
+  -moz-animation-name: shiftLeft-inactive;
   -webkit-animation-name: shiftLeft-inactive;
   animation-name: shiftLeft-inactive;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
@@ -4049,42 +3837,22 @@
     opacity: 0;
   }
 }
-/* line 300, ../scss/modules/animations/_components.scss */
+/* line 308, ../scss/modules/animations/_components.scss */
 .activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter, .activate-shiftRight.ng-enter {
+  -moz-animation-name: shiftRight-active;
   -webkit-animation-name: shiftRight-active;
   animation-name: shiftRight-active;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
 
-/* line 301, ../scss/modules/animations/_components.scss */
+/* line 309, ../scss/modules/animations/_components.scss */
 .activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-shiftRight.ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave, .activate-shiftLeftRight.ng-leave {
+  -moz-animation-name: shiftRight-inactive;
   -webkit-animation-name: shiftRight-inactive;
   animation-name: shiftRight-inactive;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
@@ -4153,42 +3921,22 @@
     opacity: 0;
   }
 }
-/* line 324, ../scss/modules/animations/_components.scss */
+/* line 332, ../scss/modules/animations/_components.scss */
 .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-flipLeft.ng-enter {
+  -moz-animation-name: flipLeft-active;
   -webkit-animation-name: flipLeft-active;
   animation-name: flipLeft-active;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
 
-/* line 325, ../scss/modules/animations/_components.scss */
+/* line 333, ../scss/modules/animations/_components.scss */
 .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-flipLeft.ng-leave {
+  -moz-animation-name: flipLeft-inactive;
   -webkit-animation-name: flipLeft-inactive;
   animation-name: flipLeft-inactive;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
@@ -4257,42 +4005,22 @@
     transform: translateZ(-1000px) rotateY(-180deg);
   }
 }
-/* line 342, ../scss/modules/animations/_components.scss */
+/* line 350, ../scss/modules/animations/_components.scss */
 .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-tilt.ng-enter {
+  -moz-animation-name: tilt-active;
   -webkit-animation-name: tilt-active;
   animation-name: tilt-active;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
 
-/* line 343, ../scss/modules/animations/_components.scss */
+/* line 351, ../scss/modules/animations/_components.scss */
 .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-tilt.ng-leave {
+  -moz-animation-name: tilt-inactive;
   -webkit-animation-name: tilt-inactive;
   animation-name: tilt-inactive;
-  -webkit-animation-direction: normal;
-  animation-direction: normal;
-  -webkit-animation-delay: false;
-  animation-delay: false;
-  -webkit-animation-iteration-count: false;
-  animation-iteration-count: false;
-  -webkit-animation-play-state: false;
-  animation-play-state: false;
-  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
+  -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
 }
@@ -4387,7 +4115,7 @@
     opacity: 0;
   }
 }
-/* line 378, ../scss/modules/animations/_components.scss */
+/* line 386, ../scss/modules/animations/_components.scss */
 .transition, [class*=" transition-"], [class^="transition-"], .hover, [class*=" hover-"], [class^="hover-"], .gg-flex-list > * {
   -moz-transition-property: all;
   -o-transition-property: all;
@@ -4407,26 +4135,26 @@
   transition-delay: 0;
 }
 
-/* line 385, ../scss/modules/animations/_components.scss */
+/* line 393, ../scss/modules/animations/_components.scss */
 .hover-lighten, .transition-lighten {
   -moz-transition-property: opacity;
   -o-transition-property: opacity;
   -webkit-transition-property: opacity;
   transition-property: opacity;
 }
-/* line 55, ../scss/modules/animations/_mixins.scss */
+/* line 76, ../scss/modules/animations/_mixins.scss */
 .active.hover-lighten, .hover-lighten:hover, .active.transition-lighten, .hover-all:hover > .hover-lighten, .hover-all:hover > .transition-lighten {
   opacity: 0.7;
 }
 
-/* line 392, ../scss/modules/animations/_components.scss */
+/* line 400, ../scss/modules/animations/_components.scss */
 .hover-scaleUp, .transition-scaleUp {
   -moz-transition-property: -moz-transform;
   -o-transition-property: -o-transform;
   -webkit-transition-property: -webkit-transform;
   transition-property: transform;
 }
-/* line 55, ../scss/modules/animations/_mixins.scss */
+/* line 76, ../scss/modules/animations/_mixins.scss */
 .active.hover-scaleUp, .hover-scaleUp:hover, .active.transition-scaleUp, .hover-all:hover > .hover-scaleUp, .hover-all:hover > .transition-scaleUp {
   -moz-transform: scale(1.2);
   -ms-transform: scale(1.2);
@@ -4527,11 +4255,6 @@
 }
 
 /* line 65, ../scss/modules/layers/_components.scss */
-.card-0 {
-  height: 0%;
-}
-
-/* line 65, ../scss/modules/layers/_components.scss */
 .card-1 {
   height: 8.33333%;
 }
@@ -4592,6 +4315,655 @@
 }
 
 /* line 70, ../scss/modules/layers/_components.scss */
+.drawer, [class*=" drawer-"], [class^="drawer-"] {
+  position: absolute;
+}
+/* line 73, ../scss/modules/layers/_components.scss */
+.drawer-left, [class*=" drawer-left-"], [class^="drawer-left-"] {
+  right: inherit;
+  left: 0;
+}
+/* line 78, ../scss/modules/layers/_components.scss */
+.drawer-right, [class*=" drawer-right-"], [class^="drawer-right-"] {
+  left: inherit;
+  right: 0;
+}
+/* line 83, ../scss/modules/layers/_components.scss */
+.drawer-top, [class*=" drawer-top-"], [class^="drawer-top-"] {
+  bottom: inherit;
+  top: 0;
+}
+/* line 88, ../scss/modules/layers/_components.scss */
+.drawer-bottom, [class*=" drawer-bottom-"], [class^="drawer-bottom-"] {
+  top: inherit;
+  bottom: 0;
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-left-1 {
+  width: 8.33333%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-left-1 ~ * {
+  -moz-transform: translateX(8.33333%);
+  -ms-transform: translateX(8.33333%);
+  -webkit-transform: translateX(8.33333%);
+  transform: translateX(8.33333%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-right-1 {
+  width: 8.33333%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-right-1 ~ * {
+  -moz-transform: translateX(-8.33333%);
+  -ms-transform: translateX(-8.33333%);
+  -webkit-transform: translateX(-8.33333%);
+  transform: translateX(-8.33333%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-top-1 {
+  width: 100%;
+  height: 8.33333%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-top-1 ~ * {
+  -moz-transform: translateY(8.33333%);
+  -ms-transform: translateY(8.33333%);
+  -webkit-transform: translateY(8.33333%);
+  transform: translateY(8.33333%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-bottom-1 {
+  width: 100%;
+  height: 8.33333%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-bottom-1 ~ * {
+  -moz-transform: translateY(-8.33333%);
+  -ms-transform: translateY(-8.33333%);
+  -webkit-transform: translateY(-8.33333%);
+  transform: translateY(-8.33333%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-left-2 {
+  width: 16.66667%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-left-2 ~ * {
+  -moz-transform: translateX(16.66667%);
+  -ms-transform: translateX(16.66667%);
+  -webkit-transform: translateX(16.66667%);
+  transform: translateX(16.66667%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-right-2 {
+  width: 16.66667%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-right-2 ~ * {
+  -moz-transform: translateX(-16.66667%);
+  -ms-transform: translateX(-16.66667%);
+  -webkit-transform: translateX(-16.66667%);
+  transform: translateX(-16.66667%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-top-2 {
+  width: 100%;
+  height: 16.66667%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-top-2 ~ * {
+  -moz-transform: translateY(16.66667%);
+  -ms-transform: translateY(16.66667%);
+  -webkit-transform: translateY(16.66667%);
+  transform: translateY(16.66667%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-bottom-2 {
+  width: 100%;
+  height: 16.66667%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-bottom-2 ~ * {
+  -moz-transform: translateY(-16.66667%);
+  -ms-transform: translateY(-16.66667%);
+  -webkit-transform: translateY(-16.66667%);
+  transform: translateY(-16.66667%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-left-3 {
+  width: 25%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-left-3 ~ * {
+  -moz-transform: translateX(25%);
+  -ms-transform: translateX(25%);
+  -webkit-transform: translateX(25%);
+  transform: translateX(25%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-right-3 {
+  width: 25%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-right-3 ~ * {
+  -moz-transform: translateX(-25%);
+  -ms-transform: translateX(-25%);
+  -webkit-transform: translateX(-25%);
+  transform: translateX(-25%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-top-3 {
+  width: 100%;
+  height: 25%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-top-3 ~ * {
+  -moz-transform: translateY(25%);
+  -ms-transform: translateY(25%);
+  -webkit-transform: translateY(25%);
+  transform: translateY(25%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-bottom-3 {
+  width: 100%;
+  height: 25%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-bottom-3 ~ * {
+  -moz-transform: translateY(-25%);
+  -ms-transform: translateY(-25%);
+  -webkit-transform: translateY(-25%);
+  transform: translateY(-25%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-left-4 {
+  width: 33.33333%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-left-4 ~ * {
+  -moz-transform: translateX(33.33333%);
+  -ms-transform: translateX(33.33333%);
+  -webkit-transform: translateX(33.33333%);
+  transform: translateX(33.33333%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-right-4 {
+  width: 33.33333%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-right-4 ~ * {
+  -moz-transform: translateX(-33.33333%);
+  -ms-transform: translateX(-33.33333%);
+  -webkit-transform: translateX(-33.33333%);
+  transform: translateX(-33.33333%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-top-4 {
+  width: 100%;
+  height: 33.33333%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-top-4 ~ * {
+  -moz-transform: translateY(33.33333%);
+  -ms-transform: translateY(33.33333%);
+  -webkit-transform: translateY(33.33333%);
+  transform: translateY(33.33333%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-bottom-4 {
+  width: 100%;
+  height: 33.33333%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-bottom-4 ~ * {
+  -moz-transform: translateY(-33.33333%);
+  -ms-transform: translateY(-33.33333%);
+  -webkit-transform: translateY(-33.33333%);
+  transform: translateY(-33.33333%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-left-5 {
+  width: 41.66667%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-left-5 ~ * {
+  -moz-transform: translateX(41.66667%);
+  -ms-transform: translateX(41.66667%);
+  -webkit-transform: translateX(41.66667%);
+  transform: translateX(41.66667%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-right-5 {
+  width: 41.66667%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-right-5 ~ * {
+  -moz-transform: translateX(-41.66667%);
+  -ms-transform: translateX(-41.66667%);
+  -webkit-transform: translateX(-41.66667%);
+  transform: translateX(-41.66667%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-top-5 {
+  width: 100%;
+  height: 41.66667%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-top-5 ~ * {
+  -moz-transform: translateY(41.66667%);
+  -ms-transform: translateY(41.66667%);
+  -webkit-transform: translateY(41.66667%);
+  transform: translateY(41.66667%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-bottom-5 {
+  width: 100%;
+  height: 41.66667%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-bottom-5 ~ * {
+  -moz-transform: translateY(-41.66667%);
+  -ms-transform: translateY(-41.66667%);
+  -webkit-transform: translateY(-41.66667%);
+  transform: translateY(-41.66667%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-left-6 {
+  width: 50%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-left-6 ~ * {
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-right-6 {
+  width: 50%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-right-6 ~ * {
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-top-6 {
+  width: 100%;
+  height: 50%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-top-6 ~ * {
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-bottom-6 {
+  width: 100%;
+  height: 50%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-bottom-6 ~ * {
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-left-7 {
+  width: 58.33333%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-left-7 ~ * {
+  -moz-transform: translateX(58.33333%);
+  -ms-transform: translateX(58.33333%);
+  -webkit-transform: translateX(58.33333%);
+  transform: translateX(58.33333%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-right-7 {
+  width: 58.33333%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-right-7 ~ * {
+  -moz-transform: translateX(-58.33333%);
+  -ms-transform: translateX(-58.33333%);
+  -webkit-transform: translateX(-58.33333%);
+  transform: translateX(-58.33333%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-top-7 {
+  width: 100%;
+  height: 58.33333%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-top-7 ~ * {
+  -moz-transform: translateY(58.33333%);
+  -ms-transform: translateY(58.33333%);
+  -webkit-transform: translateY(58.33333%);
+  transform: translateY(58.33333%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-bottom-7 {
+  width: 100%;
+  height: 58.33333%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-bottom-7 ~ * {
+  -moz-transform: translateY(-58.33333%);
+  -ms-transform: translateY(-58.33333%);
+  -webkit-transform: translateY(-58.33333%);
+  transform: translateY(-58.33333%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-left-8 {
+  width: 66.66667%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-left-8 ~ * {
+  -moz-transform: translateX(66.66667%);
+  -ms-transform: translateX(66.66667%);
+  -webkit-transform: translateX(66.66667%);
+  transform: translateX(66.66667%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-right-8 {
+  width: 66.66667%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-right-8 ~ * {
+  -moz-transform: translateX(-66.66667%);
+  -ms-transform: translateX(-66.66667%);
+  -webkit-transform: translateX(-66.66667%);
+  transform: translateX(-66.66667%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-top-8 {
+  width: 100%;
+  height: 66.66667%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-top-8 ~ * {
+  -moz-transform: translateY(66.66667%);
+  -ms-transform: translateY(66.66667%);
+  -webkit-transform: translateY(66.66667%);
+  transform: translateY(66.66667%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-bottom-8 {
+  width: 100%;
+  height: 66.66667%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-bottom-8 ~ * {
+  -moz-transform: translateY(-66.66667%);
+  -ms-transform: translateY(-66.66667%);
+  -webkit-transform: translateY(-66.66667%);
+  transform: translateY(-66.66667%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-left-9 {
+  width: 75%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-left-9 ~ * {
+  -moz-transform: translateX(75%);
+  -ms-transform: translateX(75%);
+  -webkit-transform: translateX(75%);
+  transform: translateX(75%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-right-9 {
+  width: 75%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-right-9 ~ * {
+  -moz-transform: translateX(-75%);
+  -ms-transform: translateX(-75%);
+  -webkit-transform: translateX(-75%);
+  transform: translateX(-75%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-top-9 {
+  width: 100%;
+  height: 75%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-top-9 ~ * {
+  -moz-transform: translateY(75%);
+  -ms-transform: translateY(75%);
+  -webkit-transform: translateY(75%);
+  transform: translateY(75%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-bottom-9 {
+  width: 100%;
+  height: 75%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-bottom-9 ~ * {
+  -moz-transform: translateY(-75%);
+  -ms-transform: translateY(-75%);
+  -webkit-transform: translateY(-75%);
+  transform: translateY(-75%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-left-10 {
+  width: 83.33333%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-left-10 ~ * {
+  -moz-transform: translateX(83.33333%);
+  -ms-transform: translateX(83.33333%);
+  -webkit-transform: translateX(83.33333%);
+  transform: translateX(83.33333%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-right-10 {
+  width: 83.33333%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-right-10 ~ * {
+  -moz-transform: translateX(-83.33333%);
+  -ms-transform: translateX(-83.33333%);
+  -webkit-transform: translateX(-83.33333%);
+  transform: translateX(-83.33333%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-top-10 {
+  width: 100%;
+  height: 83.33333%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-top-10 ~ * {
+  -moz-transform: translateY(83.33333%);
+  -ms-transform: translateY(83.33333%);
+  -webkit-transform: translateY(83.33333%);
+  transform: translateY(83.33333%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-bottom-10 {
+  width: 100%;
+  height: 83.33333%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-bottom-10 ~ * {
+  -moz-transform: translateY(-83.33333%);
+  -ms-transform: translateY(-83.33333%);
+  -webkit-transform: translateY(-83.33333%);
+  transform: translateY(-83.33333%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-left-11 {
+  width: 91.66667%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-left-11 ~ * {
+  -moz-transform: translateX(91.66667%);
+  -ms-transform: translateX(91.66667%);
+  -webkit-transform: translateX(91.66667%);
+  transform: translateX(91.66667%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-right-11 {
+  width: 91.66667%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-right-11 ~ * {
+  -moz-transform: translateX(-91.66667%);
+  -ms-transform: translateX(-91.66667%);
+  -webkit-transform: translateX(-91.66667%);
+  transform: translateX(-91.66667%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-top-11 {
+  width: 100%;
+  height: 91.66667%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-top-11 ~ * {
+  -moz-transform: translateY(91.66667%);
+  -ms-transform: translateY(91.66667%);
+  -webkit-transform: translateY(91.66667%);
+  transform: translateY(91.66667%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-bottom-11 {
+  width: 100%;
+  height: 91.66667%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-bottom-11 ~ * {
+  -moz-transform: translateY(-91.66667%);
+  -ms-transform: translateY(-91.66667%);
+  -webkit-transform: translateY(-91.66667%);
+  transform: translateY(-91.66667%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-left-12 {
+  width: 100%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-left-12 ~ * {
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* line 96, ../scss/modules/layers/_components.scss */
+.drawer-right-12 {
+  width: 100%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-right-12 ~ * {
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-top-12 {
+  width: 100%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-top-12 ~ * {
+  -moz-transform: translateY(100%);
+  -ms-transform: translateY(100%);
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+}
+
+/* line 102, ../scss/modules/layers/_components.scss */
+.drawer-bottom-12 {
+  width: 100%;
+  height: 100%;
+}
+/* line 36, ../scss/modules/layers/_mixins.scss */
+*:hover > .drawer-bottom-12 ~ * {
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+
+/* line 108, ../scss/modules/layers/_components.scss */
 .container {
   *zoom: 1;
   width: 100%;

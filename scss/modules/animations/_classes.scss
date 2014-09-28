@@ -8,7 +8,7 @@
 
 .delay, .delay-all > * { @extend %active-delay; }
 
-.is-3d { @extend %is-3d; }
+.animation-3d { @extend %animation-3d; }
 
 // Animations Classes
 .activate-all-fade { @include activate-all(fade); }

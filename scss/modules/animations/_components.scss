@@ -25,17 +25,25 @@
     }
 }
 
-// 3D Components
-// -------------
-%is-3d {
-	@include experimental(perspective, #{$animation-perspective}, $ms: false, $o: false, $khtml: false);
-	@include experimental(transform-style, preserve-3d, $ms: false, $o: false, $khtml: false);
-	@include experimental(backface-visibility, hidden, $ms: false, $o: false, $khtml: false);
-	@include transform(translate(0,0,0));
-}
-
 // Animations
 // ----------
+%animation {
+    @include animation-duration($animation-duration);
+    @include animation-direction($animation-direction);
+    @include animation-delay($animation-delay);
+    @include animation-iteration-count($animation-iteration-count);
+    @include animation-play-state($animation-play-state);
+    @include animation-timing-function($animation-timing-function);
+    @include animation-fill-mode($animation-fill-mode);
+}
+
+%animation-3d {
+    @include animation-duration($animation-3d-duration);
+    @include perspective($animation-3d-perspective);
+    @include transform-style(preserve-3d);
+    @include backface-visibility(hidden);
+    @include transform(translate(0,0,0));
+}
 
 // Fade
 %animation-fade-active { @include animation(fade-active); }
@@ -395,5 +403,6 @@
     }
 }
 %hover-scaleUp { @include hover-movement(scaleUp); }
+
 
 

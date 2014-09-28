@@ -1,3 +1,40 @@
 // 
 // Layers Mixins and Functions
 // ===========================
+
+@mixin drawer(
+    $width: 100%,
+    $height: 100%,
+    $position: left,
+    $active-selector: '*:hover > &',
+    $push: false,
+    $extend: true
+) {
+    $push-translation: false;
+    $drawer-width: column-width($width);
+    $drawer-height: row-height($height);
+
+    @if $extend {    
+        @extend %drawer;
+        @extend %drawer-#{$position} !optional;
+    }
+    
+    width: $drawer-width;
+    height: $drawer-height;
+
+    @if $push {
+        @if $position == left {
+            $push-translation: translateX($drawer-width);
+        } @else if $position == right {
+            $push-translation: translateX(-$drawer-width);
+        } @else if $position == top {
+            $push-translation: translateY($drawer-height);
+        } @else if $position == bottom {
+            $push-translation: translateY(-$drawer-height);
+        }
+
+        #{$active-selector} ~ * {
+            @include transform($push-translation);
+        }
+    }
+}

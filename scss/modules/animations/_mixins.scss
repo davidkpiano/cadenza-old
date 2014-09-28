@@ -14,27 +14,48 @@
 @mixin animation(
     $name,
     $duration: $animation-duration,
-    $direction: normal,
-    $delay: false,
-    $iteration-count: false,
-    $play-state: false,
-    $timing-function: $animation-timing-function,
-    $fill-mode: forwards,
-    $is-3d: false,
-    $duration-3d: $animation-duration-3d
+    $direction: default,
+    $delay: default,
+    $iteration-count: default,
+    $play-state: default,
+    $timing-function: default,
+    $fill-mode: default,
+    $is-3d: false
 ) {
-    @include experimental(animation-name, $name, $khtml: false, $moz: false, $ms: false, $o: false);
-    @include experimental(animation-direction, $direction, $khtml: false, $moz: false, $ms: false, $o: false);
-    @include experimental(animation-delay, $delay, $khtml: false, $moz: false, $ms: false, $o: false);
-    @include experimental(animation-iteration-count, $iteration-count, $khtml: false, $moz: false, $ms: false, $o: false);
-    @include experimental(animation-play-state, $play-state, $khtml: false, $moz: false, $ms: false, $o: false);
-    @include experimental(animation-timing-function, $timing-function, $khtml: false, $moz: false, $ms: false, $o: false);
-    @include experimental(animation-fill-mode, $fill-mode, $khtml: false, $moz: false, $ms: false, $o: false);
+    @extend %animation;
 
     @if $is-3d {
-    	@include experimental(animation-duration, $duration-3d, $khtml: false, $moz: false, $ms: false, $o: false);
-    } @else {
-    	@include experimental(animation-duration, $duration, $khtml: false, $moz: false, $ms: false, $o: false);
+        @extend %animation-3d;
+    }
+
+    @include animation-name($name);
+
+    @if $duration != default {
+        @include animation-duration($duration);
+    }
+
+    @if $direction != default {
+        @include animation-direction($direction);
+    }
+
+    @if $delay != default {
+        @include animation-delay($delay);
+    }
+
+    @if $iteration-count != default {
+        @include animation-iteration-count($iteration-count);
+    }
+
+    @if $play-state != default {
+        @include animation-play-state($play-state);
+    }
+
+    @if $timing-function != default {
+        @include animation-timing-function($timing-function);
+    }
+
+    @if $fill-mode != default {
+        @include animation-fill-mode($fill-mode);
     }
 }
 
@@ -91,6 +112,17 @@
 	}
 }
 
+@mixin activate-hover($settings...) {
+    @debug $settings;
+    $settings: map-merge(keywords($settings), (active-selector: ':hover'));
+
+    @include activate($settings...);
+}
+
+.layer.bg-dark {
+    @include activate-hover($active-name: 'fade');
+}
+
 @mixin activate-all(
 	$active-name,
 	$inactive-name: $active-name,
@@ -101,7 +133,7 @@
 	$is-3d: false
 ) {
 	@if $is-3d {
-		@extend %is-3d;
+		@extend %animation-3d;
 	}
 
     &#{$inert-selector} {
