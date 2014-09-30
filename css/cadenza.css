@@ -10737,6 +10737,41 @@ dl dd {
   margin-bottom: 0.5rem;
 }
 
+/* line 415, ../scss/modules/type/_components.scss */
+.divider:not(:last-child):after, [class*=" divider-"]:not(:last-child):after, [class^="divider-"]:not(:last-child):after, .dividers > :not(:last-child):after, [class*=" dividers-"] > :not(:last-child):after, [class^="dividers-"] > :not(:last-child):after {
+  content: '';
+  display: inline-block;
+  vertical-align: inherit;
+}
+/* line 421, ../scss/modules/type/_components.scss */
+.divider-vertical:not(:last-child):after, .dividers-vertical > :not(:last-child):after {
+  margin: 1rem 0;
+}
+/* line 425, ../scss/modules/type/_components.scss */
+.divider-horizontal:not(:last-child):after, .dividers-horizontal > :not(:last-child):after {
+  margin: 0 1rem;
+}
+/* line 429, ../scss/modules/type/_components.scss */
+.divider-square:not(:last-child):after, .dividers-square > :not(:last-child):after {
+  content: '\25A0';
+}
+/* line 430, ../scss/modules/type/_components.scss */
+.divider-diamond:not(:last-child):after, .dividers-diamond > :not(:last-child):after {
+  content: '\25C6';
+}
+/* line 431, ../scss/modules/type/_components.scss */
+.divider-bar:not(:last-child):after, .dividers-bar > :not(:last-child):after {
+  content: '\2503';
+}
+/* line 432, ../scss/modules/type/_components.scss */
+.divider-dash:not(:last-child):after, .dividers-dash > :not(:last-child):after {
+  content: '\2501';
+}
+/* line 433, ../scss/modules/type/_components.scss */
+.divider-bullet:not(:last-child):after, .dividers-bullet > :not(:last-child):after {
+  content: '\25CF';
+}
+
 /* line 5, ../scss/modules/type/_themes.scss */
 body, p, li, span {
   color: #363636;
@@ -11804,7 +11839,6 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   font-size: 11.86196px ;
   font-size: 0.74137rem ;
   content: attr(title);
-  background: #024959;
   white-space: nowrap;
   overflow: hidden;
   text-decoration: none;
@@ -11817,12 +11851,12 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
-/* line 114, ../scss/modules/labels/_components.scss */
+/* line 113, ../scss/modules/labels/_components.scss */
 .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after {
   content: '';
 }
 
-/* line 126, ../scss/modules/labels/_components.scss */
+/* line 125, ../scss/modules/labels/_components.scss */
 .tooltip-above-left:before,
 .tooltip-above-right:before,
 .tooltip-above-center:before,
@@ -11832,13 +11866,13 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   margin: 0.5rem 0;
 }
 
-/* line 131, ../scss/modules/labels/_components.scss */
+/* line 130, ../scss/modules/labels/_components.scss */
 .tooltip-left:before,
 .tooltip-right:before {
   margin: 0 0.5rem;
 }
 
-/* line 137, ../scss/modules/labels/_components.scss */
+/* line 136, ../scss/modules/labels/_components.scss */
 .tooltip-above-left:after,
 .tooltip-above-right:after,
 .tooltip-above-center:after {
@@ -11847,7 +11881,7 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   border-right: 0.5rem solid transparent;
 }
 
-/* line 143, ../scss/modules/labels/_components.scss */
+/* line 142, ../scss/modules/labels/_components.scss */
 .tooltip-below-left:after,
 .tooltip-below-right:after,
 .tooltip-below-center:after {
@@ -11856,21 +11890,21 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   border-right: 0.5rem solid transparent;
 }
 
-/* line 147, ../scss/modules/labels/_components.scss */
+/* line 146, ../scss/modules/labels/_components.scss */
 .tooltip-left:after {
   border-left: 0.5rem solid #024959;
   border-top: 0.5rem solid transparent;
   border-bottom: 0.5rem solid transparent;
 }
 
-/* line 151, ../scss/modules/labels/_components.scss */
+/* line 150, ../scss/modules/labels/_components.scss */
 .tooltip-right:after {
   border-right: 0.5rem solid #024959;
   border-top: 0.5rem solid transparent;
   border-bottom: 0.5rem solid transparent;
 }
 
-/* line 155, ../scss/modules/labels/_components.scss */
+/* line 154, ../scss/modules/labels/_components.scss */
 .tooltip-above-left:before {
   position: absolute;
   bottom: 100%;
@@ -11878,7 +11912,7 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   left: 0;
   right: inherit;
 }
-/* line 156, ../scss/modules/labels/_components.scss */
+/* line 155, ../scss/modules/labels/_components.scss */
 .tooltip-above-left:after {
   position: absolute;
   top: -0.5rem;
@@ -11887,7 +11921,7 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   right: inherit;
 }
 
-/* line 160, ../scss/modules/labels/_components.scss */
+/* line 159, ../scss/modules/labels/_components.scss */
 .tooltip-above-right:before {
   position: absolute;
   bottom: 100%;
@@ -11895,7 +11929,7 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   right: 0;
   left: inherit;
 }
-/* line 161, ../scss/modules/labels/_components.scss */
+/* line 160, ../scss/modules/labels/_components.scss */
 .tooltip-above-right:after {
   position: absolute;
   top: -0.5rem;
@@ -11904,7 +11938,7 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   left: inherit;
 }
 
-/* line 165, ../scss/modules/labels/_components.scss */
+/* line 164, ../scss/modules/labels/_components.scss */
 .tooltip-above-center:before {
   position: absolute;
   bottom: 100%;
@@ -11916,7 +11950,7 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-/* line 166, ../scss/modules/labels/_components.scss */
+/* line 165, ../scss/modules/labels/_components.scss */
 .tooltip-above-center:after {
   position: absolute;
   top: -0.5rem;
@@ -11929,7 +11963,7 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   transform: translateX(-50%);
 }
 
-/* line 170, ../scss/modules/labels/_components.scss */
+/* line 169, ../scss/modules/labels/_components.scss */
 .tooltip-below-left:before {
   position: absolute;
   top: 100%;
@@ -11937,7 +11971,7 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   left: 0;
   right: inherit;
 }
-/* line 171, ../scss/modules/labels/_components.scss */
+/* line 170, ../scss/modules/labels/_components.scss */
 .tooltip-below-left:after {
   position: absolute;
   bottom: -0.5rem;
@@ -11946,7 +11980,7 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   right: inherit;
 }
 
-/* line 175, ../scss/modules/labels/_components.scss */
+/* line 174, ../scss/modules/labels/_components.scss */
 .tooltip-below-right:before {
   position: absolute;
   top: 100%;
@@ -11954,7 +11988,7 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   right: 0;
   left: inherit;
 }
-/* line 176, ../scss/modules/labels/_components.scss */
+/* line 175, ../scss/modules/labels/_components.scss */
 .tooltip-below-right:after {
   position: absolute;
   bottom: -0.5rem;
@@ -11963,7 +11997,7 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   left: inherit;
 }
 
-/* line 180, ../scss/modules/labels/_components.scss */
+/* line 179, ../scss/modules/labels/_components.scss */
 .tooltip-below-center:before {
   position: absolute;
   top: 100%;
@@ -11975,7 +12009,7 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
-/* line 181, ../scss/modules/labels/_components.scss */
+/* line 180, ../scss/modules/labels/_components.scss */
 .tooltip-below-center:after {
   position: absolute;
   left: 50%;
@@ -11988,7 +12022,7 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   transform: translateX(-50%);
 }
 
-/* line 185, ../scss/modules/labels/_components.scss */
+/* line 184, ../scss/modules/labels/_components.scss */
 .tooltip-left:before {
   position: absolute;
   top: 50%;
@@ -12001,7 +12035,7 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 186, ../scss/modules/labels/_components.scss */
+/* line 185, ../scss/modules/labels/_components.scss */
 .tooltip-left:after {
   position: absolute;
   top: 50%;
@@ -12015,7 +12049,7 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   transform: translateY(-50%);
 }
 
-/* line 190, ../scss/modules/labels/_components.scss */
+/* line 189, ../scss/modules/labels/_components.scss */
 .tooltip-right:before {
   position: absolute;
   top: 50%;
@@ -12028,7 +12062,7 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
 }
-/* line 191, ../scss/modules/labels/_components.scss */
+/* line 190, ../scss/modules/labels/_components.scss */
 .tooltip-right:after {
   position: absolute;
   top: 50%;

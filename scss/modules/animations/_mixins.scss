@@ -113,7 +113,6 @@
 }
 
 @mixin activate-hover($settings...) {
-    @debug $settings;
     $settings: map-merge(keywords($settings), (active-selector: ':hover'));
 
     @include activate($settings...);

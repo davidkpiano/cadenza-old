@@ -214,4 +214,21 @@ ol { @extend %list-ordered; }
 
 dl { @extend %list-description; }
 
+// Dividers
+// --------
+#{prefixed-class('divider')}, #{prefixed-class('dividers', $selector: '> *')} {
+	@extend %divider;
+}
+
+.divider {
+	&-vertical, &s-vertical > * { @extend %divider-vertical; }
+	&-horizontal, &s-horizontal > * { @extend %divider-horizontal; }
+
+	&-square, &s-square > * { @extend %divider-square; }
+	&-diamond, &s-diamond > * { @extend %divider-diamond; }
+	&-bar, &s-bar > * { @extend %divider-bar; }
+	&-dash, &s-dash > * { @extend %divider-dash; }
+	&-bullet, &s-bullet > * { @extend %divider-bullet; }
+}
+
 

@@ -410,6 +410,28 @@
 	}
 }
 
+// Dividers
+%divider {
+    &:not(:last-child):after {    
+        content: '';
+        display: inline-block;
+        vertical-align: $divider-vertical-align;
+    }
+
+    &-vertical:not(:last-child):after {
+        margin: $divider-margin-vertical 0;
+    }
+
+    &-horizontal:not(:last-child):after {
+        margin: 0 $divider-margin-horizontal;
+    }
+
+    &-square:not(:last-child):after { content: '\25A0'; }
+    &-diamond:not(:last-child):after { content: '\25C6'; }
+    &-bar:not(:last-child):after { content: '\2503'; }
+    &-dash:not(:last-child):after { content: '\2501'; }
+    &-bullet:not(:last-child):after { content: '\25CF'; }
+}
 
 
 

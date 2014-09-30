@@ -112,6 +112,19 @@ $type-list-dl-header-weight: bold !default;
 $type-list-dl-header-margin-bottom: 0.5rem !default;
 $type-list-dl-margin-bottom: 0.5rem !default;
 
+// Dividers
+$divider-style: default !default;
+$divider-theme: default !default;
+$divider-margin: 1rem !default;
+$divider-margin-vertical: $divider-margin !default;
+$divider-margin-horizontal: $divider-margin !default;
+$divider-vertical-align: inherit !default;
+
+// Divider Theme
+$divider-color-light: $color-light !default;
+$divider-color-dark: $color-dark !default;
+$divider-color: theme-mode($divider-color-light, $divider-color-dark) !default;
+
 // Imports
 @import
 	'_mixins',
