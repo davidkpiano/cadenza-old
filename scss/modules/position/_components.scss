@@ -1,0 +1,35 @@
+// 
+// Position Components
+// ===================
+
+@each $position-vertical in (top, bottom, below, above, center) {
+    @each $position-horizontal in (left, right, before, after, center) {
+        %position-#{$position-vertical}-#{$position-horizontal} {
+            @include position-absolute($position-vertical, $position-horizontal);
+        }
+    }
+}
+
+@each $position in (top, bottom) {
+    %position-#{$position} { @include position-absolute($position, false); }
+}
+
+@each $position in (left, right) {
+    %position-#{$position} { @include position-absolute(false, $position); }
+}
+
+@each $overlap-vertical in (top, bottom) {
+    @each $overlap-horizontal in (left, right) {
+        %overlap-#{$overlap-vertical}-#{$overlap-horizontal} {
+            @include overlap($overlap-vertical, $overlap-horizontal);
+        }
+    }
+}
+
+@each $overlap in (top, bottom) {
+    %overlap-#{$overlap} { @include overlap($overlap, false); }
+}
+
+@each $overlap in (left, right) {
+    %overlap-#{$overlap} { @include overlap(false, $overlap); }
+}

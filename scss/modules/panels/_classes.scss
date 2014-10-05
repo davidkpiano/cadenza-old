@@ -15,7 +15,7 @@
 }
 
 // Alert Classes
-#{prefixed-class('alert')} {
+.alert {
     @extend %alert;
     @include style('alert', $theme: $alert-theme);
 

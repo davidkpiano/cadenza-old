@@ -4,7 +4,7 @@
 
 // Panel Theme
 @mixin theme-panel-default(
-	$color: $color-light,
+	$color: $color-primary-light,
 	$color-border: darken($color, 5%),
 	$color-header: $color,
 	$color-body: white,
@@ -50,6 +50,11 @@
 ) {
 	background-color: $color;
 	border-color: darken($color, 5%);
+
+	@if is-dark($color) {
+		@extend %color-light;
+		@extend .theme-light;
+	}
 }
 
 %theme-alert-default {

@@ -2505,26 +2505,48 @@
   box-sizing: border-box;
 }
 
-/* line 10, ../scss/modules/global/_components.scss */
-.overlap-top {
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+/* line 7, ../scss/modules/position/_components.scss */
+.position-top-left {
+  position: absolute;
+  top: 0;
+  bottom: inherit;
+  left: 0;
+  right: inherit;
 }
 
-/* line 14, ../scss/modules/global/_components.scss */
-.overlap-bottom {
-  -webkit-transform: translateY(50%);
-  -moz-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  -o-transform: translateY(50%);
-  transform: translateY(50%);
+/* line 7, ../scss/modules/position/_components.scss */
+.position-top-right {
+  position: absolute;
+  top: 0;
+  bottom: inherit;
+  right: 0;
+  left: inherit;
 }
 
-/* line 18, ../scss/modules/global/_components.scss */
-.overlap-left {
+/* line 7, ../scss/modules/position/_components.scss */
+.position-top-before {
+  position: absolute;
+  top: 0;
+  bottom: inherit;
+  right: 100%;
+  left: inherit;
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-top-after {
+  position: absolute;
+  top: 0;
+  bottom: inherit;
+  left: 100%;
+  right: inherit;
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-top-center {
+  position: absolute;
+  top: 0;
+  bottom: inherit;
+  left: 50%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -2532,13 +2554,322 @@
   transform: translateX(-50%);
 }
 
-/* line 22, ../scss/modules/global/_components.scss */
-.overlap-right {
+/* line 7, ../scss/modules/position/_components.scss */
+.position-bottom-left {
+  position: absolute;
+  bottom: 0;
+  top: inherit;
+  left: 0;
+  right: inherit;
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-bottom-right {
+  position: absolute;
+  bottom: 0;
+  top: inherit;
+  right: 0;
+  left: inherit;
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-bottom-before {
+  position: absolute;
+  bottom: 0;
+  top: inherit;
+  right: 100%;
+  left: inherit;
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-bottom-after {
+  position: absolute;
+  bottom: 0;
+  top: inherit;
+  left: 100%;
+  right: inherit;
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-bottom-center {
+  position: absolute;
+  bottom: 0;
+  top: inherit;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-below-left {
+  position: absolute;
+  top: 100%;
+  bottom: inherit;
+  left: 0;
+  right: inherit;
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-below-right {
+  position: absolute;
+  top: 100%;
+  bottom: inherit;
+  right: 0;
+  left: inherit;
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-below-before {
+  position: absolute;
+  top: 100%;
+  bottom: inherit;
+  right: 100%;
+  left: inherit;
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-below-after {
+  position: absolute;
+  top: 100%;
+  bottom: inherit;
+  left: 100%;
+  right: inherit;
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-below-center {
+  position: absolute;
+  top: 100%;
+  bottom: inherit;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-above-left {
+  position: absolute;
+  bottom: 100%;
+  top: inherit;
+  left: 0;
+  right: inherit;
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-above-right {
+  position: absolute;
+  bottom: 100%;
+  top: inherit;
+  right: 0;
+  left: inherit;
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-above-before {
+  position: absolute;
+  bottom: 100%;
+  top: inherit;
+  right: 100%;
+  left: inherit;
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-above-after {
+  position: absolute;
+  bottom: 100%;
+  top: inherit;
+  left: 100%;
+  right: inherit;
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-above-center {
+  position: absolute;
+  bottom: 100%;
+  top: inherit;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-center-left {
+  position: absolute;
+  top: 50%;
+  bottom: inherit;
+  left: 0;
+  right: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-center-right {
+  position: absolute;
+  top: 50%;
+  bottom: inherit;
+  right: 0;
+  left: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-center-before {
+  position: absolute;
+  top: 50%;
+  bottom: inherit;
+  right: 100%;
+  left: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-center-after {
+  position: absolute;
+  top: 50%;
+  bottom: inherit;
+  left: 100%;
+  right: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 7, ../scss/modules/position/_components.scss */
+.position-center-center {
+  position: absolute;
+  top: 50%;
+  bottom: inherit;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+
+/* line 14, ../scss/modules/position/_components.scss */
+.position-top {
+  position: absolute;
+  top: 0;
+  bottom: inherit;
+}
+
+/* line 14, ../scss/modules/position/_components.scss */
+.position-bottom {
+  position: absolute;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 18, ../scss/modules/position/_components.scss */
+.position-left {
+  position: absolute;
+  left: 0;
+  right: inherit;
+}
+
+/* line 18, ../scss/modules/position/_components.scss */
+.position-right {
+  position: absolute;
+  right: 0;
+  left: inherit;
+}
+
+/* line 23, ../scss/modules/position/_components.scss */
+.overlap-top-left {
+  position: absolute;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  -moz-transform: translateY(-50%) translateX(-50%);
+  -ms-transform: translateY(-50%) translateX(-50%);
+  -o-transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
+}
+
+/* line 23, ../scss/modules/position/_components.scss */
+.overlap-top-right {
+  position: absolute;
+  -webkit-transform: translateY(-50%) translateX(50%);
+  -moz-transform: translateY(-50%) translateX(50%);
+  -ms-transform: translateY(-50%) translateX(50%);
+  -o-transform: translateY(-50%) translateX(50%);
+  transform: translateY(-50%) translateX(50%);
+}
+
+/* line 23, ../scss/modules/position/_components.scss */
+.overlap-bottom-left {
+  position: absolute;
+  -webkit-transform: translateY(50%) translateX(-50%);
+  -moz-transform: translateY(50%) translateX(-50%);
+  -ms-transform: translateY(50%) translateX(-50%);
+  -o-transform: translateY(50%) translateX(-50%);
+  transform: translateY(50%) translateX(-50%);
+}
+
+/* line 23, ../scss/modules/position/_components.scss */
+.overlap-bottom-right {
+  position: absolute;
+  -webkit-transform: translateY(50%) translateX(50%);
+  -moz-transform: translateY(50%) translateX(50%);
+  -ms-transform: translateY(50%) translateX(50%);
+  -o-transform: translateY(50%) translateX(50%);
+  transform: translateY(50%) translateX(50%);
+}
+
+/* line 27, ../scss/modules/position/_classes.scss */
+.overlap-top {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 27, ../scss/modules/position/_classes.scss */
+.overlap-bottom {
+  position: absolute;
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
   -o-transform: translateY(50%);
   transform: translateY(50%);
+}
+
+/* line 27, ../scss/modules/position/_classes.scss */
+.overlap-left {
+  position: absolute;
+  top: left;
+  bottom: inherit;
+}
+
+/* line 27, ../scss/modules/position/_classes.scss */
+.overlap-right {
+  position: absolute;
+  top: right;
+  bottom: inherit;
 }
 
 /* line 13, ../scss/modules/themes/_components.scss */
@@ -2606,7 +2937,7 @@
 }
 
 /* line 78, ../scss/modules/themes/_components.scss */
-.color-light, .color-light p, .color-light li, .color-light span {
+.color-light, .alert, .alert.success, .alert.failure, .color-light p, .alert p, .alert.success p, .alert.failure p, .color-light li, .alert li, .alert.success li, .alert.failure li, .color-light span, .alert span, .alert.success span, .alert.failure span {
   color: #EFEFEF !important;
 }
 
@@ -2646,6 +2977,21 @@
 }
 
 /* line 73, ../scss/modules/themes/_components.scss */
+.bg-primary-light, .hover-bg-primary-light:hover {
+  background-color: #ecf1f2;
+}
+
+/* line 78, ../scss/modules/themes/_components.scss */
+.color-primary-light, .color-primary-light p, .color-primary-light li, .color-primary-light span {
+  color: #ecf1f2 !important;
+}
+
+/* line 81, ../scss/modules/themes/_components.scss */
+.border-primary-light, .borders-primary-light > * {
+  border-color: #ecf1f2;
+}
+
+/* line 73, ../scss/modules/themes/_components.scss */
 .bg-secondary, .hover-bg-secondary:hover {
   background-color: #E74C30;
 }
@@ -2658,6 +3004,21 @@
 /* line 81, ../scss/modules/themes/_components.scss */
 .border-secondary, .borders-secondary > * {
   border-color: #E74C30;
+}
+
+/* line 73, ../scss/modules/themes/_components.scss */
+.bg-secondary-light, .hover-bg-secondary-light:hover {
+  background-color: #fdf1ef;
+}
+
+/* line 78, ../scss/modules/themes/_components.scss */
+.color-secondary-light, .color-secondary-light p, .color-secondary-light li, .color-secondary-light span {
+  color: #fdf1ef !important;
+}
+
+/* line 81, ../scss/modules/themes/_components.scss */
+.border-secondary-light, .borders-secondary-light > * {
+  border-color: #fdf1ef;
 }
 
 /* line 73, ../scss/modules/themes/_components.scss */
@@ -5132,11 +5493,11 @@ textarea.inline {
 }
 
 /* line 186, ../scss/modules/_layout.scss */
-.halign-center, .full, .full-height, .full-width, .block, .clearfix, nav.horizontal, nav.horizontal nav > ul, .button-group, .modal, .panel, .panel > header, .panel > hgroup, .panel > .panel-header, .panel > section, .panel > .panel-body, .panel > footer, .panel > .panel-footer, .alert, [class*=" alert-"], [class^="alert-"] {
+.halign-center, .full, .full-height, .full-width, .block, .clearfix, nav.horizontal, nav.horizontal nav > ul, .button-group, .modal, .panel, .panel > header, .panel > hgroup, .panel > .panel-header, .panel > section, .panel > .panel-body, .panel > footer, .panel > .panel-footer, .alert-small, .alert {
   *zoom: 1;
 }
 /* line 38, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
-.halign-center:after, .full:after, .full-height:after, .full-width:after, .block:after, .clearfix:after, nav.horizontal:after, nav.horizontal nav > ul:after, .button-group:after, .modal:after, .panel:after, .panel > header:after, .panel > hgroup:after, .panel > .panel-header:after, .panel > section:after, .panel > .panel-body:after, .panel > footer:after, .panel > .panel-footer:after, .alert:after, [class*=" alert-"]:after, [class^="alert-"]:after {
+.halign-center:after, .full:after, .full-height:after, .full-width:after, .block:after, .clearfix:after, nav.horizontal:after, nav.horizontal nav > ul:after, .button-group:after, .modal:after, .panel:after, .panel > header:after, .panel > hgroup:after, .panel > .panel-header:after, .panel > section:after, .panel > .panel-body:after, .panel > footer:after, .panel > .panel-footer:after, .alert-small:after, .alert:after {
   content: "";
   display: table;
   clear: both;
@@ -10830,7 +11191,7 @@ body, p, li, span {
   color: #363636;
 }
 /* line 8, ../scss/modules/type/_themes.scss */
-.theme-light body, .theme-light p, .theme-light li, .theme-light span, .hover-theme-light:hover body, .hover-theme-light:hover p, .hover-theme-light:hover li, .hover-theme-light:hover span {
+.theme-light body, .alert body, .alert.success body, .alert.failure body, .theme-light p, .alert p, .alert.success p, .alert.failure p, .theme-light li, .alert li, .alert.success li, .alert.failure li, .theme-light span, .alert span, .alert.success span, .alert.failure span, .hover-theme-light:hover body, .hover-theme-light:hover p, .hover-theme-light:hover li, .hover-theme-light:hover span {
   color: #EFEFEF;
 }
 /* line 9, ../scss/modules/type/_themes.scss */
@@ -10843,7 +11204,7 @@ body, p, li, span {
   color: rgba(0, 0, 0, 0.4);
 }
 /* line 15, ../scss/modules/type/_themes.scss */
-.theme-light .subtext, .hover-theme-light:hover .subtext, .subtext-light {
+.theme-light .subtext, .alert .subtext, .hover-theme-light:hover .subtext, .subtext-light {
   color: rgba(255, 255, 255, 0.4);
 }
 /* line 16, ../scss/modules/type/_themes.scss */
@@ -10861,7 +11222,7 @@ h1, .h, [class*=" h-"], [class^="h-"], h2, h3, h4, h5, h6 {
   color: #363636;
 }
 /* line 31, ../scss/modules/type/_themes.scss */
-.theme-light h1, .theme-light h2, .theme-light h3, .theme-light h4, .theme-light h5, .theme-light h6, .theme-light .h, .theme-light [class*=" h-"], .theme-light [class^="h-"], .hover-theme-light:hover h1, .hover-theme-light:hover h2, .hover-theme-light:hover h3, .hover-theme-light:hover h4, .hover-theme-light:hover h5, .hover-theme-light:hover h6, .hover-theme-light:hover .h, .hover-theme-light:hover [class*=" h-"], .hover-theme-light:hover [class^="h-"], h1.color-light, .h.color-light, [class*=" h-"].color-light, [class^="h-"].color-light, h2.color-light, h3.color-light, h4.color-light, h5.color-light, h6.color-light {
+.theme-light h1, .alert h1, .alert.success h1, .alert.failure h1, .theme-light h2, .alert h2, .alert.success h2, .alert.failure h2, .theme-light h3, .alert h3, .alert.success h3, .alert.failure h3, .theme-light h4, .alert h4, .alert.success h4, .alert.failure h4, .theme-light h5, .alert h5, .alert.success h5, .alert.failure h5, .theme-light h6, .alert h6, .alert.success h6, .alert.failure h6, .theme-light .h, .alert .h, .theme-light [class*=" h-"], .alert [class*=" h-"], .theme-light [class^="h-"], .alert [class^="h-"], .hover-theme-light:hover h1, .hover-theme-light:hover h2, .hover-theme-light:hover h3, .hover-theme-light:hover h4, .hover-theme-light:hover h5, .hover-theme-light:hover h6, .hover-theme-light:hover .h, .hover-theme-light:hover [class*=" h-"], .hover-theme-light:hover [class^="h-"], h1.color-light, .h.color-light, [class*=" h-"].color-light, [class^="h-"].color-light, h2.color-light, h3.color-light, h4.color-light, h5.color-light, h6.color-light {
   color: #EFEFEF;
 }
 /* line 32, ../scss/modules/type/_themes.scss */
@@ -10874,7 +11235,7 @@ h1, .h, [class*=" h-"], [class^="h-"], h2, h3, h4, h5, h6 {
   color: rgba(54, 54, 54, 0.4);
 }
 /* line 38, ../scss/modules/type/_themes.scss */
-.theme-light .subheading, .hover-theme-light:hover .subheading, .subheading-light {
+.theme-light .subheading, .alert .subheading, .hover-theme-light:hover .subheading, .subheading-light {
   color: rgba(239, 239, 239, 0.4);
 }
 /* line 39, ../scss/modules/type/_themes.scss */
@@ -10895,15 +11256,15 @@ a:focus {
   color: #03728b;
 }
 /* line 64, ../scss/modules/type/_themes.scss */
-.theme-light a, .hover-theme-light:hover a {
+.theme-light a, .alert a, .alert.success a, .alert.failure a, .hover-theme-light:hover a {
   color: #EFEFEF;
 }
 /* line 53, ../scss/modules/type/_themes.scss */
-.theme-light a:hover, .hover-theme-light:hover a:hover {
+.theme-light a:hover, .alert a:hover, .hover-theme-light:hover a:hover {
   color: white;
 }
 /* line 54, ../scss/modules/type/_themes.scss */
-.theme-light a:focus, .hover-theme-light:hover a:focus {
+.theme-light a:focus, .alert a:focus, .hover-theme-light:hover a:focus {
   color: white;
 }
 /* line 65, ../scss/modules/type/_themes.scss */
@@ -12604,7 +12965,7 @@ table.hover tr:hover {
 }
 
 /* line 50, ../scss/modules/panels/_components.scss */
-.alert, [class*=" alert-"], [class^="alert-"] {
+.alert-small, .alert {
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
   display: block;
@@ -12618,12 +12979,11 @@ table.hover tr:hover {
   border-radius: 3px;
 }
 /* line 64, ../scss/modules/panels/_components.scss */
-.alert > *:last-child, [class*=" alert-"] > *:last-child, [class^="alert-"] > *:last-child {
+.alert-small > *:last-child, .alert > *:last-child {
   margin-bottom: 0;
 }
-
-/* line 70, ../scss/modules/panels/_components.scss */
-.alert .alert-exit, [class*=" alert-"] .alert-exit, [class^="alert-"] .alert-exit {
+/* line 68, ../scss/modules/panels/_components.scss */
+.alert .alert-exit {
   position: absolute;
   top: 0;
   bottom: inherit;
@@ -12631,12 +12991,11 @@ table.hover tr:hover {
   left: inherit;
   padding: 8px;
 }
-/* line 74, ../scss/modules/panels/_components.scss */
-.alert .alert-exit:before, [class*=" alert-"] .alert-exit:before, [class^="alert-"] .alert-exit:before {
+/* line 72, ../scss/modules/panels/_components.scss */
+.alert .alert-exit:before {
   content: "×";
 }
-
-/* line 79, ../scss/modules/panels/_components.scss */
+/* line 77, ../scss/modules/panels/_components.scss */
 .alert-small {
   padding: 0.5rem;
   margin: 0 0 0.5rem 0;
@@ -12692,13 +13051,13 @@ table.hover tr:hover {
 
 /* line 34, ../scss/modules/panels/_themes.scss */
 .panel {
-  background-color: #EFEFEF;
-  border-color: #e2e2e2;
+  background-color: #ecf1f2;
+  border-color: #dde6e8;
 }
 /* line 16, ../scss/modules/panels/_themes.scss */
 .panel > header, .panel > hgroup, .panel > .panel-header {
-  background-color: #EFEFEF;
-  border-color: #e2e2e2;
+  background-color: #ecf1f2;
+  border-color: #dde6e8;
 }
 /* line 22, ../scss/modules/panels/_themes.scss */
 .panel > section, .panel > .panel-body {
@@ -12706,48 +13065,28 @@ table.hover tr:hover {
 }
 /* line 27, ../scss/modules/panels/_themes.scss */
 .panel > footer, .panel > .panel-footer {
-  background-color: #EFEFEF;
-  border-color: #e2e2e2;
+  background-color: #ecf1f2;
+  border-color: #dde6e8;
 }
-/* line 76, ../scss/modules/panels/_themes.scss */
-.alert, [class*=" alert-"], [class^="alert-"] {
-  background-color: transparent;
-  border-color: #E7E7E7;
-  border-left: 3px solid #024959;
+/* line 60, ../scss/modules/panels/_themes.scss */
+.alert {
+  background-color: #024959;
+  border-color: #013540;
 }
-/* line 73, ../scss/modules/panels/_themes.scss */
-.alert h1, [class*=" alert-"] h1, [class^="alert-"] h1, .alert h2, [class*=" alert-"] h2, [class^="alert-"] h2, .alert h3, [class*=" alert-"] h3, [class^="alert-"] h3, .alert h4, [class*=" alert-"] h4, [class^="alert-"] h4, .alert h5, [class*=" alert-"] h5, [class^="alert-"] h5, .alert h6, [class*=" alert-"] h6, [class^="alert-"] h6, .alert .h, [class*=" alert-"] .h, [class^="alert-"] .h, .alert [class*=" h-"], [class*=" alert-"] [class*=" h-"], [class^="alert-"] [class*=" h-"], .alert [class^="h-"], [class*=" alert-"] [class^="h-"], [class^="alert-"] [class^="h-"] {
-  color: #024959;
+/* line 66, ../scss/modules/panels/_themes.scss */
+.alert.success {
+  background-color: #96CC69;
+  border-color: #89c656;
 }
-/* line 82, ../scss/modules/panels/_themes.scss */
-.alert.success, [class*=" alert-"].success, [class^="alert-"].success {
-  background-color: transparent;
-  border-color: #E7E7E7;
-  border-left: 3px solid #96CC69;
+/* line 67, ../scss/modules/panels/_themes.scss */
+.alert.warning {
+  background-color: #FFCC5C;
+  border-color: #ffc443;
 }
-/* line 73, ../scss/modules/panels/_themes.scss */
-.alert.success h1, [class*=" alert-"].success h1, [class^="alert-"].success h1, .alert.success h2, [class*=" alert-"].success h2, [class^="alert-"].success h2, .alert.success h3, [class*=" alert-"].success h3, [class^="alert-"].success h3, .alert.success h4, [class*=" alert-"].success h4, [class^="alert-"].success h4, .alert.success h5, [class*=" alert-"].success h5, [class^="alert-"].success h5, .alert.success h6, [class*=" alert-"].success h6, [class^="alert-"].success h6, .alert.success .h, [class*=" alert-"].success .h, [class^="alert-"].success .h, .alert.success [class*=" h-"], [class*=" alert-"].success [class*=" h-"], [class^="alert-"].success [class*=" h-"], .alert.success [class^="h-"], [class*=" alert-"].success [class^="h-"], [class^="alert-"].success [class^="h-"] {
-  color: #96CC69;
-}
-/* line 83, ../scss/modules/panels/_themes.scss */
-.alert.warning, [class*=" alert-"].warning, [class^="alert-"].warning {
-  background-color: transparent;
-  border-color: #E7E7E7;
-  border-left: 3px solid #FFCC5C;
-}
-/* line 73, ../scss/modules/panels/_themes.scss */
-.alert.warning h1, [class*=" alert-"].warning h1, [class^="alert-"].warning h1, .alert.warning h2, [class*=" alert-"].warning h2, [class^="alert-"].warning h2, .alert.warning h3, [class*=" alert-"].warning h3, [class^="alert-"].warning h3, .alert.warning h4, [class*=" alert-"].warning h4, [class^="alert-"].warning h4, .alert.warning h5, [class*=" alert-"].warning h5, [class^="alert-"].warning h5, .alert.warning h6, [class*=" alert-"].warning h6, [class^="alert-"].warning h6, .alert.warning .h, [class*=" alert-"].warning .h, [class^="alert-"].warning .h, .alert.warning [class*=" h-"], [class*=" alert-"].warning [class*=" h-"], [class^="alert-"].warning [class*=" h-"], .alert.warning [class^="h-"], [class*=" alert-"].warning [class^="h-"], [class^="alert-"].warning [class^="h-"] {
-  color: #FFCC5C;
-}
-/* line 84, ../scss/modules/panels/_themes.scss */
-.alert.failure, [class*=" alert-"].failure, [class^="alert-"].failure {
-  background-color: transparent;
-  border-color: #E7E7E7;
-  border-left: 3px solid #C44741;
-}
-/* line 73, ../scss/modules/panels/_themes.scss */
-.alert.failure h1, [class*=" alert-"].failure h1, [class^="alert-"].failure h1, .alert.failure h2, [class*=" alert-"].failure h2, [class^="alert-"].failure h2, .alert.failure h3, [class*=" alert-"].failure h3, [class^="alert-"].failure h3, .alert.failure h4, [class*=" alert-"].failure h4, [class^="alert-"].failure h4, .alert.failure h5, [class*=" alert-"].failure h5, [class^="alert-"].failure h5, .alert.failure h6, [class*=" alert-"].failure h6, [class^="alert-"].failure h6, .alert.failure .h, [class*=" alert-"].failure .h, [class^="alert-"].failure .h, .alert.failure [class*=" h-"], [class*=" alert-"].failure [class*=" h-"], [class^="alert-"].failure [class*=" h-"], .alert.failure [class^="h-"], [class*=" alert-"].failure [class^="h-"], [class^="alert-"].failure [class^="h-"] {
-  color: #C44741;
+/* line 68, ../scss/modules/panels/_themes.scss */
+.alert.failure {
+  background-color: #C44741;
+  border-color: #b43d38;
 }
 
 /* 'modules/_tabs'; */
@@ -12756,7 +13095,7 @@ table.hover tr:hover {
 /* 'modules/_animations'; */
 /* Import Extensions */
 /* Import Themes */
-/* line 49, ../scss/cadenza.scss */
+/* line 50, ../scss/cadenza.scss */
 .gg-device {
   height: 640px;
   width: 360px;
@@ -12774,7 +13113,7 @@ table.hover tr:hover {
   height: calc(100% - (0px + 3rem + 3rem));
 }
 
-/* line 55, ../scss/cadenza.scss */
+/* line 56, ../scss/cadenza.scss */
 .gg-header {
   *zoom: 1;
 }
@@ -12864,17 +13203,17 @@ table.hover tr:hover {
   display: table;
   clear: both;
 }
-/* line 158, ../scss/modules/global/_mixins.scss */
+/* line 63, ../scss/modules/global/_mixins.scss */
 .gg-header > * {
   display: table;
 }
-/* line 151, ../scss/modules/global/_mixins.scss */
+/* line 56, ../scss/modules/global/_mixins.scss */
 .gg-header > * > * {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 61, ../scss/cadenza.scss */
+/* line 62, ../scss/cadenza.scss */
 .gg-list-item {
   height: 3.5rem;
   *zoom: 1;
@@ -12945,17 +13284,17 @@ table.hover tr:hover {
   display: table;
   clear: both;
 }
-/* line 158, ../scss/modules/global/_mixins.scss */
+/* line 63, ../scss/modules/global/_mixins.scss */
 .gg-list-item > * {
   display: table;
 }
-/* line 151, ../scss/modules/global/_mixins.scss */
+/* line 56, ../scss/modules/global/_mixins.scss */
 .gg-list-item > * > * {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 67, ../scss/cadenza.scss */
+/* line 68, ../scss/cadenza.scss */
 .gg-avatar {
   width: 2rem;
   height: 2rem;
@@ -12965,7 +13304,7 @@ table.hover tr:hover {
   border-radius: 50%;
 }
 
-/* line 71, ../scss/cadenza.scss */
+/* line 72, ../scss/cadenza.scss */
 .gg-flex-list {
   *zoom: 1;
 }
@@ -13035,7 +13374,7 @@ table.hover tr:hover {
   display: table;
   clear: both;
 }
-/* line 76, ../scss/cadenza.scss */
+/* line 77, ../scss/cadenza.scss */
 .gg-flex-list:hover {
   *zoom: 1;
 }
@@ -13106,12 +13445,12 @@ table.hover tr:hover {
   clear: both;
 }
 
-/* line 83, ../scss/cadenza.scss */
+/* line 84, ../scss/cadenza.scss */
 #performance.active .one {
   -webkit-animation: scaleDown-active 0.5s ease-in 0s, scaleDown-inactive 0.5s ease-in 1.5s;
   -webkit-animation-fill-mode: forwards;
 }
-/* line 92, ../scss/cadenza.scss */
+/* line 93, ../scss/cadenza.scss */
 #performance.active .two {
   -moz-animation-name: "scaleUp-active";
   -webkit-animation-name: "scaleUp-active";
@@ -13123,7 +13462,7 @@ table.hover tr:hover {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s;
 }
-/* line 96, ../scss/cadenza.scss */
+/* line 97, ../scss/cadenza.scss */
 #performance.active .three {
   -moz-animation-name: "slideLeft-active";
   -webkit-animation-name: "slideLeft-active";

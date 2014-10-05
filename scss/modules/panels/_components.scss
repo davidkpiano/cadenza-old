@@ -65,20 +65,20 @@
         margin-bottom: 0;
     }
 
-}
+    &-exit {
+        @include position-absolute(top, right);
+        padding: $alert-exit-padding;
 
-%alert-exit {
-    @include position-absolute(top, right);
-    padding: $alert-exit-padding;
-
-    &:before {
-        content: $alert-exit-symbol;
+        &:before {
+            content: $alert-exit-symbol;
+        }
     }
-}
 
-%alert-small {
-    padding: $alert-small-padding;
-    margin: $alert-small-margin;
+    &-small {
+        @extend %alert;
+        padding: $alert-small-padding;
+        margin: $alert-small-margin;
+    }
 }
 
 %alert-group {
