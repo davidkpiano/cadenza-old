@@ -3,14 +3,6 @@
 // ========================
 
 // Panel Theme
-@mixin panel-style(
-	$style: $panel-style,
-	$theme: $panel-theme
-) {
-	@extend %ext-panel-#{$style} !optional;
-	@extend %theme-panel-#{$theme} !optional;
-}
-
 @mixin theme-panel-default(
 	$color: $color-light,
 	$color-border: darken($color, 5%),
@@ -21,59 +13,41 @@
 	background-color: $color;
 	border-color: $color-border;
 
-	> header, > hgroup, .panel-header {
+	%panel-header {
 		// @include foreground-color($color-header);
 		background-color: $color-header;
 		border-color: $color-border;	
 	}
 
-	> section, > .panel-body {
+	%panel-body {
 		// @include foreground-color($color-body);
 		background-color: $color-body;
 	}
 
-	> footer, > .panel-footer {
+	%panel-footer {
 		// @include foreground-color($color-footer);
 		background-color: $color-footer;
 		border-color: $color-border;
 	}
 }
 
-%ext-panel-default {
-	// ...
-}
-
 %theme-panel-default {
-	%panel {	
-		@include theme-panel-default();
+	@include theme-panel-default();
 
-		&.primary { @include theme-panel-default($color-primary); }
-		&.secondary { @include theme-panel-default($color-secondary); }
-		&.light { @include theme-panel-default($color-light); }
-		&.dark { @include theme-panel-default($color-dark); }
+	&-primary { @include theme-panel-default($color-primary); }
+	&-secondary { @include theme-panel-default($color-secondary); }
+	&-light { @include theme-panel-default($color-light); }
+	&-dark { @include theme-panel-default($color-dark); }
 
-		&.success { @include theme-panel-default($color-success); }
-		&.warning { @include theme-panel-default($color-warning); }
-		&.failure { @include theme-panel-default($color-failure); }
-	}
+	&-success { @include theme-panel-default($color-success); }
+	&-warning { @include theme-panel-default($color-warning); }
+	&-failure { @include theme-panel-default($color-failure); }
 }
-
-@include add-theme('panel', $panel-theme);
 
 // Alert Theme
-@mixin alert-style(
-	$style: $alert-style,
-	$theme: $alert-theme
-) {
-	@extend %ext-alert-#{$style} !optional;
-	@extend %theme-alert-#{$theme} !optional;
-}
-
 @mixin theme-alert-default(
 	$color: $color-primary
 ) {
-	// @include foreground-color($color);
-
 	background-color: $color;
 	border-color: darken($color, 5%);
 }
@@ -81,13 +55,32 @@
 %theme-alert-default {
 	@include theme-alert-default();
 
-	&.primary { @include theme-alert-default($color-primary); }
-	&.secondary { @include theme-alert-default($color-secondary); }
-	&.light { @include theme-alert-default($color-light); }
-	&.dark { @include theme-alert-default($color-dark); }
+	&-light { @include theme-alert-default($color-light); }
+	&-dark { @include theme-alert-default($color-dark); }
 
-	&.success { @include theme-alert-default($color-success); }
-	&.warning { @include theme-alert-default($color-warning); }
-	&.failure { @include theme-alert-default($color-failure); }
+	&-success { @include theme-alert-default($color-success); }
+	&-warning { @include theme-alert-default($color-warning); }
+	&-failure { @include theme-alert-default($color-failure); }
+}
+
+@mixin theme-alert-transparent(
+	$color: $color-primary
+) {
+	background-color: transparent;
+	border-color: $color-gray-light;
+	border-left: 3px solid $color;
+
+	%heading { color: $color; }
+}
+
+%theme-alert-transparent {
+	@include theme-alert-transparent();
+
+	&-light { @include theme-alert-transparent($color-light); }
+	&-dark { @include theme-alert-transparent($color-dark); }
+
+	&-success { @include theme-alert-transparent($color-success); }
+	&-warning { @include theme-alert-transparent($color-warning); }
+	&-failure { @include theme-alert-transparent($color-failure); }
 }
 

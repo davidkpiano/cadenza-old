@@ -118,10 +118,6 @@
     @include activate($settings...);
 }
 
-.layer.bg-dark {
-    @include activate-hover($active-name: 'fade');
-}
-
 @mixin activate-all(
 	$active-name,
 	$inactive-name: $active-name,
@@ -153,4 +149,47 @@
         	@extend %inactive;
         }
     }
+}
+
+@mixin performance($active-selector: '&.active') {
+    $_performance-current-index: -1 !global;
+
+    #{$active-selector} {
+        @content;
+    }
+}
+
+@mixin animate($animation-map) {
+    $_performance-current-index: $_performance-current-index + 1 !global;
+
+    $animation-list: ();
+
+    @if type-of($animation-map) == map {
+        @each $animation-index, $animation-name in $animation-map {
+            $animation-list: append($animation-list, #{$animation-name} #{$performance-beat-duration} ease-in #{$animation-index * $performance-beat-duration}, comma);
+        }
+    }
+
+    @debug $animation-list;
+
+    -webkit-animation: $animation-list;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@mixin then-animate($name) {
+    $_performance-current-index: $_performance-current-index + 1 !global;
+
+    @include animation(
+        $name: $name,
+        $duration: $performance-beat-duration,
+        $delay: $_performance-current-index * $performance-beat-duration
+    );
+}
+
+@mixin and-animate($name) {
+    @include animation(
+        $name: $name,
+        $duration: $performance-beat-duration,
+        $delay: $_performance-current-index * $performance-beat-duration
+    );
 }

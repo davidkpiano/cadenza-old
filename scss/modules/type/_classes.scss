@@ -183,6 +183,7 @@ hr {
 	&.darken { @include style('hr', 'darken'); }
 
 	&.dotted { @extend %hr-dotted; }
+	&.dashed { @extend %hr-dashed; }
 
 	&.thick { @extend %hr-thick; }
 	&.thin { @extend %hr-thin; }

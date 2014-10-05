@@ -111,7 +111,10 @@
 }
 
 %paragraph {
-	margin-bottom: $type-p-margin-bottom;
+	&:not(:last-child) {
+        margin-bottom: $type-p-margin-bottom;
+    }
+
     line-height: $type-p-line-height;
     font-weight: $type-p-font-weight;
 
@@ -316,6 +319,10 @@
 
 %hr-dotted {
     border-style: dotted;
+}
+
+%hr-dashed {
+    border-style: dashed;
 }
 
 %hr-thick {

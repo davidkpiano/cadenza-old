@@ -5,6 +5,7 @@
 // Panel Classes
 .panel {
 	@extend %panel;
+    @include style('panel');
 
 	> header, > hgroup, > .panel-header { @extend %panel-header; }
 
@@ -16,7 +17,11 @@
 // Alert Classes
 #{prefixed-class('alert')} {
     @extend %alert;
-    @include alert-style;
+    @include style('alert', $theme: $alert-theme);
+
+    &.success { @include style('alert', 'success', $theme: $alert-theme); }
+    &.warning { @include style('alert', 'warning', $theme: $alert-theme); }
+    &.failure { @include style('alert', 'failure', $theme: $alert-theme); }
 
     .alert-exit { @extend %alert-exit; }
 }

@@ -2720,8 +2720,53 @@
   border-color: rgba(0, 0, 0, 0.4);
 }
 
+/* line 73, ../scss/modules/themes/_components.scss */
+.bg-success, .hover-bg-success:hover {
+  background-color: #96CC69;
+}
+
+/* line 78, ../scss/modules/themes/_components.scss */
+.color-success, .color-success p, .color-success li, .color-success span {
+  color: #96CC69 !important;
+}
+
+/* line 81, ../scss/modules/themes/_components.scss */
+.border-success, .borders-success > * {
+  border-color: #96CC69;
+}
+
+/* line 73, ../scss/modules/themes/_components.scss */
+.bg-warning, .hover-bg-warning:hover {
+  background-color: #FFCC5C;
+}
+
+/* line 78, ../scss/modules/themes/_components.scss */
+.color-warning, .color-warning p, .color-warning li, .color-warning span {
+  color: #FFCC5C !important;
+}
+
+/* line 81, ../scss/modules/themes/_components.scss */
+.border-warning, .borders-warning > * {
+  border-color: #FFCC5C;
+}
+
+/* line 73, ../scss/modules/themes/_components.scss */
+.bg-failure, .hover-bg-failure:hover {
+  background-color: #C44741;
+}
+
+/* line 78, ../scss/modules/themes/_components.scss */
+.color-failure, .color-failure p, .color-failure li, .color-failure span {
+  color: #C44741 !important;
+}
+
+/* line 81, ../scss/modules/themes/_components.scss */
+.border-failure, .borders-failure > * {
+  border-color: #C44741;
+}
+
 /* line 8, ../scss/modules/animations/_components.scss */
-.layer.bg-dark.inert, .inert, .activate-all-fade.inert, .activate-fade.inert, .activate-all-fadeIn.inert, .activate-fadeIn.inert, .activate-all-scaleUp.inert, .activate-scaleUp.inert, .activate-all-scaleDown.inert, .activate-scaleDown.inert, .activate-all-scaleUpDown.inert, .activate-scaleUpDown.inert, .activate-all-scaleDownUp.inert, .activate-scaleDownUp.inert, .activate-all-slideUp.inert, .activate-slideUp.inert, .activate-all-slideUpDown.inert, .activate-slideUpDown.inert, .activate-all-slideDown.inert, .activate-slideDown.inert, .activate-all-slideLeft.inert, .activate-slideLeft.inert, .activate-all-slideRight.inert, .activate-slideRight.inert, .activate-all-shiftUp.inert, .activate-shiftUp.inert, .activate-all-shiftDown.inert, .activate-shiftDown.inert, .activate-all-shiftLeft.inert, .activate-shiftLeft.inert, .activate-all-shiftRight.inert, .activate-shiftRight.inert, .activate-all-shiftLeftRight.inert, .activate-shiftLeftRight.inert, .activate-all-flipLeft.inert, .activate-flipLeft.inert, .activate-all-tilt.inert, .activate-tilt.inert, .inert.tooltip[title], .inert[class*=" tooltip-"][title], .inert[class^="tooltip-"][title], .layer.bg-dark.inert > *, .inert > *, .activate-all-fade.inert > *, .activate-fade.inert > *, .activate-all-fadeIn.inert > *, .activate-fadeIn.inert > *, .activate-all-scaleUp.inert > *, .activate-scaleUp.inert > *, .activate-all-scaleDown.inert > *, .activate-scaleDown.inert > *, .activate-all-scaleUpDown.inert > *, .activate-scaleUpDown.inert > *, .activate-all-scaleDownUp.inert > *, .activate-scaleDownUp.inert > *, .activate-all-slideUp.inert > *, .activate-slideUp.inert > *, .activate-all-slideUpDown.inert > *, .activate-slideUpDown.inert > *, .activate-all-slideDown.inert > *, .activate-slideDown.inert > *, .activate-all-slideLeft.inert > *, .activate-slideLeft.inert > *, .activate-all-slideRight.inert > *, .activate-slideRight.inert > *, .activate-all-shiftUp.inert > *, .activate-shiftUp.inert > *, .activate-all-shiftDown.inert > *, .activate-shiftDown.inert > *, .activate-all-shiftLeft.inert > *, .activate-shiftLeft.inert > *, .activate-all-shiftRight.inert > *, .activate-shiftRight.inert > *, .activate-all-shiftLeftRight.inert > *, .activate-shiftLeftRight.inert > *, .activate-all-flipLeft.inert > *, .activate-flipLeft.inert > *, .activate-all-tilt.inert > *, .activate-tilt.inert > *, .inert.tooltip[title] > *, .inert[class*=" tooltip-"][title] > *, .inert[class^="tooltip-"][title] > * {
+.inert, .activate-all-fade.inert, .activate-fade.inert, .activate-all-fadeIn.inert, .activate-fadeIn.inert, .activate-all-scaleUp.inert, .activate-scaleUp.inert, .activate-all-scaleDown.inert, .activate-scaleDown.inert, .activate-all-scaleUpDown.inert, .activate-scaleUpDown.inert, .activate-all-scaleDownUp.inert, .activate-scaleDownUp.inert, .activate-all-slideUp.inert, .activate-slideUp.inert, .activate-all-slideUpDown.inert, .activate-slideUpDown.inert, .activate-all-slideDown.inert, .activate-slideDown.inert, .activate-all-slideLeft.inert, .activate-slideLeft.inert, .activate-all-slideRight.inert, .activate-slideRight.inert, .activate-all-shiftUp.inert, .activate-shiftUp.inert, .activate-all-shiftDown.inert, .activate-shiftDown.inert, .activate-all-shiftLeft.inert, .activate-shiftLeft.inert, .activate-all-shiftRight.inert, .activate-shiftRight.inert, .activate-all-shiftLeftRight.inert, .activate-shiftLeftRight.inert, .activate-all-flipLeft.inert, .activate-flipLeft.inert, .activate-all-tilt.inert, .activate-tilt.inert, .inert.tooltip[title], .inert[class*=" tooltip-"][title], .inert[class^="tooltip-"][title], .inert > *, .activate-all-fade.inert > *, .activate-fade.inert > *, .activate-all-fadeIn.inert > *, .activate-fadeIn.inert > *, .activate-all-scaleUp.inert > *, .activate-scaleUp.inert > *, .activate-all-scaleDown.inert > *, .activate-scaleDown.inert > *, .activate-all-scaleUpDown.inert > *, .activate-scaleUpDown.inert > *, .activate-all-scaleDownUp.inert > *, .activate-scaleDownUp.inert > *, .activate-all-slideUp.inert > *, .activate-slideUp.inert > *, .activate-all-slideUpDown.inert > *, .activate-slideUpDown.inert > *, .activate-all-slideDown.inert > *, .activate-slideDown.inert > *, .activate-all-slideLeft.inert > *, .activate-slideLeft.inert > *, .activate-all-slideRight.inert > *, .activate-slideRight.inert > *, .activate-all-shiftUp.inert > *, .activate-shiftUp.inert > *, .activate-all-shiftDown.inert > *, .activate-shiftDown.inert > *, .activate-all-shiftLeft.inert > *, .activate-shiftLeft.inert > *, .activate-all-shiftRight.inert > *, .activate-shiftRight.inert > *, .activate-all-shiftLeftRight.inert > *, .activate-shiftLeftRight.inert > *, .activate-all-flipLeft.inert > *, .activate-flipLeft.inert > *, .activate-all-tilt.inert > *, .activate-tilt.inert > *, .inert.tooltip[title] > *, .inert[class*=" tooltip-"][title] > *, .inert[class^="tooltip-"][title] > * {
   -webkit-transition: none !important;
   -moz-transition: none !important;
   -ms-transition: none !important;
@@ -2735,12 +2780,12 @@
 }
 
 /* line 14, ../scss/modules/animations/_components.scss */
-.layer.bg-dark:hover, .activate-, [class*=" activate--"], [class^="activate--"] .ng-enter, .activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-fade.ng-enter, .activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter, .activate-fadeIn.ng-enter, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-scaleUp.ng-enter, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-scaleDown.ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter, .activate-scaleUpDown.ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter, .activate-scaleDownUp.ng-enter, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter, .activate-slideUp.ng-enter, .activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter, .activate-slideUpDown.ng-enter, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter, .activate-slideDown.ng-enter, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter, .activate-slideLeft.ng-enter, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter, .activate-slideRight.ng-enter, .activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter, .activate-shiftUp.ng-enter, .activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter, .activate-shiftDown.ng-enter, .activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-shiftLeft.ng-enter, .activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter, .activate-shiftRight.ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter, .activate-shiftLeftRight.ng-enter, .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-flipLeft.ng-enter, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-tilt.ng-enter, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after {
+.activate-, [class*=" activate--"], [class^="activate--"] .ng-enter, .activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-fade.ng-enter, .activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter, .activate-fadeIn.ng-enter, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-scaleUp.ng-enter, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-scaleDown.ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter, .activate-scaleUpDown.ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter, .activate-scaleDownUp.ng-enter, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter, .activate-slideUp.ng-enter, .activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter, .activate-slideUpDown.ng-enter, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter, .activate-slideDown.ng-enter, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter, .activate-slideLeft.ng-enter, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter, .activate-slideRight.ng-enter, .activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter, .activate-shiftUp.ng-enter, .activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter, .activate-shiftDown.ng-enter, .activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-shiftLeft.ng-enter, .activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter, .activate-shiftRight.ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter, .activate-shiftLeftRight.ng-enter, .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-flipLeft.ng-enter, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-tilt.ng-enter, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after {
   z-index: 2;
 }
 
 /* line 18, ../scss/modules/animations/_components.scss */
-.layer.bg-dark.ng-leave, .ng-leave, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-fade.ng-leave, .activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave, .activate-fadeIn.ng-leave, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-scaleUp.ng-leave, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-scaleDown.ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave, .activate-scaleUpDown.ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave, .activate-scaleDownUp.ng-leave, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave, .activate-slideUp.ng-leave, .activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave, .activate-slideUpDown.ng-leave, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave, .activate-slideDown.ng-leave, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave, .activate-slideLeft.ng-leave, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave, .activate-slideRight.ng-leave, .activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave, .activate-shiftUp.ng-leave, .activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave, .activate-shiftDown.ng-leave, .activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave, .activate-shiftLeft.ng-leave, .activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-shiftRight.ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave, .activate-shiftLeftRight.ng-leave, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-flipLeft.ng-leave, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-tilt.ng-leave, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after {
+.ng-leave, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-fade.ng-leave, .activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave, .activate-fadeIn.ng-leave, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-scaleUp.ng-leave, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-scaleDown.ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave, .activate-scaleUpDown.ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave, .activate-scaleDownUp.ng-leave, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave, .activate-slideUp.ng-leave, .activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave, .activate-slideUpDown.ng-leave, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave, .activate-slideDown.ng-leave, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave, .activate-slideLeft.ng-leave, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave, .activate-slideRight.ng-leave, .activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave, .activate-shiftUp.ng-leave, .activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave, .activate-shiftDown.ng-leave, .activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave, .activate-shiftLeft.ng-leave, .activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-shiftRight.ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave, .activate-shiftLeftRight.ng-leave, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-flipLeft.ng-leave, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-tilt.ng-leave, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after {
   z-index: 0;
 }
 
@@ -2751,7 +2796,7 @@
 }
 
 /* line 30, ../scss/modules/animations/_components.scss */
-.layer.bg-dark:hover, .activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-fade.ng-enter, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after, .layer.bg-dark.ng-leave, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-fade.ng-leave, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after, .activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter, .activate-fadeIn.ng-enter, .activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave, .activate-fadeIn.ng-leave, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-scaleUp.ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter, .activate-scaleUpDown.ng-enter, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-scaleUp.ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave, .activate-scaleDownUp.ng-leave, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-scaleDown.ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter, .activate-scaleDownUp.ng-enter, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-scaleDown.ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave, .activate-scaleUpDown.ng-leave, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter, .activate-slideLeft.ng-enter, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave, .activate-slideLeft.ng-leave, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter, .activate-slideRight.ng-enter, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave, .activate-slideRight.ng-leave, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter, .activate-slideUp.ng-enter, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave, .activate-slideUp.ng-leave, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter, .activate-slideDown.ng-enter, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave, .activate-slideDown.ng-leave, .activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter, .activate-slideUpDown.ng-enter, .activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave, .activate-slideUpDown.ng-leave, .activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter, .activate-shiftUp.ng-enter, .activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave, .activate-shiftUp.ng-leave, .activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter, .activate-shiftDown.ng-enter, .activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave, .activate-shiftDown.ng-leave, .activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-shiftLeft.ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter, .activate-shiftLeftRight.ng-enter, .activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave, .activate-shiftLeft.ng-leave, .activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter, .activate-shiftRight.ng-enter, .activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-shiftRight.ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave, .activate-shiftLeftRight.ng-leave, .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-flipLeft.ng-enter, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-flipLeft.ng-leave, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-tilt.ng-enter, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-tilt.ng-leave {
+.activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-fade.ng-enter, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-fade.ng-leave, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after, .activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter, .activate-fadeIn.ng-enter, .activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave, .activate-fadeIn.ng-leave, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-scaleUp.ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter, .activate-scaleUpDown.ng-enter, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-scaleUp.ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave, .activate-scaleDownUp.ng-leave, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-scaleDown.ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter, .activate-scaleDownUp.ng-enter, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-scaleDown.ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave, .activate-scaleUpDown.ng-leave, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter, .activate-slideLeft.ng-enter, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave, .activate-slideLeft.ng-leave, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter, .activate-slideRight.ng-enter, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave, .activate-slideRight.ng-leave, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter, .activate-slideUp.ng-enter, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave, .activate-slideUp.ng-leave, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter, .activate-slideDown.ng-enter, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave, .activate-slideDown.ng-leave, .activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter, .activate-slideUpDown.ng-enter, .activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave, .activate-slideUpDown.ng-leave, .activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter, .activate-shiftUp.ng-enter, .activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave, .activate-shiftUp.ng-leave, .activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter, .activate-shiftDown.ng-enter, .activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave, .activate-shiftDown.ng-leave, .activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-shiftLeft.ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter, .activate-shiftLeftRight.ng-enter, .activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave, .activate-shiftLeft.ng-leave, .activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter, .activate-shiftRight.ng-enter, .activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-shiftRight.ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave, .activate-shiftLeftRight.ng-leave, .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-flipLeft.ng-enter, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-flipLeft.ng-leave, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-tilt.ng-enter, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-tilt.ng-leave, #performance.active .two, #performance.active .three {
   -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
@@ -2796,7 +2841,7 @@
 }
 
 /* line 49, ../scss/modules/animations/_components.scss */
-.layer.bg-dark:hover, .activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-fade.ng-enter, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after {
+.activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-fade.ng-enter, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after {
   -moz-animation-name: fade-active;
   -webkit-animation-name: fade-active;
   animation-name: fade-active;
@@ -2806,7 +2851,7 @@
 }
 
 /* line 50, ../scss/modules/animations/_components.scss */
-.layer.bg-dark.ng-leave, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-fade.ng-leave, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after {
+.activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-fade.ng-leave, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after {
   -moz-animation-name: fade-inactive;
   -webkit-animation-name: fade-inactive;
   animation-name: fade-inactive;
@@ -5330,13 +5375,13 @@ html {
 }
 
 /* line 81, ../scss/modules/grid/_components.scss */
-.cols-gutter-0 > *, .columns-gutter-0 > *, .cols-gutter-0 > *:nth-child(n), .columns-gutter-0 > *:nth-child(n), .cols-gutter > .col-0, .columns-gutter > .col-0 {
+.cols-0.gutter > *, .columns-0.gutter > *, .gutter > .col-0 {
   width: calc(0 * ((100% - 176px) / 12) + (-16px)) !important;
   margin-right: 16px;
 }
 
 /* line 87, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+.gutter > *:last-child {
   margin-right: 0;
 }
 
@@ -5346,7 +5391,7 @@ html {
 }
 
 /* line 123, ../scss/modules/grid/_components.scss */
-.cols-gutter-0 > *, .columns-gutter-0 > *, .cols-gutter-0 > *:nth-child(n), .columns-gutter-0 > *:nth-child(n) {
+.cols-0.gutter > *, .columns-0.gutter > *, .cols-0.gutter > *:nth-child(n), .columns-0.gutter > *:nth-child(n) {
   height: auto;
 }
 
@@ -5356,7 +5401,7 @@ html {
 }
 
 /* line 148, ../scss/modules/grid/_components.scss */
-.cols-gutter > .col-offset-0, .columns-gutter > .col-offset-0 {
+.gutter > .col-offset-0 {
   margin-left: calc(0 * ((100% - 176px) / 12) + (0px));
 }
 
@@ -5376,13 +5421,13 @@ html {
 }
 
 /* line 81, ../scss/modules/grid/_components.scss */
-.cols-gutter-1 > *, .columns-gutter-1 > *, .cols-gutter-1 > *:nth-child(n), .columns-gutter-1 > *:nth-child(n), .cols-gutter > .col-1, .columns-gutter > .col-1 {
+.cols-1.gutter > *, .columns-1.gutter > *, .gutter > .col-1 {
   width: calc(1 * ((100% - 176px) / 12) + (0px)) !important;
   margin-right: 16px;
 }
 
 /* line 87, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+.gutter > *:last-child {
   margin-right: 0;
 }
 
@@ -5399,28 +5444,28 @@ html {
   clear: left;
 }
 /* line 110, ../scss/modules/grid/_components.scss */
-.cols-1.cols-bordered > *:not(:nth-child(12n + 1)), .columns-1.cols-bordered > *:not(:nth-child(12n + 1)) {
+.cols-1.cols-border > *:not(:nth-child(12n + 1)), .cols-1.columns-border > *:not(:nth-child(12n + 1)), .columns-1.cols-border > *:not(:nth-child(12n + 1)), .columns-1.columns-border > *:not(:nth-child(12n + 1)) {
   border-left-width: 0 !important;
 }
 /* line 114, ../scss/modules/grid/_components.scss */
-.cols-1.cols-bordered > *:nth-child(n+13), .columns-1.cols-bordered > *:nth-child(n+13) {
+.cols-1.cols-border > *:nth-child(n+13), .cols-1.columns-border > *:nth-child(n+13), .columns-1.cols-border > *:nth-child(n+13), .columns-1.columns-border > *:nth-child(n+13) {
   border-top-width: 0 !important;
 }
 
 /* line 123, ../scss/modules/grid/_components.scss */
-.cols-gutter-1 > *, .columns-gutter-1 > *, .cols-gutter-1 > *:nth-child(n), .columns-gutter-1 > *:nth-child(n) {
+.cols-1.gutter > *, .columns-1.gutter > *, .cols-1.gutter > *:nth-child(n), .columns-1.gutter > *:nth-child(n) {
   height: auto;
 }
 /* line 129, ../scss/modules/grid/_components.scss */
-.cols-gutter-1 > *:nth-child(n+1), .columns-gutter-1 > *:nth-child(n+1) {
+.cols-1.gutter > *:nth-child(n+1), .columns-1.gutter > *:nth-child(n+1) {
   clear: none;
 }
 /* line 133, ../scss/modules/grid/_components.scss */
-.cols-gutter-1 > *:nth-child(12n + 1), .columns-gutter-1 > *:nth-child(12n + 1) {
+.cols-1.gutter > *:nth-child(12n + 1), .columns-1.gutter > *:nth-child(12n + 1) {
   clear: left;
 }
 /* line 137, ../scss/modules/grid/_components.scss */
-.cols-gutter-1 > *:nth-child(12n), .columns-gutter-1 > *:nth-child(12n) {
+.cols-1.gutter > *:nth-child(12n), .columns-1.gutter > *:nth-child(12n) {
   margin-right: 0;
 }
 
@@ -5430,7 +5475,7 @@ html {
 }
 
 /* line 148, ../scss/modules/grid/_components.scss */
-.cols-gutter > .col-offset-1, .columns-gutter > .col-offset-1 {
+.gutter > .col-offset-1 {
   margin-left: calc(1 * ((100% - 176px) / 12) + (16px));
 }
 
@@ -5450,13 +5495,13 @@ html {
 }
 
 /* line 81, ../scss/modules/grid/_components.scss */
-.cols-gutter-2 > *, .columns-gutter-2 > *, .cols-gutter-2 > *:nth-child(n), .columns-gutter-2 > *:nth-child(n), .cols-gutter > .col-2, .columns-gutter > .col-2 {
+.cols-2.gutter > *, .columns-2.gutter > *, .gutter > .col-2 {
   width: calc(2 * ((100% - 176px) / 12) + (16px)) !important;
   margin-right: 16px;
 }
 
 /* line 87, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+.gutter > *:last-child {
   margin-right: 0;
 }
 
@@ -5473,28 +5518,28 @@ html {
   clear: left;
 }
 /* line 110, ../scss/modules/grid/_components.scss */
-.cols-2.cols-bordered > *:not(:nth-child(6n + 1)), .columns-2.cols-bordered > *:not(:nth-child(6n + 1)) {
+.cols-2.cols-border > *:not(:nth-child(6n + 1)), .cols-2.columns-border > *:not(:nth-child(6n + 1)), .columns-2.cols-border > *:not(:nth-child(6n + 1)), .columns-2.columns-border > *:not(:nth-child(6n + 1)) {
   border-left-width: 0 !important;
 }
 /* line 114, ../scss/modules/grid/_components.scss */
-.cols-2.cols-bordered > *:nth-child(n+7), .columns-2.cols-bordered > *:nth-child(n+7) {
+.cols-2.cols-border > *:nth-child(n+7), .cols-2.columns-border > *:nth-child(n+7), .columns-2.cols-border > *:nth-child(n+7), .columns-2.columns-border > *:nth-child(n+7) {
   border-top-width: 0 !important;
 }
 
 /* line 123, ../scss/modules/grid/_components.scss */
-.cols-gutter-2 > *, .columns-gutter-2 > *, .cols-gutter-2 > *:nth-child(n), .columns-gutter-2 > *:nth-child(n) {
+.cols-2.gutter > *, .columns-2.gutter > *, .cols-2.gutter > *:nth-child(n), .columns-2.gutter > *:nth-child(n) {
   height: auto;
 }
 /* line 129, ../scss/modules/grid/_components.scss */
-.cols-gutter-2 > *:nth-child(n+1), .columns-gutter-2 > *:nth-child(n+1) {
+.cols-2.gutter > *:nth-child(n+1), .columns-2.gutter > *:nth-child(n+1) {
   clear: none;
 }
 /* line 133, ../scss/modules/grid/_components.scss */
-.cols-gutter-2 > *:nth-child(6n + 1), .columns-gutter-2 > *:nth-child(6n + 1) {
+.cols-2.gutter > *:nth-child(6n + 1), .columns-2.gutter > *:nth-child(6n + 1) {
   clear: left;
 }
 /* line 137, ../scss/modules/grid/_components.scss */
-.cols-gutter-2 > *:nth-child(6n), .columns-gutter-2 > *:nth-child(6n) {
+.cols-2.gutter > *:nth-child(6n), .columns-2.gutter > *:nth-child(6n) {
   margin-right: 0;
 }
 
@@ -5504,7 +5549,7 @@ html {
 }
 
 /* line 148, ../scss/modules/grid/_components.scss */
-.cols-gutter > .col-offset-2, .columns-gutter > .col-offset-2 {
+.gutter > .col-offset-2 {
   margin-left: calc(2 * ((100% - 176px) / 12) + (32px));
 }
 
@@ -5524,13 +5569,13 @@ html {
 }
 
 /* line 81, ../scss/modules/grid/_components.scss */
-.cols-gutter-3 > *, .columns-gutter-3 > *, .cols-gutter-3 > *:nth-child(n), .columns-gutter-3 > *:nth-child(n), .cols-gutter > .col-3, .columns-gutter > .col-3 {
+.cols-3.gutter > *, .columns-3.gutter > *, .gutter > .col-3 {
   width: calc(3 * ((100% - 176px) / 12) + (32px)) !important;
   margin-right: 16px;
 }
 
 /* line 87, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+.gutter > *:last-child {
   margin-right: 0;
 }
 
@@ -5547,28 +5592,28 @@ html {
   clear: left;
 }
 /* line 110, ../scss/modules/grid/_components.scss */
-.cols-3.cols-bordered > *:not(:nth-child(4n + 1)), .columns-3.cols-bordered > *:not(:nth-child(4n + 1)) {
+.cols-3.cols-border > *:not(:nth-child(4n + 1)), .cols-3.columns-border > *:not(:nth-child(4n + 1)), .columns-3.cols-border > *:not(:nth-child(4n + 1)), .columns-3.columns-border > *:not(:nth-child(4n + 1)) {
   border-left-width: 0 !important;
 }
 /* line 114, ../scss/modules/grid/_components.scss */
-.cols-3.cols-bordered > *:nth-child(n+5), .columns-3.cols-bordered > *:nth-child(n+5) {
+.cols-3.cols-border > *:nth-child(n+5), .cols-3.columns-border > *:nth-child(n+5), .columns-3.cols-border > *:nth-child(n+5), .columns-3.columns-border > *:nth-child(n+5) {
   border-top-width: 0 !important;
 }
 
 /* line 123, ../scss/modules/grid/_components.scss */
-.cols-gutter-3 > *, .columns-gutter-3 > *, .cols-gutter-3 > *:nth-child(n), .columns-gutter-3 > *:nth-child(n) {
+.cols-3.gutter > *, .columns-3.gutter > *, .cols-3.gutter > *:nth-child(n), .columns-3.gutter > *:nth-child(n) {
   height: auto;
 }
 /* line 129, ../scss/modules/grid/_components.scss */
-.cols-gutter-3 > *:nth-child(n+1), .columns-gutter-3 > *:nth-child(n+1) {
+.cols-3.gutter > *:nth-child(n+1), .columns-3.gutter > *:nth-child(n+1) {
   clear: none;
 }
 /* line 133, ../scss/modules/grid/_components.scss */
-.cols-gutter-3 > *:nth-child(4n + 1), .columns-gutter-3 > *:nth-child(4n + 1) {
+.cols-3.gutter > *:nth-child(4n + 1), .columns-3.gutter > *:nth-child(4n + 1) {
   clear: left;
 }
 /* line 137, ../scss/modules/grid/_components.scss */
-.cols-gutter-3 > *:nth-child(4n), .columns-gutter-3 > *:nth-child(4n) {
+.cols-3.gutter > *:nth-child(4n), .columns-3.gutter > *:nth-child(4n) {
   margin-right: 0;
 }
 
@@ -5578,7 +5623,7 @@ html {
 }
 
 /* line 148, ../scss/modules/grid/_components.scss */
-.cols-gutter > .col-offset-3, .columns-gutter > .col-offset-3 {
+.gutter > .col-offset-3 {
   margin-left: calc(3 * ((100% - 176px) / 12) + (48px));
 }
 
@@ -5598,13 +5643,13 @@ html {
 }
 
 /* line 81, ../scss/modules/grid/_components.scss */
-.cols-gutter-4 > *, .columns-gutter-4 > *, .cols-gutter-4 > *:nth-child(n), .columns-gutter-4 > *:nth-child(n), .cols-gutter > .col-4, .columns-gutter > .col-4 {
+.cols-4.gutter > *, .columns-4.gutter > *, .gutter > .col-4 {
   width: calc(4 * ((100% - 176px) / 12) + (48px)) !important;
   margin-right: 16px;
 }
 
 /* line 87, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+.gutter > *:last-child {
   margin-right: 0;
 }
 
@@ -5621,28 +5666,28 @@ html {
   clear: left;
 }
 /* line 110, ../scss/modules/grid/_components.scss */
-.cols-4.cols-bordered > *:not(:nth-child(3n + 1)), .columns-4.cols-bordered > *:not(:nth-child(3n + 1)) {
+.cols-4.cols-border > *:not(:nth-child(3n + 1)), .cols-4.columns-border > *:not(:nth-child(3n + 1)), .columns-4.cols-border > *:not(:nth-child(3n + 1)), .columns-4.columns-border > *:not(:nth-child(3n + 1)) {
   border-left-width: 0 !important;
 }
 /* line 114, ../scss/modules/grid/_components.scss */
-.cols-4.cols-bordered > *:nth-child(n+4), .columns-4.cols-bordered > *:nth-child(n+4) {
+.cols-4.cols-border > *:nth-child(n+4), .cols-4.columns-border > *:nth-child(n+4), .columns-4.cols-border > *:nth-child(n+4), .columns-4.columns-border > *:nth-child(n+4) {
   border-top-width: 0 !important;
 }
 
 /* line 123, ../scss/modules/grid/_components.scss */
-.cols-gutter-4 > *, .columns-gutter-4 > *, .cols-gutter-4 > *:nth-child(n), .columns-gutter-4 > *:nth-child(n) {
+.cols-4.gutter > *, .columns-4.gutter > *, .cols-4.gutter > *:nth-child(n), .columns-4.gutter > *:nth-child(n) {
   height: auto;
 }
 /* line 129, ../scss/modules/grid/_components.scss */
-.cols-gutter-4 > *:nth-child(n+1), .columns-gutter-4 > *:nth-child(n+1) {
+.cols-4.gutter > *:nth-child(n+1), .columns-4.gutter > *:nth-child(n+1) {
   clear: none;
 }
 /* line 133, ../scss/modules/grid/_components.scss */
-.cols-gutter-4 > *:nth-child(3n + 1), .columns-gutter-4 > *:nth-child(3n + 1) {
+.cols-4.gutter > *:nth-child(3n + 1), .columns-4.gutter > *:nth-child(3n + 1) {
   clear: left;
 }
 /* line 137, ../scss/modules/grid/_components.scss */
-.cols-gutter-4 > *:nth-child(3n), .columns-gutter-4 > *:nth-child(3n) {
+.cols-4.gutter > *:nth-child(3n), .columns-4.gutter > *:nth-child(3n) {
   margin-right: 0;
 }
 
@@ -5652,7 +5697,7 @@ html {
 }
 
 /* line 148, ../scss/modules/grid/_components.scss */
-.cols-gutter > .col-offset-4, .columns-gutter > .col-offset-4 {
+.gutter > .col-offset-4 {
   margin-left: calc(4 * ((100% - 176px) / 12) + (64px));
 }
 
@@ -5672,13 +5717,13 @@ html {
 }
 
 /* line 81, ../scss/modules/grid/_components.scss */
-.cols-gutter-5 > *, .columns-gutter-5 > *, .cols-gutter-5 > *:nth-child(n), .columns-gutter-5 > *:nth-child(n), .cols-gutter > .col-5, .columns-gutter > .col-5 {
+.cols-5.gutter > *, .columns-5.gutter > *, .gutter > .col-5 {
   width: calc(5 * ((100% - 176px) / 12) + (64px)) !important;
   margin-right: 16px;
 }
 
 /* line 87, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+.gutter > *:last-child {
   margin-right: 0;
 }
 
@@ -5688,7 +5733,7 @@ html {
 }
 
 /* line 123, ../scss/modules/grid/_components.scss */
-.cols-gutter-5 > *, .columns-gutter-5 > *, .cols-gutter-5 > *:nth-child(n), .columns-gutter-5 > *:nth-child(n) {
+.cols-5.gutter > *, .columns-5.gutter > *, .cols-5.gutter > *:nth-child(n), .columns-5.gutter > *:nth-child(n) {
   height: auto;
 }
 
@@ -5698,7 +5743,7 @@ html {
 }
 
 /* line 148, ../scss/modules/grid/_components.scss */
-.cols-gutter > .col-offset-5, .columns-gutter > .col-offset-5 {
+.gutter > .col-offset-5 {
   margin-left: calc(5 * ((100% - 176px) / 12) + (80px));
 }
 
@@ -5718,13 +5763,13 @@ html {
 }
 
 /* line 81, ../scss/modules/grid/_components.scss */
-.cols-gutter-6 > *, .columns-gutter-6 > *, .cols-gutter-6 > *:nth-child(n), .columns-gutter-6 > *:nth-child(n), .cols-gutter > .col-6, .columns-gutter > .col-6 {
+.cols-6.gutter > *, .columns-6.gutter > *, .gutter > .col-6 {
   width: calc(6 * ((100% - 176px) / 12) + (80px)) !important;
   margin-right: 16px;
 }
 
 /* line 87, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+.gutter > *:last-child {
   margin-right: 0;
 }
 
@@ -5741,28 +5786,28 @@ html {
   clear: left;
 }
 /* line 110, ../scss/modules/grid/_components.scss */
-.cols-6.cols-bordered > *:not(:nth-child(2n + 1)), .columns-6.cols-bordered > *:not(:nth-child(2n + 1)) {
+.cols-6.cols-border > *:not(:nth-child(2n + 1)), .cols-6.columns-border > *:not(:nth-child(2n + 1)), .columns-6.cols-border > *:not(:nth-child(2n + 1)), .columns-6.columns-border > *:not(:nth-child(2n + 1)) {
   border-left-width: 0 !important;
 }
 /* line 114, ../scss/modules/grid/_components.scss */
-.cols-6.cols-bordered > *:nth-child(n+3), .columns-6.cols-bordered > *:nth-child(n+3) {
+.cols-6.cols-border > *:nth-child(n+3), .cols-6.columns-border > *:nth-child(n+3), .columns-6.cols-border > *:nth-child(n+3), .columns-6.columns-border > *:nth-child(n+3) {
   border-top-width: 0 !important;
 }
 
 /* line 123, ../scss/modules/grid/_components.scss */
-.cols-gutter-6 > *, .columns-gutter-6 > *, .cols-gutter-6 > *:nth-child(n), .columns-gutter-6 > *:nth-child(n) {
+.cols-6.gutter > *, .columns-6.gutter > *, .cols-6.gutter > *:nth-child(n), .columns-6.gutter > *:nth-child(n) {
   height: auto;
 }
 /* line 129, ../scss/modules/grid/_components.scss */
-.cols-gutter-6 > *:nth-child(n+1), .columns-gutter-6 > *:nth-child(n+1) {
+.cols-6.gutter > *:nth-child(n+1), .columns-6.gutter > *:nth-child(n+1) {
   clear: none;
 }
 /* line 133, ../scss/modules/grid/_components.scss */
-.cols-gutter-6 > *:nth-child(2n + 1), .columns-gutter-6 > *:nth-child(2n + 1) {
+.cols-6.gutter > *:nth-child(2n + 1), .columns-6.gutter > *:nth-child(2n + 1) {
   clear: left;
 }
 /* line 137, ../scss/modules/grid/_components.scss */
-.cols-gutter-6 > *:nth-child(2n), .columns-gutter-6 > *:nth-child(2n) {
+.cols-6.gutter > *:nth-child(2n), .columns-6.gutter > *:nth-child(2n) {
   margin-right: 0;
 }
 
@@ -5772,7 +5817,7 @@ html {
 }
 
 /* line 148, ../scss/modules/grid/_components.scss */
-.cols-gutter > .col-offset-6, .columns-gutter > .col-offset-6 {
+.gutter > .col-offset-6 {
   margin-left: calc(6 * ((100% - 176px) / 12) + (96px));
 }
 
@@ -5792,13 +5837,13 @@ html {
 }
 
 /* line 81, ../scss/modules/grid/_components.scss */
-.cols-gutter-7 > *, .columns-gutter-7 > *, .cols-gutter-7 > *:nth-child(n), .columns-gutter-7 > *:nth-child(n), .cols-gutter > .col-7, .columns-gutter > .col-7 {
+.cols-7.gutter > *, .columns-7.gutter > *, .gutter > .col-7 {
   width: calc(7 * ((100% - 176px) / 12) + (96px)) !important;
   margin-right: 16px;
 }
 
 /* line 87, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+.gutter > *:last-child {
   margin-right: 0;
 }
 
@@ -5808,7 +5853,7 @@ html {
 }
 
 /* line 123, ../scss/modules/grid/_components.scss */
-.cols-gutter-7 > *, .columns-gutter-7 > *, .cols-gutter-7 > *:nth-child(n), .columns-gutter-7 > *:nth-child(n) {
+.cols-7.gutter > *, .columns-7.gutter > *, .cols-7.gutter > *:nth-child(n), .columns-7.gutter > *:nth-child(n) {
   height: auto;
 }
 
@@ -5818,7 +5863,7 @@ html {
 }
 
 /* line 148, ../scss/modules/grid/_components.scss */
-.cols-gutter > .col-offset-7, .columns-gutter > .col-offset-7 {
+.gutter > .col-offset-7 {
   margin-left: calc(7 * ((100% - 176px) / 12) + (112px));
 }
 
@@ -5838,13 +5883,13 @@ html {
 }
 
 /* line 81, ../scss/modules/grid/_components.scss */
-.cols-gutter-8 > *, .columns-gutter-8 > *, .cols-gutter-8 > *:nth-child(n), .columns-gutter-8 > *:nth-child(n), .cols-gutter > .col-8, .columns-gutter > .col-8 {
+.cols-8.gutter > *, .columns-8.gutter > *, .gutter > .col-8 {
   width: calc(8 * ((100% - 176px) / 12) + (112px)) !important;
   margin-right: 16px;
 }
 
 /* line 87, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+.gutter > *:last-child {
   margin-right: 0;
 }
 
@@ -5854,7 +5899,7 @@ html {
 }
 
 /* line 123, ../scss/modules/grid/_components.scss */
-.cols-gutter-8 > *, .columns-gutter-8 > *, .cols-gutter-8 > *:nth-child(n), .columns-gutter-8 > *:nth-child(n) {
+.cols-8.gutter > *, .columns-8.gutter > *, .cols-8.gutter > *:nth-child(n), .columns-8.gutter > *:nth-child(n) {
   height: auto;
 }
 
@@ -5864,7 +5909,7 @@ html {
 }
 
 /* line 148, ../scss/modules/grid/_components.scss */
-.cols-gutter > .col-offset-8, .columns-gutter > .col-offset-8 {
+.gutter > .col-offset-8 {
   margin-left: calc(8 * ((100% - 176px) / 12) + (128px));
 }
 
@@ -5884,13 +5929,13 @@ html {
 }
 
 /* line 81, ../scss/modules/grid/_components.scss */
-.cols-gutter-9 > *, .columns-gutter-9 > *, .cols-gutter-9 > *:nth-child(n), .columns-gutter-9 > *:nth-child(n), .cols-gutter > .col-9, .columns-gutter > .col-9 {
+.cols-9.gutter > *, .columns-9.gutter > *, .gutter > .col-9 {
   width: calc(9 * ((100% - 176px) / 12) + (128px)) !important;
   margin-right: 16px;
 }
 
 /* line 87, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+.gutter > *:last-child {
   margin-right: 0;
 }
 
@@ -5900,7 +5945,7 @@ html {
 }
 
 /* line 123, ../scss/modules/grid/_components.scss */
-.cols-gutter-9 > *, .columns-gutter-9 > *, .cols-gutter-9 > *:nth-child(n), .columns-gutter-9 > *:nth-child(n) {
+.cols-9.gutter > *, .columns-9.gutter > *, .cols-9.gutter > *:nth-child(n), .columns-9.gutter > *:nth-child(n) {
   height: auto;
 }
 
@@ -5910,7 +5955,7 @@ html {
 }
 
 /* line 148, ../scss/modules/grid/_components.scss */
-.cols-gutter > .col-offset-9, .columns-gutter > .col-offset-9 {
+.gutter > .col-offset-9 {
   margin-left: calc(9 * ((100% - 176px) / 12) + (144px));
 }
 
@@ -5930,13 +5975,13 @@ html {
 }
 
 /* line 81, ../scss/modules/grid/_components.scss */
-.cols-gutter-10 > *, .columns-gutter-10 > *, .cols-gutter-10 > *:nth-child(n), .columns-gutter-10 > *:nth-child(n), .cols-gutter > .col-10, .columns-gutter > .col-10 {
+.cols-10.gutter > *, .columns-10.gutter > *, .gutter > .col-10 {
   width: calc(10 * ((100% - 176px) / 12) + (144px)) !important;
   margin-right: 16px;
 }
 
 /* line 87, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+.gutter > *:last-child {
   margin-right: 0;
 }
 
@@ -5946,7 +5991,7 @@ html {
 }
 
 /* line 123, ../scss/modules/grid/_components.scss */
-.cols-gutter-10 > *, .columns-gutter-10 > *, .cols-gutter-10 > *:nth-child(n), .columns-gutter-10 > *:nth-child(n) {
+.cols-10.gutter > *, .columns-10.gutter > *, .cols-10.gutter > *:nth-child(n), .columns-10.gutter > *:nth-child(n) {
   height: auto;
 }
 
@@ -5956,7 +6001,7 @@ html {
 }
 
 /* line 148, ../scss/modules/grid/_components.scss */
-.cols-gutter > .col-offset-10, .columns-gutter > .col-offset-10 {
+.gutter > .col-offset-10 {
   margin-left: calc(10 * ((100% - 176px) / 12) + (160px));
 }
 
@@ -5976,13 +6021,13 @@ html {
 }
 
 /* line 81, ../scss/modules/grid/_components.scss */
-.cols-gutter-11 > *, .columns-gutter-11 > *, .cols-gutter-11 > *:nth-child(n), .columns-gutter-11 > *:nth-child(n), .cols-gutter > .col-11, .columns-gutter > .col-11 {
+.cols-11.gutter > *, .columns-11.gutter > *, .gutter > .col-11 {
   width: calc(11 * ((100% - 176px) / 12) + (160px)) !important;
   margin-right: 16px;
 }
 
 /* line 87, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+.gutter > *:last-child {
   margin-right: 0;
 }
 
@@ -5992,7 +6037,7 @@ html {
 }
 
 /* line 123, ../scss/modules/grid/_components.scss */
-.cols-gutter-11 > *, .columns-gutter-11 > *, .cols-gutter-11 > *:nth-child(n), .columns-gutter-11 > *:nth-child(n) {
+.cols-11.gutter > *, .columns-11.gutter > *, .cols-11.gutter > *:nth-child(n), .columns-11.gutter > *:nth-child(n) {
   height: auto;
 }
 
@@ -6002,7 +6047,7 @@ html {
 }
 
 /* line 148, ../scss/modules/grid/_components.scss */
-.cols-gutter > .col-offset-11, .columns-gutter > .col-offset-11 {
+.gutter > .col-offset-11 {
   margin-left: calc(11 * ((100% - 176px) / 12) + (176px));
 }
 
@@ -6022,13 +6067,13 @@ html {
 }
 
 /* line 81, ../scss/modules/grid/_components.scss */
-.cols-gutter-12 > *, .columns-gutter-12 > *, .cols-gutter-12 > *:nth-child(n), .columns-gutter-12 > *:nth-child(n), .cols-gutter > .col-12, .columns-gutter > .col-12 {
+.cols-12.gutter > *, .columns-12.gutter > *, .gutter > .col-12 {
   width: calc(12 * ((100% - 176px) / 12) + (176px)) !important;
   margin-right: 16px;
 }
 
 /* line 87, ../scss/modules/grid/_components.scss */
-.cols-gutter > *:last-child, .columns-gutter > *:last-child {
+.gutter > *:last-child {
   margin-right: 0;
 }
 
@@ -6045,28 +6090,28 @@ html {
   clear: left;
 }
 /* line 110, ../scss/modules/grid/_components.scss */
-.cols-12.cols-bordered > *:not(:nth-child(1n + 1)), .columns-12.cols-bordered > *:not(:nth-child(1n + 1)) {
+.cols-12.cols-border > *:not(:nth-child(1n + 1)), .cols-12.columns-border > *:not(:nth-child(1n + 1)), .columns-12.cols-border > *:not(:nth-child(1n + 1)), .columns-12.columns-border > *:not(:nth-child(1n + 1)) {
   border-left-width: 0 !important;
 }
 /* line 114, ../scss/modules/grid/_components.scss */
-.cols-12.cols-bordered > *:nth-child(n+2), .columns-12.cols-bordered > *:nth-child(n+2) {
+.cols-12.cols-border > *:nth-child(n+2), .cols-12.columns-border > *:nth-child(n+2), .columns-12.cols-border > *:nth-child(n+2), .columns-12.columns-border > *:nth-child(n+2) {
   border-top-width: 0 !important;
 }
 
 /* line 123, ../scss/modules/grid/_components.scss */
-.cols-gutter-12 > *, .columns-gutter-12 > *, .cols-gutter-12 > *:nth-child(n), .columns-gutter-12 > *:nth-child(n) {
+.cols-12.gutter > *, .columns-12.gutter > *, .cols-12.gutter > *:nth-child(n), .columns-12.gutter > *:nth-child(n) {
   height: auto;
 }
 /* line 129, ../scss/modules/grid/_components.scss */
-.cols-gutter-12 > *:nth-child(n+1), .columns-gutter-12 > *:nth-child(n+1) {
+.cols-12.gutter > *:nth-child(n+1), .columns-12.gutter > *:nth-child(n+1) {
   clear: none;
 }
 /* line 133, ../scss/modules/grid/_components.scss */
-.cols-gutter-12 > *:nth-child(1n + 1), .columns-gutter-12 > *:nth-child(1n + 1) {
+.cols-12.gutter > *:nth-child(1n + 1), .columns-12.gutter > *:nth-child(1n + 1) {
   clear: left;
 }
 /* line 137, ../scss/modules/grid/_components.scss */
-.cols-gutter-12 > *:nth-child(1n), .columns-gutter-12 > *:nth-child(1n) {
+.cols-12.gutter > *:nth-child(1n), .columns-12.gutter > *:nth-child(1n) {
   margin-right: 0;
 }
 
@@ -6076,7 +6121,7 @@ html {
 }
 
 /* line 148, ../scss/modules/grid/_components.scss */
-.cols-gutter > .col-offset-12, .columns-gutter > .col-offset-12 {
+.gutter > .col-offset-12 {
   margin-left: calc(12 * ((100% - 176px) / 12) + (192px));
 }
 
@@ -6322,13 +6367,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-0-small > *, .columns-gutter-0-small > *, .cols-gutter-0-small > *:nth-child(n), .columns-gutter-0-small > *:nth-child(n), .cols-gutter > .col-0-small, .columns-gutter > .col-0-small {
+  .cols-0-small.gutter-small > *, .columns-0-small.gutter-small > *, .gutter > .col-0-small {
     width: calc(0 * ((100% - 176px) / 12) + (-16px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -6338,7 +6383,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-0-small > *, .columns-gutter-0-small > *, .cols-gutter-0-small > *:nth-child(n), .columns-gutter-0-small > *:nth-child(n) {
+  .cols-0-small.gutter-small > *, .columns-0-small.gutter-small > *, .cols-0-small.gutter-small > *:nth-child(n), .columns-0-small.gutter-small > *:nth-child(n) {
     height: auto;
   }
 
@@ -6348,7 +6393,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-0-small, .columns-gutter > .col-offset-0-small {
+  .gutter > .col-offset-0-small {
     margin-left: calc(0 * ((100% - 176px) / 12) + (0px));
   }
 
@@ -6368,13 +6413,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-1-small > *, .columns-gutter-1-small > *, .cols-gutter-1-small > *:nth-child(n), .columns-gutter-1-small > *:nth-child(n), .cols-gutter > .col-1-small, .columns-gutter > .col-1-small {
+  .cols-1-small.gutter-small > *, .columns-1-small.gutter-small > *, .gutter > .col-1-small {
     width: calc(1 * ((100% - 176px) / 12) + (0px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -6391,28 +6436,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-1-small.cols-bordered > *:not(:nth-child(12n + 1)), .columns-1-small.cols-bordered > *:not(:nth-child(12n + 1)) {
+  .cols-1-small.cols-border > *:not(:nth-child(12n + 1)), .cols-1-small.columns-border > *:not(:nth-child(12n + 1)), .columns-1-small.cols-border > *:not(:nth-child(12n + 1)), .columns-1-small.columns-border > *:not(:nth-child(12n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-1-small.cols-bordered > *:nth-child(n+13), .columns-1-small.cols-bordered > *:nth-child(n+13) {
+  .cols-1-small.cols-border > *:nth-child(n+13), .cols-1-small.columns-border > *:nth-child(n+13), .columns-1-small.cols-border > *:nth-child(n+13), .columns-1-small.columns-border > *:nth-child(n+13) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-1-small > *, .columns-gutter-1-small > *, .cols-gutter-1-small > *:nth-child(n), .columns-gutter-1-small > *:nth-child(n) {
+  .cols-1-small.gutter-small > *, .columns-1-small.gutter-small > *, .cols-1-small.gutter-small > *:nth-child(n), .columns-1-small.gutter-small > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-1-small > *:nth-child(n+1), .columns-gutter-1-small > *:nth-child(n+1) {
+  .cols-1-small.gutter-small > *:nth-child(n+1), .columns-1-small.gutter-small > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-1-small > *:nth-child(12n + 1), .columns-gutter-1-small > *:nth-child(12n + 1) {
+  .cols-1-small.gutter-small > *:nth-child(12n + 1), .columns-1-small.gutter-small > *:nth-child(12n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-1-small > *:nth-child(12n), .columns-gutter-1-small > *:nth-child(12n) {
+  .cols-1-small.gutter-small > *:nth-child(12n), .columns-1-small.gutter-small > *:nth-child(12n) {
     margin-right: 0;
   }
 
@@ -6422,7 +6467,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-1-small, .columns-gutter > .col-offset-1-small {
+  .gutter > .col-offset-1-small {
     margin-left: calc(1 * ((100% - 176px) / 12) + (16px));
   }
 
@@ -6442,13 +6487,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-2-small > *, .columns-gutter-2-small > *, .cols-gutter-2-small > *:nth-child(n), .columns-gutter-2-small > *:nth-child(n), .cols-gutter > .col-2-small, .columns-gutter > .col-2-small {
+  .cols-2-small.gutter-small > *, .columns-2-small.gutter-small > *, .gutter > .col-2-small {
     width: calc(2 * ((100% - 176px) / 12) + (16px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -6465,28 +6510,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-2-small.cols-bordered > *:not(:nth-child(6n + 1)), .columns-2-small.cols-bordered > *:not(:nth-child(6n + 1)) {
+  .cols-2-small.cols-border > *:not(:nth-child(6n + 1)), .cols-2-small.columns-border > *:not(:nth-child(6n + 1)), .columns-2-small.cols-border > *:not(:nth-child(6n + 1)), .columns-2-small.columns-border > *:not(:nth-child(6n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-2-small.cols-bordered > *:nth-child(n+7), .columns-2-small.cols-bordered > *:nth-child(n+7) {
+  .cols-2-small.cols-border > *:nth-child(n+7), .cols-2-small.columns-border > *:nth-child(n+7), .columns-2-small.cols-border > *:nth-child(n+7), .columns-2-small.columns-border > *:nth-child(n+7) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-2-small > *, .columns-gutter-2-small > *, .cols-gutter-2-small > *:nth-child(n), .columns-gutter-2-small > *:nth-child(n) {
+  .cols-2-small.gutter-small > *, .columns-2-small.gutter-small > *, .cols-2-small.gutter-small > *:nth-child(n), .columns-2-small.gutter-small > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-2-small > *:nth-child(n+1), .columns-gutter-2-small > *:nth-child(n+1) {
+  .cols-2-small.gutter-small > *:nth-child(n+1), .columns-2-small.gutter-small > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-2-small > *:nth-child(6n + 1), .columns-gutter-2-small > *:nth-child(6n + 1) {
+  .cols-2-small.gutter-small > *:nth-child(6n + 1), .columns-2-small.gutter-small > *:nth-child(6n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-2-small > *:nth-child(6n), .columns-gutter-2-small > *:nth-child(6n) {
+  .cols-2-small.gutter-small > *:nth-child(6n), .columns-2-small.gutter-small > *:nth-child(6n) {
     margin-right: 0;
   }
 
@@ -6496,7 +6541,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-2-small, .columns-gutter > .col-offset-2-small {
+  .gutter > .col-offset-2-small {
     margin-left: calc(2 * ((100% - 176px) / 12) + (32px));
   }
 
@@ -6516,13 +6561,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-3-small > *, .columns-gutter-3-small > *, .cols-gutter-3-small > *:nth-child(n), .columns-gutter-3-small > *:nth-child(n), .cols-gutter > .col-3-small, .columns-gutter > .col-3-small {
+  .cols-3-small.gutter-small > *, .columns-3-small.gutter-small > *, .gutter > .col-3-small {
     width: calc(3 * ((100% - 176px) / 12) + (32px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -6539,28 +6584,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-3-small.cols-bordered > *:not(:nth-child(4n + 1)), .columns-3-small.cols-bordered > *:not(:nth-child(4n + 1)) {
+  .cols-3-small.cols-border > *:not(:nth-child(4n + 1)), .cols-3-small.columns-border > *:not(:nth-child(4n + 1)), .columns-3-small.cols-border > *:not(:nth-child(4n + 1)), .columns-3-small.columns-border > *:not(:nth-child(4n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-3-small.cols-bordered > *:nth-child(n+5), .columns-3-small.cols-bordered > *:nth-child(n+5) {
+  .cols-3-small.cols-border > *:nth-child(n+5), .cols-3-small.columns-border > *:nth-child(n+5), .columns-3-small.cols-border > *:nth-child(n+5), .columns-3-small.columns-border > *:nth-child(n+5) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-3-small > *, .columns-gutter-3-small > *, .cols-gutter-3-small > *:nth-child(n), .columns-gutter-3-small > *:nth-child(n) {
+  .cols-3-small.gutter-small > *, .columns-3-small.gutter-small > *, .cols-3-small.gutter-small > *:nth-child(n), .columns-3-small.gutter-small > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-3-small > *:nth-child(n+1), .columns-gutter-3-small > *:nth-child(n+1) {
+  .cols-3-small.gutter-small > *:nth-child(n+1), .columns-3-small.gutter-small > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-3-small > *:nth-child(4n + 1), .columns-gutter-3-small > *:nth-child(4n + 1) {
+  .cols-3-small.gutter-small > *:nth-child(4n + 1), .columns-3-small.gutter-small > *:nth-child(4n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-3-small > *:nth-child(4n), .columns-gutter-3-small > *:nth-child(4n) {
+  .cols-3-small.gutter-small > *:nth-child(4n), .columns-3-small.gutter-small > *:nth-child(4n) {
     margin-right: 0;
   }
 
@@ -6570,7 +6615,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-3-small, .columns-gutter > .col-offset-3-small {
+  .gutter > .col-offset-3-small {
     margin-left: calc(3 * ((100% - 176px) / 12) + (48px));
   }
 
@@ -6590,13 +6635,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-4-small > *, .columns-gutter-4-small > *, .cols-gutter-4-small > *:nth-child(n), .columns-gutter-4-small > *:nth-child(n), .cols-gutter > .col-4-small, .columns-gutter > .col-4-small {
+  .cols-4-small.gutter-small > *, .columns-4-small.gutter-small > *, .gutter > .col-4-small {
     width: calc(4 * ((100% - 176px) / 12) + (48px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -6613,28 +6658,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-4-small.cols-bordered > *:not(:nth-child(3n + 1)), .columns-4-small.cols-bordered > *:not(:nth-child(3n + 1)) {
+  .cols-4-small.cols-border > *:not(:nth-child(3n + 1)), .cols-4-small.columns-border > *:not(:nth-child(3n + 1)), .columns-4-small.cols-border > *:not(:nth-child(3n + 1)), .columns-4-small.columns-border > *:not(:nth-child(3n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-4-small.cols-bordered > *:nth-child(n+4), .columns-4-small.cols-bordered > *:nth-child(n+4) {
+  .cols-4-small.cols-border > *:nth-child(n+4), .cols-4-small.columns-border > *:nth-child(n+4), .columns-4-small.cols-border > *:nth-child(n+4), .columns-4-small.columns-border > *:nth-child(n+4) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-4-small > *, .columns-gutter-4-small > *, .cols-gutter-4-small > *:nth-child(n), .columns-gutter-4-small > *:nth-child(n) {
+  .cols-4-small.gutter-small > *, .columns-4-small.gutter-small > *, .cols-4-small.gutter-small > *:nth-child(n), .columns-4-small.gutter-small > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-4-small > *:nth-child(n+1), .columns-gutter-4-small > *:nth-child(n+1) {
+  .cols-4-small.gutter-small > *:nth-child(n+1), .columns-4-small.gutter-small > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-4-small > *:nth-child(3n + 1), .columns-gutter-4-small > *:nth-child(3n + 1) {
+  .cols-4-small.gutter-small > *:nth-child(3n + 1), .columns-4-small.gutter-small > *:nth-child(3n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-4-small > *:nth-child(3n), .columns-gutter-4-small > *:nth-child(3n) {
+  .cols-4-small.gutter-small > *:nth-child(3n), .columns-4-small.gutter-small > *:nth-child(3n) {
     margin-right: 0;
   }
 
@@ -6644,7 +6689,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-4-small, .columns-gutter > .col-offset-4-small {
+  .gutter > .col-offset-4-small {
     margin-left: calc(4 * ((100% - 176px) / 12) + (64px));
   }
 
@@ -6664,13 +6709,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-5-small > *, .columns-gutter-5-small > *, .cols-gutter-5-small > *:nth-child(n), .columns-gutter-5-small > *:nth-child(n), .cols-gutter > .col-5-small, .columns-gutter > .col-5-small {
+  .cols-5-small.gutter-small > *, .columns-5-small.gutter-small > *, .gutter > .col-5-small {
     width: calc(5 * ((100% - 176px) / 12) + (64px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -6680,7 +6725,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-5-small > *, .columns-gutter-5-small > *, .cols-gutter-5-small > *:nth-child(n), .columns-gutter-5-small > *:nth-child(n) {
+  .cols-5-small.gutter-small > *, .columns-5-small.gutter-small > *, .cols-5-small.gutter-small > *:nth-child(n), .columns-5-small.gutter-small > *:nth-child(n) {
     height: auto;
   }
 
@@ -6690,7 +6735,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-5-small, .columns-gutter > .col-offset-5-small {
+  .gutter > .col-offset-5-small {
     margin-left: calc(5 * ((100% - 176px) / 12) + (80px));
   }
 
@@ -6710,13 +6755,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-6-small > *, .columns-gutter-6-small > *, .cols-gutter-6-small > *:nth-child(n), .columns-gutter-6-small > *:nth-child(n), .cols-gutter > .col-6-small, .columns-gutter > .col-6-small {
+  .cols-6-small.gutter-small > *, .columns-6-small.gutter-small > *, .gutter > .col-6-small {
     width: calc(6 * ((100% - 176px) / 12) + (80px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -6733,28 +6778,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-6-small.cols-bordered > *:not(:nth-child(2n + 1)), .columns-6-small.cols-bordered > *:not(:nth-child(2n + 1)) {
+  .cols-6-small.cols-border > *:not(:nth-child(2n + 1)), .cols-6-small.columns-border > *:not(:nth-child(2n + 1)), .columns-6-small.cols-border > *:not(:nth-child(2n + 1)), .columns-6-small.columns-border > *:not(:nth-child(2n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-6-small.cols-bordered > *:nth-child(n+3), .columns-6-small.cols-bordered > *:nth-child(n+3) {
+  .cols-6-small.cols-border > *:nth-child(n+3), .cols-6-small.columns-border > *:nth-child(n+3), .columns-6-small.cols-border > *:nth-child(n+3), .columns-6-small.columns-border > *:nth-child(n+3) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-6-small > *, .columns-gutter-6-small > *, .cols-gutter-6-small > *:nth-child(n), .columns-gutter-6-small > *:nth-child(n) {
+  .cols-6-small.gutter-small > *, .columns-6-small.gutter-small > *, .cols-6-small.gutter-small > *:nth-child(n), .columns-6-small.gutter-small > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-6-small > *:nth-child(n+1), .columns-gutter-6-small > *:nth-child(n+1) {
+  .cols-6-small.gutter-small > *:nth-child(n+1), .columns-6-small.gutter-small > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-6-small > *:nth-child(2n + 1), .columns-gutter-6-small > *:nth-child(2n + 1) {
+  .cols-6-small.gutter-small > *:nth-child(2n + 1), .columns-6-small.gutter-small > *:nth-child(2n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-6-small > *:nth-child(2n), .columns-gutter-6-small > *:nth-child(2n) {
+  .cols-6-small.gutter-small > *:nth-child(2n), .columns-6-small.gutter-small > *:nth-child(2n) {
     margin-right: 0;
   }
 
@@ -6764,7 +6809,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-6-small, .columns-gutter > .col-offset-6-small {
+  .gutter > .col-offset-6-small {
     margin-left: calc(6 * ((100% - 176px) / 12) + (96px));
   }
 
@@ -6784,13 +6829,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-7-small > *, .columns-gutter-7-small > *, .cols-gutter-7-small > *:nth-child(n), .columns-gutter-7-small > *:nth-child(n), .cols-gutter > .col-7-small, .columns-gutter > .col-7-small {
+  .cols-7-small.gutter-small > *, .columns-7-small.gutter-small > *, .gutter > .col-7-small {
     width: calc(7 * ((100% - 176px) / 12) + (96px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -6800,7 +6845,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-7-small > *, .columns-gutter-7-small > *, .cols-gutter-7-small > *:nth-child(n), .columns-gutter-7-small > *:nth-child(n) {
+  .cols-7-small.gutter-small > *, .columns-7-small.gutter-small > *, .cols-7-small.gutter-small > *:nth-child(n), .columns-7-small.gutter-small > *:nth-child(n) {
     height: auto;
   }
 
@@ -6810,7 +6855,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-7-small, .columns-gutter > .col-offset-7-small {
+  .gutter > .col-offset-7-small {
     margin-left: calc(7 * ((100% - 176px) / 12) + (112px));
   }
 
@@ -6830,13 +6875,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-8-small > *, .columns-gutter-8-small > *, .cols-gutter-8-small > *:nth-child(n), .columns-gutter-8-small > *:nth-child(n), .cols-gutter > .col-8-small, .columns-gutter > .col-8-small {
+  .cols-8-small.gutter-small > *, .columns-8-small.gutter-small > *, .gutter > .col-8-small {
     width: calc(8 * ((100% - 176px) / 12) + (112px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -6846,7 +6891,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-8-small > *, .columns-gutter-8-small > *, .cols-gutter-8-small > *:nth-child(n), .columns-gutter-8-small > *:nth-child(n) {
+  .cols-8-small.gutter-small > *, .columns-8-small.gutter-small > *, .cols-8-small.gutter-small > *:nth-child(n), .columns-8-small.gutter-small > *:nth-child(n) {
     height: auto;
   }
 
@@ -6856,7 +6901,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-8-small, .columns-gutter > .col-offset-8-small {
+  .gutter > .col-offset-8-small {
     margin-left: calc(8 * ((100% - 176px) / 12) + (128px));
   }
 
@@ -6876,13 +6921,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-9-small > *, .columns-gutter-9-small > *, .cols-gutter-9-small > *:nth-child(n), .columns-gutter-9-small > *:nth-child(n), .cols-gutter > .col-9-small, .columns-gutter > .col-9-small {
+  .cols-9-small.gutter-small > *, .columns-9-small.gutter-small > *, .gutter > .col-9-small {
     width: calc(9 * ((100% - 176px) / 12) + (128px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -6892,7 +6937,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-9-small > *, .columns-gutter-9-small > *, .cols-gutter-9-small > *:nth-child(n), .columns-gutter-9-small > *:nth-child(n) {
+  .cols-9-small.gutter-small > *, .columns-9-small.gutter-small > *, .cols-9-small.gutter-small > *:nth-child(n), .columns-9-small.gutter-small > *:nth-child(n) {
     height: auto;
   }
 
@@ -6902,7 +6947,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-9-small, .columns-gutter > .col-offset-9-small {
+  .gutter > .col-offset-9-small {
     margin-left: calc(9 * ((100% - 176px) / 12) + (144px));
   }
 
@@ -6922,13 +6967,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-10-small > *, .columns-gutter-10-small > *, .cols-gutter-10-small > *:nth-child(n), .columns-gutter-10-small > *:nth-child(n), .cols-gutter > .col-10-small, .columns-gutter > .col-10-small {
+  .cols-10-small.gutter-small > *, .columns-10-small.gutter-small > *, .gutter > .col-10-small {
     width: calc(10 * ((100% - 176px) / 12) + (144px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -6938,7 +6983,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-10-small > *, .columns-gutter-10-small > *, .cols-gutter-10-small > *:nth-child(n), .columns-gutter-10-small > *:nth-child(n) {
+  .cols-10-small.gutter-small > *, .columns-10-small.gutter-small > *, .cols-10-small.gutter-small > *:nth-child(n), .columns-10-small.gutter-small > *:nth-child(n) {
     height: auto;
   }
 
@@ -6948,7 +6993,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-10-small, .columns-gutter > .col-offset-10-small {
+  .gutter > .col-offset-10-small {
     margin-left: calc(10 * ((100% - 176px) / 12) + (160px));
   }
 
@@ -6968,13 +7013,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-11-small > *, .columns-gutter-11-small > *, .cols-gutter-11-small > *:nth-child(n), .columns-gutter-11-small > *:nth-child(n), .cols-gutter > .col-11-small, .columns-gutter > .col-11-small {
+  .cols-11-small.gutter-small > *, .columns-11-small.gutter-small > *, .gutter > .col-11-small {
     width: calc(11 * ((100% - 176px) / 12) + (160px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -6984,7 +7029,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-11-small > *, .columns-gutter-11-small > *, .cols-gutter-11-small > *:nth-child(n), .columns-gutter-11-small > *:nth-child(n) {
+  .cols-11-small.gutter-small > *, .columns-11-small.gutter-small > *, .cols-11-small.gutter-small > *:nth-child(n), .columns-11-small.gutter-small > *:nth-child(n) {
     height: auto;
   }
 
@@ -6994,7 +7039,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-11-small, .columns-gutter > .col-offset-11-small {
+  .gutter > .col-offset-11-small {
     margin-left: calc(11 * ((100% - 176px) / 12) + (176px));
   }
 
@@ -7014,13 +7059,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-12-small > *, .columns-gutter-12-small > *, .cols-gutter-12-small > *:nth-child(n), .columns-gutter-12-small > *:nth-child(n), .cols-gutter > .col-12-small, .columns-gutter > .col-12-small {
+  .cols-12-small.gutter-small > *, .columns-12-small.gutter-small > *, .gutter > .col-12-small {
     width: calc(12 * ((100% - 176px) / 12) + (176px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -7037,28 +7082,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-12-small.cols-bordered > *:not(:nth-child(1n + 1)), .columns-12-small.cols-bordered > *:not(:nth-child(1n + 1)) {
+  .cols-12-small.cols-border > *:not(:nth-child(1n + 1)), .cols-12-small.columns-border > *:not(:nth-child(1n + 1)), .columns-12-small.cols-border > *:not(:nth-child(1n + 1)), .columns-12-small.columns-border > *:not(:nth-child(1n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-12-small.cols-bordered > *:nth-child(n+2), .columns-12-small.cols-bordered > *:nth-child(n+2) {
+  .cols-12-small.cols-border > *:nth-child(n+2), .cols-12-small.columns-border > *:nth-child(n+2), .columns-12-small.cols-border > *:nth-child(n+2), .columns-12-small.columns-border > *:nth-child(n+2) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-12-small > *, .columns-gutter-12-small > *, .cols-gutter-12-small > *:nth-child(n), .columns-gutter-12-small > *:nth-child(n) {
+  .cols-12-small.gutter-small > *, .columns-12-small.gutter-small > *, .cols-12-small.gutter-small > *:nth-child(n), .columns-12-small.gutter-small > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-12-small > *:nth-child(n+1), .columns-gutter-12-small > *:nth-child(n+1) {
+  .cols-12-small.gutter-small > *:nth-child(n+1), .columns-12-small.gutter-small > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-12-small > *:nth-child(1n + 1), .columns-gutter-12-small > *:nth-child(1n + 1) {
+  .cols-12-small.gutter-small > *:nth-child(1n + 1), .columns-12-small.gutter-small > *:nth-child(1n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-12-small > *:nth-child(1n), .columns-gutter-12-small > *:nth-child(1n) {
+  .cols-12-small.gutter-small > *:nth-child(1n), .columns-12-small.gutter-small > *:nth-child(1n) {
     margin-right: 0;
   }
 
@@ -7068,7 +7113,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-12-small, .columns-gutter > .col-offset-12-small {
+  .gutter > .col-offset-12-small {
     margin-left: calc(12 * ((100% - 176px) / 12) + (192px));
   }
 
@@ -7297,13 +7342,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-0-medium > *, .columns-gutter-0-medium > *, .cols-gutter-0-medium > *:nth-child(n), .columns-gutter-0-medium > *:nth-child(n), .cols-gutter > .col-0-medium, .columns-gutter > .col-0-medium {
+  .cols-0-medium.gutter-medium > *, .columns-0-medium.gutter-medium > *, .gutter > .col-0-medium {
     width: calc(0 * ((100% - 176px) / 12) + (-16px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -7313,7 +7358,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-0-medium > *, .columns-gutter-0-medium > *, .cols-gutter-0-medium > *:nth-child(n), .columns-gutter-0-medium > *:nth-child(n) {
+  .cols-0-medium.gutter-medium > *, .columns-0-medium.gutter-medium > *, .cols-0-medium.gutter-medium > *:nth-child(n), .columns-0-medium.gutter-medium > *:nth-child(n) {
     height: auto;
   }
 
@@ -7323,7 +7368,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-0-medium, .columns-gutter > .col-offset-0-medium {
+  .gutter > .col-offset-0-medium {
     margin-left: calc(0 * ((100% - 176px) / 12) + (0px));
   }
 
@@ -7343,13 +7388,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-1-medium > *, .columns-gutter-1-medium > *, .cols-gutter-1-medium > *:nth-child(n), .columns-gutter-1-medium > *:nth-child(n), .cols-gutter > .col-1-medium, .columns-gutter > .col-1-medium {
+  .cols-1-medium.gutter-medium > *, .columns-1-medium.gutter-medium > *, .gutter > .col-1-medium {
     width: calc(1 * ((100% - 176px) / 12) + (0px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -7366,28 +7411,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-1-medium.cols-bordered > *:not(:nth-child(12n + 1)), .columns-1-medium.cols-bordered > *:not(:nth-child(12n + 1)) {
+  .cols-1-medium.cols-border > *:not(:nth-child(12n + 1)), .cols-1-medium.columns-border > *:not(:nth-child(12n + 1)), .columns-1-medium.cols-border > *:not(:nth-child(12n + 1)), .columns-1-medium.columns-border > *:not(:nth-child(12n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-1-medium.cols-bordered > *:nth-child(n+13), .columns-1-medium.cols-bordered > *:nth-child(n+13) {
+  .cols-1-medium.cols-border > *:nth-child(n+13), .cols-1-medium.columns-border > *:nth-child(n+13), .columns-1-medium.cols-border > *:nth-child(n+13), .columns-1-medium.columns-border > *:nth-child(n+13) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-1-medium > *, .columns-gutter-1-medium > *, .cols-gutter-1-medium > *:nth-child(n), .columns-gutter-1-medium > *:nth-child(n) {
+  .cols-1-medium.gutter-medium > *, .columns-1-medium.gutter-medium > *, .cols-1-medium.gutter-medium > *:nth-child(n), .columns-1-medium.gutter-medium > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-1-medium > *:nth-child(n+1), .columns-gutter-1-medium > *:nth-child(n+1) {
+  .cols-1-medium.gutter-medium > *:nth-child(n+1), .columns-1-medium.gutter-medium > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-1-medium > *:nth-child(12n + 1), .columns-gutter-1-medium > *:nth-child(12n + 1) {
+  .cols-1-medium.gutter-medium > *:nth-child(12n + 1), .columns-1-medium.gutter-medium > *:nth-child(12n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-1-medium > *:nth-child(12n), .columns-gutter-1-medium > *:nth-child(12n) {
+  .cols-1-medium.gutter-medium > *:nth-child(12n), .columns-1-medium.gutter-medium > *:nth-child(12n) {
     margin-right: 0;
   }
 
@@ -7397,7 +7442,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-1-medium, .columns-gutter > .col-offset-1-medium {
+  .gutter > .col-offset-1-medium {
     margin-left: calc(1 * ((100% - 176px) / 12) + (16px));
   }
 
@@ -7417,13 +7462,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-2-medium > *, .columns-gutter-2-medium > *, .cols-gutter-2-medium > *:nth-child(n), .columns-gutter-2-medium > *:nth-child(n), .cols-gutter > .col-2-medium, .columns-gutter > .col-2-medium {
+  .cols-2-medium.gutter-medium > *, .columns-2-medium.gutter-medium > *, .gutter > .col-2-medium {
     width: calc(2 * ((100% - 176px) / 12) + (16px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -7440,28 +7485,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-2-medium.cols-bordered > *:not(:nth-child(6n + 1)), .columns-2-medium.cols-bordered > *:not(:nth-child(6n + 1)) {
+  .cols-2-medium.cols-border > *:not(:nth-child(6n + 1)), .cols-2-medium.columns-border > *:not(:nth-child(6n + 1)), .columns-2-medium.cols-border > *:not(:nth-child(6n + 1)), .columns-2-medium.columns-border > *:not(:nth-child(6n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-2-medium.cols-bordered > *:nth-child(n+7), .columns-2-medium.cols-bordered > *:nth-child(n+7) {
+  .cols-2-medium.cols-border > *:nth-child(n+7), .cols-2-medium.columns-border > *:nth-child(n+7), .columns-2-medium.cols-border > *:nth-child(n+7), .columns-2-medium.columns-border > *:nth-child(n+7) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-2-medium > *, .columns-gutter-2-medium > *, .cols-gutter-2-medium > *:nth-child(n), .columns-gutter-2-medium > *:nth-child(n) {
+  .cols-2-medium.gutter-medium > *, .columns-2-medium.gutter-medium > *, .cols-2-medium.gutter-medium > *:nth-child(n), .columns-2-medium.gutter-medium > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-2-medium > *:nth-child(n+1), .columns-gutter-2-medium > *:nth-child(n+1) {
+  .cols-2-medium.gutter-medium > *:nth-child(n+1), .columns-2-medium.gutter-medium > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-2-medium > *:nth-child(6n + 1), .columns-gutter-2-medium > *:nth-child(6n + 1) {
+  .cols-2-medium.gutter-medium > *:nth-child(6n + 1), .columns-2-medium.gutter-medium > *:nth-child(6n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-2-medium > *:nth-child(6n), .columns-gutter-2-medium > *:nth-child(6n) {
+  .cols-2-medium.gutter-medium > *:nth-child(6n), .columns-2-medium.gutter-medium > *:nth-child(6n) {
     margin-right: 0;
   }
 
@@ -7471,7 +7516,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-2-medium, .columns-gutter > .col-offset-2-medium {
+  .gutter > .col-offset-2-medium {
     margin-left: calc(2 * ((100% - 176px) / 12) + (32px));
   }
 
@@ -7491,13 +7536,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-3-medium > *, .columns-gutter-3-medium > *, .cols-gutter-3-medium > *:nth-child(n), .columns-gutter-3-medium > *:nth-child(n), .cols-gutter > .col-3-medium, .columns-gutter > .col-3-medium {
+  .cols-3-medium.gutter-medium > *, .columns-3-medium.gutter-medium > *, .gutter > .col-3-medium {
     width: calc(3 * ((100% - 176px) / 12) + (32px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -7514,28 +7559,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-3-medium.cols-bordered > *:not(:nth-child(4n + 1)), .columns-3-medium.cols-bordered > *:not(:nth-child(4n + 1)) {
+  .cols-3-medium.cols-border > *:not(:nth-child(4n + 1)), .cols-3-medium.columns-border > *:not(:nth-child(4n + 1)), .columns-3-medium.cols-border > *:not(:nth-child(4n + 1)), .columns-3-medium.columns-border > *:not(:nth-child(4n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-3-medium.cols-bordered > *:nth-child(n+5), .columns-3-medium.cols-bordered > *:nth-child(n+5) {
+  .cols-3-medium.cols-border > *:nth-child(n+5), .cols-3-medium.columns-border > *:nth-child(n+5), .columns-3-medium.cols-border > *:nth-child(n+5), .columns-3-medium.columns-border > *:nth-child(n+5) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-3-medium > *, .columns-gutter-3-medium > *, .cols-gutter-3-medium > *:nth-child(n), .columns-gutter-3-medium > *:nth-child(n) {
+  .cols-3-medium.gutter-medium > *, .columns-3-medium.gutter-medium > *, .cols-3-medium.gutter-medium > *:nth-child(n), .columns-3-medium.gutter-medium > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-3-medium > *:nth-child(n+1), .columns-gutter-3-medium > *:nth-child(n+1) {
+  .cols-3-medium.gutter-medium > *:nth-child(n+1), .columns-3-medium.gutter-medium > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-3-medium > *:nth-child(4n + 1), .columns-gutter-3-medium > *:nth-child(4n + 1) {
+  .cols-3-medium.gutter-medium > *:nth-child(4n + 1), .columns-3-medium.gutter-medium > *:nth-child(4n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-3-medium > *:nth-child(4n), .columns-gutter-3-medium > *:nth-child(4n) {
+  .cols-3-medium.gutter-medium > *:nth-child(4n), .columns-3-medium.gutter-medium > *:nth-child(4n) {
     margin-right: 0;
   }
 
@@ -7545,7 +7590,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-3-medium, .columns-gutter > .col-offset-3-medium {
+  .gutter > .col-offset-3-medium {
     margin-left: calc(3 * ((100% - 176px) / 12) + (48px));
   }
 
@@ -7565,13 +7610,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-4-medium > *, .columns-gutter-4-medium > *, .cols-gutter-4-medium > *:nth-child(n), .columns-gutter-4-medium > *:nth-child(n), .cols-gutter > .col-4-medium, .columns-gutter > .col-4-medium {
+  .cols-4-medium.gutter-medium > *, .columns-4-medium.gutter-medium > *, .gutter > .col-4-medium {
     width: calc(4 * ((100% - 176px) / 12) + (48px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -7588,28 +7633,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-4-medium.cols-bordered > *:not(:nth-child(3n + 1)), .columns-4-medium.cols-bordered > *:not(:nth-child(3n + 1)) {
+  .cols-4-medium.cols-border > *:not(:nth-child(3n + 1)), .cols-4-medium.columns-border > *:not(:nth-child(3n + 1)), .columns-4-medium.cols-border > *:not(:nth-child(3n + 1)), .columns-4-medium.columns-border > *:not(:nth-child(3n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-4-medium.cols-bordered > *:nth-child(n+4), .columns-4-medium.cols-bordered > *:nth-child(n+4) {
+  .cols-4-medium.cols-border > *:nth-child(n+4), .cols-4-medium.columns-border > *:nth-child(n+4), .columns-4-medium.cols-border > *:nth-child(n+4), .columns-4-medium.columns-border > *:nth-child(n+4) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-4-medium > *, .columns-gutter-4-medium > *, .cols-gutter-4-medium > *:nth-child(n), .columns-gutter-4-medium > *:nth-child(n) {
+  .cols-4-medium.gutter-medium > *, .columns-4-medium.gutter-medium > *, .cols-4-medium.gutter-medium > *:nth-child(n), .columns-4-medium.gutter-medium > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-4-medium > *:nth-child(n+1), .columns-gutter-4-medium > *:nth-child(n+1) {
+  .cols-4-medium.gutter-medium > *:nth-child(n+1), .columns-4-medium.gutter-medium > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-4-medium > *:nth-child(3n + 1), .columns-gutter-4-medium > *:nth-child(3n + 1) {
+  .cols-4-medium.gutter-medium > *:nth-child(3n + 1), .columns-4-medium.gutter-medium > *:nth-child(3n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-4-medium > *:nth-child(3n), .columns-gutter-4-medium > *:nth-child(3n) {
+  .cols-4-medium.gutter-medium > *:nth-child(3n), .columns-4-medium.gutter-medium > *:nth-child(3n) {
     margin-right: 0;
   }
 
@@ -7619,7 +7664,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-4-medium, .columns-gutter > .col-offset-4-medium {
+  .gutter > .col-offset-4-medium {
     margin-left: calc(4 * ((100% - 176px) / 12) + (64px));
   }
 
@@ -7639,13 +7684,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-5-medium > *, .columns-gutter-5-medium > *, .cols-gutter-5-medium > *:nth-child(n), .columns-gutter-5-medium > *:nth-child(n), .cols-gutter > .col-5-medium, .columns-gutter > .col-5-medium {
+  .cols-5-medium.gutter-medium > *, .columns-5-medium.gutter-medium > *, .gutter > .col-5-medium {
     width: calc(5 * ((100% - 176px) / 12) + (64px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -7655,7 +7700,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-5-medium > *, .columns-gutter-5-medium > *, .cols-gutter-5-medium > *:nth-child(n), .columns-gutter-5-medium > *:nth-child(n) {
+  .cols-5-medium.gutter-medium > *, .columns-5-medium.gutter-medium > *, .cols-5-medium.gutter-medium > *:nth-child(n), .columns-5-medium.gutter-medium > *:nth-child(n) {
     height: auto;
   }
 
@@ -7665,7 +7710,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-5-medium, .columns-gutter > .col-offset-5-medium {
+  .gutter > .col-offset-5-medium {
     margin-left: calc(5 * ((100% - 176px) / 12) + (80px));
   }
 
@@ -7685,13 +7730,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-6-medium > *, .columns-gutter-6-medium > *, .cols-gutter-6-medium > *:nth-child(n), .columns-gutter-6-medium > *:nth-child(n), .cols-gutter > .col-6-medium, .columns-gutter > .col-6-medium {
+  .cols-6-medium.gutter-medium > *, .columns-6-medium.gutter-medium > *, .gutter > .col-6-medium {
     width: calc(6 * ((100% - 176px) / 12) + (80px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -7708,28 +7753,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-6-medium.cols-bordered > *:not(:nth-child(2n + 1)), .columns-6-medium.cols-bordered > *:not(:nth-child(2n + 1)) {
+  .cols-6-medium.cols-border > *:not(:nth-child(2n + 1)), .cols-6-medium.columns-border > *:not(:nth-child(2n + 1)), .columns-6-medium.cols-border > *:not(:nth-child(2n + 1)), .columns-6-medium.columns-border > *:not(:nth-child(2n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-6-medium.cols-bordered > *:nth-child(n+3), .columns-6-medium.cols-bordered > *:nth-child(n+3) {
+  .cols-6-medium.cols-border > *:nth-child(n+3), .cols-6-medium.columns-border > *:nth-child(n+3), .columns-6-medium.cols-border > *:nth-child(n+3), .columns-6-medium.columns-border > *:nth-child(n+3) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-6-medium > *, .columns-gutter-6-medium > *, .cols-gutter-6-medium > *:nth-child(n), .columns-gutter-6-medium > *:nth-child(n) {
+  .cols-6-medium.gutter-medium > *, .columns-6-medium.gutter-medium > *, .cols-6-medium.gutter-medium > *:nth-child(n), .columns-6-medium.gutter-medium > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-6-medium > *:nth-child(n+1), .columns-gutter-6-medium > *:nth-child(n+1) {
+  .cols-6-medium.gutter-medium > *:nth-child(n+1), .columns-6-medium.gutter-medium > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-6-medium > *:nth-child(2n + 1), .columns-gutter-6-medium > *:nth-child(2n + 1) {
+  .cols-6-medium.gutter-medium > *:nth-child(2n + 1), .columns-6-medium.gutter-medium > *:nth-child(2n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-6-medium > *:nth-child(2n), .columns-gutter-6-medium > *:nth-child(2n) {
+  .cols-6-medium.gutter-medium > *:nth-child(2n), .columns-6-medium.gutter-medium > *:nth-child(2n) {
     margin-right: 0;
   }
 
@@ -7739,7 +7784,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-6-medium, .columns-gutter > .col-offset-6-medium {
+  .gutter > .col-offset-6-medium {
     margin-left: calc(6 * ((100% - 176px) / 12) + (96px));
   }
 
@@ -7759,13 +7804,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-7-medium > *, .columns-gutter-7-medium > *, .cols-gutter-7-medium > *:nth-child(n), .columns-gutter-7-medium > *:nth-child(n), .cols-gutter > .col-7-medium, .columns-gutter > .col-7-medium {
+  .cols-7-medium.gutter-medium > *, .columns-7-medium.gutter-medium > *, .gutter > .col-7-medium {
     width: calc(7 * ((100% - 176px) / 12) + (96px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -7775,7 +7820,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-7-medium > *, .columns-gutter-7-medium > *, .cols-gutter-7-medium > *:nth-child(n), .columns-gutter-7-medium > *:nth-child(n) {
+  .cols-7-medium.gutter-medium > *, .columns-7-medium.gutter-medium > *, .cols-7-medium.gutter-medium > *:nth-child(n), .columns-7-medium.gutter-medium > *:nth-child(n) {
     height: auto;
   }
 
@@ -7785,7 +7830,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-7-medium, .columns-gutter > .col-offset-7-medium {
+  .gutter > .col-offset-7-medium {
     margin-left: calc(7 * ((100% - 176px) / 12) + (112px));
   }
 
@@ -7805,13 +7850,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-8-medium > *, .columns-gutter-8-medium > *, .cols-gutter-8-medium > *:nth-child(n), .columns-gutter-8-medium > *:nth-child(n), .cols-gutter > .col-8-medium, .columns-gutter > .col-8-medium {
+  .cols-8-medium.gutter-medium > *, .columns-8-medium.gutter-medium > *, .gutter > .col-8-medium {
     width: calc(8 * ((100% - 176px) / 12) + (112px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -7821,7 +7866,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-8-medium > *, .columns-gutter-8-medium > *, .cols-gutter-8-medium > *:nth-child(n), .columns-gutter-8-medium > *:nth-child(n) {
+  .cols-8-medium.gutter-medium > *, .columns-8-medium.gutter-medium > *, .cols-8-medium.gutter-medium > *:nth-child(n), .columns-8-medium.gutter-medium > *:nth-child(n) {
     height: auto;
   }
 
@@ -7831,7 +7876,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-8-medium, .columns-gutter > .col-offset-8-medium {
+  .gutter > .col-offset-8-medium {
     margin-left: calc(8 * ((100% - 176px) / 12) + (128px));
   }
 
@@ -7851,13 +7896,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-9-medium > *, .columns-gutter-9-medium > *, .cols-gutter-9-medium > *:nth-child(n), .columns-gutter-9-medium > *:nth-child(n), .cols-gutter > .col-9-medium, .columns-gutter > .col-9-medium {
+  .cols-9-medium.gutter-medium > *, .columns-9-medium.gutter-medium > *, .gutter > .col-9-medium {
     width: calc(9 * ((100% - 176px) / 12) + (128px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -7867,7 +7912,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-9-medium > *, .columns-gutter-9-medium > *, .cols-gutter-9-medium > *:nth-child(n), .columns-gutter-9-medium > *:nth-child(n) {
+  .cols-9-medium.gutter-medium > *, .columns-9-medium.gutter-medium > *, .cols-9-medium.gutter-medium > *:nth-child(n), .columns-9-medium.gutter-medium > *:nth-child(n) {
     height: auto;
   }
 
@@ -7877,7 +7922,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-9-medium, .columns-gutter > .col-offset-9-medium {
+  .gutter > .col-offset-9-medium {
     margin-left: calc(9 * ((100% - 176px) / 12) + (144px));
   }
 
@@ -7897,13 +7942,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-10-medium > *, .columns-gutter-10-medium > *, .cols-gutter-10-medium > *:nth-child(n), .columns-gutter-10-medium > *:nth-child(n), .cols-gutter > .col-10-medium, .columns-gutter > .col-10-medium {
+  .cols-10-medium.gutter-medium > *, .columns-10-medium.gutter-medium > *, .gutter > .col-10-medium {
     width: calc(10 * ((100% - 176px) / 12) + (144px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -7913,7 +7958,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-10-medium > *, .columns-gutter-10-medium > *, .cols-gutter-10-medium > *:nth-child(n), .columns-gutter-10-medium > *:nth-child(n) {
+  .cols-10-medium.gutter-medium > *, .columns-10-medium.gutter-medium > *, .cols-10-medium.gutter-medium > *:nth-child(n), .columns-10-medium.gutter-medium > *:nth-child(n) {
     height: auto;
   }
 
@@ -7923,7 +7968,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-10-medium, .columns-gutter > .col-offset-10-medium {
+  .gutter > .col-offset-10-medium {
     margin-left: calc(10 * ((100% - 176px) / 12) + (160px));
   }
 
@@ -7943,13 +7988,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-11-medium > *, .columns-gutter-11-medium > *, .cols-gutter-11-medium > *:nth-child(n), .columns-gutter-11-medium > *:nth-child(n), .cols-gutter > .col-11-medium, .columns-gutter > .col-11-medium {
+  .cols-11-medium.gutter-medium > *, .columns-11-medium.gutter-medium > *, .gutter > .col-11-medium {
     width: calc(11 * ((100% - 176px) / 12) + (160px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -7959,7 +8004,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-11-medium > *, .columns-gutter-11-medium > *, .cols-gutter-11-medium > *:nth-child(n), .columns-gutter-11-medium > *:nth-child(n) {
+  .cols-11-medium.gutter-medium > *, .columns-11-medium.gutter-medium > *, .cols-11-medium.gutter-medium > *:nth-child(n), .columns-11-medium.gutter-medium > *:nth-child(n) {
     height: auto;
   }
 
@@ -7969,7 +8014,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-11-medium, .columns-gutter > .col-offset-11-medium {
+  .gutter > .col-offset-11-medium {
     margin-left: calc(11 * ((100% - 176px) / 12) + (176px));
   }
 
@@ -7989,13 +8034,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-12-medium > *, .columns-gutter-12-medium > *, .cols-gutter-12-medium > *:nth-child(n), .columns-gutter-12-medium > *:nth-child(n), .cols-gutter > .col-12-medium, .columns-gutter > .col-12-medium {
+  .cols-12-medium.gutter-medium > *, .columns-12-medium.gutter-medium > *, .gutter > .col-12-medium {
     width: calc(12 * ((100% - 176px) / 12) + (176px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -8012,28 +8057,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-12-medium.cols-bordered > *:not(:nth-child(1n + 1)), .columns-12-medium.cols-bordered > *:not(:nth-child(1n + 1)) {
+  .cols-12-medium.cols-border > *:not(:nth-child(1n + 1)), .cols-12-medium.columns-border > *:not(:nth-child(1n + 1)), .columns-12-medium.cols-border > *:not(:nth-child(1n + 1)), .columns-12-medium.columns-border > *:not(:nth-child(1n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-12-medium.cols-bordered > *:nth-child(n+2), .columns-12-medium.cols-bordered > *:nth-child(n+2) {
+  .cols-12-medium.cols-border > *:nth-child(n+2), .cols-12-medium.columns-border > *:nth-child(n+2), .columns-12-medium.cols-border > *:nth-child(n+2), .columns-12-medium.columns-border > *:nth-child(n+2) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-12-medium > *, .columns-gutter-12-medium > *, .cols-gutter-12-medium > *:nth-child(n), .columns-gutter-12-medium > *:nth-child(n) {
+  .cols-12-medium.gutter-medium > *, .columns-12-medium.gutter-medium > *, .cols-12-medium.gutter-medium > *:nth-child(n), .columns-12-medium.gutter-medium > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-12-medium > *:nth-child(n+1), .columns-gutter-12-medium > *:nth-child(n+1) {
+  .cols-12-medium.gutter-medium > *:nth-child(n+1), .columns-12-medium.gutter-medium > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-12-medium > *:nth-child(1n + 1), .columns-gutter-12-medium > *:nth-child(1n + 1) {
+  .cols-12-medium.gutter-medium > *:nth-child(1n + 1), .columns-12-medium.gutter-medium > *:nth-child(1n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-12-medium > *:nth-child(1n), .columns-gutter-12-medium > *:nth-child(1n) {
+  .cols-12-medium.gutter-medium > *:nth-child(1n), .columns-12-medium.gutter-medium > *:nth-child(1n) {
     margin-right: 0;
   }
 
@@ -8043,7 +8088,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-12-medium, .columns-gutter > .col-offset-12-medium {
+  .gutter > .col-offset-12-medium {
     margin-left: calc(12 * ((100% - 176px) / 12) + (192px));
   }
 
@@ -8272,13 +8317,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-0-large > *, .columns-gutter-0-large > *, .cols-gutter-0-large > *:nth-child(n), .columns-gutter-0-large > *:nth-child(n), .cols-gutter > .col-0-large, .columns-gutter > .col-0-large {
+  .cols-0-large.gutter-large > *, .columns-0-large.gutter-large > *, .gutter > .col-0-large {
     width: calc(0 * ((100% - 176px) / 12) + (-16px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -8288,7 +8333,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-0-large > *, .columns-gutter-0-large > *, .cols-gutter-0-large > *:nth-child(n), .columns-gutter-0-large > *:nth-child(n) {
+  .cols-0-large.gutter-large > *, .columns-0-large.gutter-large > *, .cols-0-large.gutter-large > *:nth-child(n), .columns-0-large.gutter-large > *:nth-child(n) {
     height: auto;
   }
 
@@ -8298,7 +8343,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-0-large, .columns-gutter > .col-offset-0-large {
+  .gutter > .col-offset-0-large {
     margin-left: calc(0 * ((100% - 176px) / 12) + (0px));
   }
 
@@ -8318,13 +8363,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-1-large > *, .columns-gutter-1-large > *, .cols-gutter-1-large > *:nth-child(n), .columns-gutter-1-large > *:nth-child(n), .cols-gutter > .col-1-large, .columns-gutter > .col-1-large {
+  .cols-1-large.gutter-large > *, .columns-1-large.gutter-large > *, .gutter > .col-1-large {
     width: calc(1 * ((100% - 176px) / 12) + (0px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -8341,28 +8386,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-1-large.cols-bordered > *:not(:nth-child(12n + 1)), .columns-1-large.cols-bordered > *:not(:nth-child(12n + 1)) {
+  .cols-1-large.cols-border > *:not(:nth-child(12n + 1)), .cols-1-large.columns-border > *:not(:nth-child(12n + 1)), .columns-1-large.cols-border > *:not(:nth-child(12n + 1)), .columns-1-large.columns-border > *:not(:nth-child(12n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-1-large.cols-bordered > *:nth-child(n+13), .columns-1-large.cols-bordered > *:nth-child(n+13) {
+  .cols-1-large.cols-border > *:nth-child(n+13), .cols-1-large.columns-border > *:nth-child(n+13), .columns-1-large.cols-border > *:nth-child(n+13), .columns-1-large.columns-border > *:nth-child(n+13) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-1-large > *, .columns-gutter-1-large > *, .cols-gutter-1-large > *:nth-child(n), .columns-gutter-1-large > *:nth-child(n) {
+  .cols-1-large.gutter-large > *, .columns-1-large.gutter-large > *, .cols-1-large.gutter-large > *:nth-child(n), .columns-1-large.gutter-large > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-1-large > *:nth-child(n+1), .columns-gutter-1-large > *:nth-child(n+1) {
+  .cols-1-large.gutter-large > *:nth-child(n+1), .columns-1-large.gutter-large > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-1-large > *:nth-child(12n + 1), .columns-gutter-1-large > *:nth-child(12n + 1) {
+  .cols-1-large.gutter-large > *:nth-child(12n + 1), .columns-1-large.gutter-large > *:nth-child(12n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-1-large > *:nth-child(12n), .columns-gutter-1-large > *:nth-child(12n) {
+  .cols-1-large.gutter-large > *:nth-child(12n), .columns-1-large.gutter-large > *:nth-child(12n) {
     margin-right: 0;
   }
 
@@ -8372,7 +8417,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-1-large, .columns-gutter > .col-offset-1-large {
+  .gutter > .col-offset-1-large {
     margin-left: calc(1 * ((100% - 176px) / 12) + (16px));
   }
 
@@ -8392,13 +8437,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-2-large > *, .columns-gutter-2-large > *, .cols-gutter-2-large > *:nth-child(n), .columns-gutter-2-large > *:nth-child(n), .cols-gutter > .col-2-large, .columns-gutter > .col-2-large {
+  .cols-2-large.gutter-large > *, .columns-2-large.gutter-large > *, .gutter > .col-2-large {
     width: calc(2 * ((100% - 176px) / 12) + (16px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -8415,28 +8460,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-2-large.cols-bordered > *:not(:nth-child(6n + 1)), .columns-2-large.cols-bordered > *:not(:nth-child(6n + 1)) {
+  .cols-2-large.cols-border > *:not(:nth-child(6n + 1)), .cols-2-large.columns-border > *:not(:nth-child(6n + 1)), .columns-2-large.cols-border > *:not(:nth-child(6n + 1)), .columns-2-large.columns-border > *:not(:nth-child(6n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-2-large.cols-bordered > *:nth-child(n+7), .columns-2-large.cols-bordered > *:nth-child(n+7) {
+  .cols-2-large.cols-border > *:nth-child(n+7), .cols-2-large.columns-border > *:nth-child(n+7), .columns-2-large.cols-border > *:nth-child(n+7), .columns-2-large.columns-border > *:nth-child(n+7) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-2-large > *, .columns-gutter-2-large > *, .cols-gutter-2-large > *:nth-child(n), .columns-gutter-2-large > *:nth-child(n) {
+  .cols-2-large.gutter-large > *, .columns-2-large.gutter-large > *, .cols-2-large.gutter-large > *:nth-child(n), .columns-2-large.gutter-large > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-2-large > *:nth-child(n+1), .columns-gutter-2-large > *:nth-child(n+1) {
+  .cols-2-large.gutter-large > *:nth-child(n+1), .columns-2-large.gutter-large > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-2-large > *:nth-child(6n + 1), .columns-gutter-2-large > *:nth-child(6n + 1) {
+  .cols-2-large.gutter-large > *:nth-child(6n + 1), .columns-2-large.gutter-large > *:nth-child(6n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-2-large > *:nth-child(6n), .columns-gutter-2-large > *:nth-child(6n) {
+  .cols-2-large.gutter-large > *:nth-child(6n), .columns-2-large.gutter-large > *:nth-child(6n) {
     margin-right: 0;
   }
 
@@ -8446,7 +8491,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-2-large, .columns-gutter > .col-offset-2-large {
+  .gutter > .col-offset-2-large {
     margin-left: calc(2 * ((100% - 176px) / 12) + (32px));
   }
 
@@ -8466,13 +8511,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-3-large > *, .columns-gutter-3-large > *, .cols-gutter-3-large > *:nth-child(n), .columns-gutter-3-large > *:nth-child(n), .cols-gutter > .col-3-large, .columns-gutter > .col-3-large {
+  .cols-3-large.gutter-large > *, .columns-3-large.gutter-large > *, .gutter > .col-3-large {
     width: calc(3 * ((100% - 176px) / 12) + (32px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -8489,28 +8534,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-3-large.cols-bordered > *:not(:nth-child(4n + 1)), .columns-3-large.cols-bordered > *:not(:nth-child(4n + 1)) {
+  .cols-3-large.cols-border > *:not(:nth-child(4n + 1)), .cols-3-large.columns-border > *:not(:nth-child(4n + 1)), .columns-3-large.cols-border > *:not(:nth-child(4n + 1)), .columns-3-large.columns-border > *:not(:nth-child(4n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-3-large.cols-bordered > *:nth-child(n+5), .columns-3-large.cols-bordered > *:nth-child(n+5) {
+  .cols-3-large.cols-border > *:nth-child(n+5), .cols-3-large.columns-border > *:nth-child(n+5), .columns-3-large.cols-border > *:nth-child(n+5), .columns-3-large.columns-border > *:nth-child(n+5) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-3-large > *, .columns-gutter-3-large > *, .cols-gutter-3-large > *:nth-child(n), .columns-gutter-3-large > *:nth-child(n) {
+  .cols-3-large.gutter-large > *, .columns-3-large.gutter-large > *, .cols-3-large.gutter-large > *:nth-child(n), .columns-3-large.gutter-large > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-3-large > *:nth-child(n+1), .columns-gutter-3-large > *:nth-child(n+1) {
+  .cols-3-large.gutter-large > *:nth-child(n+1), .columns-3-large.gutter-large > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-3-large > *:nth-child(4n + 1), .columns-gutter-3-large > *:nth-child(4n + 1) {
+  .cols-3-large.gutter-large > *:nth-child(4n + 1), .columns-3-large.gutter-large > *:nth-child(4n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-3-large > *:nth-child(4n), .columns-gutter-3-large > *:nth-child(4n) {
+  .cols-3-large.gutter-large > *:nth-child(4n), .columns-3-large.gutter-large > *:nth-child(4n) {
     margin-right: 0;
   }
 
@@ -8520,7 +8565,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-3-large, .columns-gutter > .col-offset-3-large {
+  .gutter > .col-offset-3-large {
     margin-left: calc(3 * ((100% - 176px) / 12) + (48px));
   }
 
@@ -8540,13 +8585,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-4-large > *, .columns-gutter-4-large > *, .cols-gutter-4-large > *:nth-child(n), .columns-gutter-4-large > *:nth-child(n), .cols-gutter > .col-4-large, .columns-gutter > .col-4-large {
+  .cols-4-large.gutter-large > *, .columns-4-large.gutter-large > *, .gutter > .col-4-large {
     width: calc(4 * ((100% - 176px) / 12) + (48px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -8563,28 +8608,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-4-large.cols-bordered > *:not(:nth-child(3n + 1)), .columns-4-large.cols-bordered > *:not(:nth-child(3n + 1)) {
+  .cols-4-large.cols-border > *:not(:nth-child(3n + 1)), .cols-4-large.columns-border > *:not(:nth-child(3n + 1)), .columns-4-large.cols-border > *:not(:nth-child(3n + 1)), .columns-4-large.columns-border > *:not(:nth-child(3n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-4-large.cols-bordered > *:nth-child(n+4), .columns-4-large.cols-bordered > *:nth-child(n+4) {
+  .cols-4-large.cols-border > *:nth-child(n+4), .cols-4-large.columns-border > *:nth-child(n+4), .columns-4-large.cols-border > *:nth-child(n+4), .columns-4-large.columns-border > *:nth-child(n+4) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-4-large > *, .columns-gutter-4-large > *, .cols-gutter-4-large > *:nth-child(n), .columns-gutter-4-large > *:nth-child(n) {
+  .cols-4-large.gutter-large > *, .columns-4-large.gutter-large > *, .cols-4-large.gutter-large > *:nth-child(n), .columns-4-large.gutter-large > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-4-large > *:nth-child(n+1), .columns-gutter-4-large > *:nth-child(n+1) {
+  .cols-4-large.gutter-large > *:nth-child(n+1), .columns-4-large.gutter-large > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-4-large > *:nth-child(3n + 1), .columns-gutter-4-large > *:nth-child(3n + 1) {
+  .cols-4-large.gutter-large > *:nth-child(3n + 1), .columns-4-large.gutter-large > *:nth-child(3n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-4-large > *:nth-child(3n), .columns-gutter-4-large > *:nth-child(3n) {
+  .cols-4-large.gutter-large > *:nth-child(3n), .columns-4-large.gutter-large > *:nth-child(3n) {
     margin-right: 0;
   }
 
@@ -8594,7 +8639,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-4-large, .columns-gutter > .col-offset-4-large {
+  .gutter > .col-offset-4-large {
     margin-left: calc(4 * ((100% - 176px) / 12) + (64px));
   }
 
@@ -8614,13 +8659,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-5-large > *, .columns-gutter-5-large > *, .cols-gutter-5-large > *:nth-child(n), .columns-gutter-5-large > *:nth-child(n), .cols-gutter > .col-5-large, .columns-gutter > .col-5-large {
+  .cols-5-large.gutter-large > *, .columns-5-large.gutter-large > *, .gutter > .col-5-large {
     width: calc(5 * ((100% - 176px) / 12) + (64px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -8630,7 +8675,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-5-large > *, .columns-gutter-5-large > *, .cols-gutter-5-large > *:nth-child(n), .columns-gutter-5-large > *:nth-child(n) {
+  .cols-5-large.gutter-large > *, .columns-5-large.gutter-large > *, .cols-5-large.gutter-large > *:nth-child(n), .columns-5-large.gutter-large > *:nth-child(n) {
     height: auto;
   }
 
@@ -8640,7 +8685,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-5-large, .columns-gutter > .col-offset-5-large {
+  .gutter > .col-offset-5-large {
     margin-left: calc(5 * ((100% - 176px) / 12) + (80px));
   }
 
@@ -8660,13 +8705,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-6-large > *, .columns-gutter-6-large > *, .cols-gutter-6-large > *:nth-child(n), .columns-gutter-6-large > *:nth-child(n), .cols-gutter > .col-6-large, .columns-gutter > .col-6-large {
+  .cols-6-large.gutter-large > *, .columns-6-large.gutter-large > *, .gutter > .col-6-large {
     width: calc(6 * ((100% - 176px) / 12) + (80px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -8683,28 +8728,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-6-large.cols-bordered > *:not(:nth-child(2n + 1)), .columns-6-large.cols-bordered > *:not(:nth-child(2n + 1)) {
+  .cols-6-large.cols-border > *:not(:nth-child(2n + 1)), .cols-6-large.columns-border > *:not(:nth-child(2n + 1)), .columns-6-large.cols-border > *:not(:nth-child(2n + 1)), .columns-6-large.columns-border > *:not(:nth-child(2n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-6-large.cols-bordered > *:nth-child(n+3), .columns-6-large.cols-bordered > *:nth-child(n+3) {
+  .cols-6-large.cols-border > *:nth-child(n+3), .cols-6-large.columns-border > *:nth-child(n+3), .columns-6-large.cols-border > *:nth-child(n+3), .columns-6-large.columns-border > *:nth-child(n+3) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-6-large > *, .columns-gutter-6-large > *, .cols-gutter-6-large > *:nth-child(n), .columns-gutter-6-large > *:nth-child(n) {
+  .cols-6-large.gutter-large > *, .columns-6-large.gutter-large > *, .cols-6-large.gutter-large > *:nth-child(n), .columns-6-large.gutter-large > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-6-large > *:nth-child(n+1), .columns-gutter-6-large > *:nth-child(n+1) {
+  .cols-6-large.gutter-large > *:nth-child(n+1), .columns-6-large.gutter-large > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-6-large > *:nth-child(2n + 1), .columns-gutter-6-large > *:nth-child(2n + 1) {
+  .cols-6-large.gutter-large > *:nth-child(2n + 1), .columns-6-large.gutter-large > *:nth-child(2n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-6-large > *:nth-child(2n), .columns-gutter-6-large > *:nth-child(2n) {
+  .cols-6-large.gutter-large > *:nth-child(2n), .columns-6-large.gutter-large > *:nth-child(2n) {
     margin-right: 0;
   }
 
@@ -8714,7 +8759,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-6-large, .columns-gutter > .col-offset-6-large {
+  .gutter > .col-offset-6-large {
     margin-left: calc(6 * ((100% - 176px) / 12) + (96px));
   }
 
@@ -8734,13 +8779,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-7-large > *, .columns-gutter-7-large > *, .cols-gutter-7-large > *:nth-child(n), .columns-gutter-7-large > *:nth-child(n), .cols-gutter > .col-7-large, .columns-gutter > .col-7-large {
+  .cols-7-large.gutter-large > *, .columns-7-large.gutter-large > *, .gutter > .col-7-large {
     width: calc(7 * ((100% - 176px) / 12) + (96px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -8750,7 +8795,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-7-large > *, .columns-gutter-7-large > *, .cols-gutter-7-large > *:nth-child(n), .columns-gutter-7-large > *:nth-child(n) {
+  .cols-7-large.gutter-large > *, .columns-7-large.gutter-large > *, .cols-7-large.gutter-large > *:nth-child(n), .columns-7-large.gutter-large > *:nth-child(n) {
     height: auto;
   }
 
@@ -8760,7 +8805,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-7-large, .columns-gutter > .col-offset-7-large {
+  .gutter > .col-offset-7-large {
     margin-left: calc(7 * ((100% - 176px) / 12) + (112px));
   }
 
@@ -8780,13 +8825,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-8-large > *, .columns-gutter-8-large > *, .cols-gutter-8-large > *:nth-child(n), .columns-gutter-8-large > *:nth-child(n), .cols-gutter > .col-8-large, .columns-gutter > .col-8-large {
+  .cols-8-large.gutter-large > *, .columns-8-large.gutter-large > *, .gutter > .col-8-large {
     width: calc(8 * ((100% - 176px) / 12) + (112px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -8796,7 +8841,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-8-large > *, .columns-gutter-8-large > *, .cols-gutter-8-large > *:nth-child(n), .columns-gutter-8-large > *:nth-child(n) {
+  .cols-8-large.gutter-large > *, .columns-8-large.gutter-large > *, .cols-8-large.gutter-large > *:nth-child(n), .columns-8-large.gutter-large > *:nth-child(n) {
     height: auto;
   }
 
@@ -8806,7 +8851,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-8-large, .columns-gutter > .col-offset-8-large {
+  .gutter > .col-offset-8-large {
     margin-left: calc(8 * ((100% - 176px) / 12) + (128px));
   }
 
@@ -8826,13 +8871,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-9-large > *, .columns-gutter-9-large > *, .cols-gutter-9-large > *:nth-child(n), .columns-gutter-9-large > *:nth-child(n), .cols-gutter > .col-9-large, .columns-gutter > .col-9-large {
+  .cols-9-large.gutter-large > *, .columns-9-large.gutter-large > *, .gutter > .col-9-large {
     width: calc(9 * ((100% - 176px) / 12) + (128px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -8842,7 +8887,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-9-large > *, .columns-gutter-9-large > *, .cols-gutter-9-large > *:nth-child(n), .columns-gutter-9-large > *:nth-child(n) {
+  .cols-9-large.gutter-large > *, .columns-9-large.gutter-large > *, .cols-9-large.gutter-large > *:nth-child(n), .columns-9-large.gutter-large > *:nth-child(n) {
     height: auto;
   }
 
@@ -8852,7 +8897,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-9-large, .columns-gutter > .col-offset-9-large {
+  .gutter > .col-offset-9-large {
     margin-left: calc(9 * ((100% - 176px) / 12) + (144px));
   }
 
@@ -8872,13 +8917,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-10-large > *, .columns-gutter-10-large > *, .cols-gutter-10-large > *:nth-child(n), .columns-gutter-10-large > *:nth-child(n), .cols-gutter > .col-10-large, .columns-gutter > .col-10-large {
+  .cols-10-large.gutter-large > *, .columns-10-large.gutter-large > *, .gutter > .col-10-large {
     width: calc(10 * ((100% - 176px) / 12) + (144px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -8888,7 +8933,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-10-large > *, .columns-gutter-10-large > *, .cols-gutter-10-large > *:nth-child(n), .columns-gutter-10-large > *:nth-child(n) {
+  .cols-10-large.gutter-large > *, .columns-10-large.gutter-large > *, .cols-10-large.gutter-large > *:nth-child(n), .columns-10-large.gutter-large > *:nth-child(n) {
     height: auto;
   }
 
@@ -8898,7 +8943,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-10-large, .columns-gutter > .col-offset-10-large {
+  .gutter > .col-offset-10-large {
     margin-left: calc(10 * ((100% - 176px) / 12) + (160px));
   }
 
@@ -8918,13 +8963,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-11-large > *, .columns-gutter-11-large > *, .cols-gutter-11-large > *:nth-child(n), .columns-gutter-11-large > *:nth-child(n), .cols-gutter > .col-11-large, .columns-gutter > .col-11-large {
+  .cols-11-large.gutter-large > *, .columns-11-large.gutter-large > *, .gutter > .col-11-large {
     width: calc(11 * ((100% - 176px) / 12) + (160px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -8934,7 +8979,7 @@ html {
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-11-large > *, .columns-gutter-11-large > *, .cols-gutter-11-large > *:nth-child(n), .columns-gutter-11-large > *:nth-child(n) {
+  .cols-11-large.gutter-large > *, .columns-11-large.gutter-large > *, .cols-11-large.gutter-large > *:nth-child(n), .columns-11-large.gutter-large > *:nth-child(n) {
     height: auto;
   }
 
@@ -8944,7 +8989,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-11-large, .columns-gutter > .col-offset-11-large {
+  .gutter > .col-offset-11-large {
     margin-left: calc(11 * ((100% - 176px) / 12) + (176px));
   }
 
@@ -8964,13 +9009,13 @@ html {
   }
 
   /* line 81, ../scss/modules/grid/_components.scss */
-  .cols-gutter-12-large > *, .columns-gutter-12-large > *, .cols-gutter-12-large > *:nth-child(n), .columns-gutter-12-large > *:nth-child(n), .cols-gutter > .col-12-large, .columns-gutter > .col-12-large {
+  .cols-12-large.gutter-large > *, .columns-12-large.gutter-large > *, .gutter > .col-12-large {
     width: calc(12 * ((100% - 176px) / 12) + (176px)) !important;
     margin-right: 16px;
   }
 
   /* line 87, ../scss/modules/grid/_components.scss */
-  .cols-gutter > *:last-child, .columns-gutter > *:last-child {
+  .gutter > *:last-child {
     margin-right: 0;
   }
 
@@ -8987,28 +9032,28 @@ html {
     clear: left;
   }
   /* line 110, ../scss/modules/grid/_components.scss */
-  .cols-12-large.cols-bordered > *:not(:nth-child(1n + 1)), .columns-12-large.cols-bordered > *:not(:nth-child(1n + 1)) {
+  .cols-12-large.cols-border > *:not(:nth-child(1n + 1)), .cols-12-large.columns-border > *:not(:nth-child(1n + 1)), .columns-12-large.cols-border > *:not(:nth-child(1n + 1)), .columns-12-large.columns-border > *:not(:nth-child(1n + 1)) {
     border-left-width: 0 !important;
   }
   /* line 114, ../scss/modules/grid/_components.scss */
-  .cols-12-large.cols-bordered > *:nth-child(n+2), .columns-12-large.cols-bordered > *:nth-child(n+2) {
+  .cols-12-large.cols-border > *:nth-child(n+2), .cols-12-large.columns-border > *:nth-child(n+2), .columns-12-large.cols-border > *:nth-child(n+2), .columns-12-large.columns-border > *:nth-child(n+2) {
     border-top-width: 0 !important;
   }
 
   /* line 123, ../scss/modules/grid/_components.scss */
-  .cols-gutter-12-large > *, .columns-gutter-12-large > *, .cols-gutter-12-large > *:nth-child(n), .columns-gutter-12-large > *:nth-child(n) {
+  .cols-12-large.gutter-large > *, .columns-12-large.gutter-large > *, .cols-12-large.gutter-large > *:nth-child(n), .columns-12-large.gutter-large > *:nth-child(n) {
     height: auto;
   }
   /* line 129, ../scss/modules/grid/_components.scss */
-  .cols-gutter-12-large > *:nth-child(n+1), .columns-gutter-12-large > *:nth-child(n+1) {
+  .cols-12-large.gutter-large > *:nth-child(n+1), .columns-12-large.gutter-large > *:nth-child(n+1) {
     clear: none;
   }
   /* line 133, ../scss/modules/grid/_components.scss */
-  .cols-gutter-12-large > *:nth-child(1n + 1), .columns-gutter-12-large > *:nth-child(1n + 1) {
+  .cols-12-large.gutter-large > *:nth-child(1n + 1), .columns-12-large.gutter-large > *:nth-child(1n + 1) {
     clear: left;
   }
   /* line 137, ../scss/modules/grid/_components.scss */
-  .cols-gutter-12-large > *:nth-child(1n), .columns-gutter-12-large > *:nth-child(1n) {
+  .cols-12-large.gutter-large > *:nth-child(1n), .columns-12-large.gutter-large > *:nth-child(1n) {
     margin-right: 0;
   }
 
@@ -9018,7 +9063,7 @@ html {
   }
 
   /* line 148, ../scss/modules/grid/_components.scss */
-  .cols-gutter > .col-offset-12-large, .columns-gutter > .col-offset-12-large {
+  .gutter > .col-offset-12-large {
     margin-left: calc(12 * ((100% - 176px) / 12) + (192px));
   }
 
@@ -10397,62 +10442,65 @@ body {
 
 /* line 113, ../scss/modules/type/_components.scss */
 p {
-  margin-bottom: 1rem;
   line-height: 1.5;
   font-weight: 300;
 }
-/* line 118, ../scss/modules/type/_components.scss */
+/* line 114, ../scss/modules/type/_components.scss */
+p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+/* line 121, ../scss/modules/type/_components.scss */
 p.lead {
   font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
 
-/* line 121, ../scss/modules/type/_components.scss */
+/* line 124, ../scss/modules/type/_components.scss */
 small, .small {
   font-size: 86.10298%;
 }
 
-/* line 125, ../scss/modules/type/_components.scss */
+/* line 128, ../scss/modules/type/_components.scss */
 .large {
   font-size: 116.14%;
 }
 
-/* line 129, ../scss/modules/type/_components.scss */
+/* line 132, ../scss/modules/type/_components.scss */
 strong, b, .strong {
   font-weight: bold !important;
 }
 
-/* line 133, ../scss/modules/type/_components.scss */
+/* line 136, ../scss/modules/type/_components.scss */
 .weak {
   font-weight: normal !important;
 }
 
-/* line 137, ../scss/modules/type/_components.scss */
+/* line 140, ../scss/modules/type/_components.scss */
 blockquote footer cite, em, .italics {
   font-style: italic;
 }
 
-/* line 141, ../scss/modules/type/_components.scss */
+/* line 144, ../scss/modules/type/_components.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 145, ../scss/modules/type/_components.scss */
+/* line 148, ../scss/modules/type/_components.scss */
 .lowercase {
   text-transform: lowercase;
 }
 
-/* line 149, ../scss/modules/type/_components.scss */
+/* line 152, ../scss/modules/type/_components.scss */
 ul.inline li, .nowrap, nav li, .dropdown-container > menu li, button, .button, input[type=button], input[type=submit] {
   white-space: nowrap;
 }
 
-/* line 153, ../scss/modules/type/_components.scss */
+/* line 156, ../scss/modules/type/_components.scss */
 mark, .mark {
   background: #FF0;
 }
 
-/* line 157, ../scss/modules/type/_components.scss */
+/* line 160, ../scss/modules/type/_components.scss */
 abbr, acronym {
   font-size: 116.14%;
   text-transform: uppercase;
@@ -10460,86 +10508,86 @@ abbr, acronym {
   cursor: help;
 }
 
-/* line 167, ../scss/modules/type/_components.scss */
+/* line 170, ../scss/modules/type/_components.scss */
 .upper-caps, .small-caps {
   font-variant: small-caps;
 }
 
-/* line 171, ../scss/modules/type/_components.scss */
+/* line 174, ../scss/modules/type/_components.scss */
 .upper-caps {
   text-transform: lowercase;
 }
 
-/* line 179, ../scss/modules/type/_components.scss */
+/* line 182, ../scss/modules/type/_components.scss */
 a {
   display: inline-block;
   text-decoration: underline;
 }
-/* line 183, ../scss/modules/type/_components.scss */
+/* line 186, ../scss/modules/type/_components.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 188, ../scss/modules/type/_components.scss */
+/* line 191, ../scss/modules/type/_components.scss */
 .anchors-hint a {
   text-decoration: none;
 }
-/* line 192, ../scss/modules/type/_components.scss */
+/* line 195, ../scss/modules/type/_components.scss */
 .anchors-hint:hover a {
   text-decoration: underline;
 }
 
-/* line 199, ../scss/modules/type/_components.scss */
+/* line 202, ../scss/modules/type/_components.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 203, ../scss/modules/type/_components.scss */
+/* line 206, ../scss/modules/type/_components.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 207, ../scss/modules/type/_components.scss */
+/* line 210, ../scss/modules/type/_components.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 211, ../scss/modules/type/_components.scss */
+/* line 214, ../scss/modules/type/_components.scss */
 .text-justify {
   text-align: justify;
 }
 
-/* line 216, ../scss/modules/type/_components.scss */
+/* line 219, ../scss/modules/type/_components.scss */
 .text-middle {
   display: table;
 }
-/* line 219, ../scss/modules/type/_components.scss */
+/* line 222, ../scss/modules/type/_components.scss */
 .text-middle > * {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 225, ../scss/modules/type/_components.scss */
+/* line 228, ../scss/modules/type/_components.scss */
 ul.inline li, .nowrap, nav li, .dropdown-container > menu li, button, .button, input[type=button], input[type=submit] {
   white-space: nowrap;
   overflow: hidden;
 }
 
-/* line 232, ../scss/modules/type/_components.scss */
+/* line 235, ../scss/modules/type/_components.scss */
 pre, .pre {
   white-space: pre;
   font-size: 16px ;
   font-size: 1rem ;
   font-family: Consolas, monaco, monospace;
 }
-/* line 237, ../scss/modules/type/_components.scss */
+/* line 240, ../scss/modules/type/_components.scss */
 pre code, .pre code, pre .code, .pre .code {
   word-wrap: normal;
   white-space: -moz-pre-wrap;
   white-space: pre-wrap;
 }
 
-/* line 244, ../scss/modules/type/_components.scss */
+/* line 247, ../scss/modules/type/_components.scss */
 pre code, pre .code, .pre code, .pre .code, code, .code {
   white-space: pre;
   font-size: 13.77648px ;
@@ -10547,80 +10595,80 @@ pre code, pre .code, .pre code, .pre .code, code, .code {
   font-family: Consolas, monaco, monospace;
 }
 
-/* line 250, ../scss/modules/type/_components.scss */
+/* line 253, ../scss/modules/type/_components.scss */
 kbd, .kbd {
   font-size: 11.86196px ;
   font-size: 0.74137rem ;
 }
 
-/* line 256, ../scss/modules/type/_components.scss */
+/* line 259, ../scss/modules/type/_components.scss */
 blockquote {
   padding: 1rem;
   margin-bottom: 1rem;
   font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
-/* line 261, ../scss/modules/type/_components.scss */
+/* line 264, ../scss/modules/type/_components.scss */
 blockquote footer {
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
 }
 
-/* line 273, ../scss/modules/type/_components.scss */
+/* line 276, ../scss/modules/type/_components.scss */
 q::before, q.double::before {
   content: '\201C';
 }
-/* line 274, ../scss/modules/type/_components.scss */
+/* line 277, ../scss/modules/type/_components.scss */
 q::after, q.double::after {
   content: '\201D';
 }
 
-/* line 278, ../scss/modules/type/_components.scss */
+/* line 281, ../scss/modules/type/_components.scss */
 q > q::before, q.single::before {
   content: '\2018';
 }
-/* line 279, ../scss/modules/type/_components.scss */
+/* line 282, ../scss/modules/type/_components.scss */
 q > q::after, q.single::after {
   content: '\2019';
 }
 
-/* line 283, ../scss/modules/type/_components.scss */
+/* line 286, ../scss/modules/type/_components.scss */
 q.arrow-double::before {
   content: '\00AB';
 }
-/* line 284, ../scss/modules/type/_components.scss */
+/* line 287, ../scss/modules/type/_components.scss */
 q.arrow-double::after {
   content: '\00BB';
 }
 
-/* line 288, ../scss/modules/type/_components.scss */
+/* line 291, ../scss/modules/type/_components.scss */
 q.arrow-single::before {
   content: '\2039';
 }
-/* line 289, ../scss/modules/type/_components.scss */
+/* line 292, ../scss/modules/type/_components.scss */
 q.arrow-single::after {
   content: '\203A';
 }
 
-/* line 293, ../scss/modules/type/_components.scss */
+/* line 296, ../scss/modules/type/_components.scss */
 q.low-double::before {
   content: '\201E';
 }
-/* line 294, ../scss/modules/type/_components.scss */
+/* line 297, ../scss/modules/type/_components.scss */
 q.low-double::after {
   content: '\201D';
 }
 
-/* line 298, ../scss/modules/type/_components.scss */
+/* line 301, ../scss/modules/type/_components.scss */
 q.low-single::before {
   content: '\201A';
 }
-/* line 299, ../scss/modules/type/_components.scss */
+/* line 302, ../scss/modules/type/_components.scss */
 q.low-single::after {
   content: '\2019';
 }
 
-/* line 304, ../scss/modules/type/_components.scss */
+/* line 307, ../scss/modules/type/_components.scss */
 hr {
   clear: both;
   height: 0;
@@ -10634,140 +10682,145 @@ hr {
   border-right-width: 0;
 }
 
-/* line 317, ../scss/modules/type/_components.scss */
+/* line 320, ../scss/modules/type/_components.scss */
 hr.dotted {
   border-style: dotted;
 }
 
-/* line 321, ../scss/modules/type/_components.scss */
+/* line 324, ../scss/modules/type/_components.scss */
+hr.dashed {
+  border-style: dashed;
+}
+
+/* line 328, ../scss/modules/type/_components.scss */
 hr.thick {
   border-top-width: 4px;
 }
 
-/* line 325, ../scss/modules/type/_components.scss */
+/* line 332, ../scss/modules/type/_components.scss */
 hr.thin {
   border-top-width: 1px;
 }
 
-/* line 329, ../scss/modules/type/_components.scss */
+/* line 336, ../scss/modules/type/_components.scss */
 hr.small {
   width: 3rem;
 }
 
-/* line 333, ../scss/modules/type/_components.scss */
+/* line 340, ../scss/modules/type/_components.scss */
 hr.large {
   width: 6rem;
 }
 
-/* line 337, ../scss/modules/type/_components.scss */
+/* line 344, ../scss/modules/type/_components.scss */
 hr.left {
   margin-right: auto;
 }
 
-/* line 341, ../scss/modules/type/_components.scss */
+/* line 348, ../scss/modules/type/_components.scss */
 hr.right {
   margin-left: auto;
 }
 
-/* line 345, ../scss/modules/type/_components.scss */
+/* line 352, ../scss/modules/type/_components.scss */
 hr.center {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 352, ../scss/modules/type/_components.scss */
+/* line 359, ../scss/modules/type/_components.scss */
 ul.unstyled, ul.inline, ul, ol, dl {
   list-style-position: outside;
   margin-bottom: 1rem;
   padding: 0;
 }
-/* line 366, ../scss/modules/type/_components.scss */
+/* line 373, ../scss/modules/type/_components.scss */
 ul.unstyled {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 372, ../scss/modules/type/_components.scss */
+/* line 379, ../scss/modules/type/_components.scss */
 ul.inline {
   margin-left: 0;
 }
-/* line 376, ../scss/modules/type/_components.scss */
+/* line 383, ../scss/modules/type/_components.scss */
 ul.inline li {
   display: inline-block;
   padding-right: 0 1rem 0 0;
 }
 
-/* line 383, ../scss/modules/type/_components.scss */
+/* line 390, ../scss/modules/type/_components.scss */
 ul {
   margin-left: 1rem;
 }
 
-/* line 389, ../scss/modules/type/_components.scss */
+/* line 396, ../scss/modules/type/_components.scss */
 ul.square {
   list-style-type: square;
 }
 
-/* line 390, ../scss/modules/type/_components.scss */
+/* line 397, ../scss/modules/type/_components.scss */
 ul.circle {
   list-style-type: circle;
 }
 
-/* line 391, ../scss/modules/type/_components.scss */
+/* line 398, ../scss/modules/type/_components.scss */
 ul.disc {
   list-style-type: disc;
 }
 
-/* line 392, ../scss/modules/type/_components.scss */
+/* line 399, ../scss/modules/type/_components.scss */
 ul.no-bullet {
   list-style-type: none;
 }
 
-/* line 394, ../scss/modules/type/_components.scss */
+/* line 401, ../scss/modules/type/_components.scss */
 ol {
   margin-left: 1.4rem;
 }
 
-/* line 403, ../scss/modules/type/_components.scss */
+/* line 410, ../scss/modules/type/_components.scss */
 dl dt {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-/* line 408, ../scss/modules/type/_components.scss */
+/* line 415, ../scss/modules/type/_components.scss */
 dl dd {
   margin-bottom: 0.5rem;
 }
 
-/* line 415, ../scss/modules/type/_components.scss */
+/* line 422, ../scss/modules/type/_components.scss */
 .divider:not(:last-child):after, [class*=" divider-"]:not(:last-child):after, [class^="divider-"]:not(:last-child):after, .dividers > :not(:last-child):after, [class*=" dividers-"] > :not(:last-child):after, [class^="dividers-"] > :not(:last-child):after {
   content: '';
   display: inline-block;
   vertical-align: inherit;
 }
-/* line 421, ../scss/modules/type/_components.scss */
+/* line 428, ../scss/modules/type/_components.scss */
 .divider-vertical:not(:last-child):after, .dividers-vertical > :not(:last-child):after {
   margin: 1rem 0;
 }
-/* line 425, ../scss/modules/type/_components.scss */
+/* line 432, ../scss/modules/type/_components.scss */
 .divider-horizontal:not(:last-child):after, .dividers-horizontal > :not(:last-child):after {
   margin: 0 1rem;
 }
-/* line 429, ../scss/modules/type/_components.scss */
+/* line 436, ../scss/modules/type/_components.scss */
 .divider-square:not(:last-child):after, .dividers-square > :not(:last-child):after {
   content: '\25A0';
 }
-/* line 430, ../scss/modules/type/_components.scss */
+/* line 437, ../scss/modules/type/_components.scss */
 .divider-diamond:not(:last-child):after, .dividers-diamond > :not(:last-child):after {
   content: '\25C6';
 }
-/* line 431, ../scss/modules/type/_components.scss */
+/* line 438, ../scss/modules/type/_components.scss */
 .divider-bar:not(:last-child):after, .dividers-bar > :not(:last-child):after {
   content: '\2503';
 }
-/* line 432, ../scss/modules/type/_components.scss */
+/* line 439, ../scss/modules/type/_components.scss */
 .divider-dash:not(:last-child):after, .dividers-dash > :not(:last-child):after {
   content: '\2501';
 }
-/* line 433, ../scss/modules/type/_components.scss */
+/* line 440, ../scss/modules/type/_components.scss */
 .divider-bullet:not(:last-child):after, .dividers-bullet > :not(:last-child):after {
   content: '\25CF';
 }
@@ -10895,7 +10948,7 @@ hr.darken {
   border-color: rgba(0, 0, 0, 0.4);
 }
 
-/* line 11, ../scss/modules/forms/_components.scss */
+/* line 7, ../scss/modules/forms/_components.scss */
 textarea,
 input[type="text"],
 input[type="password"],
@@ -10911,18 +10964,6 @@ input[type="url"],
 input[type="search"],
 input[type="tel"],
 input[type="color"] {
-  -moz-transition-property: "all";
-  -o-transition-property: "all";
-  -webkit-transition-property: "all";
-  transition-property: "all";
-  -moz-transition-duration: 300ms;
-  -o-transition-duration: 300ms;
-  -webkit-transition-duration: 300ms;
-  transition-duration: 300ms;
-  -moz-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
   display: block;
@@ -10936,7 +10977,7 @@ input[type="color"] {
   border-radius: 3px;
 }
 
-/* line 26, ../scss/modules/forms/_components.scss */
+/* line 21, ../scss/modules/forms/_components.scss */
 textarea.small,
 input[type="text"].small,
 input[type="password"].small,
@@ -10956,7 +10997,7 @@ input[type="color"].small {
   font-size: 0.74137rem ;
 }
 
-/* line 30, ../scss/modules/forms/_components.scss */
+/* line 25, ../scss/modules/forms/_components.scss */
 textarea.large,
 input[type="text"].large,
 input[type="password"].large,
@@ -10976,40 +11017,26 @@ input[type="color"].large {
   font-size: 1rem ;
 }
 
-/* line 34, ../scss/modules/forms/_components.scss */
+/* line 29, ../scss/modules/forms/_components.scss */
 input.inline,
 select.inline,
 textarea.inline {
   width: auto;
 }
 
-/* line 40, ../scss/modules/forms/_components.scss */
+/* line 35, ../scss/modules/forms/_components.scss */
 input.implicit,
 textarea.implicit {
-  padding: 0;
   background: transparent;
   border-width: 0;
 }
-
-/* line 46, ../scss/modules/forms/_components.scss */
+/* line 45, ../scss/modules/forms/_components.scss */
 textarea {
   height: auto;
 }
 
-/* line 56, ../scss/modules/forms/_components.scss */
+/* line 55, ../scss/modules/forms/_components.scss */
 select {
-  -moz-transition-property: "all";
-  -o-transition-property: "all";
-  -webkit-transition-property: "all";
-  transition-property: "all";
-  -moz-transition-duration: 300ms;
-  -o-transition-duration: 300ms;
-  -webkit-transition-duration: 300ms;
-  transition-duration: 300ms;
-  -moz-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -o-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
   display: block;
@@ -11022,30 +11049,90 @@ select {
   width: 100%;
 }
 
-/* line 70, ../scss/modules/forms/_components.scss */
+/* line 68, ../scss/modules/forms/_components.scss */
 input[type="radio"] {
   margin-right: 0.5rem;
 }
 
-/* line 74, ../scss/modules/forms/_components.scss */
+/* line 72, ../scss/modules/forms/_components.scss */
 input[type="checkbox"] {
   margin-right: 0.5rem;
 }
 
-/* line 80, ../scss/modules/forms/_components.scss */
+/* line 78, ../scss/modules/forms/_components.scss */
 label {
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
   display: block;
   margin-bottom: 0.25rem;
 }
-
-/* line 86, ../scss/modules/forms/_components.scss */
+/* line 83, ../scss/modules/forms/_components.scss */
+label > * {
+  vertical-align: middle;
+}
+/* line 87, ../scss/modules/forms/_components.scss */
 label.inline {
   display: inline-block;
   padding: 0.5rem;
 }
 
+/* line 65, ../scss/modules/forms/_themes.scss */
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"] {
+  border-color: #E7E7E7;
+  color: #525252;
+}
+/* line 22, ../scss/modules/forms/_themes.scss */
+textarea:hover,
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="datetime"]:hover,
+input[type="datetime-local"]:hover,
+input[type="date"]:hover,
+input[type="month"]:hover,
+input[type="time"]:hover,
+input[type="week"]:hover,
+input[type="number"]:hover,
+input[type="email"]:hover,
+input[type="url"]:hover,
+input[type="search"]:hover,
+input[type="tel"]:hover,
+input[type="color"]:hover {
+  border-color: #cecece;
+  color: #525252;
+}
+/* line 27, ../scss/modules/forms/_themes.scss */
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus {
+  border-color: #03728b;
+  color: #363636;
+}
 /* line 6, ../scss/modules/nav/_components.scss */
 nav > ul {
   list-style: none;
@@ -12228,11 +12315,36 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 }
 
 /* line 9, ../scss/modules/fields/_components.scss */
-.field {
-  overflow: hidden;
+.field, [class*=" field-"], [class^="field-"] {
   *zoom: 1;
   overflow: visible;
   margin-bottom: 0.5rem;
+}
+/* line 38, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
+.field:after, [class*=" field-"]:after, [class^="field-"]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 14, ../scss/modules/fields/_components.scss */
+.field-horizontal {
+  display: table;
+  width: 100%;
+}
+/* line 18, ../scss/modules/fields/_components.scss */
+.field-horizontal > * {
+  display: table-cell;
+  vertical-align: middle;
+  margin: 0;
+}
+/* line 24, ../scss/modules/fields/_components.scss */
+.field-horizontal label {
+  padding: 0 0.5rem;
+}
+/* line 28, ../scss/modules/fields/_components.scss */
+.field-horizontal .field-input {
+  width: 100%;
+  height: 100%;
 }
 
 /* line 5, ../scss/modules/tables/_components.scss */
@@ -12578,45 +12690,64 @@ table.hover tr:hover {
   width: 50%;
 }
 
-/* line 81, ../scss/modules/panels/_themes.scss */
-.alert, [class*=" alert-"], [class^="alert-"] {
-  background-color: #024959;
-  border-color: #013540;
-}
-/* line 84, ../scss/modules/panels/_themes.scss */
-.primary.alert, .primary[class*=" alert-"], .primary[class^="alert-"] {
-  background-color: #024959;
-  border-color: #013540;
-}
-/* line 85, ../scss/modules/panels/_themes.scss */
-.secondary.alert, .secondary[class*=" alert-"], .secondary[class^="alert-"] {
-  background-color: #E74C30;
-  border-color: #e3391a;
-}
-/* line 86, ../scss/modules/panels/_themes.scss */
-.light.alert, .light[class*=" alert-"], .light[class^="alert-"] {
+/* line 34, ../scss/modules/panels/_themes.scss */
+.panel {
   background-color: #EFEFEF;
   border-color: #e2e2e2;
 }
-/* line 87, ../scss/modules/panels/_themes.scss */
-.dark.alert, .dark[class*=" alert-"], .dark[class^="alert-"] {
-  background-color: #363636;
-  border-color: #292929;
+/* line 16, ../scss/modules/panels/_themes.scss */
+.panel > header, .panel > hgroup, .panel > .panel-header {
+  background-color: #EFEFEF;
+  border-color: #e2e2e2;
 }
-/* line 89, ../scss/modules/panels/_themes.scss */
-.success.alert, .success[class*=" alert-"], .success[class^="alert-"] {
-  background-color: #96CC69;
-  border-color: #89c656;
+/* line 22, ../scss/modules/panels/_themes.scss */
+.panel > section, .panel > .panel-body {
+  background-color: white;
 }
-/* line 90, ../scss/modules/panels/_themes.scss */
-.warning.alert, .warning[class*=" alert-"], .warning[class^="alert-"] {
-  background-color: #FFCC5C;
-  border-color: #ffc443;
+/* line 27, ../scss/modules/panels/_themes.scss */
+.panel > footer, .panel > .panel-footer {
+  background-color: #EFEFEF;
+  border-color: #e2e2e2;
 }
-/* line 91, ../scss/modules/panels/_themes.scss */
-.failure.alert, .failure[class*=" alert-"], .failure[class^="alert-"] {
-  background-color: #C44741;
-  border-color: #b43d38;
+/* line 76, ../scss/modules/panels/_themes.scss */
+.alert, [class*=" alert-"], [class^="alert-"] {
+  background-color: transparent;
+  border-color: #E7E7E7;
+  border-left: 3px solid #024959;
+}
+/* line 73, ../scss/modules/panels/_themes.scss */
+.alert h1, [class*=" alert-"] h1, [class^="alert-"] h1, .alert h2, [class*=" alert-"] h2, [class^="alert-"] h2, .alert h3, [class*=" alert-"] h3, [class^="alert-"] h3, .alert h4, [class*=" alert-"] h4, [class^="alert-"] h4, .alert h5, [class*=" alert-"] h5, [class^="alert-"] h5, .alert h6, [class*=" alert-"] h6, [class^="alert-"] h6, .alert .h, [class*=" alert-"] .h, [class^="alert-"] .h, .alert [class*=" h-"], [class*=" alert-"] [class*=" h-"], [class^="alert-"] [class*=" h-"], .alert [class^="h-"], [class*=" alert-"] [class^="h-"], [class^="alert-"] [class^="h-"] {
+  color: #024959;
+}
+/* line 82, ../scss/modules/panels/_themes.scss */
+.alert.success, [class*=" alert-"].success, [class^="alert-"].success {
+  background-color: transparent;
+  border-color: #E7E7E7;
+  border-left: 3px solid #96CC69;
+}
+/* line 73, ../scss/modules/panels/_themes.scss */
+.alert.success h1, [class*=" alert-"].success h1, [class^="alert-"].success h1, .alert.success h2, [class*=" alert-"].success h2, [class^="alert-"].success h2, .alert.success h3, [class*=" alert-"].success h3, [class^="alert-"].success h3, .alert.success h4, [class*=" alert-"].success h4, [class^="alert-"].success h4, .alert.success h5, [class*=" alert-"].success h5, [class^="alert-"].success h5, .alert.success h6, [class*=" alert-"].success h6, [class^="alert-"].success h6, .alert.success .h, [class*=" alert-"].success .h, [class^="alert-"].success .h, .alert.success [class*=" h-"], [class*=" alert-"].success [class*=" h-"], [class^="alert-"].success [class*=" h-"], .alert.success [class^="h-"], [class*=" alert-"].success [class^="h-"], [class^="alert-"].success [class^="h-"] {
+  color: #96CC69;
+}
+/* line 83, ../scss/modules/panels/_themes.scss */
+.alert.warning, [class*=" alert-"].warning, [class^="alert-"].warning {
+  background-color: transparent;
+  border-color: #E7E7E7;
+  border-left: 3px solid #FFCC5C;
+}
+/* line 73, ../scss/modules/panels/_themes.scss */
+.alert.warning h1, [class*=" alert-"].warning h1, [class^="alert-"].warning h1, .alert.warning h2, [class*=" alert-"].warning h2, [class^="alert-"].warning h2, .alert.warning h3, [class*=" alert-"].warning h3, [class^="alert-"].warning h3, .alert.warning h4, [class*=" alert-"].warning h4, [class^="alert-"].warning h4, .alert.warning h5, [class*=" alert-"].warning h5, [class^="alert-"].warning h5, .alert.warning h6, [class*=" alert-"].warning h6, [class^="alert-"].warning h6, .alert.warning .h, [class*=" alert-"].warning .h, [class^="alert-"].warning .h, .alert.warning [class*=" h-"], [class*=" alert-"].warning [class*=" h-"], [class^="alert-"].warning [class*=" h-"], .alert.warning [class^="h-"], [class*=" alert-"].warning [class^="h-"], [class^="alert-"].warning [class^="h-"] {
+  color: #FFCC5C;
+}
+/* line 84, ../scss/modules/panels/_themes.scss */
+.alert.failure, [class*=" alert-"].failure, [class^="alert-"].failure {
+  background-color: transparent;
+  border-color: #E7E7E7;
+  border-left: 3px solid #C44741;
+}
+/* line 73, ../scss/modules/panels/_themes.scss */
+.alert.failure h1, [class*=" alert-"].failure h1, [class^="alert-"].failure h1, .alert.failure h2, [class*=" alert-"].failure h2, [class^="alert-"].failure h2, .alert.failure h3, [class*=" alert-"].failure h3, [class^="alert-"].failure h3, .alert.failure h4, [class*=" alert-"].failure h4, [class^="alert-"].failure h4, .alert.failure h5, [class*=" alert-"].failure h5, [class^="alert-"].failure h5, .alert.failure h6, [class*=" alert-"].failure h6, [class^="alert-"].failure h6, .alert.failure .h, [class*=" alert-"].failure .h, [class^="alert-"].failure .h, .alert.failure [class*=" h-"], [class*=" alert-"].failure [class*=" h-"], [class^="alert-"].failure [class*=" h-"], .alert.failure [class^="h-"], [class*=" alert-"].failure [class^="h-"], [class^="alert-"].failure [class^="h-"] {
+  color: #C44741;
 }
 
 /* 'modules/_tabs'; */
@@ -12973,4 +13104,34 @@ table.hover tr:hover {
   content: "";
   display: table;
   clear: both;
+}
+
+/* line 83, ../scss/cadenza.scss */
+#performance.active .one {
+  -webkit-animation: scaleDown-active 0.5s ease-in 0s, scaleDown-inactive 0.5s ease-in 1.5s;
+  -webkit-animation-fill-mode: forwards;
+}
+/* line 92, ../scss/cadenza.scss */
+#performance.active .two {
+  -moz-animation-name: "scaleUp-active";
+  -webkit-animation-name: "scaleUp-active";
+  animation-name: "scaleUp-active";
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+/* line 96, ../scss/cadenza.scss */
+#performance.active .three {
+  -moz-animation-name: "slideLeft-active";
+  -webkit-animation-name: "slideLeft-active";
+  animation-name: "slideLeft-active";
+  -moz-animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }

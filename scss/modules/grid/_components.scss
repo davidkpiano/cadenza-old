@@ -105,7 +105,7 @@
 					}
 				}
 
-				&-bordered > * {
+				&-border > * {
 					@if $i > 0 and round($grid-columns / $i) == $grid-columns / $i {
 						&:not(:nth-child(#{$grid-columns / $i}n + 1)) {
 							border-left-width: 0 !important;

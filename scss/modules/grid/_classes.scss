@@ -34,7 +34,7 @@
 			@extend %column-#{$i}#{$suffix};
 		}
 
-		.cols-gutter, .columns-gutter {
+		.gutter {
 			@extend %columns-gutter#{$suffix};
 
 			> .col-#{$i}#{$suffix} {
@@ -49,13 +49,13 @@
 		.cols-#{$i}#{$suffix}, .columns-#{$i}#{$suffix} {
 			@extend %columns-#{$i}#{$suffix};
 
-			&.cols-bordered {
-				@extend %columns-#{$i}#{$suffix}-bordered !optional;
+			&.cols-border, &.columns-border {
+				@extend %columns-#{$i}#{$suffix}-border !optional;
 			}
-		}
 
-		.cols-gutter-#{$i}#{$suffix}, .columns-gutter-#{$i}#{$suffix} {
-			@extend %columns-gutter-#{$i}#{$suffix};
+			&.gutter#{$suffix} {
+				@extend %columns-gutter-#{$i}#{$suffix};
+			}
 		}
 
 		.col-offset-#{$i}#{$suffix}, .column-offset-#{$i}#{$suffix} {

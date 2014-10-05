@@ -18,6 +18,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
 	@extend %input;
+    @include style('input');
 
 	&.small { @extend %input-small; }
 
@@ -45,6 +46,8 @@ input[type="checkbox"] { @extend %checkbox; }
 
 label { 
     @extend %form-label;
+
+    > * { @extend %form-label-children; }
 
     &.inline { @extend %form-label-inline; }
 }

@@ -1,23 +1,65 @@
 <h1>Forms Module</h1>
 
-<div class="col-6">
-    <div class="row columns-gutter field">    
-        <div class="field col-6">
-            <label for="input_1">Color:</label>
-            <select name="input_1" ng-model="component.input.color">
-                <option value="{{color}}" ng-repeat="color in ['primary','secondary','light','dark','success','warning','failure']">input.{{color}}</option>
-            </select>
-        </div>
-        <div class="field col-6">
-            <label for="input_2">Last Name:</label>
-            <input type="text" id="input_2" class="{{component.input.color}}">
-        </div>
-    </div>
+<h2>Basic example</h2>
 
-    <div class="row cols-gutter">    
+<div class="panel">
+    <section>
+        <h6>Example</h6>
+        <div class="field"><label>Email address</label><input type="text" placeholder="Enter email"></div>
+        <div class="field"><label>Password</label><input type="password" placeholder="Password"></div>
+        <div class="field"><label><input type="checkbox" name="" id=""><span>Check me out</span></label></div>
         <div class="field">
-            <label for="input_3">Email Address:</label>
-            <input type="text" id="input_3" class="darken">
+            <label class="inline"><input type="radio" name="" id=""><span>Radio 1</span></label>
+            <label class="inline"><input type="radio" name="" id=""><span>Radio 2</span></label>
+            <label class="inline"><input type="radio" name="" id=""><span>Radio 3</span></label>
         </div>
-    </div>
+        <div class="field-horizontal border">
+            <label class="bg-light">Hey</label>
+            <div class="field-input">
+                <input type="text" class="implicit" id="">
+            </div>
+            <button>Yeah buddy</button>
+        </div>
+        <div class="field ">
+            <label>I should be on top!</label>
+            <div class="field-horizontal border">            
+                <div class="field-input"><input type="text" class="implicit" id=""></div>
+                <i class="fa fa-check pad-small"></i>
+            </div>
+        </div>
+        <button class="darken">Submit</button>
+    </section>
+    <footer></footer>
+</div>
+
+<div class="alert warning">
+    <h5>Don't mix form groups with input groups</h5>
+    <p>Do not mix form groups directly with <a href="#">input groups</a>. Instead, blah blah you don't have to do this.</p>
+</div>
+
+<div class="alert failure">
+    <h5>Don't mix form groups with input groups</h5>
+    <p>Do not mix form groups directly with <a href="#">input groups</a>. Instead, blah blah you don't have to do this.</p>
+</div>
+
+<h2>Horizontal Form</h2>
+
+<div class="panel">
+    <section>
+        <h6>Example</h6>
+        <div class="field">
+            <label for="" class="col-3">Email</label><input type="text" placeholder="Email" id="" class="col-9">
+        </div>
+    </section>
+    <footer></footer>
+</div>
+
+<h2>Textarea</h2>
+
+<div class="panel">
+    <section>
+        <h6>Example</h6>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+    </section>
+    <footer></footer>
 </div>

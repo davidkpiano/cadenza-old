@@ -2,14 +2,9 @@
 // Forms Components
 // ================
 
-%form-transition {
-	@include transition('all');
-}
-
 // Inputs
 // ------
 %input {
-	@include transition('all');
 	@include type-scale($form-input-scale);
 	display: block;
 	width: 100%;
@@ -38,9 +33,13 @@
 }
 
 %input-implicit {
-	padding: 0;
 	background: transparent;
 	border-width: 0;
+
+	&-outline {
+		outline-width: $form-input-border-width;
+		outline-style: solid;
+	}
 }
 
 %textarea {
@@ -54,7 +53,6 @@
 }
 
 %select {
-	@include transition('all');
 	@include type-scale($form-input-scale);
 	display: block;
 	width: 100%;
@@ -81,9 +79,13 @@
 	@include type-scale($form-label-scale);
 	display: $form-label-display;
 	margin-bottom: $form-label-margin-bottom;
-}
 
-%form-label-inline {
-	display: inline-block;
-	padding: $form-label-padding;
+	&-children {
+		vertical-align: middle;
+	}
+
+	&-inline {	
+		display: inline-block;
+		padding: $form-label-padding;
+	}
 }

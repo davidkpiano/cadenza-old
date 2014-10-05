@@ -3,15 +3,6 @@
 // =======================
 
 // Input Theme
-@mixin input-style(
-	$style: $form-input-style,
-	$theme: $form-input-theme
-) 
-{
-	@extend %ext-input-#{$style} !optional;
-	@extend %theme-input-#{$theme} !optional;
-}
-
 @mixin theme-input-default(
 	$color: $form-border-color,
 
@@ -21,18 +12,20 @@
 
 	$type-color: $color-gray,
 	$type-color-hover: $color-gray,
-	$type-color-focus: $text-color-dark
+	$type-color-focus: $text-color-dark,
+
+	$edges: border // border, outline, shadow
 ) {
-	border-color: $border-color;
+	#{$edges}-color: $border-color;
 	color: $type-color;
 
 	&:hover {
-		border-color: $border-color-hover;
+		#{$edges}-color: $border-color-hover;
 		color: $type-color-hover;
 	}
 
 	&:focus {
-		border-color: $border-color-focus;
+		#{$edges}-color: $border-color-focus;
 		color: $type-color-focus;
 	}
 }
@@ -70,25 +63,20 @@
 }
 
 %theme-input-default {
-	%input {
-		@extend %form-transition;
-		@include theme-input-default();
+	@include theme-input-default();
 
-		&.primary { @include theme-input-default($color-primary); }
-		&.secondary { @include theme-input-default($color-secondary); }
-		&.light { @include theme-input-default($color-light); }
-		&.dark { @include theme-input-default($color-dark); }
+	&-primary { @include theme-input-default($color-primary); }
+	&-secondary { @include theme-input-default($color-secondary); }
+	&-light { @include theme-input-default($color-light); }
+	&-dark { @include theme-input-default($color-dark); }
 
-		&.success { @include theme-input-default($color-success); }
-		&.warning { @include theme-input-default($color-warning); }
-		&.failure { @include theme-input-default($color-failure); }
+	&-success { @include theme-input-default($color-success); }
+	&-warning { @include theme-input-default($color-warning); }
+	&-failure { @include theme-input-default($color-failure); }
 
-		&.lighten { @include theme-input-transparent($form-input-bgcolor-lighten); }
-		&.darken { @include theme-input-transparent($form-input-bgcolor-darken); }
-	}
+	&-lighten { @include theme-input-default($color-lighten); }
+	&-darken { @include theme-input-default($color-darken); }
 }
-
-@include add-theme('input', $form-input-theme);
 
 // Select Theme
 @mixin theme-select-default(

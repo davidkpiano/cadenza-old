@@ -85,7 +85,6 @@ $hr-color-dark: $color-gray-light !default;
 $hr-border-color: theme-mode($hr-color-light, $hr-color-dark) !default;
 
 // (name, color)
-// TODO: use maps (SASS 3.3)
 $colors: (
     'light': $color-light,
     'dark': $color-dark,
@@ -94,7 +93,10 @@ $colors: (
     'white': white,
     'black': black,
     'lighten': $color-lighten,
-    'darken': $color-darken
+    'darken': $color-darken,
+    'success': $color-success,
+    'warning': $color-warning,
+    'failure': $color-failure
 );
 
 $themes: (

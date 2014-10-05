@@ -5,6 +5,10 @@
 // Field Settings
 $field-margin-bottom: 1rem !default;
 
+
+// Field Label Settings
+$field-horizontal-label-padding: 0 $label-padding-horizontal !default; 
+
 // Imports
 @import
 	'_mixins',

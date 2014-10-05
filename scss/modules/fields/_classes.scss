@@ -6,6 +6,18 @@ fieldset, .fieldset {
     @extend %fieldset !optional;
 }
 
-.field {
+#{prefixed-class('field')} {
     @extend %field;
+}
+
+.field {
+    &-horizontal {
+        @extend %field-horizontal;
+
+        > * { @extend %field-horizontal-children; }
+
+        label { @extend %field-horizontal-label; }
+
+        .field-input { @extend %field-horizontal-input; }
+    }
 }
