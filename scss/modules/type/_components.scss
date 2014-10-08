@@ -225,6 +225,15 @@
 	}
 }
 
+%text-bottom {
+    display: table;
+
+    > * {
+        display: table-cell;
+        vertical-align: bottom;
+    }
+}
+
 %nowrap {
     white-space: nowrap;
     overflow: hidden;

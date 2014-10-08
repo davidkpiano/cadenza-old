@@ -40,12 +40,14 @@
     @include border-radius(50%);
 }
 
-@mixin shape-square($width, $display: block) {
-    @include shape-rectangle($width, $width, $display);
+@mixin shape-square($width, $display: block, $important: true) {
+    @include shape-rectangle($width, $width, $display, $important);
 }
 
-@mixin shape-rectangle($width: auto, $height: auto, $display: block) {
-    width: $width;
-    height: $height;
+@mixin shape-rectangle($width: auto, $height: auto, $display: block, $important: true) {
+    $important: if($important, '!important', '');
+    
+    width: $width #{$important};
+    height: $height #{$important};
     display: $display;
 }

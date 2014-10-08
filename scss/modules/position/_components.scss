@@ -1,21 +1,22 @@
 // 
 // Position Components
 // ===================
+%position-absolute { position: absolute !important; }
 
-@each $position-vertical in (top, bottom, below, above, center) {
-    @each $position-horizontal in (left, right, before, after, center) {
+@each $position-vertical in $positions-vertical {
+    @each $position-horizontal in $positions-horizontal {
         %position-#{$position-vertical}-#{$position-horizontal} {
-            @include position-absolute($position-vertical, $position-horizontal);
+            @include position-absolute($position-vertical, $position-horizontal, $extend: false);
         }
     }
 }
 
-@each $position in (top, bottom) {
-    %position-#{$position} { @include position-absolute($position, false); }
+@each $position in $positions-vertical {
+    %position-#{$position} { @include position-absolute($position, false, $extend: false); }
 }
 
-@each $position in (left, right) {
-    %position-#{$position} { @include position-absolute(false, $position); }
+@each $position in $positions-horizontal {
+    %position-#{$position} { @include position-absolute(false, $position, $extend: false); }
 }
 
 @each $overlap-vertical in (top, bottom) {

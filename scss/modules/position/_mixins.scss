@@ -4,11 +4,12 @@
 
 @mixin overlap(
     $vertical: false,
-    $horizontal: false
+    $horizontal: false,
+    $position: relative
 ) {
     $transform-list: null;
 
-    position: absolute;
+    position: $position;
 
     @if $vertical {
         @if $vertical == top {
@@ -47,96 +48,124 @@
     $top: false,
     $bottom: false,
     $left: false,
-    $right: false
+    $right: false,
+    $extend: true
 ) {
+    @if $extend {
+        @extend %position-absolute;
+    }
+
     $transform-list: null;
 
-    position: absolute;
-
-    @if $vertical {    
-        @if $vertical == top {
+    @if $vertical {  
+        @if $vertical == top or $vertical == belowTop {
             top: 0;
             bottom: inherit;
-            // @include experimental(transform, none);
         }
-        @else if $vertical == bottom {
+        @else if $vertical == midTop {
+            top: 0;
+            bottom: inherit;
+            $transform-list: append($transform-list, translateY(-50%));
+        }
+        @else if $vertical == bottom or $vertical == aboveBottom {
             bottom: 0;
             top: inherit;
-            // @include experimental(transform, none);
         }
-        @else if $vertical == below {
+        @else if $vertical == midBottom {
+            bottom: 0;
+            top: inherit;
+            $transform-list: append($transform-list, translateY(50%));
+        }
+        @else if $vertical == below or $vertical == belowBottom {
             top: 100%;
             bottom: inherit;
-            // @include experimental(transform, none);
         }
-        @else if $vertical == above {
+        @else if $vertical == above or $vertical == aboveTop {
             bottom: 100%;
             top: inherit;
-            // @include experimental(transform, none);
         }
-        @else if $vertical == center {
+        @else if $vertical == center or $vertical == middle {
             top: 50%;
             $transform-list: append($transform-list, translateY(-50%));
+            bottom: inherit;
+        }
+        @else if $vertical == aboveCenter or $vertical == aboveMiddle {
+            bottom: 50%;
+            top: inherit;
+        }
+        @else if $vertical == belowCenter or $vertical == belowMiddle {
+            top: 50%;
             bottom: inherit;
         }
         @else {
             top: $vertical;
             bottom: inherit;
-            // @include experimental(transform, none);
         }
     }
 
     @if $horizontal {
-        @if $horizontal == left { 
+        @if $horizontal == left or $horizontal == afterLeft { 
             left: 0;
             right: inherit;
-            // @include experimental(transform, none);
         }
-        @else if $horizontal == right {
+        @else if $horizontal == centerLeft {
+            left: 0;
+            right: inherit;
+            $transform-list: append($transform-list, translateX(-50%));
+        }
+        @else if $horizontal == right or $horizontal == beforeRight {
             right: 0;
             left: inherit;
-            // @include experimental(transform, none);
         }
-        @else if $horizontal == before {
+        @else if $horizontal == centerRight {
+            right: 0;
+            left: inherit;
+            $transform-list: append($transform-list, translateX(50%));
+        }
+        @else if $horizontal == before or $horizontal == beforeLeft {
             right: 100%;
             left: inherit;
         }
-        @else if $horizontal == after {
+        @else if $horizontal == after or $horizontal == afterRight {
             left: 100%;
             right: inherit;
         }
         @else if $horizontal == center {
             left: 50%;
+            right: inherit;
             $transform-list: append($transform-list, translateX(-50%));
+        }
+        @else if $horizontal == beforeCenter {
+            right: 50%;
+            left: inherit;
+        }
+        @else if $horizontal == afterCenter {
+            left: 50%;
+            right: inherit;
         }
         @else {
             left: $horizontal;
-            // @include experimental(transform, none);
         }
     }
 
     @if $top {
         top: $top;
         bottom: inherit;
-        // @include experimental(transform, none);
     }
 
     @if $bottom {
         bottom: $bottom;
         top: inherit;
-        // @include experimental(transform, none);
     }
 
     @if $left {
         left: $left;
         right: inherit;
-        // @include experimental(transform, none);
     }
 
     @if $right {
         right: $right;
         left: inherit;
-        // @include experimental(transform, none);
     }
 
     @if $transform-list {

@@ -58,7 +58,6 @@
 	padding-right: 0 !important;
 }
 
-
 // Shared Grid Components
 %grid { @include _grid(); }
 
@@ -375,7 +374,8 @@
 		}
 
 		%row-center#{$suffix}, %rows-center#{$suffix} > * { 
-			// TODO - use -50% tranform trick
+			top: 50%;
+			@include transform(translateY(-50%));
 		}
 	}
 }

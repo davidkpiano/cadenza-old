@@ -3,6 +3,36 @@
 // ===============
 
 // Position Settings
+$positions-vertical: (
+    top, 
+    bottom, 
+    below, 
+    above, 
+    middle, 
+    aboveTop, 
+    midTop, 
+    belowTop, 
+    aboveMiddle, 
+    belowMiddle, 
+    aboveBottom, 
+    midBottom,
+    belowBottom
+) !default;
+$positions-horizontal: (
+    left,
+    right,
+    before,
+    after,
+    center,
+    beforeLeft,
+    centerLeft,
+    afterLeft,
+    beforeRight,
+    centerRight,
+    afterRight,
+    beforeCenter,
+    afterCenter
+) !default;
 
 // Imports
 @import

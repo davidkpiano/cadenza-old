@@ -64,7 +64,7 @@ hgroup { @extend %hgroup; }
 // ---------
 body { @extend %body-type; }
 
-body, p, li, span {
+*, p, li, span {
 	@extend %text;
 	@include style('text');
 }
@@ -127,6 +127,7 @@ a {
 .text-justify { @extend %text-justify; }
 
 .text-middle { @extend %text-middle; }
+.text-bottom { @extend %text-bottom; }
 
 // Preformatted Text
 // -----------------

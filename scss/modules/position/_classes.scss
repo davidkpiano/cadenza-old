@@ -3,15 +3,17 @@
 // ================
 
 // Position Classes
-@each $position-vertical in (top, bottom, below, above, center) {
-    @each $position-horizontal in (left, right, before, after, center) {
+#{prefixed-class('position')} { @extend %position-absolute; }
+
+@each $position-vertical in $positions-vertical {
+    @each $position-horizontal in $positions-horizontal {
         .position-#{$position-vertical}-#{$position-horizontal} {
             @extend %position-#{$position-vertical}-#{$position-horizontal};
         }
     }
 }
 
-@each $position in (top, bottom, left, right) {
+@each $position in join($positions-vertical, $positions-horizontal) {
     .position-#{$position} { @extend %position-#{$position}; }
 }
 
