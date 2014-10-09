@@ -103,7 +103,7 @@
 
 @mixin position(
     $type: relative, 
-    $vertical: false, 
+    $vertical: false,
     $horizontal: false, 
     $height: auto, 
     $width: auto
@@ -179,10 +179,6 @@
     margin-right: auto;
 }
 
-%position-bottom-center {
-    @include position-absolute(bottom, center);
-}
-
 %clearfix {
     @include pie-clearfix;
 }
@@ -251,10 +247,6 @@ html {
 
 .halign-center {
     @extend %halign-center;
-}
-
-.position-bottom-center {
-    @extend %position-bottom-center;
 }
 
 .float-left {

@@ -2507,1425 +2507,114 @@
 }
 
 /* line 4, ../scss/modules/position/_components.scss */
-.position, [class*=" position-"], [class^="position-"], .layer, .page, .valign-bottom, .position-bottom-center, .full, .dropdown-container > menu.below-left, .dropdown-container > menu.below-right, .dropdown-container > menu.above-left, .dropdown-container > menu.above-right, .dropdown-container > menu.top-left, .dropdown-container > menu.top-right, .dropdown-container > menu.bottom-left, .dropdown-container > menu.bottom-right, .dropdown-container > menu.bottom-push-right, .dropdown-container > menu.bottom-push-left, .dropdown-container > menu.top-push-right, .dropdown-container > menu.top-push-left, .badge.top-left, .badge.top-right, .badge.bottom-left, .badge.bottom-right, .tooltip-above-left:before, .tooltip-above-left:after, .tooltip-above-right:before, .tooltip-above-right:after, .tooltip-above-center:before, .tooltip-above-center:after, .tooltip-below-left:before, .tooltip-below-left:after, .tooltip-below-right:before, .tooltip-below-right:after, .tooltip-below-center:before, .tooltip-below-center:after, .tooltip-left:before, .tooltip-left:after, .tooltip-right:before, .tooltip-right:after, .alert .alert-exit, .modal {
+.position, [class*=" position-"], [class^="position-"], .layer, .page, .valign-bottom, .full, .dropdown-container > menu.below-left, .dropdown-container > menu.below-right, .dropdown-container > menu.above-left, .dropdown-container > menu.above-right, .dropdown-container > menu.top-left, .dropdown-container > menu.top-right, .dropdown-container > menu.bottom-left, .dropdown-container > menu.bottom-right, .dropdown-container > menu.bottom-push-right, .dropdown-container > menu.bottom-push-left, .dropdown-container > menu.top-push-right, .dropdown-container > menu.top-push-left, .badge.top-left, .badge.top-right, .badge.bottom-left, .badge.bottom-right, .tooltip-above-left:before, .tooltip-above-left:after, .tooltip-above-right:before, .tooltip-above-right:after, .tooltip-above-center:before, .tooltip-above-center:after, .tooltip-below-left:before, .tooltip-below-left:after, .tooltip-below-right:before, .tooltip-below-right:after, .tooltip-below-center:before, .tooltip-below-center:after, .tooltip-left:before, .tooltip-left:after, .tooltip-right:before, .tooltip-right:after, .alert .alert-exit, .modal {
   position: absolute !important;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-top-left {
-  top: 0;
-  bottom: inherit;
+.position-left-top {
   left: 0;
   right: inherit;
+  top: 0;
+  bottom: inherit;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-top-right {
-  top: 0;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-top-before {
-  top: 0;
-  bottom: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-top-after {
-  top: 0;
-  bottom: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-top-center {
-  top: 0;
-  bottom: inherit;
-  left: 50%;
-  right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-top-beforeLeft {
-  top: 0;
-  bottom: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-top-centerLeft {
-  top: 0;
-  bottom: inherit;
+.position-left-bottom {
   left: 0;
   right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
+  bottom: 0;
+  top: inherit;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-top-afterLeft {
-  top: 0;
-  bottom: inherit;
+.position-left-below {
   left: 0;
   right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-top-beforeRight {
-  top: 0;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-top-centerRight {
-  top: 0;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateX(50%);
-  -moz-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  -o-transform: translateX(50%);
-  transform: translateX(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-top-afterRight {
-  top: 0;
-  bottom: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-top-beforeCenter {
-  top: 0;
-  bottom: inherit;
-  right: 50%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-top-afterCenter {
-  top: 0;
-  bottom: inherit;
-  left: 50%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-bottom-left {
-  bottom: 0;
-  top: inherit;
-  left: 0;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-bottom-right {
-  bottom: 0;
-  top: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-bottom-before {
-  bottom: 0;
-  top: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-bottom-after {
-  bottom: 0;
-  top: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-bottom-center {
-  bottom: 0;
-  top: inherit;
-  left: 50%;
-  right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-bottom-beforeLeft {
-  bottom: 0;
-  top: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-bottom-centerLeft {
-  bottom: 0;
-  top: inherit;
-  left: 0;
-  right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-bottom-afterLeft {
-  bottom: 0;
-  top: inherit;
-  left: 0;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-bottom-beforeRight {
-  bottom: 0;
-  top: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-bottom-centerRight {
-  bottom: 0;
-  top: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateX(50%);
-  -moz-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  -o-transform: translateX(50%);
-  transform: translateX(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-bottom-afterRight {
-  bottom: 0;
-  top: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-bottom-beforeCenter {
-  bottom: 0;
-  top: inherit;
-  right: 50%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-bottom-afterCenter {
-  bottom: 0;
-  top: inherit;
-  left: 50%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-below-left {
   top: 100%;
   bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-left-above {
   left: 0;
   right: inherit;
+  bottom: 100%;
+  top: inherit;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-below-right {
-  top: 100%;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-below-before {
-  top: 100%;
-  bottom: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-below-after {
-  top: 100%;
-  bottom: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-below-center {
-  top: 100%;
-  bottom: inherit;
-  left: 50%;
-  right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-below-beforeLeft {
-  top: 100%;
-  bottom: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-below-centerLeft {
-  top: 100%;
-  bottom: inherit;
+.position-left-middle {
   left: 0;
   right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-below-afterLeft {
-  top: 100%;
-  bottom: inherit;
-  left: 0;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-below-beforeRight {
-  top: 100%;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-below-centerRight {
-  top: 100%;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateX(50%);
-  -moz-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  -o-transform: translateX(50%);
-  transform: translateX(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-below-afterRight {
-  top: 100%;
-  bottom: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-below-beforeCenter {
-  top: 100%;
-  bottom: inherit;
-  right: 50%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-below-afterCenter {
-  top: 100%;
-  bottom: inherit;
-  left: 50%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-above-left {
-  bottom: 100%;
-  top: inherit;
-  left: 0;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-above-right {
-  bottom: 100%;
-  top: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-above-before {
-  bottom: 100%;
-  top: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-above-after {
-  bottom: 100%;
-  top: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-above-center {
-  bottom: 100%;
-  top: inherit;
-  left: 50%;
-  right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-above-beforeLeft {
-  bottom: 100%;
-  top: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-above-centerLeft {
-  bottom: 100%;
-  top: inherit;
-  left: 0;
-  right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-above-afterLeft {
-  bottom: 100%;
-  top: inherit;
-  left: 0;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-above-beforeRight {
-  bottom: 100%;
-  top: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-above-centerRight {
-  bottom: 100%;
-  top: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateX(50%);
-  -moz-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  -o-transform: translateX(50%);
-  transform: translateX(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-above-afterRight {
-  bottom: 100%;
-  top: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-above-beforeCenter {
-  bottom: 100%;
-  top: inherit;
-  right: 50%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-above-afterCenter {
-  bottom: 100%;
-  top: inherit;
-  left: 50%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-middle-left {
   top: 50%;
   bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-left-aboveTop {
   left: 0;
   right: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+  bottom: 100%;
+  top: inherit;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-middle-right {
-  top: 50%;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-middle-before {
-  top: 50%;
-  bottom: inherit;
-  right: 100%;
-  left: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-middle-after {
-  top: 50%;
-  bottom: inherit;
-  left: 100%;
-  right: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-middle-center {
-  top: 50%;
-  bottom: inherit;
-  left: 50%;
-  right: inherit;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  -moz-transform: translateY(-50%) translateX(-50%);
-  -ms-transform: translateY(-50%) translateX(-50%);
-  -o-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-middle-beforeLeft {
-  top: 50%;
-  bottom: inherit;
-  right: 100%;
-  left: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-middle-centerLeft {
-  top: 50%;
-  bottom: inherit;
+.position-left-midTop {
   left: 0;
   right: inherit;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  -moz-transform: translateY(-50%) translateX(-50%);
-  -ms-transform: translateY(-50%) translateX(-50%);
-  -o-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-middle-afterLeft {
-  top: 50%;
-  bottom: inherit;
+.position-left-belowTop {
   left: 0;
   right: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-middle-beforeRight {
-  top: 50%;
+  top: 0;
   bottom: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-middle-centerRight {
-  top: 50%;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateY(-50%) translateX(50%);
-  -moz-transform: translateY(-50%) translateX(50%);
-  -ms-transform: translateY(-50%) translateX(50%);
-  -o-transform: translateY(-50%) translateX(50%);
-  transform: translateY(-50%) translateX(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-middle-afterRight {
-  top: 50%;
-  bottom: inherit;
-  left: 100%;
-  right: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-middle-beforeCenter {
-  top: 50%;
-  bottom: inherit;
-  right: 50%;
-  left: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-middle-afterCenter {
-  top: 50%;
-  bottom: inherit;
-  left: 50%;
-  right: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveTop-left {
-  bottom: 100%;
-  top: inherit;
+.position-left-aboveMiddle {
   left: 0;
   right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveTop-right {
-  bottom: 100%;
-  top: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveTop-before {
-  bottom: 100%;
-  top: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveTop-after {
-  bottom: 100%;
-  top: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveTop-center {
-  bottom: 100%;
-  top: inherit;
-  left: 50%;
-  right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveTop-beforeLeft {
-  bottom: 100%;
-  top: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveTop-centerLeft {
-  bottom: 100%;
-  top: inherit;
-  left: 0;
-  right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveTop-afterLeft {
-  bottom: 100%;
-  top: inherit;
-  left: 0;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveTop-beforeRight {
-  bottom: 100%;
-  top: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveTop-centerRight {
-  bottom: 100%;
-  top: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateX(50%);
-  -moz-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  -o-transform: translateX(50%);
-  transform: translateX(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveTop-afterRight {
-  bottom: 100%;
-  top: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveTop-beforeCenter {
-  bottom: 100%;
-  top: inherit;
-  right: 50%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveTop-afterCenter {
-  bottom: 100%;
-  top: inherit;
-  left: 50%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midTop-left {
-  top: 0;
-  bottom: inherit;
-  left: 0;
-  right: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midTop-right {
-  top: 0;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midTop-before {
-  top: 0;
-  bottom: inherit;
-  right: 100%;
-  left: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midTop-after {
-  top: 0;
-  bottom: inherit;
-  left: 100%;
-  right: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midTop-center {
-  top: 0;
-  bottom: inherit;
-  left: 50%;
-  right: inherit;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  -moz-transform: translateY(-50%) translateX(-50%);
-  -ms-transform: translateY(-50%) translateX(-50%);
-  -o-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midTop-beforeLeft {
-  top: 0;
-  bottom: inherit;
-  right: 100%;
-  left: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midTop-centerLeft {
-  top: 0;
-  bottom: inherit;
-  left: 0;
-  right: inherit;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  -moz-transform: translateY(-50%) translateX(-50%);
-  -ms-transform: translateY(-50%) translateX(-50%);
-  -o-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midTop-afterLeft {
-  top: 0;
-  bottom: inherit;
-  left: 0;
-  right: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midTop-beforeRight {
-  top: 0;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midTop-centerRight {
-  top: 0;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateY(-50%) translateX(50%);
-  -moz-transform: translateY(-50%) translateX(50%);
-  -ms-transform: translateY(-50%) translateX(50%);
-  -o-transform: translateY(-50%) translateX(50%);
-  transform: translateY(-50%) translateX(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midTop-afterRight {
-  top: 0;
-  bottom: inherit;
-  left: 100%;
-  right: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midTop-beforeCenter {
-  top: 0;
-  bottom: inherit;
-  right: 50%;
-  left: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midTop-afterCenter {
-  top: 0;
-  bottom: inherit;
-  left: 50%;
-  right: inherit;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowTop-left {
-  top: 0;
-  bottom: inherit;
-  left: 0;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowTop-right {
-  top: 0;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowTop-before {
-  top: 0;
-  bottom: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowTop-after {
-  top: 0;
-  bottom: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowTop-center {
-  top: 0;
-  bottom: inherit;
-  left: 50%;
-  right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowTop-beforeLeft {
-  top: 0;
-  bottom: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowTop-centerLeft {
-  top: 0;
-  bottom: inherit;
-  left: 0;
-  right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowTop-afterLeft {
-  top: 0;
-  bottom: inherit;
-  left: 0;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowTop-beforeRight {
-  top: 0;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowTop-centerRight {
-  top: 0;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateX(50%);
-  -moz-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  -o-transform: translateX(50%);
-  transform: translateX(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowTop-afterRight {
-  top: 0;
-  bottom: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowTop-beforeCenter {
-  top: 0;
-  bottom: inherit;
-  right: 50%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowTop-afterCenter {
-  top: 0;
-  bottom: inherit;
-  left: 50%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveMiddle-left {
   bottom: 50%;
   top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-left-belowMiddle {
   left: 0;
   right: inherit;
+  top: 50%;
+  bottom: inherit;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-aboveMiddle-right {
-  bottom: 50%;
-  top: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveMiddle-before {
-  bottom: 50%;
-  top: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveMiddle-after {
-  bottom: 50%;
-  top: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveMiddle-center {
-  bottom: 50%;
-  top: inherit;
-  left: 50%;
-  right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveMiddle-beforeLeft {
-  bottom: 50%;
-  top: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveMiddle-centerLeft {
-  bottom: 50%;
-  top: inherit;
+.position-left-aboveBottom {
   left: 0;
   right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
+  bottom: 0;
+  top: inherit;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-aboveMiddle-afterLeft {
-  bottom: 50%;
-  top: inherit;
+.position-left-midBottom {
   left: 0;
   right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveMiddle-beforeRight {
-  bottom: 50%;
-  top: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveMiddle-centerRight {
-  bottom: 50%;
-  top: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateX(50%);
-  -moz-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  -o-transform: translateX(50%);
-  transform: translateX(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveMiddle-afterRight {
-  bottom: 50%;
-  top: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveMiddle-beforeCenter {
-  bottom: 50%;
-  top: inherit;
-  right: 50%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveMiddle-afterCenter {
-  bottom: 50%;
-  top: inherit;
-  left: 50%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowMiddle-left {
-  top: 50%;
-  bottom: inherit;
-  left: 0;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowMiddle-right {
-  top: 50%;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowMiddle-before {
-  top: 50%;
-  bottom: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowMiddle-after {
-  top: 50%;
-  bottom: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowMiddle-center {
-  top: 50%;
-  bottom: inherit;
-  left: 50%;
-  right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowMiddle-beforeLeft {
-  top: 50%;
-  bottom: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowMiddle-centerLeft {
-  top: 50%;
-  bottom: inherit;
-  left: 0;
-  right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowMiddle-afterLeft {
-  top: 50%;
-  bottom: inherit;
-  left: 0;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowMiddle-beforeRight {
-  top: 50%;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowMiddle-centerRight {
-  top: 50%;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateX(50%);
-  -moz-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  -o-transform: translateX(50%);
-  transform: translateX(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowMiddle-afterRight {
-  top: 50%;
-  bottom: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowMiddle-beforeCenter {
-  top: 50%;
-  bottom: inherit;
-  right: 50%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowMiddle-afterCenter {
-  top: 50%;
-  bottom: inherit;
-  left: 50%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveBottom-left {
   bottom: 0;
   top: inherit;
-  left: 0;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveBottom-right {
-  bottom: 0;
-  top: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveBottom-before {
-  bottom: 0;
-  top: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveBottom-after {
-  bottom: 0;
-  top: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveBottom-center {
-  bottom: 0;
-  top: inherit;
-  left: 50%;
-  right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveBottom-beforeLeft {
-  bottom: 0;
-  top: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveBottom-centerLeft {
-  bottom: 0;
-  top: inherit;
-  left: 0;
-  right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveBottom-afterLeft {
-  bottom: 0;
-  top: inherit;
-  left: 0;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveBottom-beforeRight {
-  bottom: 0;
-  top: inherit;
-  right: 0;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveBottom-centerRight {
-  bottom: 0;
-  top: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateX(50%);
-  -moz-transform: translateX(50%);
-  -ms-transform: translateX(50%);
-  -o-transform: translateX(50%);
-  transform: translateX(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveBottom-afterRight {
-  bottom: 0;
-  top: inherit;
-  left: 100%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveBottom-beforeCenter {
-  bottom: 0;
-  top: inherit;
-  right: 50%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-aboveBottom-afterCenter {
-  bottom: 0;
-  top: inherit;
-  left: 50%;
-  right: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midBottom-left {
-  bottom: 0;
-  top: inherit;
-  left: 0;
-  right: inherit;
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
@@ -3934,199 +2623,376 @@
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-midBottom-right {
-  bottom: 0;
-  top: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateY(50%);
-  -moz-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  -o-transform: translateY(50%);
-  transform: translateY(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midBottom-before {
-  bottom: 0;
-  top: inherit;
-  right: 100%;
-  left: inherit;
-  -webkit-transform: translateY(50%);
-  -moz-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  -o-transform: translateY(50%);
-  transform: translateY(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midBottom-after {
-  bottom: 0;
-  top: inherit;
-  left: 100%;
-  right: inherit;
-  -webkit-transform: translateY(50%);
-  -moz-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  -o-transform: translateY(50%);
-  transform: translateY(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midBottom-center {
-  bottom: 0;
-  top: inherit;
-  left: 50%;
-  right: inherit;
-  -webkit-transform: translateY(50%) translateX(-50%);
-  -moz-transform: translateY(50%) translateX(-50%);
-  -ms-transform: translateY(50%) translateX(-50%);
-  -o-transform: translateY(50%) translateX(-50%);
-  transform: translateY(50%) translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midBottom-beforeLeft {
-  bottom: 0;
-  top: inherit;
-  right: 100%;
-  left: inherit;
-  -webkit-transform: translateY(50%);
-  -moz-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  -o-transform: translateY(50%);
-  transform: translateY(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midBottom-centerLeft {
-  bottom: 0;
-  top: inherit;
+.position-left-belowBottom {
   left: 0;
   right: inherit;
-  -webkit-transform: translateY(50%) translateX(-50%);
-  -moz-transform: translateY(50%) translateX(-50%);
-  -ms-transform: translateY(50%) translateX(-50%);
-  -o-transform: translateY(50%) translateX(-50%);
-  transform: translateY(50%) translateX(-50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midBottom-afterLeft {
-  bottom: 0;
-  top: inherit;
-  left: 0;
-  right: inherit;
-  -webkit-transform: translateY(50%);
-  -moz-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  -o-transform: translateY(50%);
-  transform: translateY(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midBottom-beforeRight {
-  bottom: 0;
-  top: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateY(50%);
-  -moz-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  -o-transform: translateY(50%);
-  transform: translateY(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midBottom-centerRight {
-  bottom: 0;
-  top: inherit;
-  right: 0;
-  left: inherit;
-  -webkit-transform: translateY(50%) translateX(50%);
-  -moz-transform: translateY(50%) translateX(50%);
-  -ms-transform: translateY(50%) translateX(50%);
-  -o-transform: translateY(50%) translateX(50%);
-  transform: translateY(50%) translateX(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midBottom-afterRight {
-  bottom: 0;
-  top: inherit;
-  left: 100%;
-  right: inherit;
-  -webkit-transform: translateY(50%);
-  -moz-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  -o-transform: translateY(50%);
-  transform: translateY(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midBottom-beforeCenter {
-  bottom: 0;
-  top: inherit;
-  right: 50%;
-  left: inherit;
-  -webkit-transform: translateY(50%);
-  -moz-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  -o-transform: translateY(50%);
-  transform: translateY(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-midBottom-afterCenter {
-  bottom: 0;
-  top: inherit;
-  left: 50%;
-  right: inherit;
-  -webkit-transform: translateY(50%);
-  -moz-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  -o-transform: translateY(50%);
-  transform: translateY(50%);
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowBottom-left {
   top: 100%;
   bottom: inherit;
-  left: 0;
-  right: inherit;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-belowBottom-right {
-  top: 100%;
-  bottom: inherit;
+.position-right-top {
   right: 0;
   left: inherit;
+  top: 0;
+  bottom: inherit;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-belowBottom-before {
+.position-right-bottom {
+  right: 0;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-right-below {
+  right: 0;
+  left: inherit;
   top: 100%;
   bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-right-above {
+  right: 0;
+  left: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-right-middle {
+  right: 0;
+  left: inherit;
+  top: 50%;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-right-aboveTop {
+  right: 0;
+  left: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-right-midTop {
+  right: 0;
+  left: inherit;
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-right-belowTop {
+  right: 0;
+  left: inherit;
+  top: 0;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-right-aboveMiddle {
+  right: 0;
+  left: inherit;
+  bottom: 50%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-right-belowMiddle {
+  right: 0;
+  left: inherit;
+  top: 50%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-right-aboveBottom {
+  right: 0;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-right-midBottom {
+  right: 0;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-right-belowBottom {
+  right: 0;
+  left: inherit;
+  top: 100%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-before-top {
   right: 100%;
   left: inherit;
+  top: 0;
+  bottom: inherit;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-belowBottom-after {
+.position-before-bottom {
+  right: 100%;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-before-below {
+  right: 100%;
+  left: inherit;
   top: 100%;
   bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-before-above {
+  right: 100%;
+  left: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-before-middle {
+  right: 100%;
+  left: inherit;
+  top: 50%;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-before-aboveTop {
+  right: 100%;
+  left: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-before-midTop {
+  right: 100%;
+  left: inherit;
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-before-belowTop {
+  right: 100%;
+  left: inherit;
+  top: 0;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-before-aboveMiddle {
+  right: 100%;
+  left: inherit;
+  bottom: 50%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-before-belowMiddle {
+  right: 100%;
+  left: inherit;
+  top: 50%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-before-aboveBottom {
+  right: 100%;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-before-midBottom {
+  right: 100%;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-before-belowBottom {
+  right: 100%;
+  left: inherit;
+  top: 100%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-after-top {
   left: 100%;
   right: inherit;
+  top: 0;
+  bottom: inherit;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-belowBottom-center {
+.position-after-bottom {
+  left: 100%;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-after-below {
+  left: 100%;
+  right: inherit;
   top: 100%;
   bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-after-above {
+  left: 100%;
+  right: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-after-middle {
+  left: 100%;
+  right: inherit;
+  top: 50%;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-after-aboveTop {
+  left: 100%;
+  right: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-after-midTop {
+  left: 100%;
+  right: inherit;
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-after-belowTop {
+  left: 100%;
+  right: inherit;
+  top: 0;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-after-aboveMiddle {
+  left: 100%;
+  right: inherit;
+  bottom: 50%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-after-belowMiddle {
+  left: 100%;
+  right: inherit;
+  top: 50%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-after-aboveBottom {
+  left: 100%;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-after-midBottom {
+  left: 100%;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-after-belowBottom {
+  left: 100%;
+  right: inherit;
+  top: 100%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-center-top {
   left: 50%;
   right: inherit;
+  top: 0;
+  bottom: inherit;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -4135,19 +3001,11 @@
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-belowBottom-beforeLeft {
-  top: 100%;
-  bottom: inherit;
-  right: 100%;
-  left: inherit;
-}
-
-/* line 8, ../scss/modules/position/_components.scss */
-.position-belowBottom-centerLeft {
-  top: 100%;
-  bottom: inherit;
-  left: 0;
+.position-center-bottom {
+  left: 50%;
   right: inherit;
+  bottom: 0;
+  top: inherit;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -4156,27 +3014,680 @@
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-belowBottom-afterLeft {
+.position-center-below {
+  left: 50%;
+  right: inherit;
   top: 100%;
   bottom: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-center-above {
+  left: 50%;
+  right: inherit;
+  bottom: 100%;
+  top: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-center-middle {
+  left: 50%;
+  right: inherit;
+  top: 50%;
+  bottom: inherit;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-center-aboveTop {
+  left: 50%;
+  right: inherit;
+  bottom: 100%;
+  top: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-center-midTop {
+  left: 50%;
+  right: inherit;
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-center-belowTop {
+  left: 50%;
+  right: inherit;
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-center-aboveMiddle {
+  left: 50%;
+  right: inherit;
+  bottom: 50%;
+  top: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-center-belowMiddle {
+  left: 50%;
+  right: inherit;
+  top: 50%;
+  bottom: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-center-aboveBottom {
+  left: 50%;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-center-midBottom {
+  left: 50%;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateX(-50%) translateY(50%);
+  -moz-transform: translateX(-50%) translateY(50%);
+  -ms-transform: translateX(-50%) translateY(50%);
+  -o-transform: translateX(-50%) translateY(50%);
+  transform: translateX(-50%) translateY(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-center-belowBottom {
+  left: 50%;
+  right: inherit;
+  top: 100%;
+  bottom: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeLeft-top {
+  right: 100%;
+  left: inherit;
+  top: 0;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeLeft-bottom {
+  right: 100%;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeLeft-below {
+  right: 100%;
+  left: inherit;
+  top: 100%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeLeft-above {
+  right: 100%;
+  left: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeLeft-middle {
+  right: 100%;
+  left: inherit;
+  top: 50%;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeLeft-aboveTop {
+  right: 100%;
+  left: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeLeft-midTop {
+  right: 100%;
+  left: inherit;
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeLeft-belowTop {
+  right: 100%;
+  left: inherit;
+  top: 0;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeLeft-aboveMiddle {
+  right: 100%;
+  left: inherit;
+  bottom: 50%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeLeft-belowMiddle {
+  right: 100%;
+  left: inherit;
+  top: 50%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeLeft-aboveBottom {
+  right: 100%;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeLeft-midBottom {
+  right: 100%;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeLeft-belowBottom {
+  right: 100%;
+  left: inherit;
+  top: 100%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerLeft-top {
   left: 0;
   right: inherit;
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-belowBottom-beforeRight {
-  top: 100%;
-  bottom: inherit;
-  right: 0;
-  left: inherit;
+.position-centerLeft-bottom {
+  left: 0;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-belowBottom-centerRight {
+.position-centerLeft-below {
+  left: 0;
+  right: inherit;
   top: 100%;
   bottom: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerLeft-above {
+  left: 0;
+  right: inherit;
+  bottom: 100%;
+  top: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerLeft-middle {
+  left: 0;
+  right: inherit;
+  top: 50%;
+  bottom: inherit;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerLeft-aboveTop {
+  left: 0;
+  right: inherit;
+  bottom: 100%;
+  top: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerLeft-midTop {
+  left: 0;
+  right: inherit;
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerLeft-belowTop {
+  left: 0;
+  right: inherit;
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerLeft-aboveMiddle {
+  left: 0;
+  right: inherit;
+  bottom: 50%;
+  top: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerLeft-belowMiddle {
+  left: 0;
+  right: inherit;
+  top: 50%;
+  bottom: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerLeft-aboveBottom {
+  left: 0;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerLeft-midBottom {
+  left: 0;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateX(-50%) translateY(50%);
+  -moz-transform: translateX(-50%) translateY(50%);
+  -ms-transform: translateX(-50%) translateY(50%);
+  -o-transform: translateX(-50%) translateY(50%);
+  transform: translateX(-50%) translateY(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerLeft-belowBottom {
+  left: 0;
+  right: inherit;
+  top: 100%;
+  bottom: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterLeft-top {
+  left: 0;
+  right: inherit;
+  top: 0;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterLeft-bottom {
+  left: 0;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterLeft-below {
+  left: 0;
+  right: inherit;
+  top: 100%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterLeft-above {
+  left: 0;
+  right: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterLeft-middle {
+  left: 0;
+  right: inherit;
+  top: 50%;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterLeft-aboveTop {
+  left: 0;
+  right: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterLeft-midTop {
+  left: 0;
+  right: inherit;
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterLeft-belowTop {
+  left: 0;
+  right: inherit;
+  top: 0;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterLeft-aboveMiddle {
+  left: 0;
+  right: inherit;
+  bottom: 50%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterLeft-belowMiddle {
+  left: 0;
+  right: inherit;
+  top: 50%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterLeft-aboveBottom {
+  left: 0;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterLeft-midBottom {
+  left: 0;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterLeft-belowBottom {
+  left: 0;
+  right: inherit;
+  top: 100%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeRight-top {
   right: 0;
   left: inherit;
+  top: 0;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeRight-bottom {
+  right: 0;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeRight-below {
+  right: 0;
+  left: inherit;
+  top: 100%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeRight-above {
+  right: 0;
+  left: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeRight-middle {
+  right: 0;
+  left: inherit;
+  top: 50%;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeRight-aboveTop {
+  right: 0;
+  left: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeRight-midTop {
+  right: 0;
+  left: inherit;
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeRight-belowTop {
+  right: 0;
+  left: inherit;
+  top: 0;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeRight-aboveMiddle {
+  right: 0;
+  left: inherit;
+  bottom: 50%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeRight-belowMiddle {
+  right: 0;
+  left: inherit;
+  top: 50%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeRight-aboveBottom {
+  right: 0;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeRight-midBottom {
+  right: 0;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeRight-belowBottom {
+  right: 0;
+  left: inherit;
+  top: 100%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerRight-top {
+  right: 0;
+  left: inherit;
+  top: 0;
+  bottom: inherit;
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
   -ms-transform: translateX(50%);
@@ -4185,27 +3696,516 @@
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-belowBottom-afterRight {
+.position-centerRight-bottom {
+  right: 0;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerRight-below {
+  right: 0;
+  left: inherit;
   top: 100%;
   bottom: inherit;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerRight-above {
+  right: 0;
+  left: inherit;
+  bottom: 100%;
+  top: inherit;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerRight-middle {
+  right: 0;
+  left: inherit;
+  top: 50%;
+  bottom: inherit;
+  -webkit-transform: translateX(50%) translateY(-50%);
+  -moz-transform: translateX(50%) translateY(-50%);
+  -ms-transform: translateX(50%) translateY(-50%);
+  -o-transform: translateX(50%) translateY(-50%);
+  transform: translateX(50%) translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerRight-aboveTop {
+  right: 0;
+  left: inherit;
+  bottom: 100%;
+  top: inherit;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerRight-midTop {
+  right: 0;
+  left: inherit;
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateX(50%) translateY(-50%);
+  -moz-transform: translateX(50%) translateY(-50%);
+  -ms-transform: translateX(50%) translateY(-50%);
+  -o-transform: translateX(50%) translateY(-50%);
+  transform: translateX(50%) translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerRight-belowTop {
+  right: 0;
+  left: inherit;
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerRight-aboveMiddle {
+  right: 0;
+  left: inherit;
+  bottom: 50%;
+  top: inherit;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerRight-belowMiddle {
+  right: 0;
+  left: inherit;
+  top: 50%;
+  bottom: inherit;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerRight-aboveBottom {
+  right: 0;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerRight-midBottom {
+  right: 0;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateX(50%) translateY(50%);
+  -moz-transform: translateX(50%) translateY(50%);
+  -ms-transform: translateX(50%) translateY(50%);
+  -o-transform: translateX(50%) translateY(50%);
+  transform: translateX(50%) translateY(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-centerRight-belowBottom {
+  right: 0;
+  left: inherit;
+  top: 100%;
+  bottom: inherit;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  transform: translateX(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterRight-top {
   left: 100%;
   right: inherit;
+  top: 0;
+  bottom: inherit;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-belowBottom-beforeCenter {
+.position-afterRight-bottom {
+  left: 100%;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterRight-below {
+  left: 100%;
+  right: inherit;
   top: 100%;
   bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterRight-above {
+  left: 100%;
+  right: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterRight-middle {
+  left: 100%;
+  right: inherit;
+  top: 50%;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterRight-aboveTop {
+  left: 100%;
+  right: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterRight-midTop {
+  left: 100%;
+  right: inherit;
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterRight-belowTop {
+  left: 100%;
+  right: inherit;
+  top: 0;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterRight-aboveMiddle {
+  left: 100%;
+  right: inherit;
+  bottom: 50%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterRight-belowMiddle {
+  left: 100%;
+  right: inherit;
+  top: 50%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterRight-aboveBottom {
+  left: 100%;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterRight-midBottom {
+  left: 100%;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterRight-belowBottom {
+  left: 100%;
+  right: inherit;
+  top: 100%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeCenter-top {
   right: 50%;
   left: inherit;
+  top: 0;
+  bottom: inherit;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
-.position-belowBottom-afterCenter {
+.position-beforeCenter-bottom {
+  right: 50%;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeCenter-below {
+  right: 50%;
+  left: inherit;
   top: 100%;
   bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeCenter-above {
+  right: 50%;
+  left: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeCenter-middle {
+  right: 50%;
+  left: inherit;
+  top: 50%;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeCenter-aboveTop {
+  right: 50%;
+  left: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeCenter-midTop {
+  right: 50%;
+  left: inherit;
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeCenter-belowTop {
+  right: 50%;
+  left: inherit;
+  top: 0;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeCenter-aboveMiddle {
+  right: 50%;
+  left: inherit;
+  bottom: 50%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeCenter-belowMiddle {
+  right: 50%;
+  left: inherit;
+  top: 50%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeCenter-aboveBottom {
+  right: 50%;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeCenter-midBottom {
+  right: 50%;
+  left: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-beforeCenter-belowBottom {
+  right: 50%;
+  left: inherit;
+  top: 100%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterCenter-top {
   left: 50%;
   right: inherit;
+  top: 0;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterCenter-bottom {
+  left: 50%;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterCenter-below {
+  left: 50%;
+  right: inherit;
+  top: 100%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterCenter-above {
+  left: 50%;
+  right: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterCenter-middle {
+  left: 50%;
+  right: inherit;
+  top: 50%;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterCenter-aboveTop {
+  left: 50%;
+  right: inherit;
+  bottom: 100%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterCenter-midTop {
+  left: 50%;
+  right: inherit;
+  top: 0;
+  bottom: inherit;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterCenter-belowTop {
+  left: 50%;
+  right: inherit;
+  top: 0;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterCenter-aboveMiddle {
+  left: 50%;
+  right: inherit;
+  bottom: 50%;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterCenter-belowMiddle {
+  left: 50%;
+  right: inherit;
+  top: 50%;
+  bottom: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterCenter-aboveBottom {
+  left: 50%;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterCenter-midBottom {
+  left: 50%;
+  right: inherit;
+  bottom: 0;
+  top: inherit;
+  -webkit-transform: translateY(50%);
+  -moz-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  -o-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+/* line 8, ../scss/modules/position/_components.scss */
+.position-afterCenter-belowBottom {
+  left: 50%;
+  right: inherit;
+  top: 100%;
+  bottom: inherit;
 }
 
 /* line 15, ../scss/modules/position/_components.scss */
@@ -4397,75 +4397,71 @@
 /* line 24, ../scss/modules/position/_components.scss */
 .overlap-top-left {
   position: relative;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  -moz-transform: translateY(-50%) translateX(-50%);
-  -ms-transform: translateY(-50%) translateX(-50%);
-  -o-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
+  left: top;
+  right: inherit;
+  top: left;
+  bottom: inherit;
 }
 
 /* line 24, ../scss/modules/position/_components.scss */
 .overlap-top-right {
   position: relative;
-  -webkit-transform: translateY(-50%) translateX(50%);
-  -moz-transform: translateY(-50%) translateX(50%);
-  -ms-transform: translateY(-50%) translateX(50%);
-  -o-transform: translateY(-50%) translateX(50%);
-  transform: translateY(-50%) translateX(50%);
+  left: top;
+  right: inherit;
+  top: right;
+  bottom: inherit;
 }
 
 /* line 24, ../scss/modules/position/_components.scss */
 .overlap-bottom-left {
   position: relative;
-  -webkit-transform: translateY(50%) translateX(-50%);
-  -moz-transform: translateY(50%) translateX(-50%);
-  -ms-transform: translateY(50%) translateX(-50%);
-  -o-transform: translateY(50%) translateX(-50%);
-  transform: translateY(50%) translateX(-50%);
+  left: bottom;
+  right: inherit;
+  top: left;
+  bottom: inherit;
 }
 
 /* line 24, ../scss/modules/position/_components.scss */
 .overlap-bottom-right {
   position: relative;
-  -webkit-transform: translateY(50%) translateX(50%);
-  -moz-transform: translateY(50%) translateX(50%);
-  -ms-transform: translateY(50%) translateX(50%);
-  -o-transform: translateY(50%) translateX(50%);
-  transform: translateY(50%) translateX(50%);
+  left: bottom;
+  right: inherit;
+  top: right;
+  bottom: inherit;
 }
 
 /* line 29, ../scss/modules/position/_classes.scss */
 .overlap-top {
   position: relative;
-  -webkit-transform: translateY(-50%);
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -o-transform: translateY(-50%);
-  transform: translateY(-50%);
+  left: top;
+  right: inherit;
 }
 
 /* line 29, ../scss/modules/position/_classes.scss */
 .overlap-bottom {
   position: relative;
-  -webkit-transform: translateY(50%);
-  -moz-transform: translateY(50%);
-  -ms-transform: translateY(50%);
-  -o-transform: translateY(50%);
-  transform: translateY(50%);
+  left: bottom;
+  right: inherit;
 }
 
 /* line 29, ../scss/modules/position/_classes.scss */
 .overlap-left {
   position: relative;
-  top: left;
-  bottom: inherit;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 
 /* line 29, ../scss/modules/position/_classes.scss */
 .overlap-right {
   position: relative;
-  top: right;
-  bottom: inherit;
+  -webkit-transform: translateX(50%);
+  -moz-transform: translateX(50%);
+  -ms-transform: translateX(50%);
+  -o-transform: translateX(50%);
+  transform: translateX(50%);
 }
 
 /* line 13, ../scss/modules/themes/_components.scss */
@@ -6166,9 +6162,9 @@
 
 /* line 5, ../scss/modules/layers/_components.scss */
 .layer {
+  left: 0;
   top: 0;
   bottom: inherit;
-  left: 0;
   *zoom: 1;
   height: 100%;
   max-height: 100%;
@@ -6213,9 +6209,9 @@
 
 /* line 39, ../scss/modules/layers/_components.scss */
 .page {
+  left: 0;
   top: 0;
   bottom: inherit;
-  left: 0;
   *zoom: 1;
   min-height: 100%;
   min-width: 100%;
@@ -7062,8 +7058,7 @@ textarea.inline {
 
 /* line 172, ../scss/modules/_layout.scss */
 .valign-bottom {
-  bottom: 0;
-  top: inherit;
+  left: bottom;
 }
 
 /* line 176, ../scss/modules/_layout.scss */
@@ -7073,19 +7068,6 @@ textarea.inline {
 }
 
 /* line 182, ../scss/modules/_layout.scss */
-.position-bottom-center {
-  bottom: 0;
-  top: inherit;
-  left: 50%;
-  right: inherit;
-  -webkit-transform: translateX(-50%);
-  -moz-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  -o-transform: translateX(-50%);
-  transform: translateX(-50%);
-}
-
-/* line 186, ../scss/modules/_layout.scss */
 .halign-center, .full, .full-height, .full-width, .block, .clearfix, nav.horizontal, nav.horizontal nav > ul, .button-group, .modal, .panel, .panel > header, .panel > hgroup, .panel > .panel-header, .panel > section, .panel > .panel-body, .panel > footer, .panel > .panel-footer, .alert-small, .alert {
   *zoom: 1;
 }
@@ -7096,46 +7078,46 @@ textarea.inline {
   clear: both;
 }
 
-/* line 190, ../scss/modules/_layout.scss */
+/* line 186, ../scss/modules/_layout.scss */
 .float-left {
   float: left;
 }
 
-/* line 194, ../scss/modules/_layout.scss */
+/* line 190, ../scss/modules/_layout.scss */
 .float-right {
   float: right;
 }
 
-/* line 198, ../scss/modules/_layout.scss */
+/* line 194, ../scss/modules/_layout.scss */
 .full, .full-height {
   margin-top: 0;
   margin-bottom: 0;
   height: 100%;
 }
 
-/* line 205, ../scss/modules/_layout.scss */
+/* line 201, ../scss/modules/_layout.scss */
 .full, .full-width {
   margin-left: 0;
   margin-right: 0;
   width: 100%;
 }
 
-/* line 212, ../scss/modules/_layout.scss */
+/* line 208, ../scss/modules/_layout.scss */
 .full {
   display: block;
 }
 
-/* line 219, ../scss/modules/_layout.scss */
+/* line 215, ../scss/modules/_layout.scss */
 html {
   height: 100%;
 }
 
-/* line 223, ../scss/modules/_layout.scss */
+/* line 219, ../scss/modules/_layout.scss */
 *, *:before, *:after {
   position: relative;
 }
 
-/* line 284, ../scss/modules/_layout.scss */
+/* line 276, ../scss/modules/_layout.scss */
 .content {
   padding: 1rem;
 }
@@ -13228,59 +13210,59 @@ nav.horizontal.full {
 }
 /* line 127, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.below-left {
-  top: 100%;
-  bottom: inherit;
   left: 0;
   right: inherit;
+  top: 100%;
+  bottom: inherit;
 }
 /* line 131, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.below-right {
-  top: 100%;
-  bottom: inherit;
   right: 0;
   left: inherit;
+  top: 100%;
+  bottom: inherit;
 }
 /* line 135, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.above-left {
-  bottom: 100%;
-  top: inherit;
   left: 0;
   right: inherit;
+  bottom: 100%;
+  top: inherit;
 }
 /* line 139, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.above-right {
-  bottom: 100%;
-  top: inherit;
   right: 0;
   left: inherit;
+  bottom: 100%;
+  top: inherit;
 }
 /* line 143, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.top-left {
-  top: 0;
-  bottom: inherit;
   left: 0;
   right: inherit;
+  top: 0;
+  bottom: inherit;
 }
 /* line 147, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.top-right {
-  top: 0;
-  bottom: inherit;
   right: 0;
   left: inherit;
+  top: 0;
+  bottom: inherit;
 }
 /* line 151, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.bottom-left {
-  bottom: 0;
-  top: inherit;
   left: 0;
   right: inherit;
+  bottom: 0;
+  top: inherit;
 }
 /* line 155, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.bottom-right {
-  bottom: 0;
-  top: inherit;
   right: 0;
   left: inherit;
+  bottom: 0;
+  top: inherit;
 }
 /* line 159, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.bottom-push-right {
@@ -13841,10 +13823,10 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 /* line 62, ../scss/modules/labels/_components.scss */
 .badge.top-left {
   margin: 0;
-  top: 0;
-  bottom: inherit;
   left: 0;
   right: inherit;
+  top: 0;
+  bottom: inherit;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -13854,10 +13836,10 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 /* line 68, ../scss/modules/labels/_components.scss */
 .badge.top-right {
   margin: 0;
-  top: 0;
-  bottom: inherit;
   right: 0;
   left: inherit;
+  top: 0;
+  bottom: inherit;
   -webkit-transform: translateX(50%) translateY(-50%);
   -moz-transform: translateX(50%) translateY(-50%);
   -ms-transform: translateX(50%) translateY(-50%);
@@ -13867,10 +13849,10 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 /* line 74, ../scss/modules/labels/_components.scss */
 .badge.bottom-left {
   margin: 0;
-  bottom: 0;
-  top: inherit;
   left: 0;
   right: inherit;
+  bottom: 0;
+  top: inherit;
   -webkit-transform: translateX(-50%) translateY(50%);
   -moz-transform: translateX(-50%) translateY(50%);
   -ms-transform: translateX(-50%) translateY(50%);
@@ -13880,10 +13862,10 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 /* line 80, ../scss/modules/labels/_components.scss */
 .badge.bottom-right {
   margin: 0;
-  bottom: 0;
-  top: inherit;
   right: 0;
   left: inherit;
+  bottom: 0;
+  top: inherit;
   -webkit-transform: translateX(50%) translateY(50%);
   -moz-transform: translateX(50%) translateY(50%);
   -ms-transform: translateX(50%) translateY(50%);
@@ -13967,10 +13949,10 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 
 /* line 154, ../scss/modules/labels/_components.scss */
 .tooltip-above-left:before {
-  bottom: 100%;
-  top: inherit;
   left: 0;
   right: inherit;
+  bottom: 100%;
+  top: inherit;
 }
 /* line 155, ../scss/modules/labels/_components.scss */
 .tooltip-above-left:after {
@@ -13982,10 +13964,10 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 
 /* line 159, ../scss/modules/labels/_components.scss */
 .tooltip-above-right:before {
-  bottom: 100%;
-  top: inherit;
   right: 0;
   left: inherit;
+  bottom: 100%;
+  top: inherit;
 }
 /* line 160, ../scss/modules/labels/_components.scss */
 .tooltip-above-right:after {
@@ -13997,10 +13979,10 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 
 /* line 164, ../scss/modules/labels/_components.scss */
 .tooltip-above-center:before {
-  bottom: 100%;
-  top: inherit;
   left: 50%;
   right: inherit;
+  bottom: 100%;
+  top: inherit;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -14009,10 +13991,10 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 }
 /* line 165, ../scss/modules/labels/_components.scss */
 .tooltip-above-center:after {
-  top: -0.5rem;
-  bottom: inherit;
   left: 50%;
   right: inherit;
+  top: -0.5rem;
+  bottom: inherit;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -14022,10 +14004,10 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 
 /* line 169, ../scss/modules/labels/_components.scss */
 .tooltip-below-left:before {
-  top: 100%;
-  bottom: inherit;
   left: 0;
   right: inherit;
+  top: 100%;
+  bottom: inherit;
 }
 /* line 170, ../scss/modules/labels/_components.scss */
 .tooltip-below-left:after {
@@ -14037,10 +14019,10 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 
 /* line 174, ../scss/modules/labels/_components.scss */
 .tooltip-below-right:before {
-  top: 100%;
-  bottom: inherit;
   right: 0;
   left: inherit;
+  top: 100%;
+  bottom: inherit;
 }
 /* line 175, ../scss/modules/labels/_components.scss */
 .tooltip-below-right:after {
@@ -14052,10 +14034,10 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 
 /* line 179, ../scss/modules/labels/_components.scss */
 .tooltip-below-center:before {
-  top: 100%;
-  bottom: inherit;
   left: 50%;
   right: inherit;
+  top: 100%;
+  bottom: inherit;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -14585,10 +14567,10 @@ table.hover tr:hover {
 }
 /* line 68, ../scss/modules/panels/_components.scss */
 .alert .alert-exit {
-  top: 0;
-  bottom: inherit;
   right: 0;
   left: inherit;
+  top: 0;
+  bottom: inherit;
   padding: 8px;
 }
 /* line 72, ../scss/modules/panels/_components.scss */
@@ -14637,15 +14619,15 @@ table.hover tr:hover {
 
 /* line 111, ../scss/modules/panels/_components.scss */
 .modal {
-  top: 50%;
-  bottom: inherit;
   left: 50%;
   right: inherit;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-  -moz-transform: translateY(-50%) translateX(-50%);
-  -ms-transform: translateY(-50%) translateX(-50%);
-  -o-transform: translateY(-50%) translateX(-50%);
-  transform: translateY(-50%) translateX(-50%);
+  top: 50%;
+  bottom: inherit;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
   width: 50%;
 }
 

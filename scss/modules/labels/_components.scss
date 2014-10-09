@@ -61,25 +61,25 @@
 
     &%badge-top-left {
         margin: 0;
-        @include position-absolute(top, left);
+        @include position-absolute(left, top);
         @include translate(-50%, -50%);
     }
 
     &%badge-top-right {
         margin: 0;
-        @include position-absolute(top, right);
+        @include position-absolute(right, top);
         @include translate(50%, -50%);
     }
 
     &%badge-bottom-left {
         margin: 0;
-        @include position-absolute(bottom, left);
+        @include position-absolute(left, bottom);
         @include translate(-50%, 50%);
     }
 
     &%badge-bottom-right {
         margin: 0;
-        @include position-absolute(bottom, right);
+        @include position-absolute(right, bottom);
         @include translate(50%, 50%);
     }
 }
@@ -151,43 +151,43 @@
 }
 
 %tooltip-above-left {
-    &:before { @include position-absolute(above, left); }
-    &:after { @include position-absolute(-$tooltip-margin-vertical, $left: $tooltip-arrow-indent); }
+    &:before { @include position-absolute(left, above); }
+    &:after { @include position-absolute($left: $tooltip-arrow-indent, $vertical: -$tooltip-margin-vertical); }
 }
 
 %tooltip-above-right {
-    &:before { @include position-absolute(above, right); }
-    &:after { @include position-absolute(-$tooltip-margin-vertical, $right: $tooltip-arrow-indent); }
+    &:before { @include position-absolute(right, above); }
+    &:after { @include position-absolute($right: $tooltip-arrow-indent, $vertical: -$tooltip-margin-vertical); }
 }
 
 %tooltip-above-center {
-    &:before { @include position-absolute(above, center); }
-    &:after { @include position-absolute(-$tooltip-margin-vertical, center); }
+    &:before { @include position-absolute(center, above); }
+    &:after { @include position-absolute(center, -$tooltip-margin-vertical); }
 }
 
 %tooltip-below-left {
-    &:before { @include position-absolute(below, left); }
-    &:after { @include position-absolute($bottom: -$tooltip-margin-vertical, $left: $tooltip-arrow-indent); }
+    &:before { @include position-absolute(left, below); }
+    &:after { @include position-absolute($left: $tooltip-arrow-indent, $bottom: -$tooltip-margin-vertical); }
 }
 
 %tooltip-below-right {
-    &:before { @include position-absolute(below, right); }
-    &:after { @include position-absolute($bottom: -$tooltip-margin-vertical, $right: $tooltip-arrow-indent); }
+    &:before { @include position-absolute(right, below); }
+    &:after { @include position-absolute($right: $tooltip-arrow-indent, $bottom: -$tooltip-margin-vertical); }
 }
 
 %tooltip-below-center {
-    &:before { @include position-absolute(below, center); }
-    &:after { @include position-absolute($bottom: -$tooltip-margin-vertical, $horizontal: center); }
+    &:before { @include position-absolute(center, below); }
+    &:after { @include position-absolute($horizontal: center, $bottom: -$tooltip-margin-vertical); }
 }
 
 %tooltip-left {
-    &:before { @include position-absolute(center, $right: 100%); }
-    &:after { @include position-absolute(center, $right: 100%); }
+    &:before { @include position-absolute($right: 100%, $vertical: center); }
+    &:after { @include position-absolute($right: 100%, $vertical: center); }
 }
 
 %tooltip-right {
-    &:before { @include position-absolute(center, $left: 100%); }
-    &:after { @include position-absolute(center, $left: 100%); }
+    &:before { @include position-absolute($left: 100%, $vertical: center); }
+    &:after { @include position-absolute($left: 100%, $vertical: center); }
 }
 
 // Popovers
@@ -207,7 +207,7 @@
 
     &:after {
         @extend %tooltip-above-left:after;
-        @include position-absolute(below, $left: $popover-arrow-indent);
+        @include position-absolute($left: $popover-arrow-indent, $vertical: below);
     }
 }
 
@@ -216,7 +216,7 @@
 
     &:after {
         @extend %tooltip-above-right:after;
-        @include position-absolute(below, $right: $popover-arrow-indent);
+        @include position-absolute($right: $popover-arrow-indent, $vertical: below);
     }
 }
 
@@ -225,7 +225,7 @@
 
     &:after {
         @extend %tooltip-below-left:after;
-        @include position-absolute(above, $left: $popover-arrow-indent);
+        @include position-absolute($left: $popover-arrow-indent, $vertical: above);
     }
 }
 
@@ -234,7 +234,7 @@
 
     &:after {
         @extend %tooltip-below-right:after;
-        @include position-absolute(above, $right: $popover-arrow-indent);
+        @include position-absolute($right: $popover-arrow-indent, $vertical: above);
     }
 }
 

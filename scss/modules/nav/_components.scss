@@ -125,51 +125,51 @@
 	}
 
 	&%dropdown-below-left {
-		@include position-absolute(below, left);
+		@include position-absolute(left, below);
 	}
 
 	&%dropdown-below-right {
-		@include position-absolute(below, right);
+		@include position-absolute(right, below);
 	}
 
 	&%dropdown-above-left {
-		@include position-absolute(above, left);
+		@include position-absolute(left, above);
 	}
 
 	&%dropdown-above-right {
-		@include position-absolute(above, right);
+		@include position-absolute(right, above);
 	}
 
 	&%dropdown-top-left {
-		@include position-absolute(top, left);
+		@include position-absolute(left, top);
 	}
 
 	&%dropdown-top-right {
-		@include position-absolute(top, right);
+		@include position-absolute(right, top);
 	}
 
 	&%dropdown-bottom-left {
-		@include position-absolute(bottom, left);
+		@include position-absolute(left, bottom);
 	}
 
 	&%dropdown-bottom-right {
-		@include position-absolute(bottom, right);
+		@include position-absolute(right, bottom);
 	}
 
 	&%dropdown-bottom-push-right {
-		@include position-absolute(bottom, $left: 100%);
+		@include position-absolute($left: 100%, $vertical: bottom);
 	}
 
 	&%dropdown-bottom-push-left {
-		@include position-absolute(bottom, $right: 100%);
+		@include position-absolute($right: 100%, $vertical: bottom);
 	}
 
 	&%dropdown-top-push-right {
-		@include position-absolute(top, $left: 100%);
+		@include position-absolute($left: 100%, $vertical: top);
 	}
 
 	&%dropdown-top-push-left {
-		@include position-absolute(top, $right: 100%);
+		@include position-absolute($right: 100%, $vertical: top);
 	}
 }
 

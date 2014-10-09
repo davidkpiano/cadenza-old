@@ -3,20 +3,20 @@
 // ===================
 %position-absolute { position: absolute !important; }
 
-@each $position-vertical in $positions-vertical {
-    @each $position-horizontal in $positions-horizontal {
-        %position-#{$position-vertical}-#{$position-horizontal} {
-            @include position-absolute($position-vertical, $position-horizontal, $extend: false);
+@each $position-horizontal in $positions-horizontal {
+    @each $position-vertical in $positions-vertical {
+        %position-#{$position-horizontal}-#{$position-vertical} {
+            @include position-absolute($position-horizontal, $position-vertical, $extend: false);
         }
     }
 }
 
 @each $position in $positions-vertical {
-    %position-#{$position} { @include position-absolute($position, false, $extend: false); }
+    %position-#{$position} { @include position-absolute($vertical: $position, $extend: false); }
 }
 
 @each $position in $positions-horizontal {
-    %position-#{$position} { @include position-absolute(false, $position, $extend: false); }
+    %position-#{$position} { @include position-absolute($horizontal: $position, $extend: false); }
 }
 
 @each $overlap-vertical in (top, bottom) {

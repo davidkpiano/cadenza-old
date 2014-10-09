@@ -5,10 +5,10 @@
 // Position Classes
 #{prefixed-class('position')} { @extend %position-absolute; }
 
-@each $position-vertical in $positions-vertical {
-    @each $position-horizontal in $positions-horizontal {
-        .position-#{$position-vertical}-#{$position-horizontal} {
-            @extend %position-#{$position-vertical}-#{$position-horizontal};
+@each $position-horizontal in $positions-horizontal {
+    @each $position-vertical in $positions-vertical {
+        .position-#{$position-horizontal}-#{$position-vertical} {
+            @extend %position-#{$position-horizontal}-#{$position-vertical};
         }
     }
 }

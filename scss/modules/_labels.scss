@@ -33,19 +33,19 @@
     }
 
     &.top-left {
-        @include position-absolute(top, left);
+        @include position-absolute(left, top);
         @include experimental(transform, translateX(-50%) translateY(-50%));
     }
     &.bottom-left {
-        @include position-absolute(bottom, left);
+        @include position-absolute(left, bottom);
         @include experimental(transform, translateX(-50%) translateY(50%));
     }
     &.top-right {
-        @include position-absolute(top, right);
+        @include position-absolute(right, top);
         @include experimental(transform, translateX(50%) translateY(-50%));
     }
     &.bottom-right {
-        @include position-absolute(bottom, right);
+        @include position-absolute(right, bottom);
         @include experimental(transform, translateX(50%) translateY(50%));
     }
 }
