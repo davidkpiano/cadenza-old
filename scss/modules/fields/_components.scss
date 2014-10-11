@@ -9,7 +9,10 @@
 %field {
     @include pie-clearfix;
     overflow: visible;
-    margin-bottom: $field-margin-bottom;
+    
+    &:not(:only-child) {
+        margin-bottom: $field-margin-bottom;
+    }
 
     &-horizontal {
         display: table;

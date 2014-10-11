@@ -12317,80 +12317,85 @@ hgroup {
 hgroup > * {
   margin-bottom: 0;
 }
+/* line 88, ../scss/modules/type/_components.scss */
+hgroup.inline {
+  display: inline-block;
+  margin-bottom: 0;
+}
 
-/* line 93, ../scss/modules/type/_components.scss */
+/* line 98, ../scss/modules/type/_components.scss */
 h1, .h-1 {
   font-size: 33.80875px ;
   font-size: 2.11305rem ;
 }
 
-/* line 97, ../scss/modules/type/_components.scss */
+/* line 102, ../scss/modules/type/_components.scss */
 h1.double, .h-1.double {
   font-size: 67.6175px ;
   font-size: 4.22609rem ;
 }
 
-/* line 93, ../scss/modules/type/_components.scss */
+/* line 98, ../scss/modules/type/_components.scss */
 h2, .h-2 {
   font-size: 29.11034px ;
   font-size: 1.8194rem ;
 }
 
-/* line 97, ../scss/modules/type/_components.scss */
+/* line 102, ../scss/modules/type/_components.scss */
 h2.double, .h-2.double {
   font-size: 58.22068px ;
   font-size: 3.63879rem ;
 }
 
-/* line 93, ../scss/modules/type/_components.scss */
+/* line 98, ../scss/modules/type/_components.scss */
 h3, .h-3 {
   font-size: 25.06487px ;
   font-size: 1.56655rem ;
 }
 
-/* line 97, ../scss/modules/type/_components.scss */
+/* line 102, ../scss/modules/type/_components.scss */
 h3.double, .h-3.double {
   font-size: 50.12974px ;
   font-size: 3.13311rem ;
 }
 
-/* line 93, ../scss/modules/type/_components.scss */
+/* line 98, ../scss/modules/type/_components.scss */
 h4, .h-4 {
   font-size: 21.5816px ;
   font-size: 1.34885rem ;
 }
 
-/* line 97, ../scss/modules/type/_components.scss */
+/* line 102, ../scss/modules/type/_components.scss */
 h4.double, .h-4.double {
   font-size: 43.1632px ;
   font-size: 2.6977rem ;
 }
 
-/* line 93, ../scss/modules/type/_components.scss */
+/* line 98, ../scss/modules/type/_components.scss */
 h5, .h-5 {
   font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
 
-/* line 97, ../scss/modules/type/_components.scss */
+/* line 102, ../scss/modules/type/_components.scss */
 h5.double, .h-5.double {
   font-size: 37.1648px ;
   font-size: 2.3228rem ;
 }
 
-/* line 93, ../scss/modules/type/_components.scss */
+/* line 98, ../scss/modules/type/_components.scss */
 h6, .h-6 {
   font-size: 16px ;
   font-size: 1rem ;
 }
 
-/* line 97, ../scss/modules/type/_components.scss */
+/* line 102, ../scss/modules/type/_components.scss */
 h6.double, .h-6.double {
   font-size: 32px ;
   font-size: 2rem ;
 }
 
-/* line 105, ../scss/modules/type/_components.scss */
+/* line 110, ../scss/modules/type/_components.scss */
 body {
   font-style: normal;
   text-rendering: optimizeLegibility;
@@ -12402,67 +12407,67 @@ body {
   hyphens: auto;
 }
 
-/* line 113, ../scss/modules/type/_components.scss */
+/* line 118, ../scss/modules/type/_components.scss */
 p {
   line-height: 1.5;
   font-weight: 300;
 }
-/* line 114, ../scss/modules/type/_components.scss */
+/* line 119, ../scss/modules/type/_components.scss */
 p:not(:last-child) {
   margin-bottom: 1rem;
 }
-/* line 121, ../scss/modules/type/_components.scss */
+/* line 126, ../scss/modules/type/_components.scss */
 p.lead {
   font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
 
-/* line 124, ../scss/modules/type/_components.scss */
+/* line 129, ../scss/modules/type/_components.scss */
 small, .small {
   font-size: 86.10298%;
 }
 
-/* line 128, ../scss/modules/type/_components.scss */
+/* line 133, ../scss/modules/type/_components.scss */
 .large {
   font-size: 116.14%;
 }
 
-/* line 132, ../scss/modules/type/_components.scss */
+/* line 137, ../scss/modules/type/_components.scss */
 strong, b, .strong {
   font-weight: bold !important;
 }
 
-/* line 136, ../scss/modules/type/_components.scss */
+/* line 141, ../scss/modules/type/_components.scss */
 .weak {
   font-weight: normal !important;
 }
 
-/* line 140, ../scss/modules/type/_components.scss */
+/* line 145, ../scss/modules/type/_components.scss */
 blockquote footer cite, em, .italics {
   font-style: italic;
 }
 
-/* line 144, ../scss/modules/type/_components.scss */
+/* line 149, ../scss/modules/type/_components.scss */
 .uppercase {
   text-transform: uppercase;
 }
 
-/* line 148, ../scss/modules/type/_components.scss */
+/* line 153, ../scss/modules/type/_components.scss */
 .lowercase {
   text-transform: lowercase;
 }
 
-/* line 152, ../scss/modules/type/_components.scss */
+/* line 157, ../scss/modules/type/_components.scss */
 ul.inline li, .nowrap, nav li, .dropdown-container > menu li, button, .button, input[type=button], input[type=submit] {
   white-space: nowrap;
 }
 
-/* line 156, ../scss/modules/type/_components.scss */
+/* line 161, ../scss/modules/type/_components.scss */
 mark, .mark {
   background: #FF0;
 }
 
-/* line 160, ../scss/modules/type/_components.scss */
+/* line 165, ../scss/modules/type/_components.scss */
 abbr, acronym {
   font-size: 116.14%;
   text-transform: uppercase;
@@ -12470,96 +12475,96 @@ abbr, acronym {
   cursor: help;
 }
 
-/* line 170, ../scss/modules/type/_components.scss */
+/* line 175, ../scss/modules/type/_components.scss */
 .upper-caps, .small-caps {
   font-variant: small-caps;
 }
 
-/* line 174, ../scss/modules/type/_components.scss */
+/* line 179, ../scss/modules/type/_components.scss */
 .upper-caps {
   text-transform: lowercase;
 }
 
-/* line 182, ../scss/modules/type/_components.scss */
+/* line 187, ../scss/modules/type/_components.scss */
 a {
   display: inline-block;
   text-decoration: underline;
 }
-/* line 186, ../scss/modules/type/_components.scss */
+/* line 191, ../scss/modules/type/_components.scss */
 a:hover {
   text-decoration: underline;
 }
 
-/* line 191, ../scss/modules/type/_components.scss */
+/* line 196, ../scss/modules/type/_components.scss */
 .anchors-hint a {
   text-decoration: none;
 }
-/* line 195, ../scss/modules/type/_components.scss */
+/* line 200, ../scss/modules/type/_components.scss */
 .anchors-hint:hover a {
   text-decoration: underline;
 }
 
-/* line 202, ../scss/modules/type/_components.scss */
+/* line 207, ../scss/modules/type/_components.scss */
 .text-left {
   text-align: left;
 }
 
-/* line 206, ../scss/modules/type/_components.scss */
+/* line 211, ../scss/modules/type/_components.scss */
 .text-right {
   text-align: right;
 }
 
-/* line 210, ../scss/modules/type/_components.scss */
+/* line 215, ../scss/modules/type/_components.scss */
 .text-center {
   text-align: center;
 }
 
-/* line 214, ../scss/modules/type/_components.scss */
+/* line 219, ../scss/modules/type/_components.scss */
 .text-justify {
   text-align: justify;
 }
 
-/* line 219, ../scss/modules/type/_components.scss */
+/* line 224, ../scss/modules/type/_components.scss */
 .text-middle {
   display: table;
 }
-/* line 222, ../scss/modules/type/_components.scss */
+/* line 227, ../scss/modules/type/_components.scss */
 .text-middle > * {
   display: table-cell;
   vertical-align: middle;
 }
 
-/* line 228, ../scss/modules/type/_components.scss */
+/* line 233, ../scss/modules/type/_components.scss */
 .text-bottom {
   display: table;
 }
-/* line 231, ../scss/modules/type/_components.scss */
+/* line 236, ../scss/modules/type/_components.scss */
 .text-bottom > * {
   display: table-cell;
   vertical-align: bottom;
 }
 
-/* line 237, ../scss/modules/type/_components.scss */
+/* line 242, ../scss/modules/type/_components.scss */
 ul.inline li, .nowrap, nav li, .dropdown-container > menu li, button, .button, input[type=button], input[type=submit] {
   white-space: nowrap;
   overflow: hidden;
 }
 
-/* line 244, ../scss/modules/type/_components.scss */
+/* line 249, ../scss/modules/type/_components.scss */
 pre, .pre {
   white-space: pre;
   font-size: 16px ;
   font-size: 1rem ;
   font-family: Consolas, monaco, monospace;
 }
-/* line 249, ../scss/modules/type/_components.scss */
+/* line 254, ../scss/modules/type/_components.scss */
 pre code, .pre code, pre .code, .pre .code {
   word-wrap: normal;
   white-space: -moz-pre-wrap;
   white-space: pre-wrap;
 }
 
-/* line 256, ../scss/modules/type/_components.scss */
+/* line 261, ../scss/modules/type/_components.scss */
 pre code, pre .code, .pre code, .pre .code, code, .code {
   white-space: pre;
   font-size: 13.77648px ;
@@ -12567,80 +12572,80 @@ pre code, pre .code, .pre code, .pre .code, code, .code {
   font-family: Consolas, monaco, monospace;
 }
 
-/* line 262, ../scss/modules/type/_components.scss */
+/* line 267, ../scss/modules/type/_components.scss */
 kbd, .kbd {
   font-size: 11.86196px ;
   font-size: 0.74137rem ;
 }
 
-/* line 268, ../scss/modules/type/_components.scss */
+/* line 273, ../scss/modules/type/_components.scss */
 blockquote {
   padding: 1rem;
   margin-bottom: 1rem;
   font-size: 18.5824px ;
   font-size: 1.1614rem ;
 }
-/* line 273, ../scss/modules/type/_components.scss */
+/* line 278, ../scss/modules/type/_components.scss */
 blockquote footer {
   font-size: 13.77648px ;
   font-size: 0.86103rem ;
 }
 
-/* line 285, ../scss/modules/type/_components.scss */
+/* line 290, ../scss/modules/type/_components.scss */
 q::before, q.double::before {
   content: '\201C';
 }
-/* line 286, ../scss/modules/type/_components.scss */
+/* line 291, ../scss/modules/type/_components.scss */
 q::after, q.double::after {
   content: '\201D';
 }
 
-/* line 290, ../scss/modules/type/_components.scss */
+/* line 295, ../scss/modules/type/_components.scss */
 q > q::before, q.single::before {
   content: '\2018';
 }
-/* line 291, ../scss/modules/type/_components.scss */
+/* line 296, ../scss/modules/type/_components.scss */
 q > q::after, q.single::after {
   content: '\2019';
 }
 
-/* line 295, ../scss/modules/type/_components.scss */
+/* line 300, ../scss/modules/type/_components.scss */
 q.arrow-double::before {
   content: '\00AB';
 }
-/* line 296, ../scss/modules/type/_components.scss */
+/* line 301, ../scss/modules/type/_components.scss */
 q.arrow-double::after {
   content: '\00BB';
 }
 
-/* line 300, ../scss/modules/type/_components.scss */
+/* line 305, ../scss/modules/type/_components.scss */
 q.arrow-single::before {
   content: '\2039';
 }
-/* line 301, ../scss/modules/type/_components.scss */
+/* line 306, ../scss/modules/type/_components.scss */
 q.arrow-single::after {
   content: '\203A';
 }
 
-/* line 305, ../scss/modules/type/_components.scss */
+/* line 310, ../scss/modules/type/_components.scss */
 q.low-double::before {
   content: '\201E';
 }
-/* line 306, ../scss/modules/type/_components.scss */
+/* line 311, ../scss/modules/type/_components.scss */
 q.low-double::after {
   content: '\201D';
 }
 
-/* line 310, ../scss/modules/type/_components.scss */
+/* line 315, ../scss/modules/type/_components.scss */
 q.low-single::before {
   content: '\201A';
 }
-/* line 311, ../scss/modules/type/_components.scss */
+/* line 316, ../scss/modules/type/_components.scss */
 q.low-single::after {
   content: '\2019';
 }
 
-/* line 316, ../scss/modules/type/_components.scss */
+/* line 321, ../scss/modules/type/_components.scss */
 hr {
   clear: both;
   height: 0;
@@ -12654,145 +12659,145 @@ hr {
   border-right-width: 0;
 }
 
-/* line 329, ../scss/modules/type/_components.scss */
+/* line 334, ../scss/modules/type/_components.scss */
 hr.dotted {
   border-style: dotted;
 }
 
-/* line 333, ../scss/modules/type/_components.scss */
+/* line 338, ../scss/modules/type/_components.scss */
 hr.dashed {
   border-style: dashed;
 }
 
-/* line 337, ../scss/modules/type/_components.scss */
+/* line 342, ../scss/modules/type/_components.scss */
 hr.thick {
   border-top-width: 4px;
 }
 
-/* line 341, ../scss/modules/type/_components.scss */
+/* line 346, ../scss/modules/type/_components.scss */
 hr.thin {
   border-top-width: 1px;
 }
 
-/* line 345, ../scss/modules/type/_components.scss */
+/* line 350, ../scss/modules/type/_components.scss */
 hr.small {
   width: 3rem;
 }
 
-/* line 349, ../scss/modules/type/_components.scss */
+/* line 354, ../scss/modules/type/_components.scss */
 hr.large {
   width: 6rem;
 }
 
-/* line 353, ../scss/modules/type/_components.scss */
+/* line 358, ../scss/modules/type/_components.scss */
 hr.left {
   margin-right: auto;
 }
 
-/* line 357, ../scss/modules/type/_components.scss */
+/* line 362, ../scss/modules/type/_components.scss */
 hr.right {
   margin-left: auto;
 }
 
-/* line 361, ../scss/modules/type/_components.scss */
+/* line 366, ../scss/modules/type/_components.scss */
 hr.center {
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 368, ../scss/modules/type/_components.scss */
+/* line 373, ../scss/modules/type/_components.scss */
 ul.unstyled, ul.inline, ul, ol, dl {
   list-style-position: outside;
   margin-bottom: 1rem;
   padding: 0;
 }
-/* line 382, ../scss/modules/type/_components.scss */
+/* line 387, ../scss/modules/type/_components.scss */
 ul.unstyled {
   list-style: none;
   margin-left: 0;
 }
 
-/* line 388, ../scss/modules/type/_components.scss */
+/* line 393, ../scss/modules/type/_components.scss */
 ul.inline {
   margin-left: 0;
 }
-/* line 392, ../scss/modules/type/_components.scss */
+/* line 397, ../scss/modules/type/_components.scss */
 ul.inline li {
   display: inline-block;
   padding-right: 0 1rem 0 0;
 }
 
-/* line 399, ../scss/modules/type/_components.scss */
+/* line 404, ../scss/modules/type/_components.scss */
 ul {
   margin-left: 1rem;
 }
 
-/* line 405, ../scss/modules/type/_components.scss */
+/* line 410, ../scss/modules/type/_components.scss */
 ul.square {
   list-style-type: square;
 }
 
-/* line 406, ../scss/modules/type/_components.scss */
+/* line 411, ../scss/modules/type/_components.scss */
 ul.circle {
   list-style-type: circle;
 }
 
-/* line 407, ../scss/modules/type/_components.scss */
+/* line 412, ../scss/modules/type/_components.scss */
 ul.disc {
   list-style-type: disc;
 }
 
-/* line 408, ../scss/modules/type/_components.scss */
+/* line 413, ../scss/modules/type/_components.scss */
 ul.no-bullet {
   list-style-type: none;
 }
 
-/* line 410, ../scss/modules/type/_components.scss */
+/* line 415, ../scss/modules/type/_components.scss */
 ol {
   margin-left: 1.4rem;
 }
 
-/* line 419, ../scss/modules/type/_components.scss */
+/* line 424, ../scss/modules/type/_components.scss */
 dl dt {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-/* line 424, ../scss/modules/type/_components.scss */
+/* line 429, ../scss/modules/type/_components.scss */
 dl dd {
   margin-bottom: 0.5rem;
 }
 
-/* line 431, ../scss/modules/type/_components.scss */
+/* line 436, ../scss/modules/type/_components.scss */
 .divider:not(:last-child):after, [class*=" divider-"]:not(:last-child):after, [class^="divider-"]:not(:last-child):after, .dividers > :not(:last-child):after, [class*=" dividers-"] > :not(:last-child):after, [class^="dividers-"] > :not(:last-child):after {
   content: '';
   display: inline-block;
   vertical-align: inherit;
 }
-/* line 437, ../scss/modules/type/_components.scss */
+/* line 442, ../scss/modules/type/_components.scss */
 .divider-vertical:not(:last-child):after, .dividers-vertical > :not(:last-child):after {
   margin: 1rem 0;
 }
-/* line 441, ../scss/modules/type/_components.scss */
+/* line 446, ../scss/modules/type/_components.scss */
 .divider-horizontal:not(:last-child):after, .dividers-horizontal > :not(:last-child):after {
   margin: 0 1rem;
 }
-/* line 445, ../scss/modules/type/_components.scss */
+/* line 450, ../scss/modules/type/_components.scss */
 .divider-square:not(:last-child):after, .dividers-square > :not(:last-child):after {
   content: '\25A0';
 }
-/* line 446, ../scss/modules/type/_components.scss */
+/* line 451, ../scss/modules/type/_components.scss */
 .divider-diamond:not(:last-child):after, .dividers-diamond > :not(:last-child):after {
   content: '\25C6';
 }
-/* line 447, ../scss/modules/type/_components.scss */
+/* line 452, ../scss/modules/type/_components.scss */
 .divider-bar:not(:last-child):after, .dividers-bar > :not(:last-child):after {
   content: '\2503';
 }
-/* line 448, ../scss/modules/type/_components.scss */
+/* line 453, ../scss/modules/type/_components.scss */
 .divider-dash:not(:last-child):after, .dividers-dash > :not(:last-child):after {
   content: '\2501';
 }
-/* line 449, ../scss/modules/type/_components.scss */
+/* line 454, ../scss/modules/type/_components.scss */
 .divider-bullet:not(:last-child):after, .dividers-bullet > :not(:last-child):after {
   content: '\25CF';
 }
@@ -14262,7 +14267,6 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 .field, [class*=" field-"], [class^="field-"] {
   *zoom: 1;
   overflow: visible;
-  margin-bottom: 0.5rem;
 }
 /* line 38, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
 .field:after, [class*=" field-"]:after, [class^="field-"]:after {
@@ -14270,22 +14274,26 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
   display: table;
   clear: both;
 }
-/* line 14, ../scss/modules/fields/_components.scss */
+/* line 13, ../scss/modules/fields/_components.scss */
+.field:not(:only-child), [class*=" field-"]:not(:only-child), [class^="field-"]:not(:only-child) {
+  margin-bottom: 0.5rem;
+}
+/* line 17, ../scss/modules/fields/_components.scss */
 .field-horizontal {
   display: table;
   width: 100%;
 }
-/* line 18, ../scss/modules/fields/_components.scss */
+/* line 21, ../scss/modules/fields/_components.scss */
 .field-horizontal > * {
   display: table-cell;
   vertical-align: middle;
   margin: 0;
 }
-/* line 24, ../scss/modules/fields/_components.scss */
+/* line 27, ../scss/modules/fields/_components.scss */
 .field-horizontal label {
   padding: 0 0.5rem;
 }
-/* line 28, ../scss/modules/fields/_components.scss */
+/* line 31, ../scss/modules/fields/_components.scss */
 .field-horizontal .field-input {
   width: 100%;
   height: 100%;

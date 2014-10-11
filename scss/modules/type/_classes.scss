@@ -58,7 +58,11 @@ h1, h2, h3, h4, h5, h6, #{prefixed-class('h')} {
 	&-dark { @include style('subheading', 'dark'); }
 }
 
-hgroup { @extend %hgroup; }
+hgroup {
+	@extend %hgroup;
+
+	&.inline { @extend %hgroup-inline; }
+}
 
 // Body Copy
 // ---------

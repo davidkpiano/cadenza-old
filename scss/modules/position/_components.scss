@@ -28,9 +28,9 @@
 }
 
 @each $overlap in (top, bottom) {
-    %overlap-#{$overlap} { @include overlap($overlap, false); }
+    %overlap-#{$overlap} { @include overlap(false, $overlap); }
 }
 
 @each $overlap in (left, right) {
-    %overlap-#{$overlap} { @include overlap(false, $overlap); }
+    %overlap-#{$overlap} { @include overlap($overlap, false); }
 }

@@ -84,6 +84,11 @@
 	> * {
 		margin-bottom: 0;
 	}
+
+    &-inline {
+        display: inline-block;
+        margin-bottom: 0;
+    }
 }
 
 @each $type-heading in $type-headings {

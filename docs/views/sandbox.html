@@ -237,7 +237,7 @@
         </div>
     </div>
 </section>
-<section class="col-12">
+<section class="col-12 hide">
     <div class="row-12 cols-4 rows-6 cols-border hide">
         <div class="border-dark text-middle pad-large hover-bg-dark hover-theme-light hide" ng-repeat="n in component.range(8)">
             <div>
@@ -450,6 +450,108 @@
         <div class="row-12">
             <h1 class="position-left-aboveMiddle">Now you can center things</h1>
             <h6 class="position-left-belowMiddle">Like this, Regardless of size.</h6>
+        </div>
+    </div>
+</section>
+<section class="col-12 border">
+    <div class="row-1 bg-light">
+        <div class="col-3 text-middle pad-horizontal">
+            <h1>Google</h1>
+        </div>
+        <div class="col-6">
+            <div class="field-horizontal position-left-middle"><div class="field-input"><input type="text"></div><button>Search</button></div>
+        </div>
+        <div class="col-3"></div>
+    </div>
+    <div class="row-10">
+        <div class="col-2 bg-white">
+            <div class="bg-primary theme-light text-middle row">
+                <h1 class="inline"><i class="pad fa fa-headphones large"></i></h1>
+                <hgroup class="inline">
+                    <h2>Music</h2>
+                    <h6>All Access</h6>
+                </hgroup>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Listen Now</a></li>
+                    <li><a href="#">My Library</a></li>
+                    <li><a href="#">Radio</a></li>
+                    <li><a href="#">Explore</a></li>
+                </ul>
+            </nav>
+            <hr class="thin light">
+            <nav>
+                <h6>Auto Playlists</h6>
+                <ul class="small">
+                    <li><a href="#">Queue</a></li>
+                    <li><a href="#">Thumbs up</a></li>
+                    <li><a href="#">Last added</a></li>
+                    <li><a href="#">Free and purchased</a></li>
+                    <li><a href="#">Shared with me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-10 bg-light">
+            <div class="row-4 bg-dark">
+                <div class="row bg-white pad">                
+                    <h2 class="inline">Queue</h2>
+                    <div class="float-right">
+                        <button class="light">Save Queue</button>
+                        <button class="light">Clear Queue</button>
+                        <button class="light"><i class="fa fa-gear"></i></button>
+                    </div>
+                </div>
+                <div class="row pad theme-light">
+                    <hgroup>            
+                        <h6>Playing From</h6>
+                        <h1>Justin Nozuka Radio</h1>
+                    </hgroup>
+                    <button class="small dark"><i class="fa fa-refresh"></i> <span>Refresh Station</span></button>
+                </div>
+            </div>
+            <div class="row-8 bg-light pad scroll-y">
+                <table class="horizontal">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th><i class="fa fa-clock-o"></i></th>
+                            <th>Artist</th>
+                            <th>Album</th>
+                            <th><i class="fa fa-music"></i></th>
+                            <th>Rating</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="song in component.range(10)">
+                            <td><i class="fa fa-tree pad"></i><span>Song {{song}}</span></td>
+                            <td>5:20</td>
+                            <td>Justin Nozuka</td>
+                            <td>Holly</td>
+                            <td>1</td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row-1 bg-white">
+        <div class="text-middle col-4 pad-horizontal">
+            <hgroup class="inline">
+                <h2>Save Him</h2>
+                <span>Justin Nozuka - Holly</span>
+            </hgroup>
+        </div>
+        <div class="text-center text-middle col-4">
+            <h2><i class="fa fa-step-backward"></i></h2>
+            <h2><i class="fa fa-backward"></i></h2>
+            <h2><i class="fa fa-play"></i></h2>
+            <h2><i class="fa fa-forward"></i></h2>
+            <h2><i class="fa fa-step-forward"></i></h2>
+        </div>
+        <div class="col-4 text-middle">
+
         </div>
     </div>
 </section>
