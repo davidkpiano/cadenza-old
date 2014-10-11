@@ -23,6 +23,18 @@ $card-margin-vertical: $card-gutter !default;
 $card-margin-horizontal: $card-gutter !default;
 $card-radius: 2px !default;
 
+// Drawer Settings
+$drawer-style: default !default;
+$drawer-theme: default !default;
+$drawer-full-width: column-width(10) !default;
+$drawer-full-height: row-height(10) !default;
+$drawer-half-width: column-width(1/2) !default;
+$drawer-half-height: row-height(1/2) !default;
+$drawer-small-width: $drawer-full-width !default;
+$drawer-small-height: $drawer-full-height !default;
+$drawer-medium-width: $drawer-half-width !default;
+$drawer-medium-height: $drawer-full-height !default;
+
 // Imports
 @import
 	'_mixins',

@@ -25,16 +25,14 @@
     .card-#{$i} { @extend %card-#{$i}; }
 }
 
-#{prefixed-class('drawer')} { @extend %drawer; }
-#{prefixed-class('drawer-left')} { @extend %drawer-left; }
-#{prefixed-class('drawer-right')} { @extend %drawer-right; }
-#{prefixed-class('drawer-top')} { @extend %drawer-top; }
-#{prefixed-class('drawer-bottom')} { @extend %drawer-bottom; }
+@each $mq in (small, all) {
+    $suffix: if($mq == 'all', '', '-#{$mq}');
 
-@for $i from 1 through $grid-columns {
+    .drawer#{$suffix} { @extend %drawer#{$suffix}; }
+
     @each $drawer-position in (left, right, top, bottom) {    
-        .drawer-#{$drawer-position}-#{$i} {
-            @extend %drawer-#{$drawer-position}-#{$i};
+        .drawer-#{$drawer-position}#{$suffix} {
+            @extend %drawer-#{$drawer-position}#{$suffix};
         }
     }
 }

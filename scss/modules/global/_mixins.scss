@@ -70,15 +70,15 @@
     $gutter: false
 ) {
     // if $columns is an int, calculate from $grid-columns
-    @if round($columns) == $columns and unit($columns) == '' {
+    @if $columns == auto or index(('%', 'px', 'em', 'rem'), unit($columns)) {
+        @return $columns;
+    } @else if round($columns) == $columns and unit($columns) == '' {
 
         @if $gutter {
             @return calc(#{$columns} * ((100% - #{$gutter * ($grid-columns - 1)}) / #{$grid-columns}) + (#{($columns - 1) * $gutter}));
         } @else {
             @return percentage($columns / $grid-columns);
         }
-    } @else if index(('%', 'px', 'em', 'rem'), unit($columns)) {
-        @return $columns;
     } @else {
         @return percentage($columns);
     }

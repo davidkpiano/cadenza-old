@@ -6,8 +6,10 @@
     $width: 100%,
     $height: 100%,
     $position: left,
-    $active-selector: '*:hover > &',
+    $active-selector: $transition-selector,
     $push: false,
+    $mq: all,
+    $animation: 'scaleUp',
     $extend: true
 ) {
     $push-translation: false;
@@ -17,24 +19,34 @@
     @if $extend {    
         @extend %drawer;
         @extend %drawer-#{$position} !optional;
-    }
-    
-    width: $drawer-width;
-    height: $drawer-height;
+    }    
 
-    @if $push {
-        @if $position == left {
-            $push-translation: translateX($drawer-width);
-        } @else if $position == right {
-            $push-translation: translateX(-$drawer-width);
-        } @else if $position == top {
-            $push-translation: translateY($drawer-height);
-        } @else if $position == bottom {
-            $push-translation: translateY(-$drawer-height);
+    @include mq($mq) {
+        &, &#{$active-selector} {
+            // @include animation(#{$animation}-inactive);
+            position: absolute !important;
+            margin: 0;
+            width: $drawer-width !important;
+            height: $drawer-height !important;
         }
+        
+        &#{$active-selector} {
+            // @include animation(#{$animation}-active);
+            @if $push {
+                @if $position == left {
+                    $push-translation: translateX($drawer-width);
+                } @else if $position == right {
+                    $push-translation: translateX(-$drawer-width);
+                } @else if $position == top {
+                    $push-translation: translateY($drawer-height);
+                } @else if $position == bottom {
+                    $push-translation: translateY(-$drawer-height);
+                }
 
-        #{$active-selector} ~ * {
-            @include transform($push-translation);
+                ~ * {
+                    @include transform($push-translation);
+                }
+            }
         }
     }
 }

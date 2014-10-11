@@ -51,3 +51,25 @@
     height: $height #{$important};
     display: $display;
 }
+
+// EXPERIMENTAL
+@mixin shape-line($point1, $point2) {
+    $x1: nth($point1, 1);
+    $y1: nth($point1, 2);
+    $x2: nth($point2, 1);
+    $y2: nth($point2, 2);
+    $delta-x: ($x2 - $x1);
+    $delta-y: ($y2 - $y1);
+    $line-length: hypot($delta-x, $delta-y);
+    $theta: atan2($delta-x, $delta-y);
+
+    position: absolute;
+    display: block;
+    height: 1px;
+    width: #{$line-length}px;
+    background: green;
+    top: $x1;
+    left: $y1;
+
+    transform: rotate(#{$theta}rad);
+}
