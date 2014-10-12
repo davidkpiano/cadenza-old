@@ -2,6 +2,14 @@
 // Layers Components
 // =================
 
+%body {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+}
+
 %layer {
     @include position-absolute(0, 0);
     @include pie-clearfix;

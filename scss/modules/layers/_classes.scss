@@ -3,6 +3,8 @@
 // ==============
 
 // Layer Classes
+.body { @extend %body; }
+
 .layer { @extend %layer; }
 
 .overlay { @extend %overlay; }

@@ -10,18 +10,24 @@ nav {
 	&.light { @include style('nav', 'light'); }
 	&.dark { @include style('nav', 'dark'); }
 
+	&.full { @extend %nav-full; }
+
 	> h1, > h2, > h3, > h4, > h5, > h6, > hgroup {
 		@extend %nav-header;
 	}
 
-	> ul { @extend %nav-menu; }
+	ul { @extend %nav-menu; }
 
 	li {
 		@extend %nav-menu-item;
 
+		> * { @extend %nav-menu-item-content; }
+
 		a { @extend %nav-menu-item-link; }
 
 		> ul { @extend %nav-submenu; }
+
+		&.active > ul { @extend %nav-submenu-active; }
 
 		&.separator, &.hr { @extend %nav-separator; }
 

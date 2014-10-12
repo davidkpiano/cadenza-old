@@ -34,3 +34,23 @@
 @each $overlap in (left, right) {
     %overlap-#{$overlap} { @include overlap($overlap, false); }
 }
+
+%content-middle {
+    &:before {
+        content: '';
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        width: 1em;
+        margin-left: -1em;
+    }
+
+    > * {
+        @extend %inline-block;
+        vertical-align: middle;
+    }
+
+    > %display-table {
+        @extend %display-table-inline;
+    }
+}

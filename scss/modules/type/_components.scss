@@ -222,12 +222,19 @@
 
 // Parent Class
 %text-middle {
-	display: table;
+	&:before {
+        content: '';
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+        width: 1em;
+        margin-left: -1em;
+    }
 
-	> * {
-		display: table-cell;
-		vertical-align: middle;
-	}
+    > * {
+        @extend %inline-block;
+        vertical-align: middle;
+    }
 }
 
 %text-bottom {

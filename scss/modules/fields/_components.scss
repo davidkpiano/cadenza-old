@@ -15,7 +15,8 @@
     }
 
     &-horizontal {
-        display: table;
+        @extend %display-table;
+        
         width: 100%;
 
         &-children {

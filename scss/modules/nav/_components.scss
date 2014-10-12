@@ -3,24 +3,31 @@
 // =================
 
 %nav {
-	%nav-menu {
+	height: auto;
+
+	&-menu {
 		list-style: none;
 		margin-left: 0;
 		width: 100%;
 		padding: $nav-menu-padding;
 	}
 
-	%nav-menu-item {
+	&-menu-item {
 		@extend %nowrap;
 		display: block;
 		padding: $nav-menu-item-padding;
 	}
 
-	%nav-menu-item-active {
+	&-menu-item-active {
 		display: block; // TODO: remove
 	}
 
-	%nav-menu-item-link {
+	&-menu-item-content {
+		display: block;
+		padding: $nav-menu-item-content-padding;
+	}
+
+	&-menu-item-link {
 		@extend %valign-center-all;
 		display: block;
 		padding: $nav-menu-item-link-padding;
@@ -30,23 +37,36 @@
 		}
 	}
 
-	%nav-submenu {
+	&-submenu {
 		display: none;
+		margin: 0;
+
+		&-active { display: block; }
 	}
 
-	%nav-header {
+	&-header {
 		padding: $nav-header-padding;
 		margin: 0;
 	}
 	
-	%nav-separator {
+	&-separator {
 		border-bottom-width: $nav-separator-width;
 		border-bottom-style: solid;
 		margin: $nav-separator-margin;
 	}
+
+	&-full {
+		&, > * {
+			height: 100%;
+		}
+	}
 }
 
-
+%nav-full {
+	%nav-menu {
+		height: 100%;
+	}
+}
 
 %nav-horizontal {
 	@extend %clearfix;
@@ -74,14 +94,13 @@
 		}
 	}
 
+	&-full {
+		height: 100%;
+	}
 }
 
 %nav-horizontal-separator {
 	// TODO: implement
-}
-
-%nav-horizontal-full {
-	height: 100%;
 }
 
 // Dropdown Components

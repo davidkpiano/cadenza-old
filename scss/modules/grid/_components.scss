@@ -121,6 +121,7 @@
 
 				&, &:nth-child(n) {				
 					@extend %column-gutter-#{$i}#{$suffix};
+					margin-bottom: $grid-column-gutter;
 					height: auto;
 				}
 
@@ -189,6 +190,7 @@
 
 			%columns-#{$fraction}#{$suffix} > * {
 				@extend %column-#{$fraction}#{$suffix};
+				height: auto;
 
 				&:nth-child(n+1) {
 					clear: none;

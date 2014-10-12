@@ -28,3 +28,7 @@
 @each $overlap in (top, bottom, left, right) {
     .overlap-#{$overlap} { @include overlap($overlap, false); }
 }
+
+.content-middle {
+    @extend %content-middle;
+}

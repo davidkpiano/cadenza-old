@@ -2,6 +2,12 @@
 // Tables Components
 // =================
 
+%display-table {
+    display: table;
+
+    &-inline { display: inline-table; }
+}
+
 %table {
 	margin-bottom: $table-margin-bottom;
     text-align: $table-text-align;
