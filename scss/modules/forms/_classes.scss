@@ -20,6 +20,9 @@ input[type="color"] {
 	@extend %input;
     @include style('input');
 
+    &.lighten { @include style('input', 'lighten'); }
+    &.darken { @include style('input', 'darken'); }
+
 	&.small { @extend %input-small; }
 
 	&.large { @extend %input-large; }

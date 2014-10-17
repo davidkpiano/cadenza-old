@@ -50,3 +50,11 @@
         }
     }
 }
+
+@mixin parallax(
+    $distance,
+    $perspective: $parallax-perspective
+) {
+    transform: translateZ($perspective * $distance) scale(-$distance + 1);
+    z-index: $distance * 10;
+}

@@ -2507,48 +2507,48 @@
 }
 
 /* line 4, ../scss/modules/position/_components.scss */
-.position, [class*=" position-"], [class^="position-"], .layer, .page, .valign-bottom, .full, .dropdown-container > menu.below-left, .dropdown-container > menu.below-right, .dropdown-container > menu.above-left, .dropdown-container > menu.above-right, .dropdown-container > menu.top-left, .dropdown-container > menu.top-right, .dropdown-container > menu.bottom-left, .dropdown-container > menu.bottom-right, .dropdown-container > menu.bottom-push-right, .dropdown-container > menu.bottom-push-left, .dropdown-container > menu.top-push-right, .dropdown-container > menu.top-push-left, .badge.top-left, .badge.top-right, .badge.bottom-left, .badge.bottom-right, .tooltip-above-left:before, .tooltip-above-left:after, .tooltip-above-right:before, .tooltip-above-right:after, .tooltip-above-center:before, .tooltip-above-center:after, .tooltip-below-left:before, .tooltip-below-left:after, .tooltip-below-right:before, .tooltip-below-right:after, .tooltip-below-center:before, .tooltip-below-center:after, .tooltip-left:before, .tooltip-left:after, .tooltip-right:before, .tooltip-right:after, .alert .alert-exit, .modal {
+.position, [class*=" position-"], [class^="position-"], .layer, .page, .parallax-layer > span, .valign-bottom, .full, .dropdown-container > menu.below-left, .dropdown-container > menu.below-right, .dropdown-container > menu.above-left, .dropdown-container > menu.above-right, .dropdown-container > menu.top-left, .dropdown-container > menu.top-right, .dropdown-container > menu.bottom-left, .dropdown-container > menu.bottom-right, .dropdown-container > menu.bottom-push-right, .dropdown-container > menu.bottom-push-left, .dropdown-container > menu.top-push-right, .dropdown-container > menu.top-push-left, .badge.top-left, .badge.top-right, .badge.bottom-left, .badge.bottom-right, .tooltip-above-left:before, .tooltip-above-left:after, .tooltip-above-right:before, .tooltip-above-right:after, .tooltip-above-center:before, .tooltip-above-center:after, .tooltip-below-left:before, .tooltip-below-left:after, .tooltip-below-right:before, .tooltip-below-right:after, .tooltip-below-center:before, .tooltip-below-center:after, .tooltip-left:before, .tooltip-left:after, .tooltip-right:before, .tooltip-right:after, .alert .alert-exit, .modal {
   position: absolute !important;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-left-top {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-left-bottom {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-left-below {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-left-above {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-left-middle {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2559,17 +2559,17 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-left-aboveTop {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-left-midTop {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2580,41 +2580,41 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-left-belowTop {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-left-aboveMiddle {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 50%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-left-belowMiddle {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-left-aboveBottom {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-left-midBottom {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
@@ -2625,49 +2625,49 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-left-belowBottom {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-right-top {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-right-bottom {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-right-below {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-right-above {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-right-middle {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2678,17 +2678,17 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-right-aboveTop {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-right-midTop {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2699,41 +2699,41 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-right-belowTop {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-right-aboveMiddle {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 50%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-right-belowMiddle {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-right-aboveBottom {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-right-midBottom {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
@@ -2744,49 +2744,49 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-right-belowBottom {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-before-top {
   right: 100%;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-before-bottom {
   right: 100%;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-before-below {
   right: 100%;
-  left: inherit;
+  left: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-before-above {
   right: 100%;
-  left: inherit;
+  left: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-before-middle {
   right: 100%;
-  left: inherit;
+  left: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2797,17 +2797,17 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-before-aboveTop {
   right: 100%;
-  left: inherit;
+  left: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-before-midTop {
   right: 100%;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2818,41 +2818,41 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-before-belowTop {
   right: 100%;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-before-aboveMiddle {
   right: 100%;
-  left: inherit;
+  left: initial;
   bottom: 50%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-before-belowMiddle {
   right: 100%;
-  left: inherit;
+  left: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-before-aboveBottom {
   right: 100%;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-before-midBottom {
   right: 100%;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
@@ -2863,49 +2863,49 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-before-belowBottom {
   right: 100%;
-  left: inherit;
+  left: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-after-top {
   left: 100%;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-after-bottom {
   left: 100%;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-after-below {
   left: 100%;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-after-above {
   left: 100%;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-after-middle {
   left: 100%;
-  right: inherit;
+  right: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2916,17 +2916,17 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-after-aboveTop {
   left: 100%;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-after-midTop {
   left: 100%;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2937,41 +2937,41 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-after-belowTop {
   left: 100%;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-after-aboveMiddle {
   left: 100%;
-  right: inherit;
+  right: initial;
   bottom: 50%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-after-belowMiddle {
   left: 100%;
-  right: inherit;
+  right: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-after-aboveBottom {
   left: 100%;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-after-midBottom {
   left: 100%;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
@@ -2982,17 +2982,17 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-after-belowBottom {
   left: 100%;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-center-top {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3003,9 +3003,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-center-bottom {
   left: 50%;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3016,9 +3016,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-center-below {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3029,9 +3029,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-center-above {
   left: 50%;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3042,9 +3042,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-center-middle {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -3055,9 +3055,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-center-aboveTop {
   left: 50%;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3068,9 +3068,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-center-midTop {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -3081,9 +3081,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-center-belowTop {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3094,9 +3094,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-center-aboveMiddle {
   left: 50%;
-  right: inherit;
+  right: initial;
   bottom: 50%;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3107,9 +3107,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-center-belowMiddle {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3120,9 +3120,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-center-aboveBottom {
   left: 50%;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3133,9 +3133,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-center-midBottom {
   left: 50%;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(-50%) translateY(50%);
   -moz-transform: translateX(-50%) translateY(50%);
   -ms-transform: translateX(-50%) translateY(50%);
@@ -3146,9 +3146,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-center-belowBottom {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3159,41 +3159,41 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeLeft-top {
   right: 100%;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeLeft-bottom {
   right: 100%;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeLeft-below {
   right: 100%;
-  left: inherit;
+  left: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeLeft-above {
   right: 100%;
-  left: inherit;
+  left: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeLeft-middle {
   right: 100%;
-  left: inherit;
+  left: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -3204,17 +3204,17 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeLeft-aboveTop {
   right: 100%;
-  left: inherit;
+  left: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeLeft-midTop {
   right: 100%;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -3225,41 +3225,41 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeLeft-belowTop {
   right: 100%;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeLeft-aboveMiddle {
   right: 100%;
-  left: inherit;
+  left: initial;
   bottom: 50%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeLeft-belowMiddle {
   right: 100%;
-  left: inherit;
+  left: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeLeft-aboveBottom {
   right: 100%;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeLeft-midBottom {
   right: 100%;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
@@ -3270,17 +3270,17 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeLeft-belowBottom {
   right: 100%;
-  left: inherit;
+  left: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerLeft-top {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3291,9 +3291,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerLeft-bottom {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3304,9 +3304,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerLeft-below {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3317,9 +3317,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerLeft-above {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3330,9 +3330,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerLeft-middle {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -3343,9 +3343,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerLeft-aboveTop {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3356,9 +3356,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerLeft-midTop {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -3369,9 +3369,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerLeft-belowTop {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3382,9 +3382,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerLeft-aboveMiddle {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 50%;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3395,9 +3395,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerLeft-belowMiddle {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3408,9 +3408,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerLeft-aboveBottom {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3421,9 +3421,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerLeft-midBottom {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(-50%) translateY(50%);
   -moz-transform: translateX(-50%) translateY(50%);
   -ms-transform: translateX(-50%) translateY(50%);
@@ -3434,9 +3434,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerLeft-belowBottom {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -3447,41 +3447,41 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterLeft-top {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterLeft-bottom {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterLeft-below {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterLeft-above {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterLeft-middle {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -3492,17 +3492,17 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterLeft-aboveTop {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterLeft-midTop {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -3513,41 +3513,41 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterLeft-belowTop {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterLeft-aboveMiddle {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 50%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterLeft-belowMiddle {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterLeft-aboveBottom {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterLeft-midBottom {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
@@ -3558,49 +3558,49 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterLeft-belowBottom {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeRight-top {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeRight-bottom {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeRight-below {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeRight-above {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeRight-middle {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -3611,17 +3611,17 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeRight-aboveTop {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeRight-midTop {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -3632,41 +3632,41 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeRight-belowTop {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeRight-aboveMiddle {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 50%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeRight-belowMiddle {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeRight-aboveBottom {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeRight-midBottom {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
@@ -3677,17 +3677,17 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeRight-belowBottom {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerRight-top {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
   -ms-transform: translateX(50%);
@@ -3698,9 +3698,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerRight-bottom {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
   -ms-transform: translateX(50%);
@@ -3711,9 +3711,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerRight-below {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
   -ms-transform: translateX(50%);
@@ -3724,9 +3724,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerRight-above {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
   -ms-transform: translateX(50%);
@@ -3737,9 +3737,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerRight-middle {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(50%) translateY(-50%);
   -moz-transform: translateX(50%) translateY(-50%);
   -ms-transform: translateX(50%) translateY(-50%);
@@ -3750,9 +3750,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerRight-aboveTop {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
   -ms-transform: translateX(50%);
@@ -3763,9 +3763,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerRight-midTop {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(50%) translateY(-50%);
   -moz-transform: translateX(50%) translateY(-50%);
   -ms-transform: translateX(50%) translateY(-50%);
@@ -3776,9 +3776,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerRight-belowTop {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
   -ms-transform: translateX(50%);
@@ -3789,9 +3789,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerRight-aboveMiddle {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 50%;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
   -ms-transform: translateX(50%);
@@ -3802,9 +3802,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerRight-belowMiddle {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
   -ms-transform: translateX(50%);
@@ -3815,9 +3815,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerRight-aboveBottom {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
   -ms-transform: translateX(50%);
@@ -3828,9 +3828,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerRight-midBottom {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(50%) translateY(50%);
   -moz-transform: translateX(50%) translateY(50%);
   -ms-transform: translateX(50%) translateY(50%);
@@ -3841,9 +3841,9 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-centerRight-belowBottom {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
   -ms-transform: translateX(50%);
@@ -3854,41 +3854,41 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterRight-top {
   left: 100%;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterRight-bottom {
   left: 100%;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterRight-below {
   left: 100%;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterRight-above {
   left: 100%;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterRight-middle {
   left: 100%;
-  right: inherit;
+  right: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -3899,17 +3899,17 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterRight-aboveTop {
   left: 100%;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterRight-midTop {
   left: 100%;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -3920,41 +3920,41 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterRight-belowTop {
   left: 100%;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterRight-aboveMiddle {
   left: 100%;
-  right: inherit;
+  right: initial;
   bottom: 50%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterRight-belowMiddle {
   left: 100%;
-  right: inherit;
+  right: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterRight-aboveBottom {
   left: 100%;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterRight-midBottom {
   left: 100%;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
@@ -3965,49 +3965,49 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterRight-belowBottom {
   left: 100%;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeCenter-top {
   right: 50%;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeCenter-bottom {
   right: 50%;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeCenter-below {
   right: 50%;
-  left: inherit;
+  left: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeCenter-above {
   right: 50%;
-  left: inherit;
+  left: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeCenter-middle {
   right: 50%;
-  left: inherit;
+  left: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -4018,17 +4018,17 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeCenter-aboveTop {
   right: 50%;
-  left: inherit;
+  left: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeCenter-midTop {
   right: 50%;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -4039,41 +4039,41 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeCenter-belowTop {
   right: 50%;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeCenter-aboveMiddle {
   right: 50%;
-  left: inherit;
+  left: initial;
   bottom: 50%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeCenter-belowMiddle {
   right: 50%;
-  left: inherit;
+  left: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeCenter-aboveBottom {
   right: 50%;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeCenter-midBottom {
   right: 50%;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
@@ -4084,49 +4084,49 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-beforeCenter-belowBottom {
   right: 50%;
-  left: inherit;
+  left: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterCenter-top {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterCenter-bottom {
   left: 50%;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterCenter-below {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterCenter-above {
   left: 50%;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterCenter-middle {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -4137,17 +4137,17 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterCenter-aboveTop {
   left: 50%;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterCenter-midTop {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -4158,41 +4158,41 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterCenter-belowTop {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterCenter-aboveMiddle {
   left: 50%;
-  right: inherit;
+  right: initial;
   bottom: 50%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterCenter-belowMiddle {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterCenter-aboveBottom {
   left: 50%;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterCenter-midBottom {
   left: 50%;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
@@ -4203,39 +4203,39 @@
 /* line 8, ../scss/modules/position/_components.scss */
 .position-afterCenter-belowBottom {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 15, ../scss/modules/position/_components.scss */
 .position-top {
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 15, ../scss/modules/position/_components.scss */
 .position-bottom {
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 15, ../scss/modules/position/_components.scss */
 .position-below {
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 15, ../scss/modules/position/_components.scss */
 .position-above {
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 15, ../scss/modules/position/_components.scss */
 .position-middle {
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -4246,13 +4246,13 @@
 /* line 15, ../scss/modules/position/_components.scss */
 .position-aboveTop {
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 15, ../scss/modules/position/_components.scss */
 .position-midTop {
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -4263,31 +4263,31 @@
 /* line 15, ../scss/modules/position/_components.scss */
 .position-belowTop {
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 15, ../scss/modules/position/_components.scss */
 .position-aboveMiddle {
   bottom: 50%;
-  top: inherit;
+  top: initial;
 }
 
 /* line 15, ../scss/modules/position/_components.scss */
 .position-belowMiddle {
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 15, ../scss/modules/position/_components.scss */
 .position-aboveBottom {
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 
 /* line 15, ../scss/modules/position/_components.scss */
 .position-midBottom {
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateY(50%);
   -moz-transform: translateY(50%);
   -ms-transform: translateY(50%);
@@ -4298,37 +4298,37 @@
 /* line 15, ../scss/modules/position/_components.scss */
 .position-belowBottom {
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 19, ../scss/modules/position/_components.scss */
 .position-left {
   left: 0;
-  right: inherit;
+  right: initial;
 }
 
 /* line 19, ../scss/modules/position/_components.scss */
 .position-right {
   right: 0;
-  left: inherit;
+  left: initial;
 }
 
 /* line 19, ../scss/modules/position/_components.scss */
 .position-before {
   right: 100%;
-  left: inherit;
+  left: initial;
 }
 
 /* line 19, ../scss/modules/position/_components.scss */
 .position-after {
   left: 100%;
-  right: inherit;
+  right: initial;
 }
 
 /* line 19, ../scss/modules/position/_components.scss */
 .position-center {
   left: 50%;
-  right: inherit;
+  right: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -4339,13 +4339,13 @@
 /* line 19, ../scss/modules/position/_components.scss */
 .position-beforeLeft {
   right: 100%;
-  left: inherit;
+  left: initial;
 }
 
 /* line 19, ../scss/modules/position/_components.scss */
 .position-centerLeft {
   left: 0;
-  right: inherit;
+  right: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -4356,19 +4356,19 @@
 /* line 19, ../scss/modules/position/_components.scss */
 .position-afterLeft {
   left: 0;
-  right: inherit;
+  right: initial;
 }
 
 /* line 19, ../scss/modules/position/_components.scss */
 .position-beforeRight {
   right: 0;
-  left: inherit;
+  left: initial;
 }
 
 /* line 19, ../scss/modules/position/_components.scss */
 .position-centerRight {
   right: 0;
-  left: inherit;
+  left: initial;
   -webkit-transform: translateX(50%);
   -moz-transform: translateX(50%);
   -ms-transform: translateX(50%);
@@ -4379,55 +4379,55 @@
 /* line 19, ../scss/modules/position/_components.scss */
 .position-afterRight {
   left: 100%;
-  right: inherit;
+  right: initial;
 }
 
 /* line 19, ../scss/modules/position/_components.scss */
 .position-beforeCenter {
   right: 50%;
-  left: inherit;
+  left: initial;
 }
 
 /* line 19, ../scss/modules/position/_components.scss */
 .position-afterCenter {
   left: 50%;
-  right: inherit;
+  right: initial;
 }
 
 /* line 24, ../scss/modules/position/_components.scss */
 .overlap-top-left {
   position: relative;
   left: top;
-  right: inherit;
+  right: initial;
   top: left;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 24, ../scss/modules/position/_components.scss */
 .overlap-top-right {
   position: relative;
   left: top;
-  right: inherit;
+  right: initial;
   top: right;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 24, ../scss/modules/position/_components.scss */
 .overlap-bottom-left {
   position: relative;
   left: bottom;
-  right: inherit;
+  right: initial;
   top: left;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 24, ../scss/modules/position/_components.scss */
 .overlap-bottom-right {
   position: relative;
   left: bottom;
-  right: inherit;
+  right: initial;
   top: right;
-  bottom: inherit;
+  bottom: initial;
 }
 
 /* line 39, ../scss/modules/position/_components.scss */
@@ -4448,14 +4448,14 @@
 .overlap-top {
   position: relative;
   left: top;
-  right: inherit;
+  right: initial;
 }
 
 /* line 29, ../scss/modules/position/_classes.scss */
 .overlap-bottom {
   position: relative;
   left: bottom;
-  right: inherit;
+  right: initial;
 }
 
 /* line 29, ../scss/modules/position/_classes.scss */
@@ -11357,7 +11357,7 @@
 .layer {
   left: 0;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   *zoom: 1;
   height: 100%;
   max-height: 100%;
@@ -11404,7 +11404,7 @@
 .page {
   left: 0;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   *zoom: 1;
   min-height: 100%;
   min-width: 100%;
@@ -11672,6 +11672,52 @@
   content: "";
   display: table;
   clear: both;
+}
+
+/* line 144, ../scss/modules/layers/_components.scss */
+.parallax {
+  perspective: 100px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* line 150, ../scss/modules/layers/_components.scss */
+.parallax-page {
+  position: relative;
+  height: 100%;
+  transform-style: preserve-3d;
+}
+/* line 156, ../scss/modules/layers/_components.scss */
+.parallax-layer {
+  position: absolute;
+  transform: translateZ(0);
+  z-index: 4;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+/* line 162, ../scss/modules/layers/_components.scss */
+.parallax-layer > span {
+  left: 50%;
+  right: initial;
+  top: 50%;
+  bottom: initial;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+/* line 164, ../scss/modules/layers/_components.scss */
+.parallax-layer-front {
+  transform: translateZ(100px) scale(0);
+  z-index: 10;
+}
+/* line 168, ../scss/modules/layers/_components.scss */
+.parallax-layer-back {
+  transform: translateZ(-100px) scale(2);
+  z-index: -10;
 }
 
 /* Typography Resets */
@@ -12798,6 +12844,121 @@ input[type="color"]:focus {
   border-color: #2f7d8c;
   color: #363636;
 }
+/* line 77, ../scss/modules/forms/_themes.scss */
+textarea.lighten,
+input[type="text"].lighten,
+input[type="password"].lighten,
+input[type="datetime"].lighten,
+input[type="datetime-local"].lighten,
+input[type="date"].lighten,
+input[type="month"].lighten,
+input[type="time"].lighten,
+input[type="week"].lighten,
+input[type="number"].lighten,
+input[type="email"].lighten,
+input[type="url"].lighten,
+input[type="search"].lighten,
+input[type="tel"].lighten,
+input[type="color"].lighten {
+  border-color: rgba(255, 255, 255, 0.4);
+  color: #525252;
+}
+/* line 22, ../scss/modules/forms/_themes.scss */
+textarea.lighten:hover,
+input[type="text"].lighten:hover,
+input[type="password"].lighten:hover,
+input[type="datetime"].lighten:hover,
+input[type="datetime-local"].lighten:hover,
+input[type="date"].lighten:hover,
+input[type="month"].lighten:hover,
+input[type="time"].lighten:hover,
+input[type="week"].lighten:hover,
+input[type="number"].lighten:hover,
+input[type="email"].lighten:hover,
+input[type="url"].lighten:hover,
+input[type="search"].lighten:hover,
+input[type="tel"].lighten:hover,
+input[type="color"].lighten:hover {
+  border-color: rgba(230, 230, 230, 0.4);
+  color: #525252;
+}
+/* line 27, ../scss/modules/forms/_themes.scss */
+textarea.lighten:focus,
+input[type="text"].lighten:focus,
+input[type="password"].lighten:focus,
+input[type="datetime"].lighten:focus,
+input[type="datetime-local"].lighten:focus,
+input[type="date"].lighten:focus,
+input[type="month"].lighten:focus,
+input[type="time"].lighten:focus,
+input[type="week"].lighten:focus,
+input[type="number"].lighten:focus,
+input[type="email"].lighten:focus,
+input[type="url"].lighten:focus,
+input[type="search"].lighten:focus,
+input[type="tel"].lighten:focus,
+input[type="color"].lighten:focus {
+  border-color: #2f7d8c;
+  color: #363636;
+}
+/* line 78, ../scss/modules/forms/_themes.scss */
+textarea.darken,
+input[type="text"].darken,
+input[type="password"].darken,
+input[type="datetime"].darken,
+input[type="datetime-local"].darken,
+input[type="date"].darken,
+input[type="month"].darken,
+input[type="time"].darken,
+input[type="week"].darken,
+input[type="number"].darken,
+input[type="email"].darken,
+input[type="url"].darken,
+input[type="search"].darken,
+input[type="tel"].darken,
+input[type="color"].darken {
+  border-color: rgba(0, 0, 0, 0.4);
+  color: #525252;
+}
+/* line 22, ../scss/modules/forms/_themes.scss */
+textarea.darken:hover,
+input[type="text"].darken:hover,
+input[type="password"].darken:hover,
+input[type="datetime"].darken:hover,
+input[type="datetime-local"].darken:hover,
+input[type="date"].darken:hover,
+input[type="month"].darken:hover,
+input[type="time"].darken:hover,
+input[type="week"].darken:hover,
+input[type="number"].darken:hover,
+input[type="email"].darken:hover,
+input[type="url"].darken:hover,
+input[type="search"].darken:hover,
+input[type="tel"].darken:hover,
+input[type="color"].darken:hover {
+  border-color: rgba(0, 0, 0, 0.4);
+  color: #525252;
+}
+/* line 27, ../scss/modules/forms/_themes.scss */
+textarea.darken:focus,
+input[type="text"].darken:focus,
+input[type="password"].darken:focus,
+input[type="datetime"].darken:focus,
+input[type="datetime-local"].darken:focus,
+input[type="date"].darken:focus,
+input[type="month"].darken:focus,
+input[type="time"].darken:focus,
+input[type="week"].darken:focus,
+input[type="number"].darken:focus,
+input[type="email"].darken:focus,
+input[type="url"].darken:focus,
+input[type="search"].darken:focus,
+input[type="tel"].darken:focus,
+input[type="color"].darken:focus {
+  border-color: #2f7d8c;
+  color: #363636;
+}
+
 /* line 5, ../scss/modules/nav/_components.scss */
 nav {
   height: auto;
@@ -12926,86 +13087,86 @@ nav.horizontal.full {
 /* line 146, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.below-left {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 /* line 150, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.below-right {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 /* line 154, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.above-left {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 /* line 158, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.above-right {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 /* line 162, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.top-left {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 /* line 166, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.top-right {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
 }
 /* line 170, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.bottom-left {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 /* line 174, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.bottom-right {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
 }
 /* line 178, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.bottom-push-right {
   bottom: 0;
-  top: inherit;
+  top: initial;
   left: 100%;
-  right: inherit;
+  right: initial;
 }
 /* line 182, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.bottom-push-left {
   bottom: 0;
-  top: inherit;
+  top: initial;
   right: 100%;
-  left: inherit;
+  left: initial;
 }
 /* line 186, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.top-push-right {
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   left: 100%;
-  right: inherit;
+  right: initial;
 }
 /* line 190, ../scss/modules/nav/_components.scss */
 .dropdown-container > menu.top-push-left {
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   right: 100%;
-  left: inherit;
+  left: initial;
 }
 
 /* line 195, ../scss/modules/nav/_components.scss */
@@ -13540,9 +13701,9 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 .badge.top-left {
   margin: 0;
   left: 0;
-  right: inherit;
+  right: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
@@ -13553,9 +13714,9 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 .badge.top-right {
   margin: 0;
   right: 0;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(50%) translateY(-50%);
   -moz-transform: translateX(50%) translateY(-50%);
   -ms-transform: translateX(50%) translateY(-50%);
@@ -13566,9 +13727,9 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 .badge.bottom-left {
   margin: 0;
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(-50%) translateY(50%);
   -moz-transform: translateX(-50%) translateY(50%);
   -ms-transform: translateX(-50%) translateY(50%);
@@ -13579,9 +13740,9 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 .badge.bottom-right {
   margin: 0;
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 0;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(50%) translateY(50%);
   -moz-transform: translateX(50%) translateY(50%);
   -ms-transform: translateX(50%) translateY(50%);
@@ -13666,39 +13827,39 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 /* line 155, ../scss/modules/labels/_components.scss */
 .tooltip-above-left:before {
   left: 0;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 /* line 156, ../scss/modules/labels/_components.scss */
 .tooltip-above-left:after {
   top: -0.5rem;
-  bottom: inherit;
+  bottom: initial;
   left: 0.5rem;
-  right: inherit;
+  right: initial;
 }
 
 /* line 160, ../scss/modules/labels/_components.scss */
 .tooltip-above-right:before {
   right: 0;
-  left: inherit;
+  left: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
 }
 /* line 161, ../scss/modules/labels/_components.scss */
 .tooltip-above-right:after {
   top: -0.5rem;
-  bottom: inherit;
+  bottom: initial;
   right: 0.5rem;
-  left: inherit;
+  left: initial;
 }
 
 /* line 165, ../scss/modules/labels/_components.scss */
 .tooltip-above-center:before {
   left: 50%;
-  right: inherit;
+  right: initial;
   bottom: 100%;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -13708,9 +13869,9 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 /* line 166, ../scss/modules/labels/_components.scss */
 .tooltip-above-center:after {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: -0.5rem;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -13721,39 +13882,39 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 /* line 170, ../scss/modules/labels/_components.scss */
 .tooltip-below-left:before {
   left: 0;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 /* line 171, ../scss/modules/labels/_components.scss */
 .tooltip-below-left:after {
   bottom: -0.5rem;
-  top: inherit;
+  top: initial;
   left: 0.5rem;
-  right: inherit;
+  right: initial;
 }
 
 /* line 175, ../scss/modules/labels/_components.scss */
 .tooltip-below-right:before {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
 }
 /* line 176, ../scss/modules/labels/_components.scss */
 .tooltip-below-right:after {
   bottom: -0.5rem;
-  top: inherit;
+  top: initial;
   right: 0.5rem;
-  left: inherit;
+  left: initial;
 }
 
 /* line 180, ../scss/modules/labels/_components.scss */
 .tooltip-below-center:before {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: 100%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -13763,9 +13924,9 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 /* line 181, ../scss/modules/labels/_components.scss */
 .tooltip-below-center:after {
   left: 50%;
-  right: inherit;
+  right: initial;
   bottom: -0.5rem;
-  top: inherit;
+  top: initial;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
@@ -13776,9 +13937,9 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 /* line 185, ../scss/modules/labels/_components.scss */
 .tooltip-left:before {
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   right: 100%;
-  left: inherit;
+  left: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -13788,9 +13949,9 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 /* line 186, ../scss/modules/labels/_components.scss */
 .tooltip-left:after {
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   right: 100%;
-  left: inherit;
+  left: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -13801,9 +13962,9 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 /* line 190, ../scss/modules/labels/_components.scss */
 .tooltip-right:before {
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   left: 100%;
-  right: inherit;
+  right: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -13813,9 +13974,9 @@ button.link:focus, .button.link:focus, input[type=button].link:focus, input[type
 /* line 191, ../scss/modules/labels/_components.scss */
 .tooltip-right:after {
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   left: 100%;
-  right: inherit;
+  right: initial;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -14295,9 +14456,9 @@ table.hover tr:hover {
 /* line 68, ../scss/modules/panels/_components.scss */
 .alert .alert-exit {
   right: 0;
-  left: inherit;
+  left: initial;
   top: 0;
-  bottom: inherit;
+  bottom: initial;
   padding: 8px;
 }
 /* line 72, ../scss/modules/panels/_components.scss */
@@ -14347,9 +14508,9 @@ table.hover tr:hover {
 /* line 111, ../scss/modules/panels/_components.scss */
 .modal {
   left: 50%;
-  right: inherit;
+  right: initial;
   top: 50%;
-  bottom: inherit;
+  bottom: initial;
   -webkit-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);

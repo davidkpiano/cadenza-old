@@ -141,4 +141,47 @@
     }
 }
 
+%parallax {
+    perspective: $parallax-perspective;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+    &-page {
+        position: relative;
+        height: 100%;
+        transform-style: preserve-3d;
+    }
+
+    &-layer {
+        position: absolute;
+        transform: translateZ(0);
+        z-index: 4;
+        top: 0; bottom: 0; left: 0; right: 0;
+
+        > span { @include position-absolute(center, middle); }
+
+        &-front {
+            @include parallax(1);
+        }
+
+        &-back {
+            @include parallax(-1);
+        }
+    }
+}
+
+.parallax {
+    @extend %parallax;
+
+    &-page { @extend %parallax-page !optional; }
+
+    &-layer {
+        @extend %parallax-layer;
+
+        &-front { @extend %parallax-layer-front; }
+
+        &-back { @extend %parallax-layer-back; }
+    }
+}
 

@@ -6,6 +6,32 @@
     <link rel="stylesheet" href="../css/cadenza.css">
 
 </head>
+<style>
+/*    .parallax {
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        perspective: 300px;
+    }
+
+    .parallax-group {
+        position: relative;
+        height: 100%;
+        transform-style: preserve-3d;
+    }
+
+    .parallax-layer {
+        transform: translateZ(0);
+        z-index: 4;
+        position: absolute;
+        top: 0; bottom: 0; left: 0; right: 0;
+    }
+
+    .parallax-layer.back {
+        transform: translateZ(-300px) scale(2);
+        z-index: 3;
+    }*/
+</style>
 <body class="body">
     <main class="row-12">
         <section class="row-5" style="background: url('https://c2.staticflickr.com/8/7121/7441146606_209966a6f9_b.jpg'); background-size: cover;">        
@@ -192,6 +218,38 @@
                 </ul>
             </aside>
         </section>
+    </main>
+
+    <main class="row-12 parallax hidden">
+        <div class="parallax-page">
+            <div class="parallax-layer base">
+                <div class="position-center-middle">
+                    <h1>Howdy ho neighborino</h1>
+                </div>
+            </div>
+        </div>
+        <div class="parallax-page">
+            <div class="parallax-layer base">
+                <div class="position-center-middle">
+                    <h1>Howdy ho neighborino</h1>
+                </div>
+            </div>
+            <div class="parallax-layer parallax-layer-back">
+                <div class="position-center-middle">
+                    <h1>Howdy ho neighborino</h1>
+                </div>
+            </div>
+            <div class="parallax-layer parallax-layer-front">
+                <span>I'm fast!</span>
+            </div>
+        </div>
+        <div class="parallax-page">
+            <div class="parallax-layer base">
+                <div class="position-center-middle">
+                    <h1>Howdy ho neighborino</h1>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 <!-- DEPENDENCIES -->
