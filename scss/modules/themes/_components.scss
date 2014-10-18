@@ -16,28 +16,28 @@
     border-color: $border-color;
 }
 
-%borders-top > * {
+%border-top {
     border-top-width: $border-width;
     border-bottom-width: 0 !important;
     border-left-width: 0 !important;
     border-right-width: 0 !important;
 }
 
-%borders-bottom > * {
+%border-bottom {
     border-top-width: 0 !important;
     border-bottom-width: $border-width;
     border-left-width: 0 !important;
     border-right-width: 0 !important;
 }
 
-%borders-left > * {
+%border-left {
     border-top-width: 0 !important;
     border-bottom-width: 0 !important;
     border-left-width: $border-width;
     border-right-width: 0 !important;
 }
 
-%borders-right > * {
+%border-right {
     border-top-width: 0 !important;
     border-bottom-width: 0 !important;
     border-left-width: 0 !important;
@@ -45,27 +45,23 @@
 }
 
 %borders-inside-vertical {
-    @extend %borders-top;
-
-    > *:first-child { border-top-width: 0 !important; }
+    > *:not(:first-child) { @extend %border-top; }
 }
 
 %borders-outside-vertical {
-    @extend %borders-bottom;
+    > * { @extend %border-bottom; }
 
-    > *:first-child { border-top-width: $border-width; }
+    > *:first-child { @extend %border-top; }
 }
 
 %borders-inside-horizontal {
-    @extend %borders-left;
-
-    > *:first-child { border-left-width: 0 !important; }
+    > *:not(:first-child) { @extend %border-left; }
 }
 
 %borders-outside-horizontal {
-    @extend %borders-right;
+    > * { @extend %border-right; }
 
-    > *:first-child { border-left-width: $border-width; }
+    > *:first-child { @extend %border-left; }
 }
 
 @each $color-name, $color-value in $colors {

@@ -238,12 +238,20 @@
 }
 
 %text-bottom {
-    display: table;
-
-    > * {
-        display: table-cell;
+    &:before {
+        @extend %text-middle:before;
         vertical-align: bottom;
     }
+
+    > * {
+        @extend %inline-block;
+        vertical-align: bottom;
+    }
+}
+
+%text-midcenter {
+    @extend %text-middle;
+    @extend %text-center;
 }
 
 %nowrap {

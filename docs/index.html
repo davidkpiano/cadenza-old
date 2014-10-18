@@ -25,8 +25,10 @@
                 <li><a ui-sref="sandbox">Sandbox</a></li>
             </ul>
         </nav>
-        <label for="toggle_theme">Toggle Dark Theme</label>
-        <input type="checkbox" name="main.theme" id="toggle_theme" ng-model="main.theme">
+        <label for="toggle_theme" class="button small transparent light" ng-class="{active: main.theme}">
+        Toggle Dark Theme
+            <input type="checkbox" name="main.theme" id="toggle_theme" ng-model="main.theme" class="implicit">
+        </label>
     </aside>
     <section class="col-10 col-12-small content scroll activate-all-scaleUp bg-white transition">
         <div class="layer cols-gutter content hide">
@@ -43,7 +45,7 @@
             <div class="col-1 theme-light"></div>
             <div class="col-1 theme-light"></div>
         </div>
-        <div ui-view class="layer scroll-y content {{main.theme ? 'theme-dark' : ''}}">
+        <div ui-view class="layer scroll-y content {{main.theme ? 'bg-dark theme-light' : ''}}">
             
         </div>
     </section>

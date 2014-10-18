@@ -13,7 +13,28 @@ button, .button, input[type=button], input[type=submit] {
     &.secondary { @include style('button', 'secondary'); }
     &.light { @include style('button', 'light'); }
     &.dark { @include style('button', 'dark'); }
+    &.lighten { @include style('button', 'lighten'); }
+    &.darken { @include style('button', 'darken'); }
     &.link { @include style('button', 'link'); }
+
+    &.success { @include style('button', 'success'); }
+    &.warning { @include style('button', 'warning'); }
+    &.failure { @include style('button', 'failure'); }
+
+    &.transparent {
+        @include style('button', $theme: 'transparent');
+
+        &.primary { @include style('button', 'primary', $theme: 'transparent'); }
+        &.secondary { @include style('button', 'secondary', $theme: 'transparent'); }
+        &.light { @include style('button', 'light', $theme: 'transparent'); }
+        &.dark { @include style('button', 'dark', $theme: 'transparent'); }
+        &.lighten { @include style('button', 'lighten', $theme: 'transparent'); }
+        &.darken { @include style('button', 'darken', $theme: 'transparent'); }
+
+        &.success { @include style('button', 'success', $theme: 'transparent'); }
+        &.warning { @include style('button', 'warning', $theme: 'transparent'); }
+        &.failure { @include style('button', 'failure', $theme: 'transparent'); }
+    }
 
     // Sized Button Classes
     &.tiny { @extend %button-tiny; }   

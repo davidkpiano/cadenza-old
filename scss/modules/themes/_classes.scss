@@ -22,10 +22,10 @@
     @extend %border;
 }
 
-.borders-top { @extend %borders-top; }
-.borders-bottom { @extend %borders-bottom; }
-.borders-left { @extend %borders-left; }
-.borders-right { @extend %borders-right; }
+.border-top, .borders-top > * { @extend %border-top; }
+.border-bottom, .borders-bottom > * { @extend %border-bottom; }
+.border-left, .borders-left > * { @extend %border-left; }
+.border-right, .borders-right > * { @extend %border-right; }
 
 .borders-inside-vertical { @extend %borders-inside-vertical; }
 .borders-outside-vertical { @extend %borders-outside-vertical; }

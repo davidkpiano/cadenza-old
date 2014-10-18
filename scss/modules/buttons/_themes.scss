@@ -6,9 +6,9 @@
 @mixin theme-button-default(
 	$bgcolor: $button-bgcolor,
 	$color: $button-color,
+	$border-color: delta-darken($bgcolor),
 	$bgcolor-hover: delta-lighten($bgcolor),
 	$color-hover: $color,
-	$border-color: delta-darken($bgcolor),
 	$border-color-hover: delta-darken($bgcolor-hover)
 ) {
 	@if $border-color { border-color: $border-color; }
@@ -38,10 +38,24 @@
 		outline: 1px solid white;
 		outline-offset: -2px;
 	}
+}
 
-	&:active {
-		// TODO
-	}
+@mixin theme-button-transparent(
+	$border-color: $button-bgcolor,
+	$color: $border-color,
+	$bgcolor: rgba($border-color, 0),
+	$border-color-hover: $border-color,
+	$color-hover: $button-color-dark,
+	$bgcolor-hover: $border-color
+) {
+	@include theme-button-default(
+		$bgcolor,
+		$color,
+		$border-color,
+		$bgcolor-hover,
+		$color-hover,
+		$border-color-hover
+	);
 }
 
 %theme-button-default {
@@ -53,35 +67,30 @@
 	&-light { @include theme-button-default($button-bgcolor-light, $button-color-light); }
 	&-dark { @include theme-button-default($button-bgcolor-dark, $button-color-dark); }
 
+	&-success { @include theme-button-default($color-success); }
+	&-warning { @include theme-button-default($color-warning); }
+	&-failure { @include theme-button-default($color-failure); }
+
+	&-lighten { @include theme-button-default($color-lighten); }
+	&-darken { @include theme-button-default($color-darken); }
+
 	&-link { @include theme-button-default(false, false); }
 }
 
-// Transparent Button Style and Theme
-
-@mixin theme-button-transparent($color: $color-primary, $color-text: $color) {
-	background-color: transparent;
-	border-color: $color;
-
-	@if $color-text != auto {
-		color: $color-text;
-	}
-
-	&:hover, &:active {
-		background-color: $color;
-		border-color: $color;
-
-		@if $color-text != auto {
-			color: foregroundColor($color);
-		}
-	}
-}
-
 %theme-button-transparent {
+	@include transition((border-color, background-color, color));
 	@include theme-button-transparent();
 
 	&-primary { @include theme-button-transparent($color-primary); }
 	&-secondary { @include theme-button-transparent($color-secondary); }
-	&-light { @include theme-button-transparent($color-light); }
-	&-dark { @include theme-button-transparent($color-dark); }
+	&-light { @include theme-button-transparent($color-light, $color-hover: $button-color-light); }
+	&-dark { @include theme-button-transparent($color-dark, $color-hover: $button-color-dark); }
+
+	&-success { @include theme-button-transparent($color-success); }
+	&-warning { @include theme-button-transparent($color-warning); }
+	&-failure { @include theme-button-transparent($color-failure); }
+
+	&-lighten { @include theme-button-transparent($color-lighten, $border-color-hover: rgba($color-lighten, 0)); }
+	&-darken { @include theme-button-transparent($color-darken, $border-color-hover: rgba($color-darken, 0)); }
 }
 

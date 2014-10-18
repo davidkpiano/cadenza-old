@@ -37,6 +37,10 @@ textarea.inline {
 input.implicit,
 textarea.implicit {
     @extend %input-implicit;
+
+    &[type="radio"] { @extend %radio-implicit; }
+
+    &[type="checkbox"] { @extend %checkbox-implicit; }
 }
 
 textarea { @extend %textarea; }

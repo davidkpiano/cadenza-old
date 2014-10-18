@@ -73,6 +73,14 @@
 	margin-right: $form-checkbox-margin-right;
 }
 
+%radio, %checkbox {
+	&-implicit {
+		%form-label & {
+			display: none;
+		}
+	}
+}
+
 // Form Labels
 // -----------
 %form-label {
