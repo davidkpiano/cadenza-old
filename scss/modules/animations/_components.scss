@@ -391,11 +391,20 @@
 }
 
 %transition-lighten {
-    @include movement(opacity) {
+    @include movement() {
         opacity: 1 - $transition-delta-opacity;
     }
 }
 %hover-lighten { @include hover-movement(lighten); }
+
+%transition-fromLight {
+    opacity: 1 - $transition-delta-opacity;
+
+    @include movement() {
+        opacity: 1;
+    }
+}
+%hover-fromLight { @include hover-movement(fromLight); }
 
 %transition-scaleUp {
     @include movement(transform) {

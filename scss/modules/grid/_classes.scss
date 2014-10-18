@@ -141,7 +141,13 @@
 		}
 
 		.rows-#{$i}#{$suffix} {
-			@extend %rows-#{$i}#{$suffix};
+			> * {
+				@extend %rows-#{$i}#{$suffix};
+			}
+
+			&.gutter {
+				@extend %rows-gutter-#{$i}#{$suffix};
+			}
 		}
 
 		// .row-offset-#{$i}#{$suffix} {
@@ -158,6 +164,14 @@
 		
 		.row-pull-#{$i}#{$suffix} {
 			@extend %row-pull-#{$i}#{$suffix};
+		}
+
+		.rows-gutter {
+			@extend %rows-gutter#{$suffix};
+
+			> .row-#{$i}#{$suffix} {
+				@extend %row-gutter-#{$i}#{$suffix};
+			}
 		}
 	}
 

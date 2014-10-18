@@ -1,349 +1,349 @@
 
-@mixin background(
-    $color, 
-    $threshold: $theme-lightness-threshold,
-    $color-dark: $color-dark,
-    $color-light: $color-light
-) 
-{
-    $_color-foreground: $color-dark;
-    $_color-header: $type-header-color;
-    $_color-anchor: $anchor-color;
-    $_color-anchor-hover: $anchor-color-hover;
+// @mixin background(
+//     $color, 
+//     $threshold: $theme-lightness-threshold,
+//     $color-dark: $color-dark,
+//     $color-light: $color-light
+// ) 
+// {
+//     $_color-foreground: $color-dark;
+//     $_color-header: $type-header-color;
+//     $_color-anchor: $anchor-color;
+//     $_color-anchor-hover: $anchor-color-hover;
 
-    @if lightness($color) < $threshold {
-        $_color-foreground: $color-light;
-        $_color-anchor: $anchor-color-light;
-        $_color-anchor-hover: $anchor-color-light-hover;
-        $_color-header: $type-header-color-light;
-    }
+//     @if lightness($color) < $threshold {
+//         $_color-foreground: $color-light;
+//         $_color-anchor: $anchor-color-light;
+//         $_color-anchor-hover: $anchor-color-light-hover;
+//         $_color-header: $type-header-color-light;
+//     }
 
-    a {
-        color: $_color-anchor;
-        &:hover { color: $_color-anchor-hover; }
-    }
+//     a {
+//         color: $_color-anchor;
+//         &:hover { color: $_color-anchor-hover; }
+//     }
 
-    h1, h2, h3, h4, h5, h6 {
-        color: $_color-header;
-    }
+//     h1, h2, h3, h4, h5, h6 {
+//         color: $_color-header;
+//     }
 
-    background-color: $color;
-    color: $_color-foreground;
-}
+//     background-color: $color;
+//     color: $_color-foreground;
+// }
 
-%theme-primary { @include background($color-primary); }
-%theme-secondary { @include background($color-secondary); }
-%theme-light { @include background($color-light); }
-%theme-dark { @include background($color-dark); }
+// %theme-primary { @include background($color-primary); }
+// %theme-secondary { @include background($color-secondary); }
+// %theme-light { @include background($color-light); }
+// %theme-dark { @include background($color-dark); }
 
-.theme-primary { @extend %theme-primary; }
-.theme-secondary { @extend %theme-secondary; }
-.theme-light { @extend %theme-light; }
-.theme-dark { @extend %theme-dark; }
+// .theme-primary { @extend %theme-primary; }
+// .theme-secondary { @extend %theme-secondary; }
+// .theme-light { @extend %theme-light; }
+// .theme-dark { @extend %theme-dark; }
 
-%color-primary { color: $color-primary; }
-%color-secondary { color: $color-secondary; }
-%color-light { color: $color-light; }
-%color-gray { color: $color-gray; }
-%color-dark { color: $color-dark; }
+// %color-primary { color: $color-primary; }
+// %color-secondary { color: $color-secondary; }
+// %color-light { color: $color-light; }
+// %color-gray { color: $color-gray; }
+// %color-dark { color: $color-dark; }
 
-.color-primary { @extend %color-primary; }
-.color-secondary { @extend %color-secondary; }
-.color-light { @extend %color-light; }
-.color-gray { @extend %color-gray; }
-.color-dark { @extend %color-dark; }
+// .color-primary { @extend %color-primary; }
+// .color-secondary { @extend %color-secondary; }
+// .color-light { @extend %color-light; }
+// .color-gray { @extend %color-gray; }
+// .color-dark { @extend %color-dark; }
 
-%border {
-    border-style: solid;
-    border-width: $form-border-width;
-    border-color: $color-gray;
-}
+// %border {
+//     border-style: solid;
+//     border-width: $form-border-width;
+//     border-color: $color-gray;
+// }
 
-%border-primary { @extend %border; border-color: $color-primary; }
-%border-secondary { @extend %border; border-color: $color-secondary; }
-%border-light { @extend %border; border-color: $color-light; }
-%border-dark { @extend %border; border-color: $color-dark; }
+// %border-primary { @extend %border; border-color: $color-primary; }
+// %border-secondary { @extend %border; border-color: $color-secondary; }
+// %border-light { @extend %border; border-color: $color-light; }
+// %border-dark { @extend %border; border-color: $color-dark; }
 
-.border { @extend %border; }
-.border-primary { @extend %border-primary; }
-.border-secondary { @extend %border-secondary; }
-.border-light { @extend %border-light; }
-.border-dark { @extend %border-dark; }
+// .border { @extend %border; }
+// .border-primary { @extend %border-primary; }
+// .border-secondary { @extend %border-secondary; }
+// .border-light { @extend %border-light; }
+// .border-dark { @extend %border-dark; }
 
-@mixin button-colors(
-    $color: $color-primary,
-    $color-text: auto,
-    $color-background: $color,
-    $color-border: $color,
-    $color-icon: $color-text,
-    $color-outline: blue
-) {
-    background-color: $color-background;
-    border-color: $color-border;
+// @mixin button-colors(
+//     $color: $color-primary,
+//     $color-text: auto,
+//     $color-background: $color,
+//     $color-border: $color,
+//     $color-icon: $color-text,
+//     $color-outline: blue
+// ) {
+//     background-color: $color-background;
+//     border-color: $color-border;
 
-    @if $color-text == auto {
-        color: foregroundColor($color-background, $color-default: white);
-    } @else {
-        color: $color-text;
-    }
-}
+//     @if $color-text == auto {
+//         color: foregroundColor($color-background, $color-default: white);
+//     } @else {
+//         color: $color-text;
+//     }
+// }
 
-@mixin alert-colors(
-    $color: $color-primary,
-    $color-text: $color-light,
-    $color-anchor: mix($color, $color-light, 50%),
-    $color-anchor-hover: darken($color-anchor, 10%),
-    $color-border: darken($color, 10%)
-) {
-    background-color: $color;
-    color: $color-text;
-    border-color: $color-border;
+// @mixin alert-colors(
+//     $color: $color-primary,
+//     $color-text: $color-light,
+//     $color-anchor: mix($color, $color-light, 50%),
+//     $color-anchor-hover: darken($color-anchor, 10%),
+//     $color-border: darken($color, 10%)
+// ) {
+//     background-color: $color;
+//     color: $color-text;
+//     border-color: $color-border;
 
-    a {
-        color: $color-anchor;
-        &:hover { color: $color-anchor-hover; }
-    }
-}
+//     a {
+//         color: $color-anchor;
+//         &:hover { color: $color-anchor-hover; }
+//     }
+// }
 
-@mixin panel-colors(
-    $color: white,
-    $color-header: darken($color, 5%),
-    $color-footer: $color-header,
-    $color-text: $color-dark,
-    $color-anchor: $anchor-color,
-    $color-anchor-hover: $anchor-color-hover,
-    $color-border: $color-gray
-) {
-    background-color: $color;
-    color: $color-text;
-    border-color: $color-border;
+// @mixin panel-colors(
+//     $color: white,
+//     $color-header: darken($color, 5%),
+//     $color-footer: $color-header,
+//     $color-text: $color-dark,
+//     $color-anchor: $anchor-color,
+//     $color-anchor-hover: $anchor-color-hover,
+//     $color-border: $color-gray
+// ) {
+//     background-color: $color;
+//     color: $color-text;
+//     border-color: $color-border;
 
-    a {
-        color: $color-anchor;
-        &:hover { color: $color-anchor-hover; }
-    }
+//     a {
+//         color: $color-anchor;
+//         &:hover { color: $color-anchor-hover; }
+//     }
 
-    > header, > hgroup {
-        background-color: $color-header;
-        border-color: $color-border;
-    }
+//     > header, > hgroup {
+//         background-color: $color-header;
+//         border-color: $color-border;
+//     }
 
-    > footer {
-        background-color: $color-footer;
-        border-color: $color-border;
-    }
-}
+//     > footer {
+//         background-color: $color-footer;
+//         border-color: $color-border;
+//     }
+// }
 
-@mixin nav-colors(
-    $color: $color-primary,
-    $color-text: auto,
-    $color-text-hover: auto,
-    $color-text-active: $color,
-    $color-menu: transparent,
-    $color-item: transparent,
-    $color-item-hover: $color,
-    $color-item-active: transparent,
-    $color-border: $color,
-    $color-icon: $color-text,
-    $color-header: $color-text
-) {
-    ul {
-        background-color: $color-menu;
-    }
+// @mixin nav-colors(
+//     $color: $color-primary,
+//     $color-text: auto,
+//     $color-text-hover: auto,
+//     $color-text-active: $color,
+//     $color-menu: transparent,
+//     $color-item: transparent,
+//     $color-item-hover: $color,
+//     $color-item-active: transparent,
+//     $color-border: $color,
+//     $color-icon: $color-text,
+//     $color-header: $color-text
+// ) {
+//     ul {
+//         background-color: $color-menu;
+//     }
 
-    li {
-        background-color: $color-item;
-        @if $color-text == auto {
-            &, > a { color: foregroundColor($color-item); }
-        } @else {
-            &, > a { color: $color-text; }
-        }
+//     li {
+//         background-color: $color-item;
+//         @if $color-text == auto {
+//             &, > a { color: foregroundColor($color-item); }
+//         } @else {
+//             &, > a { color: $color-text; }
+//         }
 
-        &:hover {
-            background-color: $color-item-hover;
+//         &:hover {
+//             background-color: $color-item-hover;
 
-            @if $color-text-hover == auto {
-                &, > a { color: foregroundColor($color-item-hover); }
-            } @else {
-                &, > a { color: $color-text-hover; }
-            }
-        }
+//             @if $color-text-hover == auto {
+//                 &, > a { color: foregroundColor($color-item-hover); }
+//             } @else {
+//                 &, > a { color: $color-text-hover; }
+//             }
+//         }
 
-        &.active {
-            background-color: $color-item-active;
+//         &.active {
+//             background-color: $color-item-active;
 
-            @if $color-text-active == auto {
-                &, > a { color: foregroundColor($color-item-active); }
-            } @else {
-                &, > a { color: $color-text-active; }
-            }
-        }
-    }
+//             @if $color-text-active == auto {
+//                 &, > a { color: foregroundColor($color-item-active); }
+//             } @else {
+//                 &, > a { color: $color-text-active; }
+//             }
+//         }
+//     }
 
-    #{$type-header-selector} {
-        color: $color-header;
-    }
-}
+//     #{$type-header-selector} {
+//         color: $color-header;
+//     }
+// }
 
-@mixin dropdown-colors(
-    $color: $color-light,
-    $color-text: $color-dark,
-    $color-anchor: $color-text,
-    $color-anchor-hover: $color-text,
-    $color-menu: $color,
-    $color-item: transparent,
-    $color-item-hover: $color-gray,
-    $color-border: $color-gray,
-    $color-icon: $color-text,
-    $color-header: $color-text
-) {
-    background-color: $color-menu;
-    border-color: $color-border;
+// @mixin dropdown-colors(
+//     $color: $color-light,
+//     $color-text: $color-dark,
+//     $color-anchor: $color-text,
+//     $color-anchor-hover: $color-text,
+//     $color-menu: $color,
+//     $color-item: transparent,
+//     $color-item-hover: $color-gray,
+//     $color-border: $color-gray,
+//     $color-icon: $color-text,
+//     $color-header: $color-text
+// ) {
+//     background-color: $color-menu;
+//     border-color: $color-border;
 
-    > li {
-        background-color: $color-item;
-        @if $color-text == auto {
-            $color-text: foregroundColor($color);
+//     > li {
+//         background-color: $color-item;
+//         @if $color-text == auto {
+//             $color-text: foregroundColor($color);
 
-            @if $color-anchor == auto {
-                $color-anchor: $color-text;
-            }
-        }
+//             @if $color-anchor == auto {
+//                 $color-anchor: $color-text;
+//             }
+//         }
 
-        color: $color-text;
+//         color: $color-text;
 
-        > a {
-            color: $color-anchor;
+//         > a {
+//             color: $color-anchor;
 
-            &:hover {
-                color: $color-anchor-hover;
-            }
-        }
+//             &:hover {
+//                 color: $color-anchor-hover;
+//             }
+//         }
 
-        &:hover {
-            background-color: $color-item-hover;
-        }
-    }
+//         &:hover {
+//             background-color: $color-item-hover;
+//         }
+//     }
 
-    #{$type-header-selector} {
-        color: $color-header;
-    }
-}
+//     #{$type-header-selector} {
+//         color: $color-header;
+//     }
+// }
 
-@mixin table-colors(
-    $color: $color-primary,
-    $color-border: $table-border-color,
-    $color-tbody: transparent,
-    $color-tbody-text: $type-base-color,
-    $color-thead: $color,
-    $color-thead-text: auto,
-    $color-tfoot: $color-tbody,
-    $color-tfoot-text: $color-tbody-text,
-    $color-row-even: transparent,
-    $color-row-odd: $color-light
-) {
-    color: $color-tbody-text;
+// @mixin table-colors(
+//     $color: $color-primary,
+//     $color-border: $table-border-color,
+//     $color-tbody: transparent,
+//     $color-tbody-text: $type-base-color,
+//     $color-thead: $color,
+//     $color-thead-text: auto,
+//     $color-tfoot: $color-tbody,
+//     $color-tfoot-text: $color-tbody-text,
+//     $color-row-even: transparent,
+//     $color-row-odd: $color-light
+// ) {
+//     color: $color-tbody-text;
 
-    thead {
-        background-color: $color-thead;
+//     thead {
+//         background-color: $color-thead;
 
-        @if $color-thead-text == auto {
-            color: foregroundColor($color-thead);
-        } @else {
-            color: $color-thead-text;
-        }
-    }
+//         @if $color-thead-text == auto {
+//             color: foregroundColor($color-thead);
+//         } @else {
+//             color: $color-thead-text;
+//         }
+//     }
 
-    tfoot {
-        background-color: $color-tfoot;
+//     tfoot {
+//         background-color: $color-tfoot;
 
-        @if $color-tfoot-text == auto {
-            color: foregroundColor($color-tfoot);
-        } @else {
-            color: $color-tfoot-text;
-        }
-    }
+//         @if $color-tfoot-text == auto {
+//             color: foregroundColor($color-tfoot);
+//         } @else {
+//             color: $color-tfoot-text;
+//         }
+//     }
 
-    tbody {
-        background-color: $color-tbody;
+//     tbody {
+//         background-color: $color-tbody;
 
-        @if $color-tbody-text == auto {
-            color: foregroundColor($color-tbody);
-        } @else {
-            color: $color-tbody-text;
-        }
-    }
+//         @if $color-tbody-text == auto {
+//             color: foregroundColor($color-tbody);
+//         } @else {
+//             color: $color-tbody-text;
+//         }
+//     }
 
-    &, thead, tr, th, td {
-        border-color: $color-border;
-    }
+//     &, thead, tr, th, td {
+//         border-color: $color-border;
+//     }
 
-    &.zebra, &.striped {
+//     &.zebra, &.striped {
 
-        tr:nth-child(even) {
-            background-color: $color-row-even;
-        }
+//         tr:nth-child(even) {
+//             background-color: $color-row-even;
+//         }
 
-        tr:nth-child(odd) {
-            background-color: $color-row-odd;
-        }
+//         tr:nth-child(odd) {
+//             background-color: $color-row-odd;
+//         }
 
-        tr:only-child {
-            background-color: transparent;
-        }
-    }
-}
+//         tr:only-child {
+//             background-color: transparent;
+//         }
+//     }
+// }
 
-@mixin tabs-colors(
-    $color: transparent,
-    $color-border: $tabs-border-color,
-    $color-border-inactive: transparent,
-    $color-border-hover: $color-border,
-    $color-border-active: $color-border,
-    $color-menu: $color-light,
-    $color-tab-inactive: transparent,
-    $color-tab-inactive-text: $anchor-color,
-    $color-tab-hover: $color-gray,
-    $color-tab-hover-text: $anchor-color-hover,
-    $color-tab-active: $tabs-active-bgcolor,
-    $color-tab-active-text: $type-base-color
-) {
-    background-color: $color-menu;
+// @mixin tabs-colors(
+//     $color: transparent,
+//     $color-border: $tabs-border-color,
+//     $color-border-inactive: transparent,
+//     $color-border-hover: $color-border,
+//     $color-border-active: $color-border,
+//     $color-menu: $color-light,
+//     $color-tab-inactive: transparent,
+//     $color-tab-inactive-text: $anchor-color,
+//     $color-tab-hover: $color-gray,
+//     $color-tab-hover-text: $anchor-color-hover,
+//     $color-tab-active: $tabs-active-bgcolor,
+//     $color-tab-active-text: $type-base-color
+// ) {
+//     background-color: $color-menu;
 
-    ul {
-        border-color: $color-border;
+//     ul {
+//         border-color: $color-border;
 
-        li {
-            border-color: $color-border-inactive;
-            background-color: $color-tab-inactive;
+//         li {
+//             border-color: $color-border-inactive;
+//             background-color: $color-tab-inactive;
 
-            &, & > a {
-                color: $color-tab-inactive-text;
-            }
+//             &, & > a {
+//                 color: $color-tab-inactive-text;
+//             }
 
-            &:hover > a, a:hover {
-                color: $color-tab-hover-text;
-            }
+//             &:hover > a, a:hover {
+//                 color: $color-tab-hover-text;
+//             }
 
-            &:hover {
-                border-color: $color-border-hover;
-                background-color: $color-tab-hover;
-            }
+//             &:hover {
+//                 border-color: $color-border-hover;
+//                 background-color: $color-tab-hover;
+//             }
 
-            &.active {
-                border-color: $color-border-active;
-                border-bottom-color: transparent;
-                background-color: $color-tab-active;
+//             &.active {
+//                 border-color: $color-border-active;
+//                 border-bottom-color: transparent;
+//                 background-color: $color-tab-active;
 
-                &, & > a, & > a:hover {
-                    color: $color-tab-active-text;
-                }
-            }
-        }
-    }
+//                 &, & > a, & > a:hover {
+//                     color: $color-tab-active-text;
+//                 }
+//             }
+//         }
+//     }
 
-    + .tabs-content {
-        border-color: $color-border;
-        background-color: $color-tab-active;
-    }
-}
+//     + .tabs-content {
+//         border-color: $color-border;
+//         background-color: $color-tab-active;
+//     }
+// }

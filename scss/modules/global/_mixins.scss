@@ -101,8 +101,8 @@
     }
 }
 
-@function row-height($rows) {
+@function row-height($rows...) {
     // This is (currently) the same result as column-width
-    @return column-width($rows);
+    @return column-width($rows...);
 }
 

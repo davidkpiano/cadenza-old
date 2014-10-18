@@ -32,8 +32,8 @@
 .borders-inside-horizontal { @extend %borders-inside-horizontal; }
 .borders-outside-horizontal { @extend %borders-outside-horizontal; }
 
-// Themes
-.theme-light, .hover-theme-light:hover {
+// Modes
+.mode-light, .hover-mode-light:hover {
     %text { @extend %theme-text-default-light; }
     %subtext { @extend %theme-subtext-default-light; }
     %heading { @extend %theme-heading-default-light; }
@@ -41,7 +41,7 @@
     %anchor { @extend %theme-anchor-default-light; }
 }
 
-.theme-dark, .hover-theme-dark:hover {
+.mode-dark, .hover-mode-dark:hover {
     %text { @extend %theme-text-default-dark; }
     %subtext { @extend %theme-subtext-default-dark; }
     %heading { @extend %theme-heading-default-dark; }

@@ -115,10 +115,15 @@
 	$rows,
 	$media: false,
 	$offset: false,
-	$position: false
+	$position: false,
+	$gutter: false
 ) {
 	@include mq($media) {
-		height: row-height($rows) !important;
+		height: row-height($rows, $gutter: $gutter) !important;
+
+		@if $gutter {
+			margin-bottom: $gutter;
+		}
 	}
 }
 

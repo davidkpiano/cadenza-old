@@ -53,7 +53,7 @@
 
 	@if is-dark($color) {
 		@extend %color-light;
-		@extend .theme-light;
+		@extend .mode-light;
 	}
 }
 

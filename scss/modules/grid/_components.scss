@@ -311,6 +311,22 @@
 			%rows-pull-#{$i}#{$suffix} > * {
 				@extend %row-pull-#{$i}#{$suffix};
 			}
+
+			%row-gutter-#{$i}#{$suffix} {
+				@include row($i, $gutter: $grid-row-gutter);
+			}
+
+			%rows-gutter#{$suffix} > * {
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+
+			%rows-gutter-#{$i}#{$suffix} > * {
+				&, &:nth-child(n) {
+					@extend %row-gutter-#{$i}#{$suffix};
+				}
+			}
 		}
 
 		// TODO: use maps
