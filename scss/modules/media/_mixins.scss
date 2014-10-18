@@ -25,6 +25,12 @@
     }
 }
 
+@mixin mq-width($width) {
+    @media only screen and (max-width: #{$width}) {
+        @content;
+    }
+}
+
 @mixin fixed-width(
     $default: 100%,
     $small: false,

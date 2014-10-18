@@ -22,7 +22,7 @@
     $fill-mode: default,
     $is-3d: false
 ) {
-    // @extend %animation;
+    @extend %animation;
 
     @if $is-3d {
         @extend %animation-3d;

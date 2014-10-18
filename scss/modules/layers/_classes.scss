@@ -13,7 +13,16 @@
 
 .container { @extend %container; }
 
-.layer, .overlay, .page, .container {
+#{prefixed-class('pad-container')} {
+    @extend %pad-container;
+}
+
+// .pad-container {
+//     &-left { @extend %pad-container-left; }
+//     &-right { @extend %pad-container-right; }
+// }
+
+.layer, .overlay, .page, .container, .pad-container {
     &.transparent { @extend %transparent; }
 }
 

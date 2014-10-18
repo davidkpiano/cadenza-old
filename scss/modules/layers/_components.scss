@@ -146,16 +146,16 @@
     width: 100%;
     max-width: 100%;
 
-    // Will not work in Chrome (yet):
+    // Chrome issue (still works):
     // https://code.google.com/p/chromium/issues/detail?id=423456
-    &, &-horizontal, &-left, &-right {
-        padding-top: inherit;
-        padding-bottom: inherit;
-    }
+    padding-left: calc((100% - #{$container-max-width}) / 2);
+    padding-right: calc((100% - #{$container-max-width}) / 2);
 
-    &, &-horizontal {
-        padding-left: calc((100% - #{$container-max-width}) / 2);
-        padding-right: calc((100% - #{$container-max-width}) / 2);
+    &, &-left, &-right {    
+        @include mq-width($container-max-width) {
+            padding-left: 0;
+            padding-right: 0;
+        }
     }
 
     &-left {
@@ -167,37 +167,6 @@
         padding-right: 0;
         padding-left: calc(100% - #{$container-max-width});
     }
-
-    &-vertical, &-top, &-bottom {
-        padding-left: inherit;
-        padding-right: inherit;
-    }
-
-    &-vertical {
-        padding-top: calc((100% - #{$container-max-height}) / 2);
-        padding-bottom: calc((100% - #{$container-max-height}) / 2);
-    }
-
-    &-top {
-        padding-top: 0;
-        padding-bottom: calc(100% - #{$container-max-height});
-    }
-
-    &-bottom {
-        padding-bottom: 0;
-        padding-top: calc(100% - #{$container-max-height});
-    }
-}
-
-.pad-container {
-    @extend %pad-container;
-
-    &-left { @extend %pad-container-left; }
-    &-right { @extend %pad-container-right; }
-
-    &-vertical { @extend %pad-container-vertical; }
-    &-top { @extend %pad-container-top; }
-    &-bottom { @extend %pad-container-bottom; }
 }
 
 %parallax {

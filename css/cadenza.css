@@ -4742,6 +4742,31 @@
   animation-delay: 300ms !important;
 }
 
+/* line 30, ../scss/modules/animations/_components.scss */
+.activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-fade.ng-enter, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-fade.ng-leave, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after, .activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter, .activate-fadeIn.ng-enter, .activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave, .activate-fadeIn.ng-leave, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-scaleUp.ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter, .activate-scaleUpDown.ng-enter, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-scaleUp.ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave, .activate-scaleDownUp.ng-leave, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-scaleDown.ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter, .activate-scaleDownUp.ng-enter, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-scaleDown.ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave, .activate-scaleUpDown.ng-leave, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter, .activate-slideLeft.ng-enter, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave, .activate-slideLeft.ng-leave, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter, .activate-slideRight.ng-enter, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave, .activate-slideRight.ng-leave, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter, .activate-slideUp.ng-enter, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave, .activate-slideUp.ng-leave, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter, .activate-slideDown.ng-enter, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave, .activate-slideDown.ng-leave, .activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter, .activate-slideUpDown.ng-enter, .activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave, .activate-slideUpDown.ng-leave, .activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter, .activate-shiftUp.ng-enter, .activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave, .activate-shiftUp.ng-leave, .activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter, .activate-shiftDown.ng-enter, .activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave, .activate-shiftDown.ng-leave, .activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-shiftLeft.ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter, .activate-shiftLeftRight.ng-enter, .activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave, .activate-shiftLeft.ng-leave, .activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter, .activate-shiftRight.ng-enter, .activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-shiftRight.ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave, .activate-shiftLeftRight.ng-leave, .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-flipLeft.ng-enter, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-flipLeft.ng-leave, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-tilt.ng-enter, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-tilt.ng-leave, #performance.active .two, #performance.active .three {
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+  -moz-animation-direction: normal;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+  -moz-animation-delay: 0;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-play-state: running;
+  -webkit-animation-play-state: running;
+  animation-play-state: running;
+  -moz-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
 /* line 40, ../scss/modules/animations/_components.scss */
 .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-flipLeft.ng-enter, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-flipLeft.ng-leave, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-tilt.ng-enter, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-tilt.ng-leave, .animation-3d, .activate-all-flipLeft, .activate-all-tilt {
   -moz-animation-duration: 300ms;
@@ -11829,12 +11854,12 @@
 }
 
 /* line 55, ../scss/modules/layers/_components.scss */
-.layer.transparent, .overlay.transparent, .page.transparent, .container.transparent {
+.layer.transparent, .overlay.transparent, .page.transparent, .container.transparent, .pad-container.transparent {
   background: transparent;
   pointer-events: none;
 }
 /* line 59, ../scss/modules/layers/_components.scss */
-.layer.transparent > *, .overlay.transparent > *, .page.transparent > *, .container.transparent > * {
+.layer.transparent > *, .overlay.transparent > *, .page.transparent > *, .container.transparent > *, .pad-container.transparent > * {
   pointer-events: auto;
 }
 
@@ -12086,72 +12111,40 @@
 }
 
 /* line 144, ../scss/modules/layers/_components.scss */
-.pad-container {
+.pad-container, [class*=" pad-container-"], [class^="pad-container-"] {
   *zoom: 1;
   width: 100%;
   max-width: 100%;
+  padding-left: calc((100% - 960px) / 2);
+  padding-right: calc((100% - 960px) / 2);
 }
 /* line 38, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
-.pad-container:after {
+.pad-container:after, [class*=" pad-container-"]:after, [class^="pad-container-"]:after {
   content: "";
   display: table;
   clear: both;
 }
-/* line 151, ../scss/modules/layers/_components.scss */
-.pad-container, .pad-container-left, .pad-container-right {
-  padding-top: inherit;
-  padding-bottom: inherit;
+@media only screen and (max-width: 960px) {
+  /* line 154, ../scss/modules/layers/_components.scss */
+  .pad-container, [class*=" pad-container-"], [class^="pad-container-"] {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
-/* line 156, ../scss/modules/layers/_components.scss */
-.pad-container {
-  padding-left: calc((100% - 960px) / 2);
-  padding-right: calc((100% - 960px) / 2);
-}
-/* line 161, ../scss/modules/layers/_components.scss */
-.pad-container-left {
-  padding-left: 0;
-  padding-right: calc(100% - 960px);
-}
-/* line 166, ../scss/modules/layers/_components.scss */
-.pad-container-right {
-  padding-right: 0;
-  padding-left: calc(100% - 960px);
-}
-/* line 171, ../scss/modules/layers/_components.scss */
-.pad-container-vertical, .pad-container-top, .pad-container-bottom {
-  padding-left: inherit;
-  padding-right: inherit;
-}
-/* line 176, ../scss/modules/layers/_components.scss */
-.pad-container-vertical {
-  padding-top: calc((100% - 500px) / 2);
-  padding-bottom: calc((100% - 500px) / 2);
-}
-/* line 181, ../scss/modules/layers/_components.scss */
-.pad-container-top {
-  padding-top: 0;
-  padding-bottom: calc(100% - 500px);
-}
-/* line 186, ../scss/modules/layers/_components.scss */
-.pad-container-bottom {
-  padding-bottom: 0;
-  padding-top: calc(100% - 500px);
-}
-
-/* line 203, ../scss/modules/layers/_components.scss */
+/* line 172, ../scss/modules/layers/_components.scss */
 .parallax {
   perspective: 100px;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
 }
-/* line 209, ../scss/modules/layers/_components.scss */
+/* line 178, ../scss/modules/layers/_components.scss */
 .parallax-page {
   position: relative;
   height: 100%;
   transform-style: preserve-3d;
 }
-/* line 215, ../scss/modules/layers/_components.scss */
+/* line 184, ../scss/modules/layers/_components.scss */
 .parallax-layer {
   position: absolute;
   transform: translateZ(0);
@@ -12161,7 +12154,7 @@
   left: 0;
   right: 0;
 }
-/* line 221, ../scss/modules/layers/_components.scss */
+/* line 190, ../scss/modules/layers/_components.scss */
 .parallax-layer > span {
   left: 50%;
   right: initial;
@@ -12173,12 +12166,12 @@
   -o-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
 }
-/* line 223, ../scss/modules/layers/_components.scss */
+/* line 192, ../scss/modules/layers/_components.scss */
 .parallax-layer-front {
   transform: translateZ(100px) scale(0);
   z-index: 10;
 }
-/* line 227, ../scss/modules/layers/_components.scss */
+/* line 196, ../scss/modules/layers/_components.scss */
 .parallax-layer-back {
   transform: translateZ(-100px) scale(2);
   z-index: -10;
