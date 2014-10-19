@@ -102,64 +102,63 @@
 %button-group {
     @extend %clearfix;
 
-    > input[type=radio], > input[type=checkbox] {
+    > %input-radio, > %input-checkbox {
         display: none;
     }
-}
 
-%button-group-buttons {
-    @include border-radius(0);
-    margin: 0;
-    margin-left: -$button-border-width;
-    float: left;
+    > %button {
+        border-radius: 0;
+        margin: 0;
+        margin-left: -$button-border-width;
+        float: left;
 
-    &:first-of-type { margin-left: inherit; }
-    &:hover, &:focus { z-index: 2; }
+        &:first-of-type { margin-left: inherit; }
+        &:hover, &:focus { z-index: 2; }
 
-    @if $button-radius {
-        &:first-of-type {
-            @include border-top-left-radius($button-radius);
-            @include border-bottom-left-radius($button-radius);
-        }
-        &:last-of-type {
-            @include border-top-right-radius($button-radius);
-            @include border-bottom-right-radius($button-radius);
+        @if $button-radius {
+            &:first-of-type {
+                border-top-left-radius: $button-radius;
+                border-bottom-left-radius: $button-radius;
+            }
+            &:last-of-type {
+                border-top-right-radius: $button-radius;
+                border-bottom-right-radius: $button-radius;
+            }
         }
     }
-}
 
-%button-group-inline {
-    display: inline-block;
-    margin: $button-group-margin;
-    margin-bottom: 0;
-    vertical-align: middle;
-}
+    &-inline {    
+        display: inline-block;
+        margin: $button-group-margin;
+        margin-bottom: 0;
+    }
 
-%button-group-vertical {
-    display: inline-block;
-}
+    &-vertical {
+        display: inline-block;
 
-%button-group-vertical-buttons {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    margin: 0;
-    margin-left: 0;
-    margin-top: -$button-border-width;
-    float: none;
+        > %button {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            margin: 0;
+            margin-left: 0;
+            margin-top: -$button-border-width;
+            float: none;
 
-    &:first-of-type { margin-left: 0; margin-top: inherit; }
-        
-    @if $button-radius {
-        &:first-of-type {
-            @include border-bottom-left-radius(0);
-            @include border-top-left-radius($button-radius);
-            @include border-top-right-radius($button-radius);
-        }
-        &:last-of-type {
-            @include border-top-right-radius(0);
-            @include border-bottom-left-radius($button-radius);
-            @include border-bottom-right-radius($button-radius);
+            &:first-of-type { margin-left: 0; margin-top: inherit; }
+                
+            @if $button-radius {
+                &:first-of-type {
+                    border-bottom-left-radius: 0;
+                    border-top-left-radius: $button-radius;
+                    border-top-right-radius: $button-radius;
+                }
+                &:last-of-type {
+                    border-top-right-radius: 0;
+                    border-bottom-left-radius: $button-radius;
+                    border-bottom-right-radius: $button-radius;
+                }
+            }
         }
     }
 }

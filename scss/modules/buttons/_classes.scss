@@ -3,7 +3,7 @@
 // ==============
 
 // Button Classes
-button, .button, input[type=button], input[type=submit] {
+button, .button, input[type="button"], input[type="submit"] {
     @extend %button;
     &:not(.link) { @include style('button'); }
 
@@ -73,14 +73,8 @@ button.box, .button-box {
 .button-group {
     @extend %button-group;
 
-    > button, > .button {
-        @extend %button-group-buttons;
-    }
-
     &.vertical { 
         @extend %button-group-vertical;
-
-        > button, > .button { @extend %button-group-vertical-buttons; }
     }
     
     &.inline { @extend %button-group-inline; }
