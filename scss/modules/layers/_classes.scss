@@ -36,12 +36,12 @@
     .card-#{$i} { @extend %card-#{$i}; }
 }
 
-@each $mq in (small, all) {
+@each $mq in $drawer-mqs {
     $suffix: if($mq == 'all', '', '-#{$mq}');
 
     .drawer#{$suffix} { @extend %drawer#{$suffix}; }
 
-    @each $drawer-position in (left, right, top, bottom) {    
+    @each $drawer-position in $drawer-positions {    
         .drawer-#{$drawer-position}#{$suffix} {
             @extend %drawer-#{$drawer-position}#{$suffix};
         }

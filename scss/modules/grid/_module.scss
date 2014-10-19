@@ -10,16 +10,14 @@ $grid-content-padding-small: $grid-content-padding / 2 !default;
 $grid-content-padding-large: $grid-content-padding * 2 !default;
 
 // Horizontal Grid Settings
-$grid-column-selector: ".col, [class*=\"col-\"]" !default;
 $grid-columns: 12 !default;
 $grid-column-gutter: 1rem !default;
 $grid-column-mqs: (all, small, medium, large);
 
 // Vertical Grid Settings
-$grid-row-selector: ".row, [class*=\"row-\"]" !default;
 $grid-rows: 12 !default;
 $grid-row-gutter: 1rem !default;
-$grid-row-mqs: (all, short, tall);
+$grid-row-mqs: (all, short, tall, small);
 
 // Imports
 @import

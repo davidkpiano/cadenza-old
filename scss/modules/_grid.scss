@@ -114,7 +114,7 @@
     }
 }
 
-#{$grid-column-selector} {
+#{prefixed-class('col')} {
     @extend %column;
 
     &.rows-gutter {
@@ -186,7 +186,7 @@
     }
 }
 
-#{$grid-row-selector} {
+#{prefixed-class('row')} {
     @extend %row;
 
     &.columns-gutter {
