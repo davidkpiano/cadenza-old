@@ -48,7 +48,12 @@ button, .button, input[type="button"], input[type="submit"] {
 
     // Display Button Classes
     &.block { @extend %button-block; }
-    &.full { @extend %button-full; }
+    &.full {
+        @extend %button-full;
+
+        &-width { @extend %button-full-width; }
+        &-height { @extend %button-full-height; }
+    }
 
     // Button State Classes
     &:disabled { @extend %button-disabled; }

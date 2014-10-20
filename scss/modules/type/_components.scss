@@ -220,6 +220,16 @@
 	text-align: justify;
 }
 
+%text-spread {
+    @extend %text-justify;
+    
+    &:after {
+        content: '';
+        display: inline-block;
+        width: 100%;
+    }
+}
+
 // Parent Class
 %text-middle {
 	&:before {

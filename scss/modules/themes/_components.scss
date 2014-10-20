@@ -44,8 +44,14 @@
     border-right-width: $border-width;
 }
 
+%border-none {
+    border-width: 0 !important;
+}
+
 %borders-inside-vertical {
     > *:not(:first-child) { @extend %border-top; }
+
+    > :first-child { @extend %border-none; }
 }
 
 %borders-outside-vertical {
@@ -56,6 +62,8 @@
 
 %borders-inside-horizontal {
     > *:not(:first-child) { @extend %border-left; }
+
+    > :first-child { @extend %border-none; }
 }
 
 %borders-outside-horizontal {

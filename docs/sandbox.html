@@ -7,33 +7,9 @@
 
 </head>
 <style>
-/*    .parallax {
-        height: 100%;
-        overflow-x: hidden;
-        overflow-y: scroll;
-        perspective: 300px;
-    }
-
-    .parallax-group {
-        position: relative;
-        height: 100%;
-        transform-style: preserve-3d;
-    }
-
-    .parallax-layer {
-        transform: translateZ(0);
-        z-index: 4;
-        position: absolute;
-        top: 0; bottom: 0; left: 0; right: 0;
-    }
-
-    .parallax-layer.back {
-        transform: translateZ(-300px) scale(2);
-        z-index: 3;
-    }*/
 </style>
 <body class="body">
-    <main class="row-12 pad-container">
+    <main class="row-12 pad-container hide">
         <section class="row-5" style="background: url('https://c2.staticflickr.com/8/7121/7441146606_209966a6f9_b.jpg'); background-size: cover;">        
             <aside class="col-2 bg-darken mode-light">
                 <nav class="small">
@@ -220,7 +196,7 @@
         </section>
     </main>
 
-    <main class="row-12 parallax hidden">
+    <main class="row-12 parallax hide">
         <div class="parallax-page">
             <div class="parallax-layer base">
                 <div class="position-center-middle">
@@ -252,7 +228,7 @@
         </div>
     </main>
 
-    <main class="layer hidden">
+    <main class="layer hide">
         <div class="col-6 bg-success mode-light borders-inside-vertical borders-lighten">
             <div class="row-6 pad-large text-middle">
                 <hgroup>
@@ -297,7 +273,7 @@
         </div>
     </main>
 
-    <main class="row-12">
+    <main class="row-12 hide">
         <div class="col-6 borders-vertical-inside rows-gutter">
             <div class="row-1"></div>
             <div class="row-2"></div>
@@ -313,6 +289,107 @@
             <div class="border"></div>
             <div class="border"></div>
         </div>
+    </main>
+
+    <main class="row-12">
+        <div class="col-2 bg-dark mode-light">
+            <hgroup class="pad">
+                <span class="type-serif">Google</span>
+                <h1 class="lowercase double">News</h1>
+            </hgroup>
+            <nav class="position-middle">
+                <ul>
+                    <li><a href="#" class="hover-fromLight">NEWS</a></li>
+                    <li><a href="#" class="hover-fromLight">COVERAGES</a></li>
+                    <li><a href="#" class="hover-fromLight">MEDIA</a></li>
+                    <li><a href="#" class="hover-fromLight">OPINIONS</a></li>
+                    <li><a href="#" class="hover-fromLight">PEOPLE</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="col-9 bg-light pad gutter">
+            <div class="row bg-white field">
+                <nav class="horizontal">
+                    <ul>
+                        <li><a href="#">Top Stories</a></li>
+                        <li><a href="#">World</a></li>
+                        <li><a href="#">U.S.</a></li>
+                        <li><a href="#">Business</a></li>
+                        <li><a href="#">Technology</a></li>
+                        <li><a href="#">Entertainment</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Sciences</a></li>
+                        <li><a href="#">+</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-9 bg-white borders-inside-vertical">
+                <article class="row">                        
+                    <div class="col-2 bg-primary" style="height:130px"></div>
+                    <div class="col-10 pad-small">
+                        <small class="subtext">FOX News - 12 minutes ago</small>
+                        <h5 class="strong">Countries spending the most on military</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint numquam animi voluptatem in.</p>
+                    </div>
+                </article>
+                <article class="row">                        
+                    <div class="col-2 bg-primary" style="height:130px"></div>
+                    <div class="col-10 pad-small">
+                        <small class="subtext">FOX News - 12 minutes ago</small>
+                        <h5 class="strong">Countries spending the most on military</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint numquam animi voluptatem in.</p>
+                    </div>
+                </article>
+                <article class="row">                        
+                    <div class="col-2 bg-primary" style="height:130px"></div>
+                    <div class="col-10 pad-small">
+                        <small class="subtext">FOX News - 12 minutes ago</small>
+                        <h5 class="strong">Countries spending the most on military</h5>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint numquam animi voluptatem in.</p>
+                    </div>
+                </article>
+            </div>
+            <div class="col-3">
+                <div class="field pad-small bg-white">                
+                    <h3 class="uppercase"><strong>Berlin</strong><small class="subheading">Germany</small></h3>
+                    <div class="col-6 col-auto text-center text-bottom">
+                        <span class="color-warning">Sunny</span>
+                    </div>
+                    <hgroup class="col-6 col-auto">
+                        <h1 class="strong">24&deg;</h1>
+                        <small><strong>16</strong> km/h / <strong>43 %</strong></small>
+                    </hgroup>
+                    <div class="row cols-4 text-center borders-inside-horizontal borders-light small">
+                        <div>MO<br>21&deg;</div>
+                        <div>TU<br>25&deg;</div>
+                        <div>WE<br>18&deg;</div>
+                    </div>
+                </div>
+                <div class="field bg-white borders-inside-vertical">
+                    <hgroup class="pad">
+                        <h3>FIFA Football <br>World Cup 2014&trade;</h3>
+                    </hgroup>
+                    <div class="pad text-center">
+                        <h6>Semifinals</h6>
+                        <div class="text-spread">
+                            <span>GER</span> 
+                            <span class="subtext">vs</span> 
+                            <span>FRA</span>
+                        </div>
+                        <small>JULY 14 17:30</small>
+                    </div>
+                    <button class="full-width">More at Fifa.com</button>
+                </div>
+                <div class="field bg-white row-2 text-bottom text-right">
+                    <button class="full-height">Blah</button>
+                    <hgroup>
+                        <small>Testing</small>
+                        <h1>Test</h1>
+                    </hgroup>
+                </div>
+            </div>
+        </div>
+        <div class="col-1 bg-dark mode-light"></div>
     </main>
 </body>
 <!-- DEPENDENCIES -->
