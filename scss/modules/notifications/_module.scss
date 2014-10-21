@@ -1,0 +1,17 @@
+// 
+// Notifications Module
+// ====================
+$notification-style: default !default;
+$notification-theme: default !default;
+$notification-margin: 1rem !default;
+$notification-min-width: 10rem !default;
+$notification-text-align: center !default;
+$notification-animation-active: shiftUp !default;
+$notification-animation-inactive: fadeOut !default;
+
+// Imports
+@import
+	'_mixins',
+	'_components',
+	'_themes',
+	'_classes';

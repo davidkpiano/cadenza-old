@@ -1,0 +1,23 @@
+// 
+// Notifications Components
+// ========================
+
+%notification-queue {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+%notification {
+    min-width: $notification-min-width;
+    padding: 0.5rem 1rem;
+    background: $color-dark;
+    color: white;
+    margin: $notification-margin;
+    text-align: $notification-text-align;
+    
+    @include activate(shiftUp, fade, '', ':hover');
+}
+
+
+
