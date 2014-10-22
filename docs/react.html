@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>React Test</title>
+    <link rel="stylesheet" href="../css/cadenza.css">
+
+</head>
+<body class="body">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci officia eius, repellat tenetur culpa voluptatem recusandae amet atque, quaerat rem necessitatibus sequi neque dolorum voluptatum ipsam architecto accusamus et consectetur.</p>
+    <div id="myDiv"></div>
+</body>
+<script src="../bower_components/react/react.js"></script>
+<script src="../bower_components/react/JSXTransformer.js"></script>
+<script type="text/jsx">
+/** @jsx React.DOM */
+
+var NotificationQueue = React.createClass({
+    render: function() {
+        return (
+            <div className="notification-queue">
+                {notes}
+            </div>
+        );
+    }
+});
+
+var Notification = React.createClass({
+    render: function() {
+        return (
+            <div className="notification">{this.props.message}</div>
+        );
+    }
+});
+
+var notes = [
+    { message: 'Hello World' },
+    { message: 'this is a test' }
+].map(function(note) {
+    return (
+        <Notification message={note.message} />
+    );
+});
+
+React.renderComponent(
+    <NotificationQueue />,
+    document.getElementById('myDiv')
+);
+</script>
+</html>
