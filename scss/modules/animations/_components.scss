@@ -413,5 +413,11 @@
 }
 %hover-scaleUp { @include hover-movement(scaleUp); }
 
+%transition-slideFromLeft {
+    @include transform(translateX(-100%));
 
-
+    @include movement() {
+        @include transform(translateX(0));
+    }
+}
+.transition-slideFromLeft { @extend %transition-slideFromLeft; }

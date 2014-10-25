@@ -116,6 +116,9 @@ abbr, acronym { @extend %abbreviation; }
 a {
 	@extend %anchor;
 	@include style('anchor');
+
+	&.light { @include style('anchor', 'light'); }
+	&.dark { @include style('anchor', 'dark'); }
 }
 
 .anchors-hint {

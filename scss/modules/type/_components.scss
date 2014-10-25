@@ -222,11 +222,21 @@
 
 %text-spread {
     @extend %text-justify;
+    line-height: 0;
     
     &:after {
         content: '';
         display: inline-block;
         width: 100%;
+    }
+
+    &::first-line {
+        line-height: 1;
+    }
+
+    > *:after {
+        content: '';
+        display: inline;
     }
 }
 
@@ -400,19 +410,19 @@
     margin-bottom: $type-list-margin-bottom;
     padding: 0;
 
-    %list-nested {
+    &-nested {
     	margin-bottom: 0;
     }
 
-    %list-item {
+    &-item {
     	list-style-position: $type-list-position;
     }
 }
 
 %list-unstyled {
-	@extend %list;
 	list-style: none;
 	margin-left: 0;
+    padding: 0;
 }
 
 %list-inline {

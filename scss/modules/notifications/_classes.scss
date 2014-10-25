@@ -4,4 +4,10 @@
 
 .notification-queue { @extend %notification-queue; }
 
-.notification { @extend %notification; }
+.notification {
+    @extend %notification;
+
+    & { @extend %notification-active; }
+
+    &.inactive { @extend %notification-inactive; }
+}

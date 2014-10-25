@@ -192,14 +192,12 @@
 }
 
 %full-height {
-    @extend %block;
     margin-top: 0;
     margin-bottom: 0;
     height: 100%;
 }
 
 %full-width {
-    @extend %block;
     margin-left: 0;
     margin-right: 0;
     width: 100%;

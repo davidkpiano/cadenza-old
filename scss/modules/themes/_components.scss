@@ -44,6 +44,20 @@
     border-right-width: $border-width;
 }
 
+%border-vertical {
+    border-top-width: $border-width;;
+    border-bottom-width: $border-width;
+    border-left-width: 0 !important;
+    border-right-width: 0 !important;
+}
+
+%border-horizontal {
+    border-top-width: 0 !important;
+    border-bottom-width: 0 !important;
+    border-left-width: $border-width;;
+    border-right-width: $border-width;
+}
+
 %border-none {
     border-width: 0 !important;
 }
@@ -55,9 +69,9 @@
 }
 
 %borders-outside-vertical {
-    > * { @extend %border-bottom; }
+    > *:not(:first-child) { @extend %border-bottom; }
 
-    > *:first-child { @extend %border-top; }
+    > *:first-child { @extend %border-vertical; }
 }
 
 %borders-inside-horizontal {
@@ -67,9 +81,9 @@
 }
 
 %borders-outside-horizontal {
-    > * { @extend %border-right; }
+    > *:not(:first-child) { @extend %border-right; }
 
-    > *:first-child { @extend %border-left; }
+    > *:first-child { @extend %border-horizontal; }
 }
 
 @each $color-name, $color-value in $colors {
@@ -82,7 +96,18 @@
         &, p, li, span { color: $color-value !important; }
     }
 
+    %transition-color-#{$color-name} {
+        @include movement() {
+            color: $color-value;
+        }
+    }
+
+    %hover-color-#{$color-name} {
+        @include hover-movement(color-#{$color-name});
+    }
+
     %border-#{$color-name} {
         border-color: $color-value;
     }
 }
+

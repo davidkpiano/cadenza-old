@@ -3,9 +3,7 @@
 // ========================
 
 %notification-queue {
-    position: absolute;
-    top: 0;
-    right: 0;
+    @include position-absolute($notificationQueue-position-horizontal, $notificationQueue-position-vertical);
 }
 
 %notification {
@@ -15,8 +13,18 @@
     color: white;
     margin: $notification-margin;
     text-align: $notification-text-align;
-    
-    @include activate(shiftUp, fade, '', ':hover');
+
+    &-active {
+        @include animation(fade-active);
+    }
+
+    &:hover {
+        animation-play-state: paused;
+    }
+
+    &-inactive {
+        @include animation(fade-inactive);
+    }
 }
 
 

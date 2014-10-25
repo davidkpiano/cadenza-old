@@ -7,26 +7,27 @@
 	$color: $form-border-color,
 
 	$border-color: $color,
-	$border-color-hover: darken($color, 10%),
+	$border-color-hover: if($color, darken($color, 10%), false),
 	$border-color-focus: $form-border-color-focus,
 
 	$type-color: $color-gray,
-	$type-color-hover: $color-gray,
-	$type-color-focus: $text-color-dark,
+	$type-color-hover: $type-color,
+	$type-color-focus: $type-color,
 
 	$edges: border // border, outline, shadow
 ) {
-	#{$edges}-color: $border-color;
-	color: $type-color;
+	@if $border-color { #{$edges}-color: $border-color; }
+
+	@if $type-color { color: $type-color; }
 
 	&:hover {
-		#{$edges}-color: $border-color-hover;
-		color: $type-color-hover;
+		@if $border-color-hover { #{$edges}-color: $border-color-hover; }
+		@if $type-color-hover { color: $type-color-hover; }
 	}
 
 	&:focus {
-		#{$edges}-color: $border-color-focus;
-		color: $type-color-focus;
+		@if $border-color-focus { #{$edges}-color: $border-color-focus; }
+		@if $type-color-focus { color: $type-color-focus; }
 	}
 }
 
@@ -76,6 +77,14 @@
 
 	&-lighten { @include theme-input-default($color-lighten); }
 	&-darken { @include theme-input-default($color-darken); }
+
+	&-implicit {
+		@include theme-input-default(
+			$color: false,
+			$border-color: false,
+			$type-color: false
+		);
+	}
 }
 
 // Select Theme

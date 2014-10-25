@@ -48,7 +48,9 @@
 	$color-focus: $color-hover,
 	$color-active: $color-hover
 ) {
-	color: $color;
+	@if $color {
+		color: $color;
+	}
 
 	&:hover { color: $color-hover; }
 	&:focus { color: $color-focus; }

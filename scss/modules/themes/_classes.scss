@@ -13,6 +13,10 @@
         @extend %color-#{$color-name};
     }
 
+    .hover-color-#{$color-name} {
+        @extend %hover-color-#{$color-name};
+    }
+
     .border-#{$color-name}, .borders-#{$color-name} > * {
         @extend %border-#{$color-name};
     }
@@ -26,6 +30,9 @@
 .border-bottom, .borders-bottom > * { @extend %border-bottom; }
 .border-left, .borders-left > * { @extend %border-left; }
 .border-right, .borders-right > * { @extend %border-right; }
+
+.border-vertical, .borders-vertical > * { @extend %border-vertical; }
+.border-horizontal, .borders-horizontal > * { @extend %border-horizontal; }
 
 .borders-inside-vertical { @extend %borders-inside-vertical; }
 .borders-outside-vertical { @extend %borders-outside-vertical; }

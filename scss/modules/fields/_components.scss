@@ -7,7 +7,7 @@
 }
 
 %field {
-    @include pie-clearfix;
+    @extend %clearfix;
     overflow: visible;
     
     &:not(:only-child) {

@@ -237,7 +237,7 @@
         </div>
     </div>
 </section>
-<section class="col-12">
+<section class="col-12 hide">
     <div class="row-12 cols-4 rows-6 cols-border hide">
         <div class="border-dark text-middle pad-large hover-bg-dark hover-mode-light hide" ng-repeat="n in component.range(8)">
             <div>
@@ -556,6 +556,39 @@
     </div>
 </section>
 <section class="row-12">
-    <div class="col-6 row-3-small bg-primary"></div>
-    <div class="col-6 row-9-small bg-secondary"></div>
+    <aside class="drawer-left bg-dark mode-light" ng-class="{active: component.ff}">
+        <div class="row-center pad-large">
+            <nav class="small strong uppercase">
+                <h2 class="strong uppercase">
+                    Menu
+                    <hr class="thick small light">
+                </h2>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Services and Prices</a></li>
+                    <li><a href="#">Partners</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+        </div>
+    </aside>
+    <div class="layer transition">
+        <div class="col-11"><img src="http://sokruta.com.ua/uploads/0/378-Untitled-1.jpg" alt="" style="height:100%;width:100%"></div>
+        <div class="col-1 bg-white pad-large">
+            <nav class="small horizontal">
+                <ul>
+                    <li><a href="#">PYC</a></li>
+                    <li><a href="#">ENG</a></li>
+                </ul>
+            </nav>
+            <div class="row-center text-center"><small class="uppercase">ANDREY <br>SOKKRUTA</small></div>
+        </div>
+        <div class="position-left-middle row-1">
+            <button class="light inline full-height" ng-click="component.ff = !component.ff">☰</button>
+            <button class="light inline full-height">Our Projects</button>
+        </div>
+    </div>
 </section>

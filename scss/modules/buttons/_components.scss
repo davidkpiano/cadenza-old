@@ -91,13 +91,15 @@
     border-radius: 0;
 
     &-height {
-        @extend %button-full;
-        width: initial;
+        margin: 0;
+        height: 100%;
+        border-radius: 0;
     }
 
     &-width {
-        @extend %button-full;
-        height: initial;
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
     }
 }
 

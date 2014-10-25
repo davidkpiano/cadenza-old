@@ -53,10 +53,6 @@ $dropdown-color-light: $anchor-color-dark !default;
 $dropdown-color-dark: $anchor-color-light !default;
 $dropdown-color: theme-mode($dropdown-color-light, $dropdown-color-dark) !default;
 
-// Tabs Settings
-$tabs-style: default !default;
-$tabs-theme: default !default;
-
 // Imports
 @import
 	'_mixins',

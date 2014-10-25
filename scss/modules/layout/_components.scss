@@ -1,6 +1,7 @@
 // 
-// Position Components
-// ===================
+// Layout Components
+// =================
+
 %position-absolute { position: absolute !important; }
 
 @each $position-horizontal in $positions-horizontal {
@@ -53,4 +54,24 @@
     > %display-table {
         @extend %display-table-inline;
     }
+}
+
+%bar {
+    display: table-row;
+
+    &-item {
+        display: table-cell;
+        vertical-align: middle;
+
+        &-auto {
+            width: 100%;
+        }
+    }
+}
+
+.bar {
+    @extend %bar;
+
+    > * { @extend %bar-item; }
+    > .auto { @extend %bar-item-auto; }
 }

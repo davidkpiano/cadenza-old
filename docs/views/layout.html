@@ -1,6 +1,6 @@
 <h1>Layout Module</h1>
 
-<section class="row-12">
+<section class="row-12 hide">
     <div class="row-6">
         <div class="col-6 col-center border">
             <div class="shape-square-medium bg-primary position{{component.position_horizontal}}{{component.position_vertical}}"></div>
@@ -45,6 +45,31 @@
                 <span>{{position}}</span>
                 <input type="radio" ng-model="component.position_vertical" ng-value="position">
             </label>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="row bg-primary mode-light">
+        <div class="col-2 bar">
+            <div class="fa fa-bars pad"></div>
+            <div class="auto">
+                <h3>Inbox</h3>
+            </div>
+        </div>
+        <div class="col-8 bar">
+            <div class="auto">
+                <div class="field-horizontal bg-lighten">
+                    <div class="fa fa-search pad-horizontal"></div>
+                    <div class="field-input"><input type="text" name="" id="" placeholder="Search..." class="implicit"></div>
+                </div>
+            </div>
+            <div class="fa fa-thumb-tack pad"></div>
+        </div>
+        <div class="col-2 bar">
+            <div class="fa fa-comment pad"></div>
+            <div class="fa fa-th pad"></div>
+            <div class="fa fa-bell pad"></div>
         </div>
     </div>
 </section>

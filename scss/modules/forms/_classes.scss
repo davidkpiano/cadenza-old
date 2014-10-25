@@ -18,7 +18,10 @@ input[type="search"],
 input[type="tel"],
 input[type="color"] {
 	@extend %input;
-    @include style('input');
+
+    &:not(.implicit) {
+        @include style('input');
+    }
 
     &.lighten { @include style('input', 'lighten'); }
     &.darken { @include style('input', 'darken'); }
@@ -26,6 +29,11 @@ input[type="color"] {
 	&.small { @extend %input-small; }
 
 	&.large { @extend %input-large; }
+
+    &.implicit {
+        @include style('input', 'implicit');
+        @extend %input-implicit;
+    }
 }
 
 input.inline,
@@ -34,10 +42,7 @@ textarea.inline {
     @extend %input-inline;
 }
 
-input.implicit,
-textarea.implicit {
-    @extend %input-implicit;
-
+input.implicit {
     &[type="radio"] { @extend %radio-implicit; }
 
     &[type="checkbox"] { @extend %checkbox-implicit; }
