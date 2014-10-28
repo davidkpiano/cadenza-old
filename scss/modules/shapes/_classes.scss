@@ -3,7 +3,11 @@
 // ==============
 
 // Shape Classes
-.shape-circle { @extend %circle; }
+#{prefixed-class('shape-circle')} {
+    @extend %circle;
+
+    &.inline { @extend %circle-inline; }
+}
 
 .shape-circle-small { @extend %circle-small; }
 .shape-circle-medium { @extend %circle-medium; }

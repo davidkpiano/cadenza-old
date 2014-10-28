@@ -19,9 +19,7 @@ input[type="tel"],
 input[type="color"] {
 	@extend %input;
 
-    &:not(.implicit) {
-        @include style('input');
-    }
+    @include style('input');
 
     &.lighten { @include style('input', 'lighten'); }
     &.darken { @include style('input', 'darken'); }
@@ -31,8 +29,9 @@ input[type="color"] {
 	&.large { @extend %input-large; }
 
     &.implicit {
-        @include style('input', 'implicit');
         @extend %input-implicit;
+
+        @include style('input-implicit');
     }
 }
 

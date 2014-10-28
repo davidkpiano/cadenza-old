@@ -2,17 +2,17 @@
 // Notifications Components
 // ========================
 
-%notification-queue {
-    @include position-absolute($notificationQueue-position-horizontal, $notificationQueue-position-vertical);
+%toast-queue {
+    @include position-absolute($toastQueue-position-horizontal, $toastQueue-position-vertical);
 }
 
-%notification {
-    min-width: $notification-min-width;
+%toast {
+    min-width: $toast-min-width;
     padding: 0.5rem 1rem;
     background: $color-dark;
     color: white;
-    margin: $notification-margin;
-    text-align: $notification-text-align;
+    margin: $toast-margin;
+    text-align: $toast-text-align;
 
     &-active {
         @include animation(fade-active);

@@ -2,12 +2,12 @@
 // Notifications Classes
 // =====================
 
-.notification-queue { @extend %notification-queue; }
+.toast-queue { @extend %toast-queue; }
 
-.notification {
-    @extend %notification;
+.toast {
+    @extend %toast;
 
-    & { @extend %notification-active; }
+    & { @extend %toast-active; }
 
-    &.inactive { @extend %notification-inactive; }
+    &.inactive { @extend %toast-inactive; }
 }

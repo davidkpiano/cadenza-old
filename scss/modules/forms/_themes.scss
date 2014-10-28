@@ -4,15 +4,19 @@
 
 // Input Theme
 @mixin theme-input-default(
-	$color: $form-border-color,
-
-	$border-color: $color,
-	$border-color-hover: if($color, darken($color, 10%), false),
+	$border-color: $form-input-border-color,
+	$border-color-hover: delta-color($border-color, darken),
 	$border-color-focus: $form-border-color-focus,
 
-	$type-color: $color-gray,
+	$type-color: $form-input-color,
 	$type-color-hover: $type-color,
 	$type-color-focus: $type-color,
+
+	$bgcolor: $form-input-bgcolor,
+	$bgcolor-hover: $bgcolor,
+	$bgcolor-focus: $bgcolor,
+
+	$placeholder-color: rgba($type-color, $color-lighten-opacity),
 
 	$edges: border // border, outline, shadow
 ) {
@@ -20,21 +24,28 @@
 
 	@if $type-color { color: $type-color; }
 
+	@if $bgcolor { background-color: $bgcolor; }
+
 	&:hover {
 		@if $border-color-hover { #{$edges}-color: $border-color-hover; }
 		@if $type-color-hover { color: $type-color-hover; }
+		@if $bgcolor-hover { background-color: $bgcolor-hover; }
 	}
 
 	&:focus {
 		@if $border-color-focus { #{$edges}-color: $border-color-focus; }
 		@if $type-color-focus { color: $type-color-focus; }
+		@if $bgcolor-focus { background-color: $bgcolor-focus; }
+	}
+
+	@include input-placeholder {
+		color: $placeholder-color;
 	}
 }
 
-@mixin theme-input-transparent(
-	$color: $form-input-bgcolor-lighten,
 
-	$bgcolor: $color,
+@mixin theme-input-transparent(
+	$bgcolor,
 	$bgcolor-hover: delta-color($color),
 	$bgcolor-focus: $bgcolor-hover,
 
@@ -77,12 +88,27 @@
 
 	&-lighten { @include theme-input-default($color-lighten); }
 	&-darken { @include theme-input-default($color-darken); }
+}
 
-	&-implicit {
+%theme-input-implicit {
+	@include theme-input-default(
+		$border-color: transparent,
+		$bgcolor: transparent
+	);
+
+	&-light {
 		@include theme-input-default(
-			$color: false,
-			$border-color: false,
-			$type-color: false
+			$border-color: transparent,
+			$bgcolor: transparent,
+			$type-color: $form-input-color-light
+		);
+	}
+
+	&-dark {
+		@include theme-input-default(
+			$border-color: transparent,
+			$bgcolor: transparent,
+			$type-color: $form-input-color-dark
 		);
 	}
 }

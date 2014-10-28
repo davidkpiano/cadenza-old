@@ -101,8 +101,6 @@ em, .italics { @extend %em; }
 
 .lowercase { @extend %lowercase; }
 
-.nowrap { @extend %nowrap; }
-
 mark, .mark { @extend %mark; }
 
 abbr, acronym { @extend %abbreviation; }
@@ -137,6 +135,14 @@ a {
 .text-middle { @extend %text-middle; }
 .text-bottom { @extend %text-bottom; }
 .text-midcenter { @extend %text-midcenter; }
+
+// Overflow
+// --------
+.nowrap { @extend %nowrap; }
+
+.ellipsis {
+	@extend %overflow-ellipsis;
+}
 
 // Preformatted Text
 // -----------------

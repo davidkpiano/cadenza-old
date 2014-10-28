@@ -1,15 +1,15 @@
 // 
 // Notifications Module
 // ====================
-$notification-style: default !default;
-$notification-theme: default !default;
-$notificationQueue-position-horizontal: left !default;
-$notificationQueue-position-vertical: bottom !default;
-$notification-margin: 1rem !default;
-$notification-min-width: 10rem !default;
-$notification-text-align: center !default;
-$notification-animation-active: shiftUp !default;
-$notification-animation-inactive: fadeOut !default;
+$toast-style: default !default;
+$toast-theme: default !default;
+$toastQueue-position-horizontal: left !default;
+$toastQueue-position-vertical: bottom !default;
+$toast-margin: 1rem !default;
+$toast-min-width: 10rem !default;
+$toast-text-align: center !default;
+$toast-animation-active: shiftUp !default;
+$toast-animation-inactive: fadeOut !default;
 
 // Imports
 @import

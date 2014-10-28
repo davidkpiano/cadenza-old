@@ -279,6 +279,12 @@
     overflow: hidden;
 }
 
+%overflow-ellipsis {
+    @extend %nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
 // Preformatted Text
 // -----------------
 %pre {

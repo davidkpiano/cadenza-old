@@ -4,6 +4,10 @@
 
 %circle {
     @include shape-circle();
+
+    &-inline {
+        display: inline-block;
+    }
 }
 
 %circle-small {
