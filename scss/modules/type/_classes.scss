@@ -111,12 +111,14 @@ abbr, acronym { @extend %abbreviation; }
 
 // Anchors
 // -------
-a {
+a, a > * {
 	@extend %anchor;
 	@include style('anchor');
 
 	&.light { @include style('anchor', 'light'); }
 	&.dark { @include style('anchor', 'dark'); }
+
+	&.fill { @extend %anchor-fill; }
 }
 
 .anchors-hint {

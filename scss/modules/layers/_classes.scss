@@ -32,8 +32,10 @@
 
 #{prefixed-class('card')} { @extend %card; }
 
-@for $i from 1 through $grid-rows {
-    .card-#{$i} { @extend %card-#{$i}; }
+.card {
+    &-full { @extend %card-full; }
+
+    &-inline { @extend %card-inline; }
 }
 
 @each $mq in $drawer-mqs {

@@ -3,6 +3,8 @@
 // ================
 
 // Shadow Classes
+.shadow { @extend %shadow; }
+
 @for $i from 1 through 5 {
     .shadow-#{$i} {
         @extend %shadow-#{$i};

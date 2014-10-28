@@ -19,6 +19,9 @@ $grid-rows: 12 !default;
 $grid-row-gutter: 1rem !default;
 $grid-row-mqs: (all, short, tall, small);
 
+// Stack Grid Settings
+$grid-stack-mqs: (all, small, medium);
+
 // Imports
 @import
 	'_mixins',

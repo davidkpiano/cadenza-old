@@ -2,6 +2,10 @@
 // Lighting Components
 // ===================
 
+%shadow {
+    @include box-shadow($shadow-default);
+}
+
 %shadow-1 {
     @include box-shadow($shadow-1);
 }

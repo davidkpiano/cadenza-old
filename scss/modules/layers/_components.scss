@@ -23,6 +23,7 @@
 
 %scroll-x {
     overflow-x: auto;
+    white-space: nowrap;
 }
 
 %scroll-y {
@@ -62,16 +63,26 @@
 }
 
 %card {
-    @include pie-clearfix;
-    @include border-radius($card-radius);
+    @extend %clearfix;
     @extend %shadow-#{$card-shadow-index};
+    @include border-radius($card-radius);
     margin: $card-margin-vertical $card-margin-horizontal;
     width: calc(100% - #{2 * $card-margin-horizontal});
-}
 
-@for $i from 0 through $grid-rows {
-    %card-#{$i} {
-        height: row-height($i);
+    &-full {
+        margin: 0;
+        width: 100%;
+    }
+
+    &-inline {
+        display: inline-block;
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+
+        & + & {
+            margin-left: $card-margin-horizontal;
+        }
     }
 }
 

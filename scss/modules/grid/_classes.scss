@@ -205,3 +205,14 @@
 
 	.row-center#{$suffix} { @extend %row-center#{$suffix}; }
 }
+
+@each $mq in $grid-stack-mqs {
+	@include mq($mq) {
+		$suffix: -#{$mq};
+		@if $mq == 'all' { $suffix: ''; }
+
+		.stack#{$suffix}, .all-stack#{$suffix} > * {
+			@extend %stack#{$suffix};
+		}
+	}
+}

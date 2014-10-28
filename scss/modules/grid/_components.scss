@@ -397,3 +397,16 @@
 		}
 	}
 }
+
+@each $mq in $grid-stack-mqs {
+	@include mq($mq) {
+		$suffix: -#{$mq};
+		@if $mq == 'all' { $suffix: ''; }
+
+		%stack#{$suffix} {
+			display: block;
+			float: none;
+			width: 100% !important;
+		}
+	}
+}
