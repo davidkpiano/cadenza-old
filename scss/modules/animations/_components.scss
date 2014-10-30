@@ -21,7 +21,7 @@
 
 %active-delay {
     &#{$active-selector} {
-        @include experimental(animation-delay, $active-delay !important, $khtml: false, $moz: false, $ms: false, $o: false);
+        @include animation-delay($active-delay !important);
     }
 }
 
@@ -388,6 +388,17 @@
     @include transition-duration($transition-duration);
     @include transition-timing-function($transition-timing-function);
     @include transition-delay($transition-delay);
+}
+
+%transition-fadeIn-inactive { opacity: 0; }
+%transition-fadeIn-active { opacity: 1; }
+
+%transition-slideUp-inactive { transform: translateY(100%); }
+%transition-slideUp-active { transform: translateY(0); }
+
+%transition-origin-active {    
+    @include transform(translateX(0) translateY(0)); // IE9
+    @include transform(translate3d(0, 0, 0));
 }
 
 %transition-lighten {

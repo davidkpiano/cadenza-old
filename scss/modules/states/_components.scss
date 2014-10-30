@@ -2,17 +2,17 @@
 // States Components
 // =================
 
-@each $mq in $state-mqs {
-    %hide-#{$mq} { @include state(hide, $mq); }
+@each $mq in $visibility-mqs {
+    %hide-#{$mq} { @include visibility(hide, $mq); }
 
-    %show-#{$mq} { @include state(show, $mq); }
+    %show-#{$mq} { @include visibility(show, $mq); }
 } 
 
 %print-only {
-    @include state(hide, screen);
-    @include state(show, print);
+    @include visibility(hide, screen);
+    @include visibility(show, print);
 }
 
-%print-hide { @include state(hide, print); }
+%print-hide { @include visibility(hide, print); }
 
 

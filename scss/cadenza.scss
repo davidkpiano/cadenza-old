@@ -16,8 +16,9 @@
 @import
     'modules/global/_module',
     'modules/layout/_module',
-    'modules/animations/_module',
     'modules/media/_module',
+    'modules/states/_module',
+    'modules/animations/_module',
     'modules/themes/_module',
     'modules/grid/_module',
     'modules/layers/_module',
@@ -35,7 +36,6 @@
     'modules/labels/_module',
     'modules/fields/_module',
     'modules/tables/_module',
-    'modules/states/_module',
     'modules/panels/_module',
     'modules/notifications/_module';
     /* 'modules/_tabs'; */
@@ -80,28 +80,3 @@
         @include column-layout((4.5rem, fill, 0));
     }
 }
-
-#performance {
-    @include performance() {
-        .one {
-            $one-map: (
-                0: 'scaleDown-active',
-                3: 'scaleDown-inactive'
-            );
-
-            @include animate($one-map);
-        }
-
-        .two {
-            @include then-animate('scaleUp-active');
-        }
-
-        .three {
-            @include then-animate('slideLeft-active');
-        }
-    }
-}
-
-
-
-

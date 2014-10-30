@@ -3,7 +3,7 @@
 // ==============
 
 // State Classes
-@each $mq in $state-mqs {
+@each $mq in $visibility-mqs {
     $suffix: -#{$mq};
     @if $mq == 'all' { $suffix: ''; }
 

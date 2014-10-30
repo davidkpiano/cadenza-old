@@ -93,4 +93,3 @@
 	&-lighten { @include theme-button-transparent($color-lighten, $border-color-hover: rgba($color-lighten, 0)); }
 	&-darken { @include theme-button-transparent($color-darken, $border-color-hover: rgba($color-darken, 0)); }
 }
-

@@ -4492,6 +4492,106 @@
   transform: translateX(50%);
 }
 
+/* line 6, ../scss/modules/states/_components.scss */
+.hide, .hidden {
+  display: none !important;
+}
+
+/* line 8, ../scss/modules/states/_components.scss */
+.show {
+  display: inherit !important;
+}
+
+@media only screen and (max-width: 47.9375em) {
+  /* line 6, ../scss/modules/states/_components.scss */
+  .hide-small, .hidden-small {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: 47.9375em) {
+  /* line 8, ../scss/modules/states/_components.scss */
+  .show-small {
+    display: inherit !important;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  /* line 6, ../scss/modules/states/_components.scss */
+  .hide-medium, .hidden-medium {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 48em) {
+  /* line 8, ../scss/modules/states/_components.scss */
+  .show-medium {
+    display: inherit !important;
+  }
+}
+
+@media only screen and (min-width: 80em) {
+  /* line 6, ../scss/modules/states/_components.scss */
+  .hide-large, .hidden-large {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 80em) {
+  /* line 8, ../scss/modules/states/_components.scss */
+  .show-large {
+    display: inherit !important;
+  }
+}
+
+@media only screen and (max-height: 43.75em) {
+  /* line 6, ../scss/modules/states/_components.scss */
+  .hide-short, .hidden-short {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-height: 43.75em) {
+  /* line 8, ../scss/modules/states/_components.scss */
+  .show-short {
+    display: inherit !important;
+  }
+}
+
+@media only screen and (min-width: 56.25em) {
+  /* line 6, ../scss/modules/states/_components.scss */
+  .hide-tall, .hidden-tall {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 56.25em) {
+  /* line 8, ../scss/modules/states/_components.scss */
+  .show-tall {
+    display: inherit !important;
+  }
+}
+
+@media only screen {
+  /* line 11, ../scss/modules/states/_components.scss */
+  .print-only {
+    display: none !important;
+  }
+}
+@media print {
+  /* line 11, ../scss/modules/states/_components.scss */
+  .print-only {
+    display: inherit !important;
+  }
+}
+
+@media print {
+  /* line 16, ../scss/modules/states/_components.scss */
+  .print-hide {
+    display: none !important;
+  }
+}
+
 /* line 8, ../scss/modules/animations/_components.scss */
 .inert, .activate-all-fade.inert, .activate-fade.inert, .activate-all-fadeIn.inert, .activate-fadeIn.inert, .activate-all-scaleUp.inert, .activate-scaleUp.inert, .activate-all-scaleDown.inert, .activate-scaleDown.inert, .activate-all-scaleUpDown.inert, .activate-scaleUpDown.inert, .activate-all-scaleDownUp.inert, .activate-scaleDownUp.inert, .activate-all-slideUp.inert, .activate-slideUp.inert, .activate-all-slideUpDown.inert, .activate-slideUpDown.inert, .activate-all-slideDown.inert, .activate-slideDown.inert, .activate-all-slideLeft.inert, .activate-slideLeft.inert, .activate-all-slideRight.inert, .activate-slideRight.inert, .activate-all-shiftUp.inert, .activate-shiftUp.inert, .activate-all-shiftDown.inert, .activate-shiftDown.inert, .activate-all-shiftLeft.inert, .activate-shiftLeft.inert, .activate-all-shiftRight.inert, .activate-shiftRight.inert, .activate-all-shiftLeftRight.inert, .activate-shiftLeftRight.inert, .activate-all-flipLeft.inert, .activate-flipLeft.inert, .activate-all-tilt.inert, .activate-tilt.inert, .inert.tooltip[title], .inert[class*=" tooltip-"][title], .inert[class^="tooltip-"][title], .inert > *, .activate-all-fade.inert > *, .activate-fade.inert > *, .activate-all-fadeIn.inert > *, .activate-fadeIn.inert > *, .activate-all-scaleUp.inert > *, .activate-scaleUp.inert > *, .activate-all-scaleDown.inert > *, .activate-scaleDown.inert > *, .activate-all-scaleUpDown.inert > *, .activate-scaleUpDown.inert > *, .activate-all-scaleDownUp.inert > *, .activate-scaleDownUp.inert > *, .activate-all-slideUp.inert > *, .activate-slideUp.inert > *, .activate-all-slideUpDown.inert > *, .activate-slideUpDown.inert > *, .activate-all-slideDown.inert > *, .activate-slideDown.inert > *, .activate-all-slideLeft.inert > *, .activate-slideLeft.inert > *, .activate-all-slideRight.inert > *, .activate-slideRight.inert > *, .activate-all-shiftUp.inert > *, .activate-shiftUp.inert > *, .activate-all-shiftDown.inert > *, .activate-shiftDown.inert > *, .activate-all-shiftLeft.inert > *, .activate-shiftLeft.inert > *, .activate-all-shiftRight.inert > *, .activate-shiftRight.inert > *, .activate-all-shiftLeftRight.inert > *, .activate-shiftLeftRight.inert > *, .activate-all-flipLeft.inert > *, .activate-flipLeft.inert > *, .activate-all-tilt.inert > *, .activate-tilt.inert > *, .inert.tooltip[title] > *, .inert[class*=" tooltip-"][title] > *, .inert[class^="tooltip-"][title] > * {
   -webkit-transition: none !important;
@@ -4518,12 +4618,13 @@
 
 /* line 23, ../scss/modules/animations/_components.scss */
 .ng-enter.delay, .delay-all > .ng-enter {
+  -moz-animation-delay: 300ms !important;
   -webkit-animation-delay: 300ms !important;
   animation-delay: 300ms !important;
 }
 
 /* line 30, ../scss/modules/animations/_components.scss */
-.activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-fade.ng-enter, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-fade.ng-leave, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after, .activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter, .activate-fadeIn.ng-enter, .activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave, .activate-fadeIn.ng-leave, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-scaleUp.ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter, .activate-scaleUpDown.ng-enter, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-scaleUp.ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave, .activate-scaleDownUp.ng-leave, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-scaleDown.ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter, .activate-scaleDownUp.ng-enter, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-scaleDown.ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave, .activate-scaleUpDown.ng-leave, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter, .activate-slideLeft.ng-enter, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave, .activate-slideLeft.ng-leave, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter, .activate-slideRight.ng-enter, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave, .activate-slideRight.ng-leave, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter, .activate-slideUp.ng-enter, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave, .activate-slideUp.ng-leave, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter, .activate-slideDown.ng-enter, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave, .activate-slideDown.ng-leave, .activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter, .activate-slideUpDown.ng-enter, .activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave, .activate-slideUpDown.ng-leave, .activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter, .activate-shiftUp.ng-enter, .activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave, .activate-shiftUp.ng-leave, .activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter, .activate-shiftDown.ng-enter, .activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave, .activate-shiftDown.ng-leave, .activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-shiftLeft.ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter, .activate-shiftLeftRight.ng-enter, .activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave, .activate-shiftLeft.ng-leave, .activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter, .activate-shiftRight.ng-enter, .activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-shiftRight.ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave, .activate-shiftLeftRight.ng-leave, .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-flipLeft.ng-enter, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-flipLeft.ng-leave, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-tilt.ng-enter, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-tilt.ng-leave, .toast, .toast.inactive, #performance.active .two, #performance.active .three {
+.activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter, .activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave, .activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter, .activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave, .activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter, .activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave, .activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter, .activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave, .activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter, .activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave, .activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter, .activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave, .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-fade.ng-enter, .activate-fade.ng-leave, .activate-fadeIn.ng-enter, .activate-fadeIn.ng-leave, .activate-scaleUp.ng-enter, .activate-scaleUp.ng-leave, .activate-scaleDown.ng-enter, .activate-scaleDown.ng-leave, .activate-scaleUpDown.ng-enter, .activate-scaleUpDown.ng-leave, .activate-scaleDownUp.ng-enter, .activate-scaleDownUp.ng-leave, .activate-slideUp.ng-enter, .activate-slideUp.ng-leave, .activate-slideUpDown.ng-enter, .activate-slideUpDown.ng-leave, .activate-slideDown.ng-enter, .activate-slideDown.ng-leave, .activate-slideLeft.ng-enter, .activate-slideLeft.ng-leave, .activate-slideRight.ng-enter, .activate-slideRight.ng-leave, .activate-shiftUp.ng-enter, .activate-shiftUp.ng-leave, .activate-shiftDown.ng-enter, .activate-shiftDown.ng-leave, .activate-shiftLeft.ng-enter, .activate-shiftLeft.ng-leave, .activate-shiftRight.ng-enter, .activate-shiftRight.ng-leave, .activate-shiftLeftRight.ng-enter, .activate-shiftLeftRight.ng-leave, .activate-flipLeft.ng-enter, .activate-flipLeft.ng-leave, .activate-tilt.ng-enter, .activate-tilt.ng-leave, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after, .toast, .toast.inactive {
   -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
@@ -4548,7 +4649,7 @@
 }
 
 /* line 40, ../scss/modules/animations/_components.scss */
-.activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-flipLeft.ng-enter, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-flipLeft.ng-leave, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-tilt.ng-enter, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-tilt.ng-leave, .animation-3d, .activate-all-flipLeft, .activate-all-tilt {
+.activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .animation-3d, .activate-all-flipLeft, .activate-all-tilt {
   -moz-animation-duration: 300ms;
   -webkit-animation-duration: 300ms;
   animation-duration: 300ms;
@@ -4568,7 +4669,7 @@
 }
 
 /* line 49, ../scss/modules/animations/_components.scss */
-.activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-fade.ng-enter, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after {
+.activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter {
   -moz-animation-name: fade-active;
   -webkit-animation-name: fade-active;
   animation-name: fade-active;
@@ -4578,7 +4679,7 @@
 }
 
 /* line 50, ../scss/modules/animations/_components.scss */
-.activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-fade.ng-leave, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after {
+.activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave {
   -moz-animation-name: fade-inactive;
   -webkit-animation-name: fade-inactive;
   animation-name: fade-inactive;
@@ -4620,7 +4721,7 @@
   }
 }
 /* line 61, ../scss/modules/animations/_components.scss */
-.activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter, .activate-fadeIn.ng-enter {
+.activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter {
   -moz-animation-name: fade-active;
   -webkit-animation-name: fade-active;
   animation-name: fade-active;
@@ -4630,7 +4731,7 @@
 }
 
 /* line 62, ../scss/modules/animations/_components.scss */
-.activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave, .activate-fadeIn.ng-leave {
+.activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave {
   -moz-animation-name: fadeIn-inactive;
   -webkit-animation-name: fadeIn-inactive;
   animation-name: fadeIn-inactive;
@@ -4650,7 +4751,7 @@
   }
 }
 /* line 68, ../scss/modules/animations/_components.scss */
-.activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-scaleUp.ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter, .activate-scaleUpDown.ng-enter {
+.activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter {
   -moz-animation-name: scaleUp-active;
   -webkit-animation-name: scaleUp-active;
   animation-name: scaleUp-active;
@@ -4660,7 +4761,7 @@
 }
 
 /* line 69, ../scss/modules/animations/_components.scss */
-.activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-scaleUp.ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave, .activate-scaleDownUp.ng-leave {
+.activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave {
   -moz-animation-name: scaleUp-inactive;
   -webkit-animation-name: scaleUp-inactive;
   animation-name: scaleUp-inactive;
@@ -4734,7 +4835,7 @@
   }
 }
 /* line 92, ../scss/modules/animations/_components.scss */
-.activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-scaleDown.ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter, .activate-scaleDownUp.ng-enter {
+.activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter {
   -moz-animation-name: scaleDown-active;
   -webkit-animation-name: scaleDown-active;
   animation-name: scaleDown-active;
@@ -4744,7 +4845,7 @@
 }
 
 /* line 93, ../scss/modules/animations/_components.scss */
-.activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-scaleDown.ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave, .activate-scaleUpDown.ng-leave {
+.activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave {
   -moz-animation-name: scaleDown-inactive;
   -webkit-animation-name: scaleDown-inactive;
   animation-name: scaleDown-inactive;
@@ -4922,7 +5023,7 @@
   }
 }
 /* line 164, ../scss/modules/animations/_components.scss */
-.activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter, .activate-slideLeft.ng-enter {
+.activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter {
   -moz-animation-name: slideLeft-active;
   -webkit-animation-name: slideLeft-active;
   animation-name: slideLeft-active;
@@ -4932,7 +5033,7 @@
 }
 
 /* line 165, ../scss/modules/animations/_components.scss */
-.activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave, .activate-slideLeft.ng-leave {
+.activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave {
   -moz-animation-name: slideLeft-inactive;
   -webkit-animation-name: slideLeft-inactive;
   animation-name: slideLeft-inactive;
@@ -4998,7 +5099,7 @@
   }
 }
 /* line 176, ../scss/modules/animations/_components.scss */
-.activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter, .activate-slideRight.ng-enter {
+.activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter {
   -moz-animation-name: slideRight-active;
   -webkit-animation-name: slideRight-active;
   animation-name: slideRight-active;
@@ -5008,7 +5109,7 @@
 }
 
 /* line 177, ../scss/modules/animations/_components.scss */
-.activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave, .activate-slideRight.ng-leave {
+.activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave {
   -moz-animation-name: slideRight-inactive;
   -webkit-animation-name: slideRight-inactive;
   animation-name: slideRight-inactive;
@@ -5074,7 +5175,7 @@
   }
 }
 /* line 188, ../scss/modules/animations/_components.scss */
-.activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter, .activate-slideUp.ng-enter {
+.activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter {
   -moz-animation-name: slideUp-active;
   -webkit-animation-name: slideUp-active;
   animation-name: slideUp-active;
@@ -5084,7 +5185,7 @@
 }
 
 /* line 189, ../scss/modules/animations/_components.scss */
-.activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave, .activate-slideUp.ng-leave {
+.activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave {
   -moz-animation-name: slideUp-inactive;
   -webkit-animation-name: slideUp-inactive;
   animation-name: slideUp-inactive;
@@ -5150,7 +5251,7 @@
   }
 }
 /* line 200, ../scss/modules/animations/_components.scss */
-.activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter, .activate-slideDown.ng-enter {
+.activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter {
   -moz-animation-name: slideDown-active;
   -webkit-animation-name: slideDown-active;
   animation-name: slideDown-active;
@@ -5160,7 +5261,7 @@
 }
 
 /* line 201, ../scss/modules/animations/_components.scss */
-.activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave, .activate-slideDown.ng-leave {
+.activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave {
   -moz-animation-name: slideDown-inactive;
   -webkit-animation-name: slideDown-inactive;
   animation-name: slideDown-inactive;
@@ -5226,7 +5327,7 @@
   }
 }
 /* line 212, ../scss/modules/animations/_components.scss */
-.activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter, .activate-slideUpDown.ng-enter {
+.activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter {
   -moz-animation-name: slideUpDown-active;
   -webkit-animation-name: slideUpDown-active;
   animation-name: slideUpDown-active;
@@ -5236,7 +5337,7 @@
 }
 
 /* line 213, ../scss/modules/animations/_components.scss */
-.activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave, .activate-slideUpDown.ng-leave {
+.activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave {
   -moz-animation-name: slideUpDown-inactive;
   -webkit-animation-name: slideUpDown-inactive;
   animation-name: slideUpDown-inactive;
@@ -5358,7 +5459,7 @@
   }
 }
 /* line 236, ../scss/modules/animations/_components.scss */
-.activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter, .activate-shiftUp.ng-enter {
+.activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter {
   -moz-animation-name: shiftUp-active;
   -webkit-animation-name: shiftUp-active;
   animation-name: shiftUp-active;
@@ -5368,7 +5469,7 @@
 }
 
 /* line 237, ../scss/modules/animations/_components.scss */
-.activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave, .activate-shiftUp.ng-leave {
+.activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave {
   -moz-animation-name: shiftUp-inactive;
   -webkit-animation-name: shiftUp-inactive;
   animation-name: shiftUp-inactive;
@@ -5442,7 +5543,7 @@
   }
 }
 /* line 260, ../scss/modules/animations/_components.scss */
-.activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter, .activate-shiftDown.ng-enter {
+.activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter {
   -moz-animation-name: shiftDown-active;
   -webkit-animation-name: shiftDown-active;
   animation-name: shiftDown-active;
@@ -5452,7 +5553,7 @@
 }
 
 /* line 261, ../scss/modules/animations/_components.scss */
-.activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave, .activate-shiftDown.ng-leave {
+.activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave {
   -moz-animation-name: shiftDown-inactive;
   -webkit-animation-name: shiftDown-inactive;
   animation-name: shiftDown-inactive;
@@ -5526,7 +5627,7 @@
   }
 }
 /* line 284, ../scss/modules/animations/_components.scss */
-.activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-shiftLeft.ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter, .activate-shiftLeftRight.ng-enter {
+.activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter {
   -moz-animation-name: shiftLeft-active;
   -webkit-animation-name: shiftLeft-active;
   animation-name: shiftLeft-active;
@@ -5536,7 +5637,7 @@
 }
 
 /* line 285, ../scss/modules/animations/_components.scss */
-.activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave, .activate-shiftLeft.ng-leave {
+.activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave {
   -moz-animation-name: shiftLeft-inactive;
   -webkit-animation-name: shiftLeft-inactive;
   animation-name: shiftLeft-inactive;
@@ -5610,7 +5711,7 @@
   }
 }
 /* line 308, ../scss/modules/animations/_components.scss */
-.activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter, .activate-shiftRight.ng-enter {
+.activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter {
   -moz-animation-name: shiftRight-active;
   -webkit-animation-name: shiftRight-active;
   animation-name: shiftRight-active;
@@ -5620,7 +5721,7 @@
 }
 
 /* line 309, ../scss/modules/animations/_components.scss */
-.activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-shiftRight.ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave, .activate-shiftLeftRight.ng-leave {
+.activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave {
   -moz-animation-name: shiftRight-inactive;
   -webkit-animation-name: shiftRight-inactive;
   animation-name: shiftRight-inactive;
@@ -5694,7 +5795,7 @@
   }
 }
 /* line 332, ../scss/modules/animations/_components.scss */
-.activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-flipLeft.ng-enter {
+.activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter {
   -moz-animation-name: flipLeft-active;
   -webkit-animation-name: flipLeft-active;
   animation-name: flipLeft-active;
@@ -5704,7 +5805,7 @@
 }
 
 /* line 333, ../scss/modules/animations/_components.scss */
-.activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-flipLeft.ng-leave {
+.activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave {
   -moz-animation-name: flipLeft-inactive;
   -webkit-animation-name: flipLeft-inactive;
   animation-name: flipLeft-inactive;
@@ -5778,7 +5879,7 @@
   }
 }
 /* line 350, ../scss/modules/animations/_components.scss */
-.activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-tilt.ng-enter {
+.activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter {
   -moz-animation-name: tilt-active;
   -webkit-animation-name: tilt-active;
   animation-name: tilt-active;
@@ -5788,7 +5889,7 @@
 }
 
 /* line 351, ../scss/modules/animations/_components.scss */
-.activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-tilt.ng-leave {
+.activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave {
   -moz-animation-name: tilt-inactive;
   -webkit-animation-name: tilt-inactive;
   animation-name: tilt-inactive;
@@ -5912,7 +6013,7 @@
   opacity: 0.7;
 }
 
-/* line 400, ../scss/modules/animations/_components.scss */
+/* line 411, ../scss/modules/animations/_components.scss */
 .hover-fromLight, .transition-fromLight {
   opacity: 0.7;
 }
@@ -5921,7 +6022,7 @@
   opacity: 1;
 }
 
-/* line 409, ../scss/modules/animations/_components.scss */
+/* line 420, ../scss/modules/animations/_components.scss */
 .hover-scaleUp, .transition-scaleUp {
   -moz-transition-property: -moz-transform;
   -o-transition-property: -o-transform;
@@ -5936,7 +6037,7 @@
   transform: scale(1.2);
 }
 
-/* line 416, ../scss/modules/animations/_components.scss */
+/* line 427, ../scss/modules/animations/_components.scss */
 .transition-slideFromLeft {
   -moz-transform: translateX(-100%);
   -ms-transform: translateX(-100%);
@@ -5949,6 +6050,348 @@
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
   transform: translateX(0);
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-fade.ng-enter {
+  -moz-animation-name: fade-active;
+  -webkit-animation-name: fade-active;
+  animation-name: fade-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-fade.ng-leave {
+  -moz-animation-name: fade-inactive;
+  -webkit-animation-name: fade-inactive;
+  animation-name: fade-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-fadeIn.ng-enter {
+  -moz-animation-name: fadeIn-active;
+  -webkit-animation-name: fadeIn-active;
+  animation-name: fadeIn-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-fadeIn.ng-leave {
+  -moz-animation-name: fadeIn-inactive;
+  -webkit-animation-name: fadeIn-inactive;
+  animation-name: fadeIn-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-scaleUp.ng-enter {
+  -moz-animation-name: scaleUp-active;
+  -webkit-animation-name: scaleUp-active;
+  animation-name: scaleUp-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-scaleUp.ng-leave {
+  -moz-animation-name: scaleUp-inactive;
+  -webkit-animation-name: scaleUp-inactive;
+  animation-name: scaleUp-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-scaleDown.ng-enter {
+  -moz-animation-name: scaleDown-active;
+  -webkit-animation-name: scaleDown-active;
+  animation-name: scaleDown-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-scaleDown.ng-leave {
+  -moz-animation-name: scaleDown-inactive;
+  -webkit-animation-name: scaleDown-inactive;
+  animation-name: scaleDown-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-scaleUpDown.ng-enter {
+  -moz-animation-name: scaleUp-active;
+  -webkit-animation-name: scaleUp-active;
+  animation-name: scaleUp-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-scaleUpDown.ng-leave {
+  -moz-animation-name: scaleDown-inactive;
+  -webkit-animation-name: scaleDown-inactive;
+  animation-name: scaleDown-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-scaleDownUp.ng-enter {
+  -moz-animation-name: scaleDown-active;
+  -webkit-animation-name: scaleDown-active;
+  animation-name: scaleDown-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-scaleDownUp.ng-leave {
+  -moz-animation-name: scaleUp-inactive;
+  -webkit-animation-name: scaleUp-inactive;
+  animation-name: scaleUp-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-slideUp.ng-enter {
+  -moz-animation-name: slideUp-active;
+  -webkit-animation-name: slideUp-active;
+  animation-name: slideUp-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-slideUp.ng-leave {
+  -moz-animation-name: slideUp-inactive;
+  -webkit-animation-name: slideUp-inactive;
+  animation-name: slideUp-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-slideUpDown.ng-enter {
+  -moz-animation-name: slideUpDown-active;
+  -webkit-animation-name: slideUpDown-active;
+  animation-name: slideUpDown-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-slideUpDown.ng-leave {
+  -moz-animation-name: slideUpDown-inactive;
+  -webkit-animation-name: slideUpDown-inactive;
+  animation-name: slideUpDown-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-slideDown.ng-enter {
+  -moz-animation-name: slideDown-active;
+  -webkit-animation-name: slideDown-active;
+  animation-name: slideDown-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-slideDown.ng-leave {
+  -moz-animation-name: slideDown-inactive;
+  -webkit-animation-name: slideDown-inactive;
+  animation-name: slideDown-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-slideLeft.ng-enter {
+  -moz-animation-name: slideLeft-active;
+  -webkit-animation-name: slideLeft-active;
+  animation-name: slideLeft-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-slideLeft.ng-leave {
+  -moz-animation-name: slideLeft-inactive;
+  -webkit-animation-name: slideLeft-inactive;
+  animation-name: slideLeft-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-slideRight.ng-enter {
+  -moz-animation-name: slideRight-active;
+  -webkit-animation-name: slideRight-active;
+  animation-name: slideRight-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-slideRight.ng-leave {
+  -moz-animation-name: slideRight-inactive;
+  -webkit-animation-name: slideRight-inactive;
+  animation-name: slideRight-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-shiftUp.ng-enter {
+  -moz-animation-name: shiftUp-active;
+  -webkit-animation-name: shiftUp-active;
+  animation-name: shiftUp-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-shiftUp.ng-leave {
+  -moz-animation-name: shiftUp-inactive;
+  -webkit-animation-name: shiftUp-inactive;
+  animation-name: shiftUp-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-shiftDown.ng-enter {
+  -moz-animation-name: shiftDown-active;
+  -webkit-animation-name: shiftDown-active;
+  animation-name: shiftDown-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-shiftDown.ng-leave {
+  -moz-animation-name: shiftDown-inactive;
+  -webkit-animation-name: shiftDown-inactive;
+  animation-name: shiftDown-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-shiftLeft.ng-enter {
+  -moz-animation-name: shiftLeft-active;
+  -webkit-animation-name: shiftLeft-active;
+  animation-name: shiftLeft-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-shiftLeft.ng-leave {
+  -moz-animation-name: shiftLeft-inactive;
+  -webkit-animation-name: shiftLeft-inactive;
+  animation-name: shiftLeft-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-shiftRight.ng-enter {
+  -moz-animation-name: shiftRight-active;
+  -webkit-animation-name: shiftRight-active;
+  animation-name: shiftRight-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-shiftRight.ng-leave {
+  -moz-animation-name: shiftRight-inactive;
+  -webkit-animation-name: shiftRight-inactive;
+  animation-name: shiftRight-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-shiftLeftRight.ng-enter {
+  -moz-animation-name: shiftLeft-active;
+  -webkit-animation-name: shiftLeft-active;
+  animation-name: shiftLeft-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-shiftLeftRight.ng-leave {
+  -moz-animation-name: shiftRight-inactive;
+  -webkit-animation-name: shiftRight-inactive;
+  animation-name: shiftRight-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-flipLeft.ng-enter {
+  -moz-animation-name: flipLeft-active;
+  -webkit-animation-name: flipLeft-active;
+  animation-name: flipLeft-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-flipLeft.ng-leave {
+  -moz-animation-name: flipLeft-inactive;
+  -webkit-animation-name: flipLeft-inactive;
+  animation-name: flipLeft-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-tilt.ng-enter {
+  -moz-animation-name: tilt-active;
+  -webkit-animation-name: tilt-active;
+  animation-name: tilt-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.activate-tilt.ng-leave {
+  -moz-animation-name: tilt-inactive;
+  -webkit-animation-name: tilt-inactive;
+  animation-name: tilt-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
 }
 
 /* line 13, ../scss/modules/themes/_components.scss */
@@ -16443,6 +16886,24 @@ button.transparent.darken:focus, .button.transparent.darken:focus, input[type="b
   transform: translateX(50%) translateY(50%);
 }
 
+/* line 42, ../scss/modules/states/_mixins.scss */
+.tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after {
+  -moz-animation-name: fade-active;
+  -webkit-animation-name: fade-active;
+  animation-name: fade-active;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
+/* line 42, ../scss/modules/states/_mixins.scss */
+.tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after {
+  -moz-animation-name: fade-inactive;
+  -webkit-animation-name: fade-inactive;
+  animation-name: fade-inactive;
+  -moz-animation-duration: 300ms;
+  -webkit-animation-duration: 300ms;
+  animation-duration: 300ms;
+}
 /* line 91, ../scss/modules/labels/_components.scss */
 .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after {
   pointer-events: none;
@@ -16981,106 +17442,6 @@ table.zebra tr:only-child, table.striped tr:only-child {
 table.hover tr:hover {
   background-color: #dadada;
 }
-/* line 6, ../scss/modules/states/_components.scss */
-.hide, .hidden {
-  display: none !important;
-}
-
-/* line 8, ../scss/modules/states/_components.scss */
-.show {
-  display: inherit !important;
-}
-
-@media only screen and (max-width: 47.9375em) {
-  /* line 6, ../scss/modules/states/_components.scss */
-  .hide-small, .hidden-small {
-    display: none !important;
-  }
-}
-
-@media only screen and (max-width: 47.9375em) {
-  /* line 8, ../scss/modules/states/_components.scss */
-  .show-small {
-    display: inherit !important;
-  }
-}
-
-@media only screen and (min-width: 48em) {
-  /* line 6, ../scss/modules/states/_components.scss */
-  .hide-medium, .hidden-medium {
-    display: none !important;
-  }
-}
-
-@media only screen and (min-width: 48em) {
-  /* line 8, ../scss/modules/states/_components.scss */
-  .show-medium {
-    display: inherit !important;
-  }
-}
-
-@media only screen and (min-width: 80em) {
-  /* line 6, ../scss/modules/states/_components.scss */
-  .hide-large, .hidden-large {
-    display: none !important;
-  }
-}
-
-@media only screen and (min-width: 80em) {
-  /* line 8, ../scss/modules/states/_components.scss */
-  .show-large {
-    display: inherit !important;
-  }
-}
-
-@media only screen and (max-height: 43.75em) {
-  /* line 6, ../scss/modules/states/_components.scss */
-  .hide-short, .hidden-short {
-    display: none !important;
-  }
-}
-
-@media only screen and (max-height: 43.75em) {
-  /* line 8, ../scss/modules/states/_components.scss */
-  .show-short {
-    display: inherit !important;
-  }
-}
-
-@media only screen and (min-width: 56.25em) {
-  /* line 6, ../scss/modules/states/_components.scss */
-  .hide-tall, .hidden-tall {
-    display: none !important;
-  }
-}
-
-@media only screen and (min-width: 56.25em) {
-  /* line 8, ../scss/modules/states/_components.scss */
-  .show-tall {
-    display: inherit !important;
-  }
-}
-
-@media only screen {
-  /* line 11, ../scss/modules/states/_components.scss */
-  .print-only {
-    display: none !important;
-  }
-}
-@media print {
-  /* line 11, ../scss/modules/states/_components.scss */
-  .print-only {
-    display: inherit !important;
-  }
-}
-
-@media print {
-  /* line 16, ../scss/modules/states/_components.scss */
-  .print-hide {
-    display: none !important;
-  }
-}
-
 /* line 7, ../scss/modules/panels/_components.scss */
 .modal, .panel {
   font-size: 16px ;
@@ -17639,34 +18000,4 @@ table.hover tr:hover {
   content: "";
   display: table;
   clear: both;
-}
-
-/* line 86, ../scss/cadenza.scss */
-#performance.active .one {
-  -webkit-animation: scaleDown-active 0.5s ease-in 0s, scaleDown-inactive 0.5s ease-in 1.5s;
-  -webkit-animation-fill-mode: forwards;
-}
-/* line 95, ../scss/cadenza.scss */
-#performance.active .two {
-  -moz-animation-name: "scaleUp-active";
-  -webkit-animation-name: "scaleUp-active";
-  animation-name: "scaleUp-active";
-  -moz-animation-duration: 0.5s;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -moz-animation-delay: 0.5s;
-  -webkit-animation-delay: 0.5s;
-  animation-delay: 0.5s;
-}
-/* line 99, ../scss/cadenza.scss */
-#performance.active .three {
-  -moz-animation-name: "slideLeft-active";
-  -webkit-animation-name: "slideLeft-active";
-  animation-name: "slideLeft-active";
-  -moz-animation-duration: 0.5s;
-  -webkit-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
 }

@@ -2,7 +2,7 @@
 // States Mixins and Functions
 // ===========================
 
-@mixin state($visibility, $mq-sizes...) {
+@mixin visibility($visibility, $mq-sizes...) {
     @if length($mq-sizes) == 0 {
         $mq-sizes: all;
     }
@@ -21,5 +21,25 @@
                 visibility: collapse !important;
             }
         }
+    }
+}
+
+@mixin on(
+    $self: false, // self
+    $parent: false, // immediate parent
+    $ancestor: false, // general ancestor
+    $adjacent: false, // adjacent sibling
+    $sibling: false // general sibling
+) {
+    $selector: &;
+
+    @if $self { $selector: '&#{$self}'; }
+    @else if $parent { $selector: '#{$parent} > &'; }
+    @else if $ancestor { $selector: '#{$ancestor} &'; }
+    @else if $adjacent { $selector: '#{$adjacent} + &'; }
+    @else if $sibling { $selector: '#{$sibling} ~ &'; }
+
+    #{$selector} {
+        @content;
     }
 }

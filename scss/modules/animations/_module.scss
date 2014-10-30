@@ -30,14 +30,8 @@ $transition-selector: '.active' !default;
 $transition-duration: $animation-duration !default;
 $transition-timing-function: $animation-timing-function !default; // easeInOutCubic
 $transition-delay: $animation-delay !default;
-
 $transition-delta-opacity: 0.3 !default;
 
-// Performance Settings
-$performance-beat-duration: 0.5s;
-
-// Performance Static Variables
-$_performance-current-index: 0;
 
 // Imports
 @import
