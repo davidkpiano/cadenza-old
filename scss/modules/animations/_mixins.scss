@@ -191,3 +191,73 @@
         }
     }
 }
+
+@mixin performance($tempo, $beat) {
+    $_performance-tempo: $tempo !global;
+    $_performance-beat: $beat !global;
+    $_performance-beats: 0 !global;
+    $_performance-marker: 0 !global;
+    $_performance-initialized: false !global;
+
+    %temp {
+        @content;
+    }
+
+    @debug $_performance-marker;
+
+    $_performance-initialized: true !global;
+
+    @include keyframes(blah) {
+        @content;
+    }
+
+    -webkit-animation-duration: #{(60 * $_performance-beats) / $tempo}s;
+    -webkit-animation-name: blah;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: step-start;
+}
+
+@mixin note($duration) {
+
+    @if $_performance-initialized {
+        $_performance-marker: $_performance-marker + ($duration / $_performance-beat) !global;
+        $keyframe: percentage($_performance-marker / $_performance-beats) % 100;
+
+        #{$keyframe} { @content; }
+    } @else {
+        $_performance-beats: $_performance-beats + ($duration / $_performance-beat) !global;
+    }
+}
+
+@mixin loop($iterations: 1) {
+    @for $i from 1 through $iterations {
+        @content;
+    }
+}
+
+.foo.active {
+    @include performance($tempo: 80, $beat: 1/4) {
+        @include loop(2) {
+            @include note(1/16) { background: red; }
+            @include note(1/16) { background: green; }
+        }
+        @include note(1/16) { background: red; }
+        @include note(1/16) { background: blue; }
+        @include note(1/16) { background: green; }
+        @include note(1/16) { background: orange; }
+        @include note(3/16) { background: navy; }
+
+        @include note(1/16) { background: red; }
+        @include note(1/16) { background: blue; }
+        @include note(1/16) { background: green; }
+        @include note(3/16) { background: navy; }
+
+        @include note(1/16) { background: red; }
+        @include note(1/16) { background: blue; }
+        @include note(1/16) { background: green; }
+        @include note(3/16) { background: navy; }
+
+        @include note(1/16) { background: black; }
+    }
+}
+

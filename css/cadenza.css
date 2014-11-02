@@ -4592,6 +4592,125 @@
   }
 }
 
+/* line 238, ../scss/modules/animations/_mixins.scss */
+.foo.active {
+  -webkit-animation-duration: 4.5s;
+  -webkit-animation-name: blah;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: step-start;
+}
+@-webkit-keyframes blah {
+  4.16667% {
+    background: red;
+  }
+  8.33333% {
+    background: green;
+  }
+  12.5% {
+    background: red;
+  }
+  16.66667% {
+    background: green;
+  }
+  20.83333% {
+    background: red;
+  }
+  25% {
+    background: blue;
+  }
+  29.16667% {
+    background: green;
+  }
+  33.33333% {
+    background: orange;
+  }
+  45.83333% {
+    background: navy;
+  }
+  50% {
+    background: red;
+  }
+  54.16667% {
+    background: blue;
+  }
+  58.33333% {
+    background: green;
+  }
+  70.83333% {
+    background: navy;
+  }
+  75% {
+    background: red;
+  }
+  79.16667% {
+    background: blue;
+  }
+  83.33333% {
+    background: green;
+  }
+  95.83333% {
+    background: navy;
+  }
+  0% {
+    background: black;
+  }
+}
+@keyframes blah {
+  4.16667% {
+    background: red;
+  }
+  8.33333% {
+    background: green;
+  }
+  12.5% {
+    background: red;
+  }
+  16.66667% {
+    background: green;
+  }
+  20.83333% {
+    background: red;
+  }
+  25% {
+    background: blue;
+  }
+  29.16667% {
+    background: green;
+  }
+  33.33333% {
+    background: orange;
+  }
+  45.83333% {
+    background: navy;
+  }
+  50% {
+    background: red;
+  }
+  54.16667% {
+    background: blue;
+  }
+  58.33333% {
+    background: green;
+  }
+  70.83333% {
+    background: navy;
+  }
+  75% {
+    background: red;
+  }
+  79.16667% {
+    background: blue;
+  }
+  83.33333% {
+    background: green;
+  }
+  95.83333% {
+    background: navy;
+  }
+  0% {
+    background: black;
+  }
+}
 /* line 8, ../scss/modules/animations/_components.scss */
 .inert, .activate-all-fade.inert, .activate-fade.inert, .activate-all-fadeIn.inert, .activate-fadeIn.inert, .activate-all-scaleUp.inert, .activate-scaleUp.inert, .activate-all-scaleDown.inert, .activate-scaleDown.inert, .activate-all-scaleUpDown.inert, .activate-scaleUpDown.inert, .activate-all-scaleDownUp.inert, .activate-scaleDownUp.inert, .activate-all-slideUp.inert, .activate-slideUp.inert, .activate-all-slideUpDown.inert, .activate-slideUpDown.inert, .activate-all-slideDown.inert, .activate-slideDown.inert, .activate-all-slideLeft.inert, .activate-slideLeft.inert, .activate-all-slideRight.inert, .activate-slideRight.inert, .activate-all-shiftUp.inert, .activate-shiftUp.inert, .activate-all-shiftDown.inert, .activate-shiftDown.inert, .activate-all-shiftLeft.inert, .activate-shiftLeft.inert, .activate-all-shiftRight.inert, .activate-shiftRight.inert, .activate-all-shiftLeftRight.inert, .activate-shiftLeftRight.inert, .activate-all-flipLeft.inert, .activate-flipLeft.inert, .activate-all-tilt.inert, .activate-tilt.inert, .inert.tooltip[title], .inert[class*=" tooltip-"][title], .inert[class^="tooltip-"][title], .inert > *, .activate-all-fade.inert > *, .activate-fade.inert > *, .activate-all-fadeIn.inert > *, .activate-fadeIn.inert > *, .activate-all-scaleUp.inert > *, .activate-scaleUp.inert > *, .activate-all-scaleDown.inert > *, .activate-scaleDown.inert > *, .activate-all-scaleUpDown.inert > *, .activate-scaleUpDown.inert > *, .activate-all-scaleDownUp.inert > *, .activate-scaleDownUp.inert > *, .activate-all-slideUp.inert > *, .activate-slideUp.inert > *, .activate-all-slideUpDown.inert > *, .activate-slideUpDown.inert > *, .activate-all-slideDown.inert > *, .activate-slideDown.inert > *, .activate-all-slideLeft.inert > *, .activate-slideLeft.inert > *, .activate-all-slideRight.inert > *, .activate-slideRight.inert > *, .activate-all-shiftUp.inert > *, .activate-shiftUp.inert > *, .activate-all-shiftDown.inert > *, .activate-shiftDown.inert > *, .activate-all-shiftLeft.inert > *, .activate-shiftLeft.inert > *, .activate-all-shiftRight.inert > *, .activate-shiftRight.inert > *, .activate-all-shiftLeftRight.inert > *, .activate-shiftLeftRight.inert > *, .activate-all-flipLeft.inert > *, .activate-flipLeft.inert > *, .activate-all-tilt.inert > *, .activate-tilt.inert > *, .inert.tooltip[title] > *, .inert[class*=" tooltip-"][title] > *, .inert[class^="tooltip-"][title] > * {
   -webkit-transition: none !important;
