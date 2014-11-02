@@ -144,6 +144,28 @@
     }
 }
 
+%pseudo {
+    content: '';
+
+    &-block {
+        @extend %pseudo;
+        display: block;
+    }
+
+    &-absolute {
+        @extend %pseudo-block;
+        position: absolute;
+    }
+
+    &-layer {
+        @extend %pseudo-absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
 %border-box {
     @include box-sizing(border-box);
 }

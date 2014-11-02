@@ -64,173 +64,115 @@
 // Horizontal Grid Components
 %column { @include _column(); }
 
+@for $i from 0 through $grid-columns {
+	$fraction-value: if($i / $grid-columns == 1, 100%, $i / $grid-columns);
+
+	$grid-column-fractions: map_merge($grid-column-fractions, ($i: $fraction-value)) !global;
+}
+
+@for $i from 0 through $grid-rows {
+	$fraction-value: if($i / $grid-rows == 1, 100%, $i / $grid-rows);
+
+	$grid-row-fractions: map_merge($grid-row-fractions, ($i: $fraction-value)) !global;
+}
+
+@debug column-width(1/2, $gutter: $grid-column-gutter);
+
+@function round-dcr($num) {
+	@return round($num);
+}
+
 @each $mq in $grid-column-mqs {
 	@include mq($mq) {
-		$suffix: -#{$mq};
-		@if $mq == 'all' { $suffix: ''; }
+		$suffix: if($mq == 'all', '', -#{$mq});
 
-		// %column#{$suffix} { @include _column(); }
+		@each $fraction-key, $fraction-value in $grid-column-fractions {
+			$is-named-fraction: type_of($fraction-key) == string;
 
-		@for $i from 0 through $grid-columns {
-			%column-#{$i}#{$suffix} {
-				// @extend %column#{$suffix};
-				@include column($i);
-			}
+			@if $is-named-fraction
+				and ($grid-columns * $fraction-value) == round-dcr($grid-columns * $fraction-value) {
+				%column-#{$fraction-key}#{$suffix} { @extend %column-#{$grid-columns * $fraction-value}#{$suffix}; }
 
-			%column-gutter-#{$i}#{$suffix} {
-				// @extend %column#{$suffix};
-				@include column($i, $gutter: $grid-column-gutter);
-			}
+				%column-offset-#{$fraction-key}#{$suffix} { @extend %column-offset-#{$grid-columns * $fraction-value}#{$suffix}; }
 
-			%columns-gutter#{$suffix} > * {
-				&:last-child {
-					margin-right: 0;
+				%column-gutter-#{$fraction-key}#{$suffix} { @extend %column-gutter-#{$grid-columns * $fraction-value}#{$suffix}; }
+
+				%column-gutter-offset-#{$fraction-key}#{$suffix} { @extend %column-gutter-offset-#{$grid-columns * $fraction-value}#{$suffix}; }
+
+				%column-push-#{$fraction-key}#{$suffix} { @extend %column-push-#{$grid-columns * $fraction-value}#{$suffix}; }
+
+				%column-pull-#{$fraction-key}#{$suffix} { @extend %column-pull-#{$grid-columns * $fraction-value}#{$suffix}; }
+
+			} @else {
+				%column-#{$fraction-key}#{$suffix} { @include column($fraction-value); }
+
+				%column-offset-#{$fraction-key}#{$suffix} { margin-left: column-offset-width($fraction-value); }
+
+				%column-gutter-#{$fraction-key}#{$suffix} {
+					@include column($fraction-value, $gutter: $grid-column-gutter);
+				}
+
+				%column-gutter-offset-#{$fraction-key}#{$suffix} {
+					margin-left: column-offset-width($fraction-value, $gutter: $grid-column-gutter);
+				}
+
+				%column-push-#{$fraction-key}#{$suffix} {
+					@if $fraction-value == 0 { left: auto; }
+					@else { left: column-width($fraction-value); }
+				}
+
+				%column-pull-#{$fraction-key}#{$suffix} {
+					@if $fraction-value == 0 { right: auto; }
+					@else { right: column-width($fraction-value); }
 				}
 			}
 
-			%columns-#{$i}#{$suffix} {
-				> * {				
-					@extend %column-#{$i}#{$suffix};
-					height: auto;
+			@if $fraction-value > 0
+				and (1 / $fraction-value) == round-dcr(1 / $fraction-value) {
+				%columns-#{$fraction-key} {
+					&#{$suffix} > * {
+						@extend %column-#{$fraction-key}#{$suffix};
+						height: auto;
 
-					@if $i > 0 and round($grid-columns / $i) == $grid-columns / $i {
 						&:nth-child(n+1) {
 							clear: none;
 						}
 
-						&:nth-child(#{$grid-columns / $i}n + 1) {
+						&:nth-child(#{1 / $fraction-value}n+1) {
 							clear: left;
 						}
 					}
-				}
 
-				&-border > * {
-					@if $i > 0 and round($grid-columns / $i) == $grid-columns / $i {
-						&:not(:nth-child(#{$grid-columns / $i}n + 1)) {
+					&-border#{$suffix} > * {
+						&:not(:nth-child(#{1 / $fraction-value}n + 1)) {
 							border-left-width: 0 !important;
 						}
 
-						&:nth-child(n+#{($grid-columns / $i)+1}) {
+						&:nth-child(n + #{1 / $fraction-value + 1}) {
 							border-top-width: 0 !important;
 						}
 					}
 				}
-			}
 
-			%columns-gutter-#{$i}#{$suffix} > * {
+				%columns-gutter-#{$fraction-key}#{$suffix} > * {
+					&, &:nth-child(n) {				
+						@extend %column-gutter-#{$fraction-key}#{$suffix};
+						margin-bottom: $grid-column-gutter;
+						height: auto;
+					}
 
-				&, &:nth-child(n) {				
-					@extend %column-gutter-#{$i}#{$suffix};
-					margin-bottom: $grid-column-gutter;
-					height: auto;
-				}
-
-				@if $i > 0 and round($grid-columns / $i) == $grid-columns / $i {
 					&:nth-child(n+1) {
 						clear: none;
 					}
 
-					&:nth-child(#{$grid-columns / $i}n + 1) {
+					&:nth-child(#{1 / $fraction-value}n + 1) {
 						clear: left;
 					}
 
-					&:nth-child(#{$grid-columns / $i}n) {
+					&:nth-child(#{1 / $fraction-value}n) {
 						margin-right: 0;
 					}
 				}
-			}
-
-			%column-offset-#{$i}#{$suffix} {
-				// @extend %column#{$suffix};
-				margin-left: column-offset-width($i);
-			}
-
-			%column-gutter-offset-#{$i}#{$suffix} {
-				// @extend %column#{$suffix};
-				margin-left: column-offset-width($i, $gutter: $grid-column-gutter);
-			}
-
-			%columns-offset-#{$i}#{$suffix} > * {
-				@extend %column-offset-#{$i}#{$suffix};
-			}
-
-			%column-push-#{$i}#{$suffix} {
-				@if $i == 0 { left: auto; }
-				@else { left: column-width($i); }
-			}
-
-			%columns-push-#{$i}#{$suffix} > * {
-				@extend %column-push-#{$i}#{$suffix};
-			}
-
-			%column-pull-#{$i}#{$suffix} {
-				@if $i == 0 { right: auto; }
-				@else { right: column-width($i); }
-			}
-
-			%columns-pull-#{$i}#{$suffix} > * {
-				@extend %column-pull-#{$i}#{$suffix};
-			}
-		}
-
-		// TODO: use maps
-		@for $i from 1 through length($grid-fractions) {
-			$fraction: nth($grid-fractions, $i);
-			$denominator: $i + 1;
-
-			%column-#{$fraction}#{$suffix} {
-				// @extend %column#{$suffix};
-
-				@if ($grid-columns / $denominator) == round($grid-columns / $denominator) {
-					@extend %column-#{$grid-columns / $denominator}#{$suffix};
-				} @else {
-					@include column(1 / $denominator);
-				}
-			}
-
-			%columns-#{$fraction}#{$suffix} > * {
-				@extend %column-#{$fraction}#{$suffix};
-				height: auto;
-
-				&:nth-child(n+1) {
-					clear: none;
-				}
-
-				&:nth-child(#{$denominator}n+1) {
-					clear: left;
-				}
-			}
-
-			%column-offset-#{$fraction}#{$suffix} {
-				// @extend %column#{$suffix};
-				
-				@if ($grid-columns / $denominator) == round($grid-columns / $denominator) {
-					@extend %column-offset-#{$grid-columns / $denominator}#{$suffix};
-				} @else {
-					margin-left: column-width(1 / $denominator);
-				}
-			}
-
-			%columns-offset-#{$fraction}#{$suffix} > * {
-				@extend %column-offset-#{$fraction}#{$suffix};
-			}
-
-			%column-push-#{$fraction}#{$suffix} {
-				@if $i == 0 { left: auto; }
-				@else { left: column-width(1 / $denominator); }
-			}
-
-			%columns-push-#{$fraction}#{$suffix} > * {
-				@extend %column-push-#{$fraction}#{$suffix};
-			}
-
-			%column-pull-#{$fraction}#{$suffix} {
-				@if $i == 0 { right: auto; }
-				@else { right: column-width(1 / $denominator); }
-			}
-
-			%columns-pull-#{$fraction}#{$suffix} > * {
-				@extend %column-pull-#{$fraction}#{$suffix};
 			}
 		}
 
@@ -251,17 +193,6 @@
 		%column-auto#{$suffix}, %columns-auto#{$suffix} > * {
 			height: auto !important;
 		}
-
-		// Parent class
-		%columns-middle#{$suffix} {
-			display: table;
-
-			> * {
-				float: none;
-				display: table-cell;
-				vertical-align: middle;
-			}
-		}
 	}
 }
 
@@ -273,111 +204,48 @@
 		$suffix: -#{$mq};
 		@if $mq == 'all' { $suffix: ''; }
 
-		%row-#{$mq} { @include _row(); }
+		@each $fraction-key, $fraction-value in $grid-row-fractions {
+			$is-named-fraction: type_of($fraction-key) == string;
 
-		@for $i from 0 through $grid-rows {
-			%row-#{$i}#{$suffix} {
-				@extend %row-#{$mq};
-				@include row($i);
-			}
+			@if $is-named-fraction
+				and ($grid-rows * $fraction-value) == round-dcr($grid-rows * $fraction-value) {
+				%row-#{$fraction-key}#{$suffix} { @extend %row-#{$grid-rows * $fraction-value}#{$suffix}; }
 
-			%rows-#{$i}#{$suffix} > * {
-				@extend %row-#{$i}#{$suffix};
-			}
+				// %row-offset-#{$fraction-key}#{$suffix} { @extend %row-offset-#{$grid-rows * $fraction-value}#{suffix}; }
 
-			// %row-offset-#{$i}#{$suffix} {
-			// 	@extend %row-#{$mq};
-			// 	margin-left: row-height($i);
-			// }
+				%row-gutter-#{$fraction-key}#{$suffix} { @extend %row-gutter-#{$grid-rows * $fraction-value}#{$suffix}; }
 
-			// %rows-offset-#{$i}#{$suffix} > * {
-			// 	@extend %row-offset-#{$i}#{$suffix};
-			// }
+				// %row-gutter-offset#{$fraction-key}#{$suffix} { @extend %row-gutter-offset#{$grid-columns * $fraction-value}#{$suffix}; }
 
-			%row-push-#{$i}#{$suffix} {
-				@if $i == 0 { top: auto; }
-				@else { top: row-height($i); }
-			}
+				%row-push-#{$fraction-key}#{$suffix} { @extend %row-push-#{$grid-rows * $fraction-value}#{$suffix}; }
 
-			%rows-push-#{$i}#{$suffix} > * {
-				@extend %row-push-#{$i}#{$suffix};
-			}
+				%row-pull-#{$fraction-key}#{$suffix} { @extend %row-pull-#{$grid-rows * $fraction-value}#{$suffix}; }
+			} @else {
+				%row-#{$fraction-key}#{$suffix} { @include row($fraction-value); }
 
-			%row-pull-#{$i}#{$suffix} {
-				@if $i == 0 { bottom: auto; }
-				@else { bottom: row-height($i); }
-			}
+				// %row-offset-#{$fraction-key}#{$suffix} { margin-left: row-offset-width($fraction-value); }
 
-			%rows-pull-#{$i}#{$suffix} > * {
-				@extend %row-pull-#{$i}#{$suffix};
-			}
+				%row-gutter-#{$fraction-key}#{$suffix} {
+					@include row($fraction-value, $gutter: $grid-row-gutter);
+				}
 
-			%row-gutter-#{$i}#{$suffix} {
-				@include row($i, $gutter: $grid-row-gutter);
-			}
+				// %row-gutter-offset#{$fraction-key}#{$suffix} {
+				// 	margin-left: row-offset-width($fraction-value, $gutter: $grid-row-gutter);
+				// }
 
-			%rows-gutter#{$suffix} > * {
-				&:last-child {
-					margin-bottom: 0;
+				%row-push-#{$fraction-key}#{$suffix} {
+					top: row-width($fraction-value);
+				}
+
+				%row-pull-#{$fraction-key}#{$suffix} {
+					bottom: row-width($fraction-value);
 				}
 			}
 
-			%rows-gutter-#{$i}#{$suffix} > * {
+			%rows-gutter-#{$fraction-key}#{$suffix} > * {
 				&, &:nth-child(n) {
-					@extend %row-gutter-#{$i}#{$suffix};
+					@extend %row-gutter-#{$fraction-key}#{$suffix};
 				}
-			}
-		}
-
-		// TODO: use maps
-		@for $i from 1 through length($grid-fractions) {
-			$fraction: nth($grid-fractions, $i);
-			$denominator: $i + 1;
-
-			%row-#{$fraction}#{$suffix} {
-				@extend %row#{$suffix};
-
-				@if ($grid-rows / $denominator) == round($grid-rows / $denominator) {
-					@extend %row-#{$grid-rows / $denominator}#{$suffix};
-				} @else {
-					@include row(1 / $denominator);
-				}
-			}
-
-			%rows-#{$fraction}#{$suffix} > * {
-				@extend %row-#{$fraction}#{$suffix};
-			}
-
-			// %row-offset-#{$fraction}#{$suffix} {
-			// 	@extend %row-#{$mq};
-				
-			// 	@if ($grid-rows / $denominator) == round($grid-rows / $denominator) {
-			// 		@extend %row-offset-#{$grid-rows / $denominator}#{$suffix};
-			// 	} @else {
-			// 		margin-left: row-height(1 / $denominator);
-			// 	}
-			// }
-
-			// %rows-offset-#{$fraction}#{$suffix} > * {
-			// 	@extend %row-offset-#{$fraction}#{$suffix};
-			// }
-
-			%row-push-#{$fraction}#{$suffix} {
-				@if $i == 0 { top: auto; }
-				@else { top: row-height(1 / $denominator); }
-			}
-
-			%rows-push-#{$fraction}#{$suffix} > * {
-				@extend %row-push-#{$fraction}#{$suffix};
-			}
-
-			%row-pull-#{$fraction}#{$suffix} {
-				@if $i == 0 { bottom: auto; }
-				@else { bottom: row-height(1 / $denominator); }
-			}
-
-			%rows-pull-#{$fraction}#{$suffix} > * {
-				@extend %row-pull-#{$fraction}#{$suffix};
 			}
 		}
 
@@ -407,6 +275,7 @@
 			display: block;
 			float: none;
 			width: 100% !important;
+			height: auto;
 		}
 	}
 }

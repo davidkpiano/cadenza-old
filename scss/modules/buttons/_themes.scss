@@ -93,3 +93,29 @@
 	&-lighten { @include theme-button-transparent($color-lighten, $border-color-hover: rgba($color-lighten, 0)); }
 	&-darken { @include theme-button-transparent($color-darken, $border-color-hover: rgba($color-darken, 0)); }
 }
+
+@mixin theme-button-pseudo(
+	$bgcolor: transparent,
+	$bgcolor-hover: $button-bgcolor,
+	$transition: 'slideUp'
+) {
+	background-color: transparent;
+	z-index: 1;
+
+	&:after {
+		@extend %pseudo-layer;
+		@include move-on(':hover', $transition);
+
+		background-color: $bgcolor-hover;
+		z-index: -1;
+	}
+
+	&:hover {
+		background-color: transparent;
+	}
+}
+
+%theme-button-pseudo {
+	@include theme-button-pseudo;
+}
+
