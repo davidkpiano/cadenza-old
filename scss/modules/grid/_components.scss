@@ -64,13 +64,13 @@
 // Horizontal Grid Components
 %column { @include _column(); }
 
-@for $i from 0 through $grid-columns {
+@for $i from 1 through $grid-columns {
 	$fraction-value: if($i / $grid-columns == 1, 100%, $i / $grid-columns);
 
 	$grid-column-fractions: map_merge($grid-column-fractions, ($i: ($i, $grid-columns))) !global;
 }
 
-@for $i from 0 through $grid-rows {
+@for $i from 1 through $grid-rows {
 	$fraction-value: if($i / $grid-rows == 1, 100%, $i / $grid-rows);
 
 	$grid-row-fractions: map_merge($grid-row-fractions, ($i: ($i, $grid-rows))) !global;
@@ -125,7 +125,9 @@
 				}
 			}
 
-			@if nth($fraction-value, 1) == 1 {
+			@if is-integer(fraction-inverse($fraction-value)) {
+				$fraction-inverse: fraction-inverse($fraction-value);
+
 				%columns-#{$fraction-key} {
 					&#{$suffix} > * {
 						@extend %column-#{$fraction-key}#{$suffix};
@@ -135,17 +137,17 @@
 							clear: none;
 						}
 
-						&:nth-child(#{nth($fraction-value, 2)}n+1) {
+						&:nth-child(#{$fraction-inverse}n+1) {
 							clear: left;
 						}
 					}
 
 					&-border#{$suffix} > * {
-						&:not(:nth-child(#{nth($fraction-value, 2)}n + 1)) {
+						&:not(:nth-child(#{$fraction-inverse}n + 1)) {
 							border-left-width: 0 !important;
 						}
 
-						&:nth-child(n + #{nth($fraction-value, 2)}) {
+						&:nth-child(n + #{$fraction-inverse}) {
 							border-top-width: 0 !important;
 						}
 					}
@@ -162,11 +164,11 @@
 						clear: none;
 					}
 
-					&:nth-child(#{nth($fraction-value, 2)}n + 1) {
+					&:nth-child(#{$fraction-inverse}n + 1) {
 						clear: left;
 					}
 
-					&:nth-child(#{nth($fraction-value, 2)}n) {
+					&:nth-child(#{$fraction-inverse}n) {
 						margin-right: 0;
 					}
 				}

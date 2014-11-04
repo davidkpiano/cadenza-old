@@ -65,6 +65,16 @@
     }
 }
 
+@function is-integer($number) {
+    @return $number == round($number);
+}
+
+@function fraction-inverse($fraction) {
+    @debug $fraction;
+
+    @return nth($fraction, 2) / nth($fraction, 1);
+}
+
 @function fraction-value($fraction, $multiplier: 1) {
     @return nth($fraction, 1) * $multiplier / nth($fraction, 2);
 }
