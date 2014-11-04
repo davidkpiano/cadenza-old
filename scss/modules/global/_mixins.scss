@@ -65,40 +65,48 @@
     }
 }
 
+@function fraction-value($fraction, $multiplier: 1) {
+    @return nth($fraction, 1) * $multiplier / nth($fraction, 2);
+}
+
+@function grid-span(
+    $span,
+    $gutter: false
+) {
+    $numerator: 1;
+    $denominator: 1;
+
+    @if type_of($span) == list {
+        $numerator: nth($span, 1);
+        $denominator: nth($span, 2);
+    } @else if $span == auto or index(('%', 'px', 'em', 'rem'), unit($span)) {
+        @return $span;
+    } @else if round($span) == $span and unit($span) == '' and $span > 0 {
+        $numerator: $span;
+        $denominator: $grid-columns;
+    } @else {
+        @return percentage($span);
+    }
+
+    @if $gutter {        
+        @return calc(#{$numerator} * ((100% - #{$gutter * ($denominator - 1)}) / #{$denominator}) + (#{($numerator - 1) * $gutter}));
+    } @else {
+        @return percentage($numerator / $denominator);
+    }
+}
+
 @function column-width(
     $columns,
     $gutter: false
 ) {
-    // if $columns is an int, calculate from $grid-columns
-    @if $columns == auto or index(('%', 'px', 'em', 'rem'), unit($columns)) {
-        @return $columns;
-    } @else if round($columns) == $columns and unit($columns) == '' {
-
-        @if $gutter {
-            @return calc(#{$columns} * ((100% - #{$gutter * ($grid-columns - 1)}) / #{$grid-columns}) + (#{($columns - 1) * $gutter}));
-        } @else {
-            @return percentage($columns / $grid-columns);
-        }
-    } @else {
-        @return percentage($columns);
-    }
+    @return grid-span($columns, $gutter);
 }
 
 @function column-offset-width(
     $columns,
     $gutter: false
 ) {
-    // if $columns is an int, calculate from $grid-columns
-    @if round($columns) == $columns and unit($columns) == '' {
-
-        @if $gutter {
-            @return calc(#{$columns} * ((100% - #{$gutter * ($grid-columns - 1)}) / #{$grid-columns}) + (#{$columns * $gutter}));
-        } @else {
-            @return column-width($columns);
-        }
-    } @else {
-        @return column-width($columns);
-    }
+    @return grid-span($columns, $gutter);
 }
 
 @function row-height($rows...) {

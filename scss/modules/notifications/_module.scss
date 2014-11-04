@@ -1,10 +1,12 @@
 // 
 // Notifications Module
 // ====================
+$toaster-position-horizontal: left !default;
+$toaster-position-vertical: bottom !default;
+$toaster-margin: 1rem 0;
+
 $toast-style: default !default;
 $toast-theme: default !default;
-$toastQueue-position-horizontal: left !default;
-$toastQueue-position-vertical: bottom !default;
 $toast-margin: 1rem !default;
 $toast-min-width: 10rem !default;
 $toast-text-align: center !default;

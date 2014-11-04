@@ -197,14 +197,13 @@
     $_performance-beat: $beat !global;
     $_performance-beats: 0 !global;
     $_performance-marker: 0 !global;
+    $_performance-chord: false !global;
     $_performance-initialized: false !global;
 
     %temp {
         @content;
     }
-
-    @debug $_performance-marker;
-
+    
     $_performance-initialized: true !global;
 
     @include keyframes(blah) {
@@ -222,6 +221,7 @@
     @if $_performance-initialized {
         $_performance-marker: $_performance-marker + ($duration / $_performance-beat) !global;
         $keyframe: percentage($_performance-marker / $_performance-beats) % 100;
+        $keyframe: if($keyframe == 0, 100%, $keyframe);
 
         #{$keyframe} { @content; }
     } @else {

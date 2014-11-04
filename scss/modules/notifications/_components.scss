@@ -2,8 +2,9 @@
 // Notifications Components
 // ========================
 
-%toast-queue {
-    @include position-absolute($toastQueue-position-horizontal, $toastQueue-position-vertical);
+%toaster {
+    @include position-absolute($toaster-position-horizontal, $toaster-position-vertical);
+    margin: $toaster-margin;
 }
 
 %toast {
