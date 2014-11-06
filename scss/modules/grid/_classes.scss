@@ -21,8 +21,12 @@
 .pad-horizontal-none { @extend %pad-horizontal-none; }
 
 // Horizontal Grid Classes
-#{prefixed-class('col')}, #{prefixed-class('column')}, #{prefixed-class('columns', $selector: ' > *')}, #{prefixed-class('cols', $selector: ' > *')} {
+#{prefixed-class('col')}, #{prefixed-class('cols', $selector: ' > *')} {
 	@extend %column;
+}
+
+#{prefixed-class('cols')} {
+	@extend %columns;
 }
 
 @each $mq in $grid-column-mqs {

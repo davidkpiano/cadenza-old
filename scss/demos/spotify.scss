@@ -1,0 +1,11 @@
+$color-primary: #84bd00;
+$color-dark: #1c1c1f;
+$color-black: #121314;
+$fa-font-path: "../../assets/font-awesome-4.1.0/fonts";
+$type-base-font-size: 14px;
+
+@import '../cadenza';
+
+main {
+    @include column-layout((6rem, fill, 15rem));
+}

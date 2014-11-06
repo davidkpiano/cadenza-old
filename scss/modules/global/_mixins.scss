@@ -70,8 +70,6 @@
 }
 
 @function fraction-inverse($fraction) {
-    @debug $fraction;
-
     @return nth($fraction, 2) / nth($fraction, 1);
 }
 

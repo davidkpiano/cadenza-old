@@ -8,6 +8,7 @@
     $position: left,
     $active-selector: $transition-selector,
     $push: false,
+    $peek-width: 3rem,
     $mq: all,
     $animation: 'slideLeft',
     $extend: true
@@ -29,14 +30,16 @@
             width: $drawer-width !important;
             height: $drawer-height !important;
         }
-        
-        &#{$active-selector} {
-            // @include animation(#{$animation}-active);
-            @if $push {
+
+        @if $push {
+            $peek-width: if($peek-width, $peek-width, 0rem);
+
+            &#{$active-selector} {
+                // @include animation(#{$animation}-active);
                 @if $position == left {
-                    $push-translation: translateX($drawer-width);
+                    $push-translation: translateX(calc(#{$drawer-width} - #{$peek-width}));
                 } @else if $position == right {
-                    $push-translation: translateX(-$drawer-width);
+                    $push-translation: translateX(calc(-#{$drawer-width} + #{$peek-width}));
                 } @else if $position == top {
                     $push-translation: translateY($drawer-height);
                 } @else if $position == bottom {
@@ -45,6 +48,13 @@
 
                 ~ * {
                     @include transform($push-translation);
+                }
+            }
+
+            @if $peek-width > 0 {            
+                + * {
+                    max-width: calc(100% - #{$peek-width});
+                    #{$position}: $peek-width;
                 }
             }
         }

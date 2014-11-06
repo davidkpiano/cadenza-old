@@ -93,7 +93,7 @@
     }
 
     %color-#{$color-name} {
-        &, p, li, span { color: $color-value !important; }
+        &, p, li, span, * { color: $color-value !important; }
     }
 
     %transition-color-#{$color-name} {

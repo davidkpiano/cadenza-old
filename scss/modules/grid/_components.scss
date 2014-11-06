@@ -64,6 +64,8 @@
 // Horizontal Grid Components
 %column { @include _column(); }
 
+%columns { @extend %clearfix; }
+
 @for $i from 1 through $grid-columns {
 	$fraction-value: if($i / $grid-columns == 1, 100%, $i / $grid-columns);
 
@@ -102,9 +104,13 @@
 				%column-pull-#{$fraction-key}#{$suffix} { @extend %column-pull-#{fraction-value($fraction-value, $grid-columns)}#{$suffix}; }
 
 			} @else {
-				%column-#{$fraction-key}#{$suffix} { @include column($fraction-value); }
+				%column-#{$fraction-key}#{$suffix} {
+					@include column($fraction-value);
+				}
 
-				%column-offset-#{$fraction-key}#{$suffix} { margin-left: column-offset-width($fraction-value); }
+				%column-offset-#{$fraction-key}#{$suffix} {
+					margin-left: column-offset-width($fraction-value);
+				}
 
 				%column-gutter-#{$fraction-key}#{$suffix} {
 					@include column($fraction-value, $gutter: $grid-column-gutter);
@@ -129,6 +135,8 @@
 				$fraction-inverse: fraction-inverse($fraction-value);
 
 				%columns-#{$fraction-key} {
+					@include pie-clearfix;
+
 					&#{$suffix} > * {
 						@extend %column-#{$fraction-key}#{$suffix};
 						height: auto;

@@ -32,7 +32,7 @@
 		display: block;
 		padding: $nav-menu-item-link-padding;
 
-		&, &:hover {
+		&, &:hover, & > *, & > *:hover {
 			text-decoration: none;
 		}
 	}
