@@ -59,7 +59,7 @@
 }
 
 %theme-button-default {
-	@include transition((border-color, background-color, color));
+	&, & > * { @extend %transition; }
 	@include theme-button-default();
 
 	&-primary { @include theme-button-default($color-primary); }

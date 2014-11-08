@@ -51,9 +51,7 @@
 		width: column-width($columns, $gutter: $gutter) !important;
 
 		@if $gutter {
-			&:not(:last-child) {
-				margin-right: $gutter;
-			}
+			margin-right: $gutter;
 		}
 	}
 }

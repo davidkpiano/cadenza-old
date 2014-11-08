@@ -117,8 +117,6 @@ a, a > * {
 
 	&.light { @include style('anchor', 'light'); }
 	&.dark { @include style('anchor', 'dark'); }
-
-	&.fill { @extend %anchor-fill; }
 }
 
 .anchors-hint {

@@ -47,12 +47,20 @@ button, .button, input[type="button"], input[type="submit"] {
     &.right, .buttons-right > & { @extend %button-right; }
 
     // Display Button Classes
+    &.inline { @extend %button-inline; }
     &.block { @extend %button-block; }
     &.full {
         @extend %button-full;
 
         &-width { @extend %button-full-width; }
         &-height { @extend %button-full-height; }
+    }
+
+    &.circle {
+        @extend %button-circle;
+
+        &.small { @extend %button-circle-small; }
+        &.large { @extend %button-circle-large; }
     }
 
     // Button State Classes

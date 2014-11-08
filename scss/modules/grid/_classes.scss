@@ -37,7 +37,7 @@
 		.col-#{$fraction}#{$suffix} {
 			@extend %column-#{$fraction}#{$suffix};
 
-			.gutter#{$suffix} > & {
+			.gutter > &, .gutter#{$suffix} > & {
 				@extend %column-gutter-#{$fraction}#{$suffix};
 			}
 		}
@@ -49,7 +49,7 @@
 				@extend %columns-#{$fraction}-border#{$suffix} !optional;
 			}
 
-			&.gutter#{$suffix} {
+			&.gutter, &.gutter#{$suffix} {
 				@extend %columns-gutter-#{$fraction}#{$suffix} !optional;
 			}
 		}
@@ -57,7 +57,7 @@
 		.col-offset-#{$fraction}#{$suffix} {
 			@extend %column-offset-#{$fraction}#{$suffix};
 
-			.gutter#{$suffix} > & {
+			.gutter > &, .gutter#{$suffix} > & {
 				@extend %column-gutter-offset-#{$fraction}#{$suffix};
 			}
 		}

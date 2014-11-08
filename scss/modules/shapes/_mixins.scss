@@ -27,29 +27,24 @@
     }
 }
 
-@mixin shape-circle($diameter: false, $display: block) {
+@mixin shape-circle($diameter: false) {
     @if $diameter {    
         width: $diameter;
         height: $diameter;
     }
 
-    @if $display {
-        display: $display;
-    }
-
     @include border-radius(50%);
 }
 
-@mixin shape-square($width, $display: block, $important: true) {
-    @include shape-rectangle($width, $width, $display, $important);
+@mixin shape-square($width, $important: true) {
+    @include shape-rectangle($width, $width, $important);
 }
 
-@mixin shape-rectangle($width: auto, $height: auto, $display: block, $important: true) {
+@mixin shape-rectangle($width: auto, $height: auto, $important: true) {
     $important: if($important, '!important', '');
     
     width: $width #{$important};
     height: $height #{$important};
-    display: $display;
 }
 
 // EXPERIMENTAL
