@@ -69,12 +69,16 @@
     @return $number == round($number);
 }
 
-@function fraction-inverse($fraction) {
-    @return nth($fraction, 2) / nth($fraction, 1);
+@function fraction-value($fraction, $multiplier: 1) {
+    @if type-of($fraction) == number {
+        @return $fraction * $multiplier;
+    } @else {
+        @return nth($fraction, 1) * $multiplier / nth($fraction, 2);
+    }
 }
 
-@function fraction-value($fraction, $multiplier: 1) {
-    @return nth($fraction, 1) * $multiplier / nth($fraction, 2);
+@function fraction-inverse($fraction) {
+    @return 1 / fraction-value($fraction);
 }
 
 @function grid-span(

@@ -34,6 +34,15 @@ $positions-horizontal: (
     afterCenter
 ) !default;
 
+$ratios: (
+    '1-1': 1,
+    '2-1': (2, 1),
+    '1-2': (1, 2),
+    '4-3': (4, 3),
+    '16-9': (16, 9),
+    'golden': 1.618
+);
+
 // Imports
 @import
 	'_mixins',

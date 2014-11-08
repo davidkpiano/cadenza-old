@@ -2507,7 +2507,7 @@
 }
 
 /* line 5, ../scss/modules/layout/_components.scss */
-.position, [class*=" position-"], [class^="position-"], .layer, .page, .parallax-layer > span, .valign-bottom, .full, .dropdown-container > menu.below-left, .dropdown-container > menu.below-right, .dropdown-container > menu.above-left, .dropdown-container > menu.above-right, .dropdown-container > menu.top-left, .dropdown-container > menu.top-right, .dropdown-container > menu.bottom-left, .dropdown-container > menu.bottom-right, .dropdown-container > menu.bottom-push-right, .dropdown-container > menu.bottom-push-left, .dropdown-container > menu.top-push-right, .dropdown-container > menu.top-push-left, .badge.top-left, .badge.top-right, .badge.bottom-left, .badge.bottom-right, .tooltip-above-left:before, .tooltip-above-left:after, .tooltip-above-right:before, .tooltip-above-right:after, .tooltip-above-center:before, .tooltip-above-center:after, .tooltip-below-left:before, .tooltip-below-left:after, .tooltip-below-right:before, .tooltip-below-right:after, .tooltip-below-center:before, .tooltip-below-center:after, .tooltip-left:before, .tooltip-left:after, .tooltip-right:before, .tooltip-right:after, .alert .alert-exit, .modal, .toaster {
+.position, [class*=" position-"], [class^="position-"], .layer, .ratio > *, [class*=" ratio-"] > *, [class^="ratio-"] > *, .page, .parallax-layer > span, .valign-bottom, .full, .dropdown-container > menu.below-left, .dropdown-container > menu.below-right, .dropdown-container > menu.above-left, .dropdown-container > menu.above-right, .dropdown-container > menu.top-left, .dropdown-container > menu.top-right, .dropdown-container > menu.bottom-left, .dropdown-container > menu.bottom-right, .dropdown-container > menu.bottom-push-right, .dropdown-container > menu.bottom-push-left, .dropdown-container > menu.top-push-right, .dropdown-container > menu.top-push-left, .badge.top-left, .badge.top-right, .badge.bottom-left, .badge.bottom-right, .tooltip-above-left:before, .tooltip-above-left:after, .tooltip-above-right:before, .tooltip-above-right:after, .tooltip-above-center:before, .tooltip-above-center:after, .tooltip-below-left:before, .tooltip-below-left:after, .tooltip-below-right:before, .tooltip-below-right:after, .tooltip-below-center:before, .tooltip-below-center:after, .tooltip-left:before, .tooltip-left:after, .tooltip-right:before, .tooltip-right:after, .alert .alert-exit, .modal, .toaster {
   position: absolute !important;
 }
 
@@ -4445,17 +4445,34 @@
 }
 
 /* line 59, ../scss/modules/layout/_components.scss */
-.bar {
-  display: table-row;
+.ratio, [class*=" ratio-"], [class^="ratio-"] {
+  padding-left: 0;
+  padding-right: 0;
+  padding-bottom: 0;
 }
-/* line 62, ../scss/modules/layout/_components.scss */
-.bar > * {
-  display: table-cell;
-  vertical-align: middle;
+/* line 69, ../scss/modules/layout/_components.scss */
+.ratio-1-1 {
+  padding-top: 100%;
 }
-/* line 66, ../scss/modules/layout/_components.scss */
-.bar > .auto {
-  width: 100%;
+/* line 69, ../scss/modules/layout/_components.scss */
+.ratio-2-1 {
+  padding-top: 50%;
+}
+/* line 69, ../scss/modules/layout/_components.scss */
+.ratio-1-2 {
+  padding-top: 200%;
+}
+/* line 69, ../scss/modules/layout/_components.scss */
+.ratio-4-3 {
+  padding-top: 75%;
+}
+/* line 69, ../scss/modules/layout/_components.scss */
+.ratio-16-9 {
+  padding-top: 56.25%;
+}
+/* line 69, ../scss/modules/layout/_components.scss */
+.ratio-golden {
+  padding-top: 61.8047%;
 }
 
 /* line 47, ../scss/modules/layout/_classes.scss */
@@ -13254,7 +13271,7 @@
 }
 
 /* line 48, ../scss/modules/layers/_components.scss */
-.page {
+.ratio > *, [class*=" ratio-"] > *, [class^="ratio-"] > *, .page {
   left: 0;
   top: 0;
   bottom: initial;
@@ -13264,7 +13281,7 @@
   margin: 0;
 }
 /* line 38, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/general/_clearfix.scss */
-.page:after {
+.ratio > :after, [class*=" ratio-"] > :after, [class^="ratio-"] > :after, .page:after {
   content: "";
   display: table;
   clear: both;

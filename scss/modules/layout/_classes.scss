@@ -50,3 +50,13 @@
 .content-middle {
     @extend %content-middle;
 }
+
+#{prefixed-class('ratio')} {
+    @extend %ratio;
+}
+
+.ratio {
+    @each $ratio in map-keys($ratios) {
+        &-#{$ratio} { @extend %ratio-#{$ratio}; }
+    }
+}

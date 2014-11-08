@@ -56,22 +56,38 @@
     }
 }
 
-%bar {
-    display: table-row;
+%ratio {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
 
-    &-item {
-        display: table-cell;
-        vertical-align: middle;
+    > * {
+        @extend %page;
+    }
 
-        &-auto {
-            width: 100%;
+    @each $ratio-key, $ratio-value in $ratios {
+        &-#{$ratio-key} {
+            padding-top: percentage(fraction-inverse($ratio-value));
         }
     }
 }
 
-.bar {
-    @extend %bar;
+// %bar {
+//     display: table-row;
 
-    > * { @extend %bar-item; }
-    > .auto { @extend %bar-item-auto; }
-}
+//     &-item {
+//         display: table-cell;
+//         vertical-align: middle;
+
+//         &-auto {
+//             width: 100%;
+//         }
+//     }
+// }
+
+// .bar {
+//     @extend %bar;
+
+//     > * { @extend %bar-item; }
+//     > .auto { @extend %bar-item-auto; }
+// }
