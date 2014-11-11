@@ -212,6 +212,32 @@ hr {
 	&.center { @extend %hr-center; }
 }
 
+#{prefixed-class('rule')} {
+	@extend %type-rule;
+}
+
+.rule {
+	&-middle { @extend %type-rule-middle; }
+
+	&-top { @extend %type-rule-top; }
+
+	&-bottom { @extend %type-rule-bottom; }
+	
+	&-left { @extend %type-rule-left; }
+
+	&-right { @extend %type-rule-right; }
+
+	&-center { @extend %type-rule-center; }
+	
+	&-small { @extend %type-rule-small; }
+
+	&-large { @extend %type-rule-large; }
+
+	&-thick { @extend %type-rule-thick; }
+
+	&-thin { @extend %type-rule-thin; }
+}
+
 // Lists
 // -----
 ul {

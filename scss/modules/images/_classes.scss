@@ -1,0 +1,15 @@
+//
+// Images Classes
+// ==============
+
+// Image Classes
+img {
+    @extend %image !optional;
+
+    &.full {
+        @extend %image-full;
+
+        &-width { @extend %image-full-width; }
+        &-height { @extend %image-full-height; }
+    }
+}

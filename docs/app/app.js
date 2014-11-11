@@ -56,4 +56,16 @@ app.controller('ComponentController', [function() {
     this.range = function(quantity) {
         return _.range(quantity);
     };
+
+    this.edm = false;
+
+    this.play = function() {
+        if (!this.edm) {
+            this.edm = true;
+            document.getElementById('video').playVideo();
+        } else {
+            this.edm = false;
+            document.getElementById('video').pauseVideo();
+        }
+    }
 }]);

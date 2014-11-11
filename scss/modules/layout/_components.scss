@@ -62,7 +62,7 @@
     padding-bottom: 0;
 
     > * {
-        @extend %page;
+        @extend %layer;
     }
 
     @each $ratio-key, $ratio-value in $ratios {

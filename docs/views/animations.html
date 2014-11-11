@@ -1,6 +1,6 @@
 <h1>Animations Module</h1>
 
-<section class="hide">
+<section>
     <nav class="horizontal">
         <ul>
             <li ng-repeat="page in ['primary','secondary','light','dark']"><a ng-click="component.animations.page = page">{{page}}</a></li>
@@ -25,19 +25,77 @@
     </div>
 </section>
 
-<section class="row-12">
-    <div class="row-6 cols-6 gutter">
-        <div class="pad-large text-bottom mode-light foo active">
-            <hgroup>
-                <h1 class="uppercase"><span>Nice</span><strong>Lily</strong></h1>
-                <div class="uppercase">Lily likes to play with crayons and pencils</div>
-            </hgroup>
-        </div>
-        <div class="pad-large text-bottom bg-primary mode-light foo">
-            <hgroup>
-                <h1 class="uppercase"><span>Nice</span><strong>Lily</strong></h1>
-                <span class="uppercase">Lily likes to play with crayons and pencils</span>
-            </hgroup>
-        </div>
+<section class="row-12 hide">
+    <div class="edm page">
+        <button class="right" ng-click="component.play()"><i class="fa fa-play"></i></button>
+    </div>
+    <embed id="video" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen allowfullscreen="true" allowscriptaccess="always" quality="high" bgcolor="#000000" name="my-video" style="" src="http://www.youtube.com/v/SGkCV64pX2k?enablejsapi=1&version=3&playerapiid=ytplayer" type="application/x-shockwave-flash">
+
+    <div class="edm" ng-class="{active: component.edm}">
+        <div class="lp-1-1"></div>
+        <div class="lp-1-2"></div>
+        <div class="lp-1-3"></div>
+        <div class="lp-1-4"></div>
+        <div class="lp-1-5"></div>
+        <div class="lp-1-6"></div>
+        <div class="lp-1-7"></div>
+        <div class="lp-1-8"></div><br>
+        <div class="lp-2-1"></div>
+        <div class="lp-2-2"></div>
+        <div class="lp-2-3"></div>
+        <div class="lp-2-4"></div>
+        <div class="lp-2-5"></div>
+        <div class="lp-2-6"></div>
+        <div class="lp-2-7"></div>
+        <div class="lp-2-8"></div><br>
+        <div class="lp-3-1"></div>
+        <div class="lp-3-2"></div>
+        <div class="lp-3-3"></div>
+        <div class="lp-3-4"></div>
+        <div class="lp-3-5"></div>
+        <div class="lp-3-6"></div>
+        <div class="lp-3-7"></div>
+        <div class="lp-3-8"></div><br>
+        <div class="lp-4-1"></div>
+        <div class="lp-4-2"></div>
+        <div class="lp-4-3"></div>
+        <div class="lp-4-4"></div>
+        <div class="lp-4-5"></div>
+        <div class="lp-4-6"></div>
+        <div class="lp-4-7"></div>
+        <div class="lp-4-8"></div><br>
+        <div class="lp-5-1"></div>
+        <div class="lp-5-2"></div>
+        <div class="lp-5-3"></div>
+        <div class="lp-5-4"></div>
+        <div class="lp-5-5"></div>
+        <div class="lp-5-6"></div>
+        <div class="lp-5-7"></div>
+        <div class="lp-5-8"></div><br>
+        <div class="lp-6-1"></div>
+        <div class="lp-6-2"></div>
+        <div class="lp-6-3"></div>
+        <div class="lp-6-4"></div>
+        <div class="lp-6-5"></div>
+        <div class="lp-6-6"></div>
+        <div class="lp-6-7"></div>
+        <div class="lp-6-8"></div><br>
+        <div class="lp-7-1"></div>
+        <div class="lp-7-2"></div>
+        <div class="lp-7-3"></div>
+        <div class="lp-7-4"></div>
+        <div class="lp-7-5"></div>
+        <div class="lp-7-6"></div>
+        <div class="lp-7-7"></div>
+        <div class="lp-7-8"></div><br>
+        <div class="lp-8-1"></div>
+        <div class="lp-8-2"></div>
+        <div class="lp-8-3"></div>
+        <div class="lp-8-4"></div>
+        <div class="lp-8-5"></div>
+        <div class="lp-8-6"></div>
+        <div class="lp-8-7"></div>
+        <div class="lp-8-8"></div>
     </div>
 </section>
+

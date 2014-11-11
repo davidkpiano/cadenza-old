@@ -370,44 +370,121 @@
 	border-bottom-width: 0;
     border-left-width: 0;
     border-right-width: 0;
+
+    &-dotted {
+        border-style: dotted;
+    }
+
+    &-dashed {
+        border-style: dashed;
+    }
+
+    &-thick {
+        border-top-width: $hr-border-width-thick;
+    }
+
+    &-thin {
+        border-top-width: $hr-border-width-thin;
+    }
+
+    &-small {
+        width: $hr-width-small;
+    }
+
+    &-large {
+        width: $hr-width-large;
+    }
+
+    &-left {
+        margin-right: auto;
+    }
+
+    &-right {
+        margin-left: auto;
+    }
+
+    &-center {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-%hr-dotted {
-    border-style: dotted;
+%type-rule {
+    &:before, &:after {
+        @extend %pseudo-inline;
+        height: $hr-border-width;
+        width: $hr-width-small;
+    }
+
+    &-middle {
+        &:before, &:after {
+            margin: 0 $type-rule-margin-horizontal;
+            vertical-align: middle;
+        }
+    }
+
+    &-top {
+        &:before {
+            display: block;
+            margin-bottom: $type-rule-margin-vertical;
+        }
+
+        &:after { display: none; }
+    }
+
+    &-bottom {
+        &:after {
+            display: block;
+            margin-top: $type-rule-margin-vertical;
+        }
+
+        &:before { display: none; }
+    }
+
+    &-left {
+        &:before, &:after {
+            margin-right: auto;
+        }
+    }
+
+    &-right {
+        &:before, &:after {
+            margin-left: auto;
+        }
+    }
+
+    &-center {
+        &:before, &:after {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    &-small {
+        &:before, &:after {
+            width: $hr-width-small;
+        }
+    }
+
+    &-large {
+        &:before, &:after {
+            width: $hr-width-large;
+        }
+    }
+
+    &-thick {
+        &:before, &:after {
+            height: $hr-border-width-thick;
+        }
+    }
+
+    &-thin {
+        &:before, &:after {
+            height: $hr-border-width-thin;
+        }
+    }
 }
 
-%hr-dashed {
-    border-style: dashed;
-}
-
-%hr-thick {
-    border-top-width: $hr-border-width-thick;
-}
-
-%hr-thin {
-    border-top-width: $hr-border-width-thin;
-}
-
-%hr-small {
-    width: $hr-width-small;
-}
-
-%hr-large {
-    width: $hr-width-large;
-}
-
-%hr-left {
-    margin-right: auto;
-}
-
-%hr-right {
-    margin-left: auto;
-}
-
-%hr-center {
-    margin-left: auto;
-    margin-right: auto;
-}
 
 // Lists
 // -----

@@ -37,7 +37,8 @@
     'modules/fields/_module',
     'modules/tables/_module',
     'modules/panels/_module',
-    'modules/notifications/_module';
+    'modules/notifications/_module',
+    'modules/images/_module';
     /* 'modules/_tabs'; */
     /* 'modules/_dropdowns'; */
     /* 'modules/_alerts'; */
@@ -49,34 +50,10 @@
 
 
 // DELETE EVERYTHING BELOW THIS
-.gg-device {
-    height: 640px;
-    width: 360px;
 
-    @include row-layout((3rem, fill, 3rem));
-}
-.gg-header {
-    // height: 3rem;
-    @include column-layout((3.5rem, fill, 2.5rem, 2.5rem), $display: table);
-    @include valign-all(middle);
-}
 
-.gg-list-item {
-    height: 3.5rem;
-    @include column-layout((3.5rem, fill, 3rem), $display: table);
-    @include valign-all(middle);
-}
-
-.gg-avatar {
-    @include shape-circle(2rem);
-}
-
-.gg-flex-list {
-    > * { @extend %transition; }
-
-    @include column-layout((3.5rem, fill, 2.5rem));
-
-    &:hover {
-        @include column-layout((4.5rem, fill, 0));
-    }
+#{prefixed-class('lp')} {
+    @extend %square-large;
+    @extend %background-darken;
+    display: inline-block;
 }

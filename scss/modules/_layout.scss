@@ -152,6 +152,11 @@
         display: block;
     }
 
+    &-inline {
+        @extend %pseudo;
+        display: inline-block;
+    }
+
     &-absolute {
         @extend %pseudo-block;
         position: absolute;

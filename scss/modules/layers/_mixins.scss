@@ -8,7 +8,7 @@
     $position: left,
     $active-selector: $transition-selector,
     $push: false,
-    $peek-width: 3rem,
+    $peek-width: $drawer-peek-width,
     $mq: all,
     $animation: 'slideLeft',
     $extend: true
