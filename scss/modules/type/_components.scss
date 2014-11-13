@@ -412,8 +412,8 @@
 %type-rule {
     &:before, &:after {
         @extend %pseudo-inline;
-        height: $hr-border-width;
-        width: $hr-width-small;
+        height: $type-rule-height;
+        width: $type-rule-width;
     }
 
     &-middle {
@@ -462,25 +462,37 @@
 
     &-small {
         &:before, &:after {
-            width: $hr-width-small;
+            width: $type-rule-width-small;
         }
     }
 
     &-large {
         &:before, &:after {
-            width: $hr-width-large;
-        }
-    }
-
-    &-thick {
-        &:before, &:after {
-            height: $hr-border-width-thick;
+            width: $type-rule-width-large;
         }
     }
 
     &-thin {
         &:before, &:after {
-            height: $hr-border-width-thin;
+            height: $type-rule-height-thin;
+        }
+    }
+
+    &-thick {
+        &:before, &:after {
+            height: $type-rule-height-thick;
+        }
+    }
+
+    &-half {
+        &:before, &:after {
+            width: $type-rule-width-half;
+        }
+    }
+
+    &-full {
+        &:before, &:after {
+            width: $type-rule-width-full;
         }
     }
 }

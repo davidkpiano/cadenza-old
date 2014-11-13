@@ -214,6 +214,7 @@ hr {
 
 #{prefixed-class('rule')} {
 	@extend %type-rule;
+	@include style('rule');
 }
 
 .rule {
@@ -228,7 +229,7 @@ hr {
 	&-right { @extend %type-rule-right; }
 
 	&-center { @extend %type-rule-center; }
-	
+
 	&-small { @extend %type-rule-small; }
 
 	&-large { @extend %type-rule-large; }
@@ -236,6 +237,15 @@ hr {
 	&-thick { @extend %type-rule-thick; }
 
 	&-thin { @extend %type-rule-thin; }
+
+	&-half { @extend %type-rule-half; }
+
+	&-full { @extend %type-rule-full; }
+
+	&-light { @include style('rule', 'light'); }
+	&-dark { @include style('rule', 'dark'); }
+	&-lighten { @include style('rule', 'lighten'); }
+	&-darken { @include style('rule', 'darken'); }
 }
 
 // Lists

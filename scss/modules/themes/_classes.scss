@@ -47,6 +47,7 @@
     %subheading { @extend %theme-subheading-default-light; }
     %anchor { @extend %theme-anchor-default-light; }
     %input-implicit { @extend %theme-input-implicit-light; }
+    %type-rule { @extend %theme-rule-default-light; }
 }
 
 .mode-dark, .hover-mode-dark:hover {
@@ -56,4 +57,5 @@
     %subheading { @extend %theme-subheading-default-dark; }
     %anchor { @extend %theme-anchor-default-dark; }
     %input-implicit { @extend %theme-input-implicit-dark; }
+    %type-rule { @extend %theme-rule-default-dark; }
 }

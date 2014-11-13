@@ -14420,108 +14420,116 @@ hr.center {
   width: 6rem;
 }
 /* line 476, ../scss/modules/type/_components.scss */
-.rule-thick:before, .rule-thick:after {
-  height: 4px;
-}
-/* line 482, ../scss/modules/type/_components.scss */
 .rule-thin:before, .rule-thin:after {
   height: 1px;
 }
+/* line 482, ../scss/modules/type/_components.scss */
+.rule-thick:before, .rule-thick:after {
+  height: 4px;
+}
+/* line 488, ../scss/modules/type/_components.scss */
+.rule-half:before, .rule-half:after {
+  width: 50%;
+}
+/* line 494, ../scss/modules/type/_components.scss */
+.rule-full:before, .rule-full:after {
+  width: 100%;
+}
 
-/* line 491, ../scss/modules/type/_components.scss */
+/* line 503, ../scss/modules/type/_components.scss */
 ul.inline, ul, ol, dl {
   list-style-position: outside;
   margin-bottom: 1rem;
   padding: 0;
 }
-/* line 505, ../scss/modules/type/_components.scss */
+/* line 517, ../scss/modules/type/_components.scss */
 ul.unstyled {
   list-style: none;
   margin-left: 0;
   padding: 0;
 }
 
-/* line 511, ../scss/modules/type/_components.scss */
+/* line 523, ../scss/modules/type/_components.scss */
 ul.inline {
   margin-left: 0;
 }
-/* line 515, ../scss/modules/type/_components.scss */
+/* line 527, ../scss/modules/type/_components.scss */
 ul.inline li {
   display: inline-block;
   padding-right: 0 1rem 0 0;
 }
 
-/* line 522, ../scss/modules/type/_components.scss */
+/* line 534, ../scss/modules/type/_components.scss */
 ul {
   margin-left: 1rem;
 }
 
-/* line 528, ../scss/modules/type/_components.scss */
+/* line 540, ../scss/modules/type/_components.scss */
 ul.square {
   list-style-type: square;
 }
 
-/* line 529, ../scss/modules/type/_components.scss */
+/* line 541, ../scss/modules/type/_components.scss */
 ul.circle {
   list-style-type: circle;
 }
 
-/* line 530, ../scss/modules/type/_components.scss */
+/* line 542, ../scss/modules/type/_components.scss */
 ul.disc {
   list-style-type: disc;
 }
 
-/* line 531, ../scss/modules/type/_components.scss */
+/* line 543, ../scss/modules/type/_components.scss */
 ul.no-bullet {
   list-style-type: none;
 }
 
-/* line 533, ../scss/modules/type/_components.scss */
+/* line 545, ../scss/modules/type/_components.scss */
 ol {
   margin-left: 1.4rem;
 }
 
-/* line 542, ../scss/modules/type/_components.scss */
+/* line 554, ../scss/modules/type/_components.scss */
 dl dt {
   font-weight: bold;
   margin-bottom: 0.5rem;
 }
-/* line 547, ../scss/modules/type/_components.scss */
+/* line 559, ../scss/modules/type/_components.scss */
 dl dd {
   margin-bottom: 0.5rem;
 }
 
-/* line 554, ../scss/modules/type/_components.scss */
+/* line 566, ../scss/modules/type/_components.scss */
 .divider:not(:last-child):after, [class*=" divider-"]:not(:last-child):after, [class^="divider-"]:not(:last-child):after, .dividers > :not(:last-child):after, [class*=" dividers-"] > :not(:last-child):after, [class^="dividers-"] > :not(:last-child):after {
   content: '';
   display: inline-block;
   vertical-align: inherit;
 }
-/* line 560, ../scss/modules/type/_components.scss */
+/* line 572, ../scss/modules/type/_components.scss */
 .divider-vertical:not(:last-child):after, .dividers-vertical > :not(:last-child):after {
   margin: 1rem 0;
 }
-/* line 564, ../scss/modules/type/_components.scss */
+/* line 576, ../scss/modules/type/_components.scss */
 .divider-horizontal:not(:last-child):after, .dividers-horizontal > :not(:last-child):after {
   margin: 0 1rem;
 }
-/* line 568, ../scss/modules/type/_components.scss */
+/* line 580, ../scss/modules/type/_components.scss */
 .divider-square:not(:last-child):after, .dividers-square > :not(:last-child):after {
   content: '\25A0';
 }
-/* line 569, ../scss/modules/type/_components.scss */
+/* line 581, ../scss/modules/type/_components.scss */
 .divider-diamond:not(:last-child):after, .dividers-diamond > :not(:last-child):after {
   content: '\25C6';
 }
-/* line 570, ../scss/modules/type/_components.scss */
+/* line 582, ../scss/modules/type/_components.scss */
 .divider-bar:not(:last-child):after, .dividers-bar > :not(:last-child):after {
   content: '\2503';
 }
-/* line 571, ../scss/modules/type/_components.scss */
+/* line 583, ../scss/modules/type/_components.scss */
 .divider-dash:not(:last-child):after, .dividers-dash > :not(:last-child):after {
   content: '\2501';
 }
-/* line 572, ../scss/modules/type/_components.scss */
+/* line 584, ../scss/modules/type/_components.scss */
 .divider-bullet:not(:last-child):after, .dividers-bullet > :not(:last-child):after {
   content: '\25CF';
 }
@@ -14647,6 +14655,27 @@ hr.lighten {
 /* line 96, ../scss/modules/type/_themes.scss */
 hr.darken {
   border-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 100, ../scss/modules/type/_themes.scss */
+.rule:before, [class*=" rule-"]:before, [class^="rule-"]:before, .rule:after, [class*=" rule-"]:after, [class^="rule-"]:after {
+  background-color: #363636;
+}
+/* line 100, ../scss/modules/type/_themes.scss */
+.mode-light .rule:before, .alert .rule:before, .mode-light [class*=" rule-"]:before, .alert [class*=" rule-"]:before, .mode-light [class^="rule-"]:before, .alert [class^="rule-"]:before, .hover-mode-light:hover .rule:before, .hover-mode-light:hover [class*=" rule-"]:before, .hover-mode-light:hover [class^="rule-"]:before, .rule-light:before, .mode-light .rule:after, .alert .rule:after, .mode-light [class*=" rule-"]:after, .alert [class*=" rule-"]:after, .mode-light [class^="rule-"]:after, .alert [class^="rule-"]:after, .hover-mode-light:hover .rule:after, .hover-mode-light:hover [class*=" rule-"]:after, .hover-mode-light:hover [class^="rule-"]:after, .rule-light:after {
+  background-color: #EFEFEF;
+}
+/* line 100, ../scss/modules/type/_themes.scss */
+.mode-dark .rule:before, .mode-dark [class*=" rule-"]:before, .mode-dark [class^="rule-"]:before, .hover-mode-dark:hover .rule:before, .hover-mode-dark:hover [class*=" rule-"]:before, .hover-mode-dark:hover [class^="rule-"]:before, .rule-dark:before, .mode-dark .rule:after, .mode-dark [class*=" rule-"]:after, .mode-dark [class^="rule-"]:after, .hover-mode-dark:hover .rule:after, .hover-mode-dark:hover [class*=" rule-"]:after, .hover-mode-dark:hover [class^="rule-"]:after, .rule-dark:after {
+  background-color: #363636;
+}
+/* line 100, ../scss/modules/type/_themes.scss */
+.rule-lighten:before, .rule-lighten:after {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+/* line 100, ../scss/modules/type/_themes.scss */
+.rule-darken:before, .rule-darken:after {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* line 5, ../scss/modules/lists/_components.scss */

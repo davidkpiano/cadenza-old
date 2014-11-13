@@ -95,6 +95,8 @@ $hr-border-width-thin: $hr-border-width / 2 !default;
 $hr-border-width-thick: $hr-border-width * 2 !default;
 $hr-width-small: 3rem !default;
 $hr-width-large: $hr-width-small * 2 !default;
+$hr-width-half: 50% !default;
+$hr-width-full: 100% !default;
 $hr-border-style: solid !default;
 
 // Horizontal Rule Theme
@@ -105,6 +107,19 @@ $hr-color: theme-mode($color-light, $color-dark) !default;
 // Type Rule
 $type-rule-margin-vertical: 1rem !default;
 $type-rule-margin-horizontal: 1rem !default;
+$type-rule-height: $hr-border-width !default;
+$type-rule-height-thin: $type-rule-height / 2 !default;
+$type-rule-height-thick: $type-rule-height * 2 !default;
+$type-rule-width: $hr-width-small !default;
+$type-rule-width-small: $hr-width-small !default;
+$type-rule-width-large: $hr-width-large !default;
+$type-rule-width-half: $hr-width-half !default;
+$type-rule-width-full: $hr-width-full !default;
+
+// Type Rule Theme
+$type-rule-color-light: $color-light !default;
+$type-rule-color-dark: $color-dark !default;
+$type-rule-color: theme-mode($type-rule-color-light, $type-rule-color-dark) !default;
 
 // Lists
 $type-list-position: outside !default;

@@ -96,6 +96,21 @@
 	&-darken { @include theme-hr-default($color-darken); }
 }
 
+@mixin theme-rule-default($color: $type-rule-color) {
+	&:before, &:after {
+		background-color: $color;
+	}
+}
+
+%theme-rule-default {
+	@include theme-rule-default();
+
+	&-light { @include theme-rule-default($type-rule-color-light); }
+	&-dark { @include theme-rule-default($type-rule-color-dark); }
+	&-lighten { @include theme-rule-default($color-lighten); }
+	&-darken { @include theme-rule-default($color-darken); }
+}
+
 // // Preformatted Text Theme
 // // -----------------------
 // $x-pre-code-padding: 0.25rem 0.5rem !default;
