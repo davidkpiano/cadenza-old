@@ -3,7 +3,7 @@
 }
 
 input {
-    @include box-sizing(border-box);
+    box-sizing: border-box;
     padding: 0;
     margin-bottom: $text-margin-bottom;
 
@@ -51,12 +51,12 @@ label, .label {
 
     @if $form-use-radius {    
         &.prefix {
-            @include border-top-left-radius($form-radius);
-            @include border-bottom-left-radius($form-radius);
+            border-top-left-radius: $form-radius;
+            border-bottom-left-radius: $form-radius;
         }
         &.postfix {
-            @include border-top-right-radius($form-radius);
-            @include border-bottom-right-radius($form-radius);
+            border-top-right-radius: $form-radius;
+            border-bottom-right-radius: $form-radius;
         }
     }
 }
@@ -79,8 +79,8 @@ label, .label {
     z-index: 2;
 
     @if $form-use-radius {    
-        @include border-top-left-radius($form-radius);
-        @include border-bottom-left-radius($form-radius);
+        border-top-left-radius: $form-radius;
+        border-bottom-left-radius: $form-radius;
     }
 }
 
@@ -89,8 +89,8 @@ label, .label {
     margin-left: -$form-border-width;
 
     @if $form-use-radius {    
-        @include border-top-right-radius($form-radius);
-        @include border-bottom-right-radius($form-radius);
+        border-top-right-radius: $form-radius;
+        border-bottom-right-radius: $form-radius;
     }
 }
 
@@ -107,12 +107,12 @@ label, .label {
 
         @if $form-use-radius {    
             &:first-child {
-                @include border-top-left-radius($form-radius);
-                @include border-bottom-left-radius($form-radius);
+                border-top-left-radius: $form-radius;
+                border-bottom-left-radius: $form-radius;
             }
             &:last-child {
-                @include border-top-right-radius($form-radius);
-                @include border-bottom-right-radius($form-radius);
+                border-top-right-radius: $form-radius;
+                border-bottom-right-radius: $form-radius;
             }
         }
     }

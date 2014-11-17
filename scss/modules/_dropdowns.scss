@@ -23,7 +23,7 @@
     padding: $dropdown-padding;
 
     @if $dropdown-use-radius {
-        @include border-radius($form-radius);
+        border-radius: $form-radius;
     }
 
     @if $dropdown-align == left {

@@ -141,7 +141,7 @@
 // 		background: $color-gray-light;
 
 // 		@if $x-pre-code-radius {
-// 			@include border-radius($x-pre-code-radius);
+// 			border-radius: $x-pre-code-radius;
 // 		}
 // 	}
 
@@ -155,7 +155,7 @@
 // 			border-bottom-width: 3px;
 
 // 			@if $x-pre-kbd-radius {
-// 				@include border-radius($x-pre-kbd-radius);
+// 				border-radius: $x-pre-kbd-radius;
 // 			}
 // 		}
 

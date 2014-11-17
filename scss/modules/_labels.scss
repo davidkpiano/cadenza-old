@@ -9,7 +9,7 @@
     text-transform: $label-text-transform;
 
     @if $label-use-radius {
-        @include border-radius($form-radius);
+        border-radius: $form-radius;
     }
 }
 
@@ -23,7 +23,7 @@
     vertical-align: $badge-valign;
 
     @if $badge-use-radius {
-        @include border-radius($x-rem);
+        border-radius: $x-rem;
     }
 
     @if $badge-collapse {

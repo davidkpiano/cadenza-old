@@ -50,7 +50,7 @@
     margin-top: $type-heading-margin-top;
     margin-bottom: $type-heading-margin-bottom;
 
-    &:only-child { margin-bottom: 0; }
+    &:only-child, &-stacked { margin-bottom: 0; }
 }
 
 %heading-inline {

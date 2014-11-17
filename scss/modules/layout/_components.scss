@@ -2,6 +2,10 @@
 // Layout Components
 // =================
 
+%clearfix {
+    @include clearfix;
+}
+
 %position-absolute { position: absolute !important; }
 
 @each $position-horizontal in $positions-horizontal {
@@ -72,22 +76,22 @@
     }
 }
 
-// %bar {
-//     display: table-row;
+%bar {
+    display: table-row;
 
-//     &-item {
-//         display: table-cell;
-//         vertical-align: middle;
+    &-item {
+        display: table-cell;
+        vertical-align: middle;
 
-//         &-auto {
-//             width: 100%;
-//         }
-//     }
-// }
+        &-auto {
+            width: 100%;
+        }
+    }
+}
 
-// .bar {
-//     @extend %bar;
+.bar {
+    @extend %bar;
 
-//     > * { @extend %bar-item; }
-//     > .auto { @extend %bar-item-auto; }
-// }
+    > * { @extend %bar-item; }
+    > .auto { @extend %bar-item-auto; }
+}

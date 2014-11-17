@@ -9,7 +9,7 @@
         border-color: $text-border-color;
 
         @if $form-use-radius {
-            @include border-radius($text-radius);
+            border-radius: $text-radius;
         }
 
         &.full {

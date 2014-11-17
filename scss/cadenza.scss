@@ -51,9 +51,25 @@
 
 // DELETE EVERYTHING BELOW THIS
 
+// #{prefixed-class('lp')} {
+//     @extend %square-large;
+//     @extend %background-darken;
+//     display: inline-block;
+// }
 
-#{prefixed-class('lp')} {
-    @extend %square-large;
-    @extend %background-darken;
-    display: inline-block;
+.gg-album {
+    @extend %column;
+    @include column(1/5);
+    @include row(4);
+
+    &-large { @include column(2/5); @include row(7); }
+
+    + .gg-album-large ~ .gg-album {
+        top: - row-height(4);
+    }
+
+    &-caption {
+        @extend %row, %row-bottom;
+        @include row(3);
+    }
 }

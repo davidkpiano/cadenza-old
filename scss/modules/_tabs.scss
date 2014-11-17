@@ -18,8 +18,8 @@
             margin-bottom: -($tabs-border-width);
 
             @if $tabs-use-radius {
-                @include border-top-left-radius($tabs-radius);
-                @include border-top-right-radius($tabs-radius);
+                border-top-left-radius: $tabs-radius;
+                border-top-right-radius: $tabs-radius;
             }
 
             > a {

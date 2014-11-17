@@ -555,7 +555,7 @@
         </div>
     </div>
 </section>
-<section class="row-12">
+<section class="row-12 hide">
     <aside class="drawer-left bg-dark mode-light" ng-class="{active: component.ff}">
         <div class="row-center">
             <!-- <nav class="small strong uppercase">
@@ -593,6 +593,49 @@
         <div class="position-left-middle row-1">
             <button class="light inline full-height" ng-click="component.ff = !component.ff">☰</button>
             <button class="light inline full-height">Our Projects</button>
+        </div>
+    </div>
+</section>
+<section class="row-12">
+    <div class="layer">    
+        <div class="gg-album gg-album-large border">
+            <div class="gg-album-caption bg-primary mode-light pad">
+                <h4 class="stacked">In a Perfect World</h4>
+                <div>Kodaline</div>
+            </div>
+        </div>
+        <div class="gg-album border">
+            <div class="gg-album-caption bg-primary mode-light pad-small small">
+                <div class="strong">Supermodel</div>
+                <div>Foster the People</div>
+            </div>
+        </div>
+        <div class="gg-album border"></div>
+        <div class="gg-album border"></div>
+        <div class="gg-album border"></div>
+        <div class="gg-album gg-album-large border transition" ng-click="component.ggActive = !component.ggActive">
+            <header class="row-6 bg-secondary mode-light activate-shiftLeft pad" ng-if="!component.ggActive">
+                <h1>Album Title</h1>
+            </header>
+        </div>
+        <div class="gg-album border"></div>
+        <div class="gg-album border"></div>
+        <div class="gg-album border"></div>
+    </div>
+    <div class="layer pad-large transparent">
+        <div class="col-10 col-center pad activate-shiftLeft" ng-if="component.ggActive">
+            <header class="row-3 bg-secondary mode-light">
+                <div class="col-5 bg-primary"></div>
+                <div class="col-7 pad text-middle">
+                    <div>
+                        <h1>G I R L</h1>
+                        <div>Pharrell Williams</div>
+                    </div>
+                </div>
+            </header>
+            <section class="row-9 bg-light">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, autem, doloremque. Dicta officia doloremque aut ullam cupiditate provident velit, laudantium nobis aperiam nemo repudiandae nesciunt ducimus consequatur. Nihil, sed, aperiam.</p>
+            </section>
         </div>
     </div>
 </section>

@@ -14,7 +14,7 @@
     border-width: $panel-border-width;
 
     @if $panel-radius {
-        @include border-radius($panel-radius);
+        border-radius: $panel-radius;
     }
 
     &, > * {
@@ -58,7 +58,7 @@
     margin: $alert-margin;
 
     @if $alert-radius {
-        @include border-radius($alert-radius);
+        border-radius: $alert-radius;
     }
 
     > *:last-child {
@@ -88,15 +88,15 @@
         margin: 0;
 
         @if $alert-radius {
-            @include border-radius(0);
+            border-radius: 0;
 
             &:first-child {
-                @include border-top-left-radius($alert-radius);
-                @include border-top-right-radius($alert-radius);
+                border-top-left-radius: $alert-radius;
+                border-top-right-radius: $alert-radius;
             }
             &:last-child {
-                @include border-bottom-left-radius($alert-radius);
-                @include border-bottom-right-radius($alert-radius);
+                border-bottom-left-radius: $alert-radius;
+                border-bottom-right-radius: $alert-radius;
             }
         }
 

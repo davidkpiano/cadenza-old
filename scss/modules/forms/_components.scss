@@ -14,7 +14,7 @@
 	border-style: solid;
 
 	@if $form-radius {
-		@include border-radius($form-radius);
+		border-radius: $form-radius;
 	}
 }
 

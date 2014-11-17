@@ -6,8 +6,8 @@
 // 
 // Defines a grid element in the grid system.
 @mixin _grid($display: block) {
-	@include box-sizing(border-box);
-	@include pie-clearfix;
+	box-sizing: border-box;
+	@extend %clearfix;
 
 	margin: 0;
 	display: $display;
@@ -30,7 +30,7 @@
 @mixin _row($display: block) {
 	@include _grid($display);
 	width: 100%;
-	clear: both;
+	// clear: both;
 }
 
 // Column Mixin
@@ -68,9 +68,9 @@
 	$fill-selector: false;
 	$total-width: 0px;
 
+	@extend %clearfix;
+
 	@include mq($media) {
-		@include pie-clearfix;
-		
 		@for $i from 1 through length($column-widths) {
 			$column-width: nth($column-widths, $i);
 			$width: nth($column-width, 1);

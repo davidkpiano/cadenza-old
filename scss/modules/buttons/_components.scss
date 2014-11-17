@@ -14,9 +14,10 @@
     border-style: solid;
     white-space: nowrap;
     background-image: none;
+    line-height: 1;
 
     @if $button-radius {
-        @include border-radius($button-radius);
+        border-radius: $button-radius;
     }
 
     // Text style

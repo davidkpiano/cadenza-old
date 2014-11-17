@@ -23,6 +23,8 @@ body, .type-primary { @extend %type-primary; }
 
 h1, h2, h3, h4, h5, h6, #{prefixed-class('h')} {
 	@extend %heading;
+
+	&.stacked { @extend %heading-stacked; }
 }
 
 @each $type-heading in $type-headings {
@@ -58,7 +60,7 @@ h1, h2, h3, h4, h5, h6, #{prefixed-class('h')} {
 	&-dark { @include style('subheading', 'dark'); }
 }
 
-hgroup {
+.hgroup {
 	@extend %hgroup;
 
 	&.inline { @extend %hgroup-inline; }

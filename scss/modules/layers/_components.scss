@@ -12,7 +12,7 @@
 
 %layer {
     @include position-absolute(0, 0);
-    @include pie-clearfix;
+    @extend %clearfix;
     height: 100%;
     max-height: 100%;
     width: 100%;
@@ -47,7 +47,7 @@
 
 %page {
     @include position-absolute(0, 0);
-    @include pie-clearfix;
+    @extend %clearfix;
     min-height: 100%;
     min-width: 100%;
     margin: 0;
@@ -65,7 +65,7 @@
 %card {
     @extend %clearfix;
     @extend %shadow-#{$card-shadow-index};
-    @include border-radius($card-radius);
+    border-radius: $card-radius;
     margin: $card-margin-vertical $card-margin-horizontal;
     width: calc(100% - #{2 * $card-margin-horizontal});
 
@@ -145,7 +145,7 @@
 }
 
 %container {
-    @include pie-clearfix;
+    @extend %clearfix;
     width: 100%;
 
     @if $container-max-width or $container-min-width {
@@ -157,7 +157,7 @@
 }
 
 %pad-container {
-    @include pie-clearfix;
+    @extend %clearfix;
     width: 100%;
     max-width: 100%;
 

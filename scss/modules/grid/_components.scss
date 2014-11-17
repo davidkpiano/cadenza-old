@@ -135,8 +135,6 @@
 				$fraction-inverse: fraction-inverse($fraction-value);
 
 				%columns-#{$fraction-key} {
-					@include pie-clearfix;
-
 					&#{$suffix} > * {
 						@extend %column-#{$fraction-key}#{$suffix};
 						height: auto;

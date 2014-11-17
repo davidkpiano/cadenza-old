@@ -12,7 +12,7 @@
     white-space: nowrap;
 
     @if $button-use-radius {
-        @include border-radius($button-radius);
+        border-radius: $button-radius;
     }
 
     // Text style
@@ -64,7 +64,7 @@
     margin-bottom: $button-group-margin-bottom;
 
     > #{$button-selectors}, > label {
-        @include border-radius(0);
+        border-radius: 0;
         margin: 0;
         margin-left: -$button-border-width;
         float: left;
@@ -74,12 +74,12 @@
 
         @if $button-use-radius {    
             &:first-of-type {
-                @include border-top-left-radius($button-radius);
-                @include border-bottom-left-radius($button-radius);
+                border-top-left-radius: $button-radius;
+                border-bottom-left-radius: $button-radius;
             }
             &:last-of-type {
-                @include border-top-right-radius($button-radius);
-                @include border-bottom-right-radius($button-radius);
+                border-top-right-radius: $button-radius;
+                border-bottom-right-radius: $button-radius;
             }
         }
     }
@@ -106,14 +106,14 @@
             
             @if $button-use-radius {
                 &:first-of-type {
-                    @include border-bottom-left-radius(0);
-                    @include border-top-left-radius($button-radius);
-                    @include border-top-right-radius($button-radius);
+                    border-bottom-left-radius: 0;
+                    border-top-left-radius: $button-radius;
+                    border-top-right-radius: $button-radius;
                 }
                 &:last-of-type {
-                    @include border-top-right-radius(0);
-                    @include border-bottom-left-radius($button-radius);
-                    @include border-bottom-right-radius($button-radius);
+                    border-top-right-radius: 0;
+                    border-bottom-left-radius: $button-radius;
+                    border-bottom-right-radius: $button-radius;
                 }
             }
         }

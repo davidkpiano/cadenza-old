@@ -33,7 +33,7 @@
         height: $diameter;
     }
 
-    @include border-radius(50%);
+    border-radius: 50%;
 }
 
 @mixin shape-square($width, $important: true) {

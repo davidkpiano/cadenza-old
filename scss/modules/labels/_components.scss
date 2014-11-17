@@ -21,7 +21,7 @@
     padding-right: $label-padding-horizontal;
 
     @if $label-radius {
-        @include border-radius($label-radius);
+        border-radius: $label-radius;
     }
 
     &:first-child { margin-left: 0; }
@@ -53,7 +53,7 @@
     padding-right: $badge-padding-horizontal;
     
     @if $badge-radius {
-        @include border-radius($badge-radius);
+        border-radius: $badge-radius;
     }
 
     @if $badge-collapse {
@@ -107,7 +107,7 @@
         padding: $tooltip-padding-vertical $tooltip-padding-horizontal;
 
         @if $tooltip-radius {
-            @include border-radius($tooltip-radius);
+            border-radius: $tooltip-radius;
         }
     }
 

@@ -140,7 +140,7 @@
 	}
 
 	@if $dropdown-radius {
-		@include border-radius($dropdown-radius);
+		border-radius: $dropdown-radius;
 	}
 
 	&%dropdown-below-left {
