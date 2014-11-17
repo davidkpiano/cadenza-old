@@ -49,7 +49,7 @@
     }
 
     @if $transform-list {
-        @include experimental(transform, $transform-list);
+        transform: $transform-list;
     }
 }
 
@@ -180,6 +180,6 @@
     }
 
     @if $transform-list {
-        @include experimental(transform, $transform-list);
+        transform: $transform-list;
     }
 }

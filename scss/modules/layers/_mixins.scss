@@ -47,7 +47,7 @@
                 }
 
                 ~ * {
-                    @include transform($push-translation);
+                    transform: $push-translation;
                 }
             }
 

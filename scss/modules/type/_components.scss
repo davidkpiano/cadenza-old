@@ -112,7 +112,7 @@
     text-rendering: optimizeLegibility;
     word-wrap: break-word;
 
-    @include experimental(hyphens, auto);
+    hyphens: auto;
 }
 
 %paragraph {

@@ -4,14 +4,14 @@
     $vertical: false
 ) {
     @if $vertical and $horizontal {
-        @include experimental(transform, translateX($horizontal) translateY($vertical));
+        transform: translateX($horizontal) translateY($vertical);
     } @else {    
         @if $vertical {
-            @include experimental(transform, translateY($vertical));
+            transform: translateY($vertical);
         }
 
         @if $horizontal {
-            @include experimental(transform, translateX($horizontal));
+            transform: translateX($horizontal);
         }
     }
 }
@@ -31,7 +31,7 @@
         @if type-of($height) == number {
             @if unit($height) == percent {
                 top: 50%;
-                @include experimental(transform, translateY(-50%));
+                transform: translateY(-50%);
             } @else {
                 top: 50%;
                 margin-top: -($height / 2);
@@ -92,7 +92,7 @@
 
 %valign-center {
     top: 50%;
-    @include experimental(transform, translateY(-50%));
+    transform: translateY(-50%);
 }
 
 %valign-center-all {

@@ -38,7 +38,7 @@
 		@if $bgcolor-focus { background-color: $bgcolor-focus; }
 	}
 
-	@include input-placeholder {
+	&::placeholder {
 		color: $placeholder-color;
 	}
 }

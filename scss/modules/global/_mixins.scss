@@ -22,9 +22,9 @@
     $transition-duration: $transition-duration,
     $transition-timing-function: $transition-timing-function
 ) {
-    @include transition-property($property);
-    @include transition-duration($transition-duration);
-    @include transition-timing-function($transition-timing-function);
+    transition-property: $property;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
 }
 
 @mixin translate(

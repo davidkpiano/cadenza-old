@@ -28,34 +28,34 @@
         @extend %animation-3d;
     }
 
-    @include animation-name($name);
+    animation-name: $name;
 
     @if $duration != default {
-        @include animation-duration($duration);
+        animation-duration: $duration;
     }
 
     @if $direction != default {
-        @include animation-direction($direction);
+        animation-direction: $direction;
     }
 
     @if $delay != default {
-        @include animation-delay($delay);
+        animation-delay: $delay;
     }
 
     @if $iteration-count != default {
-        @include animation-iteration-count($iteration-count);
+        animation-iteration-count: $iteration-count;
     }
 
     @if $play-state != default {
-        @include animation-play-state($play-state);
+        animation-play-state: $play-state;
     }
 
     @if $timing-function != default {
-        @include animation-timing-function($timing-function);
+        animation-timing-function: $timing-function;
     }
 
     @if $fill-mode != default {
-        @include animation-fill-mode($fill-mode);
+        animation-fill-mode: $fill-mode;
     }
 }
 
@@ -67,10 +67,10 @@
     $delay: default,
     $parent-hover: true
 ) {
-    @if $property != default { @include transition-property($property); }
-    @if $duration != default { @include transition-duration($duration); }
-    @if $timing-function != default { @include transition-timing-function($timing-function); }
-    @if $delay != default { @include transition-delay($delay); }
+    @if $property != default { transition-property: $property; }
+    @if $duration != default { transition-duration: $duration; }
+    @if $timing-function != default { transition-timing-function: $timing-function; }
+    @if $delay != default { transition-delay: $delay; }
 
     @if $parent-hover {    
         &#{$selector}, %hover-all:hover > & {
@@ -107,10 +107,10 @@
 ) {
     @if $extend { @extend %transition; }
 
-    @if $property != default { @include transition-property($property); }
-    @if $duration != default { @include transition-duration($duration); }
-    @if $timing-function != default { @include transition-timing-function($timing-function); }
-    @if $delay != default { @include transition-delay($delay); }
+    @if $property != default { transition-property: $property; }
+    @if $duration != default { transition-duration: $duration; }
+    @if $timing-function != default { transition-timing-function: $timing-function; }
+    @if $delay != default { transition-delay: $delay; }
 
     @each $transition in $transitions {
         @extend %transition-#{$transition}-inactive !optional;

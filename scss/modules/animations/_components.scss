@@ -6,8 +6,8 @@
 // -------------
 %inert {
 	&, > * {	
-		@include experimental(transition, none !important, $khtml: false);
-		@include experimental(animation, none !important, $khtml: false);
+		transition: none !important;
+		animation: none !important;
 	}
 }
 
@@ -21,28 +21,28 @@
 
 %active-delay {
     &#{$active-selector} {
-        @include animation-delay($active-delay !important);
+        animation-delay: $active-delay !important;
     }
 }
 
 // Animations
 // ----------
 %animation {
-    @include animation-duration($animation-duration);
-    @include animation-direction($animation-direction);
-    @include animation-delay($animation-delay);
-    @include animation-iteration-count($animation-iteration-count);
-    @include animation-play-state($animation-play-state);
-    @include animation-timing-function($animation-timing-function);
-    @include animation-fill-mode($animation-fill-mode);
+    animation-duration: $animation-duration;
+    animation-direction: $animation-direction;
+    animation-delay: $animation-delay;
+    animation-iteration-count: $animation-iteration-count;
+    animation-play-state: $animation-play-state;
+    animation-timing-function: $animation-timing-function;
+    animation-fill-mode: $animation-fill-mode;
 }
 
 %animation-3d {
-    @include animation-duration($animation-3d-duration);
-    @include perspective($animation-3d-perspective);
-    @include transform-style(preserve-3d);
-    @include backface-visibility(hidden);
-    @include transform(translate(0,0,0));
+    animation-duration: $animation-3d-duration;
+    perspective: $animation-3d-perspective;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transform: translate(0,0,0);
 }
 
 // Fade
@@ -70,21 +70,21 @@
 @include keyframes(scaleUp-active) {
     from {
     	opacity: 0;
-    	@include transform(scale(0.8));
+    	transform: scale(0.8);
     }
     to {
     	opacity: 1;
-    	@include transform(scale(1));
+    	transform: scale(1);
     }
 }
 @include keyframes(scaleUp-inactive) {
     from {
     	opacity: 1;
-    	@include transform(scale(1));
+    	transform: scale(1);
     }
     to {
     	opacity: 0;
-    	@include transform(scale(1.2));
+    	transform: scale(1.2);
     }
 }
 
@@ -118,21 +118,21 @@
 @include keyframes(scaleUpDown-active) {
     from {
     	opacity: 0;
-    	@include transform(scale(0.8));
+    	transform: scale(0.8);
     }
     to {
     	opacity: 1;
-    	@include transform(scale(1));
+    	transform: scale(1);
     }
 }
 @include keyframes(scaleUpDown-inactive) {
     from {
     	opacity: 1;
-    	@include transform(scale(1));
+    	transform: scale(1);
     }
     to {
     	opacity: 0;
-    	@include transform(scale(0.8));
+    	transform: scale(0.8);
     }
 }
 
@@ -142,21 +142,21 @@
 @include keyframes(scaleDownUp-active) {
     from {
     	opacity: 0;
-    	@include transform(scale(1.2));
+    	transform: scale(1.2);
     }
     to {
     	opacity: 1;
-    	@include transform(scale(1));
+    	transform: scale(1);
     }
 }
 @include keyframes(scaleDownUp-inactive) {
     from {
     	opacity: 1;
-    	@include transform(scale(1.2));
+    	transform: scale(1.2);
     }
     to {
     	opacity: 0;
-    	@include transform(scale(1));
+    	transform: scale(1);
     }
 }
 
@@ -164,72 +164,72 @@
 %animation-slideLeft-active { @include animation(slideLeft-active); }
 %animation-slideLeft-inactive { @include animation(slideLeft-inactive); }
 @include keyframes(slideLeft-active) {
-    from { @include transform(translateX(100%)); }
-    to { @include transform(translateX(0)); }
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
 }
 @include keyframes(slideLeft-inactive) {
-    from { @include transform(translateX(0)); }
-    to { @include transform(translateX(-100%)); }
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
 }
 
 // Slide Right
 %animation-slideRight-active { @include animation(slideRight-active); }
 %animation-slideRight-inactive { @include animation(slideRight-inactive); }
 @include keyframes(slideRight-active) {
-    from { @include transform(translateX(-100%)); }
-    to { @include transform(translateX(0)); }
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
 }
 @include keyframes(slideRight-inactive) {
-    from { @include transform(translateX(0)); }
-    to { @include transform(translateX(100%)); }
+    from { transform: translateX(0); }
+    to { transform: translateX(100%); }
 }
 
 // Slide Up
 %animation-slideUp-active { @include animation(slideUp-active); }
 %animation-slideUp-inactive { @include animation(slideUp-inactive); }
 @include keyframes(slideUp-active) {
-    from { @include transform(translateY(100%)); }
-    to { @include transform(translateY(0)); }
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
 }
 @include keyframes(slideUp-inactive) {
-    from { @include transform(translateY(0)); }
-    to { @include transform(translateY(-100%)); }
+    from { transform: translateY(0); }
+    to { transform: translateY(-100%); }
 }
 
 // Slide Down
 %animation-slideDown-active { @include animation(slideDown-active); }
 %animation-slideDown-inactive { @include animation(slideDown-inactive); }
 @include keyframes(slideDown-active) {
-    from { @include transform(translateY(-100%)); }
-    to { @include transform(translateY(0)); }
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
 }
 @include keyframes(slideDown-inactive) {
-    from { @include transform(translateY(0)); }
-    to { @include transform(translateY(100%)); }
+    from { transform: translateY(0); }
+    to { transform: translateY(100%); }
 }
 
 // Slide Up/Down
 %animation-slideUpDown-active { @include animation(slideUpDown-active); }
 %animation-slideUpDown-inactive { @include animation(slideUpDown-inactive); }
 @include keyframes(slideUpDown-active) {
-    from { @include transform(translateY(100%)); }
-    to { @include transform(translateY(0)); }
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
 }
 @include keyframes(slideUpDown-inactive) {
-    from { @include transform(translateY(0)); }
-    to { @include transform(translateY(100%)); }
+    from { transform: translateY(0); }
+    to { transform: translateY(100%); }
 }
 
 // Slide Down/Up
 %animation-slideDownUp-active { @include animation(slideDownUp-active); }
 %animation-slideDownUp-inactive { @include animation(slideDownUp-inactive); }
 @include keyframes(slideDownUp-active) {
-    from { @include transform(translateY(-100%)); }
-    to { @include transform(translateY(0)); }
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
 }
 @include keyframes(slideDownUp-inactive) {
-    from { @include transform(translateY(0)); }
-    to { @include transform(translateY(-100%)); }
+    from { transform: translateY(0); }
+    to { transform: translateY(-100%); }
 }
 
 // Shift Up
@@ -237,21 +237,21 @@
 %animation-shiftUp-inactive { @include animation(shiftUp-inactive); }
 @include keyframes(shiftUp-active) {
     from { 
-        @include transform(translateY($animation-delta));
+        transform: translateY($animation-delta);
         opacity: 0;
     }
     to {
-        @include transform(translateY(0));
+        transform: translateY(0);
         opacity: 1;
     }
 }
 @include keyframes(shiftUp-inactive) {
     from {
-        @include transform(translateY(0));
+        transform: translateY(0);
         opacity: 1;
     }
     to {
-        @include transform(translateY(-$animation-delta));
+        transform: translateY(-$animation-delta);
         opacity: 0;
     }
 }
@@ -261,21 +261,21 @@
 %animation-shiftDown-inactive { @include animation(shiftDown-inactive); }
 @include keyframes(shiftDown-active) {
     from { 
-        @include transform(translateY(-$animation-delta));
+        transform: translateY(-$animation-delta);
         opacity: 0;
     }
     to {
-        @include transform(translateY(0));
+        transform: translateY(0);
         opacity: 1;
     }
 }
 @include keyframes(shiftDown-inactive) {
     from {
-        @include transform(translateY(0));
+        transform: translateY(0);
         opacity: 1;
     }
     to {
-        @include transform(translateY($animation-delta));
+        transform: translateY($animation-delta);
         opacity: 0;
     }
 }
@@ -285,21 +285,21 @@
 %animation-shiftLeft-inactive { @include animation(shiftLeft-inactive); }
 @include keyframes(shiftLeft-active) {
     from { 
-        @include transform(translateX($animation-delta));
+        transform: translateX($animation-delta);
         opacity: 0;
     }
     to {
-        @include transform(translateX(0));
+        transform: translateX(0);
         opacity: 1;
     }
 }
 @include keyframes(shiftLeft-inactive) {
     from {
-        @include transform(translateX(0));
+        transform: translateX(0);
         opacity: 1;
     }
     to {
-        @include transform(translateX(-$animation-delta));
+        transform: translateX(-$animation-delta);
         opacity: 0;
     }
 }
@@ -309,21 +309,21 @@
 %animation-shiftRight-inactive { @include animation(shiftRight-inactive); }
 @include keyframes(shiftRight-active) {
     from { 
-        @include transform(translateX(-$animation-delta));
+        transform: translateX(-$animation-delta);
         opacity: 0;
     }
     to {
-        @include transform(translateX(0));
+        transform: translateX(0);
         opacity: 1;
     }
 }
 @include keyframes(shiftRight-inactive) {
     from {
-        @include transform(translateX(0));
+        transform: translateX(0);
         opacity: 1;
     }
     to {
-        @include transform(translateX($animation-delta));
+        transform: translateX($animation-delta);
         opacity: 0;
     }
 }
@@ -332,17 +332,17 @@
 %animation-flipLeft-active { @include animation(flipLeft-active, $is-3d: true); }
 %animation-flipLeft-inactive { @include animation(flipLeft-inactive, $is-3d: true); }
 @include keyframes(flipLeft-active) {
-    from { z-index: 1; @include transform(translateZ(-1000px) rotateY(180deg)); }
-    to { z-index: 2; @include transform(translateZ(0) rotateY(0)); }
+    from { z-index: 1; transform: translateZ(-1000px) rotateY(180deg); }
+    to { z-index: 2; transform: translateZ(0) rotateY(0); }
 }
 @include keyframes(flipLeft-inactive) {
     from {
     	z-index: 2;
-    	@include transform(translateZ(0) rotateY(0));
+    	transform: translateZ(0) rotateY(0);
     }
     to {
     	z-index: 1;
-    	@include transform(translateZ(-1000px) rotateY(-180deg));
+    	transform: translateZ(-1000px) rotateY(-180deg);
     }
 }
 
@@ -351,28 +351,28 @@
 %animation-tilt-inactive { @include animation(tilt-inactive, $is-3d: true); }
 @include keyframes(tilt-active) {
     0% {
-        @include transform(translateZ(-500px) rotateY(0deg));
+        transform: translateZ(-500px) rotateY(0deg);
         opacity: 0;
     }
     20% {
-        @include transform(translateZ(-250px) rotateY(30deg));
+        transform: translateZ(-250px) rotateY(30deg);
         opacity: 0.5;
     }
     100% {
-        @include transform(translateZ(0px) rotateY(0deg));
+        transform: translateZ(0px) rotateY(0deg);
         opacity: 1;
     }
 }
 @include keyframes(tilt-inactive) {
     50% {
-        @include transform(translateZ(-250px) rotateY(30deg));
+        transform: translateZ(-250px) rotateY(30deg);
     }
     75% {
-        @include transform(translateZ(-372.5px) rotateY(15deg));
+        transform: translateZ(-372.5px) rotateY(15deg);
         opacity: .5;
     }
     100% {
-        @include transform(translateZ(-500px) rotateY(0deg));
+        transform: translateZ(-500px) rotateY(0deg);
         opacity: 0;
     }
 }
@@ -384,10 +384,10 @@
 }
 
 %transition {
-    @include transition-property($transition-property);
-    @include transition-duration($transition-duration);
-    @include transition-timing-function($transition-timing-function);
-    @include transition-delay($transition-delay);
+    transition-property: $transition-property;
+    transition-duration: $transition-duration;
+    transition-timing-function: $transition-timing-function;
+    transition-delay: $transition-delay;
 }
 
 %transition-fadeIn-inactive { opacity: 0; }
@@ -399,9 +399,9 @@
 %transition-scaleIn-inactive { transform: scale(0); }
 %transition-scaleIn-active { transform: scale(1); }
 
-%transition-origin-active {    
-    @include transform(translateX(0) translateY(0)); // IE9
-    @include transform(translate3d(0, 0, 0));
+%transition-origin-active {
+    transform: translateX(0) translateY(0);
+    transform: translate3d(0, 0, 0);
 }
 
 %transition-lighten {
@@ -422,16 +422,16 @@
 
 %transition-scaleUp {
     @include movement(transform) {
-        @include transform(scale(1.2));
+        transform: scale(1.2);
     }
 }
 %hover-scaleUp { @include hover-movement(scaleUp); }
 
 %transition-slideFromLeft {
-    @include transform(translateX(-100%));
+    transform: translateX(-100%);
 
     @include movement() {
-        @include transform(translateX(0));
+        transform: translateX(0);
     }
 }
 .transition-slideFromLeft { @extend %transition-slideFromLeft; }
