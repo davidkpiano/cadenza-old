@@ -21,22 +21,19 @@ var autoprefixer = require('gulp-autoprefixer');
 // 		}));
 // });
 
-gulp.task('build', function() {
-	gulp.src('./css/*.css')
+gulp.task('build', ['css']);
+
+gulp.task('css', function() {
+	gulp.src('css/cadenza.css')
 		.pipe(autoprefixer({
 			browsers: ['last 2 versions']
-		}));
+		}))
+		.pipe(gulp.dest('css'));
 });
 
 // Default Task
-gulp.task('default', function() {
-	gulp.run('build');
-
+gulp.task('default', ['build'], function() {
 	gulp.watch('./css/**/*.css', function() {
 		gulp.run('build');
 	});
-
-	// gulp.watch('./scss/**/*.scss', function() {
-	// 	gulp.run('compass');
-	// });
 });

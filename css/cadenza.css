@@ -114,18 +114,7 @@
 /* line 4, ../assets/font-awesome-4.1.0/scss/_spinning.scss */
 .fa-spin {
   -webkit-animation: spin 2s infinite linear;
-  -moz-animation: spin 2s infinite linear;
-  -o-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
-}
-
-@-moz-keyframes spin {
-  0% {
-    -moz-transform: rotate(0deg);
-  }
-  100% {
-    -moz-transform: rotate(359deg);
-  }
 }
 @-webkit-keyframes spin {
   0% {
@@ -133,14 +122,6 @@
   }
   100% {
     -webkit-transform: rotate(359deg);
-  }
-}
-@-o-keyframes spin {
-  0% {
-    -o-transform: rotate(0deg);
-  }
-  100% {
-    -o-transform: rotate(359deg);
   }
 }
 @keyframes spin {
@@ -157,9 +138,6 @@
 .fa-rotate-90 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
   -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
   transform: rotate(90deg);
 }
 
@@ -167,9 +145,6 @@
 .fa-rotate-180 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
   transform: rotate(180deg);
 }
 
@@ -177,9 +152,6 @@
 .fa-rotate-270 {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
   -webkit-transform: rotate(270deg);
-  -moz-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  -o-transform: rotate(270deg);
   transform: rotate(270deg);
 }
 
@@ -187,9 +159,6 @@
 .fa-flip-horizontal {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
   -webkit-transform: scale(-1, 1);
-  -moz-transform: scale(-1, 1);
-  -ms-transform: scale(-1, 1);
-  -o-transform: scale(-1, 1);
   transform: scale(-1, 1);
 }
 
@@ -197,9 +166,6 @@
 .fa-flip-vertical {
   filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
   -webkit-transform: scale(1, -1);
-  -moz-transform: scale(1, -1);
-  -ms-transform: scale(1, -1);
-  -o-transform: scale(1, -1);
   transform: scale(1, -1);
 }
 
@@ -2557,7 +2523,8 @@
   right: initial;
   top: 50%;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2574,7 +2541,8 @@
   right: initial;
   top: 0;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2615,7 +2583,8 @@
   right: initial;
   bottom: 0;
   top: initial;
-  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2664,7 +2633,8 @@
   left: initial;
   top: 50%;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2681,7 +2651,8 @@
   left: initial;
   top: 0;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2722,7 +2693,8 @@
   left: initial;
   bottom: 0;
   top: initial;
-  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2771,7 +2743,8 @@
   left: initial;
   top: 50%;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2788,7 +2761,8 @@
   left: initial;
   top: 0;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2829,7 +2803,8 @@
   left: initial;
   bottom: 0;
   top: initial;
-  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2878,7 +2853,8 @@
   right: initial;
   top: 50%;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2895,7 +2871,8 @@
   right: initial;
   top: 0;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2936,7 +2913,8 @@
   right: initial;
   bottom: 0;
   top: initial;
-  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2953,7 +2931,8 @@
   right: initial;
   top: 0;
   bottom: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2962,7 +2941,8 @@
   right: initial;
   bottom: 0;
   top: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2971,7 +2951,8 @@
   right: initial;
   top: 100%;
   bottom: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2980,7 +2961,8 @@
   right: initial;
   bottom: 100%;
   top: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2989,7 +2971,8 @@
   right: initial;
   top: 50%;
   bottom: initial;
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -2998,7 +2981,8 @@
   right: initial;
   bottom: 100%;
   top: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3007,7 +2991,8 @@
   right: initial;
   top: 0;
   bottom: initial;
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3016,7 +3001,8 @@
   right: initial;
   top: 0;
   bottom: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3025,7 +3011,8 @@
   right: initial;
   bottom: 50%;
   top: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3034,7 +3021,8 @@
   right: initial;
   top: 50%;
   bottom: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3043,7 +3031,8 @@
   right: initial;
   bottom: 0;
   top: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3052,7 +3041,8 @@
   right: initial;
   bottom: 0;
   top: initial;
-  transform: translateX(-50%) translateY(50%);
+  -webkit-transform: translateX(-50%) translateY(50%);
+          transform: translateX(-50%) translateY(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3061,7 +3051,8 @@
   right: initial;
   top: 100%;
   bottom: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3102,7 +3093,8 @@
   left: initial;
   top: 50%;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3119,7 +3111,8 @@
   left: initial;
   top: 0;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3160,7 +3153,8 @@
   left: initial;
   bottom: 0;
   top: initial;
-  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3177,7 +3171,8 @@
   right: initial;
   top: 0;
   bottom: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3186,7 +3181,8 @@
   right: initial;
   bottom: 0;
   top: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3195,7 +3191,8 @@
   right: initial;
   top: 100%;
   bottom: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3204,7 +3201,8 @@
   right: initial;
   bottom: 100%;
   top: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3213,7 +3211,8 @@
   right: initial;
   top: 50%;
   bottom: initial;
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3222,7 +3221,8 @@
   right: initial;
   bottom: 100%;
   top: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3231,7 +3231,8 @@
   right: initial;
   top: 0;
   bottom: initial;
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3240,7 +3241,8 @@
   right: initial;
   top: 0;
   bottom: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3249,7 +3251,8 @@
   right: initial;
   bottom: 50%;
   top: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3258,7 +3261,8 @@
   right: initial;
   top: 50%;
   bottom: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3267,7 +3271,8 @@
   right: initial;
   bottom: 0;
   top: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3276,7 +3281,8 @@
   right: initial;
   bottom: 0;
   top: initial;
-  transform: translateX(-50%) translateY(50%);
+  -webkit-transform: translateX(-50%) translateY(50%);
+          transform: translateX(-50%) translateY(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3285,7 +3291,8 @@
   right: initial;
   top: 100%;
   bottom: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3326,7 +3333,8 @@
   right: initial;
   top: 50%;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3343,7 +3351,8 @@
   right: initial;
   top: 0;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3384,7 +3393,8 @@
   right: initial;
   bottom: 0;
   top: initial;
-  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3433,7 +3443,8 @@
   left: initial;
   top: 50%;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3450,7 +3461,8 @@
   left: initial;
   top: 0;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3491,7 +3503,8 @@
   left: initial;
   bottom: 0;
   top: initial;
-  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3508,7 +3521,8 @@
   left: initial;
   top: 0;
   bottom: initial;
-  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3517,7 +3531,8 @@
   left: initial;
   bottom: 0;
   top: initial;
-  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3526,7 +3541,8 @@
   left: initial;
   top: 100%;
   bottom: initial;
-  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3535,7 +3551,8 @@
   left: initial;
   bottom: 100%;
   top: initial;
-  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3544,7 +3561,8 @@
   left: initial;
   top: 50%;
   bottom: initial;
-  transform: translateX(50%) translateY(-50%);
+  -webkit-transform: translateX(50%) translateY(-50%);
+          transform: translateX(50%) translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3553,7 +3571,8 @@
   left: initial;
   bottom: 100%;
   top: initial;
-  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3562,7 +3581,8 @@
   left: initial;
   top: 0;
   bottom: initial;
-  transform: translateX(50%) translateY(-50%);
+  -webkit-transform: translateX(50%) translateY(-50%);
+          transform: translateX(50%) translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3571,7 +3591,8 @@
   left: initial;
   top: 0;
   bottom: initial;
-  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3580,7 +3601,8 @@
   left: initial;
   bottom: 50%;
   top: initial;
-  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3589,7 +3611,8 @@
   left: initial;
   top: 50%;
   bottom: initial;
-  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3598,7 +3621,8 @@
   left: initial;
   bottom: 0;
   top: initial;
-  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3607,7 +3631,8 @@
   left: initial;
   bottom: 0;
   top: initial;
-  transform: translateX(50%) translateY(50%);
+  -webkit-transform: translateX(50%) translateY(50%);
+          transform: translateX(50%) translateY(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3616,7 +3641,8 @@
   left: initial;
   top: 100%;
   bottom: initial;
-  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3657,7 +3683,8 @@
   right: initial;
   top: 50%;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3674,7 +3701,8 @@
   right: initial;
   top: 0;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3715,7 +3743,8 @@
   right: initial;
   bottom: 0;
   top: initial;
-  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3764,7 +3793,8 @@
   left: initial;
   top: 50%;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3781,7 +3811,8 @@
   left: initial;
   top: 0;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3822,7 +3853,8 @@
   left: initial;
   bottom: 0;
   top: initial;
-  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3871,7 +3903,8 @@
   right: initial;
   top: 50%;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3888,7 +3921,8 @@
   right: initial;
   top: 0;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3929,7 +3963,8 @@
   right: initial;
   bottom: 0;
   top: initial;
-  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 /* line 13, ../scss/modules/layout/_components.scss */
@@ -3968,7 +4003,8 @@
 .position-middle {
   top: 50%;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 20, ../scss/modules/layout/_components.scss */
@@ -3981,7 +4017,8 @@
 .position-midTop {
   top: 0;
   bottom: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 20, ../scss/modules/layout/_components.scss */
@@ -4012,7 +4049,8 @@
 .position-midBottom {
   bottom: 0;
   top: initial;
-  transform: translateY(50%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
 }
 
 /* line 20, ../scss/modules/layout/_components.scss */
@@ -4049,7 +4087,8 @@
 .position-center {
   left: 50%;
   right: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 24, ../scss/modules/layout/_components.scss */
@@ -4062,7 +4101,8 @@
 .position-centerLeft {
   left: 0;
   right: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 24, ../scss/modules/layout/_components.scss */
@@ -4081,7 +4121,8 @@
 .position-centerRight {
   right: 0;
   left: initial;
-  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 /* line 24, ../scss/modules/layout/_components.scss */
@@ -4214,13 +4255,15 @@
 /* line 47, ../scss/modules/layout/_classes.scss */
 .overlap-left {
   position: relative;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 47, ../scss/modules/layout/_classes.scss */
 .overlap-right {
   position: relative;
-  transform: translateX(50%);
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
 }
 
 /* line 6, ../scss/modules/states/_components.scss */
@@ -4326,7 +4369,8 @@
 /* line 8, ../scss/modules/animations/_components.scss */
 .inert, .activate-all-fade.inert, .activate-fade.inert, .activate-all-fadeIn.inert, .activate-fadeIn.inert, .activate-all-scaleUp.inert, .activate-scaleUp.inert, .activate-all-scaleDown.inert, .activate-scaleDown.inert, .activate-all-scaleUpDown.inert, .activate-scaleUpDown.inert, .activate-all-scaleDownUp.inert, .activate-scaleDownUp.inert, .activate-all-slideUp.inert, .activate-slideUp.inert, .activate-all-slideUpDown.inert, .activate-slideUpDown.inert, .activate-all-slideDown.inert, .activate-slideDown.inert, .activate-all-slideLeft.inert, .activate-slideLeft.inert, .activate-all-slideRight.inert, .activate-slideRight.inert, .activate-all-shiftUp.inert, .activate-shiftUp.inert, .activate-all-shiftDown.inert, .activate-shiftDown.inert, .activate-all-shiftLeft.inert, .activate-shiftLeft.inert, .activate-all-shiftRight.inert, .activate-shiftRight.inert, .activate-all-shiftLeftRight.inert, .activate-shiftLeftRight.inert, .activate-all-flipLeft.inert, .activate-flipLeft.inert, .activate-all-tilt.inert, .activate-tilt.inert, .inert.tooltip[title], .inert[class*=" tooltip-"][title], .inert[class^="tooltip-"][title], .inert > *, .activate-all-fade.inert > *, .activate-fade.inert > *, .activate-all-fadeIn.inert > *, .activate-fadeIn.inert > *, .activate-all-scaleUp.inert > *, .activate-scaleUp.inert > *, .activate-all-scaleDown.inert > *, .activate-scaleDown.inert > *, .activate-all-scaleUpDown.inert > *, .activate-scaleUpDown.inert > *, .activate-all-scaleDownUp.inert > *, .activate-scaleDownUp.inert > *, .activate-all-slideUp.inert > *, .activate-slideUp.inert > *, .activate-all-slideUpDown.inert > *, .activate-slideUpDown.inert > *, .activate-all-slideDown.inert > *, .activate-slideDown.inert > *, .activate-all-slideLeft.inert > *, .activate-slideLeft.inert > *, .activate-all-slideRight.inert > *, .activate-slideRight.inert > *, .activate-all-shiftUp.inert > *, .activate-shiftUp.inert > *, .activate-all-shiftDown.inert > *, .activate-shiftDown.inert > *, .activate-all-shiftLeft.inert > *, .activate-shiftLeft.inert > *, .activate-all-shiftRight.inert > *, .activate-shiftRight.inert > *, .activate-all-shiftLeftRight.inert > *, .activate-shiftLeftRight.inert > *, .activate-all-flipLeft.inert > *, .activate-flipLeft.inert > *, .activate-all-tilt.inert > *, .activate-tilt.inert > *, .inert.tooltip[title] > *, .inert[class*=" tooltip-"][title] > *, .inert[class^="tooltip-"][title] > * {
   transition: none !important;
-  animation: none !important;
+  -webkit-animation: none !important;
+          animation: none !important;
 }
 
 /* line 14, ../scss/modules/animations/_components.scss */
@@ -4341,39 +4385,56 @@
 
 /* line 23, ../scss/modules/animations/_components.scss */
 .ng-enter.delay, .delay-all > .ng-enter {
-  animation-delay: 300ms !important;
+  -webkit-animation-delay: 300ms !important;
+          animation-delay: 300ms !important;
 }
 
 /* line 30, ../scss/modules/animations/_components.scss */
 .activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter, .activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave, .activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter, .activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave, .activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter, .activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave, .activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter, .activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave, .activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter, .activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave, .activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter, .activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave, .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-fade.ng-enter, .activate-fade.ng-leave, .activate-fadeIn.ng-enter, .activate-fadeIn.ng-leave, .activate-scaleUp.ng-enter, .activate-scaleUp.ng-leave, .activate-scaleDown.ng-enter, .activate-scaleDown.ng-leave, .activate-scaleUpDown.ng-enter, .activate-scaleUpDown.ng-leave, .activate-scaleDownUp.ng-enter, .activate-scaleDownUp.ng-leave, .activate-slideUp.ng-enter, .activate-slideUp.ng-leave, .activate-slideUpDown.ng-enter, .activate-slideUpDown.ng-leave, .activate-slideDown.ng-enter, .activate-slideDown.ng-leave, .activate-slideLeft.ng-enter, .activate-slideLeft.ng-leave, .activate-slideRight.ng-enter, .activate-slideRight.ng-leave, .activate-shiftUp.ng-enter, .activate-shiftUp.ng-leave, .activate-shiftDown.ng-enter, .activate-shiftDown.ng-leave, .activate-shiftLeft.ng-enter, .activate-shiftLeft.ng-leave, .activate-shiftRight.ng-enter, .activate-shiftRight.ng-leave, .activate-shiftLeftRight.ng-enter, .activate-shiftLeftRight.ng-leave, .activate-flipLeft.ng-enter, .activate-flipLeft.ng-leave, .activate-tilt.ng-enter, .activate-tilt.ng-leave, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after, .toast, .toast.inactive {
-  animation-duration: 300ms;
-  animation-direction: normal;
-  animation-delay: 0;
-  animation-iteration-count: 1;
-  animation-play-state: running;
-  animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
-  animation-fill-mode: both;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+  -webkit-animation-delay: 0;
+          animation-delay: 0;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  -webkit-animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+          animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
 }
 
 /* line 40, ../scss/modules/animations/_components.scss */
 .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .animation-3d, .activate-all-flipLeft, .activate-all-tilt {
-  animation-duration: 300ms;
-  perspective: 1000;
-  transform-style: preserve-3d;
-  backface-visibility: hidden;
-  transform: translate(0, 0, 0);
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
+  -webkit-perspective: 1000;
+          perspective: 1000;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translate(0, 0, 0);
+          transform: translate(0, 0, 0);
 }
 
 /* line 49, ../scss/modules/animations/_components.scss */
 .activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter {
-  animation-name: fade-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: fade-active;
+          animation-name: fade-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 50, ../scss/modules/animations/_components.scss */
 .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave {
-  animation-name: fade-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: fade-inactive;
+          animation-name: fade-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 @-webkit-keyframes fade-active {
@@ -4410,14 +4471,18 @@
 }
 /* line 61, ../scss/modules/animations/_components.scss */
 .activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter {
-  animation-name: fade-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: fade-active;
+          animation-name: fade-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 62, ../scss/modules/animations/_components.scss */
 .activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave {
-  animation-name: fadeIn-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: fadeIn-inactive;
+          animation-name: fadeIn-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 @-webkit-keyframes fadeIn-inactive {
@@ -4432,66 +4497,82 @@
 }
 /* line 68, ../scss/modules/animations/_components.scss */
 .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter {
-  animation-name: scaleUp-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: scaleUp-active;
+          animation-name: scaleUp-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 69, ../scss/modules/animations/_components.scss */
 .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave {
-  animation-name: scaleUp-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: scaleUp-inactive;
+          animation-name: scaleUp-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 @-webkit-keyframes scaleUp-active {
   from {
     opacity: 0;
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @keyframes scaleUp-active {
   from {
     opacity: 0;
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @-webkit-keyframes scaleUp-inactive {
   from {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   to {
     opacity: 0;
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 @keyframes scaleUp-inactive {
   from {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   to {
     opacity: 0;
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
 }
 /* line 92, ../scss/modules/animations/_components.scss */
 .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter {
-  animation-name: scaleDown-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: scaleDown-active;
+          animation-name: scaleDown-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 93, ../scss/modules/animations/_components.scss */
 .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave {
-  animation-name: scaleDown-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: scaleDown-inactive;
+          animation-name: scaleDown-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 @-webkit-keyframes scaleDown-active {
@@ -4537,658 +4618,818 @@
 @-webkit-keyframes scaleUpDown-active {
   from {
     opacity: 0;
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @keyframes scaleUpDown-active {
   from {
     opacity: 0;
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @-webkit-keyframes scaleUpDown-inactive {
   from {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   to {
     opacity: 0;
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 @keyframes scaleUpDown-inactive {
   from {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
   to {
     opacity: 0;
-    transform: scale(0.8);
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
   }
 }
 @-webkit-keyframes scaleDownUp-active {
   from {
     opacity: 0;
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @keyframes scaleDownUp-active {
   from {
     opacity: 0;
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   to {
     opacity: 1;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @-webkit-keyframes scaleDownUp-inactive {
   from {
     opacity: 1;
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   to {
     opacity: 0;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @keyframes scaleDownUp-inactive {
   from {
     opacity: 1;
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   to {
     opacity: 0;
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 /* line 164, ../scss/modules/animations/_components.scss */
 .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter {
-  animation-name: slideLeft-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideLeft-active;
+          animation-name: slideLeft-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 165, ../scss/modules/animations/_components.scss */
 .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave {
-  animation-name: slideLeft-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideLeft-inactive;
+          animation-name: slideLeft-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 @-webkit-keyframes slideLeft-active {
   from {
-    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   to {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @keyframes slideLeft-active {
   from {
-    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   to {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @-webkit-keyframes slideLeft-inactive {
   from {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 @keyframes slideLeft-inactive {
   from {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   to {
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 /* line 176, ../scss/modules/animations/_components.scss */
 .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter {
-  animation-name: slideRight-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideRight-active;
+          animation-name: slideRight-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 177, ../scss/modules/animations/_components.scss */
 .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave {
-  animation-name: slideRight-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideRight-inactive;
+          animation-name: slideRight-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 @-webkit-keyframes slideRight-active {
   from {
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   to {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @keyframes slideRight-active {
   from {
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
   to {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
 }
 @-webkit-keyframes slideRight-inactive {
   from {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   to {
-    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
 }
 @keyframes slideRight-inactive {
   from {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
   }
   to {
-    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
 }
 /* line 188, ../scss/modules/animations/_components.scss */
 .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter {
-  animation-name: slideUp-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideUp-active;
+          animation-name: slideUp-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 189, ../scss/modules/animations/_components.scss */
 .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave {
-  animation-name: slideUp-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideUp-inactive;
+          animation-name: slideUp-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 @-webkit-keyframes slideUp-active {
   from {
-    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
   to {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @keyframes slideUp-active {
   from {
-    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
   to {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @-webkit-keyframes slideUp-inactive {
   from {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   to {
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 @keyframes slideUp-inactive {
   from {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   to {
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 /* line 200, ../scss/modules/animations/_components.scss */
 .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter {
-  animation-name: slideDown-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideDown-active;
+          animation-name: slideDown-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 201, ../scss/modules/animations/_components.scss */
 .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave {
-  animation-name: slideDown-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideDown-inactive;
+          animation-name: slideDown-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 @-webkit-keyframes slideDown-active {
   from {
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
   to {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @keyframes slideDown-active {
   from {
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
   to {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @-webkit-keyframes slideDown-inactive {
   from {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   to {
-    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
 }
 @keyframes slideDown-inactive {
   from {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   to {
-    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
 }
 /* line 212, ../scss/modules/animations/_components.scss */
 .activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter {
-  animation-name: slideUpDown-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideUpDown-active;
+          animation-name: slideUpDown-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 213, ../scss/modules/animations/_components.scss */
 .activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave {
-  animation-name: slideUpDown-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideUpDown-inactive;
+          animation-name: slideUpDown-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 @-webkit-keyframes slideUpDown-active {
   from {
-    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
   to {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @keyframes slideUpDown-active {
   from {
-    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
   to {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @-webkit-keyframes slideUpDown-inactive {
   from {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   to {
-    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
 }
 @keyframes slideUpDown-inactive {
   from {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   to {
-    transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
   }
 }
 @-webkit-keyframes slideDownUp-active {
   from {
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
   to {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @keyframes slideDownUp-active {
   from {
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
   to {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 @-webkit-keyframes slideDownUp-inactive {
   from {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   to {
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 @keyframes slideDownUp-inactive {
   from {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   to {
-    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 }
 /* line 236, ../scss/modules/animations/_components.scss */
 .activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter {
-  animation-name: shiftUp-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftUp-active;
+          animation-name: shiftUp-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 237, ../scss/modules/animations/_components.scss */
 .activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave {
-  animation-name: shiftUp-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftUp-inactive;
+          animation-name: shiftUp-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 @-webkit-keyframes shiftUp-active {
   from {
-    transform: translateY(5rem);
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
 @keyframes shiftUp-active {
   from {
-    transform: translateY(5rem);
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
 @-webkit-keyframes shiftUp-inactive {
   from {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
   to {
-    transform: translateY(-5rem);
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
     opacity: 0;
   }
 }
 @keyframes shiftUp-inactive {
   from {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
   to {
-    transform: translateY(-5rem);
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
     opacity: 0;
   }
 }
 /* line 260, ../scss/modules/animations/_components.scss */
 .activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter {
-  animation-name: shiftDown-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftDown-active;
+          animation-name: shiftDown-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 261, ../scss/modules/animations/_components.scss */
 .activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave {
-  animation-name: shiftDown-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftDown-inactive;
+          animation-name: shiftDown-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 @-webkit-keyframes shiftDown-active {
   from {
-    transform: translateY(-5rem);
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
 @keyframes shiftDown-active {
   from {
-    transform: translateY(-5rem);
+    -webkit-transform: translateY(-5rem);
+            transform: translateY(-5rem);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
 }
 @-webkit-keyframes shiftDown-inactive {
   from {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
   to {
-    transform: translateY(5rem);
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
     opacity: 0;
   }
 }
 @keyframes shiftDown-inactive {
   from {
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
   }
   to {
-    transform: translateY(5rem);
+    -webkit-transform: translateY(5rem);
+            transform: translateY(5rem);
     opacity: 0;
   }
 }
 /* line 284, ../scss/modules/animations/_components.scss */
 .activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter {
-  animation-name: shiftLeft-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftLeft-active;
+          animation-name: shiftLeft-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 285, ../scss/modules/animations/_components.scss */
 .activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave {
-  animation-name: shiftLeft-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftLeft-inactive;
+          animation-name: shiftLeft-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 @-webkit-keyframes shiftLeft-active {
   from {
-    transform: translateX(5rem);
+    -webkit-transform: translateX(5rem);
+            transform: translateX(5rem);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
 }
 @keyframes shiftLeft-active {
   from {
-    transform: translateX(5rem);
+    -webkit-transform: translateX(5rem);
+            transform: translateX(5rem);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
 }
 @-webkit-keyframes shiftLeft-inactive {
   from {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
   to {
-    transform: translateX(-5rem);
+    -webkit-transform: translateX(-5rem);
+            transform: translateX(-5rem);
     opacity: 0;
   }
 }
 @keyframes shiftLeft-inactive {
   from {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
   to {
-    transform: translateX(-5rem);
+    -webkit-transform: translateX(-5rem);
+            transform: translateX(-5rem);
     opacity: 0;
   }
 }
 /* line 308, ../scss/modules/animations/_components.scss */
 .activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter {
-  animation-name: shiftRight-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftRight-active;
+          animation-name: shiftRight-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 309, ../scss/modules/animations/_components.scss */
 .activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave {
-  animation-name: shiftRight-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftRight-inactive;
+          animation-name: shiftRight-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 @-webkit-keyframes shiftRight-active {
   from {
-    transform: translateX(-5rem);
+    -webkit-transform: translateX(-5rem);
+            transform: translateX(-5rem);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
 }
 @keyframes shiftRight-active {
   from {
-    transform: translateX(-5rem);
+    -webkit-transform: translateX(-5rem);
+            transform: translateX(-5rem);
     opacity: 0;
   }
   to {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
 }
 @-webkit-keyframes shiftRight-inactive {
   from {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
   to {
-    transform: translateX(5rem);
+    -webkit-transform: translateX(5rem);
+            transform: translateX(5rem);
     opacity: 0;
   }
 }
 @keyframes shiftRight-inactive {
   from {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     opacity: 1;
   }
   to {
-    transform: translateX(5rem);
+    -webkit-transform: translateX(5rem);
+            transform: translateX(5rem);
     opacity: 0;
   }
 }
 /* line 332, ../scss/modules/animations/_components.scss */
 .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter {
-  animation-name: flipLeft-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: flipLeft-active;
+          animation-name: flipLeft-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 333, ../scss/modules/animations/_components.scss */
 .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave {
-  animation-name: flipLeft-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: flipLeft-inactive;
+          animation-name: flipLeft-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 @-webkit-keyframes flipLeft-active {
   from {
     z-index: 1;
-    transform: translateZ(-1000px) rotateY(180deg);
+    -webkit-transform: translateZ(-1000px) rotateY(180deg);
+            transform: translateZ(-1000px) rotateY(180deg);
   }
   to {
     z-index: 2;
-    transform: translateZ(0) rotateY(0);
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
   }
 }
 @keyframes flipLeft-active {
   from {
     z-index: 1;
-    transform: translateZ(-1000px) rotateY(180deg);
+    -webkit-transform: translateZ(-1000px) rotateY(180deg);
+            transform: translateZ(-1000px) rotateY(180deg);
   }
   to {
     z-index: 2;
-    transform: translateZ(0) rotateY(0);
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
   }
 }
 @-webkit-keyframes flipLeft-inactive {
   from {
     z-index: 2;
-    transform: translateZ(0) rotateY(0);
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
   }
   to {
     z-index: 1;
-    transform: translateZ(-1000px) rotateY(-180deg);
+    -webkit-transform: translateZ(-1000px) rotateY(-180deg);
+            transform: translateZ(-1000px) rotateY(-180deg);
   }
 }
 @keyframes flipLeft-inactive {
   from {
     z-index: 2;
-    transform: translateZ(0) rotateY(0);
+    -webkit-transform: translateZ(0) rotateY(0);
+            transform: translateZ(0) rotateY(0);
   }
   to {
     z-index: 1;
-    transform: translateZ(-1000px) rotateY(-180deg);
+    -webkit-transform: translateZ(-1000px) rotateY(-180deg);
+            transform: translateZ(-1000px) rotateY(-180deg);
   }
 }
 /* line 350, ../scss/modules/animations/_components.scss */
 .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter {
-  animation-name: tilt-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: tilt-active;
+          animation-name: tilt-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 351, ../scss/modules/animations/_components.scss */
 .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave {
-  animation-name: tilt-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: tilt-inactive;
+          animation-name: tilt-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 @-webkit-keyframes tilt-active {
   0% {
-    transform: translateZ(-500px) rotateY(0deg);
+    -webkit-transform: translateZ(-500px) rotateY(0deg);
+            transform: translateZ(-500px) rotateY(0deg);
     opacity: 0;
   }
   20% {
-    transform: translateZ(-250px) rotateY(30deg);
+    -webkit-transform: translateZ(-250px) rotateY(30deg);
+            transform: translateZ(-250px) rotateY(30deg);
     opacity: 0.5;
   }
   100% {
-    transform: translateZ(0px) rotateY(0deg);
+    -webkit-transform: translateZ(0px) rotateY(0deg);
+            transform: translateZ(0px) rotateY(0deg);
     opacity: 1;
   }
 }
 @keyframes tilt-active {
   0% {
-    transform: translateZ(-500px) rotateY(0deg);
+    -webkit-transform: translateZ(-500px) rotateY(0deg);
+            transform: translateZ(-500px) rotateY(0deg);
     opacity: 0;
   }
   20% {
-    transform: translateZ(-250px) rotateY(30deg);
+    -webkit-transform: translateZ(-250px) rotateY(30deg);
+            transform: translateZ(-250px) rotateY(30deg);
     opacity: 0.5;
   }
   100% {
-    transform: translateZ(0px) rotateY(0deg);
+    -webkit-transform: translateZ(0px) rotateY(0deg);
+            transform: translateZ(0px) rotateY(0deg);
     opacity: 1;
   }
 }
 @-webkit-keyframes tilt-inactive {
   50% {
-    transform: translateZ(-250px) rotateY(30deg);
+    -webkit-transform: translateZ(-250px) rotateY(30deg);
+            transform: translateZ(-250px) rotateY(30deg);
   }
   75% {
-    transform: translateZ(-372.5px) rotateY(15deg);
+    -webkit-transform: translateZ(-372.5px) rotateY(15deg);
+            transform: translateZ(-372.5px) rotateY(15deg);
     opacity: .5;
   }
   100% {
-    transform: translateZ(-500px) rotateY(0deg);
+    -webkit-transform: translateZ(-500px) rotateY(0deg);
+            transform: translateZ(-500px) rotateY(0deg);
     opacity: 0;
   }
 }
 @keyframes tilt-inactive {
   50% {
-    transform: translateZ(-250px) rotateY(30deg);
+    -webkit-transform: translateZ(-250px) rotateY(30deg);
+            transform: translateZ(-250px) rotateY(30deg);
   }
   75% {
-    transform: translateZ(-372.5px) rotateY(15deg);
+    -webkit-transform: translateZ(-372.5px) rotateY(15deg);
+            transform: translateZ(-372.5px) rotateY(15deg);
     opacity: .5;
   }
   100% {
-    transform: translateZ(-500px) rotateY(0deg);
+    -webkit-transform: translateZ(-500px) rotateY(0deg);
+            transform: translateZ(-500px) rotateY(0deg);
     opacity: 0;
   }
 }
@@ -5216,218 +5457,294 @@
 
 /* line 423, ../scss/modules/animations/_components.scss */
 .hover-scaleUp, .transition-scaleUp {
+  transition-property: -webkit-transform;
   transition-property: transform;
 }
 /* line 76, ../scss/modules/animations/_mixins.scss */
 .active.hover-scaleUp, .hover-scaleUp:hover, .active.transition-scaleUp, .hover-all:hover > .hover-scaleUp, .hover-all:hover > .transition-scaleUp {
-  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 /* line 430, ../scss/modules/animations/_components.scss */
 .transition-slideFromLeft {
-  transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
 /* line 76, ../scss/modules/animations/_mixins.scss */
 .active.transition-slideFromLeft, .hover-all:hover > .transition-slideFromLeft {
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-fade.ng-enter {
-  animation-name: fade-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: fade-active;
+          animation-name: fade-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-fade.ng-leave {
-  animation-name: fade-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: fade-inactive;
+          animation-name: fade-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-fadeIn.ng-enter {
-  animation-name: fadeIn-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: fadeIn-active;
+          animation-name: fadeIn-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-fadeIn.ng-leave {
-  animation-name: fadeIn-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: fadeIn-inactive;
+          animation-name: fadeIn-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-scaleUp.ng-enter {
-  animation-name: scaleUp-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: scaleUp-active;
+          animation-name: scaleUp-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-scaleUp.ng-leave {
-  animation-name: scaleUp-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: scaleUp-inactive;
+          animation-name: scaleUp-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-scaleDown.ng-enter {
-  animation-name: scaleDown-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: scaleDown-active;
+          animation-name: scaleDown-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-scaleDown.ng-leave {
-  animation-name: scaleDown-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: scaleDown-inactive;
+          animation-name: scaleDown-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-scaleUpDown.ng-enter {
-  animation-name: scaleUp-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: scaleUp-active;
+          animation-name: scaleUp-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-scaleUpDown.ng-leave {
-  animation-name: scaleDown-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: scaleDown-inactive;
+          animation-name: scaleDown-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-scaleDownUp.ng-enter {
-  animation-name: scaleDown-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: scaleDown-active;
+          animation-name: scaleDown-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-scaleDownUp.ng-leave {
-  animation-name: scaleUp-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: scaleUp-inactive;
+          animation-name: scaleUp-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-slideUp.ng-enter {
-  animation-name: slideUp-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideUp-active;
+          animation-name: slideUp-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-slideUp.ng-leave {
-  animation-name: slideUp-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideUp-inactive;
+          animation-name: slideUp-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-slideUpDown.ng-enter {
-  animation-name: slideUpDown-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideUpDown-active;
+          animation-name: slideUpDown-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-slideUpDown.ng-leave {
-  animation-name: slideUpDown-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideUpDown-inactive;
+          animation-name: slideUpDown-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-slideDown.ng-enter {
-  animation-name: slideDown-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideDown-active;
+          animation-name: slideDown-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-slideDown.ng-leave {
-  animation-name: slideDown-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideDown-inactive;
+          animation-name: slideDown-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-slideLeft.ng-enter {
-  animation-name: slideLeft-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideLeft-active;
+          animation-name: slideLeft-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-slideLeft.ng-leave {
-  animation-name: slideLeft-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideLeft-inactive;
+          animation-name: slideLeft-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-slideRight.ng-enter {
-  animation-name: slideRight-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideRight-active;
+          animation-name: slideRight-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-slideRight.ng-leave {
-  animation-name: slideRight-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: slideRight-inactive;
+          animation-name: slideRight-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-shiftUp.ng-enter {
-  animation-name: shiftUp-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftUp-active;
+          animation-name: shiftUp-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-shiftUp.ng-leave {
-  animation-name: shiftUp-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftUp-inactive;
+          animation-name: shiftUp-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-shiftDown.ng-enter {
-  animation-name: shiftDown-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftDown-active;
+          animation-name: shiftDown-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-shiftDown.ng-leave {
-  animation-name: shiftDown-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftDown-inactive;
+          animation-name: shiftDown-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-shiftLeft.ng-enter {
-  animation-name: shiftLeft-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftLeft-active;
+          animation-name: shiftLeft-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-shiftLeft.ng-leave {
-  animation-name: shiftLeft-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftLeft-inactive;
+          animation-name: shiftLeft-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-shiftRight.ng-enter {
-  animation-name: shiftRight-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftRight-active;
+          animation-name: shiftRight-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-shiftRight.ng-leave {
-  animation-name: shiftRight-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftRight-inactive;
+          animation-name: shiftRight-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-shiftLeftRight.ng-enter {
-  animation-name: shiftLeft-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftLeft-active;
+          animation-name: shiftLeft-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-shiftLeftRight.ng-leave {
-  animation-name: shiftRight-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: shiftRight-inactive;
+          animation-name: shiftRight-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-flipLeft.ng-enter {
-  animation-name: flipLeft-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: flipLeft-active;
+          animation-name: flipLeft-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-flipLeft.ng-leave {
-  animation-name: flipLeft-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: flipLeft-inactive;
+          animation-name: flipLeft-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-tilt.ng-enter {
-  animation-name: tilt-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: tilt-active;
+          animation-name: tilt-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .activate-tilt.ng-leave {
-  animation-name: tilt-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: tilt-inactive;
+          animation-name: tilt-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 13, ../scss/modules/themes/_components.scss */
@@ -10443,7 +10760,8 @@
 /* line 267, ../scss/modules/grid/_components.scss */
 .row-center {
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 @media only screen and (max-height: 43.75em) {
@@ -10793,7 +11111,8 @@
   /* line 267, ../scss/modules/grid/_components.scss */
   .row-center-short {
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 }
 @media only screen and (min-width: 56.25em) {
@@ -11143,7 +11462,8 @@
   /* line 267, ../scss/modules/grid/_components.scss */
   .row-center-tall {
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 }
 @media only screen and (max-width: 47.9375em) {
@@ -11493,7 +11813,8 @@
   /* line 267, ../scss/modules/grid/_components.scss */
   .row-center-small {
     top: 50%;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
 }
 /* line 279, ../scss/modules/grid/_components.scss */
@@ -11713,7 +12034,8 @@
 }
 /* line 49, ../scss/modules/layers/_mixins.scss */
 .active.drawer-left ~ * {
-  transform: translateX(calc(20rem - 4rem));
+  -webkit-transform: translateX(calc(20rem - 4rem));
+          transform: translateX(calc(20rem - 4rem));
 }
 /* line 55, ../scss/modules/layers/_mixins.scss */
 .drawer-left + * {
@@ -11730,7 +12052,8 @@
   }
   /* line 49, ../scss/modules/layers/_mixins.scss */
   .active.drawer-left-small ~ * {
-    transform: translateX(calc(83.33333% - 4rem));
+    -webkit-transform: translateX(calc(83.33333% - 4rem));
+            transform: translateX(calc(83.33333% - 4rem));
   }
   /* line 55, ../scss/modules/layers/_mixins.scss */
   .drawer-left-small + * {
@@ -11748,7 +12071,8 @@
   }
   /* line 49, ../scss/modules/layers/_mixins.scss */
   .active.drawer-left-medium ~ * {
-    transform: translateX(calc(50% - 4rem));
+    -webkit-transform: translateX(calc(50% - 4rem));
+            transform: translateX(calc(50% - 4rem));
   }
   /* line 55, ../scss/modules/layers/_mixins.scss */
   .drawer-left-medium + * {
@@ -11766,7 +12090,8 @@
 }
 /* line 49, ../scss/modules/layers/_mixins.scss */
 .active.drawer-right ~ * {
-  transform: translateX(calc(-20rem + 4rem));
+  -webkit-transform: translateX(calc(-20rem + 4rem));
+          transform: translateX(calc(-20rem + 4rem));
 }
 /* line 55, ../scss/modules/layers/_mixins.scss */
 .drawer-right + * {
@@ -11783,7 +12108,8 @@
   }
   /* line 49, ../scss/modules/layers/_mixins.scss */
   .active.drawer-right-small ~ * {
-    transform: translateX(calc(-83.33333% + 4rem));
+    -webkit-transform: translateX(calc(-83.33333% + 4rem));
+            transform: translateX(calc(-83.33333% + 4rem));
   }
   /* line 55, ../scss/modules/layers/_mixins.scss */
   .drawer-right-small + * {
@@ -11801,7 +12127,8 @@
   }
   /* line 49, ../scss/modules/layers/_mixins.scss */
   .active.drawer-right-medium ~ * {
-    transform: translateX(calc(-50% + 4rem));
+    -webkit-transform: translateX(calc(-50% + 4rem));
+            transform: translateX(calc(-50% + 4rem));
   }
   /* line 55, ../scss/modules/layers/_mixins.scss */
   .drawer-right-medium + * {
@@ -11819,7 +12146,8 @@
 }
 /* line 49, ../scss/modules/layers/_mixins.scss */
 .active.drawer-top ~ * {
-  transform: translateY(20rem);
+  -webkit-transform: translateY(20rem);
+          transform: translateY(20rem);
 }
 /* line 55, ../scss/modules/layers/_mixins.scss */
 .drawer-top + * {
@@ -11836,7 +12164,8 @@
   }
   /* line 49, ../scss/modules/layers/_mixins.scss */
   .active.drawer-top-small ~ * {
-    transform: translateY(83.33333%);
+    -webkit-transform: translateY(83.33333%);
+            transform: translateY(83.33333%);
   }
   /* line 55, ../scss/modules/layers/_mixins.scss */
   .drawer-top-small + * {
@@ -11854,7 +12183,8 @@
   }
   /* line 49, ../scss/modules/layers/_mixins.scss */
   .active.drawer-top-medium ~ * {
-    transform: translateY(83.33333%);
+    -webkit-transform: translateY(83.33333%);
+            transform: translateY(83.33333%);
   }
   /* line 55, ../scss/modules/layers/_mixins.scss */
   .drawer-top-medium + * {
@@ -11872,7 +12202,8 @@
 }
 /* line 49, ../scss/modules/layers/_mixins.scss */
 .active.drawer-bottom ~ * {
-  transform: translateY(-20rem);
+  -webkit-transform: translateY(-20rem);
+          transform: translateY(-20rem);
 }
 /* line 55, ../scss/modules/layers/_mixins.scss */
 .drawer-bottom + * {
@@ -11889,7 +12220,8 @@
   }
   /* line 49, ../scss/modules/layers/_mixins.scss */
   .active.drawer-bottom-small ~ * {
-    transform: translateY(-83.33333%);
+    -webkit-transform: translateY(-83.33333%);
+            transform: translateY(-83.33333%);
   }
   /* line 55, ../scss/modules/layers/_mixins.scss */
   .drawer-bottom-small + * {
@@ -11907,7 +12239,8 @@
   }
   /* line 49, ../scss/modules/layers/_mixins.scss */
   .active.drawer-bottom-medium ~ * {
-    transform: translateY(-83.33333%);
+    -webkit-transform: translateY(-83.33333%);
+            transform: translateY(-83.33333%);
   }
   /* line 55, ../scss/modules/layers/_mixins.scss */
   .drawer-bottom-medium + * {
@@ -11941,7 +12274,8 @@
 }
 /* line 187, ../scss/modules/layers/_components.scss */
 .parallax {
-  perspective: 100px;
+  -webkit-perspective: 100px;
+          perspective: 100px;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
@@ -11950,12 +12284,14 @@
 .parallax-page {
   position: relative;
   height: 100%;
-  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
 }
 /* line 199, ../scss/modules/layers/_components.scss */
 .parallax-layer {
   position: absolute;
-  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
   z-index: 4;
   top: 0;
   bottom: 0;
@@ -11968,16 +12304,19 @@
   right: initial;
   top: 50%;
   bottom: initial;
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 /* line 207, ../scss/modules/layers/_components.scss */
 .parallax-layer-front {
-  transform: translateZ(100px) scale(0);
+  -webkit-transform: translateZ(100px) scale(0);
+          transform: translateZ(100px) scale(0);
   z-index: 10;
 }
 /* line 211, ../scss/modules/layers/_components.scss */
 .parallax-layer-back {
-  transform: translateZ(-100px) scale(2);
+  -webkit-transform: translateZ(-100px) scale(2);
+          transform: translateZ(-100px) scale(2);
   z-index: -10;
 }
 
@@ -12047,7 +12386,8 @@ textarea.inline {
 /* line 93, ../scss/modules/_layout.scss */
 .valign-center {
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 99, ../scss/modules/_layout.scss */
@@ -12366,7 +12706,10 @@ body {
   font-style: normal;
   text-rendering: optimizeLegibility;
   word-wrap: break-word;
-  hyphens: auto;
+  -webkit-hyphens: auto;
+     -moz-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto;
 }
 
 /* line 118, ../scss/modules/type/_components.scss */
@@ -13233,6 +13576,57 @@ input[type="color"]:focus {
   background-color: #FFF;
 }
 /* line 41, ../scss/modules/forms/_themes.scss */
+textarea::-webkit-input-placeholder,
+input[type="text"]::-webkit-input-placeholder,
+input[type="password"]::-webkit-input-placeholder,
+input[type="datetime"]::-webkit-input-placeholder,
+input[type="datetime-local"]::-webkit-input-placeholder,
+input[type="date"]::-webkit-input-placeholder,
+input[type="month"]::-webkit-input-placeholder,
+input[type="time"]::-webkit-input-placeholder,
+input[type="week"]::-webkit-input-placeholder,
+input[type="number"]::-webkit-input-placeholder,
+input[type="email"]::-webkit-input-placeholder,
+input[type="url"]::-webkit-input-placeholder,
+input[type="search"]::-webkit-input-placeholder,
+input[type="tel"]::-webkit-input-placeholder,
+input[type="color"]::-webkit-input-placeholder {
+  color: rgba(54, 54, 54, 0.4);
+}
+textarea::-moz-placeholder,
+input[type="text"]::-moz-placeholder,
+input[type="password"]::-moz-placeholder,
+input[type="datetime"]::-moz-placeholder,
+input[type="datetime-local"]::-moz-placeholder,
+input[type="date"]::-moz-placeholder,
+input[type="month"]::-moz-placeholder,
+input[type="time"]::-moz-placeholder,
+input[type="week"]::-moz-placeholder,
+input[type="number"]::-moz-placeholder,
+input[type="email"]::-moz-placeholder,
+input[type="url"]::-moz-placeholder,
+input[type="search"]::-moz-placeholder,
+input[type="tel"]::-moz-placeholder,
+input[type="color"]::-moz-placeholder {
+  color: rgba(54, 54, 54, 0.4);
+}
+textarea:-ms-input-placeholder,
+input[type="text"]:-ms-input-placeholder,
+input[type="password"]:-ms-input-placeholder,
+input[type="datetime"]:-ms-input-placeholder,
+input[type="datetime-local"]:-ms-input-placeholder,
+input[type="date"]:-ms-input-placeholder,
+input[type="month"]:-ms-input-placeholder,
+input[type="time"]:-ms-input-placeholder,
+input[type="week"]:-ms-input-placeholder,
+input[type="number"]:-ms-input-placeholder,
+input[type="email"]:-ms-input-placeholder,
+input[type="url"]:-ms-input-placeholder,
+input[type="search"]:-ms-input-placeholder,
+input[type="tel"]:-ms-input-placeholder,
+input[type="color"]:-ms-input-placeholder {
+  color: rgba(54, 54, 54, 0.4);
+}
 textarea::placeholder,
 input[type="text"]::placeholder,
 input[type="password"]::placeholder,
@@ -13311,6 +13705,57 @@ input[type="color"].lighten:focus {
   background-color: #FFF;
 }
 /* line 41, ../scss/modules/forms/_themes.scss */
+textarea.lighten::-webkit-input-placeholder,
+input[type="text"].lighten::-webkit-input-placeholder,
+input[type="password"].lighten::-webkit-input-placeholder,
+input[type="datetime"].lighten::-webkit-input-placeholder,
+input[type="datetime-local"].lighten::-webkit-input-placeholder,
+input[type="date"].lighten::-webkit-input-placeholder,
+input[type="month"].lighten::-webkit-input-placeholder,
+input[type="time"].lighten::-webkit-input-placeholder,
+input[type="week"].lighten::-webkit-input-placeholder,
+input[type="number"].lighten::-webkit-input-placeholder,
+input[type="email"].lighten::-webkit-input-placeholder,
+input[type="url"].lighten::-webkit-input-placeholder,
+input[type="search"].lighten::-webkit-input-placeholder,
+input[type="tel"].lighten::-webkit-input-placeholder,
+input[type="color"].lighten::-webkit-input-placeholder {
+  color: rgba(54, 54, 54, 0.4);
+}
+textarea.lighten::-moz-placeholder,
+input[type="text"].lighten::-moz-placeholder,
+input[type="password"].lighten::-moz-placeholder,
+input[type="datetime"].lighten::-moz-placeholder,
+input[type="datetime-local"].lighten::-moz-placeholder,
+input[type="date"].lighten::-moz-placeholder,
+input[type="month"].lighten::-moz-placeholder,
+input[type="time"].lighten::-moz-placeholder,
+input[type="week"].lighten::-moz-placeholder,
+input[type="number"].lighten::-moz-placeholder,
+input[type="email"].lighten::-moz-placeholder,
+input[type="url"].lighten::-moz-placeholder,
+input[type="search"].lighten::-moz-placeholder,
+input[type="tel"].lighten::-moz-placeholder,
+input[type="color"].lighten::-moz-placeholder {
+  color: rgba(54, 54, 54, 0.4);
+}
+textarea.lighten:-ms-input-placeholder,
+input[type="text"].lighten:-ms-input-placeholder,
+input[type="password"].lighten:-ms-input-placeholder,
+input[type="datetime"].lighten:-ms-input-placeholder,
+input[type="datetime-local"].lighten:-ms-input-placeholder,
+input[type="date"].lighten:-ms-input-placeholder,
+input[type="month"].lighten:-ms-input-placeholder,
+input[type="time"].lighten:-ms-input-placeholder,
+input[type="week"].lighten:-ms-input-placeholder,
+input[type="number"].lighten:-ms-input-placeholder,
+input[type="email"].lighten:-ms-input-placeholder,
+input[type="url"].lighten:-ms-input-placeholder,
+input[type="search"].lighten:-ms-input-placeholder,
+input[type="tel"].lighten:-ms-input-placeholder,
+input[type="color"].lighten:-ms-input-placeholder {
+  color: rgba(54, 54, 54, 0.4);
+}
 textarea.lighten::placeholder,
 input[type="text"].lighten::placeholder,
 input[type="password"].lighten::placeholder,
@@ -13389,6 +13834,57 @@ input[type="color"].darken:focus {
   background-color: #FFF;
 }
 /* line 41, ../scss/modules/forms/_themes.scss */
+textarea.darken::-webkit-input-placeholder,
+input[type="text"].darken::-webkit-input-placeholder,
+input[type="password"].darken::-webkit-input-placeholder,
+input[type="datetime"].darken::-webkit-input-placeholder,
+input[type="datetime-local"].darken::-webkit-input-placeholder,
+input[type="date"].darken::-webkit-input-placeholder,
+input[type="month"].darken::-webkit-input-placeholder,
+input[type="time"].darken::-webkit-input-placeholder,
+input[type="week"].darken::-webkit-input-placeholder,
+input[type="number"].darken::-webkit-input-placeholder,
+input[type="email"].darken::-webkit-input-placeholder,
+input[type="url"].darken::-webkit-input-placeholder,
+input[type="search"].darken::-webkit-input-placeholder,
+input[type="tel"].darken::-webkit-input-placeholder,
+input[type="color"].darken::-webkit-input-placeholder {
+  color: rgba(54, 54, 54, 0.4);
+}
+textarea.darken::-moz-placeholder,
+input[type="text"].darken::-moz-placeholder,
+input[type="password"].darken::-moz-placeholder,
+input[type="datetime"].darken::-moz-placeholder,
+input[type="datetime-local"].darken::-moz-placeholder,
+input[type="date"].darken::-moz-placeholder,
+input[type="month"].darken::-moz-placeholder,
+input[type="time"].darken::-moz-placeholder,
+input[type="week"].darken::-moz-placeholder,
+input[type="number"].darken::-moz-placeholder,
+input[type="email"].darken::-moz-placeholder,
+input[type="url"].darken::-moz-placeholder,
+input[type="search"].darken::-moz-placeholder,
+input[type="tel"].darken::-moz-placeholder,
+input[type="color"].darken::-moz-placeholder {
+  color: rgba(54, 54, 54, 0.4);
+}
+textarea.darken:-ms-input-placeholder,
+input[type="text"].darken:-ms-input-placeholder,
+input[type="password"].darken:-ms-input-placeholder,
+input[type="datetime"].darken:-ms-input-placeholder,
+input[type="datetime-local"].darken:-ms-input-placeholder,
+input[type="date"].darken:-ms-input-placeholder,
+input[type="month"].darken:-ms-input-placeholder,
+input[type="time"].darken:-ms-input-placeholder,
+input[type="week"].darken:-ms-input-placeholder,
+input[type="number"].darken:-ms-input-placeholder,
+input[type="email"].darken:-ms-input-placeholder,
+input[type="url"].darken:-ms-input-placeholder,
+input[type="search"].darken:-ms-input-placeholder,
+input[type="tel"].darken:-ms-input-placeholder,
+input[type="color"].darken:-ms-input-placeholder {
+  color: rgba(54, 54, 54, 0.4);
+}
 textarea.darken::placeholder,
 input[type="text"].darken::placeholder,
 input[type="password"].darken::placeholder,
@@ -13636,6 +14132,225 @@ input[type="color"].darken::placeholder {
   background-color: transparent;
 }
 /* line 41, ../scss/modules/forms/_themes.scss */
+.mode-light textarea.implicit::-webkit-input-placeholder, .alert textarea.implicit::-webkit-input-placeholder, .alert.success textarea.implicit::-webkit-input-placeholder, .alert.failure textarea.implicit::-webkit-input-placeholder,
+.mode-light input[type="text"].implicit::-webkit-input-placeholder,
+.alert input[type="text"].implicit::-webkit-input-placeholder,
+.alert.success input[type="text"].implicit::-webkit-input-placeholder,
+.alert.failure input[type="text"].implicit::-webkit-input-placeholder,
+.mode-light input[type="password"].implicit::-webkit-input-placeholder,
+.alert input[type="password"].implicit::-webkit-input-placeholder,
+.alert.success input[type="password"].implicit::-webkit-input-placeholder,
+.alert.failure input[type="password"].implicit::-webkit-input-placeholder,
+.mode-light input[type="datetime"].implicit::-webkit-input-placeholder,
+.alert input[type="datetime"].implicit::-webkit-input-placeholder,
+.alert.success input[type="datetime"].implicit::-webkit-input-placeholder,
+.alert.failure input[type="datetime"].implicit::-webkit-input-placeholder,
+.mode-light input[type="datetime-local"].implicit::-webkit-input-placeholder,
+.alert input[type="datetime-local"].implicit::-webkit-input-placeholder,
+.alert.success input[type="datetime-local"].implicit::-webkit-input-placeholder,
+.alert.failure input[type="datetime-local"].implicit::-webkit-input-placeholder,
+.mode-light input[type="date"].implicit::-webkit-input-placeholder,
+.alert input[type="date"].implicit::-webkit-input-placeholder,
+.alert.success input[type="date"].implicit::-webkit-input-placeholder,
+.alert.failure input[type="date"].implicit::-webkit-input-placeholder,
+.mode-light input[type="month"].implicit::-webkit-input-placeholder,
+.alert input[type="month"].implicit::-webkit-input-placeholder,
+.alert.success input[type="month"].implicit::-webkit-input-placeholder,
+.alert.failure input[type="month"].implicit::-webkit-input-placeholder,
+.mode-light input[type="time"].implicit::-webkit-input-placeholder,
+.alert input[type="time"].implicit::-webkit-input-placeholder,
+.alert.success input[type="time"].implicit::-webkit-input-placeholder,
+.alert.failure input[type="time"].implicit::-webkit-input-placeholder,
+.mode-light input[type="week"].implicit::-webkit-input-placeholder,
+.alert input[type="week"].implicit::-webkit-input-placeholder,
+.alert.success input[type="week"].implicit::-webkit-input-placeholder,
+.alert.failure input[type="week"].implicit::-webkit-input-placeholder,
+.mode-light input[type="number"].implicit::-webkit-input-placeholder,
+.alert input[type="number"].implicit::-webkit-input-placeholder,
+.alert.success input[type="number"].implicit::-webkit-input-placeholder,
+.alert.failure input[type="number"].implicit::-webkit-input-placeholder,
+.mode-light input[type="email"].implicit::-webkit-input-placeholder,
+.alert input[type="email"].implicit::-webkit-input-placeholder,
+.alert.success input[type="email"].implicit::-webkit-input-placeholder,
+.alert.failure input[type="email"].implicit::-webkit-input-placeholder,
+.mode-light input[type="url"].implicit::-webkit-input-placeholder,
+.alert input[type="url"].implicit::-webkit-input-placeholder,
+.alert.success input[type="url"].implicit::-webkit-input-placeholder,
+.alert.failure input[type="url"].implicit::-webkit-input-placeholder,
+.mode-light input[type="search"].implicit::-webkit-input-placeholder,
+.alert input[type="search"].implicit::-webkit-input-placeholder,
+.alert.success input[type="search"].implicit::-webkit-input-placeholder,
+.alert.failure input[type="search"].implicit::-webkit-input-placeholder,
+.mode-light input[type="tel"].implicit::-webkit-input-placeholder,
+.alert input[type="tel"].implicit::-webkit-input-placeholder,
+.alert.success input[type="tel"].implicit::-webkit-input-placeholder,
+.alert.failure input[type="tel"].implicit::-webkit-input-placeholder,
+.mode-light input[type="color"].implicit::-webkit-input-placeholder,
+.alert input[type="color"].implicit::-webkit-input-placeholder,
+.alert.success input[type="color"].implicit::-webkit-input-placeholder,
+.alert.failure input[type="color"].implicit::-webkit-input-placeholder, .hover-mode-light:hover textarea.implicit::-webkit-input-placeholder,
+.hover-mode-light:hover input[type="text"].implicit::-webkit-input-placeholder,
+.hover-mode-light:hover input[type="password"].implicit::-webkit-input-placeholder,
+.hover-mode-light:hover input[type="datetime"].implicit::-webkit-input-placeholder,
+.hover-mode-light:hover input[type="datetime-local"].implicit::-webkit-input-placeholder,
+.hover-mode-light:hover input[type="date"].implicit::-webkit-input-placeholder,
+.hover-mode-light:hover input[type="month"].implicit::-webkit-input-placeholder,
+.hover-mode-light:hover input[type="time"].implicit::-webkit-input-placeholder,
+.hover-mode-light:hover input[type="week"].implicit::-webkit-input-placeholder,
+.hover-mode-light:hover input[type="number"].implicit::-webkit-input-placeholder,
+.hover-mode-light:hover input[type="email"].implicit::-webkit-input-placeholder,
+.hover-mode-light:hover input[type="url"].implicit::-webkit-input-placeholder,
+.hover-mode-light:hover input[type="search"].implicit::-webkit-input-placeholder,
+.hover-mode-light:hover input[type="tel"].implicit::-webkit-input-placeholder,
+.hover-mode-light:hover input[type="color"].implicit::-webkit-input-placeholder {
+  color: rgba(239, 239, 239, 0.4);
+}
+.mode-light textarea.implicit::-moz-placeholder, .alert textarea.implicit::-moz-placeholder, .alert.success textarea.implicit::-moz-placeholder, .alert.failure textarea.implicit::-moz-placeholder,
+.mode-light input[type="text"].implicit::-moz-placeholder,
+.alert input[type="text"].implicit::-moz-placeholder,
+.alert.success input[type="text"].implicit::-moz-placeholder,
+.alert.failure input[type="text"].implicit::-moz-placeholder,
+.mode-light input[type="password"].implicit::-moz-placeholder,
+.alert input[type="password"].implicit::-moz-placeholder,
+.alert.success input[type="password"].implicit::-moz-placeholder,
+.alert.failure input[type="password"].implicit::-moz-placeholder,
+.mode-light input[type="datetime"].implicit::-moz-placeholder,
+.alert input[type="datetime"].implicit::-moz-placeholder,
+.alert.success input[type="datetime"].implicit::-moz-placeholder,
+.alert.failure input[type="datetime"].implicit::-moz-placeholder,
+.mode-light input[type="datetime-local"].implicit::-moz-placeholder,
+.alert input[type="datetime-local"].implicit::-moz-placeholder,
+.alert.success input[type="datetime-local"].implicit::-moz-placeholder,
+.alert.failure input[type="datetime-local"].implicit::-moz-placeholder,
+.mode-light input[type="date"].implicit::-moz-placeholder,
+.alert input[type="date"].implicit::-moz-placeholder,
+.alert.success input[type="date"].implicit::-moz-placeholder,
+.alert.failure input[type="date"].implicit::-moz-placeholder,
+.mode-light input[type="month"].implicit::-moz-placeholder,
+.alert input[type="month"].implicit::-moz-placeholder,
+.alert.success input[type="month"].implicit::-moz-placeholder,
+.alert.failure input[type="month"].implicit::-moz-placeholder,
+.mode-light input[type="time"].implicit::-moz-placeholder,
+.alert input[type="time"].implicit::-moz-placeholder,
+.alert.success input[type="time"].implicit::-moz-placeholder,
+.alert.failure input[type="time"].implicit::-moz-placeholder,
+.mode-light input[type="week"].implicit::-moz-placeholder,
+.alert input[type="week"].implicit::-moz-placeholder,
+.alert.success input[type="week"].implicit::-moz-placeholder,
+.alert.failure input[type="week"].implicit::-moz-placeholder,
+.mode-light input[type="number"].implicit::-moz-placeholder,
+.alert input[type="number"].implicit::-moz-placeholder,
+.alert.success input[type="number"].implicit::-moz-placeholder,
+.alert.failure input[type="number"].implicit::-moz-placeholder,
+.mode-light input[type="email"].implicit::-moz-placeholder,
+.alert input[type="email"].implicit::-moz-placeholder,
+.alert.success input[type="email"].implicit::-moz-placeholder,
+.alert.failure input[type="email"].implicit::-moz-placeholder,
+.mode-light input[type="url"].implicit::-moz-placeholder,
+.alert input[type="url"].implicit::-moz-placeholder,
+.alert.success input[type="url"].implicit::-moz-placeholder,
+.alert.failure input[type="url"].implicit::-moz-placeholder,
+.mode-light input[type="search"].implicit::-moz-placeholder,
+.alert input[type="search"].implicit::-moz-placeholder,
+.alert.success input[type="search"].implicit::-moz-placeholder,
+.alert.failure input[type="search"].implicit::-moz-placeholder,
+.mode-light input[type="tel"].implicit::-moz-placeholder,
+.alert input[type="tel"].implicit::-moz-placeholder,
+.alert.success input[type="tel"].implicit::-moz-placeholder,
+.alert.failure input[type="tel"].implicit::-moz-placeholder,
+.mode-light input[type="color"].implicit::-moz-placeholder,
+.alert input[type="color"].implicit::-moz-placeholder,
+.alert.success input[type="color"].implicit::-moz-placeholder,
+.alert.failure input[type="color"].implicit::-moz-placeholder, .hover-mode-light:hover textarea.implicit::-moz-placeholder,
+.hover-mode-light:hover input[type="text"].implicit::-moz-placeholder,
+.hover-mode-light:hover input[type="password"].implicit::-moz-placeholder,
+.hover-mode-light:hover input[type="datetime"].implicit::-moz-placeholder,
+.hover-mode-light:hover input[type="datetime-local"].implicit::-moz-placeholder,
+.hover-mode-light:hover input[type="date"].implicit::-moz-placeholder,
+.hover-mode-light:hover input[type="month"].implicit::-moz-placeholder,
+.hover-mode-light:hover input[type="time"].implicit::-moz-placeholder,
+.hover-mode-light:hover input[type="week"].implicit::-moz-placeholder,
+.hover-mode-light:hover input[type="number"].implicit::-moz-placeholder,
+.hover-mode-light:hover input[type="email"].implicit::-moz-placeholder,
+.hover-mode-light:hover input[type="url"].implicit::-moz-placeholder,
+.hover-mode-light:hover input[type="search"].implicit::-moz-placeholder,
+.hover-mode-light:hover input[type="tel"].implicit::-moz-placeholder,
+.hover-mode-light:hover input[type="color"].implicit::-moz-placeholder {
+  color: rgba(239, 239, 239, 0.4);
+}
+.mode-light textarea.implicit:-ms-input-placeholder, .alert textarea.implicit:-ms-input-placeholder, .alert.success textarea.implicit:-ms-input-placeholder, .alert.failure textarea.implicit:-ms-input-placeholder,
+.mode-light input[type="text"].implicit:-ms-input-placeholder,
+.alert input[type="text"].implicit:-ms-input-placeholder,
+.alert.success input[type="text"].implicit:-ms-input-placeholder,
+.alert.failure input[type="text"].implicit:-ms-input-placeholder,
+.mode-light input[type="password"].implicit:-ms-input-placeholder,
+.alert input[type="password"].implicit:-ms-input-placeholder,
+.alert.success input[type="password"].implicit:-ms-input-placeholder,
+.alert.failure input[type="password"].implicit:-ms-input-placeholder,
+.mode-light input[type="datetime"].implicit:-ms-input-placeholder,
+.alert input[type="datetime"].implicit:-ms-input-placeholder,
+.alert.success input[type="datetime"].implicit:-ms-input-placeholder,
+.alert.failure input[type="datetime"].implicit:-ms-input-placeholder,
+.mode-light input[type="datetime-local"].implicit:-ms-input-placeholder,
+.alert input[type="datetime-local"].implicit:-ms-input-placeholder,
+.alert.success input[type="datetime-local"].implicit:-ms-input-placeholder,
+.alert.failure input[type="datetime-local"].implicit:-ms-input-placeholder,
+.mode-light input[type="date"].implicit:-ms-input-placeholder,
+.alert input[type="date"].implicit:-ms-input-placeholder,
+.alert.success input[type="date"].implicit:-ms-input-placeholder,
+.alert.failure input[type="date"].implicit:-ms-input-placeholder,
+.mode-light input[type="month"].implicit:-ms-input-placeholder,
+.alert input[type="month"].implicit:-ms-input-placeholder,
+.alert.success input[type="month"].implicit:-ms-input-placeholder,
+.alert.failure input[type="month"].implicit:-ms-input-placeholder,
+.mode-light input[type="time"].implicit:-ms-input-placeholder,
+.alert input[type="time"].implicit:-ms-input-placeholder,
+.alert.success input[type="time"].implicit:-ms-input-placeholder,
+.alert.failure input[type="time"].implicit:-ms-input-placeholder,
+.mode-light input[type="week"].implicit:-ms-input-placeholder,
+.alert input[type="week"].implicit:-ms-input-placeholder,
+.alert.success input[type="week"].implicit:-ms-input-placeholder,
+.alert.failure input[type="week"].implicit:-ms-input-placeholder,
+.mode-light input[type="number"].implicit:-ms-input-placeholder,
+.alert input[type="number"].implicit:-ms-input-placeholder,
+.alert.success input[type="number"].implicit:-ms-input-placeholder,
+.alert.failure input[type="number"].implicit:-ms-input-placeholder,
+.mode-light input[type="email"].implicit:-ms-input-placeholder,
+.alert input[type="email"].implicit:-ms-input-placeholder,
+.alert.success input[type="email"].implicit:-ms-input-placeholder,
+.alert.failure input[type="email"].implicit:-ms-input-placeholder,
+.mode-light input[type="url"].implicit:-ms-input-placeholder,
+.alert input[type="url"].implicit:-ms-input-placeholder,
+.alert.success input[type="url"].implicit:-ms-input-placeholder,
+.alert.failure input[type="url"].implicit:-ms-input-placeholder,
+.mode-light input[type="search"].implicit:-ms-input-placeholder,
+.alert input[type="search"].implicit:-ms-input-placeholder,
+.alert.success input[type="search"].implicit:-ms-input-placeholder,
+.alert.failure input[type="search"].implicit:-ms-input-placeholder,
+.mode-light input[type="tel"].implicit:-ms-input-placeholder,
+.alert input[type="tel"].implicit:-ms-input-placeholder,
+.alert.success input[type="tel"].implicit:-ms-input-placeholder,
+.alert.failure input[type="tel"].implicit:-ms-input-placeholder,
+.mode-light input[type="color"].implicit:-ms-input-placeholder,
+.alert input[type="color"].implicit:-ms-input-placeholder,
+.alert.success input[type="color"].implicit:-ms-input-placeholder,
+.alert.failure input[type="color"].implicit:-ms-input-placeholder, .hover-mode-light:hover textarea.implicit:-ms-input-placeholder,
+.hover-mode-light:hover input[type="text"].implicit:-ms-input-placeholder,
+.hover-mode-light:hover input[type="password"].implicit:-ms-input-placeholder,
+.hover-mode-light:hover input[type="datetime"].implicit:-ms-input-placeholder,
+.hover-mode-light:hover input[type="datetime-local"].implicit:-ms-input-placeholder,
+.hover-mode-light:hover input[type="date"].implicit:-ms-input-placeholder,
+.hover-mode-light:hover input[type="month"].implicit:-ms-input-placeholder,
+.hover-mode-light:hover input[type="time"].implicit:-ms-input-placeholder,
+.hover-mode-light:hover input[type="week"].implicit:-ms-input-placeholder,
+.hover-mode-light:hover input[type="number"].implicit:-ms-input-placeholder,
+.hover-mode-light:hover input[type="email"].implicit:-ms-input-placeholder,
+.hover-mode-light:hover input[type="url"].implicit:-ms-input-placeholder,
+.hover-mode-light:hover input[type="search"].implicit:-ms-input-placeholder,
+.hover-mode-light:hover input[type="tel"].implicit:-ms-input-placeholder,
+.hover-mode-light:hover input[type="color"].implicit:-ms-input-placeholder {
+  color: rgba(239, 239, 239, 0.4);
+}
 .mode-light textarea.implicit::placeholder, .alert textarea.implicit::placeholder, .alert.success textarea.implicit::placeholder, .alert.failure textarea.implicit::placeholder,
 .mode-light input[type="text"].implicit::placeholder,
 .alert input[type="text"].implicit::placeholder,
@@ -13812,6 +14527,99 @@ input[type="color"].darken::placeholder {
   background-color: transparent;
 }
 /* line 41, ../scss/modules/forms/_themes.scss */
+.mode-dark textarea.implicit::-webkit-input-placeholder,
+.mode-dark input[type="text"].implicit::-webkit-input-placeholder,
+.mode-dark input[type="password"].implicit::-webkit-input-placeholder,
+.mode-dark input[type="datetime"].implicit::-webkit-input-placeholder,
+.mode-dark input[type="datetime-local"].implicit::-webkit-input-placeholder,
+.mode-dark input[type="date"].implicit::-webkit-input-placeholder,
+.mode-dark input[type="month"].implicit::-webkit-input-placeholder,
+.mode-dark input[type="time"].implicit::-webkit-input-placeholder,
+.mode-dark input[type="week"].implicit::-webkit-input-placeholder,
+.mode-dark input[type="number"].implicit::-webkit-input-placeholder,
+.mode-dark input[type="email"].implicit::-webkit-input-placeholder,
+.mode-dark input[type="url"].implicit::-webkit-input-placeholder,
+.mode-dark input[type="search"].implicit::-webkit-input-placeholder,
+.mode-dark input[type="tel"].implicit::-webkit-input-placeholder,
+.mode-dark input[type="color"].implicit::-webkit-input-placeholder, .hover-mode-dark:hover textarea.implicit::-webkit-input-placeholder,
+.hover-mode-dark:hover input[type="text"].implicit::-webkit-input-placeholder,
+.hover-mode-dark:hover input[type="password"].implicit::-webkit-input-placeholder,
+.hover-mode-dark:hover input[type="datetime"].implicit::-webkit-input-placeholder,
+.hover-mode-dark:hover input[type="datetime-local"].implicit::-webkit-input-placeholder,
+.hover-mode-dark:hover input[type="date"].implicit::-webkit-input-placeholder,
+.hover-mode-dark:hover input[type="month"].implicit::-webkit-input-placeholder,
+.hover-mode-dark:hover input[type="time"].implicit::-webkit-input-placeholder,
+.hover-mode-dark:hover input[type="week"].implicit::-webkit-input-placeholder,
+.hover-mode-dark:hover input[type="number"].implicit::-webkit-input-placeholder,
+.hover-mode-dark:hover input[type="email"].implicit::-webkit-input-placeholder,
+.hover-mode-dark:hover input[type="url"].implicit::-webkit-input-placeholder,
+.hover-mode-dark:hover input[type="search"].implicit::-webkit-input-placeholder,
+.hover-mode-dark:hover input[type="tel"].implicit::-webkit-input-placeholder,
+.hover-mode-dark:hover input[type="color"].implicit::-webkit-input-placeholder {
+  color: rgba(54, 54, 54, 0.4);
+}
+.mode-dark textarea.implicit::-moz-placeholder,
+.mode-dark input[type="text"].implicit::-moz-placeholder,
+.mode-dark input[type="password"].implicit::-moz-placeholder,
+.mode-dark input[type="datetime"].implicit::-moz-placeholder,
+.mode-dark input[type="datetime-local"].implicit::-moz-placeholder,
+.mode-dark input[type="date"].implicit::-moz-placeholder,
+.mode-dark input[type="month"].implicit::-moz-placeholder,
+.mode-dark input[type="time"].implicit::-moz-placeholder,
+.mode-dark input[type="week"].implicit::-moz-placeholder,
+.mode-dark input[type="number"].implicit::-moz-placeholder,
+.mode-dark input[type="email"].implicit::-moz-placeholder,
+.mode-dark input[type="url"].implicit::-moz-placeholder,
+.mode-dark input[type="search"].implicit::-moz-placeholder,
+.mode-dark input[type="tel"].implicit::-moz-placeholder,
+.mode-dark input[type="color"].implicit::-moz-placeholder, .hover-mode-dark:hover textarea.implicit::-moz-placeholder,
+.hover-mode-dark:hover input[type="text"].implicit::-moz-placeholder,
+.hover-mode-dark:hover input[type="password"].implicit::-moz-placeholder,
+.hover-mode-dark:hover input[type="datetime"].implicit::-moz-placeholder,
+.hover-mode-dark:hover input[type="datetime-local"].implicit::-moz-placeholder,
+.hover-mode-dark:hover input[type="date"].implicit::-moz-placeholder,
+.hover-mode-dark:hover input[type="month"].implicit::-moz-placeholder,
+.hover-mode-dark:hover input[type="time"].implicit::-moz-placeholder,
+.hover-mode-dark:hover input[type="week"].implicit::-moz-placeholder,
+.hover-mode-dark:hover input[type="number"].implicit::-moz-placeholder,
+.hover-mode-dark:hover input[type="email"].implicit::-moz-placeholder,
+.hover-mode-dark:hover input[type="url"].implicit::-moz-placeholder,
+.hover-mode-dark:hover input[type="search"].implicit::-moz-placeholder,
+.hover-mode-dark:hover input[type="tel"].implicit::-moz-placeholder,
+.hover-mode-dark:hover input[type="color"].implicit::-moz-placeholder {
+  color: rgba(54, 54, 54, 0.4);
+}
+.mode-dark textarea.implicit:-ms-input-placeholder,
+.mode-dark input[type="text"].implicit:-ms-input-placeholder,
+.mode-dark input[type="password"].implicit:-ms-input-placeholder,
+.mode-dark input[type="datetime"].implicit:-ms-input-placeholder,
+.mode-dark input[type="datetime-local"].implicit:-ms-input-placeholder,
+.mode-dark input[type="date"].implicit:-ms-input-placeholder,
+.mode-dark input[type="month"].implicit:-ms-input-placeholder,
+.mode-dark input[type="time"].implicit:-ms-input-placeholder,
+.mode-dark input[type="week"].implicit:-ms-input-placeholder,
+.mode-dark input[type="number"].implicit:-ms-input-placeholder,
+.mode-dark input[type="email"].implicit:-ms-input-placeholder,
+.mode-dark input[type="url"].implicit:-ms-input-placeholder,
+.mode-dark input[type="search"].implicit:-ms-input-placeholder,
+.mode-dark input[type="tel"].implicit:-ms-input-placeholder,
+.mode-dark input[type="color"].implicit:-ms-input-placeholder, .hover-mode-dark:hover textarea.implicit:-ms-input-placeholder,
+.hover-mode-dark:hover input[type="text"].implicit:-ms-input-placeholder,
+.hover-mode-dark:hover input[type="password"].implicit:-ms-input-placeholder,
+.hover-mode-dark:hover input[type="datetime"].implicit:-ms-input-placeholder,
+.hover-mode-dark:hover input[type="datetime-local"].implicit:-ms-input-placeholder,
+.hover-mode-dark:hover input[type="date"].implicit:-ms-input-placeholder,
+.hover-mode-dark:hover input[type="month"].implicit:-ms-input-placeholder,
+.hover-mode-dark:hover input[type="time"].implicit:-ms-input-placeholder,
+.hover-mode-dark:hover input[type="week"].implicit:-ms-input-placeholder,
+.hover-mode-dark:hover input[type="number"].implicit:-ms-input-placeholder,
+.hover-mode-dark:hover input[type="email"].implicit:-ms-input-placeholder,
+.hover-mode-dark:hover input[type="url"].implicit:-ms-input-placeholder,
+.hover-mode-dark:hover input[type="search"].implicit:-ms-input-placeholder,
+.hover-mode-dark:hover input[type="tel"].implicit:-ms-input-placeholder,
+.hover-mode-dark:hover input[type="color"].implicit:-ms-input-placeholder {
+  color: rgba(54, 54, 54, 0.4);
+}
 .mode-dark textarea.implicit::placeholder,
 .mode-dark input[type="text"].implicit::placeholder,
 .mode-dark input[type="password"].implicit::placeholder,
@@ -15041,7 +15849,8 @@ button.transparent.darken:focus, .button.transparent.darken:focus, input[type="b
   right: initial;
   top: 0;
   bottom: initial;
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
 }
 /* line 69, ../scss/modules/labels/_components.scss */
 .badge.top-right {
@@ -15050,7 +15859,8 @@ button.transparent.darken:focus, .button.transparent.darken:focus, input[type="b
   left: initial;
   top: 0;
   bottom: initial;
-  transform: translateX(50%) translateY(-50%);
+  -webkit-transform: translateX(50%) translateY(-50%);
+          transform: translateX(50%) translateY(-50%);
 }
 /* line 75, ../scss/modules/labels/_components.scss */
 .badge.bottom-left {
@@ -15059,7 +15869,8 @@ button.transparent.darken:focus, .button.transparent.darken:focus, input[type="b
   right: initial;
   bottom: 0;
   top: initial;
-  transform: translateX(-50%) translateY(50%);
+  -webkit-transform: translateX(-50%) translateY(50%);
+          transform: translateX(-50%) translateY(50%);
 }
 /* line 81, ../scss/modules/labels/_components.scss */
 .badge.bottom-right {
@@ -15068,18 +15879,23 @@ button.transparent.darken:focus, .button.transparent.darken:focus, input[type="b
   left: initial;
   bottom: 0;
   top: initial;
-  transform: translateX(50%) translateY(50%);
+  -webkit-transform: translateX(50%) translateY(50%);
+          transform: translateX(50%) translateY(50%);
 }
 
 /* line 42, ../scss/modules/states/_mixins.scss */
 .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after {
-  animation-name: fade-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: fade-active;
+          animation-name: fade-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 42, ../scss/modules/states/_mixins.scss */
 .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after {
-  animation-name: fade-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: fade-inactive;
+          animation-name: fade-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 91, ../scss/modules/labels/_components.scss */
 .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after {
@@ -15189,7 +16005,8 @@ button.transparent.darken:focus, .button.transparent.darken:focus, input[type="b
   right: initial;
   bottom: 100%;
   top: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /* line 166, ../scss/modules/labels/_components.scss */
 .tooltip-above-center:after {
@@ -15197,7 +16014,8 @@ button.transparent.darken:focus, .button.transparent.darken:focus, input[type="b
   right: initial;
   top: -0.5rem;
   bottom: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 170, ../scss/modules/labels/_components.scss */
@@ -15236,7 +16054,8 @@ button.transparent.darken:focus, .button.transparent.darken:focus, input[type="b
   right: initial;
   top: 100%;
   bottom: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 /* line 181, ../scss/modules/labels/_components.scss */
 .tooltip-below-center:after {
@@ -15244,7 +16063,8 @@ button.transparent.darken:focus, .button.transparent.darken:focus, input[type="b
   right: initial;
   bottom: -0.5rem;
   top: initial;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 /* line 185, ../scss/modules/labels/_components.scss */
@@ -15253,7 +16073,8 @@ button.transparent.darken:focus, .button.transparent.darken:focus, input[type="b
   bottom: initial;
   right: 100%;
   left: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 /* line 186, ../scss/modules/labels/_components.scss */
 .tooltip-left:after {
@@ -15261,7 +16082,8 @@ button.transparent.darken:focus, .button.transparent.darken:focus, input[type="b
   bottom: initial;
   right: 100%;
   left: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 190, ../scss/modules/labels/_components.scss */
@@ -15270,7 +16092,8 @@ button.transparent.darken:focus, .button.transparent.darken:focus, input[type="b
   bottom: initial;
   left: 100%;
   right: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 /* line 191, ../scss/modules/labels/_components.scss */
 .tooltip-right:after {
@@ -15278,7 +16101,8 @@ button.transparent.darken:focus, .button.transparent.darken:focus, input[type="b
   bottom: initial;
   left: 100%;
   right: initial;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* line 20, ../scss/modules/labels/_themes.scss */
@@ -15687,7 +16511,8 @@ table.hover tr:hover {
   right: initial;
   top: 50%;
   bottom: initial;
-  transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
   width: 50%;
 }
 
@@ -15751,17 +16576,22 @@ table.hover tr:hover {
 }
 /* line 18, ../scss/modules/notifications/_components.scss */
 .toast {
-  animation-name: fade-active;
-  animation-duration: 300ms;
+  -webkit-animation-name: fade-active;
+          animation-name: fade-active;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 /* line 22, ../scss/modules/notifications/_components.scss */
 .toast:hover {
-  animation-play-state: paused;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 /* line 26, ../scss/modules/notifications/_components.scss */
 .toast.inactive {
-  animation-name: fade-inactive;
-  animation-duration: 300ms;
+  -webkit-animation-name: fade-inactive;
+          animation-name: fade-inactive;
+  -webkit-animation-duration: 300ms;
+          animation-duration: 300ms;
 }
 
 /* line 6, ../scss/modules/images/_components.scss */
