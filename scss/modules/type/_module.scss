@@ -8,7 +8,6 @@ $type-theme: default !default;
 $type-unit: rem !default;
 $type-ratio: 1.25 !default;
 $type-base-font-size: 14px !default; // = 1rem
-$type-base-line-height: 1.65em !default;
 $type-base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $type-base-font-style: normal !default;
 $type-base-font-weight: 300 !default;
@@ -32,7 +31,7 @@ $type-condensed-font-family: "Open Sans Condensed" !default;
 // Headings
 $type-heading-style: default !default;
 $type-heading-theme: default !default;
-$type-headings: ((h1, 1), (h2, 2), (h3, 3), (h4, 4), (h5, 5), (h6, 6));
+$type-headings: (h1: 1, h2: 2, h3: 3, h4: 4, h5: 5, h6: 6) !default;
 $type-heading-font-family: $type-primary-font-family !default;
 $type-heading-font-weight: $type-base-font-weight !default;
 $type-heading-font-style: normal !default;

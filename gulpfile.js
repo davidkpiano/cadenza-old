@@ -21,7 +21,15 @@ var autoprefixer = require('gulp-autoprefixer');
 // 		}));
 // });
 
-gulp.task('build', ['css']);
+gulp.task('build', ['scss', 'css']);
+
+gulp.task('scss', function() {
+    gulp.src('scss/cadenza.scss')
+        .pipe(sass({
+            style: 'expanded'
+        }))
+        .pipe(gulp.dest('css'));
+});
 
 gulp.task('css', function() {
 	gulp.src('css/cadenza.css')
@@ -33,7 +41,5 @@ gulp.task('css', function() {
 
 // Default Task
 gulp.task('default', ['build'], function() {
-	gulp.watch('./css/**/*.css', function() {
-		gulp.run('build');
-	});
+	gulp.watch('./scss/**/*.scss', ['build']);
 });

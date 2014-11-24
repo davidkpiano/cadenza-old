@@ -9,7 +9,7 @@
 	$ratio: $type-ratio,
     $factor: 1
 ) {
-	@return ($factor * $base) * pow($ratio, -$exponent);
+	@return ($factor * $base) * pow($ratio, $exponent);
 }
 
 @mixin type-scale(
@@ -36,7 +36,7 @@
 	$exponent: 1,
 	$ratio: $type-ratio
 ) {
-	font-size: percentage(pow($ratio, -$exponent));
+	font-size: percentage(pow($ratio, $exponent));
 }
 
 // Function for determining the height of standard inline elements

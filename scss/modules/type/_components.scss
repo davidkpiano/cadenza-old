@@ -91,10 +91,7 @@
     }
 }
 
-@each $type-heading in $type-headings {
-	$heading-selector: nth($type-heading, 1);
-	$heading-scale: nth($type-heading, 2);
-
+@each $heading-selector, $heading-scale in $type-headings {
 	%#{$heading-selector} {
 		@include type-scale(6 - $heading-scale);
 	}
