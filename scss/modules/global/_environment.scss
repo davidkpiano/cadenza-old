@@ -1,0 +1,13 @@
+$environment: 'development';
+
+@mixin environment($environments: null) {
+    @if not $environments {
+        @content;
+    } @else {
+        $environments: if(type-of($environments) == List, $environments, ($environments));
+
+        @if index($environments, $environment) {
+            @content;
+        }
+    }
+}

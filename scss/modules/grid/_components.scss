@@ -162,8 +162,12 @@
 				%columns-gutter-#{$fraction-key}#{$suffix} > * {
 					&, &:nth-child(n) {				
 						@extend %column-gutter-#{$fraction-key}#{$suffix};
-						margin-bottom: $grid-column-gutter;
+
 						height: auto;
+					}
+
+					&:nth-last-child(n + #{$fraction-inverse + 1}) {
+						margin-bottom: $grid-column-gutter;
 					}
 
 					&:nth-child(n+1) {

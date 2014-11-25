@@ -18,12 +18,16 @@ $form-input-scale: $form-scale !default;
 $form-input-padding: $form-padding !default;
 $form-input-border-width: $form-border-width !default;
 $form-input-bgcolor: $color-white !default;
-$form-input-bgcolor-lighten: rgba(255, 255, 255, 0.3) !default;
-$form-input-bgcolor-darken: rgba(0, 0, 0, 0.05) !default;
+$form-input-bgcolor-lighten: $color-lighten !default;
+$form-input-bgcolor-darken: $color-darken !default;
 $form-input-color-light: $color-light !default;
 $form-input-color-dark: $color-dark !default;
 $form-input-color: $form-input-color-dark !default;
-$form-input-border-color: $color-primary !default;
+
+// Input Theme Settings
+$form-input-border-color-light: $color-gray-light !default;
+$form-input-border-color-dark: $color-gray-light !default;
+$form-input-border-color: theme-mode($form-input-border-color-light, $form-input-border-color-dark) !default;
 
 // Select Settings
 $form-select-style: default !default;
@@ -38,6 +42,12 @@ $form-label-padding: $form-padding !default;
 $form-label-scale: $form-scale !default;
 $form-label-border-width: $form-border-width !default;
 $form-label-margin-bottom: 0.25rem !default;
+
+// Label Theme Settings
+$form-label-color-light: $color-lighten !default;
+$form-label-color-dark: $color-darken !default;
+$form-label-color: theme-mode($form-label-color-light, $form-label-color-dark) !default;
+$form-label-font-weight: bold !default;
 
 // Radio Settings
 $form-radio-margin-right: 0.5rem !default;

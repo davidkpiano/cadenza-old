@@ -58,6 +58,12 @@ input[type="checkbox"] { @extend %checkbox; }
 label { 
     @extend %form-label;
 
+    @include style('form-label');
+
+    &.success { @include style('form-label', 'success'); }
+    &.warning { @include style('form-label', 'warning'); }
+    &.failure { @include style('form-label', 'failure'); }
+
     > * { @extend %form-label-children; }
 
     &.inline { @extend %form-label-inline; }

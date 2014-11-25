@@ -113,6 +113,24 @@
 	}
 }
 
+@mixin theme-form-label-default(
+	$color: $form-label-color,
+	$font-weight: $form-label-font-weight
+) {
+	&, > * {	
+		color: $color;
+		font-weight: $font-weight;
+	}
+}
+
+%theme-form-label-default {
+	@include theme-form-label-default;
+
+	&-success { @include theme-form-label-default($color-success); }
+	&-warning { @include theme-form-label-default($color-warning); }
+	&-failure { @include theme-form-label-default($color-failure); }
+}
+
 // Select Theme
 @mixin theme-select-default(
 	$color: $form-border-color,
