@@ -2,10 +2,6 @@
 // Layout Components
 // =================
 
-%clearfix {
-    @include clearfix;
-}
-
 %position-absolute { position: absolute !important; }
 
 @each $position-horizontal in $positions-horizontal {

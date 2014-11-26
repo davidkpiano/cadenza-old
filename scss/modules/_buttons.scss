@@ -60,7 +60,7 @@
 }
 
 %button-group-layout {
-    @extend %clearfix;
+    @include clearfix;
     margin-bottom: $button-group-margin-bottom;
 
     > #{$button-selectors}, > label {

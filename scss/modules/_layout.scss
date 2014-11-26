@@ -41,7 +41,7 @@
 }
 
 %block {
-    @extend %clearfix;
+    @include clearfix;
     display: block;
 }
 
@@ -206,7 +206,7 @@ html {
 }
 
 .clearfix {
-    @extend %clearfix;
+    @include clearfix;
 }
 
 .content {

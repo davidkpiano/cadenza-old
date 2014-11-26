@@ -7,7 +7,7 @@
 // Defines a grid element in the grid system.
 @mixin _grid($display: block) {
 	box-sizing: border-box;
-	@extend %clearfix;
+	@include clearfix;
 
 	margin: 0;
 	display: $display;
@@ -68,7 +68,7 @@
 	$fill-selector: false;
 	$total-width: 0px;
 
-	@extend %clearfix;
+	@include clearfix;
 
 	@include mq($media) {
 		@for $i from 1 through length($column-widths) {

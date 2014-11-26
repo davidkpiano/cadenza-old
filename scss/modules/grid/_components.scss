@@ -64,7 +64,7 @@
 // Horizontal Grid Components
 %column { @include _column(); }
 
-%columns { @extend %clearfix; }
+%columns { @include clearfix; }
 
 @for $i from 1 through $grid-columns {
 	$fraction-value: if($i / $grid-columns == 1, 100%, $i / $grid-columns);

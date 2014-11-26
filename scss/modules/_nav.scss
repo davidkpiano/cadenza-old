@@ -51,7 +51,7 @@
 
 %nav-horizontal-layout {
     > ul {
-        @extend %clearfix;
+        @include clearfix;
         height: 100%;
         margin-bottom: 0;
 

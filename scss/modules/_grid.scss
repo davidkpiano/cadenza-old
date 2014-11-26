@@ -5,7 +5,7 @@
 
 %grid {
     @extend %border-box;
-    @extend %clearfix;
+    @include clearfix;
 
     margin: 0;
     display: block;

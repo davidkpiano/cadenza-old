@@ -10,7 +10,7 @@
     border-collapse: collapse;
 
     &-row {
-        @extend %clearfix;
+        @include clearfix;
         display: block;
     }
 }

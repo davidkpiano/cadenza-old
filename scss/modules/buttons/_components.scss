@@ -130,7 +130,7 @@
 // Button Groups
 // -------------
 %button-group {
-    @extend %clearfix;
+    @include clearfix;
 
     > %input-radio, > %input-checkbox {
         display: none;
