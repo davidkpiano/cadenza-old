@@ -109,5 +109,3 @@
         &.failure { @include theme-popover-default($color-failure); }
     }
 }
-
-@include add-theme('popover', $popover-theme);

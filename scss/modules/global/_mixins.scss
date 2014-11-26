@@ -2,12 +2,18 @@
 // Global Mixins and Functions
 // ===========================
 
-// TODO: use Sass 3.3 maps
-@mixin add-theme(
-    $module,
-    $theme: 'default'
-) {
-    $themes: append($themes, ($module, $theme));
+@mixin environment($name: all) {
+    $environments: if(type-of($name) == list, $name, ($name));
+
+    @if index($environments, $ENVIRONMENT) or $name == all {
+        @content;
+    }
+}
+
+@mixin export($name, $environment: all) {
+    @include environment($environment) {
+        @content;
+    }
 }
 
 @mixin theme($color) {

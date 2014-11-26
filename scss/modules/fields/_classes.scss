@@ -2,22 +2,28 @@
 // Fields Classes
 // ==============
 
-fieldset, .fieldset {
-    @extend %fieldset !optional;
+@include export(fieldset) {
+    fieldset, .fieldset {
+        @extend %fieldset !optional;
+    }
 }
 
-#{prefixed-class('field')} {
-    @extend %field;
-}
+@include export(field, production) {
+    #{prefixed-class('field')} {
+        @extend %field;
+    }
 
-.field {
-    &-horizontal {
-        @extend %field-horizontal;
+    .field {
+        @extend %field-vertical;
 
-        > * { @extend %field-horizontal-children; }
+        &-horizontal {
+            @extend %field-horizontal;
 
-        label { @extend %field-horizontal-label; }
+            > * { @extend %field-horizontal-children; }
 
-        .field-input { @extend %field-horizontal-input; }
+            label { @extend %field-horizontal-label; }
+
+            .field-input { @extend %field-horizontal-input; }
+        }
     }
 }

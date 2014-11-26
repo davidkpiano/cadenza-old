@@ -7,15 +7,18 @@
 }
 
 %field {
-    @include clearfix;
     overflow: visible;
     
     &:not(:only-child) {
         margin-bottom: $field-margin-bottom;
     }
 
+    &-vertical {
+        @include clearfix;
+    }
+
     &-horizontal {
-        @extend %display-table;
+        display: table;
         
         width: 100%;
 
