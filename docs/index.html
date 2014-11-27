@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../css/cadenza.css">
 </head>
 <body ng-app="cadenza" class="layer">
-    <aside class="drawer-left bg-dark mode-light">
+    <aside class="drawer-left bg-primary mode-light">
         <header class="text-center content">
             <h3>CADENZA</h3>
         </header>
@@ -28,8 +28,9 @@
             <input type="checkbox" name="main.theme" id="toggle_theme" ng-model="main.theme" class="implicit">
         </label>
     </aside>
-    <section class="layer scroll-y activate-all-scaleUp bg-white transition" ui-view>
-
+    <section class="layer scroll-y activate-all-scaleUp transition all-stack-small bg-dark">
+        <div class="col-7 pad-double bg-white" ui-view="content"></div>
+        <div class="col-5 pad-double mode-light" ui-view="code"></div>
     </section>
 </body>
 

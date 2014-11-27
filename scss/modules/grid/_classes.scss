@@ -8,13 +8,13 @@
 .pad-vertical { @extend %pad-vertical; }
 .pad-horizontal { @extend %pad-horizontal; }
 
-.pad-small { @extend %pad-small; }
-.pad-vertical-small { @extend %pad-vertical-small; }
-.pad-horizontal-small { @extend %pad-horizontal-small; }
+.pad-half { @extend %pad-half; }
+.pad-vertical-half { @extend %pad-vertical-half; }
+.pad-horizontal-half { @extend %pad-horizontal-half; }
 
-.pad-large { @extend %pad-large; }
-.pad-vertical-large { @extend %pad-vertical-large; }
-.pad-horizontal-large { @extend %pad-horizontal-large; }
+.pad-double { @extend %pad-double; }
+.pad-vertical-double { @extend %pad-vertical-double; }
+.pad-horizontal-double { @extend %pad-horizontal-double; }
 
 .no-pad, .pad-none { @extend %pad-none; }
 .pad-vertical-none { @extend %pad-vertical-none; }

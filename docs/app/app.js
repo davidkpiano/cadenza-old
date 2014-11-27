@@ -22,9 +22,16 @@ app.config(['$stateProvider', '$urlRouterProvider',
             $stateProvider
                 .state(component, {
                     url: '/' + component,
-                    templateUrl: 'views/' + component + '.html',
-                    controller: 'ComponentController',
-                    controllerAs: 'component'
+                    views: {
+                        'content': {
+                            templateUrl: 'build/' + component + '.html',
+                            controller: 'ComponentController',
+                            controllerAs: 'component'
+                        },
+                        'code': {
+                            templateUrl: 'build/' + component + '-code.html'
+                        }
+                    }
                 });
         });
     }]);

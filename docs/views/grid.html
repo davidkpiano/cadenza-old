@@ -7,8 +7,9 @@
     <input type="radio" name="component.grid.columns.class1" ng-model="component.grid.columns.class1" value="" id="columns.default">
     <label class="button" for="columns.default"><em>default</em></label>
 </div>
-<div class="row-1 field {{component.grid.columns.class1}}" ng-repeat="col_width in [12,6,4,3,2,1]">
-    <div ng-repeat="col in component.util.range(12/col_width)" class="theme-darken border-primary col-{{col_width}}">col-{{col_width}}</div>
+<div class="row-1 field" ng-repeat="col_width in [12,11,10,9,8,7,6]">
+    <div class="col-{{col_width}}">.col-{{col_width}}</div>
+    <div class="col-{{12 - col_width}}">.col-{{12 - col-width}}</div>
 </div>
 
 <h2>Column Offset</h2>

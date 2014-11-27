@@ -1,16 +1,18 @@
 {
-    "name": "cadenza",
-	"description": "Cadenza SCSS Framework",
-	"version": "0.0.1",
-	"private": true,
-	"dependencies": {
-    	"express": "3.x"
-	},
-	"devDependencies": {
-		"gulp": "^3.6.0",
-		"gulp-ruby-sass": "^0.4.1",
-		"gulp-notify": "^1.2.5",
-		"gulp-compass": "^1.1.8",
-		"gulp-livereload": "^1.2.0"
-	}
+  "name": "cadenza",
+  "description": "Cadenza SCSS Framework",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "3.x"
+  },
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-ruby-sass": "^0.4.1",
+    "gulp-notify": "^1.2.5",
+    "gulp-compass": "^1.1.8",
+    "gulp-livereload": "^1.2.0",
+    "gulp-markdown": "^1.0.0",
+    "gulp-highlight": "0.0.3"
+  }
 }
