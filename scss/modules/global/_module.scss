@@ -3,8 +3,11 @@
 // =============
 
 // Global Settings
-$ENVIRONMENT: development !default;
+$environment: development !default;
 $themes: ();
+
+// Asset Settings
+$base-asset-path: '../bower_components' !default;
 
 // Imports
 @import

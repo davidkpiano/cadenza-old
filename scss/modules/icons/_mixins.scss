@@ -1,3 +1,45 @@
 // 
 // Icons Mixins and Functions
 // ==========================
+
+// @function icon-uri(
+//     $name,
+//     $category: false,
+//     $path: $icon-path,
+//     $type: svg
+// ) {
+//     @return "#{$path}/#{$category}/#{$type}/production/ic_#{$name}_24px.svg";
+// }
+
+// @mixin icon(
+//     $name,
+//     $category: false,
+//     $path: $icon-path,
+//     $type: svg
+// ) {
+//     background-image: url(icon-uri(
+//         $name: $name,
+//         $category: $category,
+//         $path: $path,
+//         $type: $type
+//     ));
+//     background-position: center center;
+//     background-size: type-scale($icon-scale);
+//     background-repeat: no-repeat;
+// }
+
+@function icon-font-code(
+    $name,
+    $map: $icon-font-map
+) {
+    @return map-get($map, $name);
+}
+
+@mixin icon-font(
+    $name,
+    $map: $icon-font-map
+) {
+    &:before {
+        content: "#{icon-font-code($name)}";
+    }
+}

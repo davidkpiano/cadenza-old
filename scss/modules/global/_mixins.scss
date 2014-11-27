@@ -5,7 +5,7 @@
 @mixin environment($name: all) {
     $environments: if(type-of($name) == list, $name, ($name));
 
-    @if index($environments, $ENVIRONMENT) or $name == all {
+    @if index($environments, $environment) or $name == all {
         @content;
     }
 }

@@ -2,4 +2,28 @@
 // Icons Components
 // ================
 
-$icon-prefix: 'icon' !default;
+@import url($icon-font-path);
+
+@font-face {
+    font-family: $icon-font-family;
+    src: url('#{$icon-font-path}.eot?v=#{$icon-version}');
+    src: url('#{$icon-font-path}.eot?#iefix&v=#{$icon-version}') format('embedded-opentype'),
+        url('#{$icon-font-path}.woff?v=#{$icon-version}') format('woff'),
+        url('#{$icon-font-path}.ttf?v=#{$icon-version}') format('truetype'),
+        url('#{$icon-font-path}.svg?v=#{$icon-version}##{$icon-font-family}') format('svg');
+}
+
+%icon {
+    &:before {
+        display: inline-block;
+        font-family: $icon-font-family;
+        font-size: type-scale($icon-scale);
+        vertical-align: $icon-vertical-align;
+    }
+
+    @each $icon-name in map-keys($icon-font-map) {
+        &-#{$icon-name} {
+            @include icon-font($icon-name);
+        }
+    }
+}

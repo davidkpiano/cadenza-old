@@ -12,6 +12,10 @@
 	@return ($factor * $base) * pow($ratio, $exponent);
 }
 
+@function type-scale($args...) {
+    @return type-scale-size($args...);
+}
+
 @mixin type-scale(
 	$exponent: 1,
 	$important: false,
