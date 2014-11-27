@@ -6,7 +6,7 @@
     $width: 100%,
     $height: 100%,
     $position: left,
-    $active-selector: $transition-selector,
+    $active-selector: ':hover',
     $push: false,
     $peek-width: $drawer-peek-width,
     $mq: all,
@@ -32,8 +32,6 @@
         }
 
         @if $push {
-            $peek-width: if($peek-width, $peek-width, 0rem);
-
             &#{$active-selector} {
                 // @include animation(#{$animation}-active);
                 @if $position == left {
@@ -51,7 +49,7 @@
                 }
             }
 
-            @if $peek-width > 0 {            
+            @if $peek-width {            
                 + * {
                     max-width: calc(100% - #{$peek-width});
                     #{$position}: $peek-width;

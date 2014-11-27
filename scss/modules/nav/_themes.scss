@@ -17,7 +17,7 @@
 ) { 
     %#{$component}-menu-item {
         @if $item-color {
-            &, %#{$component}-menu-item-link { color: $item-color; }
+            &, > * { color: $item-color; }
         }
 
         @if $item-bgcolor {
@@ -27,7 +27,7 @@
 
     %#{$component}-menu-item-active {
         @if $item-color-active {
-            &, %#{$component}-menu-item-link { color: $item-color-active; }
+            &, > * { color: $item-color-active; }
         }
 
         @if $item-bgcolor-active {

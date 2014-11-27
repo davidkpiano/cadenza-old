@@ -7899,13 +7899,13 @@
   bottom: 0;
 }
 
-.drawer-left, .active.drawer-left {
+.drawer-left, .drawer-left:hover {
   position: absolute !important;
   margin: 0;
   width: 20rem !important;
   height: 100% !important;
 }
-.active.drawer-left ~ * {
+.drawer-left:hover ~ * {
   transform: translateX(calc(20rem - 4rem));
 }
 .drawer-left + * {
@@ -7913,13 +7913,13 @@
   left: 4rem;
 }
 @media only screen and (max-width: 47.9375em) {
-  .drawer-left-small, .active.drawer-left-small {
+  .drawer-left-small, .drawer-left-small:hover {
     position: absolute !important;
     margin: 0;
     width: 83.33333% !important;
     height: 100% !important;
   }
-  .active.drawer-left-small ~ * {
+  .drawer-left-small:hover ~ * {
     transform: translateX(calc(83.33333% - 4rem));
   }
   .drawer-left-small + * {
@@ -7928,13 +7928,13 @@
   }
 }
 @media only screen and (min-width: 48em) {
-  .drawer-left-medium, .active.drawer-left-medium {
+  .drawer-left-medium, .drawer-left-medium:hover {
     position: absolute !important;
     margin: 0;
     width: 50% !important;
     height: 100% !important;
   }
-  .active.drawer-left-medium ~ * {
+  .drawer-left-medium:hover ~ * {
     transform: translateX(calc(50% - 4rem));
   }
   .drawer-left-medium + * {
@@ -7943,13 +7943,13 @@
   }
 }
 
-.drawer-right, .active.drawer-right {
+.drawer-right, .drawer-right:hover {
   position: absolute !important;
   margin: 0;
   width: 20rem !important;
   height: 100% !important;
 }
-.active.drawer-right ~ * {
+.drawer-right:hover ~ * {
   transform: translateX(calc(-20rem + 4rem));
 }
 .drawer-right + * {
@@ -7957,13 +7957,13 @@
   right: 4rem;
 }
 @media only screen and (max-width: 47.9375em) {
-  .drawer-right-small, .active.drawer-right-small {
+  .drawer-right-small, .drawer-right-small:hover {
     position: absolute !important;
     margin: 0;
     width: 83.33333% !important;
     height: 100% !important;
   }
-  .active.drawer-right-small ~ * {
+  .drawer-right-small:hover ~ * {
     transform: translateX(calc(-83.33333% + 4rem));
   }
   .drawer-right-small + * {
@@ -7972,13 +7972,13 @@
   }
 }
 @media only screen and (min-width: 48em) {
-  .drawer-right-medium, .active.drawer-right-medium {
+  .drawer-right-medium, .drawer-right-medium:hover {
     position: absolute !important;
     margin: 0;
     width: 50% !important;
     height: 100% !important;
   }
-  .active.drawer-right-medium ~ * {
+  .drawer-right-medium:hover ~ * {
     transform: translateX(calc(-50% + 4rem));
   }
   .drawer-right-medium + * {
@@ -7987,13 +7987,13 @@
   }
 }
 
-.drawer-top, .active.drawer-top {
+.drawer-top, .drawer-top:hover {
   position: absolute !important;
   margin: 0;
   width: 100% !important;
   height: 20rem !important;
 }
-.active.drawer-top ~ * {
+.drawer-top:hover ~ * {
   transform: translateY(20rem);
 }
 .drawer-top + * {
@@ -8001,13 +8001,13 @@
   top: 4rem;
 }
 @media only screen and (max-width: 47.9375em) {
-  .drawer-top-small, .active.drawer-top-small {
+  .drawer-top-small, .drawer-top-small:hover {
     position: absolute !important;
     margin: 0;
     width: 100% !important;
     height: 83.33333% !important;
   }
-  .active.drawer-top-small ~ * {
+  .drawer-top-small:hover ~ * {
     transform: translateY(83.33333%);
   }
   .drawer-top-small + * {
@@ -8016,13 +8016,13 @@
   }
 }
 @media only screen and (min-width: 48em) {
-  .drawer-top-medium, .active.drawer-top-medium {
+  .drawer-top-medium, .drawer-top-medium:hover {
     position: absolute !important;
     margin: 0;
     width: 100% !important;
     height: 83.33333% !important;
   }
-  .active.drawer-top-medium ~ * {
+  .drawer-top-medium:hover ~ * {
     transform: translateY(83.33333%);
   }
   .drawer-top-medium + * {
@@ -8031,13 +8031,13 @@
   }
 }
 
-.drawer-bottom, .active.drawer-bottom {
+.drawer-bottom, .drawer-bottom:hover {
   position: absolute !important;
   margin: 0;
   width: 100% !important;
   height: 20rem !important;
 }
-.active.drawer-bottom ~ * {
+.drawer-bottom:hover ~ * {
   transform: translateY(-20rem);
 }
 .drawer-bottom + * {
@@ -8045,13 +8045,13 @@
   bottom: 4rem;
 }
 @media only screen and (max-width: 47.9375em) {
-  .drawer-bottom-small, .active.drawer-bottom-small {
+  .drawer-bottom-small, .drawer-bottom-small:hover {
     position: absolute !important;
     margin: 0;
     width: 100% !important;
     height: 83.33333% !important;
   }
-  .active.drawer-bottom-small ~ * {
+  .drawer-bottom-small:hover ~ * {
     transform: translateY(-83.33333%);
   }
   .drawer-bottom-small + * {
@@ -8060,13 +8060,13 @@
   }
 }
 @media only screen and (min-width: 48em) {
-  .drawer-bottom-medium, .active.drawer-bottom-medium {
+  .drawer-bottom-medium, .drawer-bottom-medium:hover {
     position: absolute !important;
     margin: 0;
     width: 100% !important;
     height: 83.33333% !important;
   }
-  .active.drawer-bottom-medium ~ * {
+  .drawer-bottom-medium:hover ~ * {
     transform: translateY(-83.33333%);
   }
   .drawer-bottom-medium + * {
@@ -8985,7 +8985,8 @@ hr.darken {
 .icon:before, [class*=" icon-"]:before, [class^="icon-"]:before {
   display: inline-block;
   font-family: "Material Design Iconic Font";
-  font-size: 17.5px;
+  font-size: 14px;
+  font-style: normal;
   vertical-align: middle;
 }
 .icon-3d-rotation:before {
@@ -12262,7 +12263,7 @@ nav li.separator, nav li.hr {
 nav.light li:hover, nav.light li.active {
   background-color: #EFEFEF;
 }
-nav.light li:hover, nav.light li.active, nav.light li:hover a, nav.light li.active a {
+nav.light li:hover, nav.light li.active, nav.light li:hover > *, nav.light li.active > * {
   color: #4fb1eb;
 }
 nav.light li.separator, nav.light li.hr {
@@ -12271,7 +12272,7 @@ nav.light li.separator, nav.light li.hr {
 nav.dark li:hover, nav.dark li.active {
   background-color: #4fb1eb;
 }
-nav.dark li:hover, nav.dark li.active, nav.dark li:hover a, nav.dark li.active a {
+nav.dark li:hover, nav.dark li.active, nav.dark li:hover > *, nav.dark li.active > * {
   color: #EFEFEF;
 }
 nav.dark li.separator, nav.dark li.hr {
@@ -12281,7 +12282,7 @@ nav.dark li.separator, nav.dark li.hr {
 .dropdown-container > menu li:hover, .dropdown-container > menu li.active {
   background-color: #4fb1eb;
 }
-.dropdown-container > menu li:hover, .dropdown-container > menu li.active, .dropdown-container > menu li:hover a, .dropdown-container > menu li.active a, .dropdown-container > menu li:hover a:hover, .dropdown-container > menu li.active a:hover {
+.dropdown-container > menu li:hover, .dropdown-container > menu li.active, .dropdown-container > menu li:hover > *, .dropdown-container > menu li.active > * {
   color: #EFEFEF;
 }
 .dropdown-container > menu li.separator, .dropdown-container > menu li.hr {
@@ -12290,7 +12291,7 @@ nav.dark li.separator, nav.dark li.hr {
 .dropdown-container > menu.light li:hover, .dropdown-container > menu.light li.active {
   background-color: #EFEFEF;
 }
-.dropdown-container > menu.light li:hover, .dropdown-container > menu.light li.active, .dropdown-container > menu.light li:hover a, .dropdown-container > menu.light li.active a {
+.dropdown-container > menu.light li:hover, .dropdown-container > menu.light li.active, .dropdown-container > menu.light li:hover > *, .dropdown-container > menu.light li.active > * {
   color: #4fb1eb;
 }
 .dropdown-container > menu.light li.separator, .dropdown-container > menu.light li.hr {
@@ -12299,7 +12300,7 @@ nav.dark li.separator, nav.dark li.hr {
 .dropdown-container > menu.dark li:hover, .dropdown-container > menu.dark li.active {
   background-color: #4fb1eb;
 }
-.dropdown-container > menu.dark li:hover, .dropdown-container > menu.dark li.active, .dropdown-container > menu.dark li:hover a, .dropdown-container > menu.dark li.active a {
+.dropdown-container > menu.dark li:hover, .dropdown-container > menu.dark li.active, .dropdown-container > menu.dark li:hover > *, .dropdown-container > menu.dark li.active > * {
   color: #EFEFEF;
 }
 .dropdown-container > menu.dark li.separator, .dropdown-container > menu.dark li.hr {

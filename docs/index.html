@@ -7,23 +7,20 @@
     <link rel="stylesheet" href="../css/cadenza.css">
 </head>
 <body ng-app="cadenza" class="layer">
-    <aside class="col-2 drawer-left-small bg-primary mode-light">
+    <aside class="drawer-left bg-dark mode-light">
         <header class="text-center content">
             <h3>CADENZA</h3>
         </header>
         <nav class="light">
             <ul>
-                <li><a ui-sref="grid">Grid</a></li>
-                <li><a ui-sref="layout">Layout</a></li>
-                <li><a ui-sref="type">Type</a></li>
-                <li><a ui-sref="panels">Panels</a></li>
-                <li><a ui-sref="themes">Themes</a></li>
-                <li><a ui-sref="buttons">Buttons</a></li>
-                <li><a ui-sref="nav">Nav</a></li>
-                <li><a ui-sref="animations">Animations</a></li>
-                <li><a ui-sref="labels">Labels</a></li>
-                <li><a ui-sref="forms">Forms</a></li>
-                <li><a ui-sref="sandbox">Sandbox</a></li>
+                <li><i class="icon-grid-on tile-control"></i><span class="tile-content">Grid</span></li>
+                <li><i class="icon-tab tile-control"></i><span class="tile-content">Panels</span></li>
+                <li><i class="icon-format-size tile-control"></i><span class="tile-content">Typography</span></li>
+                <li><i class="tile-control"></i><span class="tile-content"></span></li>
+                <li><i class="tile-control"></i><span class="tile-content"></span></li>
+                <li><i class="tile-control"></i><span class="tile-content"></span></li>
+                <li><i class="tile-control"></i><span class="tile-content"></span></li>
+                <li><i class="tile-control"></i><span class="tile-content"></span></li>
             </ul>
         </nav>
         <label for="toggle_theme" class="button small transparent light" ng-class="{active: main.theme}">
@@ -31,32 +28,16 @@
             <input type="checkbox" name="main.theme" id="toggle_theme" ng-model="main.theme" class="implicit">
         </label>
     </aside>
-    <section class="col-10 col-12-small content scroll activate-all-scaleUp bg-white transition">
-        <div class="layer cols-gutter content hide">
-            <div class="col-1 mode-light"></div>
-            <div class="col-1 mode-light"></div>
-            <div class="col-1 mode-light"></div>
-            <div class="col-1 mode-light"></div>
-            <div class="col-1 mode-light"></div>
-            <div class="col-1 mode-light"></div>
-            <div class="col-1 mode-light"></div>
-            <div class="col-1 mode-light"></div>
-            <div class="col-1 mode-light"></div>
-            <div class="col-1 mode-light"></div>
-            <div class="col-1 mode-light"></div>
-            <div class="col-1 mode-light"></div>
-        </div>
-        <div ui-view class="layer scroll-y content {{main.theme ? 'bg-dark mode-light' : ''}}">
-            
-        </div>
+    <section class="layer scroll-y activate-all-scaleUp bg-white transition" ui-view>
+
     </section>
 </body>
 
 <!-- DEPENDENCIES -->
-<script src="assets/js/angular.min.js"></script>
-<script src="assets/js/angular-ui-router.min.js"></script>
-<script src="assets/js/lodash.min.js"></script>
-<script src="assets/js/angular-animate.min.js"></script>
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/ui-router/release/angular-ui-router.min.js"></script>
+<script src="../bower_components/lodash/dist/lodash.min.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.min.js"></script>
 
 <!-- MODULES -->
 <script src="app/app.js"></script>
