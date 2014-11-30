@@ -12,6 +12,7 @@
 
 .tile {
     &-content { @extend %tile-content; }
+    &-icon { @extend %tile-icon; }
     &-control {
         @extend %tile-control;
 

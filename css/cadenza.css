@@ -3335,7 +3335,7 @@
   padding-right: 8px;
 }
 
-.pad-double {
+.pad-double, .cz-content, .cz-code {
   padding: 32px;
 }
 
@@ -3363,7 +3363,7 @@
   padding-right: 0 !important;
 }
 
-.col, [class*=" col-"], [class^="col-"], .cols > *, [class*=" cols-"] > *, [class^="cols-"] > *, .gg-album {
+.col, [class*=" col-"], [class^="col-"], .cols > *, [class*=" cols-"] > *, [class^="cols-"] > *, .cz-content, .cz-code, .gg-album {
   box-sizing: border-box;
   margin: 0;
   display: block;
@@ -3372,11 +3372,11 @@
   clear: none;
   height: 100%;
 }
-.col:before, [class*=" col-"]:before, [class^="col-"]:before, .cols > :before, [class*=" cols-"] > :before, [class^="cols-"] > :before, .gg-album:before, .col:after, [class*=" col-"]:after, [class^="col-"]:after, .cols > :after, [class*=" cols-"] > :after, [class^="cols-"] > :after, .gg-album:after {
+.col:before, [class*=" col-"]:before, [class^="col-"]:before, .cols > :before, [class*=" cols-"] > :before, [class^="cols-"] > :before, .cz-content:before, .cz-code:before, .gg-album:before, .col:after, [class*=" col-"]:after, [class^="col-"]:after, .cols > :after, [class*=" cols-"] > :after, [class^="cols-"] > :after, .cz-content:after, .cz-code:after, .gg-album:after {
   content: " ";
   display: table;
 }
-.col:after, [class*=" col-"]:after, [class^="col-"]:after, .cols > :after, [class*=" cols-"] > :after, [class^="cols-"] > :after, .gg-album:after {
+.col:after, [class*=" col-"]:after, [class^="col-"]:after, .cols > :after, [class*=" cols-"] > :after, [class^="cols-"] > :after, .cz-content:after, .cz-code:after, .gg-album:after {
   clear: both;
 }
 
@@ -11450,6 +11450,11 @@ hr.darken {
   padding: 1rem;
   width: 100%;
 }
+.tile-icon {
+  min-width: 3rem;
+  text-align: center;
+  vertical-align: middle;
+}
 .tile-control {
   min-width: 4rem;
   text-align: center;
@@ -14470,13 +14475,13 @@ img.full-height {
 .drawer-left, .drawer-left:hover {
   position: absolute !important;
   margin: 0;
-  width: 20rem !important;
+  width: 15rem !important;
   height: 100% !important;
 }
 .drawer-left:hover ~ * {
-  -webkit-transform: translateX(calc(20rem - 3rem));
-      -ms-transform: translateX(calc(20rem - 3rem));
-          transform: translateX(calc(20rem - 3rem));
+  -webkit-transform: translateX(calc(15rem - 3rem));
+      -ms-transform: translateX(calc(15rem - 3rem));
+          transform: translateX(calc(15rem - 3rem));
 }
 .drawer-left + * {
   max-width: calc(100% - 3rem);
@@ -14520,13 +14525,13 @@ img.full-height {
 .drawer-right, .drawer-right:hover {
   position: absolute !important;
   margin: 0;
-  width: 20rem !important;
+  width: 15rem !important;
   height: 100% !important;
 }
 .drawer-right:hover ~ * {
-  -webkit-transform: translateX(calc(-20rem + 3rem));
-      -ms-transform: translateX(calc(-20rem + 3rem));
-          transform: translateX(calc(-20rem + 3rem));
+  -webkit-transform: translateX(calc(-15rem + 3rem));
+      -ms-transform: translateX(calc(-15rem + 3rem));
+          transform: translateX(calc(-15rem + 3rem));
 }
 .drawer-right + * {
   max-width: calc(100% - 3rem);
@@ -14571,12 +14576,12 @@ img.full-height {
   position: absolute !important;
   margin: 0;
   width: 100% !important;
-  height: 20rem !important;
+  height: 15rem !important;
 }
 .drawer-top:hover ~ * {
-  -webkit-transform: translateY(20rem);
-      -ms-transform: translateY(20rem);
-          transform: translateY(20rem);
+  -webkit-transform: translateY(15rem);
+      -ms-transform: translateY(15rem);
+          transform: translateY(15rem);
 }
 .drawer-top + * {
   max-width: calc(100% - 3rem);
@@ -14621,12 +14626,12 @@ img.full-height {
   position: absolute !important;
   margin: 0;
   width: 100% !important;
-  height: 20rem !important;
+  height: 15rem !important;
 }
 .drawer-bottom:hover ~ * {
-  -webkit-transform: translateY(-20rem);
-      -ms-transform: translateY(-20rem);
-          transform: translateY(-20rem);
+  -webkit-transform: translateY(-15rem);
+      -ms-transform: translateY(-15rem);
+          transform: translateY(-15rem);
 }
 .drawer-bottom + * {
   max-width: calc(100% - 3rem);
@@ -14673,6 +14678,16 @@ img.full-height {
 /* 'modules/_animations'; */
 /* Import Extensions */
 /* Import Themes */
+.cz-content {
+  width: 58.33333% !important;
+  clear: left;
+}
+
+.cz-code {
+  width: 41.66667% !important;
+  clear: right;
+}
+
 .gg-album {
   width: 20% !important;
   height: 33.33333% !important;

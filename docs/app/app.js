@@ -27,9 +27,6 @@ app.config(['$stateProvider', '$urlRouterProvider',
                             templateUrl: 'build/' + component + '.html',
                             controller: 'ComponentController',
                             controllerAs: 'component'
-                        },
-                        'code': {
-                            templateUrl: 'build/' + component + '-code.html'
                         }
                     }
                 });

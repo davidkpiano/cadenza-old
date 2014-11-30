@@ -13,14 +13,14 @@
         </header>
         <nav class="light">
             <ul>
-                <li><i class="icon-grid-on tile-control"></i><span class="tile-content">Grid</span></li>
-                <li><i class="icon-tab tile-control"></i><span class="tile-content">Panels</span></li>
-                <li><i class="icon-format-size tile-control"></i><span class="tile-content">Typography</span></li>
-                <li><i class="tile-control"></i><span class="tile-content"></span></li>
-                <li><i class="tile-control"></i><span class="tile-content"></span></li>
-                <li><i class="tile-control"></i><span class="tile-content"></span></li>
-                <li><i class="tile-control"></i><span class="tile-content"></span></li>
-                <li><i class="tile-control"></i><span class="tile-content"></span></li>
+                <li><i class="tile-icon icon-grid-on"></i><span class="tile-content">Grid</span></li>
+                <li><i class="tile-icon icon-tab"></i><span class="tile-content">Panels</span></li>
+                <li><i class="tile-icon icon-format-size"></i><span class="tile-content">Typography</span></li>
+                <li><i class="tile-icon"></i><span class="tile-content"></span></li>
+                <li><i class="tile-icon"></i><span class="tile-content"></span></li>
+                <li><i class="tile-icon"></i><span class="tile-content"></span></li>
+                <li><i class="tile-icon"></i><span class="tile-content"></span></li>
+                <li><i class="tile-icon"></i><span class="tile-content"></span></li>
             </ul>
         </nav>
         <label for="toggle_theme" class="button small transparent light" ng-class="{active: main.theme}">
@@ -28,10 +28,13 @@
             <input type="checkbox" name="main.theme" id="toggle_theme" ng-model="main.theme" class="implicit">
         </label>
     </aside>
-    <section class="layer scroll-y activate-all-scaleUp transition all-stack-small bg-dark">
-        <div class="col-7 col-auto pad-double bg-white" ui-view="content"></div>
-        <div class="col-5 pad-double mode-light" ui-view="code"></div>
-    </section>
+    <main id="documentation" class="layer scroll-y activate-all-scaleUp transition all-stack-small bg-dark">
+        <div class="layer">
+            <div class="col-7 bg-light"></div>
+            <div class="col-5 bg-dark"></div>
+        </div>
+        <div class="layer" ui-view="content"></div>
+    </main>
 </body>
 
 <!-- DEPENDENCIES -->

@@ -6,8 +6,10 @@ var autoprefixer = require('gulp-autoprefixer');
 var markdown = require('gulp-markdown');
 var highlight = require('gulp-highlight');
 var prompt = require('gulp-prompt');
+var concat = require('gulp-concat');
 
 // Non-gulp requires
+var _ = require('lodash');
 var fs = require('fs');
 
 gulp.task('build', ['scss']);
@@ -24,10 +26,17 @@ gulp.task('scss', function() {
 });
 
 gulp.task('docs', function() {
-    gulp.src('docs/source/*.md')
-        .pipe(markdown())
-        .pipe(highlight())
-        .pipe(gulp.dest('docs/build'));
+    var docsDir = './docs/source/';
+    var components = fs.readdirSync(docsDir).filter(function(file) {
+        return fs.statSync(docsDir + file).isDirectory();
+    });
+
+    _.each(components, function(component) {    
+        gulp.src(docsDir + component + '/*.html')
+            .pipe(concat(component + '.html'))
+            .pipe(highlight())
+            .pipe(gulp.dest('docs/build'));
+    });
 });
 
 gulp.task('component', function() {

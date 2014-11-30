@@ -24,6 +24,12 @@
         width: 100%;
     }
 
+    &-icon {
+        min-width: $tile-icon-width;
+        text-align: center;
+        vertical-align: middle;
+    }
+
     &-control {
         min-width: $tile-control-width;
         text-align: center;

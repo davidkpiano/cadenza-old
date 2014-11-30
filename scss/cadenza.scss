@@ -58,6 +58,21 @@ $button-text-transform: none;
 //     display: inline-block;
 // }
 
+// Documentation styles
+.cz-content {
+    @extend %column;
+    @include column(7);
+    @extend %pad-double;
+    clear: left;
+}
+
+.cz-code {
+    @extend %column;
+    @include column(5);
+    @extend %pad-double;
+    clear: right;
+}
+
 .gg-album {
     @extend %column;
     @include column(1/5);
