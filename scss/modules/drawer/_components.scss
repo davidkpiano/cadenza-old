@@ -1,0 +1,58 @@
+
+@each $mq in $drawer-mqs {
+    $suffix: if($mq == 'all', '', '-#{$mq}');
+
+    @include mq($mq) {        
+        %drawer {
+            &#{$suffix} { position: absolute; }
+
+            &-left#{$suffix} {
+                position: absolute;
+
+                right: inherit;
+                left: 0;
+            }
+
+            &-right#{$suffix} {
+                position: absolute;
+
+                left: inherit;
+                right: 0;
+            }
+
+            &-top#{$suffix} {
+                position: absolute;
+
+                bottom: inherit;
+                top: 0;
+            }
+
+            &-bottom#{$suffix} {
+                position: absolute;
+
+                top: inherit;
+                bottom: 0;
+            }
+        }
+    }
+}
+
+@each $drawer-position in (left, right) {
+    %drawer-#{$drawer-position} {
+        @include drawer($width: $drawer-static-width, $position: $drawer-position, $push: true, $extend: false);
+
+        &-small { @include drawer($width: $drawer-small-width, $position: $drawer-position, $push: true, $mq: small, $extend: false); }
+
+        &-medium { @include drawer($width: $drawer-medium-width, $position: $drawer-position, $push: true, $mq: medium, $extend: false); }
+    }
+}
+
+@each $drawer-position in (top, bottom) {
+    %drawer-#{$drawer-position} {
+        @include drawer($height: $drawer-static-height, $position: $drawer-position, $push: true, $extend: false);
+
+        &-small { @include drawer($height: $drawer-small-height, $position: $drawer-position, $push: true, $mq: small, $extend: false); }
+
+        &-medium { @include drawer($height: $drawer-medium-height, $position: $drawer-position, $push: true, $mq: medium, $extend: false); }
+    }
+}

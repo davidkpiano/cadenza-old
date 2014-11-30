@@ -1,0 +1,57 @@
+
+@mixin drawer(
+    $width: 100%,
+    $height: 100%,
+    $position: left,
+    $active-selector: ':hover',
+    $push: false,
+    $peek-width: $drawer-peek-width,
+    $mq: all,
+    $animation: 'slideLeft',
+    $extend: true
+) {
+    $push-translation: false;
+    $drawer-width: column-width($width);
+    $drawer-height: row-height($height);
+
+    @if $extend {    
+        @extend %drawer;
+        @extend %drawer-#{$position} !optional;
+    }    
+
+    @include mq($mq) {
+        &, &#{$active-selector} {
+            // @include animation(#{$animation}-inactive);
+            position: absolute !important;
+            margin: 0;
+            width: $drawer-width !important;
+            height: $drawer-height !important;
+        }
+
+        @if $push {
+            &#{$active-selector} {
+                // @include animation(#{$animation}-active);
+                @if $position == left {
+                    $push-translation: translateX(calc(#{$drawer-width} - #{$peek-width}));
+                } @else if $position == right {
+                    $push-translation: translateX(calc(-#{$drawer-width} + #{$peek-width}));
+                } @else if $position == top {
+                    $push-translation: translateY($drawer-height);
+                } @else if $position == bottom {
+                    $push-translation: translateY(-$drawer-height);
+                }
+
+                ~ * {
+                    transform: $push-translation;
+                }
+            }
+
+            @if $peek-width {            
+                + * {
+                    max-width: calc(100% - #{$peek-width});
+                    #{$position}: $peek-width;
+                }
+            }
+        }
+    }
+}

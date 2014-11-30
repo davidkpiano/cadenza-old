@@ -25,23 +25,6 @@ $card-margin-vertical: $card-gutter !default;
 $card-margin-horizontal: $card-gutter !default;
 $card-radius: 2px !default;
 
-// Drawer Settings
-$drawer-style: default !default;
-$drawer-theme: default !default;
-$drawer-mqs: (small, medium, all) !default;
-$drawer-positions: (left, right, top, bottom) !default;
-$drawer-peek-width: 4rem !default;
-$drawer-static-width: 20rem !default;
-$drawer-static-height: 20rem !default;
-$drawer-full-width: column-width(10) !default;
-$drawer-full-height: row-height(10) !default;
-$drawer-half-width: column-width(1/2) !default;
-$drawer-half-height: row-height(1/2) !default;
-$drawer-small-width: $drawer-full-width !default;
-$drawer-small-height: $drawer-full-height !default;
-$drawer-medium-width: $drawer-half-width !default;
-$drawer-medium-height: $drawer-full-height !default;
-
 // Parallax Settings
 $parallax-perspective: 100px !default;
 
