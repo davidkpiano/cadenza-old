@@ -3363,7 +3363,7 @@
   padding-right: 0 !important;
 }
 
-.col, [class*=" col-"], [class^="col-"], .cols > *, [class*=" cols-"] > *, [class^="cols-"] > *, .cz-content, .cz-code, .gg-album {
+.col, [class*=" col-"], [class^="col-"], .cols > *, [class*=" cols-"] > *, [class^="cols-"] > *, .cz-content, .cz-code {
   box-sizing: border-box;
   margin: 0;
   display: block;
@@ -3372,11 +3372,11 @@
   clear: none;
   height: 100%;
 }
-.col:before, [class*=" col-"]:before, [class^="col-"]:before, .cols > :before, [class*=" cols-"] > :before, [class^="cols-"] > :before, .cz-content:before, .cz-code:before, .gg-album:before, .col:after, [class*=" col-"]:after, [class^="col-"]:after, .cols > :after, [class*=" cols-"] > :after, [class^="cols-"] > :after, .cz-content:after, .cz-code:after, .gg-album:after {
+.col:before, [class*=" col-"]:before, [class^="col-"]:before, .cols > :before, [class*=" cols-"] > :before, [class^="cols-"] > :before, .cz-content:before, .cz-code:before, .col:after, [class*=" col-"]:after, [class^="col-"]:after, .cols > :after, [class*=" cols-"] > :after, [class^="cols-"] > :after, .cz-content:after, .cz-code:after {
   content: " ";
   display: table;
 }
-.col:after, [class*=" col-"]:after, [class^="col-"]:after, .cols > :after, [class*=" cols-"] > :after, [class^="cols-"] > :after, .cz-content:after, .cz-code:after, .gg-album:after {
+.col:after, [class*=" col-"]:after, [class^="col-"]:after, .cols > :after, [class*=" cols-"] > :after, [class^="cols-"] > :after, .cz-content:after, .cz-code:after {
   clear: both;
 }
 
@@ -6983,18 +6983,18 @@
     height: auto !important;
   }
 }
-.row, [class*=" row-"], [class^="row-"], .rows > *, [class*=" rows-"] > *, [class^="rows-"] > *, .gg-album-caption {
+.row, [class*=" row-"], [class^="row-"], .rows > *, [class*=" rows-"] > *, [class^="rows-"] > * {
   box-sizing: border-box;
   margin: 0;
   display: block;
   position: relative;
   width: 100%;
 }
-.row:before, [class*=" row-"]:before, [class^="row-"]:before, .rows > :before, [class*=" rows-"] > :before, [class^="rows-"] > :before, .gg-album-caption:before, .row:after, [class*=" row-"]:after, [class^="row-"]:after, .rows > :after, [class*=" rows-"] > :after, [class^="rows-"] > :after, .gg-album-caption:after {
+.row:before, [class*=" row-"]:before, [class^="row-"]:before, .rows > :before, [class*=" rows-"] > :before, [class^="rows-"] > :before, .row:after, [class*=" row-"]:after, [class^="row-"]:after, .rows > :after, [class*=" rows-"] > :after, [class^="rows-"] > :after {
   content: " ";
   display: table;
 }
-.row:after, [class*=" row-"]:after, [class^="row-"]:after, .rows > :after, [class*=" rows-"] > :after, [class^="rows-"] > :after, .gg-album-caption:after {
+.row:after, [class*=" row-"]:after, [class^="row-"]:after, .rows > :after, [class*=" rows-"] > :after, [class^="rows-"] > :after {
   clear: both;
 }
 
@@ -7270,7 +7270,7 @@
   bottom: 100%;
 }
 
-.row-bottom, .gg-album-caption {
+.row-bottom {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -8824,8 +8824,8 @@ a:hover, a > :hover {
 
 pre, .pre {
   white-space: pre;
-  font-size: 14px ;
-  font-size: 1rem ;
+  font-size: 8.96px ;
+  font-size: 0.64rem ;
   font-family: Consolas, monaco, monospace;
 }
 pre code, .pre code, pre .code, .pre .code {
@@ -9072,7 +9072,7 @@ dl dd {
 *, p, li, span {
   color: #363636;
 }
-.mode-light *, .alert *, .alert.success *, .alert.failure *, .mode-light p, .alert p, .alert.success p, .alert.failure p, .mode-light li, .alert li, .alert.success li, .alert.failure li, .mode-light span, .alert span, .alert.success span, .alert.failure span, .hover-mode-light:hover *, .hover-mode-light:hover p, .hover-mode-light:hover li, .hover-mode-light:hover span {
+.mode-light *, .alert *, .alert.success *, .alert.failure *, .cz-code *, .mode-light p, .alert p, .alert.success p, .alert.failure p, .cz-code p, .mode-light li, .alert li, .alert.success li, .alert.failure li, .cz-code li, .mode-light span, .alert span, .alert.success span, .alert.failure span, .cz-code span, .hover-mode-light:hover *, .hover-mode-light:hover p, .hover-mode-light:hover li, .hover-mode-light:hover span {
   color: #EFEFEF;
 }
 .mode-dark *, .mode-dark p, .mode-dark li, .mode-dark span, .hover-mode-dark:hover *, .hover-mode-dark:hover p, .hover-mode-dark:hover li, .hover-mode-dark:hover span {
@@ -9082,7 +9082,7 @@ dl dd {
 .subtext {
   color: rgba(0, 0, 0, 0.4);
 }
-.mode-light .subtext, .alert .subtext, .hover-mode-light:hover .subtext, .subtext-light {
+.mode-light .subtext, .alert .subtext, .cz-code .subtext, .hover-mode-light:hover .subtext, .subtext-light {
   color: rgba(255, 255, 255, 0.4);
 }
 .mode-dark .subtext, .hover-mode-dark:hover .subtext, .subtext-dark {
@@ -9096,7 +9096,7 @@ h6, .h-6 {
 h1, .h, [class*=" h-"], [class^="h-"], h2, h3, h4, h5, h6 {
   color: #363636;
 }
-.mode-light h1, .alert h1, .alert.success h1, .alert.failure h1, .mode-light h2, .alert h2, .alert.success h2, .alert.failure h2, .mode-light h3, .alert h3, .alert.success h3, .alert.failure h3, .mode-light h4, .alert h4, .alert.success h4, .alert.failure h4, .mode-light h5, .alert h5, .alert.success h5, .alert.failure h5, .mode-light h6, .alert h6, .alert.success h6, .alert.failure h6, .mode-light .h, .alert .h, .mode-light [class*=" h-"], .alert [class*=" h-"], .mode-light [class^="h-"], .alert [class^="h-"], .hover-mode-light:hover h1, .hover-mode-light:hover h2, .hover-mode-light:hover h3, .hover-mode-light:hover h4, .hover-mode-light:hover h5, .hover-mode-light:hover h6, .hover-mode-light:hover .h, .hover-mode-light:hover [class*=" h-"], .hover-mode-light:hover [class^="h-"], h1.color-light, .h.color-light, [class*=" h-"].color-light, [class^="h-"].color-light, h2.color-light, h3.color-light, h4.color-light, h5.color-light, h6.color-light {
+.mode-light h1, .alert h1, .alert.success h1, .alert.failure h1, .cz-code h1, .mode-light h2, .alert h2, .alert.success h2, .alert.failure h2, .cz-code h2, .mode-light h3, .alert h3, .alert.success h3, .alert.failure h3, .cz-code h3, .mode-light h4, .alert h4, .alert.success h4, .alert.failure h4, .cz-code h4, .mode-light h5, .alert h5, .alert.success h5, .alert.failure h5, .cz-code h5, .mode-light h6, .alert h6, .alert.success h6, .alert.failure h6, .cz-code h6, .mode-light .h, .alert .h, .cz-code .h, .mode-light [class*=" h-"], .alert [class*=" h-"], .cz-code [class*=" h-"], .mode-light [class^="h-"], .alert [class^="h-"], .cz-code [class^="h-"], .hover-mode-light:hover h1, .hover-mode-light:hover h2, .hover-mode-light:hover h3, .hover-mode-light:hover h4, .hover-mode-light:hover h5, .hover-mode-light:hover h6, .hover-mode-light:hover .h, .hover-mode-light:hover [class*=" h-"], .hover-mode-light:hover [class^="h-"], h1.color-light, .h.color-light, [class*=" h-"].color-light, [class^="h-"].color-light, h2.color-light, h3.color-light, h4.color-light, h5.color-light, h6.color-light {
   color: #EFEFEF;
 }
 .mode-dark h1, .mode-dark h2, .mode-dark h3, .mode-dark h4, .mode-dark h5, .mode-dark h6, .mode-dark .h, .mode-dark [class*=" h-"], .mode-dark [class^="h-"], .hover-mode-dark:hover h1, .hover-mode-dark:hover h2, .hover-mode-dark:hover h3, .hover-mode-dark:hover h4, .hover-mode-dark:hover h5, .hover-mode-dark:hover h6, .hover-mode-dark:hover .h, .hover-mode-dark:hover [class*=" h-"], .hover-mode-dark:hover [class^="h-"], h1.color-dark, .h.color-dark, [class*=" h-"].color-dark, [class^="h-"].color-dark, h2.color-dark, h3.color-dark, h4.color-dark, h5.color-dark, h6.color-dark {
@@ -9106,7 +9106,7 @@ h1, .h, [class*=" h-"], [class^="h-"], h2, h3, h4, h5, h6 {
 .subheading {
   color: rgba(54, 54, 54, 0.4);
 }
-.mode-light .subheading, .alert .subheading, .hover-mode-light:hover .subheading, .subheading-light {
+.mode-light .subheading, .alert .subheading, .cz-code .subheading, .hover-mode-light:hover .subheading, .subheading-light {
   color: rgba(239, 239, 239, 0.4);
 }
 .mode-dark .subheading, .hover-mode-dark:hover .subheading, .subheading-dark {
@@ -9122,13 +9122,13 @@ a:hover, a > :hover {
 a:focus, a > :focus {
   color: #7dc5f1;
 }
-.mode-light a, .alert a, .alert.success a, .alert.failure a, .mode-light a > *, .alert a > *, .alert.success a > *, .alert.failure a > *, .hover-mode-light:hover a, .hover-mode-light:hover a > *, a.light, a > *.light {
+.mode-light a, .alert a, .alert.success a, .alert.failure a, .cz-code a, .mode-light a > *, .alert a > *, .alert.success a > *, .alert.failure a > *, .cz-code a > *, .hover-mode-light:hover a, .hover-mode-light:hover a > *, a.light, a > *.light {
   color: #EFEFEF;
 }
-.mode-light a:hover, .alert a:hover, .mode-light a > :hover, .alert a > :hover, .hover-mode-light:hover a:hover, .hover-mode-light:hover a > :hover, a.light:hover, a > .light:hover {
+.mode-light a:hover, .alert a:hover, .cz-code a:hover, .mode-light a > :hover, .alert a > :hover, .cz-code a > :hover, .hover-mode-light:hover a:hover, .hover-mode-light:hover a > :hover, a.light:hover, a > .light:hover {
   color: white;
 }
-.mode-light a:focus, .alert a:focus, .mode-light a > :focus, .alert a > :focus, .hover-mode-light:hover a:focus, .hover-mode-light:hover a > :focus, a.light:focus, a > .light:focus {
+.mode-light a:focus, .alert a:focus, .cz-code a:focus, .mode-light a > :focus, .alert a > :focus, .cz-code a > :focus, .hover-mode-light:hover a:focus, .hover-mode-light:hover a > :focus, a.light:focus, a > .light:focus {
   color: white;
 }
 .mode-dark a, .mode-dark a > *, .hover-mode-dark:hover a, .hover-mode-dark:hover a > *, a.dark, a > *.dark {
@@ -9166,7 +9166,7 @@ hr.darken {
 .rule:before, [class*=" rule-"]:before, [class^="rule-"]:before, .rule:after, [class*=" rule-"]:after, [class^="rule-"]:after {
   background-color: #363636;
 }
-.mode-light .rule:before, .alert .rule:before, .mode-light [class*=" rule-"]:before, .alert [class*=" rule-"]:before, .mode-light [class^="rule-"]:before, .alert [class^="rule-"]:before, .hover-mode-light:hover .rule:before, .hover-mode-light:hover [class*=" rule-"]:before, .hover-mode-light:hover [class^="rule-"]:before, .rule-light:before, .mode-light .rule:after, .alert .rule:after, .mode-light [class*=" rule-"]:after, .alert [class*=" rule-"]:after, .mode-light [class^="rule-"]:after, .alert [class^="rule-"]:after, .hover-mode-light:hover .rule:after, .hover-mode-light:hover [class*=" rule-"]:after, .hover-mode-light:hover [class^="rule-"]:after, .rule-light:after {
+.mode-light .rule:before, .alert .rule:before, .cz-code .rule:before, .mode-light [class*=" rule-"]:before, .alert [class*=" rule-"]:before, .cz-code [class*=" rule-"]:before, .mode-light [class^="rule-"]:before, .alert [class^="rule-"]:before, .cz-code [class^="rule-"]:before, .hover-mode-light:hover .rule:before, .hover-mode-light:hover [class*=" rule-"]:before, .hover-mode-light:hover [class^="rule-"]:before, .rule-light:before, .mode-light .rule:after, .alert .rule:after, .cz-code .rule:after, .mode-light [class*=" rule-"]:after, .alert [class*=" rule-"]:after, .cz-code [class*=" rule-"]:after, .mode-light [class^="rule-"]:after, .alert [class^="rule-"]:after, .cz-code [class^="rule-"]:after, .hover-mode-light:hover .rule:after, .hover-mode-light:hover [class*=" rule-"]:after, .hover-mode-light:hover [class^="rule-"]:after, .rule-light:after {
   background-color: #EFEFEF;
 }
 .mode-dark .rule:before, .mode-dark [class*=" rule-"]:before, .mode-dark [class^="rule-"]:before, .hover-mode-dark:hover .rule:before, .hover-mode-dark:hover [class*=" rule-"]:before, .hover-mode-dark:hover [class^="rule-"]:before, .rule-dark:before, .mode-dark .rule:after, .mode-dark [class*=" rule-"]:after, .mode-dark [class^="rule-"]:after, .hover-mode-dark:hover .rule:after, .hover-mode-dark:hover [class*=" rule-"]:after, .hover-mode-dark:hover [class^="rule-"]:after, .rule-dark:after {
@@ -11970,63 +11970,77 @@ input[type="color"].darken::placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 
-.mode-light textarea.implicit, .alert textarea.implicit, .alert.success textarea.implicit, .alert.failure textarea.implicit,
+.mode-light textarea.implicit, .alert textarea.implicit, .alert.success textarea.implicit, .alert.failure textarea.implicit, .cz-code textarea.implicit,
 .mode-light input[type="text"].implicit,
 .alert input[type="text"].implicit,
 .alert.success input[type="text"].implicit,
 .alert.failure input[type="text"].implicit,
+.cz-code input[type="text"].implicit,
 .mode-light input[type="password"].implicit,
 .alert input[type="password"].implicit,
 .alert.success input[type="password"].implicit,
 .alert.failure input[type="password"].implicit,
+.cz-code input[type="password"].implicit,
 .mode-light input[type="datetime"].implicit,
 .alert input[type="datetime"].implicit,
 .alert.success input[type="datetime"].implicit,
 .alert.failure input[type="datetime"].implicit,
+.cz-code input[type="datetime"].implicit,
 .mode-light input[type="datetime-local"].implicit,
 .alert input[type="datetime-local"].implicit,
 .alert.success input[type="datetime-local"].implicit,
 .alert.failure input[type="datetime-local"].implicit,
+.cz-code input[type="datetime-local"].implicit,
 .mode-light input[type="date"].implicit,
 .alert input[type="date"].implicit,
 .alert.success input[type="date"].implicit,
 .alert.failure input[type="date"].implicit,
+.cz-code input[type="date"].implicit,
 .mode-light input[type="month"].implicit,
 .alert input[type="month"].implicit,
 .alert.success input[type="month"].implicit,
 .alert.failure input[type="month"].implicit,
+.cz-code input[type="month"].implicit,
 .mode-light input[type="time"].implicit,
 .alert input[type="time"].implicit,
 .alert.success input[type="time"].implicit,
 .alert.failure input[type="time"].implicit,
+.cz-code input[type="time"].implicit,
 .mode-light input[type="week"].implicit,
 .alert input[type="week"].implicit,
 .alert.success input[type="week"].implicit,
 .alert.failure input[type="week"].implicit,
+.cz-code input[type="week"].implicit,
 .mode-light input[type="number"].implicit,
 .alert input[type="number"].implicit,
 .alert.success input[type="number"].implicit,
 .alert.failure input[type="number"].implicit,
+.cz-code input[type="number"].implicit,
 .mode-light input[type="email"].implicit,
 .alert input[type="email"].implicit,
 .alert.success input[type="email"].implicit,
 .alert.failure input[type="email"].implicit,
+.cz-code input[type="email"].implicit,
 .mode-light input[type="url"].implicit,
 .alert input[type="url"].implicit,
 .alert.success input[type="url"].implicit,
 .alert.failure input[type="url"].implicit,
+.cz-code input[type="url"].implicit,
 .mode-light input[type="search"].implicit,
 .alert input[type="search"].implicit,
 .alert.success input[type="search"].implicit,
 .alert.failure input[type="search"].implicit,
+.cz-code input[type="search"].implicit,
 .mode-light input[type="tel"].implicit,
 .alert input[type="tel"].implicit,
 .alert.success input[type="tel"].implicit,
 .alert.failure input[type="tel"].implicit,
+.cz-code input[type="tel"].implicit,
 .mode-light input[type="color"].implicit,
 .alert input[type="color"].implicit,
 .alert.success input[type="color"].implicit,
-.alert.failure input[type="color"].implicit, .hover-mode-light:hover textarea.implicit,
+.alert.failure input[type="color"].implicit,
+.cz-code input[type="color"].implicit, .hover-mode-light:hover textarea.implicit,
 .hover-mode-light:hover input[type="text"].implicit,
 .hover-mode-light:hover input[type="password"].implicit,
 .hover-mode-light:hover input[type="datetime"].implicit,
@@ -12045,63 +12059,77 @@ input[type="color"].darken::placeholder {
   color: #EFEFEF;
   background-color: transparent;
 }
-.mode-light textarea.implicit:hover, .alert textarea.implicit:hover, .alert.success textarea.implicit:hover, .alert.failure textarea.implicit:hover,
+.mode-light textarea.implicit:hover, .alert textarea.implicit:hover, .alert.success textarea.implicit:hover, .alert.failure textarea.implicit:hover, .cz-code textarea.implicit:hover,
 .mode-light input[type="text"].implicit:hover,
 .alert input[type="text"].implicit:hover,
 .alert.success input[type="text"].implicit:hover,
 .alert.failure input[type="text"].implicit:hover,
+.cz-code input[type="text"].implicit:hover,
 .mode-light input[type="password"].implicit:hover,
 .alert input[type="password"].implicit:hover,
 .alert.success input[type="password"].implicit:hover,
 .alert.failure input[type="password"].implicit:hover,
+.cz-code input[type="password"].implicit:hover,
 .mode-light input[type="datetime"].implicit:hover,
 .alert input[type="datetime"].implicit:hover,
 .alert.success input[type="datetime"].implicit:hover,
 .alert.failure input[type="datetime"].implicit:hover,
+.cz-code input[type="datetime"].implicit:hover,
 .mode-light input[type="datetime-local"].implicit:hover,
 .alert input[type="datetime-local"].implicit:hover,
 .alert.success input[type="datetime-local"].implicit:hover,
 .alert.failure input[type="datetime-local"].implicit:hover,
+.cz-code input[type="datetime-local"].implicit:hover,
 .mode-light input[type="date"].implicit:hover,
 .alert input[type="date"].implicit:hover,
 .alert.success input[type="date"].implicit:hover,
 .alert.failure input[type="date"].implicit:hover,
+.cz-code input[type="date"].implicit:hover,
 .mode-light input[type="month"].implicit:hover,
 .alert input[type="month"].implicit:hover,
 .alert.success input[type="month"].implicit:hover,
 .alert.failure input[type="month"].implicit:hover,
+.cz-code input[type="month"].implicit:hover,
 .mode-light input[type="time"].implicit:hover,
 .alert input[type="time"].implicit:hover,
 .alert.success input[type="time"].implicit:hover,
 .alert.failure input[type="time"].implicit:hover,
+.cz-code input[type="time"].implicit:hover,
 .mode-light input[type="week"].implicit:hover,
 .alert input[type="week"].implicit:hover,
 .alert.success input[type="week"].implicit:hover,
 .alert.failure input[type="week"].implicit:hover,
+.cz-code input[type="week"].implicit:hover,
 .mode-light input[type="number"].implicit:hover,
 .alert input[type="number"].implicit:hover,
 .alert.success input[type="number"].implicit:hover,
 .alert.failure input[type="number"].implicit:hover,
+.cz-code input[type="number"].implicit:hover,
 .mode-light input[type="email"].implicit:hover,
 .alert input[type="email"].implicit:hover,
 .alert.success input[type="email"].implicit:hover,
 .alert.failure input[type="email"].implicit:hover,
+.cz-code input[type="email"].implicit:hover,
 .mode-light input[type="url"].implicit:hover,
 .alert input[type="url"].implicit:hover,
 .alert.success input[type="url"].implicit:hover,
 .alert.failure input[type="url"].implicit:hover,
+.cz-code input[type="url"].implicit:hover,
 .mode-light input[type="search"].implicit:hover,
 .alert input[type="search"].implicit:hover,
 .alert.success input[type="search"].implicit:hover,
 .alert.failure input[type="search"].implicit:hover,
+.cz-code input[type="search"].implicit:hover,
 .mode-light input[type="tel"].implicit:hover,
 .alert input[type="tel"].implicit:hover,
 .alert.success input[type="tel"].implicit:hover,
 .alert.failure input[type="tel"].implicit:hover,
+.cz-code input[type="tel"].implicit:hover,
 .mode-light input[type="color"].implicit:hover,
 .alert input[type="color"].implicit:hover,
 .alert.success input[type="color"].implicit:hover,
-.alert.failure input[type="color"].implicit:hover, .hover-mode-light:hover textarea.implicit:hover,
+.alert.failure input[type="color"].implicit:hover,
+.cz-code input[type="color"].implicit:hover, .hover-mode-light:hover textarea.implicit:hover,
 .hover-mode-light:hover input[type="text"].implicit:hover,
 .hover-mode-light:hover input[type="password"].implicit:hover,
 .hover-mode-light:hover input[type="datetime"].implicit:hover,
@@ -12120,63 +12148,77 @@ input[type="color"].darken::placeholder {
   color: #EFEFEF;
   background-color: transparent;
 }
-.mode-light textarea.implicit:focus, .alert textarea.implicit:focus, .alert.success textarea.implicit:focus, .alert.failure textarea.implicit:focus,
+.mode-light textarea.implicit:focus, .alert textarea.implicit:focus, .alert.success textarea.implicit:focus, .alert.failure textarea.implicit:focus, .cz-code textarea.implicit:focus,
 .mode-light input[type="text"].implicit:focus,
 .alert input[type="text"].implicit:focus,
 .alert.success input[type="text"].implicit:focus,
 .alert.failure input[type="text"].implicit:focus,
+.cz-code input[type="text"].implicit:focus,
 .mode-light input[type="password"].implicit:focus,
 .alert input[type="password"].implicit:focus,
 .alert.success input[type="password"].implicit:focus,
 .alert.failure input[type="password"].implicit:focus,
+.cz-code input[type="password"].implicit:focus,
 .mode-light input[type="datetime"].implicit:focus,
 .alert input[type="datetime"].implicit:focus,
 .alert.success input[type="datetime"].implicit:focus,
 .alert.failure input[type="datetime"].implicit:focus,
+.cz-code input[type="datetime"].implicit:focus,
 .mode-light input[type="datetime-local"].implicit:focus,
 .alert input[type="datetime-local"].implicit:focus,
 .alert.success input[type="datetime-local"].implicit:focus,
 .alert.failure input[type="datetime-local"].implicit:focus,
+.cz-code input[type="datetime-local"].implicit:focus,
 .mode-light input[type="date"].implicit:focus,
 .alert input[type="date"].implicit:focus,
 .alert.success input[type="date"].implicit:focus,
 .alert.failure input[type="date"].implicit:focus,
+.cz-code input[type="date"].implicit:focus,
 .mode-light input[type="month"].implicit:focus,
 .alert input[type="month"].implicit:focus,
 .alert.success input[type="month"].implicit:focus,
 .alert.failure input[type="month"].implicit:focus,
+.cz-code input[type="month"].implicit:focus,
 .mode-light input[type="time"].implicit:focus,
 .alert input[type="time"].implicit:focus,
 .alert.success input[type="time"].implicit:focus,
 .alert.failure input[type="time"].implicit:focus,
+.cz-code input[type="time"].implicit:focus,
 .mode-light input[type="week"].implicit:focus,
 .alert input[type="week"].implicit:focus,
 .alert.success input[type="week"].implicit:focus,
 .alert.failure input[type="week"].implicit:focus,
+.cz-code input[type="week"].implicit:focus,
 .mode-light input[type="number"].implicit:focus,
 .alert input[type="number"].implicit:focus,
 .alert.success input[type="number"].implicit:focus,
 .alert.failure input[type="number"].implicit:focus,
+.cz-code input[type="number"].implicit:focus,
 .mode-light input[type="email"].implicit:focus,
 .alert input[type="email"].implicit:focus,
 .alert.success input[type="email"].implicit:focus,
 .alert.failure input[type="email"].implicit:focus,
+.cz-code input[type="email"].implicit:focus,
 .mode-light input[type="url"].implicit:focus,
 .alert input[type="url"].implicit:focus,
 .alert.success input[type="url"].implicit:focus,
 .alert.failure input[type="url"].implicit:focus,
+.cz-code input[type="url"].implicit:focus,
 .mode-light input[type="search"].implicit:focus,
 .alert input[type="search"].implicit:focus,
 .alert.success input[type="search"].implicit:focus,
 .alert.failure input[type="search"].implicit:focus,
+.cz-code input[type="search"].implicit:focus,
 .mode-light input[type="tel"].implicit:focus,
 .alert input[type="tel"].implicit:focus,
 .alert.success input[type="tel"].implicit:focus,
 .alert.failure input[type="tel"].implicit:focus,
+.cz-code input[type="tel"].implicit:focus,
 .mode-light input[type="color"].implicit:focus,
 .alert input[type="color"].implicit:focus,
 .alert.success input[type="color"].implicit:focus,
-.alert.failure input[type="color"].implicit:focus, .hover-mode-light:hover textarea.implicit:focus,
+.alert.failure input[type="color"].implicit:focus,
+.cz-code input[type="color"].implicit:focus, .hover-mode-light:hover textarea.implicit:focus,
 .hover-mode-light:hover input[type="text"].implicit:focus,
 .hover-mode-light:hover input[type="password"].implicit:focus,
 .hover-mode-light:hover input[type="datetime"].implicit:focus,
@@ -12195,63 +12237,77 @@ input[type="color"].darken::placeholder {
   color: #EFEFEF;
   background-color: transparent;
 }
-.mode-light textarea.implicit::-webkit-input-placeholder, .alert textarea.implicit::-webkit-input-placeholder, .alert.success textarea.implicit::-webkit-input-placeholder, .alert.failure textarea.implicit::-webkit-input-placeholder,
+.mode-light textarea.implicit::-webkit-input-placeholder, .alert textarea.implicit::-webkit-input-placeholder, .alert.success textarea.implicit::-webkit-input-placeholder, .alert.failure textarea.implicit::-webkit-input-placeholder, .cz-code textarea.implicit::-webkit-input-placeholder,
 .mode-light input[type="text"].implicit::-webkit-input-placeholder,
 .alert input[type="text"].implicit::-webkit-input-placeholder,
 .alert.success input[type="text"].implicit::-webkit-input-placeholder,
 .alert.failure input[type="text"].implicit::-webkit-input-placeholder,
+.cz-code input[type="text"].implicit::-webkit-input-placeholder,
 .mode-light input[type="password"].implicit::-webkit-input-placeholder,
 .alert input[type="password"].implicit::-webkit-input-placeholder,
 .alert.success input[type="password"].implicit::-webkit-input-placeholder,
 .alert.failure input[type="password"].implicit::-webkit-input-placeholder,
+.cz-code input[type="password"].implicit::-webkit-input-placeholder,
 .mode-light input[type="datetime"].implicit::-webkit-input-placeholder,
 .alert input[type="datetime"].implicit::-webkit-input-placeholder,
 .alert.success input[type="datetime"].implicit::-webkit-input-placeholder,
 .alert.failure input[type="datetime"].implicit::-webkit-input-placeholder,
+.cz-code input[type="datetime"].implicit::-webkit-input-placeholder,
 .mode-light input[type="datetime-local"].implicit::-webkit-input-placeholder,
 .alert input[type="datetime-local"].implicit::-webkit-input-placeholder,
 .alert.success input[type="datetime-local"].implicit::-webkit-input-placeholder,
 .alert.failure input[type="datetime-local"].implicit::-webkit-input-placeholder,
+.cz-code input[type="datetime-local"].implicit::-webkit-input-placeholder,
 .mode-light input[type="date"].implicit::-webkit-input-placeholder,
 .alert input[type="date"].implicit::-webkit-input-placeholder,
 .alert.success input[type="date"].implicit::-webkit-input-placeholder,
 .alert.failure input[type="date"].implicit::-webkit-input-placeholder,
+.cz-code input[type="date"].implicit::-webkit-input-placeholder,
 .mode-light input[type="month"].implicit::-webkit-input-placeholder,
 .alert input[type="month"].implicit::-webkit-input-placeholder,
 .alert.success input[type="month"].implicit::-webkit-input-placeholder,
 .alert.failure input[type="month"].implicit::-webkit-input-placeholder,
+.cz-code input[type="month"].implicit::-webkit-input-placeholder,
 .mode-light input[type="time"].implicit::-webkit-input-placeholder,
 .alert input[type="time"].implicit::-webkit-input-placeholder,
 .alert.success input[type="time"].implicit::-webkit-input-placeholder,
 .alert.failure input[type="time"].implicit::-webkit-input-placeholder,
+.cz-code input[type="time"].implicit::-webkit-input-placeholder,
 .mode-light input[type="week"].implicit::-webkit-input-placeholder,
 .alert input[type="week"].implicit::-webkit-input-placeholder,
 .alert.success input[type="week"].implicit::-webkit-input-placeholder,
 .alert.failure input[type="week"].implicit::-webkit-input-placeholder,
+.cz-code input[type="week"].implicit::-webkit-input-placeholder,
 .mode-light input[type="number"].implicit::-webkit-input-placeholder,
 .alert input[type="number"].implicit::-webkit-input-placeholder,
 .alert.success input[type="number"].implicit::-webkit-input-placeholder,
 .alert.failure input[type="number"].implicit::-webkit-input-placeholder,
+.cz-code input[type="number"].implicit::-webkit-input-placeholder,
 .mode-light input[type="email"].implicit::-webkit-input-placeholder,
 .alert input[type="email"].implicit::-webkit-input-placeholder,
 .alert.success input[type="email"].implicit::-webkit-input-placeholder,
 .alert.failure input[type="email"].implicit::-webkit-input-placeholder,
+.cz-code input[type="email"].implicit::-webkit-input-placeholder,
 .mode-light input[type="url"].implicit::-webkit-input-placeholder,
 .alert input[type="url"].implicit::-webkit-input-placeholder,
 .alert.success input[type="url"].implicit::-webkit-input-placeholder,
 .alert.failure input[type="url"].implicit::-webkit-input-placeholder,
+.cz-code input[type="url"].implicit::-webkit-input-placeholder,
 .mode-light input[type="search"].implicit::-webkit-input-placeholder,
 .alert input[type="search"].implicit::-webkit-input-placeholder,
 .alert.success input[type="search"].implicit::-webkit-input-placeholder,
 .alert.failure input[type="search"].implicit::-webkit-input-placeholder,
+.cz-code input[type="search"].implicit::-webkit-input-placeholder,
 .mode-light input[type="tel"].implicit::-webkit-input-placeholder,
 .alert input[type="tel"].implicit::-webkit-input-placeholder,
 .alert.success input[type="tel"].implicit::-webkit-input-placeholder,
 .alert.failure input[type="tel"].implicit::-webkit-input-placeholder,
+.cz-code input[type="tel"].implicit::-webkit-input-placeholder,
 .mode-light input[type="color"].implicit::-webkit-input-placeholder,
 .alert input[type="color"].implicit::-webkit-input-placeholder,
 .alert.success input[type="color"].implicit::-webkit-input-placeholder,
-.alert.failure input[type="color"].implicit::-webkit-input-placeholder, .hover-mode-light:hover textarea.implicit::-webkit-input-placeholder,
+.alert.failure input[type="color"].implicit::-webkit-input-placeholder,
+.cz-code input[type="color"].implicit::-webkit-input-placeholder, .hover-mode-light:hover textarea.implicit::-webkit-input-placeholder,
 .hover-mode-light:hover input[type="text"].implicit::-webkit-input-placeholder,
 .hover-mode-light:hover input[type="password"].implicit::-webkit-input-placeholder,
 .hover-mode-light:hover input[type="datetime"].implicit::-webkit-input-placeholder,
@@ -12268,63 +12324,77 @@ input[type="color"].darken::placeholder {
 .hover-mode-light:hover input[type="color"].implicit::-webkit-input-placeholder {
   color: rgba(239, 239, 239, 0.4);
 }
-.mode-light textarea.implicit::-moz-placeholder, .alert textarea.implicit::-moz-placeholder, .alert.success textarea.implicit::-moz-placeholder, .alert.failure textarea.implicit::-moz-placeholder,
+.mode-light textarea.implicit::-moz-placeholder, .alert textarea.implicit::-moz-placeholder, .alert.success textarea.implicit::-moz-placeholder, .alert.failure textarea.implicit::-moz-placeholder, .cz-code textarea.implicit::-moz-placeholder,
 .mode-light input[type="text"].implicit::-moz-placeholder,
 .alert input[type="text"].implicit::-moz-placeholder,
 .alert.success input[type="text"].implicit::-moz-placeholder,
 .alert.failure input[type="text"].implicit::-moz-placeholder,
+.cz-code input[type="text"].implicit::-moz-placeholder,
 .mode-light input[type="password"].implicit::-moz-placeholder,
 .alert input[type="password"].implicit::-moz-placeholder,
 .alert.success input[type="password"].implicit::-moz-placeholder,
 .alert.failure input[type="password"].implicit::-moz-placeholder,
+.cz-code input[type="password"].implicit::-moz-placeholder,
 .mode-light input[type="datetime"].implicit::-moz-placeholder,
 .alert input[type="datetime"].implicit::-moz-placeholder,
 .alert.success input[type="datetime"].implicit::-moz-placeholder,
 .alert.failure input[type="datetime"].implicit::-moz-placeholder,
+.cz-code input[type="datetime"].implicit::-moz-placeholder,
 .mode-light input[type="datetime-local"].implicit::-moz-placeholder,
 .alert input[type="datetime-local"].implicit::-moz-placeholder,
 .alert.success input[type="datetime-local"].implicit::-moz-placeholder,
 .alert.failure input[type="datetime-local"].implicit::-moz-placeholder,
+.cz-code input[type="datetime-local"].implicit::-moz-placeholder,
 .mode-light input[type="date"].implicit::-moz-placeholder,
 .alert input[type="date"].implicit::-moz-placeholder,
 .alert.success input[type="date"].implicit::-moz-placeholder,
 .alert.failure input[type="date"].implicit::-moz-placeholder,
+.cz-code input[type="date"].implicit::-moz-placeholder,
 .mode-light input[type="month"].implicit::-moz-placeholder,
 .alert input[type="month"].implicit::-moz-placeholder,
 .alert.success input[type="month"].implicit::-moz-placeholder,
 .alert.failure input[type="month"].implicit::-moz-placeholder,
+.cz-code input[type="month"].implicit::-moz-placeholder,
 .mode-light input[type="time"].implicit::-moz-placeholder,
 .alert input[type="time"].implicit::-moz-placeholder,
 .alert.success input[type="time"].implicit::-moz-placeholder,
 .alert.failure input[type="time"].implicit::-moz-placeholder,
+.cz-code input[type="time"].implicit::-moz-placeholder,
 .mode-light input[type="week"].implicit::-moz-placeholder,
 .alert input[type="week"].implicit::-moz-placeholder,
 .alert.success input[type="week"].implicit::-moz-placeholder,
 .alert.failure input[type="week"].implicit::-moz-placeholder,
+.cz-code input[type="week"].implicit::-moz-placeholder,
 .mode-light input[type="number"].implicit::-moz-placeholder,
 .alert input[type="number"].implicit::-moz-placeholder,
 .alert.success input[type="number"].implicit::-moz-placeholder,
 .alert.failure input[type="number"].implicit::-moz-placeholder,
+.cz-code input[type="number"].implicit::-moz-placeholder,
 .mode-light input[type="email"].implicit::-moz-placeholder,
 .alert input[type="email"].implicit::-moz-placeholder,
 .alert.success input[type="email"].implicit::-moz-placeholder,
 .alert.failure input[type="email"].implicit::-moz-placeholder,
+.cz-code input[type="email"].implicit::-moz-placeholder,
 .mode-light input[type="url"].implicit::-moz-placeholder,
 .alert input[type="url"].implicit::-moz-placeholder,
 .alert.success input[type="url"].implicit::-moz-placeholder,
 .alert.failure input[type="url"].implicit::-moz-placeholder,
+.cz-code input[type="url"].implicit::-moz-placeholder,
 .mode-light input[type="search"].implicit::-moz-placeholder,
 .alert input[type="search"].implicit::-moz-placeholder,
 .alert.success input[type="search"].implicit::-moz-placeholder,
 .alert.failure input[type="search"].implicit::-moz-placeholder,
+.cz-code input[type="search"].implicit::-moz-placeholder,
 .mode-light input[type="tel"].implicit::-moz-placeholder,
 .alert input[type="tel"].implicit::-moz-placeholder,
 .alert.success input[type="tel"].implicit::-moz-placeholder,
 .alert.failure input[type="tel"].implicit::-moz-placeholder,
+.cz-code input[type="tel"].implicit::-moz-placeholder,
 .mode-light input[type="color"].implicit::-moz-placeholder,
 .alert input[type="color"].implicit::-moz-placeholder,
 .alert.success input[type="color"].implicit::-moz-placeholder,
-.alert.failure input[type="color"].implicit::-moz-placeholder, .hover-mode-light:hover textarea.implicit::-moz-placeholder,
+.alert.failure input[type="color"].implicit::-moz-placeholder,
+.cz-code input[type="color"].implicit::-moz-placeholder, .hover-mode-light:hover textarea.implicit::-moz-placeholder,
 .hover-mode-light:hover input[type="text"].implicit::-moz-placeholder,
 .hover-mode-light:hover input[type="password"].implicit::-moz-placeholder,
 .hover-mode-light:hover input[type="datetime"].implicit::-moz-placeholder,
@@ -12341,63 +12411,77 @@ input[type="color"].darken::placeholder {
 .hover-mode-light:hover input[type="color"].implicit::-moz-placeholder {
   color: rgba(239, 239, 239, 0.4);
 }
-.mode-light textarea.implicit:-ms-input-placeholder, .alert textarea.implicit:-ms-input-placeholder, .alert.success textarea.implicit:-ms-input-placeholder, .alert.failure textarea.implicit:-ms-input-placeholder,
+.mode-light textarea.implicit:-ms-input-placeholder, .alert textarea.implicit:-ms-input-placeholder, .alert.success textarea.implicit:-ms-input-placeholder, .alert.failure textarea.implicit:-ms-input-placeholder, .cz-code textarea.implicit:-ms-input-placeholder,
 .mode-light input[type="text"].implicit:-ms-input-placeholder,
 .alert input[type="text"].implicit:-ms-input-placeholder,
 .alert.success input[type="text"].implicit:-ms-input-placeholder,
 .alert.failure input[type="text"].implicit:-ms-input-placeholder,
+.cz-code input[type="text"].implicit:-ms-input-placeholder,
 .mode-light input[type="password"].implicit:-ms-input-placeholder,
 .alert input[type="password"].implicit:-ms-input-placeholder,
 .alert.success input[type="password"].implicit:-ms-input-placeholder,
 .alert.failure input[type="password"].implicit:-ms-input-placeholder,
+.cz-code input[type="password"].implicit:-ms-input-placeholder,
 .mode-light input[type="datetime"].implicit:-ms-input-placeholder,
 .alert input[type="datetime"].implicit:-ms-input-placeholder,
 .alert.success input[type="datetime"].implicit:-ms-input-placeholder,
 .alert.failure input[type="datetime"].implicit:-ms-input-placeholder,
+.cz-code input[type="datetime"].implicit:-ms-input-placeholder,
 .mode-light input[type="datetime-local"].implicit:-ms-input-placeholder,
 .alert input[type="datetime-local"].implicit:-ms-input-placeholder,
 .alert.success input[type="datetime-local"].implicit:-ms-input-placeholder,
 .alert.failure input[type="datetime-local"].implicit:-ms-input-placeholder,
+.cz-code input[type="datetime-local"].implicit:-ms-input-placeholder,
 .mode-light input[type="date"].implicit:-ms-input-placeholder,
 .alert input[type="date"].implicit:-ms-input-placeholder,
 .alert.success input[type="date"].implicit:-ms-input-placeholder,
 .alert.failure input[type="date"].implicit:-ms-input-placeholder,
+.cz-code input[type="date"].implicit:-ms-input-placeholder,
 .mode-light input[type="month"].implicit:-ms-input-placeholder,
 .alert input[type="month"].implicit:-ms-input-placeholder,
 .alert.success input[type="month"].implicit:-ms-input-placeholder,
 .alert.failure input[type="month"].implicit:-ms-input-placeholder,
+.cz-code input[type="month"].implicit:-ms-input-placeholder,
 .mode-light input[type="time"].implicit:-ms-input-placeholder,
 .alert input[type="time"].implicit:-ms-input-placeholder,
 .alert.success input[type="time"].implicit:-ms-input-placeholder,
 .alert.failure input[type="time"].implicit:-ms-input-placeholder,
+.cz-code input[type="time"].implicit:-ms-input-placeholder,
 .mode-light input[type="week"].implicit:-ms-input-placeholder,
 .alert input[type="week"].implicit:-ms-input-placeholder,
 .alert.success input[type="week"].implicit:-ms-input-placeholder,
 .alert.failure input[type="week"].implicit:-ms-input-placeholder,
+.cz-code input[type="week"].implicit:-ms-input-placeholder,
 .mode-light input[type="number"].implicit:-ms-input-placeholder,
 .alert input[type="number"].implicit:-ms-input-placeholder,
 .alert.success input[type="number"].implicit:-ms-input-placeholder,
 .alert.failure input[type="number"].implicit:-ms-input-placeholder,
+.cz-code input[type="number"].implicit:-ms-input-placeholder,
 .mode-light input[type="email"].implicit:-ms-input-placeholder,
 .alert input[type="email"].implicit:-ms-input-placeholder,
 .alert.success input[type="email"].implicit:-ms-input-placeholder,
 .alert.failure input[type="email"].implicit:-ms-input-placeholder,
+.cz-code input[type="email"].implicit:-ms-input-placeholder,
 .mode-light input[type="url"].implicit:-ms-input-placeholder,
 .alert input[type="url"].implicit:-ms-input-placeholder,
 .alert.success input[type="url"].implicit:-ms-input-placeholder,
 .alert.failure input[type="url"].implicit:-ms-input-placeholder,
+.cz-code input[type="url"].implicit:-ms-input-placeholder,
 .mode-light input[type="search"].implicit:-ms-input-placeholder,
 .alert input[type="search"].implicit:-ms-input-placeholder,
 .alert.success input[type="search"].implicit:-ms-input-placeholder,
 .alert.failure input[type="search"].implicit:-ms-input-placeholder,
+.cz-code input[type="search"].implicit:-ms-input-placeholder,
 .mode-light input[type="tel"].implicit:-ms-input-placeholder,
 .alert input[type="tel"].implicit:-ms-input-placeholder,
 .alert.success input[type="tel"].implicit:-ms-input-placeholder,
 .alert.failure input[type="tel"].implicit:-ms-input-placeholder,
+.cz-code input[type="tel"].implicit:-ms-input-placeholder,
 .mode-light input[type="color"].implicit:-ms-input-placeholder,
 .alert input[type="color"].implicit:-ms-input-placeholder,
 .alert.success input[type="color"].implicit:-ms-input-placeholder,
-.alert.failure input[type="color"].implicit:-ms-input-placeholder, .hover-mode-light:hover textarea.implicit:-ms-input-placeholder,
+.alert.failure input[type="color"].implicit:-ms-input-placeholder,
+.cz-code input[type="color"].implicit:-ms-input-placeholder, .hover-mode-light:hover textarea.implicit:-ms-input-placeholder,
 .hover-mode-light:hover input[type="text"].implicit:-ms-input-placeholder,
 .hover-mode-light:hover input[type="password"].implicit:-ms-input-placeholder,
 .hover-mode-light:hover input[type="datetime"].implicit:-ms-input-placeholder,
@@ -12414,63 +12498,77 @@ input[type="color"].darken::placeholder {
 .hover-mode-light:hover input[type="color"].implicit:-ms-input-placeholder {
   color: rgba(239, 239, 239, 0.4);
 }
-.mode-light textarea.implicit::placeholder, .alert textarea.implicit::placeholder, .alert.success textarea.implicit::placeholder, .alert.failure textarea.implicit::placeholder,
+.mode-light textarea.implicit::placeholder, .alert textarea.implicit::placeholder, .alert.success textarea.implicit::placeholder, .alert.failure textarea.implicit::placeholder, .cz-code textarea.implicit::placeholder,
 .mode-light input[type="text"].implicit::placeholder,
 .alert input[type="text"].implicit::placeholder,
 .alert.success input[type="text"].implicit::placeholder,
 .alert.failure input[type="text"].implicit::placeholder,
+.cz-code input[type="text"].implicit::placeholder,
 .mode-light input[type="password"].implicit::placeholder,
 .alert input[type="password"].implicit::placeholder,
 .alert.success input[type="password"].implicit::placeholder,
 .alert.failure input[type="password"].implicit::placeholder,
+.cz-code input[type="password"].implicit::placeholder,
 .mode-light input[type="datetime"].implicit::placeholder,
 .alert input[type="datetime"].implicit::placeholder,
 .alert.success input[type="datetime"].implicit::placeholder,
 .alert.failure input[type="datetime"].implicit::placeholder,
+.cz-code input[type="datetime"].implicit::placeholder,
 .mode-light input[type="datetime-local"].implicit::placeholder,
 .alert input[type="datetime-local"].implicit::placeholder,
 .alert.success input[type="datetime-local"].implicit::placeholder,
 .alert.failure input[type="datetime-local"].implicit::placeholder,
+.cz-code input[type="datetime-local"].implicit::placeholder,
 .mode-light input[type="date"].implicit::placeholder,
 .alert input[type="date"].implicit::placeholder,
 .alert.success input[type="date"].implicit::placeholder,
 .alert.failure input[type="date"].implicit::placeholder,
+.cz-code input[type="date"].implicit::placeholder,
 .mode-light input[type="month"].implicit::placeholder,
 .alert input[type="month"].implicit::placeholder,
 .alert.success input[type="month"].implicit::placeholder,
 .alert.failure input[type="month"].implicit::placeholder,
+.cz-code input[type="month"].implicit::placeholder,
 .mode-light input[type="time"].implicit::placeholder,
 .alert input[type="time"].implicit::placeholder,
 .alert.success input[type="time"].implicit::placeholder,
 .alert.failure input[type="time"].implicit::placeholder,
+.cz-code input[type="time"].implicit::placeholder,
 .mode-light input[type="week"].implicit::placeholder,
 .alert input[type="week"].implicit::placeholder,
 .alert.success input[type="week"].implicit::placeholder,
 .alert.failure input[type="week"].implicit::placeholder,
+.cz-code input[type="week"].implicit::placeholder,
 .mode-light input[type="number"].implicit::placeholder,
 .alert input[type="number"].implicit::placeholder,
 .alert.success input[type="number"].implicit::placeholder,
 .alert.failure input[type="number"].implicit::placeholder,
+.cz-code input[type="number"].implicit::placeholder,
 .mode-light input[type="email"].implicit::placeholder,
 .alert input[type="email"].implicit::placeholder,
 .alert.success input[type="email"].implicit::placeholder,
 .alert.failure input[type="email"].implicit::placeholder,
+.cz-code input[type="email"].implicit::placeholder,
 .mode-light input[type="url"].implicit::placeholder,
 .alert input[type="url"].implicit::placeholder,
 .alert.success input[type="url"].implicit::placeholder,
 .alert.failure input[type="url"].implicit::placeholder,
+.cz-code input[type="url"].implicit::placeholder,
 .mode-light input[type="search"].implicit::placeholder,
 .alert input[type="search"].implicit::placeholder,
 .alert.success input[type="search"].implicit::placeholder,
 .alert.failure input[type="search"].implicit::placeholder,
+.cz-code input[type="search"].implicit::placeholder,
 .mode-light input[type="tel"].implicit::placeholder,
 .alert input[type="tel"].implicit::placeholder,
 .alert.success input[type="tel"].implicit::placeholder,
 .alert.failure input[type="tel"].implicit::placeholder,
+.cz-code input[type="tel"].implicit::placeholder,
 .mode-light input[type="color"].implicit::placeholder,
 .alert input[type="color"].implicit::placeholder,
 .alert.success input[type="color"].implicit::placeholder,
-.alert.failure input[type="color"].implicit::placeholder, .hover-mode-light:hover textarea.implicit::placeholder,
+.alert.failure input[type="color"].implicit::placeholder,
+.cz-code input[type="color"].implicit::placeholder, .hover-mode-light:hover textarea.implicit::placeholder,
 .hover-mode-light:hover input[type="text"].implicit::placeholder,
 .hover-mode-light:hover input[type="password"].implicit::placeholder,
 .hover-mode-light:hover input[type="datetime"].implicit::placeholder,
@@ -14686,19 +14784,4 @@ img.full-height {
 .cz-code {
   width: 41.66667% !important;
   clear: right;
-}
-
-.gg-album {
-  width: 20% !important;
-  height: 33.33333% !important;
-}
-.gg-album-large {
-  width: 40% !important;
-  height: 58.33333% !important;
-}
-.gg-album + .gg-album-large ~ .gg-album {
-  top: -33.33333%;
-}
-.gg-album-caption {
-  height: 25% !important;
 }

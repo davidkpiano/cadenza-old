@@ -59,6 +59,7 @@ $button-text-transform: none;
 // }
 
 // Documentation styles
+
 .cz-content {
     @extend %column;
     @include column(7);
@@ -67,25 +68,9 @@ $button-text-transform: none;
 }
 
 .cz-code {
+    @extend .mode-light;
     @extend %column;
     @include column(5);
     @extend %pad-double;
     clear: right;
-}
-
-.gg-album {
-    @extend %column;
-    @include column(1/5);
-    @include row(4);
-
-    &-large { @include column(2/5); @include row(7); }
-
-    + .gg-album-large ~ .gg-album {
-        top: - row-height(4);
-    }
-
-    &-caption {
-        @extend %row, %row-bottom;
-        @include row(3);
-    }
 }

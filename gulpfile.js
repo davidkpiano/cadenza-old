@@ -7,6 +7,7 @@ var markdown = require('gulp-markdown');
 var highlight = require('gulp-highlight');
 var prompt = require('gulp-prompt');
 var concat = require('gulp-concat');
+var wrap = require('gulp-wrap');
 
 // Non-gulp requires
 var _ = require('lodash');
@@ -32,7 +33,9 @@ gulp.task('docs', function() {
     });
 
     _.each(components, function(component) {    
-        gulp.src(docsDir + component + '/*.html')
+        gulp.src(docsDir + component + '/*.md')
+            .pipe(markdown())
+            .pipe(wrap("<article>\n${ contents }</article>\n"))
             .pipe(concat(component + '.html'))
             .pipe(highlight())
             .pipe(gulp.dest('docs/build'));
@@ -68,5 +71,5 @@ gulp.task('component', function() {
 gulp.task('default', ['build'], function() {
 	gulp.watch('./scss/**/*.scss', ['scss']);
 
-    gulp.watch('./docs/source/*.md', ['docs']);
+    gulp.watch('./docs/source/**/*.md', ['docs']);
 });
