@@ -1,0 +1,34 @@
+
+$type-base-font-size: 16px;
+$nav-menu-item-content-padding: 1rem 2rem;
+$button-font-weight: bold;
+$color-light: #fbfbfb;
+$label-text-transform: uppercase;
+$table-cell-padding: 0.5rem 0;
+
+@import 'cadenza';
+
+.vp-daterange {
+    &, > div { width: 300px; }
+
+    @include animate-on('.open', 'shiftDown-active');
+    
+    @include on('.active') {
+        width: 600px;
+
+        .vp-calendar {
+            @include animation('fade-active', $delay: $animation-duration);
+        }
+    }
+
+    .vp-date {
+        @extend %transition;
+
+        span {        
+            @extend %badge;
+            &:hover { background-color: $color-primary-light; }
+        }
+
+        &.active span { background-color: $color-primary; color: $color-white; }
+    }
+}

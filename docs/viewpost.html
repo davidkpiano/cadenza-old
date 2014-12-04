@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Viewpost</title>
+    <link rel="stylesheet" href="../css/viewpost.css">
+
+</head>
+<!-- <body class="body" ng-app>
+    <header class="bg-primary row-1 text-middle pad-horizontal-double">
+        <img src="https://develop.dev.vp.local/assets/img/viewpost-logo-rev.png" alt="">
+        <nav class="horizontal color-light">
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Receivables</a></li>
+                <li><a href="#">Payables</a></li>
+                <li><a href="#">Network</a></li>
+                <li><a href="#">Sync</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="row-11 scroll-y">
+        <aside class="col-2 bg-light border-right">
+            <header class="pad-double">
+                <div><strong>Edward Tufte</strong></div>
+                <div class="subtext small">Initech Software, LLC.</div>
+            </header>
+            <nav class="color-darken border-bottom">
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Receivables</a></li>
+                    <li><a href="#">Payables</a></li>
+                    <li><a href="#">Reporting</a></li>
+                    <li><a href="#">Network</a></li>
+                </ul>
+            </nav>
+            <footer class="small color-darken pad-double">
+                <a href="#">Your Profile</a><br><br>
+                <a href="#">Company Settings</a><br><br>
+                <a href="#">Get Help</a><br><br>
+            </footer>
+        </aside>
+        <section class="col-10 pad-double">
+            <header class="border-bottom row">
+                <h2 class="float-left">Receivables</h2>
+                <div class="float-right">
+                    <button>Create Invoice</button>
+                    <button class="light"><i class="icon-settings"></i><i class="icon-arrow-drop-down"></i></button>
+                </div>
+            </header>
+            <nav class="horizontal small color-darken">
+                <ul>
+                    <li><a href="#" class="pad-horizontal">Open Invoices</a></li>
+                    <li><a href="#" class="pad-horizontal">Approved</a></li>
+                    <li><a href="#" class="pad-horizontal">Paid</a></li>
+                    <li><a href="#" class="pad-horizontal">More <i class="icon-arrow-drop-down"></i></a></li>
+                </ul>
+            </nav>
+            <table class="zebra">
+                <thead class="border-bottom color-darken">
+                    <tr>
+                        <th><input type="checkbox" name="" id=""></th>
+                        <th>Invoice</th>
+                        <th>PO</th>
+                        <th>Company</th>
+                        <th>Due</th>
+                        <th>Balance</th>
+                        <th>Status</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>00145</td>
+                        <td>1533395930</td>
+                        <td>Baush &amp; Lomb</td>
+                        <td>2 days</td>
+                        <td class="strong dropdown-container">
+                            <span class="color-success">$1,740.80</span>
+                            <menu class="shadow-1 bg-white pad">
+                                <header class="hgroup">                                
+                                    <h5 class="strong">VPX Available</h5>
+                                    <div class="small">Invoice is available for instant payment</div>
+                                </header>
+                                <table class="invisible border-bottom">
+                                    <tbody>
+                                        <tr>
+                                            <td class="strong subtext nowrap">Original Amount</td>
+                                            <td class="strong">$1,740.80</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="strong subtext nowrap">Due In</td>
+                                            <td class="strong">23 days</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="strong subtext nowrap">Discount</td>
+                                            <td class="strong nowrap">$28.45 <span class="weak subtext">(2.1%)</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="strong subtext">VPX Amount <br><small class="subtext">(Available now)</small></td>
+                                            <td class="strong large color-success">$1,704.35</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <footer>
+                                    <div class="text-center subtext italics weak field">
+                                        Your funds will be available in 2-3 business days.
+                                    </div>
+                                    <button class="block success">Request Early Payment</button>
+                                </footer>
+                            </menu>
+                        </td>
+                        <td><span class="label success">Approved</span></td>
+                        <td><i class="icon-menu"></i><i class="icon-arrow-drop-down"></i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>00145</td>
+                        <td>1533395930</td>
+                        <td>Baush &amp; Lomb</td>
+                        <td>2 days</td>
+                        <td class="color-success strong">$1,740.80</td>
+                        <td><span class="label success">Approved</span></td>
+                        <td><i class="icon-menu"></i><i class="icon-arrow-drop-down"></i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>00145</td>
+                        <td>1533395930</td>
+                        <td>Baush &amp; Lomb</td>
+                        <td>2 days</td>
+                        <td class="color-success strong">$1,740.80</td>
+                        <td><span class="label dark">Scheduled</span></td>
+                        <td><i class="icon-menu"></i><i class="icon-arrow-drop-down"></i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>00145</td>
+                        <td>1533395930</td>
+                        <td>Baush &amp; Lomb</td>
+                        <td>2 days</td>
+                        <td class="color-success strong">$1,740.80</td>
+                        <td><span class="label success">Approved</span></td>
+                        <td><i class="icon-menu"></i><i class="icon-arrow-drop-down"></i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>00145</td>
+                        <td>1533395930</td>
+                        <td>Baush &amp; Lomb</td>
+                        <td>2 days</td>
+                        <td class="color-success strong">$1,740.80</td>
+                        <td><span class="label success">Approved</span></td>
+                        <td><i class="icon-menu"></i><i class="icon-arrow-drop-down"></i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>00145</td>
+                        <td>1533395930</td>
+                        <td>Baush &amp; Lomb</td>
+                        <td>2 days</td>
+                        <td class="color-success strong">$1,740.80</td>
+                        <td><span class="label success">Approved</span></td>
+                        <td><i class="icon-menu"></i><i class="icon-arrow-drop-down"></i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>00145</td>
+                        <td>1533395930</td>
+                        <td>Baush &amp; Lomb</td>
+                        <td>2 days</td>
+                        <td class="color-success strong">$1,740.80</td>
+                        <td><span class="label failure">Disputed</span></td>
+                        <td><i class="icon-menu"></i><i class="icon-arrow-drop-down"></i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>00145</td>
+                        <td>1533395930</td>
+                        <td>Baush &amp; Lomb</td>
+                        <td>2 days</td>
+                        <td class="color-success strong">$1,740.80</td>
+                        <td><span class="label light">In Review</span></td>
+                        <td><i class="icon-menu"></i><i class="icon-arrow-drop-down"></i></td>
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id=""></td>
+                        <td>00145</td>
+                        <td>1533395930</td>
+                        <td>Baush &amp; Lomb</td>
+                        <td>2 days</td>
+                        <td class="color-success strong">$1,740.80</td>
+                        <td><span class="label light">In Review</span></td>
+                        <td><i class="icon-menu"></i><i class="icon-arrow-drop-down"></i></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body> -->
+<body class="body pad-double" ng-app>
+    <div class="field-horizontal position-center col-3">
+        <input type="text" name="" id="" ng-click="component.open = true" ng-model="component.date_range">
+        <div class="vp-daterange transition card activate-fade position-left-top bg-white" ng-class="{open: component.open, closed: !component.open, active: component.active}" style="height: 350px; overflow: hidden;" ng-if="component.open">
+            <header class="pad border-bottom row-3">
+                <label><span>Time Period </span><span class="weak">(days)</span></label>
+                <div class="button-group col-6 col-auto cols-4">
+                    <button class="light">30</button>
+                    <button class="light">60</button>
+                    <button class="strong">90</button>
+                </div>
+            </header>
+            <div class="col row-9 pad">
+                <div class="field">
+                    <label>From</label>
+                    <input type="text" name="" id="" ng-model="component.date" ng-click="component.active = !component.active">
+                </div>
+                <div class="field">
+                    <label>To</label>
+                    <input type="text" name="" id="" ng-model="component.end_date">
+                </div>
+                <div class="row-bottom pad"><button class="block" ng-click="component.open = false; component.date_range='11/13/2014 - 11/26/2014'">Apply Range</button></div>
+            </div>
+            <div class="col bg-light border-left activate-fade" ng-animate="'animate'">
+                <header class="border-bottom text-spread pad-half">
+                    <span>&#8249;</span>
+                    <small>November</small>
+                    <span>&#8250;</span>
+                </header>
+                <table class="vp-calendar position-right text-center bg-white">
+                    <thead>
+                        <tr>
+                            <th>S</th>
+                            <th>M</th>
+                            <th>T</th>
+                            <th>W</th>
+                            <th>T</th>
+                            <th>F</th>
+                            <th>S</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="color-darken vp-date"><span>26</span></td>
+                            <td class="color-darken vp-date"><span>27</span></td>
+                            <td class="color-darken vp-date"><span>28</span></td>
+                            <td class="color-darken vp-date"><span>29</span></td>
+                            <td class="color-darken vp-date"><span>30</span></td>
+                            <td class="color-darken vp-date"><span>31</span></td>
+                            <td class="vp-date"><span>1</span></td>
+                        </tr>
+                        <tr>
+                            <td class="vp-date"><span>2</span></td>
+                            <td class="vp-date"><span>3</span></td>
+                            <td class="vp-date"><span>4</span></td>
+                            <td class="vp-date"><span>5</span></td>
+                            <td class="vp-date"><span>6</span></td>
+                            <td class="vp-date"><span>7</span></td>
+                            <td class="vp-date"><span>8</span></td>
+                        </tr>
+                        <tr ng-class="{active: component.date}">
+                            <td class="vp-date"><span>9</span></td>
+                            <td class="vp-date"><span>10</span></td>
+                            <td class="vp-date"><span>11</span></td>
+                            <td class="vp-date"><span>12</span></td>
+                            <td class="vp-date" ng-class="{active: component.date}"><span ng-click="component.date = '11/13/2014'">13</span></td>
+                            <td class="vp-date"><span>14</span></td>
+                            <td class="vp-date"><span>15</span></td>
+                        </tr>
+                        <tr>
+                            <td class="vp-date"><span>16</span></td>
+                            <td class="vp-date"><span>17</span></td>
+                            <td class="vp-date"><span>18</span></td>
+                            <td class="vp-date"><span>19</span></td>
+                            <td class="vp-date"><span>20</span></td>
+                            <td class="vp-date"><span>21</span></td>
+                            <td class="vp-date"><span>22</span></td>
+                        </tr>
+                        <tr>
+                            <td class="vp-date"><span>23</span></td>
+                            <td class="vp-date"><span>24</span></td>
+                            <td class="vp-date"><span>25</span></td>
+                            <td class="vp-date" ng-class="{active: component.end_date}"><span ng-click="component.end_date = '11/26/2014'">26</span></td>
+                            <td class="vp-date"><span>27</span></td>
+                            <td class="vp-date"><span>28</span></td>
+                            <td class="vp-date"><span>29</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- DEPENDENCIES -->
+<script src="../bower_components/angular/angular.min.js"></script>
+<script src="../bower_components/ui-router/release/angular-ui-router.min.js"></script>
+<script src="../bower_components/lodash/dist/lodash.min.js"></script>
+<script src="../bower_components/angular-animate/angular-animate.min.js"></script>
+
+<!-- MODULES -->
+<script src="app/app.js"></script>
+</html>

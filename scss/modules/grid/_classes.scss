@@ -21,132 +21,138 @@
 .pad-horizontal-none { @extend %pad-horizontal-none; }
 
 // Horizontal Grid Classes
-#{prefixed-class('col')}, #{prefixed-class('cols', $selector: ' > *')} {
-	@extend %column;
-}
+@include export('column') {
+	#{prefixed-class('col')}, #{prefixed-class('cols', $selector: ' > *')} {
+		@extend %column;
+	}
 
-#{prefixed-class('cols')} {
-	@extend %columns;
-}
+	#{prefixed-class('cols')} {
+		@extend %columns;
+	}
 
-@each $mq in $grid-column-mqs {
-	$suffix: -#{$mq};
-	@if $mq == 'all' { $suffix: ''; }
+	@each $mq in $grid-column-mqs {
+		$suffix: -#{$mq};
+		@if $mq == 'all' { $suffix: ''; }
 
-	@each $fraction in map-keys($grid-column-fractions) {
-		.col-#{$fraction}#{$suffix} {
-			@extend %column-#{$fraction}#{$suffix};
+		@each $fraction in map-keys($grid-column-fractions) {
+			.col-#{$fraction}#{$suffix} {
+				@extend %column-#{$fraction}#{$suffix};
 
-			.gutter > &, .gutter#{$suffix} > & {
-				@extend %column-gutter-#{$fraction}#{$suffix};
+				.gutter > &, .gutter#{$suffix} > & {
+					@extend %column-gutter-#{$fraction}#{$suffix};
+				}
+			}
+
+			.cols-#{$fraction}#{$suffix} {
+				@extend %columns-#{$fraction}#{$suffix} !optional;
+
+				&.cols-border#{$suffix} {
+					@extend %columns-#{$fraction}-border#{$suffix} !optional;
+				}
+
+				&.gutter, &.gutter#{$suffix} {
+					@extend %columns-gutter-#{$fraction}#{$suffix} !optional;
+				}
+			}
+
+			.col-offset-#{$fraction}#{$suffix} {
+				@extend %column-offset-#{$fraction}#{$suffix};
+
+				.gutter > &, .gutter#{$suffix} > & {
+					@extend %column-gutter-offset-#{$fraction}#{$suffix};
+				}
+			}
+
+			.col-push-#{$fraction}#{$suffix} {
+				@extend %column-push-#{$fraction}#{$suffix};
+			}
+
+			.col-pull-#{$fraction}#{$suffix} {
+				@extend %column-pull-#{$fraction}#{$suffix};
 			}
 		}
 
-		.cols-#{$fraction}#{$suffix} {
-			@extend %columns-#{$fraction}#{$suffix} !optional;
-
-			&.cols-border#{$suffix} {
-				@extend %columns-#{$fraction}-border#{$suffix} !optional;
-			}
-
-			&.gutter, &.gutter#{$suffix} {
-				@extend %columns-gutter-#{$fraction}#{$suffix} !optional;
-			}
+		.col-left#{$suffix} {
+			@extend %column-left#{$suffix};
 		}
 
-		.col-offset-#{$fraction}#{$suffix} {
-			@extend %column-offset-#{$fraction}#{$suffix};
-
-			.gutter > &, .gutter#{$suffix} > & {
-				@extend %column-gutter-offset-#{$fraction}#{$suffix};
-			}
+		.col-right#{$suffix} {
+			@extend %column-right#{$suffix};
 		}
 
-		.col-push-#{$fraction}#{$suffix} {
-			@extend %column-push-#{$fraction}#{$suffix};
+		.col-center#{$suffix} {
+			@extend %column-center#{$suffix};
 		}
 
-		.col-pull-#{$fraction}#{$suffix} {
-			@extend %column-pull-#{$fraction}#{$suffix};
+		.col-auto#{$suffix} {
+			@extend %column-auto#{$suffix};
 		}
-	}
 
-	.col-left#{$suffix} {
-		@extend %column-left#{$suffix};
-	}
-
-	.col-right#{$suffix} {
-		@extend %column-right#{$suffix};
-	}
-
-	.col-center#{$suffix} {
-		@extend %column-center#{$suffix};
-	}
-
-	.col-auto#{$suffix} {
-		@extend %column-auto#{$suffix};
-	}
-
-	.cols-auto#{$suffix} {
-		@extend %columns-auto#{$suffix};
+		.cols-auto#{$suffix} {
+			@extend %columns-auto#{$suffix};
+		}
 	}
 }
 
 // Vertical Grid Classes
-#{prefixed-class('row')}, #{prefixed-class('rows', $selector: ' > *')} {
-	@extend %row;
-}
-
-@each $mq in $grid-row-mqs {
-	$suffix: -#{$mq};
-	@if $mq == 'all' { $suffix: ''; }
-
-	@each $fraction in map-keys($grid-row-fractions) {
-		.row-#{$fraction}#{$suffix} {
-			@extend %row-#{$fraction}#{$suffix};
-
-			.gutter#{$suffix} > & {
-				@extend %row-gutter-#{$fraction}#{$suffix};
-			}
-		}
-
-		// .rows-#{$fraction}#{$suffix} {
-		// 	@extend %rows-#{$fraction}#{$suffix};
-
-		// 	&.gutter#{$suffix} {
-		// 		@extend %rows-gutter-#{$fraction}#{$suffix};
-		// 	}
-		// }
-
-		// .row-offset-#{$fraction}#{$suffix} {
-		// 	@extend %row-offset-#{$fraction}#{$suffix};
-		// }
-
-		// .rows-offset-#{$fraction}#{$suffix} {
-		// 	@extend %rows-offset-#{$fraction}#{$suffix};
-		// }
-
-		.row-push-#{$fraction}#{$suffix} {
-			@extend %row-push-#{$fraction}#{$suffix};
-		}
-
-		.row-pull-#{$fraction}#{$suffix} {
-			@extend %row-pull-#{$fraction}#{$suffix};
-		}
+@include export('row') {
+	#{prefixed-class('row')}, #{prefixed-class('rows', $selector: ' > *')} {
+		@extend %row;
 	}
 
-	.row-bottom#{$suffix} { @extend %row-bottom#{$suffix}; }
-
-	.row-center#{$suffix} { @extend %row-center#{$suffix}; }
-}
-
-@each $mq in $grid-stack-mqs {
-	@include mq($mq) {
+	@each $mq in $grid-row-mqs {
 		$suffix: -#{$mq};
 		@if $mq == 'all' { $suffix: ''; }
 
-		.stack#{$suffix}, .all-stack#{$suffix} > * {
-			@extend %stack#{$suffix};
+		@each $fraction in map-keys($grid-row-fractions) {
+			.row-#{$fraction}#{$suffix} {
+				@extend %row-#{$fraction}#{$suffix};
+
+				.gutter#{$suffix} > & {
+					@extend %row-gutter-#{$fraction}#{$suffix};
+				}
+			}
+
+			// .rows-#{$fraction}#{$suffix} {
+			// 	@extend %rows-#{$fraction}#{$suffix};
+
+			// 	&.gutter#{$suffix} {
+			// 		@extend %rows-gutter-#{$fraction}#{$suffix};
+			// 	}
+			// }
+
+			// .row-offset-#{$fraction}#{$suffix} {
+			// 	@extend %row-offset-#{$fraction}#{$suffix};
+			// }
+
+			// .rows-offset-#{$fraction}#{$suffix} {
+			// 	@extend %rows-offset-#{$fraction}#{$suffix};
+			// }
+
+			.row-push-#{$fraction}#{$suffix} {
+				@extend %row-push-#{$fraction}#{$suffix};
+			}
+
+			.row-pull-#{$fraction}#{$suffix} {
+				@extend %row-pull-#{$fraction}#{$suffix};
+			}
+		}
+
+		.row-bottom#{$suffix} { @extend %row-bottom#{$suffix}; }
+
+		.row-center#{$suffix} { @extend %row-center#{$suffix}; }
+	}
+}
+
+@include export('stack') {
+	@each $mq in $grid-stack-mqs {
+		@include mq($mq) {
+			$suffix: -#{$mq};
+			@if $mq == 'all' { $suffix: ''; }
+
+			.stack#{$suffix}, .all-stack#{$suffix} > * {
+				@extend %stack#{$suffix};
+			}
 		}
 	}
 }

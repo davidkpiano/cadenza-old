@@ -15,6 +15,7 @@
     white-space: nowrap;
     background-image: none;
     line-height: 1;
+    font-weight: $button-font-weight;
 
     @if $button-radius {
         border-radius: $button-radius;

@@ -28,12 +28,12 @@
             <input type="checkbox" name="main.theme" id="toggle_theme" ng-model="main.theme" class="implicit">
         </label>
     </aside>
-    <main id="documentation" class="layer scroll-y activate-all-scaleUp transition all-stack-small bg-dark">
+    <main id="documentation" class="layer scroll-y activate-all-shiftLeft transition all-stack-small bg-dark">
         <div class="layer">
             <div class="col-7 bg-light"></div>
             <div class="col-5 bg-dark"></div>
         </div>
-        <div class="layer" ui-view="content"></div>
+        <div class="layer scroll-y" ui-view="content"></div>
     </main>
 </body>
 

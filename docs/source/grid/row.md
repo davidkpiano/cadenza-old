@@ -1,9 +1,16 @@
-<div class="cz-content">
-    <h1>Row</h1>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum nihil rerum odit dolorem similique id, facilis asperiores consectetur tenetur tempore vitae quia inventore eos quasi. Voluptate iusto reprehenderit quam deleniti.</p>
-</div>
+[[content]]
 
-<div class="cz-code">
-    <h6>Classes</h6>
-    <code>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam illo quam eius at quaerat saepe consectetur, assumenda. Repudiandae sint fuga asperiores natus temporibus totam facere aperiam, perspiciatis nobis, eum aspernatur.</code>
-</div>
+## Rows
+
+With Cadenza, you can implement a vertical grid system in your layouts alongside a horizontal grid system. A **row** is much like a row in any other framework; that is, they are full-width and able to contain columns. However, the biggest difference in Cadenza is that you can manipulate the size and layout of rows in much the same way as you can for columns.
+
+[[/]]
+
+[[code]]
+###### Settings
+```scss
+$grid-rows: 12 !default;
+$grid-row-gutter: 1rem !default;
+$grid-row-mqs: (all, short, tall, small);
+```
+[[/]]

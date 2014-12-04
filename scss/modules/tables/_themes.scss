@@ -3,81 +3,127 @@
 // ========================
 
 // Table Theme
-@mixin table-style(
-	$style: $table-style,
-	$theme: $table-theme
+
+@mixin theme-table-default(
+    $bgcolor: transparent,
+    $color: $color-dark,
+    $border-color: $table-border-color,
+
+    $thead-bgcolor: $bgcolor,
+    $tfoot-bgcolor: $bgcolor,
+    $tbody-bgcolor: $bgcolor,
+    $row-bgcolor: $bgcolor,
+
+    $even-bgcolor: false,
+    $odd-bgcolor: false,
+
+    $row-bgcolor-hover: $bgcolor,
+
+    $thead-color: $color,
+    $tfoot-color: $color,
+    $tbody-color: $color,
+    $row-color: $color
 ) {
-	@extend %ext-table-#{$style} !optional;
-	@extend %theme-table-#{$theme} !optional;
-}
+    background-color: $bgcolor;
+    color: $color;
+    border-color: $border-color;
 
-%ext-table-default {
-	&, thead, tbody, tfoot {
-		tr, th, td {
-			border-width: $table-cell-border-width;
-        	border-style: solid;
-		}
-	}
+    thead {
+        background-color: $thead-bgcolor;
+        color: $thead-color;
+    }
+    tfoot {
+        background-color: $tfoot-bgcolor;
+        color: $tfoot-color;
+    }
+    tbody {
+        background-color: $tbody-bgcolor;
+        color: $tbody-color;
+    }
+    tr {
+        background-color: $row-bgcolor;
+        color: $row-color;
 
-	thead tr {
-		border-bottom-width: $table-cell-border-width * 2;
-	}
+        &:hover {
+            background-color: $row-bgcolor-hover;
+        }
 
-	tbody + tbody tr:first-child {
-		border-top-width: $table-cell-border-width * 2;
-	}
+        @if $even-bgcolor {
+            &:nth-child(even) { background-color: $even-bgcolor; }
+        }
+
+        @if $odd-bgcolor {
+            &:nth-child(odd) { background-color: $odd-bgcolor; }
+        }
+    }
+
+    thead, tr, th, td {
+        border-color: $border-color
+    }
 }
 
 %theme-table-default {
-	&, &%light {
-		thead {
-			background-color: transparent;
-		}
+    @include theme-table-default;
 
-		tfoot {
-			background-color: transparent;
-		}
-
-		&, tbody {
-			background-color: transparent;
-		}
-
-		thead, tr, th, td {
-			border-color: $table-border-color;
-		}
-
-		&.zebra, &.striped {
-	        tr:nth-child(even) {
-	            background-color: $color-gray-light;
-	        }
-
-	        tr:nth-child(odd) {
-	            background-color: transparent;
-	        }
-
-	        tr:only-child {
-	            background-color: transparent;
-	        }
-	    }
-
-	    &.hover {
-	    	tr:hover {
-	    		background-color: darken($color-gray-light, 5%);
-	    	}
-	    }
-	}
-
-	&%dark {
-		thead {
-			background-color: $color-light;
-		}
-
-		tfoot {
-			background-color: $color-light;
-		}
-
-		tbody {
-			background-color: $color-light;
-		}
-	}
+    &-striped {
+        @include theme-table-default($even-bgcolor: $color-light);
+    }
 }
+
+// %theme-table-default {
+// 	thead {
+// 		background-color: transparent;
+// 	}
+
+// 	tfoot {
+// 		background-color: transparent;
+// 	}
+
+// 	&, tbody {
+// 		background-color: transparent;
+// 	}
+
+// 	thead, tr, th, td {
+// 		border-color: $table-border-color;
+// 	}
+
+// 	&.zebra, &.striped {
+//         tr:nth-child(even) {
+//             background-color: $color-gray-light;
+//         }
+
+//         tr:nth-child(odd) {
+//             background-color: transparent;
+//         }
+
+//         tr:only-child {
+//             background-color: transparent;
+//         }
+//     }
+
+//     &.invisible {
+//         tr:nth-child(n) {
+//             background-color: transparent;
+//         }
+//     }
+
+//     &.hover {
+//     	tr:hover {
+//     		background-color: darken($color-gray-light, 5%);
+//     	}
+//     }
+
+// 	&%dark {
+// 		thead {
+// 			background-color: $color-light;
+// 		}
+
+// 		tfoot {
+// 			background-color: $color-light;
+// 		}
+
+// 		tbody {
+// 			background-color: $color-light;
+// 		}
+// 	}
+// }

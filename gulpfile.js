@@ -8,15 +8,18 @@ var highlight = require('gulp-highlight');
 var prompt = require('gulp-prompt');
 var concat = require('gulp-concat');
 var wrap = require('gulp-wrap');
+var replace = require('gulp-replace');
 
 // Non-gulp requires
 var _ = require('lodash');
 var fs = require('fs');
+var marked = require('marked');
+var renderer = new marked.Renderer();
 
 gulp.task('build', ['scss']);
 
 gulp.task('scss', function() {
-    gulp.src('scss/cadenza.scss')
+    gulp.src('scss/*.scss')
         .pipe(sass({
             style: 'expanded'
         }))
@@ -28,19 +31,34 @@ gulp.task('scss', function() {
 
 gulp.task('docs', function() {
     var docsDir = './docs/source/';
-    var components = fs.readdirSync(docsDir).filter(function(file) {
-        return fs.statSync(docsDir + file).isDirectory();
-    });
 
-    _.each(components, function(component) {    
-        gulp.src(docsDir + component + '/*.md')
-            .pipe(markdown())
+    var modules = getDirectories(docsDir);
+
+    _.each(modules, function(module) {
+        gulp.src(docsDir + module + '/*.md')
+            .pipe(markdown({
+                renderer: renderer
+            }))
+            .pipe(replace(/\[\[([^\/].*?)\]\]/g, '<div class="cz-$1">\n'))
+            .pipe(replace(/\[\[\/(.*?)\]\]/g, '</div>\n'))
             .pipe(wrap("<article>\n${ contents }</article>\n"))
-            .pipe(concat(component + '.html'))
+            .pipe(concat(module + '.html'))
             .pipe(highlight())
             .pipe(gulp.dest('docs/build'));
     });
+
+    function getDirectories(dir) {
+        return fs.readdirSync(dir).filter(function(file) {
+            return fs.statSync(dir + '/' + file).isDirectory();
+        });
+    }
 });
+
+renderer.paragraph = function(text) {
+    if (/^\[.*\]$/.test(text)) return text;
+
+    return '<p>' + text + '</p>\n';
+};
 
 gulp.task('component', function() {
     gulp.src('app.js')

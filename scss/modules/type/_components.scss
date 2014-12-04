@@ -104,11 +104,11 @@
 
 // Body Copy
 // ---------
-%body-type {
+%base-type {
+    font-size: $type-base-font-size;
 	font-style: normal;
     text-rendering: optimizeLegibility;
     word-wrap: break-word;
-
     hyphens: auto;
 }
 

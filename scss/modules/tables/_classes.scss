@@ -3,15 +3,20 @@
 // ==============
 
 // Table Classes
-table { 
-	@include table-style();
-	@extend %table; 
+@include export('table') {
+    table { 
+    	@include style('table');
 
-	&.horizontal { @extend %table-horizontal; }
+        &.striped { @include style('table', 'striped'); }
+        
+    	@extend %table; 
 
-	&.vertical { @extend %table-vertical; }
+    	&.horizontal { @extend %table-horizontal; }
 
-	&.condensed { @extend %table-condensed; }
+    	&.vertical { @extend %table-vertical; }
+
+    	&.condensed { @extend %table-condensed; }
+    }
 }
 
 .table-responsive { @extend %table-responsive; }

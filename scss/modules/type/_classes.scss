@@ -68,7 +68,7 @@ h1, h2, h3, h4, h5, h6, #{prefixed-class('h')} {
 
 // Body Copy
 // ---------
-body { @extend %body-type; }
+html { @extend %base-type; }
 
 *, p, li, span {
 	@extend %text;
