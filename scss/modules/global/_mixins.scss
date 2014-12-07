@@ -10,9 +10,26 @@
     }
 }
 
-@mixin export($name, $environment: all) {
-    @include environment($environment) {
-        @content;
+@mixin export($name) {
+    $import-environment: all;
+    $import-component: false;
+
+    @if type-of($components) == string
+        and index(('all', $name), $components) {
+        $import-component: true;
+    } @else if type-of($components) == list {
+        $import-component: if(index($components, $name), true, false);
+    } @else if type-of($components) == map {
+        $import-environment: map-get($components, $name);
+        $import-component: if($import-environment, true, false);
+    }
+
+    $environment: if($import-environment, $import-environment, all);
+
+    @if $import-component {    
+        @include environment($import-environment) {
+            @content;
+        }
     }
 }
 

@@ -285,9 +285,10 @@
 // Preformatted Text
 // -----------------
 %pre {
-	white-space: pre;
     @include type-scale($type-pre-scale);
+    white-space: pre;
     font-family: $type-pre-font-family;
+    margin: $type-pre-margin;
 
     %code {
         word-wrap: normal;

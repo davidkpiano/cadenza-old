@@ -4,7 +4,7 @@
 
 // Global Settings
 $environment: development !default;
-$themes: ();
+$components: ('column', 'row');
 
 // Asset Settings
 $base-asset-path: '../bower_components' !default;
