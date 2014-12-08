@@ -7,20 +7,20 @@
     "express": "3.x"
   },
   "devDependencies": {
+    "fs": "0.0.2",
     "gulp": "^3.6.0",
-    "gulp-ruby-sass": "^0.4.1",
-    "gulp-notify": "^1.2.5",
     "gulp-compass": "^1.1.8",
+    "gulp-concat": "^2.4.2",
+    "gulp-highlight": "0.0.3",
     "gulp-livereload": "^1.2.0",
     "gulp-markdown": "^1.0.0",
-    "gulp-highlight": "0.0.3",
+    "gulp-notify": "^1.2.5",
     "gulp-prompt": "^0.1.1",
-    "fs": "0.0.2",
-    "lodash": "^2.4.1",
-    "gulp-concat": "^2.4.2",
-    "gulp-wrap": "^0.5.0",
-    "marked": "^0.3.2",
     "gulp-replace": "^0.5.0",
-    "gulp-sassdoc": "^1.1.1"
+    "gulp-ruby-sass": "^0.4.1",
+    "gulp-sassdoc": "^1.1.1",
+    "gulp-wrap": "^0.5.0",
+    "lodash": "^2.4.1",
+    "marked": "^0.3.2"
   }
 }

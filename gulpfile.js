@@ -19,7 +19,7 @@ var renderer = new marked.Renderer();
 
 gulp.task('build', ['scss']);
 
-gulp.task('scss', function() {
+gulp.task('scss', ['sassdoc'], function() {
     gulp.src('scss/*.scss')
         .pipe(sass({
             style: 'expanded'
@@ -31,9 +31,10 @@ gulp.task('scss', function() {
 });
 
 gulp.task('sassdoc', function() {
-    gulp.src('scss/**/*.scss')
+    gulp.src('scss')
         .pipe(sassdoc({
-            'dest': 'docs/build/scss'
+            'dest': 'docs/scss',
+            'verbose': true
         }));
 });
 

@@ -1,5 +1,9 @@
-$color-primary: darken(#66bbee, 5%);
-$button-text-transform: none;
+/// 
+/// Cadenza Module
+/// Contains column, row, and stack components.
+/// @group module
+/// @author David Khourshid
+/// 
 
 @charset "UTF-8";
 
@@ -51,12 +55,6 @@ $button-text-transform: none;
 
 
 // DELETE EVERYTHING BELOW THIS
-
-// #{prefixed-class('lp')} {
-//     @extend %square-large;
-//     @extend %background-darken;
-//     display: inline-block;
-// }
 
 // Documentation styles
 
