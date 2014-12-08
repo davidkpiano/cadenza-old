@@ -9,6 +9,7 @@ var prompt = require('gulp-prompt');
 var concat = require('gulp-concat');
 var wrap = require('gulp-wrap');
 var replace = require('gulp-replace');
+var sassdoc = require('gulp-sassdoc');
 
 // Non-gulp requires
 var _ = require('lodash');
@@ -27,6 +28,13 @@ gulp.task('scss', function() {
             browsers: ['last 2 versions', 'IE 9']
         }))
         .pipe(gulp.dest('css'));
+});
+
+gulp.task('sassdoc', function() {
+    gulp.src('scss/**/*.scss')
+        .pipe(sassdoc({
+            'dest': 'docs/build/scss'
+        }));
 });
 
 gulp.task('docs', function() {
