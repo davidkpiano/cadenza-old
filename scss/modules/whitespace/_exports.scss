@@ -1,0 +1,19 @@
+
+
+// Content Classes
+.content { @extend %content; }
+.pad { @extend %pad; }
+.pad-vertical { @extend %pad-vertical; }
+.pad-horizontal { @extend %pad-horizontal; }
+
+.pad-half { @extend %pad-half; }
+.pad-vertical-half { @extend %pad-vertical-half; }
+.pad-horizontal-half { @extend %pad-horizontal-half; }
+
+.pad-double { @extend %pad-double; }
+.pad-vertical-double { @extend %pad-vertical-double; }
+.pad-horizontal-double { @extend %pad-horizontal-double; }
+
+.no-pad, .pad-none { @extend %pad-none; }
+.pad-vertical-none { @extend %pad-vertical-none; }
+.pad-horizontal-none { @extend %pad-horizontal-none; }

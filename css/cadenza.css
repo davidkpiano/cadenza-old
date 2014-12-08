@@ -10,6 +10,62 @@
   position: relative;
 }
 
+.content, .all-content > *, .pad {
+  padding: 1rem !important;
+}
+
+.pad-vertical {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pad-horizontal {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.pad-half {
+  padding: 0.5rem;
+}
+
+.pad-vertical-half {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.pad-horizontal-half {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.pad-double, .cz-content, .cz-code {
+  padding: 2rem;
+}
+
+.pad-vertical-double {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pad-horizontal-double {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.no-pad, .pad-none {
+  padding: 0 !important;
+}
+
+.pad-vertical-none {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.pad-horizontal-none {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
 .position, [class*=" position-"], [class^="position-"], .ratio > *, [class*=" ratio-"] > *, [class^="ratio-"] > *, .layer, .page, .parallax-layer > span, .valign-bottom, .full, .dropdown-container > menu.below-left, .dropdown-container > menu.below-right, .dropdown-container > menu.above-left, .dropdown-container > menu.above-right, .dropdown-container > menu.top-left, .dropdown-container > menu.top-right, .dropdown-container > menu.bottom-left, .dropdown-container > menu.bottom-right, .dropdown-container > menu.bottom-push-right, .dropdown-container > menu.bottom-push-left, .dropdown-container > menu.top-push-right, .dropdown-container > menu.top-push-left, .badge.top-left, .badge.top-right, .badge.bottom-left, .badge.bottom-right, .tooltip-above-left:before, .tooltip-above-left:after, .tooltip-above-right:before, .tooltip-above-right:after, .tooltip-above-center:before, .tooltip-above-center:after, .tooltip-below-left:before, .tooltip-below-left:after, .tooltip-below-right:before, .tooltip-below-right:after, .tooltip-below-center:before, .tooltip-below-center:after, .tooltip-left:before, .tooltip-left:after, .tooltip-right:before, .tooltip-right:after, .alert .alert-exit, .modal, .toaster {
   position: absolute !important;
 }
@@ -3305,62 +3361,6 @@
 
 .border-failure, .borders-failure > * {
   border-color: #C44741;
-}
-
-.content, .all-content > *, .pad {
-  padding: 16px !important;
-}
-
-.pad-vertical {
-  padding-top: 16px;
-  padding-bottom: 16px;
-}
-
-.pad-horizontal {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.pad-half {
-  padding: 8px;
-}
-
-.pad-vertical-half {
-  padding-top: 8px;
-  padding-bottom: 8px;
-}
-
-.pad-horizontal-half {
-  padding-left: 8px;
-  padding-right: 8px;
-}
-
-.pad-double, .cz-content, .cz-code {
-  padding: 32px;
-}
-
-.pad-vertical-double {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.pad-horizontal-double {
-  padding-left: 32px;
-  padding-right: 32px;
-}
-
-.no-pad, .pad-none {
-  padding: 0 !important;
-}
-
-.pad-vertical-none {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
-
-.pad-horizontal-none {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
 }
 
 .col, [class*=" col-"], [class^="col-"], .cols > *, [class*=" cols-"] > *, [class^="cols-"] > *, .cz-content, .cz-code {

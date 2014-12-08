@@ -2,63 +2,6 @@
 // Grid Components
 // ===============
 
-/// Content
-%content, %pad {
-    padding: $grid-content-padding !important;
-}
-
-%pad-vertical {
-    padding-top: $grid-content-padding;
-    padding-bottom: $grid-content-padding;
-}
-
-%pad-horizontal {
-    padding-left: $grid-content-padding;
-    padding-right: $grid-content-padding;
-}
-
-%pad-half {
-	padding: $grid-content-padding-half;
-}
-
-%pad-vertical-half {
-    padding-top: $grid-content-padding-half;
-    padding-bottom: $grid-content-padding-half;
-}
-
-%pad-horizontal-half {
-    padding-left: $grid-content-padding-half;
-    padding-right: $grid-content-padding-half;
-}
-
-%pad-double {
-	padding: $grid-content-padding-double;
-}
-
-%pad-vertical-double {
-    padding-top: $grid-content-padding-double;
-    padding-bottom: $grid-content-padding-double;
-}
-
-%pad-horizontal-double {
-    padding-left: $grid-content-padding-double;
-    padding-right: $grid-content-padding-double;
-}
-
-%pad-none {
-	padding: 0 !important;
-}
-
-%pad-vertical-none {
-	padding-top: 0 !important;
-	padding-bottom: 0 !important;
-}
-
-%pad-horizontal-none {
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-}
-
 // Shared Grid Components
 %grid { @include _grid(); }
 

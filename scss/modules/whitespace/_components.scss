@@ -1,0 +1,56 @@
+
+%content, %pad {
+    padding: $whitespace-padding !important;
+}
+
+%pad-vertical {
+    padding-top: $whitespace-padding;
+    padding-bottom: $whitespace-padding;
+}
+
+%pad-horizontal {
+    padding-left: $whitespace-padding;
+    padding-right: $whitespace-padding;
+}
+
+%pad-half {
+    padding: $whitespace-padding-half;
+}
+
+%pad-vertical-half {
+    padding-top: $whitespace-padding-half;
+    padding-bottom: $whitespace-padding-half;
+}
+
+%pad-horizontal-half {
+    padding-left: $whitespace-padding-half;
+    padding-right: $whitespace-padding-half;
+}
+
+%pad-double {
+    padding: $whitespace-padding-double;
+}
+
+%pad-vertical-double {
+    padding-top: $whitespace-padding-double;
+    padding-bottom: $whitespace-padding-double;
+}
+
+%pad-horizontal-double {
+    padding-left: $whitespace-padding-double;
+    padding-right: $whitespace-padding-double;
+}
+
+%pad-none {
+    padding: 0 !important;
+}
+
+%pad-vertical-none {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+%pad-horizontal-none {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
