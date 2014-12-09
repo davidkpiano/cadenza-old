@@ -18,6 +18,13 @@
 
 
 <div class="cz-content">
+<h3 id="the-12-column-grid">The 12-Column Grid</h3>
+<p>A column can be defined as spanning from 0 to 12 columns on a 12-column grid via:</p>
+<ul>
+<li>class: <code><span class="hljs-class">.col-</span><span class="hljs-attr_selector">[n]</span></code></li>
+<li>placeholder: <code><span class="hljs-tag">%<span class="hljs-title">column</span></span>-[n]</code></li>
+<li>mixin: <code>@mixin column([n], <span class="hljs-keyword">...</span>)</code></li>
+</ul>
 <h3 id="no-gutter">No Gutter</h3>
 <div class="row-1 field text-center small" ng-repeat="col_width in [12,6,4,3,2,1]">
     <div ng-repeat="col in component.util.range(12/col_width)" class="border-primary col-{{col_width}}">col-{{col_width}}</div>
@@ -40,6 +47,12 @@
 </li></ul></div>
 
 
+</article>
+
+<article>
+<div class="cz-content">
+<h2 id="flex-grid">Flex Grid</h2>
+</div>
 </article>
 
 <article>

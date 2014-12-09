@@ -3363,6 +3363,14 @@
   border-color: #C44741;
 }
 
+.cols:before, [class*=" cols-"]:before, [class^="cols-"]:before, .cols:after, [class*=" cols-"]:after, [class^="cols-"]:after {
+  content: " ";
+  display: table;
+}
+.cols:after, [class*=" cols-"]:after, [class^="cols-"]:after {
+  clear: both;
+}
+
 .col, [class*=" col-"], [class^="col-"], .cols > *, [class*=" cols-"] > *, [class^="cols-"] > *, .cz-content, .cz-code {
   box-sizing: border-box;
   margin: 0;
@@ -3377,14 +3385,6 @@
   display: table;
 }
 .col:after, [class*=" col-"]:after, [class^="col-"]:after, .cols > :after, [class*=" cols-"] > :after, [class^="cols-"] > :after, .cz-content:after, .cz-code:after {
-  clear: both;
-}
-
-.cols:before, [class*=" cols-"]:before, [class^="cols-"]:before, .cols:after, [class*=" cols-"]:after, [class^="cols-"]:after {
-  content: " ";
-  display: table;
-}
-.cols:after, [class*=" cols-"]:after, [class^="cols-"]:after {
   clear: both;
 }
 
@@ -8149,7 +8149,7 @@
 }
 
 @media only screen and (max-width: 47.9375em) {
-  .stack-small, .all-stack-small > * {
+  .stack-small, .all-stack-small > *, .cz-content, .cz-code {
     display: block;
     float: none;
     width: 100% !important;
@@ -8676,6 +8676,7 @@ h6.double, .h-6.double {
 html {
   font-size: 14px;
   font-style: normal;
+  font-weight: 300;
   text-rendering: optimizeLegibility;
   word-wrap: break-word;
   -webkit-hyphens: auto;

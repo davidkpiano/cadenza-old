@@ -107,6 +107,7 @@
 %base-type {
     font-size: $type-base-font-size;
 	font-style: normal;
+    font-weight: $type-base-font-weight;
     text-rendering: optimizeLegibility;
     word-wrap: break-word;
     hyphens: auto;
@@ -120,7 +121,7 @@
     line-height: $type-p-line-height;
     font-weight: $type-p-font-weight;
 
-	&%lead { @include type-scale($type-p-lead-scale); }
+	&-lead { @include type-scale($type-p-lead-scale); }
 }
 
 %small {

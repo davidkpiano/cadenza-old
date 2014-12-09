@@ -1,9 +1,12 @@
-//
-// Grid Classes
-// ============
+////
+/// Grid Exports
+/// @group grid
+/// @author David Khourshid
+////
 
 // Horizontal Grid Classes
 @include export('column') {
+	/// Column selector
 	#{prefixed-class('col')}, #{prefixed-class('cols', $selector: ' > *')} {
 		@extend %column;
 	}

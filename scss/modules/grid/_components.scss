@@ -3,11 +3,9 @@
 // ===============
 
 // Shared Grid Components
-%grid { @include _grid(); }
+%grid { @include grid(); }
 
 // Horizontal Grid Components
-%column { @include _column(); }
-
 %columns { @include clearfix; }
 
 @for $i from 1 through $grid-columns {
@@ -22,13 +20,16 @@
 	$grid-row-fractions: map_merge($grid-row-fractions, ($i: ($i, $grid-rows))) !global;
 }
 
-@function round-dcr($num) {
-	@return round($num);
-}
-
 @each $mq in $grid-column-mqs {
 	@include mq($mq) {
 		$suffix: if($mq == 'all', '', -#{$mq});
+
+		%column#{$suffix} {
+			@include grid(block);
+			float: left;
+			clear: none;
+			height: 100%;
+		}
 
 		@each $fraction-key, $fraction-value in $grid-column-fractions {
 			$is-named-fraction: type_of($fraction-key) == string;
@@ -49,7 +50,10 @@
 
 			} @else {
 				%column-#{$fraction-key}#{$suffix} {
-					@include column($fraction-value);
+					@include column(
+						$fraction-value,
+						$extend: false
+					);
 				}
 
 				%column-offset-#{$fraction-key}#{$suffix} {
@@ -57,7 +61,11 @@
 				}
 
 				%column-gutter-#{$fraction-key}#{$suffix} {
-					@include column($fraction-value, $gutter: $grid-column-gutter);
+					@include column(
+						$fraction-value,
+						$gutter: $grid-column-gutter,
+						$extend: false
+					);
 				}
 
 				%column-gutter-offset-#{$fraction-key}#{$suffix} {

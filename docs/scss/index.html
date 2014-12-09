@@ -34,9 +34,48 @@
 <div class="sidebar__body">
   
   
-    <p class="sidebar__item  sidebar__item--heading">No documented item.</p>
+    <button type="button" class="btn-toggle  js-btn-toggle" data-alt="Open all">Close all</button>
 
-  
+    
+    
+      <p class="sidebar__item  sidebar__item--heading" data-slug="grid"><a href="#grid">grid</a></p>
+
+      
+      
+        <div>
+
+        
+        
+
+        
+        
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="grid-mixin"><a href="#grid-mixin">mixins</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="grid" data-type="mixin">
+              <a href="#mixin-grid">grid
+              
+              
+              </a>
+            </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="column" data-type="mixin">
+              <a href="#mixin-column">column
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        </div>
+      
+
+    
   
 </div>
 
@@ -72,11 +111,491 @@
 
   
   
-    <section class="main__section">
-      <h2 class="main__heading">Seems like nothing has been documented yet!</h2>
-    </section>
+
+    
+    
+      <section class="main__section">
+        <h1 class="main__heading" id="grid">grid</h1>
+
+        
+        
+
+          
+          
+
+          
+          
+            <section class="main__sub-section" id="grid-mixin">
+              <h2 class="main__heading--secondary">mixins</h2>
+
+              
+              
+                <section class="main__item  item" id="mixin-grid">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-grid">grid</a>
 
   
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin grid($display: block) { 
+	box-sizing: border-box;
+	@include clearfix;
+
+	margin: 0;
+	display: $display;
+	position: relative;
+ }"
+    data-collapsed="@mixin grid($display: block) { ... }"><code>@mixin grid($display: block) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Grid Component Mixin</p>
+<p>Defines a grid element in the grid system.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$display</code></th>
+          <td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            <code>block</code>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>David Khourshid</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-column">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-column">column</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin column($columns, $media, $offset, $gutter, $extend: true) { 
+	@include mq($media) {
+		@if $extend {
+			@at-root (without: media) {
+				@extend %column;
+			}
+		}
+
+		@if $columns {
+			width: grid-span(
+					$columns,
+					$gutter: $gutter
+				) !important;
+		}
+
+		@if $gutter {
+			&amp;:not(:last-child) {
+				margin-right: $gutter;
+			}
+		}
+
+		@if $offset {
+			margin-left: grid-span(
+					$columns,
+					$gutter: $grid-column-gutter
+				);
+		}
+	}
+ }"
+    data-collapsed="@mixin column($columns, $media, $offset, $gutter, $extend: true) { ... }"><code>@mixin column($columns, $media, $offset, $gutter, $extend: true) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Creates a column grid component.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$columns</code></th>
+          <td data-label="desc"><p>width span of column, passed to <code>grid-span</code> function</p>
+</td>
+          <td data-label="type">
+          
+            Number, List, String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$media</code></th>
+          <td data-label="desc"><p>media query passed to <code>mq</code> mixin</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$offset</code></th>
+          <td data-label="desc"><p>offset width span of column, passed to <code>grid-span</code> function</p>
+</td>
+          <td data-label="type">
+          
+            Number, List, String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$gutter</code></th>
+          <td data-label="desc"><p>inner gutter width between adjacent columns</p>
+</td>
+          <td data-label="type">
+          
+            Number, Boolean
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$extend</code></th>
+          <td data-label="desc"><p>extend %column outside of media queries?</p>
+</td>
+          <td data-label="type">
+          
+            Boolean
+          
+          </td>
+          <td data-label="default">
+          
+            <code>true</code>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>David Khourshid</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+            </section>
+          
+        
+
+      </section>
+    
+
   
 
 

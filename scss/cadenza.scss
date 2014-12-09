@@ -62,6 +62,7 @@
 .cz-content {
     @extend %column;
     @include column(7);
+    @extend %stack-small;
     @extend %pad-double;
     clear: left;
 }
@@ -70,6 +71,7 @@
     @extend .mode-light;
     @extend %column;
     @include column(5);
+    @extend %stack-small;
     @extend %pad-double;
     clear: right;
 }

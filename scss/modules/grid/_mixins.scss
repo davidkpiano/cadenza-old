@@ -1,11 +1,14 @@
-//
-// Grid Mixins and Functions
-// =========================
+////
+/// Grid Module
+/// @group grid
+/// @author David Khourshid
+////
 
-// Grid Component Mixin
-// 
-// Defines a grid element in the grid system.
-@mixin _grid($display: block) {
+/// Grid Component Mixin
+/// 
+/// Defines a grid element in the grid system.
+/// @param {string} $display (block)
+@mixin grid($display: block) {
 	box-sizing: border-box;
 	@include clearfix;
 
@@ -14,44 +17,54 @@
 	position: relative;
 }
 
-// Column Component Mixin
-// 
-// Defines a column in the grid system.
-@mixin _column($display: block) {
-	@include _grid($display);
-	float: left;
-	clear: none;
-	height: 100%;
-}
-
 // Row Component Mixin
 // 
 // Defines a row in the grid system
 @mixin _row($display: block) {
-	@include _grid($display);
+	@include grid($display);
 	width: 100%;
 	// clear: both;
 }
 
-// Column Mixin
-// 
-// Generates a column with the given width
-// @param (int) $columns
-// @param (str) $media
-// @param (int) $offset
-// @param (str) $position
+/// Creates a column grid component.
+/// 
+/// @param {number | list | string} $columns - width span of column, passed to `grid-span` function
+/// @param {string} $media - media query passed to `mq` mixin
+/// @param {number | list | string} $offset - offset width span of column, passed to `grid-span` function
+/// @param {number | boolean} $gutter - inner gutter width between adjacent columns
+/// @param {boolean} $extend (true) - extend %column outside of media queries?
 @mixin column(
 	$columns,
-	$media: false, 
-	$offset: false, 
-	$position: false,
-	$gutter: false
+	$media: all, 
+	$offset: false,
+	$gutter: false,
+	$extend: true
 ) {
 	@include mq($media) {
-		width: column-width($columns, $gutter: $gutter) !important;
+		@if $extend {
+			@at-root (without: media) {
+				@extend %column;
+			}
+		}
+
+		@if $columns {
+			width: grid-span(
+					$columns,
+					$gutter: $gutter
+				) !important;
+		}
 
 		@if $gutter {
-			&:not(:last-child) { margin-right: $gutter; }
+			&:not(:last-child) {
+				margin-right: $gutter;
+			}
+		}
+
+		@if $offset {
+			margin-left: grid-span(
+					$columns,
+					$gutter: $grid-column-gutter
+				);
 		}
 	}
 }

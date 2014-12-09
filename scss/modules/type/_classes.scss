@@ -86,7 +86,7 @@ html { @extend %base-type; }
 p {
 	@extend %paragraph;
 
-	&.lead { @extend %lead; } // %paragraph > %lead
+	&.lead { @extend %paragraph-lead; }
 }
 
 small, .small { @extend %small; }

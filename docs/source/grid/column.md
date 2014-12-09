@@ -20,6 +20,14 @@ $grid-column-mqs: (all, small, medium, large);
 [[/]]
 
 [[content]]
+### The 12-Column Grid
+
+A column can be defined as spanning from 0 to 12 columns on a 12-column grid via:
+
+- class: `.col-[n]`
+- placeholder: `%column-[n]`
+- mixin: `@mixin column([n], ...)`
+
 ### No Gutter
 <div class="row-1 field text-center small" ng-repeat="col_width in [12,6,4,3,2,1]">
     <div ng-repeat="col in component.util.range(12/col_width)" class="border-primary col-{{col_width}}">col-{{col_width}}</div>
