@@ -7,23 +7,15 @@
 /// Grid Component Mixin
 /// 
 /// Defines a grid element in the grid system.
-/// @param {string} $display (block)
-@mixin grid($display: block) {
-	box-sizing: border-box;
+/// @param {string} $display (block) - `block` or `table-cell`
+@mixin grid(
+	$display: block
+) {
 	@include clearfix;
-
+	box-sizing: border-box;
 	margin: 0;
 	display: $display;
 	position: relative;
-}
-
-// Row Component Mixin
-// 
-// Defines a row in the grid system
-@mixin _row($display: block) {
-	@include grid($display);
-	width: 100%;
-	// clear: both;
 }
 
 /// Creates a column grid component.
@@ -41,11 +33,7 @@
 	$extend: true
 ) {
 	@include mq($media) {
-		@if $extend {
-			@at-root (without: media) {
-				@extend %column;
-			}
-		}
+		@include media-extend('%column', $extend);
 
 		@if $columns {
 			width: grid-span(
@@ -117,21 +105,25 @@
 	}
 }
 
-// Row Mixin
-// 
-// Generates a row with the given height
-// @param (int) $rows
-// @param (str) $media
-// @param (int) $offset
-// @param (str) $position
+/// Creates a row grid component.
+/// 
+/// @todo implement `$offset`
+/// 
+/// @param {number | list | string} $rows - height span of row, passed to `grid-span` function
+/// @param {string} $media - media query passed to `mq` mixin
+/// @param {number | list | string} $offset - offset height span of row, passed to `grid-span` function
+/// @param {number | boolean} $gutter - inner gutter height between adjacent rows
+/// @param {boolean} $extend (true) - extend %row outside of media queries?
 @mixin row(
 	$rows,
-	$media: false,
+	$media: all,
 	$offset: false,
-	$position: false,
-	$gutter: false
+	$gutter: false,
+	$extend: true
 ) {
 	@include mq($media) {
+		@include media-extend('%row', $extend);
+
 		height: row-height($rows, $gutter: $gutter) !important;
 
 		@if $gutter {

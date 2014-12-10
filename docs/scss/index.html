@@ -69,6 +69,15 @@
               
               </a>
             </li>
+            
+          
+            
+            <li class="sidebar__item  sassdoc__item" data-name="row" data-type="mixin">
+              <a href="#mixin-row">row
+              
+              
+              </a>
+            </li>
             </ul>
           
         
@@ -169,9 +178,8 @@
   <pre class="item__code  item__code--togglable  language-scss"
     data-current-state="collapsed"
     data-expanded="@mixin grid($display: block) { 
-	box-sizing: border-box;
 	@include clearfix;
-
+	box-sizing: border-box;
 	margin: 0;
 	display: $display;
 	position: relative;
@@ -215,7 +223,8 @@
       
         <tr class="item__parameter">
           <th scope="row" data-label="name"><code>$display</code></th>
-          <td data-label="desc">&mdash;<span class="visually-hidden"> none</span></td>
+          <td data-label="desc"><p><code>block</code> or <code>table-cell</code></p>
+</td>
           <td data-label="type">
           
             String
@@ -377,11 +386,7 @@
     data-current-state="collapsed"
     data-expanded="@mixin column($columns, $media, $offset, $gutter, $extend: true) { 
 	@include mq($media) {
-		@if $extend {
-			@at-root (without: media) {
-				@extend %column;
-			}
-		}
+		@include media-extend(&#39;%column&#39;, $extend);
 
 		@if $columns {
 			width: grid-span(
@@ -507,6 +512,280 @@
         <tr class="item__parameter">
           <th scope="row" data-label="name"><code>$extend</code></th>
           <td data-label="desc"><p>extend %column outside of media queries?</p>
+</td>
+          <td data-label="type">
+          
+            Boolean
+          
+          </td>
+          <td data-label="default">
+          
+            <code>true</code>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>David Khourshid</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+                <section class="main__item  item" id="mixin-row">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#mixin-row">row</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@mixin row($rows, $media, $offset, $gutter, $extend: true) { 
+	@include mq($media) {
+		@include media-extend(&#39;%row&#39;, $extend);
+
+		height: row-height($rows, $gutter: $gutter) !important;
+
+		@if $gutter {
+			margin-bottom: $gutter;
+		}
+	}
+ }"
+    data-collapsed="@mixin row($rows, $media, $offset, $gutter, $extend: true) { ... }"><code>@mixin row($rows, $media, $offset, $gutter, $extend: true) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Creates a row grid component.</p>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$rows</code></th>
+          <td data-label="desc"><p>height span of row, passed to <code>grid-span</code> function</p>
+</td>
+          <td data-label="type">
+          
+            Number, List, String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$media</code></th>
+          <td data-label="desc"><p>media query passed to <code>mq</code> mixin</p>
+</td>
+          <td data-label="type">
+          
+            String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$offset</code></th>
+          <td data-label="desc"><p>offset height span of row, passed to <code>grid-span</code> function</p>
+</td>
+          <td data-label="type">
+          
+            Number, List, String
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$gutter</code></th>
+          <td data-label="desc"><p>inner gutter height between adjacent rows</p>
+</td>
+          <td data-label="type">
+          
+            Number, Boolean
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$extend</code></th>
+          <td data-label="desc"><p>extend %row outside of media queries?</p>
 </td>
           <td data-label="type">
           

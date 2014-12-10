@@ -33,6 +33,17 @@
     }
 }
 
+@mixin media-extend(
+    $selector,
+    $extend: true
+) {
+    @if $extend {
+        @at-root (without: media) {
+            @extend #{$selector};
+        }
+    }
+}
+
 @mixin theme($color) {
     @include foreground-color($color);
 

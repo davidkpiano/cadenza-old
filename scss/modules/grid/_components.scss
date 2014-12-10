@@ -158,12 +158,16 @@
 }
 
 // Vertical Grid Components
-%row { @include _row(); }
 
 @each $mq in $grid-row-mqs {
 	@include mq($mq) {
 		$suffix: -#{$mq};
 		@if $mq == 'all' { $suffix: ''; }
+
+		%row#{$suffix} {
+			@include grid(block);
+			width: 100%;
+		}
 
 		@each $fraction-key, $fraction-value in $grid-row-fractions {
 			$is-named-fraction: type_of($fraction-key) == string;
@@ -182,12 +186,21 @@
 
 				%row-pull-#{$fraction-key}#{$suffix} { @extend %row-pull-#{fraction-value($fraction-value, $grid-rows)}#{$suffix}; }
 			} @else {
-				%row-#{$fraction-key}#{$suffix} { @include row($fraction-value); }
+				%row-#{$fraction-key}#{$suffix} {
+					@include row(
+						$fraction-value,
+						$extend: false
+					);
+				}
 
 				// %row-offset-#{$fraction-key}#{$suffix} { margin-left: row-offset-width($fraction-value); }
 
 				%row-gutter-#{$fraction-key}#{$suffix} {
-					@include row($fraction-value, $gutter: $grid-row-gutter);
+					@include row(
+						$fraction-value,
+						$gutter: $grid-row-gutter,
+						$extend: false
+					);
 				}
 
 				// %row-gutter-offset#{$fraction-key}#{$suffix} {
