@@ -115,51 +115,6 @@
     @return 1 / fraction-value($fraction);
 }
 
-@function grid-span(
-    $span,
-    $gutter: false
-) {
-    $numerator: 1;
-    $denominator: 1;
-
-    @if type_of($span) == list {
-        $numerator: nth($span, 1);
-        $denominator: nth($span, 2);
-    } @else if $span == auto or index(('%', 'px', 'em', 'rem'), unit($span)) {
-        @return $span;
-    } @else if round($span) == $span and unit($span) == '' and $span > 0 {
-        $numerator: $span;
-        $denominator: $grid-columns;
-    } @else {
-        @return percentage($span);
-    }
-
-    @if $gutter {        
-        @return calc(#{$numerator} * ((100% - #{$gutter * ($denominator - 1)}) / #{$denominator}) + (#{($numerator - 1) * $gutter}));
-    } @else {
-        @return percentage($numerator / $denominator);
-    }
-}
-
-@function column-width(
-    $columns,
-    $gutter: false
-) {
-    @return grid-span($columns, $gutter);
-}
-
-@function column-offset-width(
-    $columns,
-    $gutter: false
-) {
-    @return grid-span($columns, $gutter);
-}
-
-@function row-height($rows...) {
-    // This is (currently) the same result as column-width
-    @return column-width($rows...);
-}
-
 @function pow($number, $exp) {
     $value: 1;
     

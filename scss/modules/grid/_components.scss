@@ -57,7 +57,7 @@
 				}
 
 				%column-offset-#{$fraction-key}#{$suffix} {
-					margin-left: column-offset-width($fraction-value);
+					margin-left: grid-span($fraction-value);
 				}
 
 				%column-gutter-#{$fraction-key}#{$suffix} {
@@ -69,17 +69,17 @@
 				}
 
 				%column-gutter-offset-#{$fraction-key}#{$suffix} {
-					margin-left: column-offset-width($fraction-value, $gutter: $grid-column-gutter);
+					margin-left: grid-span($fraction-value, $gutter: $grid-column-gutter);
 				}
 
 				%column-push-#{$fraction-key}#{$suffix} {
 					@if $fraction-value == 0 { left: auto; }
-					@else { left: column-width($fraction-value); }
+					@else { left: grid-span($fraction-value); }
 				}
 
 				%column-pull-#{$fraction-key}#{$suffix} {
 					@if $fraction-value == 0 { right: auto; }
-					@else { right: column-width($fraction-value); }
+					@else { right: grid-span($fraction-value); }
 				}
 			}
 

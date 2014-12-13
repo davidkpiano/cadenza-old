@@ -14600,13 +14600,13 @@ img.full-height {
 .drawer-left, .drawer-left:hover {
   position: absolute !important;
   margin: 0;
-  width: 15rem !important;
-  height: 100% !important;
+  width: column-width(15rem) !important;
+  height: row-height(100%) !important;
 }
 .drawer-left:hover ~ * {
-  -webkit-transform: translateX(calc(15rem - 3rem));
-      -ms-transform: translateX(calc(15rem - 3rem));
-          transform: translateX(calc(15rem - 3rem));
+  -webkit-transform: translateX(calc(column-width(15rem) - 3rem));
+      -ms-transform: translateX(calc(column-width(15rem) - 3rem));
+          transform: translateX(calc(column-width(15rem) - 3rem));
 }
 .drawer-left + * {
   max-width: calc(100% - 3rem);
@@ -14616,13 +14616,13 @@ img.full-height {
   .drawer-left-small, .drawer-left-small:hover {
     position: absolute !important;
     margin: 0;
-    width: 83.33333% !important;
-    height: 100% !important;
+    width: column-width(column-width(10)) !important;
+    height: row-height(100%) !important;
   }
   .drawer-left-small:hover ~ * {
-    -webkit-transform: translateX(calc(83.33333% - 3rem));
-        -ms-transform: translateX(calc(83.33333% - 3rem));
-            transform: translateX(calc(83.33333% - 3rem));
+    -webkit-transform: translateX(calc(column-width(column-width(10)) - 3rem));
+        -ms-transform: translateX(calc(column-width(column-width(10)) - 3rem));
+            transform: translateX(calc(column-width(column-width(10)) - 3rem));
   }
   .drawer-left-small + * {
     max-width: calc(100% - 3rem);
@@ -14633,13 +14633,13 @@ img.full-height {
   .drawer-left-medium, .drawer-left-medium:hover {
     position: absolute !important;
     margin: 0;
-    width: 50% !important;
-    height: 100% !important;
+    width: column-width(column-width(1/2)) !important;
+    height: row-height(100%) !important;
   }
   .drawer-left-medium:hover ~ * {
-    -webkit-transform: translateX(calc(50% - 3rem));
-        -ms-transform: translateX(calc(50% - 3rem));
-            transform: translateX(calc(50% - 3rem));
+    -webkit-transform: translateX(calc(column-width(column-width(1/2)) - 3rem));
+        -ms-transform: translateX(calc(column-width(column-width(1/2)) - 3rem));
+            transform: translateX(calc(column-width(column-width(1/2)) - 3rem));
   }
   .drawer-left-medium + * {
     max-width: calc(100% - 3rem);
@@ -14650,13 +14650,13 @@ img.full-height {
 .drawer-right, .drawer-right:hover {
   position: absolute !important;
   margin: 0;
-  width: 15rem !important;
-  height: 100% !important;
+  width: column-width(15rem) !important;
+  height: row-height(100%) !important;
 }
 .drawer-right:hover ~ * {
-  -webkit-transform: translateX(calc(-15rem + 3rem));
-      -ms-transform: translateX(calc(-15rem + 3rem));
-          transform: translateX(calc(-15rem + 3rem));
+  -webkit-transform: translateX(calc(-column-width(15rem) + 3rem));
+      -ms-transform: translateX(calc(-column-width(15rem) + 3rem));
+          transform: translateX(calc(-column-width(15rem) + 3rem));
 }
 .drawer-right + * {
   max-width: calc(100% - 3rem);
@@ -14666,13 +14666,13 @@ img.full-height {
   .drawer-right-small, .drawer-right-small:hover {
     position: absolute !important;
     margin: 0;
-    width: 83.33333% !important;
-    height: 100% !important;
+    width: column-width(column-width(10)) !important;
+    height: row-height(100%) !important;
   }
   .drawer-right-small:hover ~ * {
-    -webkit-transform: translateX(calc(-83.33333% + 3rem));
-        -ms-transform: translateX(calc(-83.33333% + 3rem));
-            transform: translateX(calc(-83.33333% + 3rem));
+    -webkit-transform: translateX(calc(-column-width(column-width(10)) + 3rem));
+        -ms-transform: translateX(calc(-column-width(column-width(10)) + 3rem));
+            transform: translateX(calc(-column-width(column-width(10)) + 3rem));
   }
   .drawer-right-small + * {
     max-width: calc(100% - 3rem);
@@ -14683,13 +14683,13 @@ img.full-height {
   .drawer-right-medium, .drawer-right-medium:hover {
     position: absolute !important;
     margin: 0;
-    width: 50% !important;
-    height: 100% !important;
+    width: column-width(column-width(1/2)) !important;
+    height: row-height(100%) !important;
   }
   .drawer-right-medium:hover ~ * {
-    -webkit-transform: translateX(calc(-50% + 3rem));
-        -ms-transform: translateX(calc(-50% + 3rem));
-            transform: translateX(calc(-50% + 3rem));
+    -webkit-transform: translateX(calc(-column-width(column-width(1/2)) + 3rem));
+        -ms-transform: translateX(calc(-column-width(column-width(1/2)) + 3rem));
+            transform: translateX(calc(-column-width(column-width(1/2)) + 3rem));
   }
   .drawer-right-medium + * {
     max-width: calc(100% - 3rem);
@@ -14700,13 +14700,13 @@ img.full-height {
 .drawer-top, .drawer-top:hover {
   position: absolute !important;
   margin: 0;
-  width: 100% !important;
-  height: 15rem !important;
+  width: column-width(100%) !important;
+  height: row-height(15rem) !important;
 }
 .drawer-top:hover ~ * {
-  -webkit-transform: translateY(15rem);
-      -ms-transform: translateY(15rem);
-          transform: translateY(15rem);
+  -webkit-transform: translateY(row-height(15rem));
+      -ms-transform: translateY(row-height(15rem));
+          transform: translateY(row-height(15rem));
 }
 .drawer-top + * {
   max-width: calc(100% - 3rem);
@@ -14716,13 +14716,13 @@ img.full-height {
   .drawer-top-small, .drawer-top-small:hover {
     position: absolute !important;
     margin: 0;
-    width: 100% !important;
-    height: 83.33333% !important;
+    width: column-width(100%) !important;
+    height: row-height(row-height(10)) !important;
   }
   .drawer-top-small:hover ~ * {
-    -webkit-transform: translateY(83.33333%);
-        -ms-transform: translateY(83.33333%);
-            transform: translateY(83.33333%);
+    -webkit-transform: translateY(row-height(row-height(10)));
+        -ms-transform: translateY(row-height(row-height(10)));
+            transform: translateY(row-height(row-height(10)));
   }
   .drawer-top-small + * {
     max-width: calc(100% - 3rem);
@@ -14733,13 +14733,13 @@ img.full-height {
   .drawer-top-medium, .drawer-top-medium:hover {
     position: absolute !important;
     margin: 0;
-    width: 100% !important;
-    height: 83.33333% !important;
+    width: column-width(100%) !important;
+    height: row-height(row-height(10)) !important;
   }
   .drawer-top-medium:hover ~ * {
-    -webkit-transform: translateY(83.33333%);
-        -ms-transform: translateY(83.33333%);
-            transform: translateY(83.33333%);
+    -webkit-transform: translateY(row-height(row-height(10)));
+        -ms-transform: translateY(row-height(row-height(10)));
+            transform: translateY(row-height(row-height(10)));
   }
   .drawer-top-medium + * {
     max-width: calc(100% - 3rem);
@@ -14750,13 +14750,13 @@ img.full-height {
 .drawer-bottom, .drawer-bottom:hover {
   position: absolute !important;
   margin: 0;
-  width: 100% !important;
-  height: 15rem !important;
+  width: column-width(100%) !important;
+  height: row-height(15rem) !important;
 }
 .drawer-bottom:hover ~ * {
-  -webkit-transform: translateY(-15rem);
-      -ms-transform: translateY(-15rem);
-          transform: translateY(-15rem);
+  -webkit-transform: translateY(-row-height(15rem));
+      -ms-transform: translateY(-row-height(15rem));
+          transform: translateY(-row-height(15rem));
 }
 .drawer-bottom + * {
   max-width: calc(100% - 3rem);
@@ -14766,13 +14766,13 @@ img.full-height {
   .drawer-bottom-small, .drawer-bottom-small:hover {
     position: absolute !important;
     margin: 0;
-    width: 100% !important;
-    height: 83.33333% !important;
+    width: column-width(100%) !important;
+    height: row-height(row-height(10)) !important;
   }
   .drawer-bottom-small:hover ~ * {
-    -webkit-transform: translateY(-83.33333%);
-        -ms-transform: translateY(-83.33333%);
-            transform: translateY(-83.33333%);
+    -webkit-transform: translateY(-row-height(row-height(10)));
+        -ms-transform: translateY(-row-height(row-height(10)));
+            transform: translateY(-row-height(row-height(10)));
   }
   .drawer-bottom-small + * {
     max-width: calc(100% - 3rem);
@@ -14783,13 +14783,13 @@ img.full-height {
   .drawer-bottom-medium, .drawer-bottom-medium:hover {
     position: absolute !important;
     margin: 0;
-    width: 100% !important;
-    height: 83.33333% !important;
+    width: column-width(100%) !important;
+    height: row-height(row-height(10)) !important;
   }
   .drawer-bottom-medium:hover ~ * {
-    -webkit-transform: translateY(-83.33333%);
-        -ms-transform: translateY(-83.33333%);
-            transform: translateY(-83.33333%);
+    -webkit-transform: translateY(-row-height(row-height(10)));
+        -ms-transform: translateY(-row-height(row-height(10)));
+            transform: translateY(-row-height(row-height(10)));
   }
   .drawer-bottom-medium + * {
     max-width: calc(100% - 3rem);

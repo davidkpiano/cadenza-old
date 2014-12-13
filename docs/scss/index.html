@@ -49,6 +49,29 @@
 
         
         
+          <p class="sidebar__item  sidebar__item--sub-heading" data-slug="grid-function"><a href="#grid-function">functions</a></p>
+
+          
+          
+            <ul class="list-unstyled">
+            <li class="sidebar__item  sassdoc__item" data-name="grid-span" data-type="function">
+              <a href="#function-grid-span">grid-span
+              
+              
+              </a>
+            </li>
+            </ul>
+          
+        
+        
+      
+        
+
+        
+        
+
+        
+        
           <p class="sidebar__item  sidebar__item--sub-heading" data-slug="grid-mixin"><a href="#grid-mixin">mixins</a></p>
 
           
@@ -134,6 +157,294 @@
 
           
           
+            <section class="main__sub-section" id="grid-function">
+              <h2 class="main__heading--secondary">functions</h2>
+
+              
+              
+                <section class="main__item  item" id="function-grid-span">
+
+<h3 class="item__heading">
+  
+
+  <a class="item__name" href="#function-grid-span">grid-span</a>
+
+  
+
+  
+</h3>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+  
+
+  
+    
+  
+
+
+<div class="relative  clear  code--collapsed">
+  <pre class="item__code  item__code--togglable  language-scss"
+    data-current-state="collapsed"
+    data-expanded="@function grid-span($span, $gutter: false, $grid: $grid-columns) { 
+    $numerator: 1;
+    $denominator: 1;
+
+    @if type_of($span) == list {
+        $numerator: nth($span, 1);
+        $denominator: nth($span, 2);
+    } @else if $span == auto or index((&#39;%&#39;, &#39;px&#39;, &#39;em&#39;, &#39;rem&#39;), unit($span)) {
+        @return $span;
+    } @else if round($span) == $span and unit($span) == &#39;&#39; and $span &gt; 0 {
+        $numerator: $span;
+        $denominator: $grid;
+    } @else {
+        @return percentage($span);
+    }
+
+    @if $gutter {        
+        @return calc(#{$numerator} * ((100% - #{$gutter * ($denominator - 1)}) / #{$denominator}) + (#{($numerator - 1) * $gutter}));
+    } @else {
+        @return percentage($numerator / $denominator);
+    }
+ }"
+    data-collapsed="@function grid-span($span, $gutter: false, $grid: $grid-columns) { ... }"><code>@function grid-span($span, $gutter: false, $grid: $grid-columns) { ... }</code></pre>
+
+  
+</div>
+
+
+
+
+
+
+  
+    
+    
+  <h3 class="item__sub-heading">Description</h3>
+
+  <div class="item__description"><p>Determines the span (length) of a grid component. Possible inputs:</p>
+<ul>
+<li><code>{list}</code>: assumed to be a fraction; e.g. <code>$span: (1, 2)</code> represents 1/2</li>
+<li><code>auto</code> or any <code>{number}</code> with unit: passed through and returned as-is</li>
+<li>unitless integer <code>{number}</code>: number of columns in grid system based on <code>$grid-columns</code></li>
+<li>unitless non-integer <code>{number}</code>: converted to percentage</li>
+</ul>
+</div>
+
+
+  
+    
+    <h3 class="item__sub-heading">Parameters</h3>
+
+
+
+  <table class="item__parameters">
+    <thead>
+      <tr>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Name</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Description</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Type</th>
+        <th scope="col"><span class="visually-hidden"> parameter </span>Default value</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$span</code></th>
+          <td data-label="desc"><p>desired span of grid component</p>
+</td>
+          <td data-label="type">
+          
+            List, String, Number
+          
+          </td>
+          <td data-label="default">
+          
+            &mdash;<span class="visually-hidden"> none</span>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$gutter</code></th>
+          <td data-label="desc"><p>calculate with gutter?</p>
+</td>
+          <td data-label="type">
+          
+            Boolean
+          
+          </td>
+          <td data-label="default">
+          
+            <code>false</code>
+          
+          </td>
+        </tr>
+      
+        <tr class="item__parameter">
+          <th scope="row" data-label="name"><code>$grid</code></th>
+          <td data-label="desc"><p>total columns/rows to use in calculating span</p>
+</td>
+          <td data-label="type">
+          
+            Number
+          
+          </td>
+          <td data-label="default">
+          
+            <code>$grid-columns</code>
+          
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+
+
+  
+
+    
+      
+      <h3 class="item__sub-heading">Used by</h3>
+      <ul class="list-unstyled  list-inline">
+    
+
+    <li><a href="#mixin-column"><code>column</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><a href="#mixin-column"><code>column</code></a></li>
+  
+
+
+
+  
+
+    
+
+    <li><a href="#mixin-row"><code>row</code></a></li>
+  
+
+
+
+
+</ul>
+
+
+  
+    
+    
+
+  
+    
+    
+
+
+
+
+  
+    
+    
+
+  
+    
+    
+  
+    
+    
+  <h3 class="item__sub-heading">Author</h3>
+
+  <ul class="list-unstyled">
+    
+      <li><p>David Khourshid</p>
+</li>
+    
+  </ul>
+
+
+  
+
+
+
+</section>
+              
+            </section>
+          
+        
+
+          
+          
+
+          
+          
             <section class="main__sub-section" id="grid-mixin">
               <h2 class="main__heading--secondary">mixins</h2>
 
@@ -199,8 +510,7 @@
     
   <h3 class="item__sub-heading">Description</h3>
 
-  <div class="item__description"><p>Grid Component Mixin</p>
-<p>Defines a grid element in the grid system.</p>
+  <div class="item__description"><p>Creates a grid component - applicable to both rows and columns.</p>
 </div>
 
 
@@ -391,7 +701,8 @@
 		@if $columns {
 			width: grid-span(
 					$columns,
-					$gutter: $gutter
+					$gutter: $gutter,
+					$grid: $grid-columns
 				) !important;
 		}
 
@@ -547,6 +858,38 @@
     
 
 
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li>
+        <a href="#function-grid-span"><code>grid-span</code></a>
+        
+      </li>
+    
+  
+
+
+
+  
+    
+
+    
+      <li>
+        <a href="#function-grid-span"><code>grid-span</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
 
 
   
@@ -566,6 +909,20 @@
     
 
 
+  
+    
+      
+      <h3 class="item__sub-heading">See</h3>
+      <ul class="list-unstyled  list-inline">
+    
+
+    <li><a href="#mixin-grid"><code>grid</code></a></li>
+  
+
+
+
+
+</ul>
 
 
   
@@ -676,7 +1033,11 @@
 	@include mq($media) {
 		@include media-extend(&#39;%row&#39;, $extend);
 
-		height: row-height($rows, $gutter: $gutter) !important;
+		height: grid-span(
+				$rows,
+				$gutter: $gutter,
+				$grid: $grid-rows
+			) !important;
 
 		@if $gutter {
 			margin-bottom: $gutter;
@@ -821,6 +1182,25 @@
     
 
 
+  
+    
+      
+      <h3 class="item__sub-heading">Requires</h3>
+      <ul class="list-unstyled">
+    
+
+    
+      <li>
+        <a href="#function-grid-span"><code>grid-span</code></a>
+        
+      </li>
+    
+  
+
+
+
+
+</ul>
 
 
   
@@ -840,6 +1220,20 @@
     
 
 
+  
+    
+      
+      <h3 class="item__sub-heading">See</h3>
+      <ul class="list-unstyled  list-inline">
+    
+
+    <li><a href="#mixin-grid"><code>grid</code></a></li>
+  
+
+
+
+
+</ul>
 
 
   

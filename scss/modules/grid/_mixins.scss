@@ -4,9 +4,44 @@
 /// @author David Khourshid
 ////
 
-/// Grid Component Mixin
+/// Determines the span (length) of a grid component. Possible inputs:
+/// - `{list}`: assumed to be a fraction; e.g. `$span: (1, 2)` represents 1/2
+/// - `auto` or any `{number}` with unit: passed through and returned as-is
+/// - unitless integer `{number}`: number of columns in grid system based on `$grid-columns`
+/// - unitless non-integer `{number}`: converted to percentage
 /// 
-/// Defines a grid element in the grid system.
+/// @param {list | string | number} $span - desired span of grid component
+/// @param {boolean} $gutter (false) - calculate with gutter?
+/// @param {number} $grid ($grid-columns) - total columns/rows to use in calculating span
+@function grid-span(
+    $span,
+    $gutter: false,
+    $grid: $grid-columns
+) {
+    $numerator: 1;
+    $denominator: 1;
+
+    @if type_of($span) == list {
+        $numerator: nth($span, 1);
+        $denominator: nth($span, 2);
+    } @else if $span == auto or index(('%', 'px', 'em', 'rem'), unit($span)) {
+        @return $span;
+    } @else if round($span) == $span and unit($span) == '' and $span > 0 {
+        $numerator: $span;
+        $denominator: $grid;
+    } @else {
+        @return percentage($span);
+    }
+
+    @if $gutter {        
+        @return calc(#{$numerator} * ((100% - #{$gutter * ($denominator - 1)}) / #{$denominator}) + (#{($numerator - 1) * $gutter}));
+    } @else {
+        @return percentage($numerator / $denominator);
+    }
+}
+
+/// Creates a grid component - applicable to both rows and columns.
+/// 
 /// @param {string} $display (block) - `block` or `table-cell`
 @mixin grid(
 	$display: block
@@ -25,6 +60,7 @@
 /// @param {number | list | string} $offset - offset width span of column, passed to `grid-span` function
 /// @param {number | boolean} $gutter - inner gutter width between adjacent columns
 /// @param {boolean} $extend (true) - extend %column outside of media queries?
+/// @see {mixin} grid
 @mixin column(
 	$columns,
 	$media: all, 
@@ -38,7 +74,8 @@
 		@if $columns {
 			width: grid-span(
 					$columns,
-					$gutter: $gutter
+					$gutter: $gutter,
+					$grid: $grid-columns
 				) !important;
 		}
 
@@ -57,54 +94,6 @@
 	}
 }
 
-// Column Layout Mixin
-// 
-// Specifies the width of each respective child element
-// @param (list) $widths: either a 1D or 2D list
-@mixin column-layout(
-	$column-widths,
-	$media: false,
-	$display: block
-) {
-	$fill-selector: false;
-	$total-width: 0px;
-
-	@include clearfix;
-
-	@include mq($media) {
-		@for $i from 1 through length($column-widths) {
-			$column-width: nth($column-widths, $i);
-			$width: nth($column-width, 1);
-			$selector: '>:nth-child(#{$i})';
-
-			@if length($column-width) == 2 {
-				$width: nth($column-width, 2);
-				$selector: nth($column-width, 1);
-			}
-
-			@if $width == 'fill' {
-				$fill-selector: $selector;
-			} @else {
-				$total-width: $total-width + ' + ' + column-width($width);
-
-				#{$selector} {
-					@include _column($display);
-
-					width: column-width($width);
-				}
-			}
-		}
-
-		@if $fill-selector {
-			#{$fill-selector} {
-				@include _column($display);
-
-				width: calc(100% - (#{$total-width}));
-			}
-		}
-	}
-}
-
 /// Creates a row grid component.
 /// 
 /// @todo implement `$offset`
@@ -114,6 +103,7 @@
 /// @param {number | list | string} $offset - offset height span of row, passed to `grid-span` function
 /// @param {number | boolean} $gutter - inner gutter height between adjacent rows
 /// @param {boolean} $extend (true) - extend %row outside of media queries?
+/// @see {mixin} grid
 @mixin row(
 	$rows,
 	$media: all,
@@ -124,51 +114,14 @@
 	@include mq($media) {
 		@include media-extend('%row', $extend);
 
-		height: row-height($rows, $gutter: $gutter) !important;
+		height: grid-span(
+				$rows,
+				$gutter: $gutter,
+				$grid: $grid-rows
+			) !important;
 
 		@if $gutter {
 			margin-bottom: $gutter;
-		}
-	}
-}
-
-// Row Layout Mixin
-// 
-// Specifies the height of each respective child element
-// @param (list) $widths: either a 1D or 2D list
-@mixin row-layout(
-	$row-heights,
-	$media: false
-) {
-	$fill-selector: false;
-	$total-height: 0px;
-
-	@include mq($media) {
-		@for $i from 1 through length($row-heights) {
-			$row-height: nth($row-heights, $i);
-			$height: nth($row-height, 1);
-			$selector: '>:nth-child(#{$i})';
-
-			@if length($row-height) == 2 {
-				$height: nth($row-height, 2);
-				$selector: nth($row-height, 1);
-			}
-
-			@if $height == 'fill' {
-				$fill-selector: $selector;
-			} @else {
-				$total-height: $total-height + ' + ' + row-height($height);
-
-				#{$selector} {
-					height: row-height($height);
-				}
-			}
-		}
-
-		@if $fill-selector {
-			#{$fill-selector} {
-				height: calc(100% - (#{$total-height}));
-			}
 		}
 	}
 }
