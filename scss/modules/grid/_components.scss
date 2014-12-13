@@ -1,11 +1,14 @@
-// 
-// Grid Components
-// ===============
+////
+/// Grid Components
+/// 
+/// @group grid
+/// @author David Khourshid
+////
 
-// Shared Grid Components
+/// Grid component
 %grid { @include grid(); }
 
-// Horizontal Grid Components
+/// Column parent component
 %columns { @include clearfix; }
 
 @for $i from 1 through $grid-columns {

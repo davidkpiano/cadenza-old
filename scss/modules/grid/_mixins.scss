@@ -13,6 +13,7 @@
 /// @param {list | string | number} $span - desired span of grid component
 /// @param {boolean} $gutter (false) - calculate with gutter?
 /// @param {number} $grid ($grid-columns) - total columns/rows to use in calculating span
+/// @returns {number} span of grid component in explicit (%, px, em, rem) or percent unit
 @function grid-span(
     $span,
     $gutter: false,
@@ -43,6 +44,7 @@
 /// Creates a grid component - applicable to both rows and columns.
 /// 
 /// @param {string} $display (block) - `block` or `table-cell`
+/// @output grid component able to be made into column or row
 @mixin grid(
 	$display: block
 ) {
@@ -60,6 +62,7 @@
 /// @param {number | list | string} $offset - offset width span of column, passed to `grid-span` function
 /// @param {number | boolean} $gutter - inner gutter width between adjacent columns
 /// @param {boolean} $extend (true) - extend %column outside of media queries?
+/// @output grid column component
 /// @see {mixin} grid
 @mixin column(
 	$columns,
@@ -103,6 +106,7 @@
 /// @param {number | list | string} $offset - offset height span of row, passed to `grid-span` function
 /// @param {number | boolean} $gutter - inner gutter height between adjacent rows
 /// @param {boolean} $extend (true) - extend %row outside of media queries?
+/// @output grid row component
 /// @see {mixin} grid
 @mixin row(
 	$rows,
