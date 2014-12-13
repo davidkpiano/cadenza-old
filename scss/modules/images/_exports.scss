@@ -1,0 +1,17 @@
+//
+// Images Classes
+// ==============
+
+// Image Classes
+@include export('image') {
+    img {
+        @extend %image !optional;
+
+        &.full {
+            @extend %image-full;
+
+            &-width { @extend %image-full-width; }
+            &-height { @extend %image-full-height; }
+        }
+    }
+}

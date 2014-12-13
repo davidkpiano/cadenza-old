@@ -13192,42 +13192,42 @@ button:disabled, .button:disabled, input[type="button"]:disabled, input[type="su
   cursor: not-allowed;
 }
 
-.button-group:before, .button-group:after {
+.buttons-group:before, .buttons-group:after {
   content: " ";
   display: table;
 }
-.button-group:after {
+.buttons-group:after {
   clear: both;
 }
-.button-group > button, .button-group > .button, .button-group > input[type="button"], .button-group > input[type="submit"] {
+.buttons-group > button, .buttons-group > .button, .buttons-group > input[type="button"], .buttons-group > input[type="submit"] {
   border-radius: 0;
   margin: 0;
   margin-left: -1px;
   float: left;
 }
-.button-group > button:first-of-type, .button-group > .button:first-of-type, .button-group > input[type="button"]:first-of-type, .button-group > input[type="submit"]:first-of-type {
+.buttons-group > button:first-of-type, .buttons-group > .button:first-of-type, .buttons-group > input[type="button"]:first-of-type, .buttons-group > input[type="submit"]:first-of-type {
   margin-left: inherit;
 }
-.button-group > button:hover, .button-group > .button:hover, .button-group > input[type="button"]:hover, .button-group > input[type="submit"]:hover, .button-group > button:focus, .button-group > .button:focus, .button-group > input[type="button"]:focus, .button-group > input[type="submit"]:focus {
+.buttons-group > button:hover, .buttons-group > .button:hover, .buttons-group > input[type="button"]:hover, .buttons-group > input[type="submit"]:hover, .buttons-group > button:focus, .buttons-group > .button:focus, .buttons-group > input[type="button"]:focus, .buttons-group > input[type="submit"]:focus {
   z-index: 2;
 }
-.button-group > button:first-of-type, .button-group > .button:first-of-type, .button-group > input[type="button"]:first-of-type, .button-group > input[type="submit"]:first-of-type {
+.buttons-group > button:first-of-type, .buttons-group > .button:first-of-type, .buttons-group > input[type="button"]:first-of-type, .buttons-group > input[type="submit"]:first-of-type {
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
 }
-.button-group > button:last-of-type, .button-group > .button:last-of-type, .button-group > input[type="button"]:last-of-type, .button-group > input[type="submit"]:last-of-type {
+.buttons-group > button:last-of-type, .buttons-group > .button:last-of-type, .buttons-group > input[type="button"]:last-of-type, .buttons-group > input[type="submit"]:last-of-type {
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
 }
-.button-group.inline {
+.buttons-group.inline {
   display: inline-block;
   margin: 0 0.5rem 0 0;
   margin-bottom: 0;
 }
-.button-group.vertical {
+.buttons-group.vertical {
   display: inline-block;
 }
-.button-group.vertical > button, .button-group.vertical > .button, .button-group.vertical > input[type="button"], .button-group.vertical > input[type="submit"] {
+.buttons-group.vertical > button, .buttons-group.vertical > .button, .buttons-group.vertical > input[type="button"], .buttons-group.vertical > input[type="submit"] {
   display: block;
   width: 100%;
   max-width: 100%;
@@ -13236,16 +13236,16 @@ button:disabled, .button:disabled, input[type="button"]:disabled, input[type="su
   margin-top: -1px;
   float: none;
 }
-.button-group.vertical > button:first-of-type, .button-group.vertical > .button:first-of-type, .button-group.vertical > input[type="button"]:first-of-type, .button-group.vertical > input[type="submit"]:first-of-type {
+.buttons-group.vertical > button:first-of-type, .buttons-group.vertical > .button:first-of-type, .buttons-group.vertical > input[type="button"]:first-of-type, .buttons-group.vertical > input[type="submit"]:first-of-type {
   margin-left: 0;
   margin-top: inherit;
 }
-.button-group.vertical > button:first-of-type, .button-group.vertical > .button:first-of-type, .button-group.vertical > input[type="button"]:first-of-type, .button-group.vertical > input[type="submit"]:first-of-type {
+.buttons-group.vertical > button:first-of-type, .buttons-group.vertical > .button:first-of-type, .buttons-group.vertical > input[type="button"]:first-of-type, .buttons-group.vertical > input[type="submit"]:first-of-type {
   border-bottom-left-radius: 0;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
 }
-.button-group.vertical > button:last-of-type, .button-group.vertical > .button:last-of-type, .button-group.vertical > input[type="button"]:last-of-type, .button-group.vertical > input[type="submit"]:last-of-type {
+.buttons-group.vertical > button:last-of-type, .buttons-group.vertical > .button:last-of-type, .buttons-group.vertical > input[type="button"]:last-of-type, .buttons-group.vertical > input[type="submit"]:last-of-type {
   border-top-right-radius: 0;
   border-bottom-left-radius: 2px;
   border-bottom-right-radius: 2px;

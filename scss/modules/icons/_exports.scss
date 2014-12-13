@@ -4,7 +4,7 @@
 
 // Icon Classes
 
-@include export(icons) {
+@include export('icons') {
     #{prefixed-class($icon-prefix)} {
         @extend %icon;
     }

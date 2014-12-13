@@ -6,16 +6,16 @@
     $component,
     $subcomponent: false,
     $style: $style-default,
-    $theme: $theme-default
+    $theme: $theme-default,
+    $exclude: false
 ) {
-    @if $subcomponent {
-        $subcomponent: -#{$subcomponent};
-    } @else {
-        $subcomponent: '';
-    }
+    $subcomponent: if($subcomponent, -#{$subcomponent}, '');
+    $exclude: if($exclude, unquote(':not(#{$exclude})'), '');
 
-    @extend %style-#{$component}-#{$style}#{$subcomponent} !optional;
-    @extend %theme-#{$component}-#{$theme}#{$subcomponent} !optional;
+    &#{$exclude} {    
+        @extend %style-#{$component}-#{$style}#{$subcomponent} !optional;
+        @extend %theme-#{$component}-#{$theme}#{$subcomponent} !optional;
+    }
 }
 
 // TODO: add support for rgba() values! (alpha channel)

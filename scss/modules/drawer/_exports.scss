@@ -1,13 +1,14 @@
 
+@include export('drawer') {
+    @each $mq in $drawer-mqs {
+        $suffix: if($mq == 'all', '', '-#{$mq}');
 
-@each $mq in $drawer-mqs {
-    $suffix: if($mq == 'all', '', '-#{$mq}');
+        .drawer#{$suffix} { @extend %drawer#{$suffix}; }
 
-    .drawer#{$suffix} { @extend %drawer#{$suffix}; }
-
-    @each $drawer-position in $drawer-positions {    
-        .drawer-#{$drawer-position}#{$suffix} {
-            @extend %drawer-#{$drawer-position}#{$suffix};
+        @each $drawer-position in $drawer-positions {    
+            .drawer-#{$drawer-position}#{$suffix} {
+                @extend %drawer-#{$drawer-position}#{$suffix};
+            }
         }
     }
 }

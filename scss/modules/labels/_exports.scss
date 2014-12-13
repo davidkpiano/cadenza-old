@@ -1,0 +1,77 @@
+//
+// Labels Classes
+// ==============
+
+// Label Classes
+@include export('label') {
+    .label {
+        @extend %label;
+        @include style('label');
+
+        &.light { @include style('label', 'light'); }
+        &.dark { @include style('label', 'dark'); }
+        &.success { @include style('label', 'success'); }
+        &.warning { @include style('label', 'warning'); }
+        &.failure { @include style('label', 'failure'); }
+
+        &.transparent { @include style('label', 'transparent'); }
+
+
+        &.block { @extend %label-block; }
+    }
+}
+
+@include export('badge') {
+    .badge {
+        @extend %badge;
+
+        @include style('badge');
+
+        &.light { @include style('badge', 'light'); }
+        &.dark { @include style('badge', 'dark'); }
+        &.success { @include style('badge', 'success'); }
+        &.warning { @include style('badge', 'warning'); }
+        &.failure { @include style('badge', 'failure'); }
+
+        &.transparent { @include style('badge', 'transparent'); }
+
+        &.top-left { @extend %badge-top-left; }
+        &.top-right { @extend %badge-top-right; }
+        &.bottom-left { @extend %badge-bottom-left; }
+        &.bottom-right { @extend %badge-bottom-right; }
+    }
+}
+
+@include export('tooltip') {
+    .tooltip[title], #{prefixed-class('tooltip', $selector: '[title]')} {
+        @extend %tooltip;
+        @include style('tooltip');
+
+        &:before { @extend %tooltip-content; }
+        &:after { @extend %tooltip-arrow; }
+
+        &.light { @include style('tooltip', 'light'); }
+        &.dark { @include style('tooltip', 'dark'); }
+        &.primary { @include style('tooltip', 'primary'); }
+        &.secondary { @include style('tooltip', 'secondary'); }
+
+        &.success { @include style('tooltip', 'success'); }
+        &.warning { @include style('tooltip', 'warning'); }
+        &.failure { @include style('tooltip', 'failure'); }
+
+        // &:before { @extend %tooltip-content; }
+
+        // &:after { @extend %tooltip-arrow; }
+    }
+
+    .tooltip-above-left { @extend %tooltip-above-left; }
+    .tooltip-above-right { @extend %tooltip-above-right; }
+    .tooltip-above-center { @extend %tooltip-above-center; }
+
+    .tooltip-below-left { @extend %tooltip-below-left; }
+    .tooltip-below-right { @extend %tooltip-below-right; }
+    .tooltip-below-center { @extend %tooltip-below-center; }
+
+    .tooltip-left { @extend %tooltip-left; }
+    .tooltip-right { @extend %tooltip-right; }
+}
