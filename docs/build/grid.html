@@ -25,16 +25,29 @@
 <li>placeholder: <code><span class="hljs-tag">%<span class="hljs-title">column</span></span>-[n]</code></li>
 <li>mixin: <code>@mixin column([n], <span class="hljs-keyword">...</span>)</code></li>
 </ul>
-<button>testing</button>
+<h3 id="fractional">Fractional</h3>
+<div class="row-1 field text-center small" ng-repeat="col_span in [
+    &apos;full&apos;,
+    &apos;half&apos;,
+    &apos;3rd&apos;,
+    &apos;4th&apos;,
+    &apos;5th&apos;,
+    &apos;6th&apos;,
+    &apos;7th&apos;,
+    &apos;8th&apos;,
+    &apos;9th&apos;
+]">
+    <div ng-repeat="col in component.util.range($index + 1)" class="border-primary col-{{col_span}}">col-{{col_span}}</div>
+</div>
 
 <h3 id="no-gutter">No Gutter</h3>
-<div class="row-1 field text-center small" ng-repeat="col_width in [12,6,4,3,2,1]">
-    <div ng-repeat="col in component.util.range(12/col_width)" class="border-primary col-{{col_width}}">col-{{col_width}}</div>
+<div class="row-1 field text-center small" ng-repeat="col_span in [12,6,4,3,2,1]">
+    <div ng-repeat="col in component.util.range(12/col_span)" class="border-primary col-{{col_span}}">col-{{col_span}}</div>
 </div>
 
 <h3 id="gutter">Gutter</h3>
-<p><div class="row-1 field gutter text-center small" ng-repeat="col_width in [12,6,4,3,2,1]">
-    <div ng-repeat="col in component.util.range(12/col_width)" class="border-primary col-{{col_width}}">col-{{col_width}}</div>
+<p><div class="row-1 field gutter text-center small" ng-repeat="col_span in [12,6,4,3,2,1]">
+    <div ng-repeat="col in component.util.range(12/col_span)" class="border-primary col-{{col_span}}">col-{{col_span}}</div>
 </div>
 </p></div>
 <p></p>

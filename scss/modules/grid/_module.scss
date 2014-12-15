@@ -7,6 +7,7 @@
 
 // Horizontal Grid Settings
 $grid-column-fractions: (
+    'full': (1, 1),
     'half': (1, 2),
     '3rd': (1, 3),
     '4th': (1, 4),
@@ -22,6 +23,7 @@ $grid-column-mqs: (all, small, medium, large);
 
 // Vertical Grid Settings
 $grid-row-fractions: (
+    'full': (1, 1),
     'half': (1, 2),
     '3rd': (1, 3),
     '4th': (1, 4),

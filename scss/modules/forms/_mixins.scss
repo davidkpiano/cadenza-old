@@ -29,7 +29,7 @@
             } @else if $width == 'auto' {
                 #{$selector} { width: auto; }
             } @else {
-                #{$selector} { width: column-width($width); }
+                #{$selector} { width: grid-span($width); }
             }
 
             #{$selector} {

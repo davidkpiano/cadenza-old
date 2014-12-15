@@ -11,8 +11,8 @@
     $extend: true
 ) {
     $push-translation: false;
-    $drawer-width: column-width($width);
-    $drawer-height: row-height($height);
+    $drawer-width: grid-span($width);
+    $drawer-height: grid-span($height);
 
     @if $extend {    
         @extend %drawer;
