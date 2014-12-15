@@ -10,7 +10,7 @@
   position: relative;
 }
 
-.content, .all-content > *, .pad {
+.content, .all-content > *, .pad, .cz-example {
   padding: 1rem !important;
 }
 
@@ -3103,7 +3103,7 @@
           animation-duration: 300ms;
 }
 
-.border, [class*=" border-"], [class^="border-"], .borders > *, [class*=" borders-"] > *, [class^="borders-"] > * {
+.border, [class*=" border-"], [class^="border-"], .borders > *, [class*=" borders-"] > *, [class^="borders-"] > *, .cz-example {
   border-width: 1px;
   border-style: solid;
   border-color: #E7E7E7;

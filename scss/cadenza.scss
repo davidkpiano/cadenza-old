@@ -75,3 +75,8 @@
     @extend %pad-double;
     clear: right;
 }
+
+.cz-example {
+    @extend %border;
+    @extend %pad;
+}
