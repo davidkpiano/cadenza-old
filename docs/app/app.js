@@ -7,7 +7,7 @@ app.config(['$stateProvider', '$urlRouterProvider',
         var components = [
             'grid',
             'panels',
-            'type',
+            'typography',
             'layout',
             'themes',
             'buttons',
