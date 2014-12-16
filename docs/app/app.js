@@ -5,6 +5,7 @@ var app = angular.module('cadenza', ['ui.router', 'ngAnimate']);
 app.config(['$stateProvider', '$urlRouterProvider', 
     function($stateProvider, $urlRouterProvider) {
         var components = [
+            'space',
             'grid',
             'panels',
             'typography',

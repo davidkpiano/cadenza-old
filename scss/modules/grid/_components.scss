@@ -115,7 +115,7 @@
 				}
 
 				%columns-gutter-#{$fraction-key}#{$suffix} > * {
-					&, &:nth-child(n) {				
+					&, &:nth-child(n) {		
 						@extend %column-gutter-#{$fraction-key}#{$suffix};
 
 						height: auto;

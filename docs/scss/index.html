@@ -763,9 +763,9 @@
 		}
 
 		@if $gutter {
-			&amp;:not(:last-child) {
-				margin-right: $gutter;
-			}
+			margin-right: $gutter;
+			
+            &amp;:last-child { margin-right: 0; }
 		}
 
 		@if $offset {
