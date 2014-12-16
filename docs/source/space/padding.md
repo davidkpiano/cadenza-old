@@ -23,3 +23,10 @@ White space is a very important consideration in design and layout. Cadenza incl
     <div class="pad-horizontal-none">.pad-horizontal-none</div>
 </div>
 [[/]]
+
+[[code]]
+<dl>
+    <dt>Term 1</dt>
+    <dd>Definition 1</dd>
+</dl>
+[[/]]

@@ -46,8 +46,8 @@
 }
 
 // Fade
-%animation-fade-active { @include animation(fade-active); }
-%animation-fade-inactive { @include animation(fade-inactive); }
+%animation-fade-active { @include animation(fade-active, $extend: false); }
+%animation-fade-inactive { @include animation(fade-inactive, $extend: false); }
 @include keyframes(fade-active) {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -58,15 +58,15 @@
 }
 
 // Fade In
-%animation-fadeIn-active { @include animation(fade-active); }
-%animation-fadeIn-inactive { @include animation(fadeIn-inactive); }
+%animation-fadeIn-active { @include animation(fade-active, $extend: false); }
+%animation-fadeIn-inactive { @include animation(fadeIn-inactive, $extend: false); }
 @include keyframes(fadeIn-inactive) {
     from, to { opacity: 0; }
 }
 
 // Scale Up / Scale Up
-%animation-scaleUp-active { @include animation(scaleUp-active); }
-%animation-scaleUp-inactive { @include animation(scaleUp-inactive); }
+%animation-scaleUp-active { @include animation(scaleUp-active, $extend: false); }
+%animation-scaleUp-inactive { @include animation(scaleUp-inactive, $extend: false); }
 @include keyframes(scaleUp-active) {
     from {
     	opacity: 0;
@@ -89,8 +89,8 @@
 }
 
 // Scale Down / Scale Down
-%animation-scaleDown-active { @include animation(scaleDown-active); }
-%animation-scaleDown-inactive { @include animation(scaleDown-inactive); }
+%animation-scaleDown-active { @include animation(scaleDown-active, $extend: false); }
+%animation-scaleDown-inactive { @include animation(scaleDown-inactive, $extend: false); }
 @include keyframes(scaleDown-active) {
     from {
     	opacity: 0;
@@ -113,8 +113,8 @@
 }
 
 // Scale Up / Scale Down
-%animation-scaleUpDown-active { @include animation(scaleUpDown-active); }
-%animation-scaleUpDown-inactive { @include animation(scaleUpDown-inactive); }
+%animation-scaleUpDown-active { @include animation(scaleUpDown-active, $extend: false); }
+%animation-scaleUpDown-inactive { @include animation(scaleUpDown-inactive, $extend: false); }
 @include keyframes(scaleUpDown-active) {
     from {
     	opacity: 0;
@@ -137,8 +137,8 @@
 }
 
 // Scale Down / Scale Up
-%animation-scaleDownUp-active { @include animation(scaleDownUp-active); }
-%animation-scaleDownUp-inactive { @include animation(scaleDownUp-inactive); }
+%animation-scaleDownUp-active { @include animation(scaleDownUp-active, $extend: false); }
+%animation-scaleDownUp-inactive { @include animation(scaleDownUp-inactive, $extend: false); }
 @include keyframes(scaleDownUp-active) {
     from {
     	opacity: 0;
@@ -161,8 +161,8 @@
 }
 
 // Slide Left
-%animation-slideLeft-active { @include animation(slideLeft-active); }
-%animation-slideLeft-inactive { @include animation(slideLeft-inactive); }
+%animation-slideLeft-active { @include animation(slideLeft-active, $extend: false); }
+%animation-slideLeft-inactive { @include animation(slideLeft-inactive, $extend: false); }
 @include keyframes(slideLeft-active) {
     from { transform: translateX(100%); }
     to { transform: translateX(0); }
@@ -173,8 +173,8 @@
 }
 
 // Slide Right
-%animation-slideRight-active { @include animation(slideRight-active); }
-%animation-slideRight-inactive { @include animation(slideRight-inactive); }
+%animation-slideRight-active { @include animation(slideRight-active, $extend: false); }
+%animation-slideRight-inactive { @include animation(slideRight-inactive, $extend: false); }
 @include keyframes(slideRight-active) {
     from { transform: translateX(-100%); }
     to { transform: translateX(0); }
@@ -185,8 +185,8 @@
 }
 
 // Slide Up
-%animation-slideUp-active { @include animation(slideUp-active); }
-%animation-slideUp-inactive { @include animation(slideUp-inactive); }
+%animation-slideUp-active { @include animation(slideUp-active, $extend: false); }
+%animation-slideUp-inactive { @include animation(slideUp-inactive, $extend: false); }
 @include keyframes(slideUp-active) {
     from { transform: translateY(100%); }
     to { transform: translateY(0); }
@@ -197,8 +197,8 @@
 }
 
 // Slide Down
-%animation-slideDown-active { @include animation(slideDown-active); }
-%animation-slideDown-inactive { @include animation(slideDown-inactive); }
+%animation-slideDown-active { @include animation(slideDown-active, $extend: false); }
+%animation-slideDown-inactive { @include animation(slideDown-inactive, $extend: false); }
 @include keyframes(slideDown-active) {
     from { transform: translateY(-100%); }
     to { transform: translateY(0); }
@@ -209,8 +209,8 @@
 }
 
 // Slide Up/Down
-%animation-slideUpDown-active { @include animation(slideUpDown-active); }
-%animation-slideUpDown-inactive { @include animation(slideUpDown-inactive); }
+%animation-slideUpDown-active { @include animation(slideUpDown-active, $extend: false); }
+%animation-slideUpDown-inactive { @include animation(slideUpDown-inactive, $extend: false); }
 @include keyframes(slideUpDown-active) {
     from { transform: translateY(100%); }
     to { transform: translateY(0); }
@@ -221,8 +221,8 @@
 }
 
 // Slide Down/Up
-%animation-slideDownUp-active { @include animation(slideDownUp-active); }
-%animation-slideDownUp-inactive { @include animation(slideDownUp-inactive); }
+%animation-slideDownUp-active { @include animation(slideDownUp-active, $extend: false); }
+%animation-slideDownUp-inactive { @include animation(slideDownUp-inactive, $extend: false); }
 @include keyframes(slideDownUp-active) {
     from { transform: translateY(-100%); }
     to { transform: translateY(0); }
@@ -233,8 +233,8 @@
 }
 
 // Shift Up
-%animation-shiftUp-active { @include animation(shiftUp-active); }
-%animation-shiftUp-inactive { @include animation(shiftUp-inactive); }
+%animation-shiftUp-active { @include animation(shiftUp-active, $extend: false); }
+%animation-shiftUp-inactive { @include animation(shiftUp-inactive, $extend: false); }
 @include keyframes(shiftUp-active) {
     from { 
         transform: translateY($animation-delta);
@@ -257,8 +257,8 @@
 }
 
 // Shift Down
-%animation-shiftDown-active { @include animation(shiftDown-active); }
-%animation-shiftDown-inactive { @include animation(shiftDown-inactive); }
+%animation-shiftDown-active { @include animation(shiftDown-active, $extend: false); }
+%animation-shiftDown-inactive { @include animation(shiftDown-inactive, $extend: false); }
 @include keyframes(shiftDown-active) {
     from { 
         transform: translateY(-$animation-delta);
@@ -281,8 +281,8 @@
 }
 
 // Shift Left
-%animation-shiftLeft-active { @include animation(shiftLeft-active); }
-%animation-shiftLeft-inactive { @include animation(shiftLeft-inactive); }
+%animation-shiftLeft-active { @include animation(shiftLeft-active, $extend: false); }
+%animation-shiftLeft-inactive { @include animation(shiftLeft-inactive, $extend: false); }
 @include keyframes(shiftLeft-active) {
     from { 
         transform: translateX($animation-delta);
@@ -305,8 +305,8 @@
 }
 
 // Shift Right
-%animation-shiftRight-active { @include animation(shiftRight-active); }
-%animation-shiftRight-inactive { @include animation(shiftRight-inactive); }
+%animation-shiftRight-active { @include animation(shiftRight-active, $extend: false); }
+%animation-shiftRight-inactive { @include animation(shiftRight-inactive, $extend: false); }
 @include keyframes(shiftRight-active) {
     from { 
         transform: translateX(-$animation-delta);
@@ -329,8 +329,8 @@
 }
 
 // Flip Left
-%animation-flipLeft-active { @include animation(flipLeft-active, $is-3d: true); }
-%animation-flipLeft-inactive { @include animation(flipLeft-inactive, $is-3d: true); }
+%animation-flipLeft-active { @include animation(flipLeft-active, $is-3d: true, $extend: false); }
+%animation-flipLeft-inactive { @include animation(flipLeft-inactive, $is-3d: true, $extend: false); }
 @include keyframes(flipLeft-active) {
     from { z-index: 1; transform: translateZ(-1000px) rotateY(180deg); }
     to { z-index: 2; transform: translateZ(0) rotateY(0); }
@@ -347,8 +347,8 @@
 }
 
 // Tilt
-%animation-tilt-active { @include animation(tilt-active, $is-3d: true); }
-%animation-tilt-inactive { @include animation(tilt-inactive, $is-3d: true); }
+%animation-tilt-active { @include animation(tilt-active, $is-3d: true, $extend: false); }
+%animation-tilt-inactive { @include animation(tilt-inactive, $is-3d: true, $extend: false); }
 @include keyframes(tilt-active) {
     0% {
         transform: translateZ(-500px) rotateY(0deg);

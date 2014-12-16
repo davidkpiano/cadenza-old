@@ -20,9 +20,10 @@
     $play-state: default,
     $timing-function: default,
     $fill-mode: default,
-    $is-3d: false
+    $is-3d: false,
+    $extend: true
 ) {
-    @extend %animation !optional;
+    @include media-extend('%animation', $extend);
 
     @if $is-3d {
         @extend %animation-3d;
@@ -86,10 +87,11 @@
 @mixin animate-on(
     $selector: false,
     $name: false,
+    $extend: true,
     $args...
 ) {
     @include on($self: $selector, $args...) {
-        @include animation($name);
+        @include animation($name, $extend: $extend);
 
         @content;
     }
@@ -136,21 +138,12 @@
 	$inactive-name: $active-name,
 	$active-selector: $active-selector,
 	$inactive-selector: $inactive-selector,
-	$inert-selector: $inert-selector
+	$inert-selector: $inert-selector,
+    $extend: true
 ) {
-    @extend %animation-#{$active-name}-inert !optional;
+    @include animate-on($active-selector, #{$active-name}-active, $extend: $extend);
 
-    &#{$inert-selector} {
-    	@extend %inert;
-    }
-
-    @include animate-on($active-selector, #{$active-name}-active) {
-        @extend %active;
-    }
-
-    @include animate-on($inactive-selector, #{$inactive-name}-inactive) {
-        @extend %inactive;
-    }
+    @include animate-on($inactive-selector, #{$inactive-name}-inactive, $extend: $extend);
 }
 
 @mixin activate-hover($settings...) {
@@ -166,28 +159,29 @@
 	$active-selector: $active-selector,
 	$inactive-selector: $inactive-selector,
 	$inert-selector: $inert-selector,
-	$is-3d: false
+	$is-3d: false,
+    $extend: true
 ) {
-	@if $is-3d {
-		@extend %animation-3d;
-	}
+	// @if $is-3d {
+	// 	@extend %animation-3d;
+	// }
 
-    &#{$inert-selector} {
-    	@extend %inert;
-    }
+ //    &#{$inert-selector} {
+ //    	@extend %inert;
+ //    }
 
     > #{$selector} {
-        @extend %animation-#{$active-name}-inert !optional;
+        // @extend %animation-#{$active-name}-inert !optional;
 
 
         &#{$active-selector} {
         	@extend %animation-#{$active-name}-active !optional;
-        	@extend %active;
+        	// @extend %active;
         }
 
         &#{$inactive-selector} {
         	@extend %animation-#{$inactive-name}-inactive !optional;
-        	@extend %inactive;
+        	// @extend %inactive;
         }
     }
 }

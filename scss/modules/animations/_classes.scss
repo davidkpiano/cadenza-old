@@ -11,59 +11,59 @@
 .animation-3d { @extend %animation-3d; }
 
 // Animations Classes
-.activate-all-fade { @include activate-all(fade); }
-.activate-fade { @include activate(fade); }
+.activate-all-fade { @include activate-all(fade, $extend: false); }
+.activate-fade { @include activate(fade, $extend: false); }
 
-.activate-all-fadeIn { @include activate-all(fadeIn); }
-.activate-fadeIn { @include activate(fadeIn); }
+.activate-all-fadeIn { @include activate-all(fadeIn, $extend: false); }
+.activate-fadeIn { @include activate(fadeIn, $extend: false); }
 
-.activate-all-scaleUp { @include activate-all(scaleUp); }
-.activate-scaleUp { @include activate(scaleUp); }
+.activate-all-scaleUp { @include activate-all(scaleUp, $extend: false); }
+.activate-scaleUp { @include activate(scaleUp, $extend: false); }
 
-.activate-all-scaleDown { @include activate-all(scaleDown); }
-.activate-scaleDown { @include activate(scaleDown); }
+.activate-all-scaleDown { @include activate-all(scaleDown, $extend: false); }
+.activate-scaleDown { @include activate(scaleDown, $extend: false); }
 
-.activate-all-scaleUpDown { @include activate-all(scaleUp, scaleDown); }
-.activate-scaleUpDown { @include activate(scaleUp, scaleDown); }
+.activate-all-scaleUpDown { @include activate-all(scaleUp, scaleDown, $extend: false); }
+.activate-scaleUpDown { @include activate(scaleUp, scaleDown, $extend: false); }
 
-.activate-all-scaleDownUp { @include activate-all(scaleDown, scaleUp); }
-.activate-scaleDownUp { @include activate(scaleDown, scaleUp); }
+.activate-all-scaleDownUp { @include activate-all(scaleDown, scaleUp, $extend: false); }
+.activate-scaleDownUp { @include activate(scaleDown, scaleUp, $extend: false); }
 
-.activate-all-slideUp { @include activate-all(slideUp); }
-.activate-slideUp { @include activate(slideUp); }
+.activate-all-slideUp { @include activate-all(slideUp, $extend: false); }
+.activate-slideUp { @include activate(slideUp, $extend: false); }
 
-.activate-all-slideUpDown { @include activate-all(slideUpDown); }
-.activate-slideUpDown { @include activate(slideUpDown); }
+.activate-all-slideUpDown { @include activate-all(slideUpDown, $extend: false); }
+.activate-slideUpDown { @include activate(slideUpDown, $extend: false); }
 
-.activate-all-slideDown { @include activate-all(slideDown); }
-.activate-slideDown { @include activate(slideDown); }
+.activate-all-slideDown { @include activate-all(slideDown, $extend: false); }
+.activate-slideDown { @include activate(slideDown, $extend: false); }
 
-.activate-all-slideLeft { @include activate-all(slideLeft); }
-.activate-slideLeft { @include activate(slideLeft); }
+.activate-all-slideLeft { @include activate-all(slideLeft, $extend: false); }
+.activate-slideLeft { @include activate(slideLeft, $extend: false); }
 
-.activate-all-slideRight { @include activate-all(slideRight); }
-.activate-slideRight { @include activate(slideRight); }
+.activate-all-slideRight { @include activate-all(slideRight, $extend: false); }
+.activate-slideRight { @include activate(slideRight, $extend: false); }
 
-.activate-all-shiftUp { @include activate-all(shiftUp); }
-.activate-shiftUp { @include activate(shiftUp); }
+.activate-all-shiftUp { @include activate-all(shiftUp, $extend: false); }
+.activate-shiftUp { @include activate(shiftUp, $extend: false); }
 
-.activate-all-shiftDown { @include activate-all(shiftDown); }
-.activate-shiftDown { @include activate(shiftDown); }
+.activate-all-shiftDown { @include activate-all(shiftDown, $extend: false); }
+.activate-shiftDown { @include activate(shiftDown, $extend: false); }
 
-.activate-all-shiftLeft { @include activate-all(shiftLeft); }
-.activate-shiftLeft { @include activate(shiftLeft); }
+.activate-all-shiftLeft { @include activate-all(shiftLeft, $extend: false); }
+.activate-shiftLeft { @include activate(shiftLeft, $extend: false); }
 
-.activate-all-shiftRight { @include activate-all(shiftRight); }
-.activate-shiftRight { @include activate(shiftRight); }
+.activate-all-shiftRight { @include activate-all(shiftRight, $extend: false); }
+.activate-shiftRight { @include activate(shiftRight, $extend: false); }
 
-.activate-all-shiftLeftRight { @include activate-all(shiftLeft, shiftRight); }
-.activate-shiftLeftRight { @include activate(shiftLeft, shiftRight); }
+.activate-all-shiftLeftRight { @include activate-all(shiftLeft, shiftRight, $extend: false); }
+.activate-shiftLeftRight { @include activate(shiftLeft, shiftRight, $extend: false); }
 
-.activate-all-flipLeft { @include activate-all(flipLeft, $is-3d: true); }
-.activate-flipLeft { @include activate(flipLeft); }
+.activate-all-flipLeft { @include activate-all(flipLeft, $is-3d: true, $extend: false); }
+.activate-flipLeft { @include activate(flipLeft, $extend: false); }
 
-.activate-all-tilt { @include activate-all(tilt, $is-3d: true); }
-.activate-tilt { @include activate(tilt); }
+.activate-all-tilt { @include activate-all(tilt, $is-3d: true, $extend: false); }
+.activate-tilt { @include activate(tilt, $extend: false); }
 
 // Transition classes
 .hover-all { @extend %hover-all; }

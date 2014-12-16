@@ -87,6 +87,47 @@
 <span class="hljs-variable">$grid</span><span class="hljs-attribute">-row</span><span class="hljs-attribute">-mqs</span>: (<span class="hljs-literal">all</span>, short, tall, small);
 </code></pre>
 </div>
+<div class="cz-content">
+<h3 id="the-12-row-grid">The 12-Row Grid</h3>
+<p><div class="borders border pad" style="height: 50vw">
+    <div class="col-1 row-1">.row-1</div>
+    <div class="col-1 row-2">.row-2</div>
+    <div class="col-1 row-3">.row-3</div>
+    <div class="col-1 row-4">.row-4</div>
+    <div class="col-1 row-5">.row-5</div>
+    <div class="col-1 row-6">.row-6</div>
+    <div class="col-1 row-7">.row-7</div>
+    <div class="col-1 row-8">.row-8</div>
+    <div class="col-1 row-9">.row-9</div>
+    <div class="col-1 row-10">.row-10</div>
+    <div class="col-1 row-11">.row-11</div>
+    <div class="col-1 row-12">.row-12</div>
+</div>
+</p></div>
+<p></p>
+<p><div class="cz-code">
+
+//
+</div>
+</p>
+<div class="cz-content">
+<h3 id="fractional-rows">Fractional Rows</h3>
+<p><div class="borders border pad" style="height: 50vw">
+    <div ng-repeat="row_span in [
+        &apos;full&apos;,
+        &apos;half&apos;,
+        &apos;3rd&apos;,
+        &apos;4th&apos;,
+        &apos;5th&apos;,
+        &apos;6th&apos;,
+        &apos;7th&apos;,
+        &apos;8th&apos;,
+        &apos;9th&apos;
+    ]" class="border-primary col-9th row-{{row_span}}">row-{{row_span}}</div>
+    <!-- end ng-repeat -->
+</div>
+</p></div>
+<p></p>
 </article>
 
 <article>

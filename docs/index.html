@@ -14,14 +14,10 @@
         </header>
         <nav class="light">
             <ul>
-                <li ui-sref="grid"><i class="tile-icon icon-grid-on"></i><span class="tile-content">Grid</span></li>
-                <li><i class="tile-icon icon-tab"></i><span class="tile-content">Panels</span></li>
-                <li ui-sref="typography"><i class="tile-icon icon-format-size"></i><span class="tile-content">Typography</span></li>
-                <li><i class="tile-icon"></i><span class="tile-content"></span></li>
-                <li><i class="tile-icon"></i><span class="tile-content"></span></li>
-                <li><i class="tile-icon"></i><span class="tile-content"></span></li>
-                <li><i class="tile-icon"></i><span class="tile-content"></span></li>
-                <li><i class="tile-icon"></i><span class="tile-content"></span></li>
+                <li ng-repeat="component in components" ui-sref="{{component}}">
+                    <i class="tile-icon"></i>
+                    <span class="tile-content">{{component | uppercase}}</span>
+                </li>
             </ul>
         </nav>
         <div class="pad"><a href="scss/index.html">View Sassdocs</a></div>

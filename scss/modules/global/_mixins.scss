@@ -10,7 +10,7 @@
     }
 }
 
-@mixin export($name) {
+@mixin export($name, $group: all) {
     $import-environment: all;
     $import-component: false;
 

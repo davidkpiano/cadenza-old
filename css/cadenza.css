@@ -10,57 +10,50 @@
   position: relative;
 }
 
-.content, .all-content > *, .pad, .cz-example {
-  padding: 1rem !important;
+.content, .all-content > * {
+  padding: 1rem;
 }
 
+.pad, .cz-example {
+  padding: 1rem !important;
+}
 .pad-vertical {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
-
 .pad-horizontal {
   padding-left: 1rem;
   padding-right: 1rem;
 }
-
 .pad-half {
   padding: 0.5rem;
 }
-
 .pad-vertical-half {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
-
 .pad-horizontal-half {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
-
 .pad-double, .cz-content, .cz-code {
   padding: 2rem;
 }
-
 .pad-vertical-double {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
-
 .pad-horizontal-double {
   padding-left: 2rem;
   padding-right: 2rem;
 }
-
 .no-pad, .pad-none {
   padding: 0 !important;
 }
-
 .pad-vertical-none {
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
-
 .pad-horizontal-none {
   padding-left: 0 !important;
   padding-right: 0 !important;
@@ -1798,17 +1791,17 @@
   }
 }
 
-.inert, .activate-all-fade.inert, .activate-fade.inert, .activate-all-fadeIn.inert, .activate-fadeIn.inert, .activate-all-scaleUp.inert, .activate-scaleUp.inert, .activate-all-scaleDown.inert, .activate-scaleDown.inert, .activate-all-scaleUpDown.inert, .activate-scaleUpDown.inert, .activate-all-scaleDownUp.inert, .activate-scaleDownUp.inert, .activate-all-slideUp.inert, .activate-slideUp.inert, .activate-all-slideUpDown.inert, .activate-slideUpDown.inert, .activate-all-slideDown.inert, .activate-slideDown.inert, .activate-all-slideLeft.inert, .activate-slideLeft.inert, .activate-all-slideRight.inert, .activate-slideRight.inert, .activate-all-shiftUp.inert, .activate-shiftUp.inert, .activate-all-shiftDown.inert, .activate-shiftDown.inert, .activate-all-shiftLeft.inert, .activate-shiftLeft.inert, .activate-all-shiftRight.inert, .activate-shiftRight.inert, .activate-all-shiftLeftRight.inert, .activate-shiftLeftRight.inert, .activate-all-flipLeft.inert, .activate-flipLeft.inert, .activate-all-tilt.inert, .activate-tilt.inert, .inert.tooltip[title], .inert[class*=" tooltip-"][title], .inert[class^="tooltip-"][title], .inert > *, .activate-all-fade.inert > *, .activate-fade.inert > *, .activate-all-fadeIn.inert > *, .activate-fadeIn.inert > *, .activate-all-scaleUp.inert > *, .activate-scaleUp.inert > *, .activate-all-scaleDown.inert > *, .activate-scaleDown.inert > *, .activate-all-scaleUpDown.inert > *, .activate-scaleUpDown.inert > *, .activate-all-scaleDownUp.inert > *, .activate-scaleDownUp.inert > *, .activate-all-slideUp.inert > *, .activate-slideUp.inert > *, .activate-all-slideUpDown.inert > *, .activate-slideUpDown.inert > *, .activate-all-slideDown.inert > *, .activate-slideDown.inert > *, .activate-all-slideLeft.inert > *, .activate-slideLeft.inert > *, .activate-all-slideRight.inert > *, .activate-slideRight.inert > *, .activate-all-shiftUp.inert > *, .activate-shiftUp.inert > *, .activate-all-shiftDown.inert > *, .activate-shiftDown.inert > *, .activate-all-shiftLeft.inert > *, .activate-shiftLeft.inert > *, .activate-all-shiftRight.inert > *, .activate-shiftRight.inert > *, .activate-all-shiftLeftRight.inert > *, .activate-shiftLeftRight.inert > *, .activate-all-flipLeft.inert > *, .activate-flipLeft.inert > *, .activate-all-tilt.inert > *, .activate-tilt.inert > *, .inert.tooltip[title] > *, .inert[class*=" tooltip-"][title] > *, .inert[class^="tooltip-"][title] > * {
+.inert, .inert > * {
   transition: none !important;
   -webkit-animation: none !important;
           animation: none !important;
 }
 
-.activate-, [class*=" activate--"], [class^="activate--"] .ng-enter, .activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-fade.ng-enter, .activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter, .activate-fadeIn.ng-enter, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-scaleUp.ng-enter, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-scaleDown.ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter, .activate-scaleUpDown.ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter, .activate-scaleDownUp.ng-enter, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter, .activate-slideUp.ng-enter, .activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter, .activate-slideUpDown.ng-enter, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter, .activate-slideDown.ng-enter, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter, .activate-slideLeft.ng-enter, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter, .activate-slideRight.ng-enter, .activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter, .activate-shiftUp.ng-enter, .activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter, .activate-shiftDown.ng-enter, .activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-shiftLeft.ng-enter, .activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter, .activate-shiftRight.ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter, .activate-shiftLeftRight.ng-enter, .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-flipLeft.ng-enter, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-tilt.ng-enter, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after {
+.activate-, [class*=" activate--"], [class^="activate--"] .ng-enter {
   z-index: 2;
 }
 
-.ng-leave, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-fade.ng-leave, .activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave, .activate-fadeIn.ng-leave, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-scaleUp.ng-leave, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-scaleDown.ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave, .activate-scaleUpDown.ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave, .activate-scaleDownUp.ng-leave, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave, .activate-slideUp.ng-leave, .activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave, .activate-slideUpDown.ng-leave, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave, .activate-slideDown.ng-leave, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave, .activate-slideLeft.ng-leave, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave, .activate-slideRight.ng-leave, .activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave, .activate-shiftUp.ng-leave, .activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave, .activate-shiftDown.ng-leave, .activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave, .activate-shiftLeft.ng-leave, .activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-shiftRight.ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave, .activate-shiftLeftRight.ng-leave, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-flipLeft.ng-leave, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-tilt.ng-leave, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after {
+.ng-leave {
   z-index: 0;
 }
 
@@ -1817,7 +1810,7 @@
           animation-delay: 300ms !important;
 }
 
-.activate-all-fade > [ui-view].ng-enter, .activate-all-fade > .page.ng-enter, .activate-all-fade > [ng-if].ng-enter, .activate-all-fade > [ui-view].ng-leave, .activate-all-fade > .page.ng-leave, .activate-all-fade > [ng-if].ng-leave, .activate-all-fadeIn > [ui-view].ng-enter, .activate-all-fadeIn > .page.ng-enter, .activate-all-fadeIn > [ng-if].ng-enter, .activate-all-fadeIn > [ui-view].ng-leave, .activate-all-fadeIn > .page.ng-leave, .activate-all-fadeIn > [ng-if].ng-leave, .activate-all-scaleUp > [ui-view].ng-enter, .activate-all-scaleUp > .page.ng-enter, .activate-all-scaleUp > [ng-if].ng-enter, .activate-all-scaleUpDown > [ui-view].ng-enter, .activate-all-scaleUpDown > .page.ng-enter, .activate-all-scaleUpDown > [ng-if].ng-enter, .activate-all-scaleUp > [ui-view].ng-leave, .activate-all-scaleUp > .page.ng-leave, .activate-all-scaleUp > [ng-if].ng-leave, .activate-all-scaleDownUp > [ui-view].ng-leave, .activate-all-scaleDownUp > .page.ng-leave, .activate-all-scaleDownUp > [ng-if].ng-leave, .activate-all-scaleDown > [ui-view].ng-enter, .activate-all-scaleDown > .page.ng-enter, .activate-all-scaleDown > [ng-if].ng-enter, .activate-all-scaleDownUp > [ui-view].ng-enter, .activate-all-scaleDownUp > .page.ng-enter, .activate-all-scaleDownUp > [ng-if].ng-enter, .activate-all-scaleDown > [ui-view].ng-leave, .activate-all-scaleDown > .page.ng-leave, .activate-all-scaleDown > [ng-if].ng-leave, .activate-all-scaleUpDown > [ui-view].ng-leave, .activate-all-scaleUpDown > .page.ng-leave, .activate-all-scaleUpDown > [ng-if].ng-leave, .activate-all-slideLeft > [ui-view].ng-enter, .activate-all-slideLeft > .page.ng-enter, .activate-all-slideLeft > [ng-if].ng-enter, .activate-all-slideLeft > [ui-view].ng-leave, .activate-all-slideLeft > .page.ng-leave, .activate-all-slideLeft > [ng-if].ng-leave, .activate-all-slideRight > [ui-view].ng-enter, .activate-all-slideRight > .page.ng-enter, .activate-all-slideRight > [ng-if].ng-enter, .activate-all-slideRight > [ui-view].ng-leave, .activate-all-slideRight > .page.ng-leave, .activate-all-slideRight > [ng-if].ng-leave, .activate-all-slideUp > [ui-view].ng-enter, .activate-all-slideUp > .page.ng-enter, .activate-all-slideUp > [ng-if].ng-enter, .activate-all-slideUp > [ui-view].ng-leave, .activate-all-slideUp > .page.ng-leave, .activate-all-slideUp > [ng-if].ng-leave, .activate-all-slideDown > [ui-view].ng-enter, .activate-all-slideDown > .page.ng-enter, .activate-all-slideDown > [ng-if].ng-enter, .activate-all-slideDown > [ui-view].ng-leave, .activate-all-slideDown > .page.ng-leave, .activate-all-slideDown > [ng-if].ng-leave, .activate-all-slideUpDown > [ui-view].ng-enter, .activate-all-slideUpDown > .page.ng-enter, .activate-all-slideUpDown > [ng-if].ng-enter, .activate-all-slideUpDown > [ui-view].ng-leave, .activate-all-slideUpDown > .page.ng-leave, .activate-all-slideUpDown > [ng-if].ng-leave, .activate-all-shiftUp > [ui-view].ng-enter, .activate-all-shiftUp > .page.ng-enter, .activate-all-shiftUp > [ng-if].ng-enter, .activate-all-shiftUp > [ui-view].ng-leave, .activate-all-shiftUp > .page.ng-leave, .activate-all-shiftUp > [ng-if].ng-leave, .activate-all-shiftDown > [ui-view].ng-enter, .activate-all-shiftDown > .page.ng-enter, .activate-all-shiftDown > [ng-if].ng-enter, .activate-all-shiftDown > [ui-view].ng-leave, .activate-all-shiftDown > .page.ng-leave, .activate-all-shiftDown > [ng-if].ng-leave, .activate-all-shiftLeft > [ui-view].ng-enter, .activate-all-shiftLeft > .page.ng-enter, .activate-all-shiftLeft > [ng-if].ng-enter, .activate-all-shiftLeftRight > [ui-view].ng-enter, .activate-all-shiftLeftRight > .page.ng-enter, .activate-all-shiftLeftRight > [ng-if].ng-enter, .activate-all-shiftLeft > [ui-view].ng-leave, .activate-all-shiftLeft > .page.ng-leave, .activate-all-shiftLeft > [ng-if].ng-leave, .activate-all-shiftRight > [ui-view].ng-enter, .activate-all-shiftRight > .page.ng-enter, .activate-all-shiftRight > [ng-if].ng-enter, .activate-all-shiftRight > [ui-view].ng-leave, .activate-all-shiftRight > .page.ng-leave, .activate-all-shiftRight > [ng-if].ng-leave, .activate-all-shiftLeftRight > [ui-view].ng-leave, .activate-all-shiftLeftRight > .page.ng-leave, .activate-all-shiftLeftRight > [ng-if].ng-leave, .activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .activate-fade.ng-enter, .activate-fade.ng-leave, .activate-fadeIn.ng-enter, .activate-fadeIn.ng-leave, .activate-scaleUp.ng-enter, .activate-scaleUp.ng-leave, .activate-scaleDown.ng-enter, .activate-scaleDown.ng-leave, .activate-scaleUpDown.ng-enter, .activate-scaleUpDown.ng-leave, .activate-scaleDownUp.ng-enter, .activate-scaleDownUp.ng-leave, .activate-slideUp.ng-enter, .activate-slideUp.ng-leave, .activate-slideUpDown.ng-enter, .activate-slideUpDown.ng-leave, .activate-slideDown.ng-enter, .activate-slideDown.ng-leave, .activate-slideLeft.ng-enter, .activate-slideLeft.ng-leave, .activate-slideRight.ng-enter, .activate-slideRight.ng-leave, .activate-shiftUp.ng-enter, .activate-shiftUp.ng-leave, .activate-shiftDown.ng-enter, .activate-shiftDown.ng-leave, .activate-shiftLeft.ng-enter, .activate-shiftLeft.ng-leave, .activate-shiftRight.ng-enter, .activate-shiftRight.ng-leave, .activate-shiftLeftRight.ng-enter, .activate-shiftLeftRight.ng-leave, .activate-flipLeft.ng-enter, .activate-flipLeft.ng-leave, .activate-tilt.ng-enter, .activate-tilt.ng-leave, .tooltip[title]:hover:before, [class*=" tooltip-"][title]:hover:before, [class^="tooltip-"][title]:hover:before, .tooltip[title]:hover:after, [class*=" tooltip-"][title]:hover:after, [class^="tooltip-"][title]:hover:after, .tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after, .toast, .toast.inactive {
+.tooltip[title]:before, [class*=" tooltip-"][title]:before, [class^="tooltip-"][title]:before, .tooltip[title]:after, [class*=" tooltip-"][title]:after, [class^="tooltip-"][title]:after, .toast, .toast.inactive {
   -webkit-animation-duration: 300ms;
           animation-duration: 300ms;
   -webkit-animation-direction: normal;
@@ -1834,7 +1827,7 @@
           animation-fill-mode: both;
 }
 
-.activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .animation-3d, .activate-all-flipLeft, .activate-all-tilt {
+.activate-all-flipLeft > [ui-view].ng-enter, .activate-all-flipLeft > .page.ng-enter, .activate-all-flipLeft > [ng-if].ng-enter, .activate-all-flipLeft > [ui-view].ng-leave, .activate-all-flipLeft > .page.ng-leave, .activate-all-flipLeft > [ng-if].ng-leave, .activate-all-tilt > [ui-view].ng-enter, .activate-all-tilt > .page.ng-enter, .activate-all-tilt > [ng-if].ng-enter, .activate-all-tilt > [ui-view].ng-leave, .activate-all-tilt > .page.ng-leave, .activate-all-tilt > [ng-if].ng-leave, .animation-3d {
   -webkit-animation-duration: 300ms;
           animation-duration: 300ms;
   -webkit-perspective: 1000;

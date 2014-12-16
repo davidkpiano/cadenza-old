@@ -1,9 +1,15 @@
 
 
 
-$whitespace-padding: 1rem !default;
-$whitespace-padding-half: $whitespace-padding / 2 !default;
-$whitespace-padding-double: $whitespace-padding * 2 !default;
+$space-padding: 1rem !default;
+$space-padding-half: $space-padding / 2 !default;
+$space-padding-double: $space-padding * 2 !default;
+
+$space-margin: 1rem !default;
+$space-margin-half: $space-margin / 2 !default;
+$space-margin-double: $space-margin * 2 !default;
+
+$space-content: 1rem !default;
 
 @import
 	'_mixins',
