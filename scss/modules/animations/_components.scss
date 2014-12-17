@@ -42,7 +42,10 @@
     perspective: $animation-3d-perspective;
     transform-style: preserve-3d;
     backface-visibility: hidden;
-    transform: translate(0,0,0);
+    transform: 
+        translateX(0)
+        translateY(0)
+        translateZ(0);
 }
 
 // Fade

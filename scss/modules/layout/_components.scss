@@ -7,17 +7,17 @@
 @each $position-horizontal in $positions-horizontal {
     @each $position-vertical in $positions-vertical {
         %position-#{$position-horizontal}-#{$position-vertical} {
-            @include position-absolute($position-horizontal, $position-vertical, $extend: false);
+            @include position-absolute($position-horizontal, $position-vertical);
         }
     }
 }
 
 @each $position in $positions-vertical {
-    %position-#{$position} { @include position-absolute($vertical: $position, $extend: false); }
+    %position-#{$position} { @include position-absolute($vertical: $position); }
 }
 
 @each $position in $positions-horizontal {
-    %position-#{$position} { @include position-absolute($horizontal: $position, $extend: false); }
+    %position-#{$position} { @include position-absolute($horizontal: $position); }
 }
 
 @each $overlap-vertical in (top, bottom) {

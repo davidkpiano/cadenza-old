@@ -3,7 +3,11 @@
 // ==================
 
 #{$inert-selector} { @extend %inert; }
-#{prefixed-class('activate-')} #{$active-selector} { @extend %active; }
+#{prefixed-class('activate-all', $selector: ' #{$active-selector}')},
+#{prefixed-class('activate', $selector: $active-selector)} {
+    @extend %active;
+    @extend %animation;
+}
 #{$inactive-selector} { @extend %inactive; }
 
 .delay, .delay-all > * { @extend %active-delay; }

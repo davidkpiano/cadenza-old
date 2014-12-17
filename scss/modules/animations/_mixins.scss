@@ -20,14 +20,11 @@
     $play-state: default,
     $timing-function: default,
     $fill-mode: default,
-    $is-3d: false,
-    $extend: true
+    $extend: true,
+    $is-3d: false
 ) {
     @include media-extend('%animation', $extend);
-
-    @if $is-3d {
-        @extend %animation-3d;
-    }
+    @include media-extend('%animation-3d', $is-3d);
 
     animation-name: $name;
 

@@ -86,7 +86,11 @@
 }
 
 %tooltip {
-    @include activate($tooltip-animation, $active-selector: ':hover:before, &:hover:after', $inactive-selector: ':before, &:after');
+    @include activate(
+            $tooltip-animation,
+            $active-selector: ':hover:before, &:hover:after',
+            $inactive-selector: ':before, &:after'
+        );
 
     &-content, &-arrow {
         pointer-events: none;

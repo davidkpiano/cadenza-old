@@ -59,12 +59,9 @@
     $top: false,
     $bottom: false,
     $left: false,
-    $right: false,
-    $extend: true
+    $right: false
 ) {
-    @if $extend {
-        @extend %position-absolute;
-    }
+    position: absolute;
 
     $transform-list: null;
 
