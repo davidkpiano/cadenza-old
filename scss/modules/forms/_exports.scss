@@ -4,7 +4,7 @@
 
 @include export('input') {
     textarea,
-    input:not[type="radio"]:not[type="checkbox"]:not[type="button"]:not[type="submit"] {
+    input:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
     	@extend %input;
 
         @include style('input');

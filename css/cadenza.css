@@ -11853,7 +11853,7 @@ hr.darken {
 }
 
 textarea,
-input[type="radio"][type="checkbox"][type="button"][type="submit"]:not {
+input:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   font-size: 11.2px ;
   font-size: 0.8rem ;
   display: block;
@@ -11866,13 +11866,13 @@ input[type="radio"][type="checkbox"][type="button"][type="submit"]:not {
 }
 
 textarea.small,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].small:not {
+input.small:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   font-size: 8.96px ;
   font-size: 0.64rem ;
 }
 
 textarea.large,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].large:not {
+input.large:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   font-size: 14px ;
   font-size: 1rem ;
 }
@@ -11884,7 +11884,7 @@ textarea.inline {
 }
 
 textarea.implicit,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not {
+input.implicit:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   background: transparent;
   border-width: 0;
 }
@@ -11932,216 +11932,202 @@ label.inline {
 }
 
 textarea,
-input[type="radio"][type="checkbox"][type="button"][type="submit"]:not {
+input:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   border-color: #E7E7E7;
   color: #363636;
   background-color: #FFF;
 }
 textarea:hover,
-input[type="radio"][type="checkbox"][type="button"][type="submit"]:hover:not {
+input:hover:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   border-color: #cecece;
   color: #363636;
   background-color: #FFF;
 }
 textarea:focus,
-input[type="radio"][type="checkbox"][type="button"][type="submit"]:focus:not {
+input:focus:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   border-color: #2f7d8c;
   color: #363636;
   background-color: #FFF;
 }
 textarea::-webkit-input-placeholder,
-input[type="radio"][type="checkbox"][type="button"][type="submit"]:not::-webkit-input-placeholder {
+input:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-webkit-input-placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 textarea::-moz-placeholder,
-input[type="radio"][type="checkbox"][type="button"][type="submit"]:not::-moz-placeholder {
+input:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-moz-placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 textarea:-ms-input-placeholder,
-input[type="radio"][type="checkbox"][type="button"][type="submit"]:not:-ms-input-placeholder {
+input:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]):-ms-input-placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 textarea::placeholder,
-input[type="radio"][type="checkbox"][type="button"][type="submit"]:not::placeholder {
+input:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 textarea.lighten,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].lighten:not {
+input.lighten:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   border-color: rgba(255, 255, 255, 0.4);
   color: #363636;
   background-color: #FFF;
 }
 textarea.lighten:hover,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].lighten:hover:not {
+input.lighten:hover:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   border-color: rgba(230, 230, 230, 0.4);
   color: #363636;
   background-color: #FFF;
 }
 textarea.lighten:focus,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].lighten:focus:not {
+input.lighten:focus:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   border-color: #2f7d8c;
   color: #363636;
   background-color: #FFF;
 }
 textarea.lighten::-webkit-input-placeholder,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].lighten:not::-webkit-input-placeholder {
+input.lighten:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-webkit-input-placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 textarea.lighten::-moz-placeholder,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].lighten:not::-moz-placeholder {
+input.lighten:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-moz-placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 textarea.lighten:-ms-input-placeholder,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].lighten:not:-ms-input-placeholder {
+input.lighten:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]):-ms-input-placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 textarea.lighten::placeholder,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].lighten:not::placeholder {
+input.lighten:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 textarea.darken,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].darken:not {
+input.darken:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   border-color: rgba(0, 0, 0, 0.4);
   color: #363636;
   background-color: #FFF;
 }
 textarea.darken:hover,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].darken:hover:not {
+input.darken:hover:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   border-color: rgba(0, 0, 0, 0.4);
   color: #363636;
   background-color: #FFF;
 }
 textarea.darken:focus,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].darken:focus:not {
+input.darken:focus:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   border-color: #2f7d8c;
   color: #363636;
   background-color: #FFF;
 }
 textarea.darken::-webkit-input-placeholder,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].darken:not::-webkit-input-placeholder {
+input.darken:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-webkit-input-placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 textarea.darken::-moz-placeholder,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].darken:not::-moz-placeholder {
+input.darken:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-moz-placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 textarea.darken:-ms-input-placeholder,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].darken:not:-ms-input-placeholder {
+input.darken:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]):-ms-input-placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 textarea.darken::placeholder,
-input[type="radio"][type="checkbox"][type="button"][type="submit"].darken:not::placeholder {
+input.darken:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 
 .mode-light textarea.implicit, .alert textarea.implicit, .cz-code textarea.implicit,
-.mode-light input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not,
-.alert input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not,
-.alert.success input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not,
-.alert.failure input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not,
-.cz-code input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not, .hover-mode-light:hover textarea.implicit,
-.hover-mode-light:hover input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not {
+.mode-light input.implicit:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]),
+.alert input.implicit:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]),
+.cz-code input.implicit:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]), .hover-mode-light:hover textarea.implicit,
+.hover-mode-light:hover input.implicit:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   border-color: transparent;
   color: #EFEFEF;
   background-color: transparent;
 }
 .mode-light textarea.implicit:hover, .alert textarea.implicit:hover, .cz-code textarea.implicit:hover,
-.mode-light input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:hover:not,
-.alert input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:hover:not,
-.alert.success input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:hover:not,
-.alert.failure input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:hover:not,
-.cz-code input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:hover:not, .hover-mode-light:hover textarea.implicit:hover,
-.hover-mode-light:hover input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:hover:not {
+.mode-light input.implicit:hover:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]),
+.alert input.implicit:hover:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]),
+.cz-code input.implicit:hover:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]), .hover-mode-light:hover textarea.implicit:hover,
+.hover-mode-light:hover input.implicit:hover:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   border-color: transparent;
   color: #EFEFEF;
   background-color: transparent;
 }
 .mode-light textarea.implicit:focus, .alert textarea.implicit:focus, .cz-code textarea.implicit:focus,
-.mode-light input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:focus:not,
-.alert input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:focus:not,
-.alert.success input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:focus:not,
-.alert.failure input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:focus:not,
-.cz-code input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:focus:not, .hover-mode-light:hover textarea.implicit:focus,
-.hover-mode-light:hover input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:focus:not {
+.mode-light input.implicit:focus:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]),
+.alert input.implicit:focus:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]),
+.cz-code input.implicit:focus:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]), .hover-mode-light:hover textarea.implicit:focus,
+.hover-mode-light:hover input.implicit:focus:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   border-color: #2f7d8c;
   color: #EFEFEF;
   background-color: transparent;
 }
 .mode-light textarea.implicit::-webkit-input-placeholder, .alert textarea.implicit::-webkit-input-placeholder, .cz-code textarea.implicit::-webkit-input-placeholder,
-.mode-light input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::-webkit-input-placeholder,
-.alert input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::-webkit-input-placeholder,
-.alert.success input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::-webkit-input-placeholder,
-.alert.failure input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::-webkit-input-placeholder,
-.cz-code input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::-webkit-input-placeholder, .hover-mode-light:hover textarea.implicit::-webkit-input-placeholder,
-.hover-mode-light:hover input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::-webkit-input-placeholder {
+.mode-light input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-webkit-input-placeholder,
+.alert input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-webkit-input-placeholder,
+.cz-code input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-webkit-input-placeholder, .hover-mode-light:hover textarea.implicit::-webkit-input-placeholder,
+.hover-mode-light:hover input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-webkit-input-placeholder {
   color: rgba(239, 239, 239, 0.4);
 }
 .mode-light textarea.implicit::-moz-placeholder, .alert textarea.implicit::-moz-placeholder, .cz-code textarea.implicit::-moz-placeholder,
-.mode-light input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::-moz-placeholder,
-.alert input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::-moz-placeholder,
-.alert.success input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::-moz-placeholder,
-.alert.failure input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::-moz-placeholder,
-.cz-code input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::-moz-placeholder, .hover-mode-light:hover textarea.implicit::-moz-placeholder,
-.hover-mode-light:hover input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::-moz-placeholder {
+.mode-light input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-moz-placeholder,
+.alert input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-moz-placeholder,
+.cz-code input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-moz-placeholder, .hover-mode-light:hover textarea.implicit::-moz-placeholder,
+.hover-mode-light:hover input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-moz-placeholder {
   color: rgba(239, 239, 239, 0.4);
 }
 .mode-light textarea.implicit:-ms-input-placeholder, .alert textarea.implicit:-ms-input-placeholder, .cz-code textarea.implicit:-ms-input-placeholder,
-.mode-light input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not:-ms-input-placeholder,
-.alert input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not:-ms-input-placeholder,
-.alert.success input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not:-ms-input-placeholder,
-.alert.failure input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not:-ms-input-placeholder,
-.cz-code input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not:-ms-input-placeholder, .hover-mode-light:hover textarea.implicit:-ms-input-placeholder,
-.hover-mode-light:hover input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not:-ms-input-placeholder {
+.mode-light input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]):-ms-input-placeholder,
+.alert input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]):-ms-input-placeholder,
+.cz-code input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]):-ms-input-placeholder, .hover-mode-light:hover textarea.implicit:-ms-input-placeholder,
+.hover-mode-light:hover input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]):-ms-input-placeholder {
   color: rgba(239, 239, 239, 0.4);
 }
 .mode-light textarea.implicit::placeholder, .alert textarea.implicit::placeholder, .cz-code textarea.implicit::placeholder,
-.mode-light input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::placeholder,
-.alert input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::placeholder,
-.alert.success input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::placeholder,
-.alert.failure input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::placeholder,
-.cz-code input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::placeholder, .hover-mode-light:hover textarea.implicit::placeholder,
-.hover-mode-light:hover input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::placeholder {
+.mode-light input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::placeholder,
+.alert input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::placeholder,
+.cz-code input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::placeholder, .hover-mode-light:hover textarea.implicit::placeholder,
+.hover-mode-light:hover input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::placeholder {
   color: rgba(239, 239, 239, 0.4);
 }
 .mode-dark textarea.implicit,
-.mode-dark input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not, .hover-mode-dark:hover textarea.implicit,
-.hover-mode-dark:hover input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not {
+.mode-dark input.implicit:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]), .hover-mode-dark:hover textarea.implicit,
+.hover-mode-dark:hover input.implicit:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   border-color: transparent;
   color: #363636;
   background-color: transparent;
 }
 .mode-dark textarea.implicit:hover,
-.mode-dark input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:hover:not, .hover-mode-dark:hover textarea.implicit:hover,
-.hover-mode-dark:hover input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:hover:not {
+.mode-dark input.implicit:hover:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]), .hover-mode-dark:hover textarea.implicit:hover,
+.hover-mode-dark:hover input.implicit:hover:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   border-color: transparent;
   color: #363636;
   background-color: transparent;
 }
 .mode-dark textarea.implicit:focus,
-.mode-dark input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:focus:not, .hover-mode-dark:hover textarea.implicit:focus,
-.hover-mode-dark:hover input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:focus:not {
+.mode-dark input.implicit:focus:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]), .hover-mode-dark:hover textarea.implicit:focus,
+.hover-mode-dark:hover input.implicit:focus:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
   border-color: #2f7d8c;
   color: #363636;
   background-color: transparent;
 }
 .mode-dark textarea.implicit::-webkit-input-placeholder,
-.mode-dark input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::-webkit-input-placeholder, .hover-mode-dark:hover textarea.implicit::-webkit-input-placeholder,
-.hover-mode-dark:hover input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::-webkit-input-placeholder {
+.mode-dark input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-webkit-input-placeholder, .hover-mode-dark:hover textarea.implicit::-webkit-input-placeholder,
+.hover-mode-dark:hover input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-webkit-input-placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 .mode-dark textarea.implicit::-moz-placeholder,
-.mode-dark input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::-moz-placeholder, .hover-mode-dark:hover textarea.implicit::-moz-placeholder,
-.hover-mode-dark:hover input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::-moz-placeholder {
+.mode-dark input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-moz-placeholder, .hover-mode-dark:hover textarea.implicit::-moz-placeholder,
+.hover-mode-dark:hover input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::-moz-placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 .mode-dark textarea.implicit:-ms-input-placeholder,
-.mode-dark input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not:-ms-input-placeholder, .hover-mode-dark:hover textarea.implicit:-ms-input-placeholder,
-.hover-mode-dark:hover input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not:-ms-input-placeholder {
+.mode-dark input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]):-ms-input-placeholder, .hover-mode-dark:hover textarea.implicit:-ms-input-placeholder,
+.hover-mode-dark:hover input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"]):-ms-input-placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 .mode-dark textarea.implicit::placeholder,
-.mode-dark input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::placeholder, .hover-mode-dark:hover textarea.implicit::placeholder,
-.hover-mode-dark:hover input[type="radio"][type="checkbox"][type="button"][type="submit"].implicit:not::placeholder {
+.mode-dark input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::placeholder, .hover-mode-dark:hover textarea.implicit::placeholder,
+.hover-mode-dark:hover input.implicit:not([type="submit"]):not([type="button"]):not([type="checkbox"]):not([type="radio"])::placeholder {
   color: rgba(54, 54, 54, 0.4);
 }
 
