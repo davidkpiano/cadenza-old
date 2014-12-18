@@ -17,7 +17,7 @@ var fs = require('fs');
 var marked = require('marked');
 var renderer = new marked.Renderer();
 
-gulp.task('build', ['scss']);
+gulp.task('build', ['scss', 'docs']);
 
 gulp.task('scss', ['sassdoc'], function() {
     gulp.src('scss/*.scss')
@@ -99,5 +99,5 @@ gulp.task('component', function() {
 gulp.task('default', ['build'], function() {
 	gulp.watch('./scss/**/*.scss', ['scss']);
 
-    gulp.watch('./docs/source/**/*.md', ['docs']);
+    gulp.watch('./docs/source/**/*', ['docs']);
 });

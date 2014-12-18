@@ -12,7 +12,7 @@ angular.module('cadenza', ['ui.router', 'ngAnimate'])
         'nav',
         'animations',
         'labels',
-        'forms',
+        'form',
         'sandbox'
     ])
 
