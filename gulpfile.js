@@ -3,7 +3,7 @@ var notify = require('gulp-notify');
 var sass = require('gulp-ruby-sass');
 var livereload = require('gulp-livereload');
 var autoprefixer = require('gulp-autoprefixer');
-var markdown = require('gulp-remarkable');
+var markdown = require('gulp-markdown');
 var highlight = require('gulp-highlight');
 var prompt = require('gulp-prompt');
 var concat = require('gulp-concat');
@@ -47,7 +47,7 @@ gulp.task('docs', function() {
     _.each(modules, function(module) {
         gulp.src(docsDir + module + '/*.md')
             .pipe(markdown({
-                preset: 'commonmark'
+                renderer: renderer
             }))
             .pipe(replace(/\[\[([^\/].*?)\]\]/g, '<div class="cz-$1">\n'))
             .pipe(replace(/\[\[\/(.*?)\]\]/g, '</div>\n'))
@@ -63,6 +63,12 @@ gulp.task('docs', function() {
         });
     }
 });
+
+renderer.paragraph = function(text) {
+    if (/^\[.*\]$/.test(text)) return text;
+
+    return '<p>' + text + '</p>\n';
+};
 
 gulp.task('component', function() {
     gulp.src('app.js')

@@ -1,36 +1,3 @@
-
-[[content]]
-## Example Forms
-
-<div class="border pad">
-    <div class="field col-6">
-        <label>First Name</label>
-        <input type="text" name="" id="" placeholder="First Name">
-    </div>
-
-    <div class="field col-6">
-        <label>Last Name</label>
-        <input type="text" name="" id="" placeholder="Last Name">
-    </div>
-
-    <div class="field">
-        <label>First Name</label>
-        <input type="text" name="" id="" placeholder="First Name">
-    </div>
-
-    <div class="field">
-        <label>First Name</label>
-        <input type="text" name="" id="" placeholder="First Name">
-    </div>
-
-    <div class="field">
-        <label>First Name</label>
-        <input type="text" name="" id="" placeholder="First Name">
-    </div>
-</div>
-
-[[/]]
-
 [[content]]
 ## Text Inputs
 
@@ -69,13 +36,13 @@
 [[content]]
 ## Textarea
 
-<!-- <textarea name="" id="" placeholder="Placeholder goes here"></textarea> -->
+<textarea name="" id="" placeholder="Placeholder goes here"></textarea>
 [[/]]
 
 [[content]]
 ## Select
 
-<!-- <div class="field">
+<div class="field">
     <label for="">Select box</label>
     <select name="" id="">
         <option value="">Option 1</option>
@@ -84,25 +51,22 @@
         <option value="">Option 4</option>
         <option value="">Option 5</option>
     </select>
-</div> -->
+</div>
 [[/]]
 
 [[content]]
-
 ## Radio buttons
 
-<!-- 
 <div class="field">
     <label><input type="radio" name="radio" id=""><span>Radio 1</span></label>
     <label><input type="radio" name="radio" id=""><span>Radio 2</span></label>
     <label><input type="radio" name="radio" id=""><span>Radio 3</span></label>
     <label><input type="radio" name="radio" id=""><span>Radio 4</span></label>
     <label><input type="radio" name="radio" id=""><span>Radio 5</span></label>
-</div> -->
+</div>
 [[/]]
 
 [[content]]
-
 ## Checkboxes
 
 <div class="field">
