@@ -14,13 +14,13 @@
     $import-environment: all;
     $import-component: false;
 
-    @if type-of($components) == string
-        and index(('all', $name), $components) {
+    @if type-of($imports) == string
+        and index(('all', $name), $imports) {
         $import-component: true;
-    } @else if type-of($components) == list {
-        $import-component: if(index($components, $name), true, false);
-    } @else if type-of($components) == map {
-        $import-environment: map-get($components, $name);
+    } @else if type-of($imports) == list {
+        $import-component: if(index($imports, $name), true, false);
+    } @else if type-of($imports) == map {
+        $import-environment: map-get($imports, $name);
         $import-component: if($import-environment, true, false);
     }
 

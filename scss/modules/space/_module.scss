@@ -11,6 +11,17 @@ $space-margin-double: $space-margin * 2 !default;
 
 $space-content: 1rem !default;
 
+$padding-component: (
+    half: (
+        padding: $space-padding-half
+    ),
+    double: (
+        padding: $space-padding-double,
+    )
+);
+
+@include define('padding', $padding-component);
+
 @import
 	'_mixins',
 	'_components',

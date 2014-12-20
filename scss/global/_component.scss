@@ -1,0 +1,27 @@
+
+
+$components: ();
+
+@mixin define(
+    $component,
+    $definition
+) {
+    $component-definition: ($component: $definition);
+
+    $components: map-merge($components, $component-definition) !global;
+}
+
+@mixin component($name, $variant: false) {
+    $component: map-get($components, $name);
+    $definition: map-get($component, default);
+
+    @if $variant {
+        $definition: map-get($component, $variant);
+    }
+
+    @each $property, $rule in $definition {
+        #{$property}: #{$rule};
+    }
+
+    @content;
+}
