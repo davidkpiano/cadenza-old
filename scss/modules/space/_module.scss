@@ -20,7 +20,19 @@ $padding-component: (
     )
 );
 
-@include define('padding', $padding-component);
+@include define('padding', (
+    padding: $space-padding
+)) {
+    @include variant('vertical', (
+        padding-top: $space-padding,
+        padding-bottom: $space-padding
+    ));
+
+    @include variant('horizontal', (
+        padding-left: $space-padding,
+        padding-right: $space-padding
+    ));
+}
 
 @import
 	'_mixins',

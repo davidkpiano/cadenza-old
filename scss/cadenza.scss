@@ -82,5 +82,5 @@
 
 .cz-example {
     @extend %border;
-    @extend %pad;
+    @include component(pad);
 }

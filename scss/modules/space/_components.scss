@@ -3,60 +3,60 @@
     padding: $space-content;
 }
 
-%pad {
-    padding: $space-padding !important;
+@include define('pad', (
+    padding: $space-padding
+)) {
+    @include variant('vertical', (
+        padding-top: $space-padding,
+        padding-bottom: $space-padding
+    ));
 
-    &-vertical {
-        padding-top: $space-padding;
-        padding-bottom: $space-padding;
-    }
+    @include variant('horizontal', (
+        padding-left: $space-padding,
+        padding-right: $space-padding
+    ));
 
-    &-horizontal {
-        padding-left: $space-padding;
-        padding-right: $space-padding;
-    }
+    @include variant('half', (
+        padding: $space-padding-half
+    ));
 
-    &-half {
-        padding: $space-padding-half;
-    }
+    @include variant('vertical-half', (
+        padding-top: $space-padding-half,
+        padding-bottom: $space-padding-half
+    ));
 
-    &-vertical-half {
-        padding-top: $space-padding-half;
-        padding-bottom: $space-padding-half;
-    }
+    @include variant('horizontal-half', (
+        padding-left: $space-padding-half,
+        padding-right: $space-padding-half
+    ));
 
-    &-horizontal-half {
-        padding-left: $space-padding-half;
-        padding-right: $space-padding-half;
-    }
+    @include variant('double', (
+        padding: $space-padding-double
+    ));
 
-    &-double {
-        padding: $space-padding-double;
-    }
+    @include variant('vertical-double', (
+        padding-top: $space-padding-double,
+        padding-bottom: $space-padding-double
+    ));
 
-    &-vertical-double {
-        padding-top: $space-padding-double;
-        padding-bottom: $space-padding-double;
-    }
+    @include variant('horizontal-double', (
+        padding-left: $space-padding-double,
+        padding-right: $space-padding-double
+    ));
 
-    &-horizontal-double {
-        padding-left: $space-padding-double;
-        padding-right: $space-padding-double;
-    }
+    @include variant('none', (
+        padding: 0 !important
+    ));
 
-    &-none {
-        padding: 0 !important;
-    }
+    @include variant('vertical-none', (
+        padding-top: 0 !important,
+        padding-bottom: 0 !important
+    ));
 
-    &-vertical-none {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-    }
-
-    &-horizontal-none {
-        padding-left: 0 !important;
-        padding-right: 0 !important;
-    }
+    @include variant('horizontal-none', (
+        padding-left: 0 !important,
+        padding-right: 0 !important
+    ));
 }
 
 %margin {

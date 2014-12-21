@@ -1,27 +1,59 @@
 
 
 $components: ();
+$static-component: null;
+
+@mixin rules($definition) {
+    @each $property, $rule in $definition {
+        #{$property}: #{$rule};
+    }
+}
 
 @mixin define(
     $component,
     $definition
 ) {
-    $component-definition: ($component: $definition);
+    $static-component: $component !global;
+
+    $component-definition: ($component: (default: $definition));
 
     $components: map-merge($components, $component-definition) !global;
+
+    $placeholder: $component;
+
+    @at-root %#{$placeholder} {
+        @include rules($definition);
+        @content;
+    }
 }
 
-@mixin component($name, $variant: false) {
+@mixin variant(
+    $variant,
+    $definition,
+    $component: $static-component
+) {
+    $variant-definition: ($variant: $definition);
+
+    $component-map: map-get($components, $component);
+
+    $component-map: map-merge($component-map, $variant-definition);
+
+    $components: map-merge($components, ($component: $component-map)) !global;
+
+    $placeholder: #{$component}#{if($variant == default, '', '-#{$variant}')};
+
+    @at-root %#{$placeholder} {
+        @include rules($definition);
+        @content;
+    }
+}
+
+@mixin component($name, $variant: default) {
     $component: map-get($components, $name);
-    $definition: map-get($component, default);
+    $definition: map-get($component, $variant);
 
-    @if $variant {
-        $definition: map-get($component, $variant);
-    }
+    $variant: if($variant == default, '', '-#{$variant}');
 
-    @each $property, $rule in $definition {
-        #{$property}: #{$rule};
-    }
-
+    @include rules($definition);
     @content;
 }
