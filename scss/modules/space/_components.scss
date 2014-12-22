@@ -59,58 +59,59 @@
     ));
 }
 
-%margin {
-    margin: $space-margin !important;
+@include define('margin', (
+    margin: $space-margin !important
+)) {
 
-    &-vertical {
-        margin-top: $space-margin;
-        margin-bottom: $space-margin;
-    }
+    @include variant('vertical', (
+        margin-top: $space-margin,
+        margin-bottom: $space-margin,
+    ));
 
-    &-horizontal {
-        margin-left: $space-margin;
-        margin-right: $space-margin;
-    }
+    @include variant('horizontal', (
+        margin-left: $space-margin,
+        margin-right: $space-margin,
+    ));
 
-    &-half {
-        margin: $space-margin-half;
-    }
+    @include variant('half', (
+        margin: $space-margin-half,
+    ));
 
-    &-vertical-half {
-        margin-top: $space-margin-half;
-        margin-bottom: $space-margin-half;
-    }
+    @include variant('vertical-half', (
+        margin-top: $space-margin-half,
+        margin-bottom: $space-margin-half,
+    ));
 
-    &-horizontal-half {
-        margin-left: $space-margin-half;
-        margin-right: $space-margin-half;
-    }
+    @include variant('horizontal-half', (
+        margin-left: $space-margin-half,
+        margin-right: $space-margin-half,
+    ));
 
-    &-double {
-        margin: $space-margin-double;
-    }
+    @include variant('double', (
+        margin: $space-margin-double,
+    ));
 
-    &-vertical-double {
-        margin-top: $space-margin-double;
-        margin-bottom: $space-margin-double;
-    }
+    @include variant('vertical-double', (
+        margin-top: $space-margin-double,
+        margin-bottom: $space-margin-double,
+    ));
 
-    &-horizontal-double {
-        margin-left: $space-margin-double;
-        margin-right: $space-margin-double;
-    }
+    @include variant('horizontal-double', (
+        margin-left: $space-margin-double,
+        margin-right: $space-margin-double,
+    ));
 
-    &-none {
-        margin: 0 !important;
-    }
+    @include variant('none', (
+        margin: 0 !important,
+    ));
 
-    &-vertical-none {
-        margin-top: 0 !important;
-        margin-bottom: 0 !important;
-    }
+    @include variant('vertical-none', (
+        margin-top: 0 !important,
+        margin-bottom: 0 !important,
+    ));
 
-    &-horizontal-none {
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-    }
+    @include variant('horizontal-none', (
+        margin-left: 0 !important,
+        margin-right: 0 !important,
+    ));
 }

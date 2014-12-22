@@ -21,5 +21,19 @@
 }
 
 @include export('margin', 'space') {
-    // ...
+    .margin { @extend %margin; }
+    .margin-vertical { @extend %margin-vertical; }
+    .margin-horizontal { @extend %margin-horizontal; }
+
+    .margin-half { @extend %margin-half; }
+    .margin-vertical-half { @extend %margin-vertical-half; }
+    .margin-horizontal-half { @extend %margin-horizontal-half; }
+
+    .margin-double { @extend %margin-double; }
+    .margin-vertical-double { @extend %margin-vertical-double; }
+    .margin-horizontal-double { @extend %margin-horizontal-double; }
+
+    .no-margin, .margin-none { @extend %margin-none; }
+    .margin-vertical-none { @extend %margin-vertical-none; }
+    .margin-horizontal-none { @extend %margin-horizontal-none; }
 }
