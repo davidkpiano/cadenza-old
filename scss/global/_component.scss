@@ -3,15 +3,32 @@
 $components: ();
 $static-component: null;
 
-@mixin rules($definition) {
-    @each $property, $rule in $definition {
-        #{$property}: #{$rule};
+@mixin rules(
+    $definition,
+    $selector: &,
+    $root: false
+) {
+    @if $root {
+        @at-root #{$selector} {
+            @each $property, $rule in $definition {
+                #{$property}: #{$rule};
+            }
+        }
+    } @else {
+        #{$selector} {    
+            @each $property, $rule in $definition {
+                #{$property}: #{$rule};
+            }
+        }
     }
+
+    @content;
 }
 
 @mixin define(
     $component,
-    $definition
+    $definition,
+    $placeholder: "%#{$component}"
 ) {
     $static-component: $component !global;
 
@@ -19,10 +36,7 @@ $static-component: null;
 
     $components: map-merge($components, $component-definition) !global;
 
-    $placeholder: $component;
-
-    @at-root %#{$placeholder} {
-        @include rules($definition);
+    @include rules($definition, $placeholder, true) {
         @content;
     }
 }
@@ -30,7 +44,8 @@ $static-component: null;
 @mixin variant(
     $variant,
     $definition,
-    $component: $static-component
+    $component: $static-component,
+    $placeholder: "%#{$component}#{if($variant == default, '', '-#{$variant}')}"
 ) {
     $variant-definition: ($variant: $definition);
 
@@ -40,20 +55,22 @@ $static-component: null;
 
     $components: map-merge($components, ($component: $component-map)) !global;
 
-    $placeholder: #{$component}#{if($variant == default, '', '-#{$variant}')};
-
-    @at-root %#{$placeholder} {
-        @include rules($definition);
+    @include rules($definition, $placeholder, true) {
         @content;
     }
 }
 
-@mixin component($name, $variant: default) {
+@mixin component(
+    $name,
+    $variant: default,
+    $relationship: self
+) {
     $component: map-get($components, $name);
     $definition: map-get($component, $variant);
 
     $variant: if($variant == default, '', '-#{$variant}');
 
-    @include rules($definition);
-    @content;
+    @include rules($definition, &) {
+        @content;
+    }
 }

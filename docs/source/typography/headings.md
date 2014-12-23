@@ -1,6 +1,8 @@
 [[content]]
 ## Headings
 
+Here I am describing all the headings.
+
 [[example]]
 # Heading Level 1
 ## Heading Level 2
@@ -8,6 +10,8 @@
 #### Heading Level 4
 ##### Heading Level 5
 ###### Heading Level 6
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repudiandae veritatis recusandae aliquam deleniti aperiam, dolore quidem. In velit, exercitationem hic reprehenderit! Ipsa nemo, facilis ipsum assumenda illo iure officia?
 [[/]]
 
 [[/]]
@@ -20,6 +24,8 @@
 .h-4 // heading 4
 .h-5 // heading 5
 .h-6 // heading 6
+
+p // this is where paragraph code goes
 ```
 [[/]]
 

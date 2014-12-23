@@ -4,12 +4,6 @@
 
 // Active States
 // -------------
-%inert {
-	&, > * {	
-		transition: none !important;
-		animation: none !important;
-	}
-}
 
 %active {
 	z-index: 2;
@@ -27,26 +21,39 @@
 
 // Animations
 // ----------
-%animation {
-    animation-duration: $animation-duration;
-    animation-direction: $animation-direction;
-    animation-delay: $animation-delay;
-    animation-iteration-count: $animation-iteration-count;
-    animation-play-state: $animation-play-state;
-    animation-timing-function: $animation-timing-function;
-    animation-fill-mode: $animation-fill-mode;
+@include define('animation', (
+    animation-duration: $animation-duration,
+    animation-direction: $animation-direction,
+    animation-delay: $animation-delay,
+    animation-iteration-count: $animation-iteration-count,
+    animation-play-state: $animation-play-state,
+    animation-timing-function: $animation-timing-function,
+    animation-fill-mode: $animation-fill-mode,
+)) {
+    @include variant('inert', (
+        animation: none !important,
+    ));
+
+    @include variant('active', (
+        z-index: 2,
+    ));
+
+    @include variant('inactive', (
+        z-index: 0,
+    ));
+
+    @include variant('3d', (
+        animation-duration: $animation-3d-duration,
+        perspective: $animation-3d-perspective,
+        transform-style: preserve-3d,
+        backface-visibility: hidden,
+        transform: 
+            translateX(0)
+            translateY(0)
+            translateZ(0),
+    ));
 }
 
-%animation-3d {
-    animation-duration: $animation-3d-duration;
-    perspective: $animation-3d-perspective;
-    transform-style: preserve-3d;
-    backface-visibility: hidden;
-    transform: 
-        translateX(0)
-        translateY(0)
-        translateZ(0);
-}
 
 // Fade
 %animation-fade-active { @include animation(fade-active, $extend: false); }
