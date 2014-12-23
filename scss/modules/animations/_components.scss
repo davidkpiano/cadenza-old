@@ -5,14 +5,6 @@
 // Active States
 // -------------
 
-%active {
-	z-index: 2;
-}
-
-%inactive {
-	z-index: 0;
-}
-
 %active-delay {
     &#{$active-selector} {
         animation-delay: $active-delay !important;
@@ -40,6 +32,10 @@
 
     @include variant('inactive', (
         z-index: 0,
+    ));
+
+    @include variant('delay', (
+        animation-delay: $active-delay !important,
     ));
 
     @include variant('3d', (

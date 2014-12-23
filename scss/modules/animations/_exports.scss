@@ -4,17 +4,18 @@
 
 @include export('animation') {
     #{$inert-selector} { @include component('animation', 'inert'); }
+    
     #{prefixed-class('activate-all', $selector: ' #{$active-selector}')},
     #{prefixed-class('activate', $selector: $active-selector)} {
-        @extend %active;
-        @extend %animation;
+        @extend #{component('animation')};
+        @include component('animation', 'active');
     }
 
     #{$active-selector} { @include component('animation', 'active'); }
 
     #{$inactive-selector} { @include component('animation', 'inactive'); }
 
-    .delay, .delay-all > * { @extend %active-delay; }
+    .delay { @include component('animation', 'delay'); }
 
     .animation {
         @include component('animation');

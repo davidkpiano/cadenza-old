@@ -5,7 +5,7 @@ $static-component: null;
 
 @mixin rules(
     $definition,
-    $selector: &,
+    $selector: false,
     $root: false
 ) {
     @if $root {
@@ -14,11 +14,15 @@ $static-component: null;
                 #{$property}: #{$rule};
             }
         }
-    } @else {
+    } @else if $selector {
         #{$selector} {    
             @each $property, $rule in $definition {
                 #{$property}: #{$rule};
             }
+        }
+    } @else {
+        @each $property, $rule in $definition {
+            #{$property}: #{$rule};
         }
     }
 
@@ -62,15 +66,23 @@ $static-component: null;
 
 @mixin component(
     $name,
-    $variant: default,
-    $relationship: self
+    $variant: default
 ) {
     $component: map-get($components, $name);
     $definition: map-get($component, $variant);
 
     $variant: if($variant == default, '', '-#{$variant}');
 
-    @include rules($definition, &) {
+    @include rules($definition) {
         @content;
     }
+}
+
+@function component(
+    $name,
+    $variant: default
+) {
+    $variant: if($variant == default, '', '-#{$variant}');
+
+    @return '%#{$name}#{$variant}';
 }
