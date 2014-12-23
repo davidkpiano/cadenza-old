@@ -10,8 +10,6 @@ Here I am describing all the headings.
 #### Heading Level 4
 ##### Heading Level 5
 ###### Heading Level 6
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda repudiandae veritatis recusandae aliquam deleniti aperiam, dolore quidem. In velit, exercitationem hic reprehenderit! Ipsa nemo, facilis ipsum assumenda illo iure officia?
 [[/]]
 
 [[/]]

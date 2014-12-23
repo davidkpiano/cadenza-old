@@ -4,7 +4,7 @@
 
 @include export('animation') {
     #{$inert-selector} { @include component('animation', 'inert'); }
-    
+
     #{prefixed-class('activate-all', $selector: ' #{$active-selector}')},
     #{prefixed-class('activate', $selector: $active-selector)} {
         @extend #{component('animation')};
@@ -23,6 +23,10 @@
         &-inert { @include component('animation', 'inert'); }
 
         &-3d { @include component('animation', '3d'); }
+
+        &-active { @include component('animation', 'active'); }
+
+        &-inactive { @include component('animation', 'inactive'); }
     }
 
     // Animations Classes
@@ -80,6 +84,9 @@
     .activate-all-tilt { @include activate-all(tilt, $is-3d: true, $extend: false); }
     .activate-tilt { @include activate(tilt, $extend: false); }
 
+}
+
+@include export('transition') {
     // Transition classes
     .hover-all { @extend %hover-all; }
 
