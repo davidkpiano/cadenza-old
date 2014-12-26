@@ -56,19 +56,19 @@
     }
 }
 
-%ratio {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: 0;
-
+@include define-component('ratio', (
+    padding-left: 0,
+    padding-right: 0,
+    padding-bottom: 0,
+)) {
     > * {
         @extend %layer;
     }
 
     @each $ratio-key, $ratio-value in $ratios {
-        &-#{$ratio-key} {
-            padding-top: percentage(fraction-inverse($ratio-value));
-        }
+        @include define-variant($ratio-key, (
+            padding-top: percentage(fraction-inverse($ratio-value)),
+        ));
     }
 }
 

@@ -5,15 +5,23 @@ $static-component: null;
 
 @mixin rules(
     $definition,
-    $selector: &
+    $selector: false
 ) {
-    #{$selector} {    
+    @if $selector {    
+        @at-root #{$selector} {    
+            @each $property, $rule in $definition {
+                #{$property}: #{$rule};
+            }
+
+            @content;
+        }
+    } @else {
         @each $property, $rule in $definition {
             #{$property}: #{$rule};
         }
-    }
 
-    @content;
+        @content;
+    }
 }
 
 @mixin define-component(

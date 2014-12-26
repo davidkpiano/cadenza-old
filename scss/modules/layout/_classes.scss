@@ -34,11 +34,11 @@
 }
 
 #{prefixed-class('ratio')} {
-    @extend %ratio;
+    @extend #{component('ratio')};
 }
 
 .ratio {
     @each $ratio in map-keys($ratios) {
-        &-#{$ratio} { @extend %ratio-#{$ratio}; }
+        &-#{$ratio} { @extend #{component('ratio', $ratio)}; }
     }
 }

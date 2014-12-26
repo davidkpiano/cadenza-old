@@ -1,0 +1,57 @@
+<article>
+<div class="cz-content">
+<h2 id="position">Position</h2>
+<div class="row">
+    <div class="field col-6">
+        <label ng-repeat="position in [
+        &apos;-left&apos;,
+        &apos;-right&apos;,
+        &apos;-before&apos;,
+        &apos;-after&apos;,
+        &apos;-center&apos;,
+        &apos;-beforeLeft&apos;,
+        &apos;-centerLeft&apos;,
+        &apos;-afterLeft&apos;,
+        &apos;-beforeRight&apos;,
+        &apos;-centerRight&apos;,
+        &apos;-afterRight&apos;,
+        &apos;-beforeCenter&apos;,
+        &apos;-afterCenter&apos;]">
+            <span>{{position}}</span>
+            <input type="radio" ng-model="cadenza.position_horizontal" ng-value="position">
+        </label>
+    </div>
+    <div class="field col-6">
+        <label ng-repeat="position in [
+            &apos;-top&apos;, 
+            &apos;-bottom&apos;, 
+            &apos;-below&apos;, 
+            &apos;-above&apos;, 
+            &apos;-middle&apos;, 
+            &apos;-aboveTop&apos;, 
+            &apos;-midTop&apos;, 
+            &apos;-belowTop&apos;, 
+            &apos;-aboveMiddle&apos;, 
+            &apos;-belowMiddle&apos;, 
+            &apos;-aboveBottom&apos;, 
+            &apos;-midBottom&apos;,
+            &apos;-belowBottom&apos;]">
+            <span>{{position}}</span>
+            <input type="radio" ng-model="cadenza.position_vertical" ng-value="position">
+        </label>
+    </div>
+</div>
+<div class="row-6">
+    <div class="col-6 col-center border">
+        <div class="shape-square-medium bg-primary position{{cadenza.position_horizontal}}{{cadenza.position_vertical}}"></div>
+    </div>
+</div>
+
+</div>
+</article>
+
+<article>
+</article>
+
+<article>
+</article>
