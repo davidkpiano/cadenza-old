@@ -45,7 +45,7 @@ A column can be defined as spanning from 0 to 12 columns on a 12-column grid via
 
 ### No Gutter
 <div class="row-1 field text-center small" ng-repeat="col_span in [12,6,4,3,2,1]">
-    <div ng-repeat="col in component.util.range(12/col_span)" class="border-primary col-{{col_span}}">col-{{col_span}}</div>
+    <div ng-repeat="col in component.range(12/col_span)" class="border-primary col-{{col_span}}">col-{{col_span}}</div>
 </div>
 
 ### Gutter

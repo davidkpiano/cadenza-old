@@ -18,7 +18,7 @@
         and index(('all', $name), $imports) {
         $import-component: true;
     } @else if type-of($imports) == list {
-        $import-component: if(index($imports, $name), true, false);
+        $import-component: if(index($imports, $name) or index($imports, $group), true, false);
     } @else if type-of($imports) == map {
         $import-environment: map-get($imports, $name);
         $import-component: if($import-environment, true, false);
@@ -42,12 +42,6 @@
             @extend #{$selector};
         }
     }
-}
-
-@mixin theme($color) {
-    @include foreground-color($color);
-
-    background-color: $color;
 }
 
 // Transition Mixin
@@ -75,27 +69,6 @@
         @if $horizontal {
             @include experimental(transform, translateX($horizontal));
         }
-    }
-}
-
-@mixin valign($position, $selector: false) {
-    display: table;
-
-    $_selector: '> * ';
-
-    @if $selector {
-        $_selector: $selector;
-    }
-
-    #{$_selector} {
-        display: table-cell;
-        vertical-align: $position;
-    }
-}
-
-@mixin valign-all($position, $selector: false) {
-    > * {
-        @include valign($position, $selector);
     }
 }
 

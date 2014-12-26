@@ -4,286 +4,288 @@
 
 // Typefaces
 // ---------
-body, .type-primary { @extend %type-primary; }
+@include export('typography') {
+	body, .type-primary { @extend %type-primary; }
 
-.type-secondary { @extend %type-secondary; }
+	.type-secondary { @extend %type-secondary; }
 
-.type-serif, .serif { @extend %type-serif; }
+	.type-serif, .serif { @extend %type-serif; }
 
-.type-sans-serif, .sans-serif { @extend %type-sans-serif; }
+	.type-sans-serif, .sans-serif { @extend %type-sans-serif; }
 
-.type-monospace, .monospace { @extend %type-monospace; }
+	.type-monospace, .monospace { @extend %type-monospace; }
 
-.type-script, .cursive { @extend %type-script; }
+	.type-script, .cursive { @extend %type-script; }
 
-.type-condensed, .condensed { @extend %type-condensed; }
+	.type-condensed, .condensed { @extend %type-condensed; }
 
-// Headings
-// --------
+	// Headings
+	// --------
 
-h1, h2, h3, h4, h5, h6, #{prefixed-class('h')} {
-	@extend %heading;
+	h1, h2, h3, h4, h5, h6, #{prefixed-class('h')} {
+		@extend %heading;
 
-	&.stacked { @extend %heading-stacked; }
-}
-
-@each $type-heading in $type-headings {
-	// TODO: use maps
-	$heading-selector: nth($type-heading, 1);
-	$heading-index: nth($type-heading, 2);
-
-	#{$heading-selector}, .h-#{$heading-index} {
-		@extend %#{$heading-selector};
-
-		&.double { @extend %#{$heading-selector}-double; }
+		&.stacked { @extend %heading-stacked; }
 	}
 
-	#{$heading-selector}, #{prefixed-class('h')} {
-		@include style('heading');
+	@each $type-heading in $type-headings {
+		// TODO: use maps
+		$heading-selector: nth($type-heading, 1);
+		$heading-index: nth($type-heading, 2);
 
-		&.color-light { @include style('heading', 'light'); }
-		&.color-dark { @include style('heading', 'dark'); }
+		#{$heading-selector}, .h-#{$heading-index} {
+			@extend %#{$heading-selector};
 
-		&.inline { @extend %heading-inline; }
+			&.double { @extend %#{$heading-selector}-double; }
+		}
 
-		> small, > .small { @extend %heading-small; }
+		#{$heading-selector}, #{prefixed-class('h')} {
+			@include style('heading');
 
-		> .large { @extend %heading-large; }
+			&.color-light { @include style('heading', 'light'); }
+			&.color-dark { @include style('heading', 'dark'); }
+
+			&.inline { @extend %heading-inline; }
+
+			> small, > .small { @extend %heading-small; }
+
+			> .large { @extend %heading-large; }
+		}
 	}
-}
 
-.subheading {
-	@extend %subheading;
-	@include style('subheading');
+	.subheading {
+		@extend %subheading;
+		@include style('subheading');
 
-	&-light { @include style('subheading', 'light'); }
-	&-dark { @include style('subheading', 'dark'); }
-}
-
-.hgroup {
-	@extend %hgroup;
-
-	&.inline { @extend %hgroup-inline; }
-}
-
-// Body Copy
-// ---------
-html { @extend %base-type; }
-
-*, p, li, span {
-	@extend %text;
-	@include style('text');
-}
-
-.subtext {
-	@extend %subtext;
-	@include style('subtext');
-
-	&-light { @include style('subtext', 'light'); }
-	&-dark { @include style('subtext', 'dark'); }
-}
-
-p {
-	@extend %paragraph;
-
-	&.lead { @extend %paragraph-lead; }
-}
-
-small, .small { @extend %small; }
-
-.large { @extend %large; }
-
-strong, b, .strong { @extend %strong; }
-
-.weak { @extend %weak; }
-
-em, .italics { @extend %em; }
-
-.uppercase { @extend %uppercase; }
-
-.lowercase { @extend %lowercase; }
-
-mark, .mark { @extend %mark; }
-
-abbr, acronym { @extend %abbreviation; }
-
-.small-caps { @extend %small-caps; }
-
-.upper-caps { @extend %upper-caps; }
-
-// Anchors
-// -------
-a, a > * {
-	@extend %anchor;
-	@include style('anchor');
-
-	&.light { @include style('anchor', 'light'); }
-	&.dark { @include style('anchor', 'dark'); }
-}
-
-.anchors-hint {
-	@extend %anchors-hint;
-	@include style('anchors-hint');
-}
-
-// Alignment
-// ---------
-.text-right { @extend %text-right; }
-.text-left { @extend %text-left; }
-.text-center { @extend %text-center; }
-.text-justify { @extend %text-justify; }
-.text-spread { @extend %text-spread; }
-
-.text-middle { @extend %text-middle; }
-.text-bottom { @extend %text-bottom; }
-.text-midcenter { @extend %text-midcenter; }
-
-// Overflow
-// --------
-.nowrap { @extend %nowrap; }
-
-.ellipsis {
-	@extend %overflow-ellipsis;
-}
-
-// Preformatted Text
-// -----------------
-
-pre, .pre {
-	@extend %pre;
-
-	code, .code { @extend %code; } // %pre > %code
-}
-
-code, .code { @extend %code; }
-
-kbd, .kbd { @extend %kbd; }
-
-// Quotes
-// ------
-blockquote {
-	@extend %blockquote;
-
-	footer { 
-		@extend %footer;
-
-		cite { @extend %cite; }
+		&-light { @include style('subheading', 'light'); }
+		&-dark { @include style('subheading', 'dark'); }
 	}
-}
 
-q {
-	@extend %quote;
+	.hgroup {
+		@extend %hgroup;
 
-	> q { @extend %quote-single; }
+		&.inline { @extend %hgroup-inline; }
+	}
 
-	&.double { @extend %quote-double; }
+	// Body Copy
+	// ---------
+	html { @extend %base-type; }
 
-	&.single { @extend %quote-single; }
+	*, p, li, span {
+		@extend %text;
+		@include style('text');
+	}
 
-	&.arrow-double { @extend %quote-arrow-double; }
+	.subtext {
+		@extend %subtext;
+		@include style('subtext');
 
-	&.arrow-single { @extend %quote-arrow-single; }
+		&-light { @include style('subtext', 'light'); }
+		&-dark { @include style('subtext', 'dark'); }
+	}
 
-	&.low-double { @extend %quote-low-double; }
+	p {
+		@extend %paragraph;
 
-	&.low-single { @extend %quote-low-single; }
-}
+		&.lead { @extend %paragraph-lead; }
+	}
 
-// Horizontal Rules
-// ----------------
-hr {
-	@extend %hr;
-	@include style('hr');
+	small, .small { @extend %small; }
 
-	&.light { @include style('hr', 'light'); }
-	&.dark { @include style('hr', 'dark'); }
-	&.lighten { @include style('hr', 'lighten'); }
-	&.darken { @include style('hr', 'darken'); }
+	.large { @extend %large; }
 
-	&.dotted { @extend %hr-dotted; }
-	&.dashed { @extend %hr-dashed; }
+	strong, b, .strong { @extend %strong; }
 
-	&.thick { @extend %hr-thick; }
-	&.thin { @extend %hr-thin; }
+	.weak { @extend %weak; }
 
-	&.small { @extend %hr-small; }
-	&.large { @extend %hr-large; }
+	em, .italics { @extend %em; }
 
-	&.left { @extend %hr-left; }
-	&.right { @extend %hr-right; }
-	&.center { @extend %hr-center; }
-}
+	.uppercase { @extend %uppercase; }
 
-#{prefixed-class('rule')} {
-	@extend %type-rule;
-	@include style('rule');
-}
+	.lowercase { @extend %lowercase; }
 
-.rule {
-	&-middle { @extend %type-rule-middle; }
+	mark, .mark { @extend %mark; }
 
-	&-top { @extend %type-rule-top; }
+	abbr, acronym { @extend %abbreviation; }
 
-	&-bottom { @extend %type-rule-bottom; }
-	
-	&-left { @extend %type-rule-left; }
+	.small-caps { @extend %small-caps; }
 
-	&-right { @extend %type-rule-right; }
+	.upper-caps { @extend %upper-caps; }
 
-	&-center { @extend %type-rule-center; }
+	// Anchors
+	// -------
+	a, a > * {
+		@extend %anchor;
+		@include style('anchor');
 
-	&-small { @extend %type-rule-small; }
+		&.light { @include style('anchor', 'light'); }
+		&.dark { @include style('anchor', 'dark'); }
+	}
 
-	&-large { @extend %type-rule-large; }
+	.anchors-hint {
+		@extend %anchors-hint;
+		@include style('anchors-hint');
+	}
 
-	&-thick { @extend %type-rule-thick; }
+	// Alignment
+	// ---------
+	.text-right { @extend %text-right; }
+	.text-left { @extend %text-left; }
+	.text-center { @extend %text-center; }
+	.text-justify { @extend %text-justify; }
+	.text-spread { @extend %text-spread; }
 
-	&-thin { @extend %type-rule-thin; }
+	.text-middle { @extend %text-middle; }
+	.text-bottom { @extend %text-bottom; }
+	.text-midcenter { @extend %text-midcenter; }
 
-	&-half { @extend %type-rule-half; }
+	// Overflow
+	// --------
+	.nowrap { @extend %nowrap; }
 
-	&-full { @extend %type-rule-full; }
+	.ellipsis {
+		@extend %overflow-ellipsis;
+	}
 
-	&-light { @include style('rule', 'light'); }
-	&-dark { @include style('rule', 'dark'); }
-	&-lighten { @include style('rule', 'lighten'); }
-	&-darken { @include style('rule', 'darken'); }
-}
+	// Preformatted Text
+	// -----------------
 
-// Lists
-// -----
-ul {
-	@extend %list-unordered;
+	pre, .pre {
+		@extend %pre;
 
-	&.square { @extend %list-square; }
-	&.circle { @extend %list-circle; }
-	&.disc { @extend %list-disc; }
-	&.no-bullet { @extend %list-no-bullet; }
+		code, .code { @extend %code; } // %pre > %code
+	}
 
-	&.unstyled { @extend %list-unstyled; }
+	code, .code { @extend %code; }
 
-	&.inline { @extend %list-inline; }
-}
+	kbd, .kbd { @extend %kbd; }
 
-ol { @extend %list-ordered; }
+	// Quotes
+	// ------
+	blockquote {
+		@extend %blockquote;
 
-dl { @extend %list-description; }
+		footer { 
+			@extend %footer;
 
-// Dividers
-// --------
-#{prefixed-class('divider')}, #{prefixed-class('dividers', $selector: '> *')} {
-	@extend %divider;
-}
+			cite { @extend %cite; }
+		}
+	}
 
-.divider {
-	&-vertical, &s-vertical > * { @extend %divider-vertical; }
-	&-horizontal, &s-horizontal > * { @extend %divider-horizontal; }
+	q {
+		@extend %quote;
 
-	&-square, &s-square > * { @extend %divider-square; }
-	&-diamond, &s-diamond > * { @extend %divider-diamond; }
-	&-bar, &s-bar > * { @extend %divider-bar; }
-	&-dash, &s-dash > * { @extend %divider-dash; }
-	&-bullet, &s-bullet > * { @extend %divider-bullet; }
+		> q { @extend %quote-single; }
+
+		&.double { @extend %quote-double; }
+
+		&.single { @extend %quote-single; }
+
+		&.arrow-double { @extend %quote-arrow-double; }
+
+		&.arrow-single { @extend %quote-arrow-single; }
+
+		&.low-double { @extend %quote-low-double; }
+
+		&.low-single { @extend %quote-low-single; }
+	}
+
+	// Horizontal Rules
+	// ----------------
+	hr {
+		@extend %hr;
+		@include style('hr');
+
+		&.light { @include style('hr', 'light'); }
+		&.dark { @include style('hr', 'dark'); }
+		&.lighten { @include style('hr', 'lighten'); }
+		&.darken { @include style('hr', 'darken'); }
+
+		&.dotted { @extend %hr-dotted; }
+		&.dashed { @extend %hr-dashed; }
+
+		&.thick { @extend %hr-thick; }
+		&.thin { @extend %hr-thin; }
+
+		&.small { @extend %hr-small; }
+		&.large { @extend %hr-large; }
+
+		&.left { @extend %hr-left; }
+		&.right { @extend %hr-right; }
+		&.center { @extend %hr-center; }
+	}
+
+	#{prefixed-class('rule')} {
+		@extend %type-rule;
+		@include style('rule');
+	}
+
+	.rule {
+		&-middle { @extend %type-rule-middle; }
+
+		&-top { @extend %type-rule-top; }
+
+		&-bottom { @extend %type-rule-bottom; }
+		
+		&-left { @extend %type-rule-left; }
+
+		&-right { @extend %type-rule-right; }
+
+		&-center { @extend %type-rule-center; }
+
+		&-small { @extend %type-rule-small; }
+
+		&-large { @extend %type-rule-large; }
+
+		&-thick { @extend %type-rule-thick; }
+
+		&-thin { @extend %type-rule-thin; }
+
+		&-half { @extend %type-rule-half; }
+
+		&-full { @extend %type-rule-full; }
+
+		&-light { @include style('rule', 'light'); }
+		&-dark { @include style('rule', 'dark'); }
+		&-lighten { @include style('rule', 'lighten'); }
+		&-darken { @include style('rule', 'darken'); }
+	}
+
+	// Lists
+	// -----
+	ul {
+		@extend %list-unordered;
+
+		&.square { @extend %list-square; }
+		&.circle { @extend %list-circle; }
+		&.disc { @extend %list-disc; }
+		&.no-bullet { @extend %list-no-bullet; }
+
+		&.unstyled { @extend %list-unstyled; }
+
+		&.inline { @extend %list-inline; }
+	}
+
+	ol { @extend %list-ordered; }
+
+	dl { @extend %list-description; }
+
+	// Dividers
+	// --------
+	#{prefixed-class('divider')}, #{prefixed-class('dividers', $selector: '> *')} {
+		@extend %divider;
+	}
+
+	.divider {
+		&-vertical, &s-vertical > * { @extend %divider-vertical; }
+		&-horizontal, &s-horizontal > * { @extend %divider-horizontal; }
+
+		&-square, &s-square > * { @extend %divider-square; }
+		&-diamond, &s-diamond > * { @extend %divider-diamond; }
+		&-bar, &s-bar > * { @extend %divider-bar; }
+		&-dash, &s-dash > * { @extend %divider-dash; }
+		&-bullet, &s-bullet > * { @extend %divider-bullet; }
+	}
 }
 
 

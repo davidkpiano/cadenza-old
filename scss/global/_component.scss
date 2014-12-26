@@ -5,22 +5,9 @@ $static-component: null;
 
 @mixin rules(
     $definition,
-    $selector: false,
-    $root: false
+    $selector: &
 ) {
-    @if $root {
-        @at-root #{$selector} {
-            @each $property, $rule in $definition {
-                #{$property}: #{$rule};
-            }
-        }
-    } @else if $selector {
-        #{$selector} {    
-            @each $property, $rule in $definition {
-                #{$property}: #{$rule};
-            }
-        }
-    } @else {
+    #{$selector} {    
         @each $property, $rule in $definition {
             #{$property}: #{$rule};
         }
@@ -29,7 +16,7 @@ $static-component: null;
     @content;
 }
 
-@mixin define(
+@mixin define-component(
     $component,
     $definition,
     $placeholder: "%#{$component}"
@@ -40,12 +27,12 @@ $static-component: null;
 
     $components: map-merge($components, $component-definition) !global;
 
-    @include rules($definition, $placeholder, true) {
+    @include rules($definition, $placeholder) {
         @content;
     }
 }
 
-@mixin variant(
+@mixin define-variant(
     $variant,
     $definition,
     $component: $static-component,
@@ -59,21 +46,23 @@ $static-component: null;
 
     $components: map-merge($components, ($component: $component-map)) !global;
 
-    @include rules($definition, $placeholder, true) {
+    @include rules($definition, $placeholder) {
         @content;
     }
 }
 
 @mixin component(
-    $name,
+    $component,
     $variant: default
 ) {
-    $component: map-get($components, $name);
-    $definition: map-get($component, $variant);
+    $static-component: $component !global;
+
+    $component-map: map-get($components, $component);
+    $definition: map-get($component-map, $variant);
 
     $variant: if($variant == default, '', '-#{$variant}');
 
-    @include rules($definition) {
+    @include rules($definition, &) {
         @content;
     }
 }

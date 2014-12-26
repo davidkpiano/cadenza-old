@@ -45,7 +45,12 @@ gulp.task('docs', function() {
     var modules = getDirectories(docsDir);
 
     _.each(modules, function(module) {
-        gulp.src(docsDir + module + '/*.md')
+        var moduleIndex = require(docsDir + module + '/index.json');
+        var docOrder = moduleIndex.contents.map(function(docName) {
+            return docsDir + module + '/' + docName + '.md';
+        });
+
+        gulp.src(docOrder)
             .pipe(markdown({
                 renderer: renderer
             }))

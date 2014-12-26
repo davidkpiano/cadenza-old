@@ -25,8 +25,7 @@ White space is a very important consideration in design and layout. Cadenza incl
 [[/]]
 
 [[code]]
-<dl>
-    <dt>Term 1</dt>
-    <dd>Definition 1</dd>
-</dl>
+```scss
+@include component('pad', 'vertical');
+```
 [[/]]

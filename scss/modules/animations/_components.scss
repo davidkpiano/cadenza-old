@@ -13,7 +13,7 @@
 
 // Animations
 // ----------
-@include define('animation', (
+@include define-component('animation', (
     animation-duration: $animation-duration,
     animation-direction: $animation-direction,
     animation-delay: $animation-delay,
@@ -22,23 +22,23 @@
     animation-timing-function: $animation-timing-function,
     animation-fill-mode: $animation-fill-mode,
 )) {
-    @include variant('inert', (
+    @include define-variant('inert', (
         animation: none !important,
     ));
 
-    @include variant('active', (
+    @include define-variant('active', (
         z-index: 2,
     ));
 
-    @include variant('inactive', (
+    @include define-variant('inactive', (
         z-index: 0,
     ));
 
-    @include variant('delay', (
+    @include define-variant('delay', (
         animation-delay: $active-delay !important,
     ));
 
-    @include variant('3d', (
+    @include define-variant('3d', (
         animation-duration: $animation-3d-duration,
         perspective: $animation-3d-perspective,
         transform-style: preserve-3d,

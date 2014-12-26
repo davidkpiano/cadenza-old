@@ -42,7 +42,7 @@
 
 <h3 id="no-gutter">No Gutter</h3>
 <div class="row-1 field text-center small" ng-repeat="col_span in [12,6,4,3,2,1]">
-    <div ng-repeat="col in component.util.range(12/col_span)" class="border-primary col-{{col_span}}">col-{{col_span}}</div>
+    <div ng-repeat="col in component.range(12/col_span)" class="border-primary col-{{col_span}}">col-{{col_span}}</div>
 </div>
 
 <h3 id="gutter">Gutter</h3>
@@ -67,12 +67,6 @@
 </li></ul></div>
 
 
-</article>
-
-<article>
-<div class="cz-content">
-<h2 id="flex-grid">Flex Grid</h2>
-</div>
 </article>
 
 <article>
@@ -142,3 +136,9 @@
 <li><strong><code><span class="hljs-class">.stack-</span><span class="hljs-attr_selector">[mq]</span></code></strong> - stacked block within <code>[mq]</code> breakpoint</li>
 </ul>
 </div></article>
+
+<article>
+<div class="cz-content">
+<h2 id="flex-grid">Flex Grid</h2>
+</div>
+</article>

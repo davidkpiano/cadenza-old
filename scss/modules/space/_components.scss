@@ -3,114 +3,114 @@
     padding: $space-content;
 }
 
-@include define('pad', (
+@include define-component('pad', (
     padding: $space-padding
 )) {
-    @include variant('vertical', (
+    @include define-variant('vertical', (
         padding-top: $space-padding,
         padding-bottom: $space-padding
     ));
 
-    @include variant('horizontal', (
+    @include define-variant('horizontal', (
         padding-left: $space-padding,
         padding-right: $space-padding
     ));
 
-    @include variant('half', (
+    @include define-variant('half', (
         padding: $space-padding-half
     ));
 
-    @include variant('vertical-half', (
+    @include define-variant('vertical-half', (
         padding-top: $space-padding-half,
         padding-bottom: $space-padding-half
     ));
 
-    @include variant('horizontal-half', (
+    @include define-variant('horizontal-half', (
         padding-left: $space-padding-half,
         padding-right: $space-padding-half
     ));
 
-    @include variant('double', (
+    @include define-variant('double', (
         padding: $space-padding-double
     ));
 
-    @include variant('vertical-double', (
+    @include define-variant('vertical-double', (
         padding-top: $space-padding-double,
         padding-bottom: $space-padding-double
     ));
 
-    @include variant('horizontal-double', (
+    @include define-variant('horizontal-double', (
         padding-left: $space-padding-double,
         padding-right: $space-padding-double
     ));
 
-    @include variant('none', (
+    @include define-variant('none', (
         padding: 0 !important
     ));
 
-    @include variant('vertical-none', (
+    @include define-variant('vertical-none', (
         padding-top: 0 !important,
         padding-bottom: 0 !important
     ));
 
-    @include variant('horizontal-none', (
+    @include define-variant('horizontal-none', (
         padding-left: 0 !important,
         padding-right: 0 !important
     ));
 }
 
-@include define('margin', (
+@include define-component('margin', (
     margin: $space-margin !important
 )) {
 
-    @include variant('vertical', (
+    @include define-variant('vertical', (
         margin-top: $space-margin,
         margin-bottom: $space-margin,
     ));
 
-    @include variant('horizontal', (
+    @include define-variant('horizontal', (
         margin-left: $space-margin,
         margin-right: $space-margin,
     ));
 
-    @include variant('half', (
+    @include define-variant('half', (
         margin: $space-margin-half,
     ));
 
-    @include variant('vertical-half', (
+    @include define-variant('vertical-half', (
         margin-top: $space-margin-half,
         margin-bottom: $space-margin-half,
     ));
 
-    @include variant('horizontal-half', (
+    @include define-variant('horizontal-half', (
         margin-left: $space-margin-half,
         margin-right: $space-margin-half,
     ));
 
-    @include variant('double', (
+    @include define-variant('double', (
         margin: $space-margin-double,
     ));
 
-    @include variant('vertical-double', (
+    @include define-variant('vertical-double', (
         margin-top: $space-margin-double,
         margin-bottom: $space-margin-double,
     ));
 
-    @include variant('horizontal-double', (
+    @include define-variant('horizontal-double', (
         margin-left: $space-margin-double,
         margin-right: $space-margin-double,
     ));
 
-    @include variant('none', (
+    @include define-variant('none', (
         margin: 0 !important,
     ));
 
-    @include variant('vertical-none', (
+    @include define-variant('vertical-none', (
         margin-top: 0 !important,
         margin-bottom: 0 !important,
     ));
 
-    @include variant('horizontal-none', (
+    @include define-variant('horizontal-none', (
         margin-left: 0 !important,
         margin-right: 0 !important,
     ));

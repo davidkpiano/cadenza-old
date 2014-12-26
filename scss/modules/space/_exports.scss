@@ -3,37 +3,37 @@
 // Content Classes
 @include export('pad', 'space') {
     .content { @extend %content; }
-    .pad { @extend %pad; }
-    .pad-vertical { @extend %pad-vertical; }
-    .pad-horizontal { @extend %pad-horizontal; }
+    .pad { @extend #{component('pad')}; }
+    .pad-vertical { @extend #{component('pad', 'vertical')}; }
+    .pad-horizontal { @extend #{component('pad', 'horizontal')}; }
 
-    .pad-half { @extend %pad-half; }
-    .pad-vertical-half { @extend %pad-vertical-half; }
-    .pad-horizontal-half { @extend %pad-horizontal-half; }
+    .pad-half { @extend #{component('pad', 'half')}; }
+    .pad-vertical-half { @extend #{component('pad', 'vertical-half')}; }
+    .pad-horizontal-half { @extend #{component('pad', 'horizontal-half')}; }
 
-    .pad-double { @extend %pad-double; }
-    .pad-vertical-double { @extend %pad-vertical-double; }
-    .pad-horizontal-double { @extend %pad-horizontal-double; }
+    .pad-double { @extend #{component('pad', 'double')}; }
+    .pad-vertical-double { @extend #{component('pad', 'vertical-double')}; }
+    .pad-horizontal-double { @extend #{component('pad', 'horizontal-double')}; }
 
-    .no-pad, .pad-none { @extend %pad-none; }
-    .pad-vertical-none { @extend %pad-vertical-none; }
-    .pad-horizontal-none { @extend %pad-horizontal-none; }
+    .no-pad, .pad-none { @extend #{component('pad', 'none')}; }
+    .pad-vertical-none { @extend #{component('pad', 'vertical-none')}; }
+    .pad-horizontal-none { @extend #{component('pad', 'horizontal-none')}; }
 }
 
 @include export('margin', 'space') {
-    .margin { @extend %margin; }
-    .margin-vertical { @extend %margin-vertical; }
-    .margin-horizontal { @extend %margin-horizontal; }
+    .margin { @extend #{component('margin')}; }
+    .margin-vertical { @extend #{component('margin', 'vertical')}; }
+    .margin-horizontal { @extend #{component('margin', 'horizontal')}; }
 
-    .margin-half { @extend %margin-half; }
-    .margin-vertical-half { @extend %margin-vertical-half; }
-    .margin-horizontal-half { @extend %margin-horizontal-half; }
+    .margin-half { @extend #{component('margin', 'half')}; }
+    .margin-vertical-half { @extend #{component('margin', 'vertical-half')}; }
+    .margin-horizontal-half { @extend #{component('margin', 'horizontal-half')}; }
 
-    .margin-double { @extend %margin-double; }
-    .margin-vertical-double { @extend %margin-vertical-double; }
-    .margin-horizontal-double { @extend %margin-horizontal-double; }
+    .margin-double { @extend #{component('margin', 'double')}; }
+    .margin-vertical-double { @extend #{component('margin', 'vertical-double')}; }
+    .margin-horizontal-double { @extend #{component('margin', 'horizontal-double')}; }
 
-    .no-margin, .margin-none { @extend %margin-none; }
-    .margin-vertical-none { @extend %margin-vertical-none; }
-    .margin-horizontal-none { @extend %margin-horizontal-none; }
+    .no-margin, .margin-none { @extend #{component('margin', 'none')}; }
+    .margin-vertical-none { @extend #{component('margin', 'vertical-none')}; }
+    .margin-horizontal-none { @extend #{component('margin', 'horizontal-none')}; }
 }
