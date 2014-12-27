@@ -1,17 +1,22 @@
 // Inputs
 // ------
-%input {
-    @include type-scale($input-scale);
-    display: block;
-    width: 100%;
-    padding: $input-padding;
-    background-image: none;
-    border-width: $input-border-width;
-    border-style: solid;
+@include define-component('input', (
+    type-scale: $input-scale,
+    display: block,
+    width: 100%,
+    padding: $input-padding,
+    background-image: none,
+    border-width: $input-border-width,
+    border-style: solid,
+    border-radius: false
+));
 
-    @if $form-radius {
-        border-radius: $form-radius;
-    }
+@include define-component('foobar', (
+    type-scale: 3
+));
+
+.foobar {
+    @include component('foobar');
 }
 
 %input-small {

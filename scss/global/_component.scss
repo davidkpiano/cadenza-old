@@ -3,21 +3,26 @@
 $components: ();
 $static-component: null;
 
+@function property-mapping($property, $rule) {
+    // TODO: parse rule first
+
+    @if function-exists(map-#{$property}) {
+        @return call(map-#{$property}, $rule);
+    } @else {
+        @return ($property: $rule);
+    }
+}
+
 @mixin rules(
     $definition,
-    $selector: false
-) {
-    @if $selector {    
-        @at-root #{$selector} {    
-            @each $property, $rule in $definition {
-                #{$property}: #{$rule};
-            }
-
-            @content;
-        }
-    } @else {
+    $selector: &
+) {  
+    @at-root #{$selector} {    
         @each $property, $rule in $definition {
-            #{$property}: #{$rule};
+            $property-rule-map: property-mapping($property, $rule);
+            @each $mapped-property, $mapped-rule in $property-rule-map {
+                #{$mapped-property}: $mapped-rule;
+            }
         }
 
         @content;
