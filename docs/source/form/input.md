@@ -36,6 +36,11 @@
     <input type="text" name="" id="" class="large" placeholder="Large input">
 </div>
 
+<div class="field">
+    <label>Inline input</label>
+    <p>Lorem ipsum dolor sit amet, consectetur <input type="text" class="inline" placeholder="Inline input"> adipisicing elit. Molestiae doloribus dolores quam magnam debitis adipisci atque praesentium ratione reprehenderit, dolorem neque fuga sapiente, eaque perspiciatis, amet culpa beatae totam quia.</p>
+</div>
+
 [[/]]
 
 [[content]]

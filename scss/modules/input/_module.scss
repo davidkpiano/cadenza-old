@@ -4,22 +4,38 @@ $input-theme: default !default;
 $input-scale: $form-scale !default;
 $input-padding: $form-padding !default;
 $input-border-width: $form-border-width !default;
+
+// Input Theme Settings
 $input-bgcolor: $color-white !default;
 $input-bgcolor-lighten: $color-lighten !default;
 $input-bgcolor-darken: $color-darken !default;
+
 $input-color-light: $color-light !default;
 $input-color-dark: $color-dark !default;
 $input-color: $input-color-dark !default;
 
-// Select Settings
-$select-style: default !default;
-$select-theme: default !default;
-$select-bgcolor: $input-bgcolor !default;
-
-// Input Theme Settings
 $input-border-color-light: $color-gray-light !default;
 $input-border-color-dark: $color-gray-light !default;
 $input-border-color: theme-mode($input-border-color-light, $input-border-color-dark) !default;
+
+// Select Settings
+$select-style: default !default;
+$select-theme: default !default;
+$select-scale: $input-scale !default;
+$select-padding: $input-padding !default;
+$select-border-width: $input-border-width !default;
+
+$select-bgcolor: $input-bgcolor !default;
+$select-bgcolor-lighten: $input-bgcolor-lighten !default;
+$select-bgcolor-darken: $input-bgcolor-darken !default;
+
+$select-color-light: $input-color-light !default;
+$select-color-dark: $input-color-dark !default;
+$select-color: $input-color !default;
+
+$select-border-color-light: $input-border-color-light !default;
+$select-border-color-dark: $input-border-color-dark !default;
+$select-border-color: theme-mode($select-border-color-light, $select-border-color-dark) !default;
 
 // Radio Settings
 $radio-margin-right: 0.5rem !default;

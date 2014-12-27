@@ -3,25 +3,27 @@
 @include export('input') {
     textarea,
     input:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
-        @extend %input;
-
+        @include component('input');
         @include style('input');
 
         &.lighten { @include style('input', 'lighten'); }
         &.darken { @include style('input', 'darken'); }
 
-        &.small { @extend %input-small; }
+        &.small { @include component('input', 'small'); }
 
-        &.large { @extend %input-large; }
+        &.large { @include component('input', 'large'); }
 
         &.implicit {
-            @extend %input-implicit;
+            @include component('input', 'implicit');
 
-            @include style('input-implicit');
+            @include style('input', $theme: 'implicit');
+        }
+
+        &.inline {
+            @include component('input', 'inline');
         }
     }
     
-    input.inline,
     select.inline,
     textarea.inline {
         @extend %input-inline;
@@ -35,7 +37,13 @@
 
     textarea { @extend %textarea; }
 
-    select { @extend %select; }
+    select {
+        @extend %select;
+
+        @include style('select');
+    }
+
+    input[type="search"] { @include component('input', 'search'); }
 
     input[type="radio"] { @extend %radio; }
 

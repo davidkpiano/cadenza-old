@@ -89,8 +89,7 @@
 %theme-input-implicit {
     @include theme-input-default(
         $border-color: transparent,
-        $bgcolor: transparent,
-        $bgcolor-hover: green
+        $bgcolor: transparent
     );
 
     &-light {
@@ -112,43 +111,11 @@
 
 // Select Theme
 @mixin theme-select-default(
-    $color: $form-border-color,
-
-    $bg-color: $select-bgcolor,
-    $bg-color-hover: $bg-color,
-    $bg-color-focus: $bg-color,
-
-    $border-color: $color,
-    $border-color-hover: darken($color, 10%),
-    $border-color-focus: $form-border-color-focus,
-
-    $type-color: foreground-color($color),
-    $type-color-hover: $type-color,
-    $type-color-focus: $type-color
+    $settings...
 ) {
-    background-color: $bg-color;
-    border-color: $border-color;
-    color: $type-color;
-
-    &:hover {
-        background-color: $bg-color-hover;
-        border-color: $border-color-hover;
-        color: $type-color-hover;
-    }
-
-    &:focus {
-        background-color: $bg-color-focus;
-        border-color: $border-color-focus;
-        color: $type-color-focus;
-    }
-
-    background-position-x: calc(100% - 1rem);
-    background-position-y: center;
-    background-repeat: no-repeat;
+    @include theme-input-default($settings...);
 }
 
 %theme-select-default {
-    %select {
-        @include theme-select-default();
-    }
+    @include theme-select-default();
 }
