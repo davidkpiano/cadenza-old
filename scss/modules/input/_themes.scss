@@ -1,0 +1,154 @@
+// Input Theme
+@mixin theme-input-default(
+    $border-color: $input-border-color,
+    $border-color-hover: delta-color($border-color, darken),
+    $border-color-focus: $form-border-color-focus,
+
+    $type-color: $input-color,
+    $type-color-hover: $type-color,
+    $type-color-focus: $type-color,
+
+    $bgcolor: $input-bgcolor,
+    $bgcolor-hover: $bgcolor,
+    $bgcolor-focus: $bgcolor,
+
+    $placeholder-color: rgba($type-color, $color-lighten-opacity),
+
+    $edges: border // border, outline, shadow
+) {
+    @if $border-color { #{$edges}-color: $border-color; }
+
+    @if $type-color { color: $type-color; }
+
+    @if $bgcolor { background-color: $bgcolor; }
+
+    &:hover {
+        @if $border-color-hover { #{$edges}-color: $border-color-hover; }
+        @if $type-color-hover { color: $type-color-hover; }
+        @if $bgcolor-hover { background-color: $bgcolor-hover; }
+    }
+
+    &:focus {
+        @if $border-color-focus { #{$edges}-color: $border-color-focus; }
+        @if $type-color-focus { color: $type-color-focus; }
+        @if $bgcolor-focus { background-color: $bgcolor-focus; }
+    }
+
+    &::placeholder {
+        color: $placeholder-color;
+    }
+}
+
+
+@mixin theme-input-transparent(
+    $bgcolor,
+    $bgcolor-hover: delta-color($color),
+    $bgcolor-focus: $bgcolor-hover,
+
+    $type-color: inherit,
+    $type-color-hover: $type-color,
+    $type-color-focus: $type-color-hover,
+
+    $border-color: delta-color($bgcolor),
+    $border-color-hover: delta-color($bgcolor-hover),
+    $border-color-focus: delta-color($bgcolor-focus)
+) {
+    background-color: $bgcolor;
+    color: $type-color;
+    border-color: $border-color;
+
+    &:hover {
+        background-color: $bgcolor-hover;
+        color: $type-color-hover;
+        border-color: $border-color-hover;
+    }
+
+    &:focus {
+        background-color: $bgcolor-focus;
+        color: $type-color-focus;
+        border-color: $border-color-focus;
+    }
+}
+
+%theme-input-default {
+    @include theme-input-default();
+
+    &-primary { @include theme-input-default($color-primary); }
+    &-secondary { @include theme-input-default($color-secondary); }
+    &-light { @include theme-input-default($color-light); }
+    &-dark { @include theme-input-default($color-dark); }
+
+    &-success { @include theme-input-default($color-success); }
+    &-warning { @include theme-input-default($color-warning); }
+    &-failure { @include theme-input-default($color-failure); }
+
+    &-lighten { @include theme-input-default($color-lighten); }
+    &-darken { @include theme-input-default($color-darken); }
+}
+
+%theme-input-implicit {
+    @include theme-input-default(
+        $border-color: transparent,
+        $bgcolor: transparent,
+        $bgcolor-hover: green
+    );
+
+    &-light {
+        @include theme-input-default(
+            $border-color: transparent,
+            $bgcolor: transparent,
+            $type-color: $input-color-light
+        );
+    }
+
+    &-dark {
+        @include theme-input-default(
+            $border-color: transparent,
+            $bgcolor: transparent,
+            $type-color: $input-color-dark
+        );
+    }
+}
+
+// Select Theme
+@mixin theme-select-default(
+    $color: $form-border-color,
+
+    $bg-color: $select-bgcolor,
+    $bg-color-hover: $bg-color,
+    $bg-color-focus: $bg-color,
+
+    $border-color: $color,
+    $border-color-hover: darken($color, 10%),
+    $border-color-focus: $form-border-color-focus,
+
+    $type-color: foreground-color($color),
+    $type-color-hover: $type-color,
+    $type-color-focus: $type-color
+) {
+    background-color: $bg-color;
+    border-color: $border-color;
+    color: $type-color;
+
+    &:hover {
+        background-color: $bg-color-hover;
+        border-color: $border-color-hover;
+        color: $type-color-hover;
+    }
+
+    &:focus {
+        background-color: $bg-color-focus;
+        border-color: $border-color-focus;
+        color: $type-color-focus;
+    }
+
+    background-position-x: calc(100% - 1rem);
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+%theme-select-default {
+    %select {
+        @include theme-select-default();
+    }
+}

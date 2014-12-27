@@ -1,0 +1,43 @@
+
+
+@include export('input') {
+    textarea,
+    input:not([type="radio"]):not([type="checkbox"]):not([type="button"]):not([type="submit"]) {
+        @extend %input;
+
+        @include style('input');
+
+        &.lighten { @include style('input', 'lighten'); }
+        &.darken { @include style('input', 'darken'); }
+
+        &.small { @extend %input-small; }
+
+        &.large { @extend %input-large; }
+
+        &.implicit {
+            @extend %input-implicit;
+
+            @include style('input-implicit');
+        }
+    }
+    
+    input.inline,
+    select.inline,
+    textarea.inline {
+        @extend %input-inline;
+    }
+
+    input.implicit {
+        &[type="radio"] { @extend %radio-implicit; }
+
+        &[type="checkbox"] { @extend %checkbox-implicit; }
+    }
+
+    textarea { @extend %textarea; }
+
+    select { @extend %select; }
+
+    input[type="radio"] { @extend %radio; }
+
+    input[type="checkbox"] { @extend %checkbox; }
+}

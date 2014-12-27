@@ -11,29 +11,6 @@ $form-padding: 0.5rem !default;
 $form-border-color: $color-gray-light !default;
 $form-border-color-focus: lighten($color-primary, 10%) !default;
 
-// Input Settings
-$form-input-style: default !default;
-$form-input-theme: default !default;
-$form-input-scale: $form-scale !default;
-$form-input-padding: $form-padding !default;
-$form-input-border-width: $form-border-width !default;
-$form-input-bgcolor: $color-white !default;
-$form-input-bgcolor-lighten: $color-lighten !default;
-$form-input-bgcolor-darken: $color-darken !default;
-$form-input-color-light: $color-light !default;
-$form-input-color-dark: $color-dark !default;
-$form-input-color: $form-input-color-dark !default;
-
-// Input Theme Settings
-$form-input-border-color-light: $color-gray-light !default;
-$form-input-border-color-dark: $color-gray-light !default;
-$form-input-border-color: theme-mode($form-input-border-color-light, $form-input-border-color-dark) !default;
-
-// Select Settings
-$form-select-style: default !default;
-$form-select-theme: default !default;
-$form-select-bgcolor: $form-input-bgcolor !default;
-
 // Label Settings
 $form-label-style: default !default;
 $form-label-theme: default !default;
@@ -48,12 +25,6 @@ $form-label-color-light: $color-lighten !default;
 $form-label-color-dark: $color-darken !default;
 $form-label-color: theme-mode($form-label-color-light, $form-label-color-dark) !default;
 $form-label-font-weight: bold !default;
-
-// Radio Settings
-$form-radio-margin-right: 0.5rem !default;
-
-// Checkbox Settings
-$form-checkbox-margin-right: $form-radio-margin-right !default;
 
 // Imports
 @import

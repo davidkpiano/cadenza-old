@@ -12,13 +12,18 @@
 </div>
 
 <div class="field">
-    <label>Input with lightened background</label>
-    <input type="text" name="" id="" class="lighten" placeholder="Placeholder with lightened background">
+    <label>Input with lightened border</label>
+    <input type="text" name="" id="" class="lighten" placeholder="Placeholder with lightened border">
 </div>
 
 <div class="field">
-    <label>Input with darkened background</label>
-    <input type="text" name="" id="" class="darken" placeholder="Placeholder with darkened background">
+    <label>Input with darkened border</label>
+    <input type="text" name="" id="" class="darken" placeholder="Placeholder with darkened border">
+</div>
+
+<div class="field">
+    <label>Implicit field</label>
+    <input type="text" name="" id="" class="implicit" placeholder="Implicit placeholder">
 </div>
 
 <div class="field">

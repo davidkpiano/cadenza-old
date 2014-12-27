@@ -1,0 +1,78 @@
+// Inputs
+// ------
+%input {
+    @include type-scale($input-scale);
+    display: block;
+    width: 100%;
+    padding: $input-padding;
+    background-image: none;
+    border-width: $input-border-width;
+    border-style: solid;
+
+    @if $form-radius {
+        border-radius: $form-radius;
+    }
+}
+
+%input-small {
+    @include type-scale($input-scale - 1);
+}
+
+%input-large {
+    @include type-scale($input-scale + 1);
+}
+
+%input-inline {
+    @extend %inline-block;
+
+    width: auto;
+}
+
+%input-implicit {
+    background-color: transparent;
+    border-width: 0;
+
+    &-outline {
+        outline-width: $input-border-width;
+        outline-style: solid;
+    }
+}
+
+%textarea {
+    @extend %input;
+
+    height: auto;
+}
+
+%input-search {
+    -webkit-appearance: none;
+}
+
+%select {
+    @include type-scale($input-scale);
+    display: block;
+    width: 100%;
+
+    -webkit-appearance: none;
+    padding: 0.5rem;
+    border-width: $input-border-width;
+    border-style: solid;
+    z-index: 2;
+    width: 100%;
+}
+
+%radio {
+    margin-right: $radio-margin-right;
+}
+
+%checkbox {
+    margin-right: $checkbox-margin-right;
+}
+
+%radio, %checkbox {
+    &-implicit {
+        %form-label & {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+// Input Settings
+$input-style: default !default;
+$input-theme: default !default;
+$input-scale: $form-scale !default;
+$input-padding: $form-padding !default;
+$input-border-width: $form-border-width !default;
+$input-bgcolor: $color-white !default;
+$input-bgcolor-lighten: $color-lighten !default;
+$input-bgcolor-darken: $color-darken !default;
+$input-color-light: $color-light !default;
+$input-color-dark: $color-dark !default;
+$input-color: $input-color-dark !default;
+
+// Select Settings
+$select-style: default !default;
+$select-theme: default !default;
+$select-bgcolor: $input-bgcolor !default;
+
+// Input Theme Settings
+$input-border-color-light: $color-gray-light !default;
+$input-border-color-dark: $color-gray-light !default;
+$input-border-color: theme-mode($input-border-color-light, $input-border-color-dark) !default;
+
+// Radio Settings
+$radio-margin-right: 0.5rem !default;
+
+// Checkbox Settings
+$checkbox-margin-right: $radio-margin-right !default;
+
+@import
+	'_mixins',
+	'_components',
+	'_themes',
+	'_exports';

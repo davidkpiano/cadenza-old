@@ -40,21 +40,21 @@ A column can be defined as spanning from 0 to 12 columns on a 12-column grid via
     '8th',
     '9th'
 ]">
-    <div ng-repeat="col in component.util.range($index + 1)" class="border-primary col-{{col_span}}">col-{{col_span}}</div>
+    <div ng-repeat="col in cadenza.util.range($index + 1)" class="border-primary col-{{col_span}}">col-{{col_span}}</div>
 </div>
 
 ### No Gutter
 <div class="row-1 field text-center small" ng-repeat="col_span in [12,6,4,3,2,1]">
-    <div ng-repeat="col in component.range(12/col_span)" class="border-primary col-{{col_span}}">col-{{col_span}}</div>
+    <div ng-repeat="col in cadenza.range(12/col_span)" class="border-primary col-{{col_span}}">col-{{col_span}}</div>
 </div>
 
 ### Gutter
 <div class="row-1 field gutter text-center small" ng-repeat="col_span in [12,6,4,3,2,1]">
-    <div ng-repeat="col in component.util.range(12/col_span)" class="border-primary col-{{col_span}}">col-{{col_span}}</div>
+    <div ng-repeat="col in cadenza.util.range(12/col_span)" class="border-primary col-{{col_span}}">col-{{col_span}}</div>
 </div>
 
 ### Offset
-<div class="row-1 field gutter text-center small" ng-repeat="col_span in component.util.range(12)">
+<div class="row-1 field gutter text-center small" ng-repeat="col_span in cadenza.util.range(12)">
     <div class="border-primary col-1 col-offset-{{col_span}}">col-offset-{{col_span}}</div>
 </div>
 [[/]]
