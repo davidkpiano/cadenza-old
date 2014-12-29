@@ -4,6 +4,7 @@ $input-theme: default !default;
 $input-scale: $form-scale !default;
 $input-padding: $form-padding !default;
 $input-border-width: $form-border-width !default;
+$input-border-radius: $form-radius !default;
 
 // Input Theme Settings
 $input-bgcolor: $color-white !default;
@@ -24,6 +25,7 @@ $select-theme: default !default;
 $select-scale: $input-scale !default;
 $select-padding: $input-padding !default;
 $select-border-width: $input-border-width !default;
+$select-border-radius: $input-border-radius;
 
 $select-bgcolor: $input-bgcolor !default;
 $select-bgcolor-lighten: $input-bgcolor-lighten !default;

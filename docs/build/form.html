@@ -1,5 +1,40 @@
 <article>
 <div class="cz-content">
+<h2 id="fields">Fields</h2>
+<h3 id="standard-field">Standard Field</h3>
+<p>Contains a label and an input element.</p>
+<div class="cz-example">
+<p><div class="field">
+    <label for="input1">Field Label</label>
+    <input type="text" id="input1">
+</div>
+</p></div>
+<p></p>
+<h3 id="horizontal-field">Horizontal Field</h3>
+<div class="cz-example">
+<p><div class="field-horizontal">
+    <label for="input1">Horizontal Field Label</label>
+    <input type="text" id="input1">
+</div></p>
+<p><div class="field-horizontal">
+    <label for="input1">Horizontal Field Label</label>
+    <div class="field-input">
+        <input type="text" id="input1" placeholder="Input inside .field-input">
+    </div>
+</div></p>
+<p><div class="field-horizontal">
+    <label for="input1" class="nowrap">Horizontal Field Label with <code><span class="hljs-preprocessor">.nowrap</span></code></label>
+    <div class="field-input">
+        <input type="text" id="input1" placeholder="Input inside .field-input">
+    </div>
+</div>
+</p></div>
+<p></p>
+</div>
+</article>
+
+<article>
+<div class="cz-content">
 <h2 id="text-inputs">Text Inputs</h2>
 <div class="field">
     <label>Full-width input (default)</label>

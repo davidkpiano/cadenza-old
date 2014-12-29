@@ -8,7 +8,7 @@
     background-image: none,
     border-width: $input-border-width,
     border-style: solid,
-    border-radius: false
+    border-radius: $input-border-radius,
 )) {
 
     @include define-variant('small', (
@@ -53,15 +53,16 @@
     padding: $select-padding,
     border-width: $select-border-width,
     border-style: solid,
+    border-radius: $select-border-radius,
 ));
 
-%radio {
-    margin-right: $radio-margin-right;
-}
+@include define-component('radio', (
+    margin-right: $radio-margin-right,
+));
 
-%checkbox {
-    margin-right: $checkbox-margin-right;
-}
+@include define-component('checkbox', (
+    margin-right: $checkbox-margin-right,
+));
 
 %radio, %checkbox {
     &-implicit {

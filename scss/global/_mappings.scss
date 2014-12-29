@@ -5,7 +5,3 @@
         font-size: type-scale($value)
     );
 }
-
-@function map-border-radius($value) {
-    @return if($value, (border-radius: $value), null);
-}
