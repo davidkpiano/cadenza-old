@@ -43,7 +43,7 @@
         @include style('select');
     }
 
-    input[type="search"] { @include component('input', 'search'); }
+    input[type="search"] { @include component('search'); }
 
     input[type="radio"] { @extend %radio; }
 

@@ -1,6 +1,7 @@
 
 
 $components: ();
+$relationships: ();
 $static-component: null;
 
 @function property-mapping($property, $rule) {
@@ -32,16 +33,20 @@ $static-component: null;
 @mixin define-component(
     $component,
     $definition,
-    $placeholder: "%#{$component}"
+    $variant: 'default',
+    $placeholder: "%#{$component}#{if($variant == default, '', '-#{$variant}')}"
 ) {
     $static-component: $component !global;
 
-    $component-definition: ($component: (default: $definition));
-
-    $components: map-merge($components, $component-definition) !global;
+    $components: set($components, $component $variant, $definition) !global;
 
     @include rules($definition, $placeholder) {
         @content;
+    }
+
+    // Relationship placeholder
+    @at-root %r-#{$component}-#{$variant} {
+        component: $component $variant;
     }
 }
 
@@ -51,31 +56,28 @@ $static-component: null;
     $component: $static-component,
     $placeholder: "%#{$component}#{if($variant == default, '', '-#{$variant}')}"
 ) {
-    $variant-definition: ($variant: $definition);
-
-    $component-map: map-get($components, $component);
-
-    $component-map: map-merge($component-map, $variant-definition);
-
-    $components: map-merge($components, ($component: $component-map)) !global;
-
-    @include rules($definition, $placeholder) {
-        @content;
-    }
+    @include define-component(
+        $component,
+        $definition,
+        $variant,
+        $placeholder
+    );
 }
 
-@mixin component(
-    $component,
-    $variant: default
+@mixin define-relationship(
+    $target,
+    $subject: $static-component,
+    $relationship: 'descendant'
 ) {
-    $static-component: $component !global;
+    $relationship-map: (
+        'descendant': ' '
+    );
 
-    $component-map: map-get($components, $component);
-    $definition: map-get($component-map, $variant);
+    $target-placeholder: relationship($target...);
+    $subject-placeholder: relationship($subject...);
+    $operator: map-get($relationship-map, $relationship);
 
-    $variant: if($variant == default, '', '-#{$variant}');
-
-    @include rules($definition, &) {
+    @at-root #{$subject-placeholder}#{$operator}#{$target-placeholder} {
         @content;
     }
 }
@@ -88,3 +90,27 @@ $static-component: null;
 
     @return '%#{$name}#{$variant}';
 }
+
+@function relationship(
+    $component,
+    $variant: default
+) {
+    @return '%r-#{$component}-#{$variant}';
+}
+
+@mixin component(
+    $component,
+    $variant: default
+) {
+    $static-component: $component !global;
+
+    $component-map: get($components, $component);
+    $definition: get($component-map, $variant);
+
+    @include rules($definition, &) {
+        @content;
+    }
+
+    @extend #{relationship($component, $variant)} !optional;
+}
+
