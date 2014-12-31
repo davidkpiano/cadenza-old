@@ -68,7 +68,7 @@
     @extend %column;
     @include column(7);
     @extend %stack-small;
-    @extend %pad-double;
+    @include component('pad', 'double');
     clear: left;
 }
 
@@ -77,7 +77,7 @@
     @extend %column;
     @include column(5);
     @extend %stack-small;
-    @extend %pad-double;
+    @include component('pad', 'double');
     clear: right;
 }
 

@@ -5,3 +5,17 @@
         font-size: type-scale($value)
     );
 }
+
+@function map-padding-x($value) {
+    @return (
+        padding-left: $value,
+        padding-right: $value,
+    );
+}
+
+@function map-padding-y($value) {
+    @return (
+        padding-top: $value,
+        padding-bottom: $value,
+    );
+}

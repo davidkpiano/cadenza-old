@@ -7,13 +7,11 @@
     padding: $space-padding
 )) {
     @include define-variant('vertical', (
-        padding-top: $space-padding,
-        padding-bottom: $space-padding
+        padding-y: $space-padding,
     ));
 
     @include define-variant('horizontal', (
-        padding-left: $space-padding,
-        padding-right: $space-padding
+        padding-x: $space-padding,
     ));
 
     @include define-variant('half', (
@@ -21,13 +19,11 @@
     ));
 
     @include define-variant('vertical-half', (
-        padding-top: $space-padding-half,
-        padding-bottom: $space-padding-half
+        padding-y: $space-padding-half,
     ));
 
     @include define-variant('horizontal-half', (
-        padding-left: $space-padding-half,
-        padding-right: $space-padding-half
+        padding-x: $space-padding-half,
     ));
 
     @include define-variant('double', (
@@ -35,13 +31,11 @@
     ));
 
     @include define-variant('vertical-double', (
-        padding-top: $space-padding-double,
-        padding-bottom: $space-padding-double
+        padding-y: $space-padding-double,
     ));
 
     @include define-variant('horizontal-double', (
-        padding-left: $space-padding-double,
-        padding-right: $space-padding-double
+        padding-x: $space-padding-double,
     ));
 
     @include define-variant('none', (
@@ -49,13 +43,11 @@
     ));
 
     @include define-variant('vertical-none', (
-        padding-top: 0 !important,
-        padding-bottom: 0 !important
+        padding-y: 0 !important,
     ));
 
     @include define-variant('horizontal-none', (
-        padding-left: 0 !important,
-        padding-right: 0 !important
+        padding-x: 0 !important,
     ));
 }
 

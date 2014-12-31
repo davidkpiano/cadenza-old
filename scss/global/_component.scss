@@ -69,15 +69,18 @@ $static-component: null;
     $subject: $static-component,
     $relationship: 'descendant'
 ) {
-    $relationship-map: (
-        'descendant': ' '
-    );
 
     $target-placeholder: relationship($target...);
     $subject-placeholder: relationship($subject...);
-    $operator: map-get($relationship-map, $relationship);
+    $relationship-map: (
+        'descendant': '#{$subject-placeholder} #{$target-placeholder}',
+        'child': '#{$subject-placeholder} > #{$target-placeholder}',
+        'adjacent': '#{$subject-placeholder} + #{$target-placeholder}',
+        'sibling': '#{$subject-placeholder} ~ #{$target-placeholder}',
+        'cousin': '#{$subject-placeholder} ~ * #{$target-placeholder}',
+    );
 
-    @at-root #{$subject-placeholder}#{$operator}#{$target-placeholder} {
+    @at-root #{map-get($relationship-map, $relationship)} {
         @content;
     }
 }

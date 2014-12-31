@@ -4,17 +4,21 @@
 
 // Form Labels
 // -----------
-%form-label {
-	@include type-scale($form-label-scale);
-	display: $form-label-display;
-	margin-bottom: $form-label-margin-bottom;
+@include define-component('label', (
+	type-scale: $form-label-scale,
+	display: $form-label-display,
+	margin-bottom: $form-label-margin-bottom,
+)) {
+	@include define-variant('inline', (
+		display: inline-block,
+		padding: $form-label-padding,
+	));
 
-	&-children {
-		vertical-align: middle;
+	@include define-relationship('radio', $relationship: 'adjacent') {
+		visibility: hidden;
 	}
 
-	&-inline {	
-		display: inline-block;
-		padding: $form-label-padding;
+	> * {
+		vertical-align: middle;
 	}
 }

@@ -15,7 +15,6 @@
 
         &.implicit {
             @include component('input', 'implicit');
-
             @include style('input', $theme: 'implicit');
         }
 
@@ -26,26 +25,27 @@
     
     select.inline,
     textarea.inline {
-        @extend %input-inline;
+        @include component('input', 'inline');
     }
 
-    input.implicit {
-        &[type="radio"] { @extend %radio-implicit; }
-
-        &[type="checkbox"] { @extend %checkbox-implicit; }
-    }
-
-    textarea { @extend %textarea; }
+    textarea { @include component('textarea'); }
 
     select {
-        @extend %select;
-
+        @include component('select');
         @include style('select');
     }
 
     input[type="search"] { @include component('search'); }
 
-    input[type="radio"] { @extend %radio; }
+    input[type="radio"] {
+        @include component('radio');
 
-    input[type="checkbox"] { @extend %checkbox; }
+        &.implicit { @include component('radio', 'implicit'); }
+    }
+
+    input[type="checkbox"] {
+        @include component('checkbox');
+
+        &.implicit { @include component('checkbox', 'implicit'); }
+    }
 }

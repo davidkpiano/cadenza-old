@@ -4,16 +4,13 @@
 
 @include export('label', 'form') {
     label { 
-        @extend %form-label;
-
+        @include component('label');
         @include style('form-label');
 
         &.success { @include style('form-label', 'success'); }
         &.warning { @include style('form-label', 'warning'); }
         &.failure { @include style('form-label', 'failure'); }
 
-        > * { @extend %form-label-children; }
-
-        &.inline { @extend %form-label-inline; }
+        &.inline { @include component('label', 'inline'); }
     }
 }
