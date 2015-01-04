@@ -30,38 +30,48 @@ $static-component: null;
     }
 }
 
+@function set-components($component, $definition: ()) {
+    $component: if(length($component) == 1, append($component, default), $component);
+
+    $components: set($components, $component, $definition) !global;
+
+    @return null;
+}
+
 @mixin define-component(
     $component,
-    $definition,
-    $variant: 'default',
-    $placeholder: "%#{$component}#{if($variant == default, '', '-#{$variant}')}"
+    $definition: false
 ) {
+    $component-string: sl-to-string($component, '-');
+    $placeholder: '%#{$component-string}';
+
     $static-component: $component !global;
 
-    $components: set($components, $component $variant, $definition) !global;
+    @if $definition {
+        $void: set-components($component, $definition) !global;
 
-    @include rules($definition, $placeholder) {
-        @content;
-    }
+        @include rules($definition, $placeholder) {
+            @content;
+        }
 
-    // Relationship placeholder
-    @at-root %r-#{$component}-#{$variant} {
-        component: $component $variant;
+        // Relationship placeholder
+        @at-root %r-#{$component-string} {
+            component: $component;
+        }
     }
 }
 
 @mixin define-variant(
     $variant,
     $definition,
-    $component: $static-component,
-    $placeholder: "%#{$component}#{if($variant == default, '', '-#{$variant}')}"
+    $component: $static-component
 ) {
     @include define-component(
-        $component,
-        $definition,
-        $variant,
-        $placeholder
+        append($component, $variant),
+        $definition
     );
+
+    $static-component: $component !global;
 }
 
 @mixin define-relationship(

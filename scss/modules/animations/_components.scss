@@ -50,7 +50,6 @@
     ));
 }
 
-
 // Fade
 %animation-fade-active { @include animation(fade-active, $extend: false); }
 %animation-fade-inactive { @include animation(fade-inactive, $extend: false); }
