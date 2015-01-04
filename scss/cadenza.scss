@@ -68,7 +68,7 @@
     @extend %column;
     @include column(7);
     @extend %stack-small;
-    @include component('pad', 'double');
+    @include component('pad' 'double');
     clear: left;
 }
 
@@ -77,11 +77,11 @@
     @extend %column;
     @include column(5);
     @extend %stack-small;
-    @include component('pad', 'double');
+    @include component('pad' 'double');
     clear: right;
 }
 
 .cz-example {
     @extend %border;
-    @include component(pad);
+    @include component('pad');
 }

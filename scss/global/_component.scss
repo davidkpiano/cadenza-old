@@ -38,7 +38,19 @@ $static-component: null;
     @return null;
 }
 
-@mixin define-component(
+@function get-components($component) {
+    $component: if(length($component) == 1, append($component, default), $component);
+
+    $definition: get($components, $component);
+
+    @return $definition;
+}
+
+@mixin define-component($args...) {
+    @include component($args...) { @content; }
+}
+
+@mixin component(
     $component,
     $definition: false
 ) {
@@ -58,6 +70,14 @@ $static-component: null;
         @at-root %r-#{$component-string} {
             component: $component;
         }
+    } @else {
+        $definition: get-components($component);
+
+        @include rules($definition, &) {
+            @content;
+        }
+
+        @extend #{relationship($component)} !optional;
     }
 }
 
@@ -96,34 +116,20 @@ $static-component: null;
 }
 
 @function component(
-    $name,
-    $variant: default
+    $component,
+    $variant: null
 ) {
-    $variant: if($variant == default, '', '-#{$variant}');
+    $component: if($variant, append($component, $variant), $component);
+    $component-string: sl-to-string($component, '-');
 
-    @return '%#{$name}#{$variant}';
+    @return '%#{$component-string}';
 }
 
 @function relationship(
-    $component,
-    $variant: default
+    $component
 ) {
-    @return '%r-#{$component}-#{$variant}';
+    $component: if(length($component) == 1, append($component, default), $component);
+    $component-string: sl-to-string($component, '-');
+
+    @return '%r-#{$component-string}';
 }
-
-@mixin component(
-    $component,
-    $variant: default
-) {
-    $static-component: $component !global;
-
-    $component-map: get($components, $component);
-    $definition: get($component-map, $variant);
-
-    @include rules($definition, &) {
-        @content;
-    }
-
-    @extend #{relationship($component, $variant)} !optional;
-}
-
