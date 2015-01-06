@@ -50,3 +50,22 @@ p // this is where paragraph code goes
 .subheading-dark
 ```
 [[/]]
+
+[[content]]
+### Heading Groups
+
+Unfortunately, `<hgroup>` was discontinued.
+
+[[example]]
+<div class="hgroup">
+    <h1>Heading 1 in hgroup</h1>
+    <h4>Heading 4 in hgroup</h4>
+    <small>Small text in hgroup</small>
+</div>
+[[/]]
+
+[[code]]
+```scss
+.hgroup {}
+```
+[[/]]
